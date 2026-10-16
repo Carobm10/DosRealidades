@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalUI : MonoBehaviour
 {
+    [Header("Multijugador")]
+    [SerializeField] private GestorMultijugador gestorMultijugador;
+
     [Header("Ventana Unirse")]
     [SerializeField] private GameObject fondoOscuroUnirse;
     [SerializeField] private TMP_InputField campoCodigoPartida;
@@ -95,33 +98,35 @@ public class MenuPrincipalUI : MonoBehaviour
         }
     }
 
-    public void EntrarPartida()
+    public async void EntrarPartida()
     {
-        string codigo = campoCodigoPartida.text.Trim().ToUpper();
+        string codigo =
+            campoCodigoPartida.text.Trim().ToUpper();
 
         if (codigo == "")
         {
-            textoEstadoUnirse.text = "Ingresa un código.";
+            textoEstadoUnirse.text =
+                "Ingresa un código.";
+
             return;
         }
 
-        if (NetworkManager.Singleton == null)
+        textoEstadoUnirse.text =
+            "Conectando...";
+
+        bool conectado =
+            await gestorMultijugador.UnirsePartida(codigo);
+
+        if (!conectado)
         {
-            textoEstadoUnirse.text = "Error de conexión.";
+            textoEstadoUnirse.text =
+                "Código incorrecto o partida no disponible.";
+
             return;
         }
 
-        textoEstadoUnirse.text = "Conectando...";
-
-        if (!NetworkManager.Singleton.IsListening)
-        {
-            bool clienteIniciado = NetworkManager.Singleton.StartClient();
-
-            if (!clienteIniciado)
-            {
-                textoEstadoUnirse.text = "No se pudo conectar.";
-            }
-        }
+        textoEstadoUnirse.text =
+            "Conectado ✓\nEsperando que el Host inicie...";
     }
 
 
@@ -129,41 +134,37 @@ public class MenuPrincipalUI : MonoBehaviour
     // VENTANA CREAR PARTIDA
     // --------------------------------------------------
 
-    public void AbrirVentanaCrear()
+    public async void AbrirVentanaCrear()
     {
         fondoOscuroUnirse.SetActive(false);
         fondoOscuroCrear.SetActive(true);
 
         botonEmpezarPartida.SetActive(false);
-        textoEsperandoJugador.text = "Esperando jugador";
+        textoEsperandoJugador.text = "Creando partida...";
 
-        if (NetworkManager.Singleton == null)
+        string codigo =
+            await gestorMultijugador.CrearPartida();
+
+        if (string.IsNullOrEmpty(codigo))
         {
-            Debug.LogError("No existe un NetworkManager.");
+            textoEsperandoJugador.text =
+                "No se pudo crear la partida.";
+
             return;
         }
 
-        if (!NetworkManager.Singleton.IsListening)
-        {
-            bool hostIniciado = NetworkManager.Singleton.StartHost();
+        textoCodigoGenerado.text = codigo;
 
-            if (!hostIniciado)
-            {
-                Debug.LogError("No se pudo iniciar el Host.");
-                return;
-            }
-        }
-
-        // TEMPORAL:
-        // Más adelante este código vendrá de Unity Relay.
-        textoCodigoGenerado.text = GenerarCodigoPrueba();
+        textoEsperandoJugador.text =
+            "Esperando jugador";
 
         if (animacionEspera != null)
         {
             StopCoroutine(animacionEspera);
         }
 
-        animacionEspera = StartCoroutine(AnimarTextoEspera());
+        animacionEspera =
+            StartCoroutine(AnimarTextoEspera());
     }
 
     public void CerrarVentanaCrear()
@@ -300,30 +301,6 @@ public class MenuPrincipalUI : MonoBehaviour
             LoadSceneMode.Single
         );
     }
-
-
-    // --------------------------------------------------
-    // CÓDIGO TEMPORAL
-    // --------------------------------------------------
-
-    private string GenerarCodigoPrueba()
-    {
-        const string caracteres =
-            "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-
-        string codigo = "";
-
-        for (int i = 0; i < 6; i++)
-        {
-            int posicionAleatoria =
-                Random.Range(0, caracteres.Length);
-
-            codigo += caracteres[posicionAleatoria];
-        }
-
-        return codigo;
-    }
-
 
     // --------------------------------------------------
     // OPCIONES
