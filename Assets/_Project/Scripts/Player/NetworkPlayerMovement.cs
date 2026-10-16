@@ -1,46 +1,68 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Unity.Netcode;
+using UnityEngine.InputSystem;
 
 public class NetworkPlayerMovement : NetworkBehaviour
 {
     [Header("Movimiento")]
-    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float velocidadMovimiento = 4f;
 
-    [Header("Input")]
-    [SerializeField] private InputActionReference moveAction;
+    [Header("Controles")]
+    [SerializeField] private InputActionReference accionMover;
+
+    private Rigidbody2D cuerpo;
+    private Vector2 direccionMovimiento;
+
+    private void Awake()
+    {
+        cuerpo = GetComponent<Rigidbody2D>();
+    }
 
     public override void OnNetworkSpawn()
     {
-        // Solo el dueño de este personaje puede leer controles.
         if (IsOwner)
         {
-            moveAction.action.Enable();
+            accionMover.action.Enable();
+            cuerpo.simulated = true;
+        }
+        else
+        {
+            cuerpo.simulated = false;
         }
     }
 
     private void Update()
     {
-        // Si este NetworkPlayer no me pertenece, no hago nada.
         if (!IsOwner)
             return;
 
-        Vector2 input = moveAction.action.ReadValue<Vector2>();
+        direccionMovimiento =
+            accionMover.action.ReadValue<Vector2>();
 
-        Vector3 movement = new Vector3(
-            input.x,
-            input.y,
-            0f
-        );
+        // Evita que moverse en diagonal sea más rápido.
+        direccionMovimiento =
+            Vector2.ClampMagnitude(direccionMovimiento, 1f);
+    }
 
-        transform.position += movement * moveSpeed * Time.deltaTime;
+    private void FixedUpdate()
+    {
+        if (!IsOwner)
+            return;
+
+        Vector2 nuevaPosicion =
+            cuerpo.position +
+            direccionMovimiento *
+            velocidadMovimiento *
+            Time.fixedDeltaTime;
+
+        cuerpo.MovePosition(nuevaPosicion);
     }
 
     public override void OnNetworkDespawn()
     {
         if (IsOwner)
         {
-            moveAction.action.Disable();
+            accionMover.action.Disable();
         }
     }
 }
