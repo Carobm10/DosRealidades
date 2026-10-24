@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
@@ -8,13 +9,17 @@ public class PanelSimbolosUI : MonoBehaviour
 
     [Header("Ventana")]
     [SerializeField] private GameObject ventanaPanel;
-    [SerializeField] private TMP_Text textoTitulo;
+    [SerializeField] private Image imagenPanel;
+    [SerializeField] private TMP_Text textoResultado;
+
+    [Header("Sprites del panel")]
+    [SerializeField] private Sprite panelNormal;
+    [SerializeField] private Sprite panelCirculo;
+    [SerializeField] private Sprite panelTriangulo;
+    [SerializeField] private Sprite panelCuadrado;
 
     [Header("Tiempos")]
-    [SerializeField] private float tiempoMensaje = 0.8f;
-
-    private string textoOriginal;
-    private Color colorOriginal;
+    [SerializeField] private float tiempoMensaje = 0.5f;
 
     private Coroutine rutinaResultado;
 
@@ -22,11 +27,33 @@ public class PanelSimbolosUI : MonoBehaviour
     {
         Instancia = this;
 
-        textoOriginal = textoTitulo.text;
-        colorOriginal = textoTitulo.color;
+        if (textoResultado != null)
+        {
+            textoResultado.gameObject.SetActive(false);
+        }
+
+        if (imagenPanel != null && panelNormal != null)
+        {
+            imagenPanel.sprite = panelNormal;
+        }
     }
 
-    public void MostrarResultado(bool correcto)
+    public void SeleccionarCirculo()
+    {
+        MostrarSeleccion(panelCirculo, false);
+    }
+
+    public void SeleccionarTriangulo()
+    {
+        MostrarSeleccion(panelTriangulo, true);
+    }
+
+    public void SeleccionarCuadrado()
+    {
+        MostrarSeleccion(panelCuadrado, false);
+    }
+
+    private void MostrarSeleccion(Sprite spriteSeleccionado, bool correcto)
     {
         if (rutinaResultado != null)
         {
@@ -34,29 +61,52 @@ public class PanelSimbolosUI : MonoBehaviour
         }
 
         rutinaResultado =
-            StartCoroutine(AnimarResultado(correcto));
+            StartCoroutine(AnimarResultado(spriteSeleccionado, correcto));
     }
 
-    private IEnumerator AnimarResultado(bool correcto)
+    private IEnumerator AnimarResultado(
+        Sprite spriteSeleccionado,
+        bool correcto
+    )
     {
+        if (imagenPanel != null && spriteSeleccionado != null)
+        {
+            imagenPanel.sprite = spriteSeleccionado;
+        }
+
+        if (textoResultado != null)
+        {
+            textoResultado.gameObject.SetActive(true);
+
+            if (correcto)
+            {
+                textoResultado.text = "CORRECTO";
+                textoResultado.color = Color.green;
+            }
+            else
+            {
+                textoResultado.text = "INCORRECTO";
+                textoResultado.color = Color.red;
+            }
+        }
+
+        yield return new WaitForSeconds(tiempoMensaje);
+
+        if (textoResultado != null)
+        {
+            textoResultado.gameObject.SetActive(false);
+        }
+
         if (correcto)
         {
-            textoTitulo.text = "CORRECTO";
-            textoTitulo.color = Color.green;
-
-            yield return new WaitForSeconds(tiempoMensaje);
-
             ventanaPanel.SetActive(false);
         }
         else
         {
-            textoTitulo.text = "INCORRECTO";
-            textoTitulo.color = Color.red;
-
-            yield return new WaitForSeconds(tiempoMensaje);
-
-            textoTitulo.text = textoOriginal;
-            textoTitulo.color = colorOriginal;
+            if (imagenPanel != null && panelNormal != null)
+            {
+                imagenPanel.sprite = panelNormal;
+            }
         }
 
         rutinaResultado = null;

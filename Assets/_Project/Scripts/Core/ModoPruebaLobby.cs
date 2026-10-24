@@ -7,77 +7,45 @@ public class ModoPruebaLobby : MonoBehaviour
     [Header("Objetos para pruebas")]
     [SerializeField] private GameObject prefabNetworkManager;
 
-    private bool hostPruebaIniciado = false;
-
     private IEnumerator Start()
     {
-#if UNITY_EDITOR
-
-        // Si abrimos directamente Level_01_Lobby,
-        // creamos el NetworkManager de prueba.
+        // Si entramos directamente a una escena jugable,
+        // creamos el NetworkManager únicamente si no existe.
         if (NetworkManager.Singleton == null)
         {
             Instantiate(prefabNetworkManager);
 
-            // Dejamos un frame para que el NetworkManager
-            // termine de inicializarse.
+            // Esperamos un frame para que se registre el Singleton.
             yield return null;
         }
 
-        // Si no existe una sesión activa, iniciamos Host local.
-        if (NetworkManager.Singleton != null &&
-            !NetworkManager.Singleton.IsListening)
+        if (NetworkManager.Singleton == null)
+        {
+            Debug.LogError(
+                "Modo prueba: no se pudo crear NetworkManager."
+            );
+
+            yield break;
+        }
+
+        // Solo iniciamos Host si todavía no existe una sesión.
+        if (!NetworkManager.Singleton.IsListening)
         {
             bool iniciado =
                 NetworkManager.Singleton.StartHost();
 
             if (iniciado)
             {
-                hostPruebaIniciado = true;
-
                 Debug.Log(
-                    "Modo prueba: Host iniciado automáticamente."
+                    "Modo prueba: Host iniciado automaticamente."
                 );
             }
             else
             {
                 Debug.LogError(
-                    "Modo prueba: no se pudo iniciar el Host."
+                    "Modo prueba: no se pudo iniciar Host."
                 );
             }
         }
-
-#else
-
-        yield break;
-
-#endif
     }
-
-#if UNITY_EDITOR
-
-    private void OnApplicationQuit()
-    {
-        CerrarHostPrueba();
-    }
-
-    private void CerrarHostPrueba()
-    {
-        if (!hostPruebaIniciado)
-            return;
-
-        if (NetworkManager.Singleton == null)
-            return;
-
-        if (!NetworkManager.Singleton.IsListening)
-            return;
-
-        Debug.Log("Modo prueba: cerrando Host correctamente.");
-
-        NetworkManager.Singleton.Shutdown();
-
-        hostPruebaIniciado = false;
-    }
-
-#endif
 }

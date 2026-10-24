@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 5566542262320589974}
   - component: {fileID: 3573398366985817969}
   - component: {fileID: 4351588791507245499}
+  - component: {fileID: 4895310645492503891}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -571,6 +572,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   camaraJugador: {fileID: 4724177452757219280}
   audioListenerJugador: {fileID: 6160402459386688081}
+  velocidadEnfoque: 5
 --- !u!114 &4351588791507245499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,3 +591,17 @@ MonoBehaviour:
   animatorJugador: {fileID: 0}
   alturaSalto: 0.5
   duracionSalto: 0.45
+--- !u!114 &4895310645492503891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198515594604971309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2c7adf8afa07340b7ad2db59746fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaJugador
+  ShowTopMostFoldoutHeaderGroup: 1
+  vidasIniciales: 3

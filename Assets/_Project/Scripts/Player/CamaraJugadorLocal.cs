@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CamaraJugadorLocal : NetworkBehaviour
 {
@@ -8,8 +9,16 @@ public class CamaraJugadorLocal : NetworkBehaviour
     [SerializeField] private Camera camaraJugador;
     [SerializeField] private AudioListener audioListenerJugador;
 
+    [Header("Enfoque cinematografico")]
+    [SerializeField] private float velocidadEnfoque = 5f;
+
     private BoxCollider2D limitesCamara;
     private bool limitarCamara = false;
+
+    private bool enfoqueActivo = false;
+    private Vector3 puntoEnfoque;
+
+    private Coroutine rutinaEnfoque;
 
     private void Awake()
     {
@@ -38,7 +47,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
         SceneManager.sceneLoaded -= AlCargarEscena;
     }
 
-    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    private void AlCargarEscena(
+        Scene escena,
+        LoadSceneMode modo
+    )
     {
         ActualizarCamara(escena.name);
         BuscarLimitesCamara();
@@ -75,25 +87,13 @@ public class CamaraJugadorLocal : NetworkBehaviour
             GameObject.Find("LimitesCamara");
 
         if (objetoLimites == null)
-        {
-            Debug.LogWarning(
-                "No se encontro el objeto LimitesCamara."
-            );
-
             return;
-        }
 
         limitesCamara =
             objetoLimites.GetComponent<BoxCollider2D>();
 
         if (limitesCamara == null)
-        {
-            Debug.LogWarning(
-                "LimitesCamara no tiene BoxCollider2D."
-            );
-
             return;
-        }
 
         limitarCamara = true;
     }
@@ -103,30 +103,71 @@ public class CamaraJugadorLocal : NetworkBehaviour
         if (!IsOwner)
             return;
 
-        if (!limitarCamara)
+        if (camaraJugador == null)
             return;
 
-        if (camaraJugador == null || limitesCamara == null)
-            return;
+        Vector3 posicionDeseada;
 
-        LimitarPosicionCamara();
+        if (enfoqueActivo)
+        {
+            posicionDeseada = puntoEnfoque;
+
+            Vector3 posicionLimitada =
+                ObtenerPosicionLimitada(posicionDeseada);
+
+            posicionLimitada.z =
+                camaraJugador.transform.position.z;
+
+            camaraJugador.transform.position =
+                Vector3.Lerp(
+                    camaraJugador.transform.position,
+                    posicionLimitada,
+                    velocidadEnfoque * Time.deltaTime
+                );
+        }
+        else
+        {
+            posicionDeseada = transform.position;
+
+            Vector3 posicionLimitada =
+                ObtenerPosicionLimitada(posicionDeseada);
+
+            posicionLimitada.z =
+                camaraJugador.transform.position.z;
+
+            camaraJugador.transform.position =
+                posicionLimitada;
+        }
     }
 
-    private void LimitarPosicionCamara()
+    private Vector3 ObtenerPosicionLimitada(
+        Vector3 posicionDeseada
+    )
     {
+        if (!limitarCamara || limitesCamara == null)
+        {
+            return posicionDeseada;
+        }
+
         Bounds limites = limitesCamara.bounds;
 
-        float altoCamara = camaraJugador.orthographicSize;
+        float altoCamara =
+            camaraJugador.orthographicSize;
+
         float anchoCamara =
             altoCamara * camaraJugador.aspect;
 
-        float minimoX = limites.min.x + anchoCamara;
-        float maximoX = limites.max.x - anchoCamara;
+        float minimoX =
+            limites.min.x + anchoCamara;
 
-        float minimoY = limites.min.y + altoCamara;
-        float maximoY = limites.max.y - altoCamara;
+        float maximoX =
+            limites.max.x - anchoCamara;
 
-        Vector3 posicionDeseada = transform.position;
+        float minimoY =
+            limites.min.y + altoCamara;
+
+        float maximoY =
+            limites.max.y - altoCamara;
 
         float x;
         float y;
@@ -149,11 +190,43 @@ public class CamaraJugadorLocal : NetworkBehaviour
                 maximoY
             );
 
-        camaraJugador.transform.position =
-            new Vector3(
-                x,
-                y,
-                camaraJugador.transform.position.z
+        return new Vector3(
+            x,
+            y,
+            posicionDeseada.z
+        );
+    }
+
+    public void EnfocarTemporalmente(
+        Vector3 posicion,
+        float duracion = 2f
+    )
+    {
+        if (!IsOwner)
+            return;
+
+        if (rutinaEnfoque != null)
+        {
+            StopCoroutine(rutinaEnfoque);
+        }
+
+        rutinaEnfoque =
+            StartCoroutine(
+                RutinaEnfoque(posicion, duracion)
             );
+    }
+
+    private IEnumerator RutinaEnfoque(
+        Vector3 posicion,
+        float duracion
+    )
+    {
+        puntoEnfoque = posicion;
+        enfoqueActivo = true;
+
+        yield return new WaitForSeconds(duracion);
+
+        enfoqueActivo = false;
+        rutinaEnfoque = null;
     }
 }

@@ -57,9 +57,24 @@ public class NetworkPlayerSetup : NetworkBehaviour
             spriteJugador.color = Color.white;
         }
 
-        bool esElian =
+        bool esElian;
+
+        #if UNITY_EDITOR
+        if (RolPruebaJugador.Instancia != null)
+        {
+            esElian = RolPruebaJugador.Instancia.EsElian();
+        }
+        else
+        {
+            esElian =
+                OwnerClientId ==
+                NetworkManager.ServerClientId;
+        }
+        #else
+        esElian =
             OwnerClientId ==
             NetworkManager.ServerClientId;
+        #endif
 
         if (esElian)
         {
