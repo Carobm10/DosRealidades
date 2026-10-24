@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalUI : MonoBehaviour
 {
+    [Header("Navegacion del menu")]
+    [SerializeField] private GameObject menuPrincipal;
+    [SerializeField] private GameObject panelNuevaPartida;
+
     [Header("Multijugador")]
     [SerializeField] private GestorMultijugador gestorMultijugador;
 
@@ -74,6 +78,8 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public void AbrirVentanaUnirse()
     {
+        panelNuevaPartida.SetActive(false);
+
         fondoOscuroCrear.SetActive(false);
         fondoOscuroUnirse.SetActive(true);
 
@@ -87,6 +93,8 @@ public class MenuPrincipalUI : MonoBehaviour
     public void CerrarVentanaUnirse()
     {
         fondoOscuroUnirse.SetActive(false);
+
+        panelNuevaPartida.SetActive(true);
 
         campoCodigoPartida.text = "";
         textoEstadoUnirse.text = "";
@@ -136,6 +144,8 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public async void AbrirVentanaCrear()
     {
+        panelNuevaPartida.SetActive(false);
+
         fondoOscuroUnirse.SetActive(false);
         fondoOscuroCrear.SetActive(true);
 
@@ -155,8 +165,7 @@ public class MenuPrincipalUI : MonoBehaviour
 
         textoCodigoGenerado.text = codigo;
 
-        textoEsperandoJugador.text =
-            "Esperando jugador";
+        textoEsperandoJugador.text = "Esperando jugador";
 
         if (animacionEspera != null)
         {
@@ -170,6 +179,7 @@ public class MenuPrincipalUI : MonoBehaviour
     public void CerrarVentanaCrear()
     {
         fondoOscuroCrear.SetActive(false);
+        panelNuevaPartida.SetActive(true);
 
         if (animacionEspera != null)
         {
@@ -325,5 +335,17 @@ public class MenuPrincipalUI : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    public void AbrirNuevaPartida()
+    {
+        menuPrincipal.SetActive(false);
+        panelNuevaPartida.SetActive(true);
+    }
+
+    public void VolverMenuPrincipal()
+    {
+        panelNuevaPartida.SetActive(false);
+        menuPrincipal.SetActive(true);
     }
 }
