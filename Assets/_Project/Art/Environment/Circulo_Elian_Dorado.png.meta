@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: 6a4ab2e99fb051b49ad919096dadd942
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5952271572974440562
+    second: Circulo_Elian_Dorado_0
+  - first:
+      213: 5673611536605420999
+    second: Circulo_Elian_Dorado_1
+  - first:
+      213: -9199118579519258789
+    second: Circulo_Elian_Dorado_2
+  - first:
+      213: 1694284257116598460
+    second: Circulo_Elian_Dorado_3
+  - first:
+      213: 2824701408417499628
+    second: Circulo_Elian_Dorado_4
+  - first:
+      213: -3276653007525717114
+    second: Circulo_Elian_Dorado_5
+  - first:
+      213: 7705705315948057395
+    second: Circulo_Elian_Dorado_6
+  - first:
+      213: 3658679863954341051
+    second: Circulo_Elian_Dorado_7
+  - first:
+      213: 3257680528829955274
+    second: Circulo_Elian_Dorado_8
+  - first:
+      213: -4553944854954914327
+    second: Circulo_Elian_Dorado_9
+  - first:
+      213: 1991216569056916810
+    second: Circulo_Elian_Dorado_10
+  - first:
+      213: -9051136787486329188
+    second: Circulo_Elian_Dorado_11
+  - first:
+      213: -3070450279617998846
+    second: Circulo_Elian_Dorado_12
+  - first:
+      213: -7127350482088446458
+    second: Circulo_Elian_Dorado_13
+  - first:
+      213: 9075202933759634551
+    second: Circulo_Elian_Dorado_14
+  - first:
+      213: 1992205308302115338
+    second: Circulo_Elian_Dorado_15
+  - first:
+      213: 729431954617909608
+    second: Circulo_Elian_Dorado_16
+  - first:
+      213: -7779285227233285485
+    second: Circulo_Elian_Dorado_17
+  - first:
+      213: 5669702200749149719
+    second: Circulo_Elian_Dorado_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 450
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fe3367a88456da0800000000000000
+      internalID: -5952271572974440562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 454
+        width: 83
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd9ce8e1a7bcbe40800000000000000
+      internalID: 5673611536605420999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 451
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ffe05146a265080800000000000000
+      internalID: -9199118579519258789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 471
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0b8fd1e8e438710800000000000000
+      internalID: 1694284257116598460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 457
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9454d07fa533720800000000000000
+      internalID: 2824701408417499628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 23
+        width: 345
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bd63a337df682d0800000000000000
+      internalID: -3276653007525717114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 430
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3335ce4882a20fa60800000000000000
+      internalID: 7705705315948057395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc7fd5a3fd36c230800000000000000
+      internalID: 3658679863954341051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 81
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accbd985e2b953d20800000000000000
+      internalID: 3257680528829955274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edc1b148432dc0c0800000000000000
+      internalID: -4553944854954914327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 45
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45728d6be832ab10800000000000000
+      internalID: 1991216569056916810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 54
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c963868fb07e36280800000000000000
+      internalID: -9051136787486329188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 42
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200ded61db19365d0800000000000000
+      internalID: -3070450279617998846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 51
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606b865bf70961d90800000000000000
+      internalID: -7127350482088446458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 57
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c635b5cf891fd70800000000000000
+      internalID: 9075202933759634551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 40
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02cef83c2cb5ab10800000000000000
+      internalID: 1992205308302115338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 44
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861c1de7f767f1a00800000000000000
+      internalID: 729431954617909608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 42
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ae0506d4d6a0490800000000000000
+      internalID: -7779285227233285485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Elian_Dorado_18
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e47e9bc14deae40800000000000000
+      internalID: 5669702200749149719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Circulo_Elian_Dorado_0: -5952271572974440562
+      Circulo_Elian_Dorado_1: 5673611536605420999
+      Circulo_Elian_Dorado_10: 1991216569056916810
+      Circulo_Elian_Dorado_11: -9051136787486329188
+      Circulo_Elian_Dorado_12: -3070450279617998846
+      Circulo_Elian_Dorado_13: -7127350482088446458
+      Circulo_Elian_Dorado_14: 9075202933759634551
+      Circulo_Elian_Dorado_15: 1992205308302115338
+      Circulo_Elian_Dorado_16: 729431954617909608
+      Circulo_Elian_Dorado_17: -7779285227233285485
+      Circulo_Elian_Dorado_18: 5669702200749149719
+      Circulo_Elian_Dorado_2: -9199118579519258789
+      Circulo_Elian_Dorado_3: 1694284257116598460
+      Circulo_Elian_Dorado_4: 2824701408417499628
+      Circulo_Elian_Dorado_5: -3276653007525717114
+      Circulo_Elian_Dorado_6: 7705705315948057395
+      Circulo_Elian_Dorado_7: 3658679863954341051
+      Circulo_Elian_Dorado_8: 3257680528829955274
+      Circulo_Elian_Dorado_9: -4553944854954914327
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

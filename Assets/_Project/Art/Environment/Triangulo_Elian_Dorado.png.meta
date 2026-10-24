@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: ad8f1a69ff582544791f85a3de8741cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8347470116145610859
+    second: Triangulo_Elian_Dorado_0
+  - first:
+      213: 6010906970150613912
+    second: Triangulo_Elian_Dorado_1
+  - first:
+      213: -5330346816372529375
+    second: Triangulo_Elian_Dorado_2
+  - first:
+      213: -5580062355556848490
+    second: Triangulo_Elian_Dorado_3
+  - first:
+      213: -572593954706112387
+    second: Triangulo_Elian_Dorado_4
+  - first:
+      213: -5283292210715816809
+    second: Triangulo_Elian_Dorado_5
+  - first:
+      213: -6967824297557595338
+    second: Triangulo_Elian_Dorado_6
+  - first:
+      213: -9016758727790801419
+    second: Triangulo_Elian_Dorado_7
+  - first:
+      213: 8369009590765562382
+    second: Triangulo_Elian_Dorado_8
+  - first:
+      213: 4735589561035653993
+    second: Triangulo_Elian_Dorado_9
+  - first:
+      213: -4361707910551350465
+    second: Triangulo_Elian_Dorado_10
+  - first:
+      213: 3440750532440534492
+    second: Triangulo_Elian_Dorado_11
+  - first:
+      213: 3596567979636216340
+    second: Triangulo_Elian_Dorado_12
+  - first:
+      213: 8329878973540412818
+    second: Triangulo_Elian_Dorado_13
+  - first:
+      213: -7538153127096007039
+    second: Triangulo_Elian_Dorado_14
+  - first:
+      213: -3797329421602129798
+    second: Triangulo_Elian_Dorado_15
+  - first:
+      213: 5440418847406049313
+    second: Triangulo_Elian_Dorado_16
+  - first:
+      213: 1052361711458448209
+    second: Triangulo_Elian_Dorado_17
+  - first:
+      213: -5014740859507182119
+    second: Triangulo_Elian_Dorado_18
+  - first:
+      213: -7198170274169353909
+    second: Triangulo_Elian_Dorado_19
+  - first:
+      213: 1106729247211166964
+    second: Triangulo_Elian_Dorado_20
+  - first:
+      213: -2033754055900300381
+    second: Triangulo_Elian_Dorado_21
+  - first:
+      213: 5805421558000309768
+    second: Triangulo_Elian_Dorado_22
+  - first:
+      213: 926844366806707872
+    second: Triangulo_Elian_Dorado_23
+  - first:
+      213: 2787709456184561522
+    second: Triangulo_Elian_Dorado_24
+  - first:
+      213: 326507186299667914
+    second: Triangulo_Elian_Dorado_25
+  - first:
+      213: -6107962619562360003
+    second: Triangulo_Elian_Dorado_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_0
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 480
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fb3f9f724d72c80800000000000000
+      internalID: -8347470116145610859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 475
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8933fbdca080b6350800000000000000
+      internalID: 6010906970150613912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 23
+        width: 345
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1272b78dfcdc606b0800000000000000
+      internalID: -5330346816372529375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 424
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c21802ad2af82b0800000000000000
+      internalID: -5580062355556848490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70c439f4dcbd08f0800000000000000
+      internalID: -572593954706112387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 88
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c02b7f9b9fda6b0800000000000000
+      internalID: -5283292210715816809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 79
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b6ebee7b05d4f90800000000000000
+      internalID: -6967824297557595338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 74
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd40acb5b90ed280800000000000000
+      internalID: -9016758727790801419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 74
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a2b63c1e1b42470800000000000000
+      internalID: 8369009590765562382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 79
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96304939d9138b140800000000000000
+      internalID: 4735589561035653993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_10
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 64
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f335391c3c91873c0800000000000000
+      internalID: -4361707910551350465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 66
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddaade116000cf20800000000000000
+      internalID: 3440750532440534492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 55
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412d2c4a58399e130800000000000000
+      internalID: 3596567979636216340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_13
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 64
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d2fd7facca99370800000000000000
+      internalID: 8329878973540412818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_14
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 57
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18641f47ba9136790800000000000000
+      internalID: -7538153127096007039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 63
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78f34a920d2d4bc0800000000000000
+      internalID: -3797329421602129798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 54
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1284afcfd10408b40800000000000000
+      internalID: 5440418847406049313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_17
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153f3b2a66dba9e00800000000000000
+      internalID: 1052361711458448209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_18
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5ff6ce1cf086ab0800000000000000
+      internalID: -5014740859507182119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 44
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b490c5fe546fa1c90800000000000000
+      internalID: -7198170274169353909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 44
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc9e8af264eb5f00800000000000000
+      internalID: 1106729247211166964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_21
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 47
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab7d812677a6c3e0800000000000000
+      internalID: -2033754055900300381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_22
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 46
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806d0080620019050800000000000000
+      internalID: 5805421558000309768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aee59d7a00dcdc00800000000000000
+      internalID: 926844366806707872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_24
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fc0e00bfeefa620800000000000000
+      internalID: 2787709456184561522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac501085e8cf78400800000000000000
+      internalID: 326507186299667914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Elian_Dorado_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 44
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d330f9fdb582c3ba0800000000000000
+      internalID: -6107962619562360003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Triangulo_Elian_Dorado_0: -8347470116145610859
+      Triangulo_Elian_Dorado_1: 6010906970150613912
+      Triangulo_Elian_Dorado_10: -4361707910551350465
+      Triangulo_Elian_Dorado_11: 3440750532440534492
+      Triangulo_Elian_Dorado_12: 3596567979636216340
+      Triangulo_Elian_Dorado_13: 8329878973540412818
+      Triangulo_Elian_Dorado_14: -7538153127096007039
+      Triangulo_Elian_Dorado_15: -3797329421602129798
+      Triangulo_Elian_Dorado_16: 5440418847406049313
+      Triangulo_Elian_Dorado_17: 1052361711458448209
+      Triangulo_Elian_Dorado_18: -5014740859507182119
+      Triangulo_Elian_Dorado_19: -7198170274169353909
+      Triangulo_Elian_Dorado_2: -5330346816372529375
+      Triangulo_Elian_Dorado_20: 1106729247211166964
+      Triangulo_Elian_Dorado_21: -2033754055900300381
+      Triangulo_Elian_Dorado_22: 5805421558000309768
+      Triangulo_Elian_Dorado_23: 926844366806707872
+      Triangulo_Elian_Dorado_24: 2787709456184561522
+      Triangulo_Elian_Dorado_25: 326507186299667914
+      Triangulo_Elian_Dorado_26: -6107962619562360003
+      Triangulo_Elian_Dorado_3: -5580062355556848490
+      Triangulo_Elian_Dorado_4: -572593954706112387
+      Triangulo_Elian_Dorado_5: -5283292210715816809
+      Triangulo_Elian_Dorado_6: -6967824297557595338
+      Triangulo_Elian_Dorado_7: -9016758727790801419
+      Triangulo_Elian_Dorado_8: 8369009590765562382
+      Triangulo_Elian_Dorado_9: 4735589561035653993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

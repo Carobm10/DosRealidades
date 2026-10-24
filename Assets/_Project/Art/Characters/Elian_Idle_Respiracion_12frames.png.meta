@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 6c2d2c811771d664a8c0e5a7abf54f05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3537372762079052515
+    second: Elian_Idle_Respiracion_12frames_0
+  - first:
+      213: 2232612833097238143
+    second: Elian_Idle_Respiracion_12frames_1
+  - first:
+      213: -1646032517472813889
+    second: Elian_Idle_Respiracion_12frames_2
+  - first:
+      213: -6861412535676202303
+    second: Elian_Idle_Respiracion_12frames_3
+  - first:
+      213: -2698500054714789205
+    second: Elian_Idle_Respiracion_12frames_4
+  - first:
+      213: -520613729525772179
+    second: Elian_Idle_Respiracion_12frames_5
+  - first:
+      213: -377694076036688754
+    second: Elian_Idle_Respiracion_12frames_6
+  - first:
+      213: -373076228511254912
+    second: Elian_Idle_Respiracion_12frames_7
+  - first:
+      213: -3216347749802431879
+    second: Elian_Idle_Respiracion_12frames_8
+  - first:
+      213: 4591003898869354092
+    second: Elian_Idle_Respiracion_12frames_9
+  - first:
+      213: 5237946056617798154
+    second: Elian_Idle_Respiracion_12frames_10
+  - first:
+      213: -4255793806601872362
+    second: Elian_Idle_Respiracion_12frames_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 191
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e24dd909c5471130800000000000000
+      internalID: 3537372762079052515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 24
+        width: 191
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f764db5fa85dbfe10800000000000000
+      internalID: 2232612833097238143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 24
+        width: 191
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc7a4b752e1829e0800000000000000
+      internalID: -1646032517472813889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 23
+        width: 191
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c29b91f6ad57c0a0800000000000000
+      internalID: -6861412535676202303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 24
+        width: 191
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba25a5c5f700d8ad0800000000000000
+      internalID: -2698500054714789205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_5
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 24
+        width: 191
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60dc62429866c8f0800000000000000
+      internalID: -520613729525772179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_6
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 24
+        width: 191
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84501c2d3922caf0800000000000000
+      internalID: -377694076036688754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_7
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 24
+        width: 191
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086b175952192daf0800000000000000
+      internalID: -373076228511254912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_8
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 24
+        width: 191
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a26e233cc3d53d0800000000000000
+      internalID: -3216347749802431879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_9
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 23
+        width: 191
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e8a8ac8b586bf30800000000000000
+      internalID: 4591003898869354092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_10
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 24
+        width: 191
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0aac59cf2ce0b840800000000000000
+      internalID: 5237946056617798154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Respiracion_12frames_11
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 24
+        width: 191
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c1030c41260f4c0800000000000000
+      internalID: -4255793806601872362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elian_Idle_Respiracion_12frames_0: 3537372762079052515
+      Elian_Idle_Respiracion_12frames_1: 2232612833097238143
+      Elian_Idle_Respiracion_12frames_10: 5237946056617798154
+      Elian_Idle_Respiracion_12frames_11: -4255793806601872362
+      Elian_Idle_Respiracion_12frames_2: -1646032517472813889
+      Elian_Idle_Respiracion_12frames_3: -6861412535676202303
+      Elian_Idle_Respiracion_12frames_4: -2698500054714789205
+      Elian_Idle_Respiracion_12frames_5: -520613729525772179
+      Elian_Idle_Respiracion_12frames_6: -377694076036688754
+      Elian_Idle_Respiracion_12frames_7: -373076228511254912
+      Elian_Idle_Respiracion_12frames_8: -3216347749802431879
+      Elian_Idle_Respiracion_12frames_9: 4591003898869354092
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

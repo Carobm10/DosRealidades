@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: b0d0b2482775930489965c098c3a4cf5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5044630683024857794
+    second: Lia_Jump_Down_0
+  - first:
+      213: 1570964769706150112
+    second: Lia_Jump_Down_1
+  - first:
+      213: -7788266776474880897
+    second: Lia_Jump_Down_2
+  - first:
+      213: -6710814951885112261
+    second: Lia_Jump_Down_3
+  - first:
+      213: -1869158186800386000
+    second: Lia_Jump_Down_4
+  - first:
+      213: 3095489033652273611
+    second: Lia_Jump_Down_5
+  - first:
+      213: -1866174554693339101
+    second: Lia_Jump_Down_6
+  - first:
+      213: -5287758110959096516
+    second: Lia_Jump_Down_7
+  - first:
+      213: -9027203099632260855
+    second: Lia_Jump_Down_8
+  - first:
+      213: 6028996981614471350
+    second: Lia_Jump_Down_9
+  - first:
+      213: -4866457480383128003
+    second: Lia_Jump_Down_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lia_Jump_Down_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1
+        width: 191
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3564431f1fddf9b0800000000000000
+      internalID: -5044630683024857794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1
+        width: 198
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e80dfc72203dc510800000000000000
+      internalID: 1570964769706150112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 3
+        width: 183
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74fc3c71a48ae390800000000000000
+      internalID: -7788266776474880897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 89
+        width: 189
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cf18f4b556ed2a0800000000000000
+      internalID: -6710814951885112261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_4
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 107
+        width: 193
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030ffb6488a6f06e0800000000000000
+      internalID: -1869158186800386000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_5
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 74
+        width: 191
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc106f020e265fa20800000000000000
+      internalID: 3095489033652273611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_6
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 0
+        width: 201
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32871a241240a16e0800000000000000
+      internalID: -1866174554693339101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Jump_Down_7
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1
+        width: 189
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3da71a830c1e96b0800000000000000
+      internalID: -5287758110959096516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 84bef524581e0f644bf17862525d114a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lia_Jump_Down_0: -5044630683024857794
+      Lia_Jump_Down_1: 1570964769706150112
+      Lia_Jump_Down_10: -4866457480383128003
+      Lia_Jump_Down_2: -7788266776474880897
+      Lia_Jump_Down_3: -6710814951885112261
+      Lia_Jump_Down_4: -1869158186800386000
+      Lia_Jump_Down_5: 3095489033652273611
+      Lia_Jump_Down_6: -1866174554693339101
+      Lia_Jump_Down_7: -5287758110959096516
+      Lia_Jump_Down_8: -9027203099632260855
+      Lia_Jump_Down_9: 6028996981614471350
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

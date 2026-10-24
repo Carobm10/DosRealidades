@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: a72d30ce06af9d9469fdbd89ce150d42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6443802288016316182
+    second: Lia_Idle_Respiracion_12frames_0
+  - first:
+      213: -3868357149533204634
+    second: Lia_Idle_Respiracion_12frames_1
+  - first:
+      213: 512324234644134872
+    second: Lia_Idle_Respiracion_12frames_2
+  - first:
+      213: -5183477659834593453
+    second: Lia_Idle_Respiracion_12frames_3
+  - first:
+      213: 9182987863007774475
+    second: Lia_Idle_Respiracion_12frames_4
+  - first:
+      213: -991933351208311786
+    second: Lia_Idle_Respiracion_12frames_5
+  - first:
+      213: 6128349738682730083
+    second: Lia_Idle_Respiracion_12frames_6
+  - first:
+      213: 2832254200190782501
+    second: Lia_Idle_Respiracion_12frames_7
+  - first:
+      213: -819684936150902742
+    second: Lia_Idle_Respiracion_12frames_8
+  - first:
+      213: 2600341707676933496
+    second: Lia_Idle_Respiracion_12frames_9
+  - first:
+      213: 3010539994428054876
+    second: Lia_Idle_Respiracion_12frames_10
+  - first:
+      213: -6527681233297040452
+    second: Lia_Idle_Respiracion_12frames_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 23
+        width: 185
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617df0c4a0cfc6950800000000000000
+      internalID: 6443802288016316182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 23
+        width: 185
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f0bbdfaa5d05ac0800000000000000
+      internalID: -3868357149533204634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_2
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 23
+        width: 185
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db99cf4d242c1700800000000000000
+      internalID: 512324234644134872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 22
+        width: 185
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fc26818869018b0800000000000000
+      internalID: -5183477659834593453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_4
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 23
+        width: 185
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b074d4fcec6807f70800000000000000
+      internalID: 9182987863007774475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_5
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 23
+        width: 185
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614ad506fd1fb32f0800000000000000
+      internalID: -991933351208311786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_6
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 23
+        width: 185
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366ca813e954c0550800000000000000
+      internalID: 6128349738682730083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_7
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 23
+        width: 185
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ccafb60303e4720800000000000000
+      internalID: 2832254200190782501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_8
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 23
+        width: 185
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a289cf8b4e4ef94f0800000000000000
+      internalID: -819684936150902742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_9
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 22
+        width: 185
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d57b48105461420800000000000000
+      internalID: 2600341707676933496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_10
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 23
+        width: 185
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d9df5ac2697c920800000000000000
+      internalID: 3010539994428054876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lia_Idle_Respiracion_12frames_11
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 23
+        width: 185
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb9852e0840965a0800000000000000
+      internalID: -6527681233297040452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lia_Idle_Respiracion_12frames_0: 6443802288016316182
+      Lia_Idle_Respiracion_12frames_1: -3868357149533204634
+      Lia_Idle_Respiracion_12frames_10: 3010539994428054876
+      Lia_Idle_Respiracion_12frames_11: -6527681233297040452
+      Lia_Idle_Respiracion_12frames_2: 512324234644134872
+      Lia_Idle_Respiracion_12frames_3: -5183477659834593453
+      Lia_Idle_Respiracion_12frames_4: 9182987863007774475
+      Lia_Idle_Respiracion_12frames_5: -991933351208311786
+      Lia_Idle_Respiracion_12frames_6: 6128349738682730083
+      Lia_Idle_Respiracion_12frames_7: 2832254200190782501
+      Lia_Idle_Respiracion_12frames_8: -819684936150902742
+      Lia_Idle_Respiracion_12frames_9: 2600341707676933496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
