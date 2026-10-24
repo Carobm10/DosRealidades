@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
 public class CamaraJugadorLocal : NetworkBehaviour
 {
@@ -10,14 +11,11 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     private void Awake()
     {
-        // Si olvidamos asignar la cámara en el Inspector,
-        // intenta encontrarla automáticamente entre los hijos.
         if (camaraJugador == null)
         {
             camaraJugador = GetComponentInChildren<Camera>(true);
         }
 
-        // Busca también el Audio Listener automáticamente.
         if (audioListenerJugador == null && camaraJugador != null)
         {
             audioListenerJugador =
@@ -27,22 +25,37 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        SceneManager.sceneLoaded += AlCargarEscena;
+
+        ActualizarCamara(SceneManager.GetActiveScene().name);
+    }
+
+    public override void OnNetworkDespawn()
+    {
+        SceneManager.sceneLoaded -= AlCargarEscena;
+    }
+
+    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    {
+        ActualizarCamara(escena.name);
+    }
+
+    private void ActualizarCamara(string nombreEscena)
+    {
         if (camaraJugador == null)
-        {
-            Debug.LogError(
-                "No se encontró CamaraJugador dentro del NetworkPlayer."
-            );
-
             return;
-        }
 
-        bool esJugadorLocal = IsOwner;
+        bool escenaJugable =
+            nombreEscena != "01_MainMenu";
 
-        camaraJugador.gameObject.SetActive(esJugadorLocal);
+        bool activar =
+            IsOwner && escenaJugable;
+
+        camaraJugador.gameObject.SetActive(activar);
 
         if (audioListenerJugador != null)
         {
-            audioListenerJugador.enabled = esJugadorLocal;
+            audioListenerJugador.enabled = activar;
         }
     }
 }

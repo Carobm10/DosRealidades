@@ -1,41 +1,63 @@
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
 public class NetworkPlayerSetup : NetworkBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    [Header("Visual del jugador")]
+    [SerializeField] private SpriteRenderer spriteJugador;
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteJugador == null)
+        {
+            spriteJugador = GetComponent<SpriteRenderer>();
+        }
     }
 
     public override void OnNetworkSpawn()
     {
-        // Jugador 0 = Host
+        // Colores provisionales mientras llega el arte final.
         if (OwnerClientId == 0)
         {
-            spriteRenderer.color = Color.blue;
-
-            if (IsServer)
-            {
-                transform.position = new Vector3(-2f, 0f, 0f);
-            }
+            spriteJugador.color = Color.blue;
         }
-        // Jugador 1 = Client
         else
         {
-            spriteRenderer.color = Color.magenta;
-
-            if (IsServer)
-            {
-                transform.position = new Vector3(2f, 0f, 0f);
-            }
+            spriteJugador.color = Color.magenta;
         }
 
+        SceneManager.sceneLoaded += AlCargarEscena;
+
+        ActualizarVisibilidad(SceneManager.GetActiveScene().name);
+
         Debug.Log(
-            $"Jugador creado | ClientId: {OwnerClientId} | " +
-            $"IsOwner: {IsOwner} | IsServer: {IsServer}"
+            "Jugador creado | ClientId: " + OwnerClientId +
+            " | IsOwner: " + IsOwner +
+            " | IsServer: " + IsServer
         );
+    }
+
+    public override void OnNetworkDespawn()
+    {
+        SceneManager.sceneLoaded -= AlCargarEscena;
+    }
+
+    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    {
+        ActualizarVisibilidad(escena.name);
+    }
+
+    private void ActualizarVisibilidad(string nombreEscena)
+    {
+        // En el Main Menu el jugador existe en red,
+        // pero no debe verse.
+        bool mostrarJugador =
+            nombreEscena != "01_MainMenu";
+
+        if (spriteJugador != null)
+        {
+            spriteJugador.enabled = mostrarJugador;
+        }
     }
 }
