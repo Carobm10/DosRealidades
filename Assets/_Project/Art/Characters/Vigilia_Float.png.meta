@@ -1,0 +1,2290 @@
+fileFormatVersion: 2
+guid: 260441ff04c82084eb55e9226d5a8607
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2577041269294482133
+    second: Vigilia_Float_0
+  - first:
+      213: 3987124314156827798
+    second: Vigilia_Float_1
+  - first:
+      213: 6267097801678379303
+    second: Vigilia_Float_2
+  - first:
+      213: 3884380758858215897
+    second: Vigilia_Float_3
+  - first:
+      213: -1279855036350426598
+    second: Vigilia_Float_4
+  - first:
+      213: -1749803265259717199
+    second: Vigilia_Float_5
+  - first:
+      213: -5162251129936603392
+    second: Vigilia_Float_6
+  - first:
+      213: -4957759639035859040
+    second: Vigilia_Float_7
+  - first:
+      213: -432526447923561241
+    second: Vigilia_Float_8
+  - first:
+      213: 8981152554439947402
+    second: Vigilia_Float_9
+  - first:
+      213: 7670834781976361994
+    second: Vigilia_Float_10
+  - first:
+      213: -2069584418873899422
+    second: Vigilia_Float_11
+  - first:
+      213: -5435418009823970910
+    second: Vigilia_Float_12
+  - first:
+      213: -5363853539610927949
+    second: Vigilia_Float_13
+  - first:
+      213: 8937074932126485116
+    second: Vigilia_Float_14
+  - first:
+      213: 5206694922106082176
+    second: Vigilia_Float_15
+  - first:
+      213: 1963090563038631153
+    second: Vigilia_Float_16
+  - first:
+      213: 6307611836186658054
+    second: Vigilia_Float_17
+  - first:
+      213: 5136248940201419320
+    second: Vigilia_Float_18
+  - first:
+      213: -8017388682969665243
+    second: Vigilia_Float_19
+  - first:
+      213: -1871843667063484490
+    second: Vigilia_Float_20
+  - first:
+      213: 3635428722421359998
+    second: Vigilia_Float_21
+  - first:
+      213: 8849212749090991937
+    second: Vigilia_Float_22
+  - first:
+      213: 2721721810249834370
+    second: Vigilia_Float_23
+  - first:
+      213: 8567975520571593452
+    second: Vigilia_Float_24
+  - first:
+      213: 6919435588417657019
+    second: Vigilia_Float_25
+  - first:
+      213: 1925360804623283113
+    second: Vigilia_Float_26
+  - first:
+      213: 1688621409465323651
+    second: Vigilia_Float_27
+  - first:
+      213: -2258276708593684914
+    second: Vigilia_Float_28
+  - first:
+      213: -332824696925621247
+    second: Vigilia_Float_29
+  - first:
+      213: 5521159811874217316
+    second: Vigilia_Float_30
+  - first:
+      213: 8046453299316466450
+    second: Vigilia_Float_31
+  - first:
+      213: -7225524833154884922
+    second: Vigilia_Float_32
+  - first:
+      213: -8077496318114997433
+    second: Vigilia_Float_33
+  - first:
+      213: 2402013750948403153
+    second: Vigilia_Float_34
+  - first:
+      213: -1647987186126898961
+    second: Vigilia_Float_35
+  - first:
+      213: -7200998839507499078
+    second: Vigilia_Float_36
+  - first:
+      213: -5209241327909076376
+    second: Vigilia_Float_37
+  - first:
+      213: -3060822010899316108
+    second: Vigilia_Float_38
+  - first:
+      213: 1899237707400650710
+    second: Vigilia_Float_39
+  - first:
+      213: -6263625720253974990
+    second: Vigilia_Float_40
+  - first:
+      213: -8870967938383642722
+    second: Vigilia_Float_41
+  - first:
+      213: -1289080024019093731
+    second: Vigilia_Float_42
+  - first:
+      213: 5313927646247884790
+    second: Vigilia_Float_43
+  - first:
+      213: -640419635536793162
+    second: Vigilia_Float_44
+  - first:
+      213: 522431616506182189
+    second: Vigilia_Float_45
+  - first:
+      213: 207107704612876363
+    second: Vigilia_Float_46
+  - first:
+      213: 40259249780306068
+    second: Vigilia_Float_47
+  - first:
+      213: -4377658388225991399
+    second: Vigilia_Float_48
+  - first:
+      213: -7008844253544040633
+    second: Vigilia_Float_49
+  - first:
+      213: -424071349084944149
+    second: Vigilia_Float_50
+  - first:
+      213: -4807513846247240652
+    second: Vigilia_Float_51
+  - first:
+      213: 690402878253720989
+    second: Vigilia_Float_52
+  - first:
+      213: 5214819496044675978
+    second: Vigilia_Float_53
+  - first:
+      213: 5443273135037871062
+    second: Vigilia_Float_54
+  - first:
+      213: -4574000632067288491
+    second: Vigilia_Float_55
+  - first:
+      213: -3320944075017729123
+    second: Vigilia_Float_56
+  - first:
+      213: 7463485914921541814
+    second: Vigilia_Float_57
+  - first:
+      213: 4868555501658417481
+    second: Vigilia_Float_58
+  - first:
+      213: -5463891766563874445
+    second: Vigilia_Float_59
+  - first:
+      213: 7349189603488994878
+    second: Vigilia_Float_60
+  - first:
+      213: 896509886349783546
+    second: Vigilia_Float_61
+  - first:
+      213: 2422131102182687313
+    second: Vigilia_Float_62
+  - first:
+      213: 7383124173600001820
+    second: Vigilia_Float_63
+  - first:
+      213: 990764397532249024
+    second: Vigilia_Float_64
+  - first:
+      213: -5640649589203146900
+    second: Vigilia_Float_65
+  - first:
+      213: -3191587316049917771
+    second: Vigilia_Float_66
+  - first:
+      213: -1851737748830437600
+    second: Vigilia_Float_67
+  - first:
+      213: -3512083582912052791
+    second: Vigilia_Float_68
+  - first:
+      213: -1447314712109007484
+    second: Vigilia_Float_69
+  - first:
+      213: -8413837435513745062
+    second: Vigilia_Float_70
+  - first:
+      213: -8387697529213366306
+    second: Vigilia_Float_71
+  - first:
+      213: -3151168823745051646
+    second: Vigilia_Float_72
+  - first:
+      213: 6111230424041200393
+    second: Vigilia_Float_73
+  - first:
+      213: 7625293600494815347
+    second: Vigilia_Float_74
+  - first:
+      213: 8206624537516304852
+    second: Vigilia_Float_75
+  - first:
+      213: -1861948055124089881
+    second: Vigilia_Float_76
+  - first:
+      213: -393605916852717985
+    second: Vigilia_Float_77
+  - first:
+      213: -2460599885720099736
+    second: Vigilia_Float_78
+  - first:
+      213: -3702381034083479225
+    second: Vigilia_Float_79
+  - first:
+      213: -3498596228154353865
+    second: Vigilia_Float_80
+  - first:
+      213: -7028090696029837982
+    second: Vigilia_Float_81
+  - first:
+      213: 7550596427637393090
+    second: Vigilia_Float_82
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vigilia_Float_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1148
+        width: 183
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2c1d3716d73c320800000000000000
+      internalID: 2577041269294482133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1139
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69404a4607c155730800000000000000
+      internalID: 3987124314156827798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1152
+        width: 185
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729dba10f3439f650800000000000000
+      internalID: 6267097801678379303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1142
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d13b1848b718e530800000000000000
+      internalID: 3884380758858215897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1154
+        width: 187
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12965a10aa0d3ee0800000000000000
+      internalID: -1279855036350426598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_5
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1149
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd306b733377b7e0800000000000000
+      internalID: -1749803265259717199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1154
+        width: 187
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00715c6b2fffb58b0800000000000000
+      internalID: -5162251129936603392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1063
+        width: 129
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afaf7920ef723bb0800000000000000
+      internalID: -4957759639035859040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1151
+        width: 187
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecfd8bbc7b5ff9f0800000000000000
+      internalID: -432526447923561241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_9
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1121
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a843cf00aa673ac70800000000000000
+      internalID: 8981152554439947402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1148
+        width: 184
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c7966a797447a60800000000000000
+      internalID: 7670834781976361994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_11
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1121
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2668658afeb5743e0800000000000000
+      internalID: -2069584418873899422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_12
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1146
+        width: 182
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a97eae3e148194b0800000000000000
+      internalID: -5435418009823970910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_13
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 1060
+        width: 145
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcd448ef93cf85b0800000000000000
+      internalID: -5363853539610927949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_14
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 1146
+        width: 181
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a8274dc4ed60c70800000000000000
+      internalID: 8937074932126485116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_15
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1060
+        width: 141
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08396f50275e14840800000000000000
+      internalID: 5206694922106082176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_16
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1140
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4d6d7577c4e3b10800000000000000
+      internalID: 1963090563038631153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1061
+        width: 135
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60584fcbb83298750800000000000000
+      internalID: 6307611836186658054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1063
+        width: 129
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832aea6b23f974740800000000000000
+      internalID: 5136248940201419320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_19
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1063
+        width: 125
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5213b5588738cb090800000000000000
+      internalID: -8017388682969665243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_20
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1061
+        width: 135
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfcd9d2a10e506e0800000000000000
+      internalID: -1871843667063484490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_21
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1060
+        width: 141
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e756d266923a37230800000000000000
+      internalID: 3635428722421359998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 773
+        width: 155
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f2d633c18beca70800000000000000
+      internalID: 8849212749090991937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 777
+        width: 158
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fdf5de09f75c520800000000000000
+      internalID: 2721721810249834370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_24
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 779
+        width: 160
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce299e3475097e670800000000000000
+      internalID: 8567975520571593452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_25
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 711
+        width: 125
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb894d5c106c60060800000000000000
+      internalID: 6919435588417657019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_26
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 778
+        width: 160
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3f708637148ba10800000000000000
+      internalID: 1925360804623283113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_27
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 711
+        width: 129
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380dc47a9303f6710800000000000000
+      internalID: 1688621409465323651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_28
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 775
+        width: 159
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e2cb36c4df8a0e0800000000000000
+      internalID: -2258276708593684914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_29
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 769
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104754793b1916bf0800000000000000
+      internalID: -332824696925621247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_30
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 772
+        width: 155
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ddce6b8991f9c40800000000000000
+      internalID: 5521159811874217316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_31
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 769
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213278fc4aebaaf60800000000000000
+      internalID: 8046453299316466450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_32
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 770
+        width: 154
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca1a0c5277c9bb90800000000000000
+      internalID: -7225524833154884922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_33
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 708
+        width: 145
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bda3425e7f6ef80800000000000000
+      internalID: -8077496318114997433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_34
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 770
+        width: 153
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d712e2b7caa55120800000000000000
+      internalID: 2402013750948403153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_35
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 708
+        width: 141
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8b288b26c2129e0800000000000000
+      internalID: -1647987186126898961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_36
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 709
+        width: 135
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c72f35b9e01c90800000000000000
+      internalID: -7200998839507499078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 711
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86202bcac9e05b7b0800000000000000
+      internalID: -5209241327909076376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_38
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 709
+        width: 135
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47246a71996c585d0800000000000000
+      internalID: -3060822010899316108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_39
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 708
+        width: 141
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df94add1a27b5a10800000000000000
+      internalID: 1899237707400650710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 449
+        width: 192
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236f242f7912319a0800000000000000
+      internalID: -6263625720253974990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 439
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f73c219adf3e480800000000000000
+      internalID: -8870967938383642722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_42
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 431
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d173a494c844c1ee0800000000000000
+      internalID: -1289080024019093731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_43
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 453
+        width: 194
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f79bb43a0ddeb940800000000000000
+      internalID: 5313927646247884790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_44
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 444
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1f4ac0cb5cc17f0800000000000000
+      internalID: -640419635536793162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_45
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 434
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ab84989cc004700800000000000000
+      internalID: 522431616506182189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_46
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 454
+        width: 196
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4072bb2c5bcfd200800000000000000
+      internalID: 207107704612876363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_47
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 449
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490341a03970f8000800000000000000
+      internalID: 40259249780306068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_48
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 441
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dd7c5c3ee6f33c0800000000000000
+      internalID: -4377658388225991399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_49
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 453
+        width: 196
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747387d29459bbe90800000000000000
+      internalID: -7008844253544040633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_50
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 451
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be80f56da556d1af0800000000000000
+      internalID: -424071349084944149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_51
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 447
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c49adc0a7484db0800000000000000
+      internalID: -4807513846247240652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_52
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 417
+        width: 194
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95683682cdc49900800000000000000
+      internalID: 690402878253720989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_53
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 417
+        width: 192
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83468dc3b2ce5840800000000000000
+      internalID: 5214819496044675978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_54
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 356
+        width: 192
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3fb5d93146a8b40800000000000000
+      internalID: 5443273135037871062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_55
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 446
+        width: 190
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5529733c8a2e580c0800000000000000
+      internalID: -4574000632067288491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_56
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 438
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b41a975f2a9e1d0800000000000000
+      internalID: -3320944075017729123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_57
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 432
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0a70975e0a39760800000000000000
+      internalID: 7463485914921541814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_58
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 357
+        width: 135
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949af9d1f65909340800000000000000
+      internalID: 4868555501658417481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_59
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 359
+        width: 129
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37957c2236b5c24b0800000000000000
+      internalID: -5463891766563874445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_60
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 359
+        width: 125
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3694f6b1019df560800000000000000
+      internalID: 7349189603488994878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 359
+        width: 129
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af13181edfa017c00800000000000000
+      internalID: 896509886349783546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_62
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 357
+        width: 135
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152460987632d9120800000000000000
+      internalID: 2422131102182687313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_63
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 356
+        width: 141
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f07048150267660800000000000000
+      internalID: 7383124173600001820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_64
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 356
+        width: 141
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb730368f6efbd00800000000000000
+      internalID: 990764397532249024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_65
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 69
+        width: 155
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67e715851368b1b0800000000000000
+      internalID: -5640649589203146900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_66
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 73
+        width: 158
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8c33dee3435b3d0800000000000000
+      internalID: -3191587316049917771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_67
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 75
+        width: 160
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fb7cf045e4d46e0800000000000000
+      internalID: -1851737748830437600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_68
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 7
+        width: 125
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1cb03d692924fc0800000000000000
+      internalID: -3512083582912052791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_69
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 74
+        width: 160
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dbb8200fa1aebe0800000000000000
+      internalID: -1447314712109007484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_70
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 7
+        width: 129
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51d15a4e6b0c3b80800000000000000
+      internalID: -8413837435513745062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_71
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 71
+        width: 159
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edfc0df7989e89b80800000000000000
+      internalID: -8387697529213366306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_72
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 65
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204046186acc444d0800000000000000
+      internalID: -3151168823745051646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_73
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 68
+        width: 155
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b198521b37fc450800000000000000
+      internalID: 6111230424041200393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_74
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 65
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3788d8d012c72d960800000000000000
+      internalID: 7625293600494815347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_75
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 66
+        width: 154
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9e9ab4989c3e170800000000000000
+      internalID: 8206624537516304852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_76
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 4
+        width: 145
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e36910eb180926e0800000000000000
+      internalID: -1861948055124089881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_77
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 66
+        width: 153
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5670880181a98af0800000000000000
+      internalID: -393605916852717985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_78
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 4
+        width: 141
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8646945d0713addd0800000000000000
+      internalID: -2460599885720099736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_79
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 135
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7419f48c0108e9cc0800000000000000
+      internalID: -3702381034083479225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_80
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7
+        width: 129
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7379650544d727fc0800000000000000
+      internalID: -3498596228154353865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_81
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 5
+        width: 135
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265e9e59fb4377e90800000000000000
+      internalID: -7028090696029837982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Float_82
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 4
+        width: 141
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c609a7327b19c860800000000000000
+      internalID: 7550596427637393090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vigilia_Float_0: 2577041269294482133
+      Vigilia_Float_1: 3987124314156827798
+      Vigilia_Float_10: 7670834781976361994
+      Vigilia_Float_11: -2069584418873899422
+      Vigilia_Float_12: -5435418009823970910
+      Vigilia_Float_13: -5363853539610927949
+      Vigilia_Float_14: 8937074932126485116
+      Vigilia_Float_15: 5206694922106082176
+      Vigilia_Float_16: 1963090563038631153
+      Vigilia_Float_17: 6307611836186658054
+      Vigilia_Float_18: 5136248940201419320
+      Vigilia_Float_19: -8017388682969665243
+      Vigilia_Float_2: 6267097801678379303
+      Vigilia_Float_20: -1871843667063484490
+      Vigilia_Float_21: 3635428722421359998
+      Vigilia_Float_22: 8849212749090991937
+      Vigilia_Float_23: 2721721810249834370
+      Vigilia_Float_24: 8567975520571593452
+      Vigilia_Float_25: 6919435588417657019
+      Vigilia_Float_26: 1925360804623283113
+      Vigilia_Float_27: 1688621409465323651
+      Vigilia_Float_28: -2258276708593684914
+      Vigilia_Float_29: -332824696925621247
+      Vigilia_Float_3: 3884380758858215897
+      Vigilia_Float_30: 5521159811874217316
+      Vigilia_Float_31: 8046453299316466450
+      Vigilia_Float_32: -7225524833154884922
+      Vigilia_Float_33: -8077496318114997433
+      Vigilia_Float_34: 2402013750948403153
+      Vigilia_Float_35: -1647987186126898961
+      Vigilia_Float_36: -7200998839507499078
+      Vigilia_Float_37: -5209241327909076376
+      Vigilia_Float_38: -3060822010899316108
+      Vigilia_Float_39: 1899237707400650710
+      Vigilia_Float_4: -1279855036350426598
+      Vigilia_Float_40: -6263625720253974990
+      Vigilia_Float_41: -8870967938383642722
+      Vigilia_Float_42: -1289080024019093731
+      Vigilia_Float_43: 5313927646247884790
+      Vigilia_Float_44: -640419635536793162
+      Vigilia_Float_45: 522431616506182189
+      Vigilia_Float_46: 207107704612876363
+      Vigilia_Float_47: 40259249780306068
+      Vigilia_Float_48: -4377658388225991399
+      Vigilia_Float_49: -7008844253544040633
+      Vigilia_Float_5: -1749803265259717199
+      Vigilia_Float_50: -424071349084944149
+      Vigilia_Float_51: -4807513846247240652
+      Vigilia_Float_52: 690402878253720989
+      Vigilia_Float_53: 5214819496044675978
+      Vigilia_Float_54: 5443273135037871062
+      Vigilia_Float_55: -4574000632067288491
+      Vigilia_Float_56: -3320944075017729123
+      Vigilia_Float_57: 7463485914921541814
+      Vigilia_Float_58: 4868555501658417481
+      Vigilia_Float_59: -5463891766563874445
+      Vigilia_Float_6: -5162251129936603392
+      Vigilia_Float_60: 7349189603488994878
+      Vigilia_Float_61: 896509886349783546
+      Vigilia_Float_62: 2422131102182687313
+      Vigilia_Float_63: 7383124173600001820
+      Vigilia_Float_64: 990764397532249024
+      Vigilia_Float_65: -5640649589203146900
+      Vigilia_Float_66: -3191587316049917771
+      Vigilia_Float_67: -1851737748830437600
+      Vigilia_Float_68: -3512083582912052791
+      Vigilia_Float_69: -1447314712109007484
+      Vigilia_Float_7: -4957759639035859040
+      Vigilia_Float_70: -8413837435513745062
+      Vigilia_Float_71: -8387697529213366306
+      Vigilia_Float_72: -3151168823745051646
+      Vigilia_Float_73: 6111230424041200393
+      Vigilia_Float_74: 7625293600494815347
+      Vigilia_Float_75: 8206624537516304852
+      Vigilia_Float_76: -1861948055124089881
+      Vigilia_Float_77: -393605916852717985
+      Vigilia_Float_78: -2460599885720099736
+      Vigilia_Float_79: -3702381034083479225
+      Vigilia_Float_8: -432526447923561241
+      Vigilia_Float_80: -3498596228154353865
+      Vigilia_Float_81: -7028090696029837982
+      Vigilia_Float_82: 7550596427637393090
+      Vigilia_Float_9: 8981152554439947402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

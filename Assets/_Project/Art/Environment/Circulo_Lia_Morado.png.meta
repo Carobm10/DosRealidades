@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: 235b492cd496c3443bb7f36591f93828
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1055999059277763147
+    second: Circulo_Lia_Morado_0
+  - first:
+      213: -2102712437012914780
+    second: Circulo_Lia_Morado_1
+  - first:
+      213: 5503987917252192938
+    second: Circulo_Lia_Morado_2
+  - first:
+      213: -3020795438761826852
+    second: Circulo_Lia_Morado_3
+  - first:
+      213: -1169165680572629425
+    second: Circulo_Lia_Morado_4
+  - first:
+      213: -9037156598220959351
+    second: Circulo_Lia_Morado_5
+  - first:
+      213: -5034942949134271446
+    second: Circulo_Lia_Morado_6
+  - first:
+      213: -9060181388356284819
+    second: Circulo_Lia_Morado_7
+  - first:
+      213: -6923407046021175401
+    second: Circulo_Lia_Morado_8
+  - first:
+      213: -4979771261622502771
+    second: Circulo_Lia_Morado_9
+  - first:
+      213: 8284290398101212302
+    second: Circulo_Lia_Morado_10
+  - first:
+      213: -4502533880743941059
+    second: Circulo_Lia_Morado_11
+  - first:
+      213: -1881055200800932589
+    second: Circulo_Lia_Morado_12
+  - first:
+      213: -3700878352161935471
+    second: Circulo_Lia_Morado_13
+  - first:
+      213: 5672286979390895971
+    second: Circulo_Lia_Morado_14
+  - first:
+      213: 8458050626578624135
+    second: Circulo_Lia_Morado_15
+  - first:
+      213: -560857793496394207
+    second: Circulo_Lia_Morado_16
+  - first:
+      213: -1094290977648354889
+    second: Circulo_Lia_Morado_17
+  - first:
+      213: -7010061638547742700
+    second: Circulo_Lia_Morado_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 450
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd2a9453765851f0800000000000000
+      internalID: -1055999059277763147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 454
+        width: 83
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad9c0fdd2aa1d2e0800000000000000
+      internalID: -2102712437012914780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 451
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaaebdf69d7126c40800000000000000
+      internalID: 5503987917252192938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 471
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd52b75ad8af316d0800000000000000
+      internalID: -3020795438761826852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 457
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ef3ed020a46cfe0800000000000000
+      internalID: -1169165680572629425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 23
+        width: 345
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981567f64f1959280800000000000000
+      internalID: -9037156598220959351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 430
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c7e74601a402ab0800000000000000
+      internalID: -5034942949134271446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e0b6ab705c34280800000000000000
+      internalID: -9060181388356284819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 81
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797a87239fd1bef90800000000000000
+      internalID: -6923407046021175401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8aba48eb6c44eab0800000000000000
+      internalID: -4979771261622502771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 45
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c800b9936b7f270800000000000000
+      internalID: 8284290398101212302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 54
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ca8197a49c381c0800000000000000
+      internalID: -4502533880743941059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 42
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dfb59d24625e5e0800000000000000
+      internalID: -1881055200800932589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 51
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f647e2fb6d3acc0800000000000000
+      internalID: -3700878352161935471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 57
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367faa664f208be40800000000000000
+      internalID: 5672286979390895971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 40
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e2d717b38016570800000000000000
+      internalID: 8458050626578624135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 44
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1265321fece6738f0800000000000000
+      internalID: -560857793496394207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 42
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9da54572c40d0f0800000000000000
+      internalID: -1094290977648354889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circulo_Lia_Morado_18
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410e4c4a41247be90800000000000000
+      internalID: -7010061638547742700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Circulo_Lia_Morado_0: -1055999059277763147
+      Circulo_Lia_Morado_1: -2102712437012914780
+      Circulo_Lia_Morado_10: 8284290398101212302
+      Circulo_Lia_Morado_11: -4502533880743941059
+      Circulo_Lia_Morado_12: -1881055200800932589
+      Circulo_Lia_Morado_13: -3700878352161935471
+      Circulo_Lia_Morado_14: 5672286979390895971
+      Circulo_Lia_Morado_15: 8458050626578624135
+      Circulo_Lia_Morado_16: -560857793496394207
+      Circulo_Lia_Morado_17: -1094290977648354889
+      Circulo_Lia_Morado_18: -7010061638547742700
+      Circulo_Lia_Morado_2: 5503987917252192938
+      Circulo_Lia_Morado_3: -3020795438761826852
+      Circulo_Lia_Morado_4: -1169165680572629425
+      Circulo_Lia_Morado_5: -9037156598220959351
+      Circulo_Lia_Morado_6: -5034942949134271446
+      Circulo_Lia_Morado_7: -9060181388356284819
+      Circulo_Lia_Morado_8: -6923407046021175401
+      Circulo_Lia_Morado_9: -4979771261622502771
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

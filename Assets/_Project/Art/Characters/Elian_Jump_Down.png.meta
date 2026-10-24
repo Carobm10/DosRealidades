@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: e192fc87c9005f041926d7df8ea4c3ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4855164486652487734
+    second: Elian_Jump_Down_0
+  - first:
+      213: -4822986770483167691
+    second: Elian_Jump_Down_1
+  - first:
+      213: -2003822512232246267
+    second: Elian_Jump_Down_2
+  - first:
+      213: 2546380360987630301
+    second: Elian_Jump_Down_3
+  - first:
+      213: 6937661423632826544
+    second: Elian_Jump_Down_4
+  - first:
+      213: 1285789691911406120
+    second: Elian_Jump_Down_5
+  - first:
+      213: 4027783256628723541
+    second: Elian_Jump_Down_6
+  - first:
+      213: -221933251015714565
+    second: Elian_Jump_Down_7
+  - first:
+      213: 6127104241144331680
+    second: Elian_Jump_Down_8
+  - first:
+      213: 260172413006605283
+    second: Elian_Jump_Down_9
+  - first:
+      213: 1601286536527195152
+    second: Elian_Jump_Down_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elian_Jump_Down_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 197
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63863097062016340800000000000000
+      internalID: 4855164486652487734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1
+        width: 208
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e31f4e51f411db0800000000000000
+      internalID: -4822986770483167691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 3
+        width: 190
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5045775ba0ef034e0800000000000000
+      internalID: -2003822512232246267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_3
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 90
+        width: 194
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddad2bf627f865320800000000000000
+      internalID: 2546380360987630301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_4
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 108
+        width: 198
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0c097be46874060800000000000000
+      internalID: 6937661423632826544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_5
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 75
+        width: 197
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8220d3299ea08d110800000000000000
+      internalID: 1285789691911406120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_6
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 0
+        width: 209
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ffe93288f85e730800000000000000
+      internalID: 4027783256628723541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Jump_Down_7
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1
+        width: 197
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf85c5152e88becf0800000000000000
+      internalID: -221933251015714565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f7dd546961913e24e9668b05e371e10d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elian_Jump_Down_0: 4855164486652487734
+      Elian_Jump_Down_1: -4822986770483167691
+      Elian_Jump_Down_10: 1601286536527195152
+      Elian_Jump_Down_2: -2003822512232246267
+      Elian_Jump_Down_3: 2546380360987630301
+      Elian_Jump_Down_4: 6937661423632826544
+      Elian_Jump_Down_5: 1285789691911406120
+      Elian_Jump_Down_6: 4027783256628723541
+      Elian_Jump_Down_7: -221933251015714565
+      Elian_Jump_Down_8: 6127104241144331680
+      Elian_Jump_Down_9: 260172413006605283
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

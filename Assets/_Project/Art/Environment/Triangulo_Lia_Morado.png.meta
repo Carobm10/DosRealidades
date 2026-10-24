@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: 364cdd6f02ace1343b8f802efddfc41d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1625283306071360975
+    second: Triangulo_Lia_Morado_0
+  - first:
+      213: -3828238678724282121
+    second: Triangulo_Lia_Morado_1
+  - first:
+      213: -1472325342802854799
+    second: Triangulo_Lia_Morado_2
+  - first:
+      213: 6922220620612611934
+    second: Triangulo_Lia_Morado_3
+  - first:
+      213: -6567463744884020218
+    second: Triangulo_Lia_Morado_4
+  - first:
+      213: 4119100034799342115
+    second: Triangulo_Lia_Morado_5
+  - first:
+      213: 1512906962146046592
+    second: Triangulo_Lia_Morado_6
+  - first:
+      213: 6196861506151009803
+    second: Triangulo_Lia_Morado_7
+  - first:
+      213: -6426808419660519378
+    second: Triangulo_Lia_Morado_8
+  - first:
+      213: 6661309902884570861
+    second: Triangulo_Lia_Morado_9
+  - first:
+      213: 7406520134646458299
+    second: Triangulo_Lia_Morado_10
+  - first:
+      213: 6118832769529494347
+    second: Triangulo_Lia_Morado_11
+  - first:
+      213: -6926418667457279691
+    second: Triangulo_Lia_Morado_12
+  - first:
+      213: 8077975546021123798
+    second: Triangulo_Lia_Morado_13
+  - first:
+      213: 237193821186700346
+    second: Triangulo_Lia_Morado_14
+  - first:
+      213: -7106039228427833440
+    second: Triangulo_Lia_Morado_15
+  - first:
+      213: 2165369647138831271
+    second: Triangulo_Lia_Morado_16
+  - first:
+      213: 6693370402426908123
+    second: Triangulo_Lia_Morado_17
+  - first:
+      213: 172308720028099795
+    second: Triangulo_Lia_Morado_18
+  - first:
+      213: -6780990342708339765
+    second: Triangulo_Lia_Morado_19
+  - first:
+      213: -420340843587487137
+    second: Triangulo_Lia_Morado_20
+  - first:
+      213: -8783453400828516092
+    second: Triangulo_Lia_Morado_21
+  - first:
+      213: -1862232405320239628
+    second: Triangulo_Lia_Morado_22
+  - first:
+      213: -4184772759628059502
+    second: Triangulo_Lia_Morado_23
+  - first:
+      213: -2025492927087707246
+    second: Triangulo_Lia_Morado_24
+  - first:
+      213: -2696303204991466477
+    second: Triangulo_Lia_Morado_25
+  - first:
+      213: 7828590863305185088
+    second: Triangulo_Lia_Morado_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_0
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 480
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a7e3ab175d179e0800000000000000
+      internalID: -1625283306071360975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 475
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f87a3f543d5fdac0800000000000000
+      internalID: -3828238678724282121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 23
+        width: 345
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c3e64c6ef319be0800000000000000
+      internalID: -1472325342802854799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 424
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5faf7c9afaa01060800000000000000
+      internalID: 6922220620612611934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c6eea158eabd4a0800000000000000
+      internalID: -6567463744884020218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 88
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322938068abf92930800000000000000
+      internalID: 4119100034799342115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 79
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0823ee8cddceef410800000000000000
+      internalID: 1512906962146046592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 74
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e4c6c15bcaff550800000000000000
+      internalID: 6196861506151009803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 74
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2825a20bc36fc6a0800000000000000
+      internalID: -6426808419660519378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 79
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de60a34401ab17c50800000000000000
+      internalID: 6661309902884570861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_10
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 64
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7616f22de39c660800000000000000
+      internalID: 7406520134646458299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 66
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b33d32cf57ae450800000000000000
+      internalID: 6118832769529494347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 55
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53903907bea60ef90800000000000000
+      internalID: -6926418667457279691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_13
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 64
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d691ecc5fbba1070800000000000000
+      internalID: 8077975546021123798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_14
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 57
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3430ce068eaa4300800000000000000
+      internalID: 237193821186700346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 63
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af619d98f6426d90800000000000000
+      internalID: -7106039228427833440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 54
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab7f11b830fc0e10800000000000000
+      internalID: 2165369647138831271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_17
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdde4c20be0a3ec50800000000000000
+      internalID: 6693370402426908123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_18
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d42af03ed9246200800000000000000
+      internalID: 172308720028099795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 44
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbd385e53515e1a0800000000000000
+      internalID: -6780990342708339765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 44
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a3165da36aa2af0800000000000000
+      internalID: -420340843587487137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_21
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 47
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4096b6e2ba7ea1680800000000000000
+      internalID: -8783453400828516092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_22
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 46
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f57aaf6e750826e0800000000000000
+      internalID: -1862232405320239628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c63a4d853bce5c0800000000000000
+      internalID: -4184772759628059502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_24
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bfed11ae004e3e0800000000000000
+      internalID: -2025492927087707246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3148cbb458ec49ad0800000000000000
+      internalID: -2696303204991466477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangulo_Lia_Morado_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 44
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0479c2b99edb4ac60800000000000000
+      internalID: 7828590863305185088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Triangulo_Lia_Morado_0: -1625283306071360975
+      Triangulo_Lia_Morado_1: -3828238678724282121
+      Triangulo_Lia_Morado_10: 7406520134646458299
+      Triangulo_Lia_Morado_11: 6118832769529494347
+      Triangulo_Lia_Morado_12: -6926418667457279691
+      Triangulo_Lia_Morado_13: 8077975546021123798
+      Triangulo_Lia_Morado_14: 237193821186700346
+      Triangulo_Lia_Morado_15: -7106039228427833440
+      Triangulo_Lia_Morado_16: 2165369647138831271
+      Triangulo_Lia_Morado_17: 6693370402426908123
+      Triangulo_Lia_Morado_18: 172308720028099795
+      Triangulo_Lia_Morado_19: -6780990342708339765
+      Triangulo_Lia_Morado_2: -1472325342802854799
+      Triangulo_Lia_Morado_20: -420340843587487137
+      Triangulo_Lia_Morado_21: -8783453400828516092
+      Triangulo_Lia_Morado_22: -1862232405320239628
+      Triangulo_Lia_Morado_23: -4184772759628059502
+      Triangulo_Lia_Morado_24: -2025492927087707246
+      Triangulo_Lia_Morado_25: -2696303204991466477
+      Triangulo_Lia_Morado_26: 7828590863305185088
+      Triangulo_Lia_Morado_3: 6922220620612611934
+      Triangulo_Lia_Morado_4: -6567463744884020218
+      Triangulo_Lia_Morado_5: 4119100034799342115
+      Triangulo_Lia_Morado_6: 1512906962146046592
+      Triangulo_Lia_Morado_7: 6196861506151009803
+      Triangulo_Lia_Morado_8: -6426808419660519378
+      Triangulo_Lia_Morado_9: 6661309902884570861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

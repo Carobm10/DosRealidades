@@ -1,0 +1,808 @@
+fileFormatVersion: 2
+guid: 65aafd5f3abb7dc42b47582bc92612a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3630522331919432101
+    second: Cuadrado_Lia_Morado_0
+  - first:
+      213: -5841060490460181236
+    second: Cuadrado_Lia_Morado_1
+  - first:
+      213: -3590457770772507791
+    second: Cuadrado_Lia_Morado_2
+  - first:
+      213: -2809537267600552691
+    second: Cuadrado_Lia_Morado_3
+  - first:
+      213: -1709601100020280732
+    second: Cuadrado_Lia_Morado_4
+  - first:
+      213: 3383391758476717700
+    second: Cuadrado_Lia_Morado_5
+  - first:
+      213: 1685946242267208409
+    second: Cuadrado_Lia_Morado_6
+  - first:
+      213: 1384462413240051332
+    second: Cuadrado_Lia_Morado_7
+  - first:
+      213: 4376022359487318764
+    second: Cuadrado_Lia_Morado_8
+  - first:
+      213: 6932954419200872810
+    second: Cuadrado_Lia_Morado_9
+  - first:
+      213: 2759017176232772855
+    second: Cuadrado_Lia_Morado_10
+  - first:
+      213: 6070441579880339220
+    second: Cuadrado_Lia_Morado_11
+  - first:
+      213: 1427658898046256418
+    second: Cuadrado_Lia_Morado_12
+  - first:
+      213: 3193035787072352235
+    second: Cuadrado_Lia_Morado_13
+  - first:
+      213: -489995986737966076
+    second: Cuadrado_Lia_Morado_14
+  - first:
+      213: 1834062490620062360
+    second: Cuadrado_Lia_Morado_15
+  - first:
+      213: 2149559887553054098
+    second: Cuadrado_Lia_Morado_16
+  - first:
+      213: -3039264343514263145
+    second: Cuadrado_Lia_Morado_17
+  - first:
+      213: 3380242751124803734
+    second: Cuadrado_Lia_Morado_18
+  - first:
+      213: -3801125121251342968
+    second: Cuadrado_Lia_Morado_19
+  - first:
+      213: 2238792959465715758
+    second: Cuadrado_Lia_Morado_20
+  - first:
+      213: -4720542904168005128
+    second: Cuadrado_Lia_Morado_21
+  - first:
+      213: -7893677742723157508
+    second: Cuadrado_Lia_Morado_22
+  - first:
+      213: 3146957502022637811
+    second: Cuadrado_Lia_Morado_23
+  - first:
+      213: 469976692818389489
+    second: Cuadrado_Lia_Morado_24
+  - first:
+      213: -7154886013535835558
+    second: Cuadrado_Lia_Morado_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 40
+        width: 354
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a93e2753d4326230800000000000000
+      internalID: 3630522331919432101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 481
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d4d826e6260fea0800000000000000
+      internalID: -5841060490460181236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_2
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 460
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17350183ea12c2ec0800000000000000
+      internalID: -3590457770772507791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 460
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d827d9db48209d0800000000000000
+      internalID: -2809537267600552691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 441
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4629cad7bd64648e0800000000000000
+      internalID: -1709601100020280732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 450
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e2dfbd0e834fe20800000000000000
+      internalID: 3383391758476717700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 438
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daddb0cc2fa56710800000000000000
+      internalID: 1685946242267208409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 434
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486ad0aca39963310800000000000000
+      internalID: 1384462413240051332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 106
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea886a9621cabc30800000000000000
+      internalID: 4376022359487318764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 69
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a615178df4dc63060800000000000000
+      internalID: 6932954419200872810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 81
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f44e8ef08ff94620800000000000000
+      internalID: 2759017176232772855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 23
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 417578e447a8e3450800000000000000
+      internalID: 6070441579880339220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_12
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 69
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2250976243010d310800000000000000
+      internalID: 1427658898046256418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 70
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befae838121ff4c20800000000000000
+      internalID: 3193035787072352235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404dd150f3f2339f0800000000000000
+      internalID: -489995986737966076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 70
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ae6413e16e37910800000000000000
+      internalID: 1834062490620062360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_16
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 48
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29547013455c4dd10800000000000000
+      internalID: 2149559887553054098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_17
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 55
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791525aae2d52d5d0800000000000000
+      internalID: -3039264343514263145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 48
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69012637fd809ee20800000000000000
+      internalID: 3380242751124803734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 45
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885000967d0bf3bc0800000000000000
+      internalID: -3801125121251342968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 48
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e287992c55ac11f10800000000000000
+      internalID: 2238792959465715758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 33
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1431a3d334d7eb0800000000000000
+      internalID: -4720542904168005128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_22
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 37
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1349d5ae5047290800000000000000
+      internalID: -7893677742723157508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_23
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 37
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f85f4fbc2d3cab20800000000000000
+      internalID: 3146957502022637811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_24
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f92724ef41b58600800000000000000
+      internalID: 469976692818389489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuadrado_Lia_Morado_25
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 39
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a29c2341db4bc90800000000000000
+      internalID: -7154886013535835558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cuadrado_Lia_Morado_0: 3630522331919432101
+      Cuadrado_Lia_Morado_1: -5841060490460181236
+      Cuadrado_Lia_Morado_10: 2759017176232772855
+      Cuadrado_Lia_Morado_11: 6070441579880339220
+      Cuadrado_Lia_Morado_12: 1427658898046256418
+      Cuadrado_Lia_Morado_13: 3193035787072352235
+      Cuadrado_Lia_Morado_14: -489995986737966076
+      Cuadrado_Lia_Morado_15: 1834062490620062360
+      Cuadrado_Lia_Morado_16: 2149559887553054098
+      Cuadrado_Lia_Morado_17: -3039264343514263145
+      Cuadrado_Lia_Morado_18: 3380242751124803734
+      Cuadrado_Lia_Morado_19: -3801125121251342968
+      Cuadrado_Lia_Morado_2: -3590457770772507791
+      Cuadrado_Lia_Morado_20: 2238792959465715758
+      Cuadrado_Lia_Morado_21: -4720542904168005128
+      Cuadrado_Lia_Morado_22: -7893677742723157508
+      Cuadrado_Lia_Morado_23: 3146957502022637811
+      Cuadrado_Lia_Morado_24: 469976692818389489
+      Cuadrado_Lia_Morado_25: -7154886013535835558
+      Cuadrado_Lia_Morado_3: -2809537267600552691
+      Cuadrado_Lia_Morado_4: -1709601100020280732
+      Cuadrado_Lia_Morado_5: 3383391758476717700
+      Cuadrado_Lia_Morado_6: 1685946242267208409
+      Cuadrado_Lia_Morado_7: 1384462413240051332
+      Cuadrado_Lia_Morado_8: 4376022359487318764
+      Cuadrado_Lia_Morado_9: 6932954419200872810
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
