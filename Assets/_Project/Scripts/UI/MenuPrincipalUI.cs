@@ -307,7 +307,7 @@ public class MenuPrincipalUI : MonoBehaviour
         }
 
         NetworkManager.Singleton.SceneManager.LoadScene(
-            "Level_01_Lobby",
+            "P1_Entrada",
             LoadSceneMode.Single
         );
     }

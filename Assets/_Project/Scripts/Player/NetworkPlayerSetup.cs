@@ -6,6 +6,11 @@ public class NetworkPlayerSetup : NetworkBehaviour
 {
     [Header("Visual del jugador")]
     [SerializeField] private SpriteRenderer spriteJugador;
+    [SerializeField] private Animator animatorJugador;
+
+    [Header("Personajes")]
+    [SerializeField] private RuntimeAnimatorController controladorElian;
+    [SerializeField] private RuntimeAnimatorController controladorLia;
 
     private void Awake()
     {
@@ -13,23 +18,22 @@ public class NetworkPlayerSetup : NetworkBehaviour
         {
             spriteJugador = GetComponent<SpriteRenderer>();
         }
+
+        if (animatorJugador == null)
+        {
+            animatorJugador = GetComponent<Animator>();
+        }
     }
 
     public override void OnNetworkSpawn()
     {
-        // Colores provisionales mientras llega el arte final.
-        if (OwnerClientId == 0)
-        {
-            spriteJugador.color = Color.blue;
-        }
-        else
-        {
-            spriteJugador.color = Color.magenta;
-        }
+        ConfigurarPersonaje();
 
         SceneManager.sceneLoaded += AlCargarEscena;
 
-        ActualizarVisibilidad(SceneManager.GetActiveScene().name);
+        ActualizarVisibilidad(
+            SceneManager.GetActiveScene().name
+        );
 
         Debug.Log(
             "Jugador creado | ClientId: " + OwnerClientId +
@@ -43,15 +47,44 @@ public class NetworkPlayerSetup : NetworkBehaviour
         SceneManager.sceneLoaded -= AlCargarEscena;
     }
 
-    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    private void ConfigurarPersonaje()
+    {
+        if (animatorJugador == null)
+            return;
+
+        if (spriteJugador != null)
+        {
+            spriteJugador.color = Color.white;
+        }
+
+        bool esElian =
+            OwnerClientId ==
+            NetworkManager.ServerClientId;
+
+        if (esElian)
+        {
+            animatorJugador.runtimeAnimatorController =
+                controladorElian;
+        }
+        else
+        {
+            animatorJugador.runtimeAnimatorController =
+                controladorLia;
+        }
+    }
+
+    private void AlCargarEscena(
+        Scene escena,
+        LoadSceneMode modo
+    )
     {
         ActualizarVisibilidad(escena.name);
     }
 
-    private void ActualizarVisibilidad(string nombreEscena)
+    private void ActualizarVisibilidad(
+        string nombreEscena
+    )
     {
-        // En el Main Menu el jugador existe en red,
-        // pero no debe verse.
         bool mostrarJugador =
             nombreEscena != "01_MainMenu";
 

@@ -10,6 +10,8 @@ public class NetworkPlayerMovement : NetworkBehaviour
     [Header("Controles")]
     [SerializeField] private InputActionReference accionMover;
 
+    [SerializeField] private Animator animatorJugador;
+
     private Rigidbody2D cuerpo;
     private Vector2 direccionMovimiento;
 
@@ -38,6 +40,14 @@ public class NetworkPlayerMovement : NetworkBehaviour
 
         direccionMovimiento =
             accionMover.action.ReadValue<Vector2>();
+
+        if (animatorJugador != null)
+        {
+            animatorJugador.SetFloat(
+                "Velocidad",
+                direccionMovimiento.magnitude
+            );
+        }
 
         // Evita que moverse en diagonal sea más rápido.
         direccionMovimiento =
