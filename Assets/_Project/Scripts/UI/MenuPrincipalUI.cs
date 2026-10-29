@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -6,9 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalUI : MonoBehaviour
 {
-    [Header("Navegacion del menu")]
+    [Header("Menu principal")]
     [SerializeField] private GameObject menuPrincipal;
+    [SerializeField] private GameObject tituloDosRealidades;
+    [SerializeField] private GameObject fondoHotel;
+
+    [Header("Ventanas")]
     [SerializeField] private GameObject panelNuevaPartida;
+    [SerializeField] private GameObject panelOpciones;
 
     [Header("Multijugador")]
     [SerializeField] private GestorMultijugador gestorMultijugador;
@@ -27,6 +33,9 @@ public class MenuPrincipalUI : MonoBehaviour
     private Coroutine animacionEspera;
     private bool callbacksRegistrados = false;
 
+    // Recuerda desde donde se abrieron las opciones.
+    private bool volverANuevaPartida = false;
+
 
     // --------------------------------------------------
     // INICIO
@@ -34,41 +43,164 @@ public class MenuPrincipalUI : MonoBehaviour
 
     private void Start()
     {
-        // Aseguramos que las ventanas empiecen cerradas.
-        fondoOscuroUnirse.SetActive(false);
-        fondoOscuroCrear.SetActive(false);
+        // El fondo permanece visible.
+        if (fondoHotel != null)
+            fondoHotel.SetActive(true);
 
-        // El botón Empezar no aparece hasta que llegue el segundo jugador.
-        botonEmpezarPartida.SetActive(false);
+        // Estado inicial: menu principal.
+        if (menuPrincipal != null)
+            menuPrincipal.SetActive(true);
+
+        if (tituloDosRealidades != null)
+            tituloDosRealidades.SetActive(true);
+
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(false);
+
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
+
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
+
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
+
+        if (botonEmpezarPartida != null)
+            botonEmpezarPartida.SetActive(false);
 
         RegistrarCallbacks();
     }
 
 
     // --------------------------------------------------
-    // CALLBACKS DE RED
+    // MOSTRAR U OCULTAR ELEMENTOS PRINCIPALES
     // --------------------------------------------------
 
-    private void RegistrarCallbacks()
+    private void OcultarMenuPrincipal()
     {
-        if (NetworkManager.Singleton == null || callbacksRegistrados)
-            return;
+        if (menuPrincipal != null)
+            menuPrincipal.SetActive(false);
 
-        NetworkManager.Singleton.OnClientConnectedCallback += AlConectarJugador;
-        NetworkManager.Singleton.OnClientDisconnectCallback += AlDesconectarJugador;
+        if (tituloDosRealidades != null)
+            tituloDosRealidades.SetActive(false);
 
-        callbacksRegistrados = true;
+        // No ocultamos el fondo.
+        if (fondoHotel != null)
+            fondoHotel.SetActive(true);
     }
 
-    private void OnDestroy()
+    private void MostrarMenuPrincipal()
     {
-        if (NetworkManager.Singleton == null || !callbacksRegistrados)
-            return;
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(false);
 
-        NetworkManager.Singleton.OnClientConnectedCallback -= AlConectarJugador;
-        NetworkManager.Singleton.OnClientDisconnectCallback -= AlDesconectarJugador;
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
 
-        callbacksRegistrados = false;
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
+
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
+
+        if (fondoHotel != null)
+            fondoHotel.SetActive(true);
+
+        if (tituloDosRealidades != null)
+            tituloDosRealidades.SetActive(true);
+
+        if (menuPrincipal != null)
+            menuPrincipal.SetActive(true);
+    }
+
+
+    // --------------------------------------------------
+    // NUEVA PARTIDA
+    // --------------------------------------------------
+
+    public void AbrirNuevaPartida()
+    {
+        OcultarMenuPrincipal();
+
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
+
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
+
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
+
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(true);
+    }
+
+    public void VolverMenuPrincipal()
+    {
+        // Este es el botón Volver de Nueva Partida.
+        MostrarMenuPrincipal();
+    }
+
+
+    // --------------------------------------------------
+    // CONFIGURACION
+    // --------------------------------------------------
+
+    public void AbrirOpciones()
+    {
+        // Guardamos el origen ANTES de ocultar las ventanas.
+        volverANuevaPartida =
+            panelNuevaPartida != null &&
+            panelNuevaPartida.activeSelf;
+
+        // Ocultamos todas las ventanas anteriores.
+        if (menuPrincipal != null)
+            menuPrincipal.SetActive(false);
+
+        if (tituloDosRealidades != null)
+            tituloDosRealidades.SetActive(false);
+
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(false);
+
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
+
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
+
+        // El fondo permanece visible.
+        if (fondoHotel != null)
+            fondoHotel.SetActive(true);
+
+        // Mostramos únicamente Configuración.
+        if (panelOpciones != null)
+            panelOpciones.SetActive(true);
+    }
+
+    public void ListoOpciones()
+    {
+        // Cerramos Configuración.
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
+
+        if (fondoHotel != null)
+            fondoHotel.SetActive(true);
+
+        if (volverANuevaPartida)
+        {
+            // Volvemos a Nueva Partida.
+            OcultarMenuPrincipal();
+
+            if (panelNuevaPartida != null)
+                panelNuevaPartida.SetActive(true);
+        }
+        else
+        {
+            // Volvemos al menú principal.
+            MostrarMenuPrincipal();
+        }
     }
 
 
@@ -78,49 +210,65 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public void AbrirVentanaUnirse()
     {
-        panelNuevaPartida.SetActive(false);
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(false);
 
-        fondoOscuroCrear.SetActive(false);
-        fondoOscuroUnirse.SetActive(true);
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
 
-        campoCodigoPartida.text = "";
-        textoEstadoUnirse.text = "";
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(true);
 
-        campoCodigoPartida.Select();
-        campoCodigoPartida.ActivateInputField();
+        if (campoCodigoPartida != null)
+        {
+            campoCodigoPartida.text = "";
+            campoCodigoPartida.Select();
+            campoCodigoPartida.ActivateInputField();
+        }
+
+        if (textoEstadoUnirse != null)
+            textoEstadoUnirse.text = "";
     }
 
     public void CerrarVentanaUnirse()
     {
-        fondoOscuroUnirse.SetActive(false);
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
 
-        panelNuevaPartida.SetActive(true);
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(true);
 
-        campoCodigoPartida.text = "";
-        textoEstadoUnirse.text = "";
+        if (campoCodigoPartida != null)
+            campoCodigoPartida.text = "";
 
-        if (NetworkManager.Singleton != null &&
-            NetworkManager.Singleton.IsListening)
-        {
-            NetworkManager.Singleton.Shutdown();
-        }
+        if (textoEstadoUnirse != null)
+            textoEstadoUnirse.text = "";
+
+        CerrarConexionMultijugador();
     }
 
     public async void EntrarPartida()
     {
+        if (campoCodigoPartida == null ||
+            gestorMultijugador == null ||
+            textoEstadoUnirse == null)
+        {
+            Debug.LogError(
+                "Faltan referencias en la ventana Unirse."
+            );
+            return;
+        }
+
         string codigo =
             campoCodigoPartida.text.Trim().ToUpper();
 
         if (codigo == "")
         {
-            textoEstadoUnirse.text =
-                "Ingresa un código.";
-
+            textoEstadoUnirse.text = "Ingresa un código.";
             return;
         }
 
-        textoEstadoUnirse.text =
-            "Conectando...";
+        textoEstadoUnirse.text = "Conectando...";
 
         bool conectado =
             await gestorMultijugador.UnirsePartida(codigo);
@@ -129,7 +277,6 @@ public class MenuPrincipalUI : MonoBehaviour
         {
             textoEstadoUnirse.text =
                 "Código incorrecto o partida no disponible.";
-
             return;
         }
 
@@ -144,33 +291,49 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public async void AbrirVentanaCrear()
     {
-        panelNuevaPartida.SetActive(false);
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(false);
 
-        fondoOscuroUnirse.SetActive(false);
-        fondoOscuroCrear.SetActive(true);
+        if (fondoOscuroUnirse != null)
+            fondoOscuroUnirse.SetActive(false);
 
-        botonEmpezarPartida.SetActive(false);
-        textoEsperandoJugador.text = "Creando partida...";
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(true);
+
+        if (botonEmpezarPartida != null)
+            botonEmpezarPartida.SetActive(false);
+
+        if (textoEsperandoJugador != null)
+            textoEsperandoJugador.text = "Creando partida...";
+
+        if (gestorMultijugador == null)
+        {
+            Debug.LogError(
+                "No está asignado GestorMultijugador."
+            );
+            return;
+        }
 
         string codigo =
             await gestorMultijugador.CrearPartida();
 
         if (string.IsNullOrEmpty(codigo))
         {
-            textoEsperandoJugador.text =
-                "No se pudo crear la partida.";
+            if (textoEsperandoJugador != null)
+                textoEsperandoJugador.text =
+                    "No se pudo crear la partida.";
 
             return;
         }
 
-        textoCodigoGenerado.text = codigo;
+        if (textoCodigoGenerado != null)
+            textoCodigoGenerado.text = codigo;
 
-        textoEsperandoJugador.text = "Esperando jugador";
+        if (textoEsperandoJugador != null)
+            textoEsperandoJugador.text = "Esperando jugador";
 
         if (animacionEspera != null)
-        {
             StopCoroutine(animacionEspera);
-        }
 
         animacionEspera =
             StartCoroutine(AnimarTextoEspera());
@@ -178,8 +341,11 @@ public class MenuPrincipalUI : MonoBehaviour
 
     public void CerrarVentanaCrear()
     {
-        fondoOscuroCrear.SetActive(false);
-        panelNuevaPartida.SetActive(true);
+        if (fondoOscuroCrear != null)
+            fondoOscuroCrear.SetActive(false);
+
+        if (panelNuevaPartida != null)
+            panelNuevaPartida.SetActive(true);
 
         if (animacionEspera != null)
         {
@@ -187,10 +353,25 @@ public class MenuPrincipalUI : MonoBehaviour
             animacionEspera = null;
         }
 
-        botonEmpezarPartida.SetActive(false);
-        textoEsperandoJugador.text = "Esperando jugador";
-        textoCodigoGenerado.text = "------";
+        if (botonEmpezarPartida != null)
+            botonEmpezarPartida.SetActive(false);
 
+        if (textoEsperandoJugador != null)
+            textoEsperandoJugador.text = "Esperando jugador";
+
+        if (textoCodigoGenerado != null)
+            textoCodigoGenerado.text = "------";
+
+        CerrarConexionMultijugador();
+    }
+
+
+    // --------------------------------------------------
+    // CERRAR CONEXION DE RED
+    // --------------------------------------------------
+
+    private void CerrarConexionMultijugador()
+    {
         if (NetworkManager.Singleton != null &&
             NetworkManager.Singleton.IsListening)
         {
@@ -200,13 +381,16 @@ public class MenuPrincipalUI : MonoBehaviour
 
 
     // --------------------------------------------------
-    // ANIMACIÓN "ESPERANDO JUGADOR..."
+    // ANIMACION DE ESPERA
     // --------------------------------------------------
 
     private IEnumerator AnimarTextoEspera()
     {
         while (true)
         {
+            if (textoEsperandoJugador == null)
+                yield break;
+
             textoEsperandoJugador.text = "Esperando jugador.";
             yield return new WaitForSeconds(0.5f);
 
@@ -223,7 +407,7 @@ public class MenuPrincipalUI : MonoBehaviour
 
 
     // --------------------------------------------------
-    // SEGUNDO JUGADOR CONECTADO
+    // JUGADORES CONECTADOS
     // --------------------------------------------------
 
     private void JugadorConectado()
@@ -234,30 +418,62 @@ public class MenuPrincipalUI : MonoBehaviour
             animacionEspera = null;
         }
 
-        textoEsperandoJugador.text = "Jugador conectado ✓";
+        if (textoEsperandoJugador != null)
+            textoEsperandoJugador.text = "Jugador conectado ✓";
 
-        botonEmpezarPartida.SetActive(true);
+        if (botonEmpezarPartida != null)
+            botonEmpezarPartida.SetActive(true);
+    }
+
+    private void RegistrarCallbacks()
+    {
+        if (NetworkManager.Singleton == null ||
+            callbacksRegistrados)
+            return;
+
+        NetworkManager.Singleton.OnClientConnectedCallback +=
+            AlConectarJugador;
+
+        NetworkManager.Singleton.OnClientDisconnectCallback +=
+            AlDesconectarJugador;
+
+        callbacksRegistrados = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (NetworkManager.Singleton == null ||
+            !callbacksRegistrados)
+            return;
+
+        NetworkManager.Singleton.OnClientConnectedCallback -=
+            AlConectarJugador;
+
+        NetworkManager.Singleton.OnClientDisconnectCallback -=
+            AlDesconectarJugador;
+
+        callbacksRegistrados = false;
     }
 
     private void AlConectarJugador(ulong idCliente)
     {
         Debug.Log("Jugador conectado. ID: " + idCliente);
 
-        // Si somos el Host, esperamos tener dos jugadores:
-        // Host + Client.
+        if (NetworkManager.Singleton == null)
+            return;
+
         if (NetworkManager.Singleton.IsHost)
         {
             if (NetworkManager.Singleton.ConnectedClientsIds.Count >= 2)
-            {
                 JugadorConectado();
-            }
         }
-
-        // Si somos el Client, significa que logramos entrar.
         else if (NetworkManager.Singleton.IsClient)
         {
-            textoEstadoUnirse.text =
-                "Conectado ✓\nEsperando que el Host inicie...";
+            if (textoEstadoUnirse != null)
+            {
+                textoEstadoUnirse.text =
+                    "Conectado ✓\nEsperando que el Host inicie...";
+            }
         }
     }
 
@@ -268,22 +484,22 @@ public class MenuPrincipalUI : MonoBehaviour
         if (NetworkManager.Singleton == null)
             return;
 
-        // Solo hacemos esto si el Host todavía tiene
-        // abierta la ventana de Crear Partida.
         if (NetworkManager.Singleton.IsHost &&
+            fondoOscuroCrear != null &&
             fondoOscuroCrear.activeSelf &&
             NetworkManager.Singleton.ConnectedClientsIds.Count < 2)
         {
-            botonEmpezarPartida.SetActive(false);
-
-            textoEsperandoJugador.text = "Esperando jugador";
+            if (botonEmpezarPartida != null)
+                botonEmpezarPartida.SetActive(false);
 
             if (animacionEspera != null)
-            {
                 StopCoroutine(animacionEspera);
-            }
 
-            animacionEspera = StartCoroutine(AnimarTextoEspera());
+            if (textoEsperandoJugador != null)
+                textoEsperandoJugador.text = "Esperando jugador";
+
+            animacionEspera =
+                StartCoroutine(AnimarTextoEspera());
         }
     }
 
@@ -302,7 +518,9 @@ public class MenuPrincipalUI : MonoBehaviour
 
         if (!NetworkManager.Singleton.IsHost)
         {
-            Debug.LogWarning("Solo el Host puede iniciar la partida.");
+            Debug.LogWarning(
+                "Solo el Host puede iniciar la partida."
+            );
             return;
         }
 
@@ -312,18 +530,9 @@ public class MenuPrincipalUI : MonoBehaviour
         );
     }
 
-    // --------------------------------------------------
-    // OPCIONES
-    // --------------------------------------------------
-
-    public void AbrirOpciones()
-    {
-        Debug.Log("Opciones todavía no implementadas.");
-    }
-
 
     // --------------------------------------------------
-    // SALIR
+    // SALIR DEL JUEGO
     // --------------------------------------------------
 
     public void SalirJuego()
@@ -335,17 +544,5 @@ public class MenuPrincipalUI : MonoBehaviour
 #else
         Application.Quit();
 #endif
-    }
-
-    public void AbrirNuevaPartida()
-    {
-        menuPrincipal.SetActive(false);
-        panelNuevaPartida.SetActive(true);
-    }
-
-    public void VolverMenuPrincipal()
-    {
-        panelNuevaPartida.SetActive(false);
-        menuPrincipal.SetActive(true);
     }
 }
