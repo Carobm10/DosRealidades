@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Levels/Nivel1/P3_CaminoMadera.unity
     guid: d75f495710edb2e40ad419b2ac391b22
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Project/Scenes/Levels/Nivel2/P5_Pasillo.unity
     guid: 59b44a0e33d5c2e42b7a9a9d8ea80fd9
   m_configObjects:
