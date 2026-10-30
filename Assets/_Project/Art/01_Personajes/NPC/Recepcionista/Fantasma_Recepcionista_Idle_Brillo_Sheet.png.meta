@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 535dc99daea6254449a32aa1daf2f83a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8455367536687816046
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_0
+  - first:
+      213: -2755074856424834863
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_1
+  - first:
+      213: -6499641591264086713
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_2
+  - first:
+      213: -9141035562662263463
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_3
+  - first:
+      213: 3046897388605160623
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_4
+  - first:
+      213: -7437155857692687776
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_5
+  - first:
+      213: -2284921650588196293
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_6
+  - first:
+      213: 7122821075979067806
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_7
+  - first:
+      213: 6849844955206142217
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_8
+  - first:
+      213: -6423303665301805793
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_9
+  - first:
+      213: 8822793260215261693
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_10
+  - first:
+      213: -3108790702142738751
+    second: Fantasma_Recepcionista_Idle_Brillo_Sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 201
+        width: 447
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 3, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d95a5e9ff775570800000000000000
+      internalID: 8455367536687816046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 203
+        width: 453
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 158, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8ff2dd30204c9d0800000000000000
+      internalID: -2755074856424834863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 202
+        width: 454
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7457959c862acc5a0800000000000000
+      internalID: -6499641591264086713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 203
+        width: 454
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 35, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9558d484694842180800000000000000
+      internalID: -9141035562662263463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 202
+        width: 460
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 158, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac30e22801c84a20800000000000000
+      internalID: 3046897388605160623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 200
+        width: 460
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 167, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0620303b62ae9c890800000000000000
+      internalID: -7437155857692687776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2922
+        y: 201
+        width: 460
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3267156dd35a40e0800000000000000
+      internalID: -2284921650588196293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3407
+        y: 201
+        width: 460
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91e560c70859d260800000000000000
+      internalID: 7122821075979067806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 200
+        width: 460
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9094099d1b98f0f50800000000000000
+      internalID: 6849844955206142217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4380
+        y: 201
+        width: 453
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 161, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15a8393957dbd6a0800000000000000
+      internalID: -6423303665301805793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4865
+        y: 200
+        width: 453
+        height: 658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df957d999bbd07a70800000000000000
+      internalID: 8822793260215261693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Recepcionista_Idle_Brillo_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5350
+        y: 200
+        width: 453
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 155, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceaeb5d35b5bd4d0800000000000000
+      internalID: -3108790702142738751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ebc96d8fe131f064eb86508ff2714aa9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_0: 8455367536687816046
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_1: -2755074856424834863
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_10: 8822793260215261693
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_11: -3108790702142738751
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_2: -6499641591264086713
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_3: -9141035562662263463
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_4: 3046897388605160623
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_5: -7437155857692687776
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_6: -2284921650588196293
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_7: 7122821075979067806
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_8: 6849844955206142217
+      Fantasma_Recepcionista_Idle_Brillo_Sheet_9: -6423303665301805793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
