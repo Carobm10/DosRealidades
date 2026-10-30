@@ -1623,7 +1623,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2146420850}
         m_TargetAssemblyTypeName: MenuPrincipalUI, Assembly-CSharp
-        m_MethodName: AbrirOpciones
+        m_MethodName: AbrirOpcionesDesdeNuevaPartida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
