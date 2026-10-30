@@ -33,6 +33,10 @@ public class MenuPrincipalUI : MonoBehaviour
     private Coroutine animacionEspera;
     private bool callbacksRegistrados = false;
 
+    // Recordar desde qué pantalla se abrieron las opciones
+    private GameObject panelAnteriorAOpciones;
+    private bool tituloEstabaActivoAntesDeOpciones;
+
     // Recuerda desde donde se abrieron las opciones.
     private bool volverANuevaPartida = false;
 
@@ -147,37 +151,47 @@ public class MenuPrincipalUI : MonoBehaviour
     // CONFIGURACION
     // --------------------------------------------------
 
+    
     public void AbrirOpciones()
     {
-        // Guardamos el origen ANTES de ocultar las ventanas.
-        volverANuevaPartida =
-            panelNuevaPartida != null &&
-            panelNuevaPartida.activeSelf;
+        AbrirPanelOpciones(menuPrincipal);
+    }
 
-        // Ocultamos todas las ventanas anteriores.
-        if (menuPrincipal != null)
-            menuPrincipal.SetActive(false);
+    public void AbrirOpcionesDesdeNuevaPartida()
+    {
+        AbrirPanelOpciones(panelNuevaPartida);
+    }
+
+    private void AbrirPanelOpciones(GameObject panelOrigen)
+    {
+        if (panelOpciones == null)
+        {
+            Debug.LogError("Panel_Opciones no está asignado.");
+            return;
+        }
+
+        panelAnteriorAOpciones = panelOrigen;
+
+        tituloEstabaActivoAntesDeOpciones =
+            tituloDosRealidades != null &&
+            tituloDosRealidades.activeSelf;
+
+        if (panelOrigen != null)
+            panelOrigen.SetActive(false);
 
         if (tituloDosRealidades != null)
             tituloDosRealidades.SetActive(false);
 
+        // Ocultar también cualquier otro panel principal.
+        if (menuPrincipal != null)
+            menuPrincipal.SetActive(false);
+
         if (panelNuevaPartida != null)
             panelNuevaPartida.SetActive(false);
 
-        if (fondoOscuroUnirse != null)
-            fondoOscuroUnirse.SetActive(false);
-
-        if (fondoOscuroCrear != null)
-            fondoOscuroCrear.SetActive(false);
-
-        // El fondo permanece visible.
-        if (fondoHotel != null)
-            fondoHotel.SetActive(true);
-
-        // Mostramos únicamente Configuración.
-        if (panelOpciones != null)
-            panelOpciones.SetActive(true);
+        panelOpciones.SetActive(true);
     }
+
 
     public void ListoOpciones()
     {
@@ -528,6 +542,22 @@ public class MenuPrincipalUI : MonoBehaviour
             "P1_Entrada",
             LoadSceneMode.Single
         );
+    }
+
+    public void CerrarOpciones()
+    {
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
+
+        if (panelAnteriorAOpciones != null)
+            panelAnteriorAOpciones.SetActive(true);
+
+        if (tituloDosRealidades != null)
+            tituloDosRealidades.SetActive(
+                tituloEstabaActivoAntesDeOpciones
+            );
+
+        panelAnteriorAOpciones = null;
     }
 
 
