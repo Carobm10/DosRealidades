@@ -1,6 +1,6 @@
+
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode;
 
 public class HUDVidas : MonoBehaviour
 {
@@ -32,29 +32,26 @@ public class HUDVidas : MonoBehaviour
     private void Start()
     {
         ConfigurarVisualJugador();
+        StartCoroutine(InicializarVidasHUD());
+    }
+
+    private System.Collections.IEnumerator InicializarVidasHUD()
+    {
+        // Esperar hasta que el sistema de vidas
+        // exista y esté conectado a la red.
+        while (VidasEquipo.Instancia == null ||
+            !VidasEquipo.Instancia.IsSpawned)
+        {
+            yield return null;
+        }
+
+        // Mostrar las vidas reales del equipo.
+        ActualizarVidas(VidasEquipo.Instancia.VidasActuales);
     }
 
     private void ConfigurarVisualJugador()
     {
-        bool esElian;
-
-#if UNITY_EDITOR
-        if (RolPruebaJugador.Instancia != null)
-        {
-            esElian =
-                RolPruebaJugador.Instancia.EsElian();
-        }
-        else
-        {
-            esElian =
-                NetworkManager.Singleton == null ||
-                NetworkManager.Singleton.IsHost;
-        }
-#else
-        esElian =
-            NetworkManager.Singleton != null &&
-            NetworkManager.Singleton.IsHost;
-#endif
+        bool esElian = IdentidadJugadorLocal.EsElian();
 
         if (vidasElian != null)
             vidasElian.SetActive(esElian);
@@ -65,8 +62,7 @@ public class HUDVidas : MonoBehaviour
 
     public void ActualizarVidas(int vidas)
     {
-        // Actualizamos ambas filas aunque una esté oculta.
-        // Así siempre quedan sincronizadas.
+        // Actualizar ambas filas aunque una esté oculta.
 
         for (int i = 0; i < corazonesElian.Length; i++)
         {
@@ -89,5 +85,11 @@ public class HUDVidas : MonoBehaviour
                 ? corazonLiaConVida
                 : corazonLiaSinVida;
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (Instancia == this)
+            Instancia = null;
     }
 }

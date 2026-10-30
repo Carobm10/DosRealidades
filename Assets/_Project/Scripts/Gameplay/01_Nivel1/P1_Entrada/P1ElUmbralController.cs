@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using Unity.Netcode;
 using System.Collections;
@@ -11,21 +12,34 @@ public class P1ElUmbralController : NetworkBehaviour
     [Header("Interacciones")]
     [SerializeField] private ZonaInteraccion interaccionPanelElian;
     [SerializeField] private ZonaInteraccion interaccionPanelLia;
+    [Header("Brillo de los objetivos")]
+    [SerializeField] private BrilloObjetivo brilloPanelElian;
+    [SerializeField] private BrilloObjetivo brilloPanelLia;
+
     [Header("Estado del puzzle")]
     [SerializeField] private bool trianguloEsCorrecto = true;
+
+    [Header("Puertas")]
+    [SerializeField] private Animator animatorPuertaElian;
+    [SerializeField] private Animator animatorPuertaLia;
+    [SerializeField] private string parametroAbrir = "Abrir";
 
     [Header("Camara")]
     [SerializeField] private Transform puntoCamaraPuerta;
     [SerializeField] private float duracionEnfoquePuerta = 2f;
 
+    [Header("Animacion")]
+    [SerializeField] private float esperaAnimacion = 0.35f;
+
     private NetworkVariable<bool> puzzleResuelto =
         new NetworkVariable<bool>(false);
+
+    private bool secuenciaIniciada = false;
 
     public override void OnNetworkSpawn()
     {
         puzzleResuelto.OnValueChanged += AlCambiarEstadoPuzzle;
 
-        // Por si un cliente entra cuando el puzzle ya fue resuelto.
         if (puzzleResuelto.Value)
         {
             EjecutarSecuenciaResuelto();
@@ -46,10 +60,7 @@ public class P1ElUmbralController : NetworkBehaviour
         if (puzzleResuelto.Value)
             return;
 
-        if (PanelSimbolosUI.Instancia != null)
-        {
-            PanelSimbolosUI.Instancia.SeleccionarCirculo();
-        }
+        PanelSimbolosUI.Instancia?.SeleccionarCirculo();
 
         EnviarSeleccionServidorRpc(0);
     }
@@ -59,10 +70,7 @@ public class P1ElUmbralController : NetworkBehaviour
         if (puzzleResuelto.Value)
             return;
 
-        if (PanelSimbolosUI.Instancia != null)
-        {
-            PanelSimbolosUI.Instancia.SeleccionarTriangulo();
-        }
+        PanelSimbolosUI.Instancia?.SeleccionarTriangulo();
 
         EnviarSeleccionServidorRpc(1);
     }
@@ -72,10 +80,7 @@ public class P1ElUmbralController : NetworkBehaviour
         if (puzzleResuelto.Value)
             return;
 
-        if (PanelSimbolosUI.Instancia != null)
-        {
-            PanelSimbolosUI.Instancia.SeleccionarCuadrado();
-        }
+        PanelSimbolosUI.Instancia?.SeleccionarCuadrado();
 
         EnviarSeleccionServidorRpc(2);
     }
@@ -89,10 +94,6 @@ public class P1ElUmbralController : NetworkBehaviour
     {
         if (puzzleResuelto.Value)
             return;
-
-        // 0 = circulo
-        // 1 = triangulo
-        // 2 = cuadrado
 
         bool correcto =
             trianguloEsCorrecto &&
@@ -110,8 +111,7 @@ public class P1ElUmbralController : NetworkBehaviour
 
     private void AlCambiarEstadoPuzzle(
         bool valorAnterior,
-        bool valorNuevo
-    )
+        bool valorNuevo)
     {
         if (!valorNuevo)
             return;
@@ -121,71 +121,79 @@ public class P1ElUmbralController : NetworkBehaviour
 
     private void EjecutarSecuenciaResuelto()
     {
+        if (secuenciaIniciada)
+            return;
+
+        secuenciaIniciada = true;
+
         StartCoroutine(SecuenciaPuzzleResuelto());
     }
 
     private IEnumerator SecuenciaPuzzleResuelto()
     {
-        // Mostramos medio segundo el resultado correcto.
         yield return new WaitForSeconds(0.5f);
 
-        // Cerramos panel de Elian.
+        // Cerrar paneles
         if (ventanaPanelElian != null)
-        {
             ventanaPanelElian.SetActive(false);
-        }
 
-        // Cerramos panel/pista de Lia.
         if (ventanaPanelLia != null)
-        {
             ventanaPanelLia.SetActive(false);
-        }
 
-        // Quitamos cualquier boton de interactuar.
+        // Ocultar botones de interaccion
         if (HUDInteraccion.Instancia != null)
         {
             if (interaccionPanelElian != null)
-            {
-                HUDInteraccion.Instancia.OcultarBoton(
-                    interaccionPanelElian
-                );
-            }
+                HUDInteraccion.Instancia.OcultarBoton(interaccionPanelElian);
 
             if (interaccionPanelLia != null)
-            {
-                HUDInteraccion.Instancia.OcultarBoton(
-                    interaccionPanelLia
-                );
-            }
+                HUDInteraccion.Instancia.OcultarBoton(interaccionPanelLia);
         }
 
-        // Ya no pueden volver a interactuar con el puzzle.
+        // Desactivar interacciones del puzzle
         if (interaccionPanelElian != null)
-        {
             interaccionPanelElian.enabled = false;
-        }
 
         if (interaccionPanelLia != null)
-        {
             interaccionPanelLia.enabled = false;
-        }
 
-        // Ocultamos la misión durante el enfoque.
+        // Detener el brillo de ambos paneles
+        if (brilloPanelElian != null)
+            brilloPanelElian.CompletarObjetivo();
+
+        if (brilloPanelLia != null)
+            brilloPanelLia.CompletarObjetivo();
+
+        // Ocultar mision
         if (HUDMision.Instancia != null)
-        {
             HUDMision.Instancia.OcultarMision();
-        }
 
-        // Cámara hacia la puerta.
+        // Enfocar camara en la puerta
         EnfocarCamaraLocalEnPuerta();
 
-        // Esperamos mientras la cámara está enfocando la puerta.
+        // Dar tiempo para que la camara llegue a la puerta
+        yield return new WaitForSeconds(esperaAnimacion);
+
+        // Reproducir animacion de la puerta correspondiente
+        Animator puertaLocal = ObtenerAnimatorPuertaLocal();
+
+        if (puertaLocal != null)
+        {
+            puertaLocal.SetTrigger(parametroAbrir);
+        }
+        else
+        {
+            Debug.LogWarning(
+                "No se encontro el Animator de la puerta local."
+            );
+        }
+
+        // Esperar el resto del enfoque
         yield return new WaitForSeconds(
-            duracionEnfoquePuerta
+            Mathf.Max(0f, duracionEnfoquePuerta - esperaAnimacion)
         );
 
-        // La cámara vuelve sola al jugador.
-        // Mostramos la nueva misión.
+        // Mostrar nueva mision
         if (HUDMision.Instancia != null)
         {
             HUDMision.Instancia.CambiarMision(
@@ -194,12 +202,46 @@ public class P1ElUmbralController : NetworkBehaviour
         }
     }
 
+    // =========================
+    // IDENTIFICAR PUERTA LOCAL
+    // =========================
+
+    private Animator ObtenerAnimatorPuertaLocal()
+    {
+        bool esElian;
+
+#if UNITY_EDITOR
+        if (RolPruebaJugador.Instancia != null)
+        {
+            esElian = RolPruebaJugador.Instancia.EsElian();
+        }
+        else
+        {
+            esElian =
+                NetworkManager.Singleton == null ||
+                NetworkManager.Singleton.IsHost;
+        }
+#else
+        esElian =
+            NetworkManager.Singleton != null &&
+            NetworkManager.Singleton.IsHost;
+#endif
+
+        return esElian
+            ? animatorPuertaElian
+            : animatorPuertaLia;
+    }
+
+    // =========================
+    // CAMARA
+    // =========================
+
     private void EnfocarCamaraLocalEnPuerta()
     {
         if (puntoCamaraPuerta == null)
         {
             Debug.LogWarning(
-                "No se asigno PuntoCamaraPuerta en P1ElUmbralController."
+                "No se asigno PuntoCamaraPuerta."
             );
             return;
         }

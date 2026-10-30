@@ -1,6 +1,6 @@
+
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode;
 
 public class VisualBotonInteractuar : MonoBehaviour
 {
@@ -10,32 +10,29 @@ public class VisualBotonInteractuar : MonoBehaviour
     [SerializeField] private Sprite botonElian;
     [SerializeField] private Sprite botonLia;
 
-    private void Start()
+    private void Awake()
     {
         if (imagenBoton == null)
-        {
             imagenBoton = GetComponent<Image>();
-        }
+    }
 
+    private void Start()
+    {
         AplicarVisual();
     }
 
     private void AplicarVisual()
     {
         if (imagenBoton == null)
+        {
+            Debug.LogWarning(
+                "VisualBotonInteractuar: falta asignar la imagen."
+            );
             return;
+        }
 
-        // TEMPORAL:
-        // Host = Elian
-        // Client = Lia
-        if (NetworkManager.Singleton != null &&
-            !NetworkManager.Singleton.IsHost)
-        {
-            imagenBoton.sprite = botonLia;
-        }
-        else
-        {
-            imagenBoton.sprite = botonElian;
-        }
+        imagenBoton.sprite = IdentidadJugadorLocal.EsElian()
+            ? botonElian
+            : botonLia;
     }
 }

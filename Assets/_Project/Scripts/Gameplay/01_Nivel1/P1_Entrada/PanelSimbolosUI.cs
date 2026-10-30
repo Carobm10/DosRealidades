@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -78,16 +79,9 @@ public class PanelSimbolosUI : MonoBehaviour
         {
             textoResultado.gameObject.SetActive(true);
 
-            if (correcto)
-            {
-                textoResultado.text = "CORRECTO";
-                textoResultado.color = Color.green;
-            }
-            else
-            {
-                textoResultado.text = "INCORRECTO";
-                textoResultado.color = Color.red;
-            }
+            textoResultado.text = correcto
+                ? "CORRECTO"
+                : "INCORRECTO";
         }
 
         yield return new WaitForSeconds(tiempoMensaje);

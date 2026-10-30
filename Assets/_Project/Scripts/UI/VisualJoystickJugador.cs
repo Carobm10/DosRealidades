@@ -1,6 +1,6 @@
+
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode;
 
 public class VisualJoystickJugador : MonoBehaviour
 {
@@ -26,18 +26,7 @@ public class VisualJoystickJugador : MonoBehaviour
 
     private void AplicarVisualJugador()
     {
-        // Para pruebas directas en Editor:
-        // si no hay NetworkManager, mostramos Elian.
-        if (NetworkManager.Singleton == null)
-        {
-            AplicarElian();
-            return;
-        }
-
-        // TEMPORAL:
-        // Host = Elian
-        // Client = Lia
-        if (NetworkManager.Singleton.IsHost)
+        if (IdentidadJugadorLocal.EsElian())
         {
             AplicarElian();
         }
@@ -49,15 +38,25 @@ public class VisualJoystickJugador : MonoBehaviour
 
     private void AplicarElian()
     {
-        imagenCentro.sprite = centroElian;
-        imagenBase.sprite = baseElian;
-        imagenBolita.sprite = bolitaElian;
+        if (imagenCentro != null)
+            imagenCentro.sprite = centroElian;
+
+        if (imagenBase != null)
+            imagenBase.sprite = baseElian;
+
+        if (imagenBolita != null)
+            imagenBolita.sprite = bolitaElian;
     }
 
     private void AplicarLia()
     {
-        imagenCentro.sprite = centroLia;
-        imagenBase.sprite = baseLia;
-        imagenBolita.sprite = bolitaLia;
+        if (imagenCentro != null)
+            imagenCentro.sprite = centroLia;
+
+        if (imagenBase != null)
+            imagenBase.sprite = baseLia;
+
+        if (imagenBolita != null)
+            imagenBolita.sprite = bolitaLia;
     }
 }
