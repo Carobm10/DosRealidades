@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 676d43178ef7946459663a50e5b4cd7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5512425365702162957
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_0
+  - first:
+      213: 802150958800091625
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_1
+  - first:
+      213: 9193087619366606934
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_2
+  - first:
+      213: 457529079210634137
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_3
+  - first:
+      213: -3882931685611501002
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_4
+  - first:
+      213: 5379737795787296695
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_5
+  - first:
+      213: -5586735621245610033
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_6
+  - first:
+      213: 7767219368815712415
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_7
+  - first:
+      213: -1363266249409884291
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_8
+  - first:
+      213: -5564153223240708182
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_9
+  - first:
+      213: 6713795018734384635
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_10
+  - first:
+      213: 5316970674397951957
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_11
+  - first:
+      213: -6272882613858814946
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_12
+  - first:
+      213: -946674750308265805
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_13
+  - first:
+      213: 3879838932949554540
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_14
+  - first:
+      213: -5523832202403057149
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_15
+  - first:
+      213: -8413697482641300737
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_16
+  - first:
+      213: 4977387506814106614
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_17
+  - first:
+      213: -5818761535371183387
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_18
+  - first:
+      213: -8731040046573267557
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_19
+  - first:
+      213: 1807981558794834062
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_20
+  - first:
+      213: -6431023604551436314
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_21
+  - first:
+      213: -642019835082263080
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_22
+  - first:
+      213: 8234975260935177278
+    second: Plataforma_Cristal_SinBrillo_Flotando_Sheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 29
+        width: 573
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9b48b0c00d12b00800000000000000
+      internalID: 802150958800091625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 26
+        width: 573
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99be2c00648795600800000000000000
+      internalID: 457529079210634137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 24
+        width: 573
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf05aea50ba8aa40800000000000000
+      internalID: 5379737795787296695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 23
+        width: 573
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f985bca0dd4bacb60800000000000000
+      internalID: 7767219368815712415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 24
+        width: 573
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf84e4af1828c2b0800000000000000
+      internalID: -5564153223240708182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 24
+        width: 573
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7b8a868aca9c940800000000000000
+      internalID: 5316970674397951957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 23
+        width: 573
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b05b0e845cbcd2f0800000000000000
+      internalID: -946674750308265805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4674
+        y: 24
+        width: 573
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302f6e0e0e76753b0800000000000000
+      internalID: -5523832202403057149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 5334
+        y: 26
+        width: 573
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb3f1de09b331540800000000000000
+      internalID: 4977387506814106614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5994
+        y: 29
+        width: 573
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b955a40365d15d680800000000000000
+      internalID: -8731040046573267557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 6654
+        y: 32
+        width: 548
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 54, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e73f8cca1a60c6a0800000000000000
+      internalID: -6431023604551436314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plataforma_Cristal_SinBrillo_Flotando_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7314
+        y: 32
+        width: 573
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34cb2a7e52884270800000000000000
+      internalID: 8234975260935177278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ac5aad9317c488f49b7ba824b19970f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_0: 5512425365702162957
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_1: 802150958800091625
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_10: 6713795018734384635
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_11: 5316970674397951957
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_12: -6272882613858814946
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_13: -946674750308265805
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_14: 3879838932949554540
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_15: -5523832202403057149
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_16: -8413697482641300737
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_17: 4977387506814106614
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_18: -5818761535371183387
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_19: -8731040046573267557
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_2: 9193087619366606934
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_20: 1807981558794834062
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_21: -6431023604551436314
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_22: -642019835082263080
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_23: 8234975260935177278
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_3: 457529079210634137
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_4: -3882931685611501002
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_5: 5379737795787296695
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_6: -5586735621245610033
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_7: 7767219368815712415
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_8: -1363266249409884291
+      Plataforma_Cristal_SinBrillo_Flotando_Sheet_9: -5564153223240708182
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

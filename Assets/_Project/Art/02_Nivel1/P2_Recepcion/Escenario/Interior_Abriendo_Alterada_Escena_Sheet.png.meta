@@ -1,0 +1,1848 @@
+fileFormatVersion: 2
+guid: 25bc6d4b89cdb65428b3bef49b934cb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1364017510517973139
+    second: Interior_Abriendo_Alterada_Escena_Sheet_0
+  - first:
+      213: -7623956820388686198
+    second: Interior_Abriendo_Alterada_Escena_Sheet_1
+  - first:
+      213: 3049538313938012725
+    second: Interior_Abriendo_Alterada_Escena_Sheet_2
+  - first:
+      213: 6617166743456182652
+    second: Interior_Abriendo_Alterada_Escena_Sheet_3
+  - first:
+      213: -1871242884751111117
+    second: Interior_Abriendo_Alterada_Escena_Sheet_4
+  - first:
+      213: 7621601142909795381
+    second: Interior_Abriendo_Alterada_Escena_Sheet_5
+  - first:
+      213: 5337489327665710632
+    second: Interior_Abriendo_Alterada_Escena_Sheet_6
+  - first:
+      213: 4867061256511042452
+    second: Interior_Abriendo_Alterada_Escena_Sheet_7
+  - first:
+      213: -7726519907230192784
+    second: Interior_Abriendo_Alterada_Escena_Sheet_8
+  - first:
+      213: 2269530748112459679
+    second: Interior_Abriendo_Alterada_Escena_Sheet_9
+  - first:
+      213: -7267351341881604288
+    second: Interior_Abriendo_Alterada_Escena_Sheet_10
+  - first:
+      213: -3323473282122877450
+    second: Interior_Abriendo_Alterada_Escena_Sheet_11
+  - first:
+      213: -7873043294603894143
+    second: Interior_Abriendo_Alterada_Escena_Sheet_12
+  - first:
+      213: -3089200267205210808
+    second: Interior_Abriendo_Alterada_Escena_Sheet_13
+  - first:
+      213: 4136488511176810458
+    second: Interior_Abriendo_Alterada_Escena_Sheet_14
+  - first:
+      213: 5024001979765580136
+    second: Interior_Abriendo_Alterada_Escena_Sheet_15
+  - first:
+      213: -5315291560939480286
+    second: Interior_Abriendo_Alterada_Escena_Sheet_16
+  - first:
+      213: 3623106024750687969
+    second: Interior_Abriendo_Alterada_Escena_Sheet_17
+  - first:
+      213: 8803585554129342620
+    second: Interior_Abriendo_Alterada_Escena_Sheet_18
+  - first:
+      213: 2714752323001305791
+    second: Interior_Abriendo_Alterada_Escena_Sheet_19
+  - first:
+      213: -8988943666151226779
+    second: Interior_Abriendo_Alterada_Escena_Sheet_20
+  - first:
+      213: -1235492069031815001
+    second: Interior_Abriendo_Alterada_Escena_Sheet_21
+  - first:
+      213: -9181533343852296812
+    second: Interior_Abriendo_Alterada_Escena_Sheet_22
+  - first:
+      213: -8825643146562888859
+    second: Interior_Abriendo_Alterada_Escena_Sheet_23
+  - first:
+      213: -5057180184621135903
+    second: Interior_Abriendo_Alterada_Escena_Sheet_24
+  - first:
+      213: -1754126027191317251
+    second: Interior_Abriendo_Alterada_Escena_Sheet_25
+  - first:
+      213: -3471246509775031325
+    second: Interior_Abriendo_Alterada_Escena_Sheet_26
+  - first:
+      213: 2604337535150259592
+    second: Interior_Abriendo_Alterada_Escena_Sheet_27
+  - first:
+      213: -2619014607452157016
+    second: Interior_Abriendo_Alterada_Escena_Sheet_28
+  - first:
+      213: -8211275127416960092
+    second: Interior_Abriendo_Alterada_Escena_Sheet_29
+  - first:
+      213: -4874753769995209885
+    second: Interior_Abriendo_Alterada_Escena_Sheet_30
+  - first:
+      213: -8848455111374125427
+    second: Interior_Abriendo_Alterada_Escena_Sheet_31
+  - first:
+      213: 5614348582170995123
+    second: Interior_Abriendo_Alterada_Escena_Sheet_32
+  - first:
+      213: 3942526024081749137
+    second: Interior_Abriendo_Alterada_Escena_Sheet_33
+  - first:
+      213: 7894443714682878676
+    second: Interior_Abriendo_Alterada_Escena_Sheet_34
+  - first:
+      213: -2273361607587869754
+    second: Interior_Abriendo_Alterada_Escena_Sheet_35
+  - first:
+      213: -4324052578747991524
+    second: Interior_Abriendo_Alterada_Escena_Sheet_36
+  - first:
+      213: -3734620235341129665
+    second: Interior_Abriendo_Alterada_Escena_Sheet_37
+  - first:
+      213: 8052882179899414495
+    second: Interior_Abriendo_Alterada_Escena_Sheet_38
+  - first:
+      213: -2522640526310280590
+    second: Interior_Abriendo_Alterada_Escena_Sheet_39
+  - first:
+      213: -2541193230913334089
+    second: Interior_Abriendo_Alterada_Escena_Sheet_40
+  - first:
+      213: 3251149540818999927
+    second: Interior_Abriendo_Alterada_Escena_Sheet_41
+  - first:
+      213: 8963188791426102220
+    second: Interior_Abriendo_Alterada_Escena_Sheet_42
+  - first:
+      213: 8802715768966296552
+    second: Interior_Abriendo_Alterada_Escena_Sheet_43
+  - first:
+      213: -1410602953767364805
+    second: Interior_Abriendo_Alterada_Escena_Sheet_44
+  - first:
+      213: 7368648949280166246
+    second: Interior_Abriendo_Alterada_Escena_Sheet_45
+  - first:
+      213: 6241872563692655235
+    second: Interior_Abriendo_Alterada_Escena_Sheet_46
+  - first:
+      213: 943270287587219931
+    second: Interior_Abriendo_Alterada_Escena_Sheet_47
+  - first:
+      213: -5314289225427433500
+    second: Interior_Abriendo_Alterada_Escena_Sheet_48
+  - first:
+      213: 333390074705556923
+    second: Interior_Abriendo_Alterada_Escena_Sheet_49
+  - first:
+      213: 1676770922936097808
+    second: Interior_Abriendo_Alterada_Escena_Sheet_50
+  - first:
+      213: 6452457601242526828
+    second: Interior_Abriendo_Alterada_Escena_Sheet_51
+  - first:
+      213: 5478552053445312041
+    second: Interior_Abriendo_Alterada_Escena_Sheet_52
+  - first:
+      213: 5312974433456617188
+    second: Interior_Abriendo_Alterada_Escena_Sheet_53
+  - first:
+      213: 5588826686027751754
+    second: Interior_Abriendo_Alterada_Escena_Sheet_54
+  - first:
+      213: 4414351490260977085
+    second: Interior_Abriendo_Alterada_Escena_Sheet_55
+  - first:
+      213: 8599536409370660289
+    second: Interior_Abriendo_Alterada_Escena_Sheet_56
+  - first:
+      213: 7049026873787009720
+    second: Interior_Abriendo_Alterada_Escena_Sheet_57
+  - first:
+      213: 532208086367283807
+    second: Interior_Abriendo_Alterada_Escena_Sheet_58
+  - first:
+      213: 6893740155831875215
+    second: Interior_Abriendo_Alterada_Escena_Sheet_59
+  - first:
+      213: -921081218096885701
+    second: Interior_Abriendo_Alterada_Escena_Sheet_60
+  - first:
+      213: 156793317636870973
+    second: Interior_Abriendo_Alterada_Escena_Sheet_61
+  - first:
+      213: 7093168212979785581
+    second: Interior_Abriendo_Alterada_Escena_Sheet_62
+  - first:
+      213: -162434779368392658
+    second: Interior_Abriendo_Alterada_Escena_Sheet_63
+  - first:
+      213: -9149494663359628399
+    second: Interior_Abriendo_Alterada_Escena_Sheet_64
+  - first:
+      213: 6216842297708781420
+    second: Interior_Abriendo_Alterada_Escena_Sheet_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 27
+        width: 206
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39026dde2b6fde210800000000000000
+      internalID: 1364017510517973139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 193
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86d0d15aa3423690800000000000000
+      internalID: -7623956820388686198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 26
+        width: 163
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a083b70f2225a20800000000000000
+      internalID: 3049538313938012725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 195
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71fb3b0816e4db50800000000000000
+      internalID: 6617166743456182652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 25
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ccee5b2820806e0800000000000000
+      internalID: -1871242884751111117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 25
+        width: 194
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c79d6cbdd55c960800000000000000
+      internalID: 7621601142909795381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 192
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82604f7a342921a40800000000000000
+      internalID: 5337489327665710632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 25
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493386e0d664b8340800000000000000
+      internalID: 4867061256511042452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 25
+        width: 165
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b6f8bc413e5c490800000000000000
+      internalID: -7726519907230192784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 25
+        width: 165
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97d110e03efe7f10800000000000000
+      internalID: 2269530748112459679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 25
+        width: 165
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0474039657e252b90800000000000000
+      internalID: -7267351341881604288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 25
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5709e88a6a0e1d0800000000000000
+      internalID: -3323473282122877450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 188
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1822dd336d45db290800000000000000
+      internalID: -7873043294603894143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 184
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d013969b4f025d0800000000000000
+      internalID: -3089200267205210808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 171
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf9d268262c76930800000000000000
+      internalID: 4136488511176810458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 161
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86169caae27d8b540800000000000000
+      internalID: 5024001979765580136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b1298ac7a4c36b0800000000000000
+      internalID: -5315291560939480286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 165
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6a7d4cbbbd74230800000000000000
+      internalID: 3623106024750687969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90d3a70b6e9c2a70800000000000000
+      internalID: 8803585554129342620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 166
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbac8a9badcbca520800000000000000
+      internalID: 2714752323001305791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 157
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5620f017c5bd04380800000000000000
+      internalID: -8988943666151226779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 161
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8db865286aadee0800000000000000
+      internalID: -1235492069031815001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 159
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4958742d114a49080800000000000000
+      internalID: -9181533343852296812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 160
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b12c68154058580800000000000000
+      internalID: -8825643146562888859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 159
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7438a8a6941d9b0800000000000000
+      internalID: -5057180184621135903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 156
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc8ef90ca718a7e0800000000000000
+      internalID: -1754126027191317251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 162
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e37b09d0b7a3dfc0800000000000000
+      internalID: -3471246509775031325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 154
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88df8d99037742420800000000000000
+      internalID: 2604337535150259592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 127
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab4145371467abd0800000000000000
+      internalID: -2619014607452157016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 108
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abcf4dd6c0bb0e80800000000000000
+      internalID: -8211275127416960092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 121
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36370f31645695cb0800000000000000
+      internalID: -4874753769995209885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 135
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d864e8315f8f33580800000000000000
+      internalID: -8848455111374125427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 125
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b925851a4c2aed40800000000000000
+      internalID: 5614348582170995123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 127
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194302fc78aa6b630800000000000000
+      internalID: 3942526024081749137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 135
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dafcf06bb2be8d60800000000000000
+      internalID: 7894443714682878676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 125
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbc6b5a9a56370e0800000000000000
+      internalID: -2273361607587869754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 133
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a3d95e611edf3c0800000000000000
+      internalID: -4324052578747991524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 122
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38918dcea6fb2cc0800000000000000
+      internalID: -3734620235341129665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 129
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd75af63da591cf60800000000000000
+      internalID: 8052882179899414495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 119
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272754d8ec7cdfcd0800000000000000
+      internalID: -2522640526310280590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 115
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b498c5683edbbcd0800000000000000
+      internalID: -2541193230913334089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 115
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ad03438476e1d20800000000000000
+      internalID: 3251149540818999927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 112
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc337bf77b4a36c70800000000000000
+      internalID: 8963188791426102220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e337f36a57892a70800000000000000
+      internalID: 8802715768966296552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37549556188c6ce0800000000000000
+      internalID: -1410602953767364805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6615668bd23b24660800000000000000
+      internalID: 7368648949280166246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 113
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382582c96069f9650800000000000000
+      internalID: 6241872563692655235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 104
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd911d2345b271d00800000000000000
+      internalID: 943270287587219931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 103
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e746b41b1adf36b0800000000000000
+      internalID: -5314289225427433500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 103
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5377ea18070a400800000000000000
+      internalID: 333390074705556923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 106
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c5f4f3546154710800000000000000
+      internalID: 1676770922936097808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 60
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c647452700cbb8950800000000000000
+      internalID: 6452457601242526828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 59
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e3815e01ab70c40800000000000000
+      internalID: 5478552053445312041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 56
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6f9ee091a7bb940800000000000000
+      internalID: 5312974433456617188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 47
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4168e392408f8d40800000000000000
+      internalID: 5588826686027751754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 53
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5c8baca4de24d30800000000000000
+      internalID: 4414351490260977085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 47
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd83915dc0b75770800000000000000
+      internalID: 8599536409370660289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 49
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bac148289c23d160800000000000000
+      internalID: 7049026873787009720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 46
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a238e4f68c26700800000000000000
+      internalID: 532208086367283807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 51
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86743aa52c7baf50800000000000000
+      internalID: 6893740155831875215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b301d022389a733f0800000000000000
+      internalID: -921081218096885701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 49
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3396e011ba0d2200800000000000000
+      internalID: 156793317636870973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 48
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f90c298eeff6260800000000000000
+      internalID: 7093168212979785581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 58
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28f394cd6aeebdf0800000000000000
+      internalID: -162434779368392658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bfd1c6417760180800000000000000
+      internalID: -9149494663359628399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Alterada_Escena_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 48
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f1e8ba129a64650800000000000000
+      internalID: 6216842297708781420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Interior_Abriendo_Alterada_Escena_Sheet_0: 1364017510517973139
+      Interior_Abriendo_Alterada_Escena_Sheet_1: -7623956820388686198
+      Interior_Abriendo_Alterada_Escena_Sheet_10: -7267351341881604288
+      Interior_Abriendo_Alterada_Escena_Sheet_11: -3323473282122877450
+      Interior_Abriendo_Alterada_Escena_Sheet_12: -7873043294603894143
+      Interior_Abriendo_Alterada_Escena_Sheet_13: -3089200267205210808
+      Interior_Abriendo_Alterada_Escena_Sheet_14: 4136488511176810458
+      Interior_Abriendo_Alterada_Escena_Sheet_15: 5024001979765580136
+      Interior_Abriendo_Alterada_Escena_Sheet_16: -5315291560939480286
+      Interior_Abriendo_Alterada_Escena_Sheet_17: 3623106024750687969
+      Interior_Abriendo_Alterada_Escena_Sheet_18: 8803585554129342620
+      Interior_Abriendo_Alterada_Escena_Sheet_19: 2714752323001305791
+      Interior_Abriendo_Alterada_Escena_Sheet_2: 3049538313938012725
+      Interior_Abriendo_Alterada_Escena_Sheet_20: -8988943666151226779
+      Interior_Abriendo_Alterada_Escena_Sheet_21: -1235492069031815001
+      Interior_Abriendo_Alterada_Escena_Sheet_22: -9181533343852296812
+      Interior_Abriendo_Alterada_Escena_Sheet_23: -8825643146562888859
+      Interior_Abriendo_Alterada_Escena_Sheet_24: -5057180184621135903
+      Interior_Abriendo_Alterada_Escena_Sheet_25: -1754126027191317251
+      Interior_Abriendo_Alterada_Escena_Sheet_26: -3471246509775031325
+      Interior_Abriendo_Alterada_Escena_Sheet_27: 2604337535150259592
+      Interior_Abriendo_Alterada_Escena_Sheet_28: -2619014607452157016
+      Interior_Abriendo_Alterada_Escena_Sheet_29: -8211275127416960092
+      Interior_Abriendo_Alterada_Escena_Sheet_3: 6617166743456182652
+      Interior_Abriendo_Alterada_Escena_Sheet_30: -4874753769995209885
+      Interior_Abriendo_Alterada_Escena_Sheet_31: -8848455111374125427
+      Interior_Abriendo_Alterada_Escena_Sheet_32: 5614348582170995123
+      Interior_Abriendo_Alterada_Escena_Sheet_33: 3942526024081749137
+      Interior_Abriendo_Alterada_Escena_Sheet_34: 7894443714682878676
+      Interior_Abriendo_Alterada_Escena_Sheet_35: -2273361607587869754
+      Interior_Abriendo_Alterada_Escena_Sheet_36: -4324052578747991524
+      Interior_Abriendo_Alterada_Escena_Sheet_37: -3734620235341129665
+      Interior_Abriendo_Alterada_Escena_Sheet_38: 8052882179899414495
+      Interior_Abriendo_Alterada_Escena_Sheet_39: -2522640526310280590
+      Interior_Abriendo_Alterada_Escena_Sheet_4: -1871242884751111117
+      Interior_Abriendo_Alterada_Escena_Sheet_40: -2541193230913334089
+      Interior_Abriendo_Alterada_Escena_Sheet_41: 3251149540818999927
+      Interior_Abriendo_Alterada_Escena_Sheet_42: 8963188791426102220
+      Interior_Abriendo_Alterada_Escena_Sheet_43: 8802715768966296552
+      Interior_Abriendo_Alterada_Escena_Sheet_44: -1410602953767364805
+      Interior_Abriendo_Alterada_Escena_Sheet_45: 7368648949280166246
+      Interior_Abriendo_Alterada_Escena_Sheet_46: 6241872563692655235
+      Interior_Abriendo_Alterada_Escena_Sheet_47: 943270287587219931
+      Interior_Abriendo_Alterada_Escena_Sheet_48: -5314289225427433500
+      Interior_Abriendo_Alterada_Escena_Sheet_49: 333390074705556923
+      Interior_Abriendo_Alterada_Escena_Sheet_5: 7621601142909795381
+      Interior_Abriendo_Alterada_Escena_Sheet_50: 1676770922936097808
+      Interior_Abriendo_Alterada_Escena_Sheet_51: 6452457601242526828
+      Interior_Abriendo_Alterada_Escena_Sheet_52: 5478552053445312041
+      Interior_Abriendo_Alterada_Escena_Sheet_53: 5312974433456617188
+      Interior_Abriendo_Alterada_Escena_Sheet_54: 5588826686027751754
+      Interior_Abriendo_Alterada_Escena_Sheet_55: 4414351490260977085
+      Interior_Abriendo_Alterada_Escena_Sheet_56: 8599536409370660289
+      Interior_Abriendo_Alterada_Escena_Sheet_57: 7049026873787009720
+      Interior_Abriendo_Alterada_Escena_Sheet_58: 532208086367283807
+      Interior_Abriendo_Alterada_Escena_Sheet_59: 6893740155831875215
+      Interior_Abriendo_Alterada_Escena_Sheet_6: 5337489327665710632
+      Interior_Abriendo_Alterada_Escena_Sheet_60: -921081218096885701
+      Interior_Abriendo_Alterada_Escena_Sheet_61: 156793317636870973
+      Interior_Abriendo_Alterada_Escena_Sheet_62: 7093168212979785581
+      Interior_Abriendo_Alterada_Escena_Sheet_63: -162434779368392658
+      Interior_Abriendo_Alterada_Escena_Sheet_64: -9149494663359628399
+      Interior_Abriendo_Alterada_Escena_Sheet_65: 6216842297708781420
+      Interior_Abriendo_Alterada_Escena_Sheet_7: 4867061256511042452
+      Interior_Abriendo_Alterada_Escena_Sheet_8: -7726519907230192784
+      Interior_Abriendo_Alterada_Escena_Sheet_9: 2269530748112459679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

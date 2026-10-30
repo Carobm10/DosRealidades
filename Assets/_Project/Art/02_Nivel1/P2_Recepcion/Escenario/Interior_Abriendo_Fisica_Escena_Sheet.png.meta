@@ -1,0 +1,1718 @@
+fileFormatVersion: 2
+guid: d29cbf30e93c47845a137b81eeab7a46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1555132591076497430
+    second: Interior_Abriendo_Fisica_Escena_Sheet_0
+  - first:
+      213: -6044811951217549361
+    second: Interior_Abriendo_Fisica_Escena_Sheet_1
+  - first:
+      213: 6311234660547458036
+    second: Interior_Abriendo_Fisica_Escena_Sheet_2
+  - first:
+      213: -6509964445111619493
+    second: Interior_Abriendo_Fisica_Escena_Sheet_3
+  - first:
+      213: -5822269071869192733
+    second: Interior_Abriendo_Fisica_Escena_Sheet_4
+  - first:
+      213: -8902505428332379474
+    second: Interior_Abriendo_Fisica_Escena_Sheet_5
+  - first:
+      213: 3360035986104869669
+    second: Interior_Abriendo_Fisica_Escena_Sheet_6
+  - first:
+      213: -4174505498125632880
+    second: Interior_Abriendo_Fisica_Escena_Sheet_7
+  - first:
+      213: 6436548477567434286
+    second: Interior_Abriendo_Fisica_Escena_Sheet_8
+  - first:
+      213: -9218985034056764275
+    second: Interior_Abriendo_Fisica_Escena_Sheet_9
+  - first:
+      213: -7637003911135599824
+    second: Interior_Abriendo_Fisica_Escena_Sheet_10
+  - first:
+      213: 4126532708078584166
+    second: Interior_Abriendo_Fisica_Escena_Sheet_11
+  - first:
+      213: -1718066407560296876
+    second: Interior_Abriendo_Fisica_Escena_Sheet_12
+  - first:
+      213: 535302429384034183
+    second: Interior_Abriendo_Fisica_Escena_Sheet_13
+  - first:
+      213: 7504680981581537677
+    second: Interior_Abriendo_Fisica_Escena_Sheet_14
+  - first:
+      213: -8973700744324336174
+    second: Interior_Abriendo_Fisica_Escena_Sheet_15
+  - first:
+      213: 7656731274554896895
+    second: Interior_Abriendo_Fisica_Escena_Sheet_16
+  - first:
+      213: 8373830280348602392
+    second: Interior_Abriendo_Fisica_Escena_Sheet_17
+  - first:
+      213: -3774994070805428777
+    second: Interior_Abriendo_Fisica_Escena_Sheet_18
+  - first:
+      213: 4977858261852249526
+    second: Interior_Abriendo_Fisica_Escena_Sheet_19
+  - first:
+      213: -3696641874625104681
+    second: Interior_Abriendo_Fisica_Escena_Sheet_20
+  - first:
+      213: 1751812836988974293
+    second: Interior_Abriendo_Fisica_Escena_Sheet_21
+  - first:
+      213: -123978414065451587
+    second: Interior_Abriendo_Fisica_Escena_Sheet_22
+  - first:
+      213: -422319412556632324
+    second: Interior_Abriendo_Fisica_Escena_Sheet_23
+  - first:
+      213: 2582432253737267310
+    second: Interior_Abriendo_Fisica_Escena_Sheet_24
+  - first:
+      213: 8435822564051499579
+    second: Interior_Abriendo_Fisica_Escena_Sheet_25
+  - first:
+      213: 6206280727329290157
+    second: Interior_Abriendo_Fisica_Escena_Sheet_26
+  - first:
+      213: 8930175458791605797
+    second: Interior_Abriendo_Fisica_Escena_Sheet_27
+  - first:
+      213: 3802516301888622065
+    second: Interior_Abriendo_Fisica_Escena_Sheet_28
+  - first:
+      213: 7899931386117962642
+    second: Interior_Abriendo_Fisica_Escena_Sheet_29
+  - first:
+      213: -192515489932018452
+    second: Interior_Abriendo_Fisica_Escena_Sheet_30
+  - first:
+      213: 6311482578029738388
+    second: Interior_Abriendo_Fisica_Escena_Sheet_31
+  - first:
+      213: 950006952370069472
+    second: Interior_Abriendo_Fisica_Escena_Sheet_32
+  - first:
+      213: 6689677417040465976
+    second: Interior_Abriendo_Fisica_Escena_Sheet_33
+  - first:
+      213: 4273154166684251237
+    second: Interior_Abriendo_Fisica_Escena_Sheet_34
+  - first:
+      213: -2469616782904580587
+    second: Interior_Abriendo_Fisica_Escena_Sheet_35
+  - first:
+      213: 7474799507087955756
+    second: Interior_Abriendo_Fisica_Escena_Sheet_36
+  - first:
+      213: -8001378544118538777
+    second: Interior_Abriendo_Fisica_Escena_Sheet_37
+  - first:
+      213: -2766963035839731295
+    second: Interior_Abriendo_Fisica_Escena_Sheet_38
+  - first:
+      213: 5563327832470032804
+    second: Interior_Abriendo_Fisica_Escena_Sheet_39
+  - first:
+      213: 9050771114850031966
+    second: Interior_Abriendo_Fisica_Escena_Sheet_40
+  - first:
+      213: 2874014269685920214
+    second: Interior_Abriendo_Fisica_Escena_Sheet_41
+  - first:
+      213: 478013286875115016
+    second: Interior_Abriendo_Fisica_Escena_Sheet_42
+  - first:
+      213: 5672945402084700716
+    second: Interior_Abriendo_Fisica_Escena_Sheet_43
+  - first:
+      213: -2839612933214952479
+    second: Interior_Abriendo_Fisica_Escena_Sheet_44
+  - first:
+      213: -4361692460067401225
+    second: Interior_Abriendo_Fisica_Escena_Sheet_45
+  - first:
+      213: 1640548341147343341
+    second: Interior_Abriendo_Fisica_Escena_Sheet_46
+  - first:
+      213: 1566167361550338694
+    second: Interior_Abriendo_Fisica_Escena_Sheet_47
+  - first:
+      213: -1789502590041340044
+    second: Interior_Abriendo_Fisica_Escena_Sheet_48
+  - first:
+      213: 3491546372454856143
+    second: Interior_Abriendo_Fisica_Escena_Sheet_49
+  - first:
+      213: -4585401943295429138
+    second: Interior_Abriendo_Fisica_Escena_Sheet_50
+  - first:
+      213: -3252114575876409780
+    second: Interior_Abriendo_Fisica_Escena_Sheet_51
+  - first:
+      213: 2644159241032974067
+    second: Interior_Abriendo_Fisica_Escena_Sheet_52
+  - first:
+      213: 2354196436523258253
+    second: Interior_Abriendo_Fisica_Escena_Sheet_53
+  - first:
+      213: -4896339653074389647
+    second: Interior_Abriendo_Fisica_Escena_Sheet_54
+  - first:
+      213: -3184649148221430044
+    second: Interior_Abriendo_Fisica_Escena_Sheet_55
+  - first:
+      213: -3926080479840036290
+    second: Interior_Abriendo_Fisica_Escena_Sheet_56
+  - first:
+      213: 5523083070812890495
+    second: Interior_Abriendo_Fisica_Escena_Sheet_57
+  - first:
+      213: -7078272679101291184
+    second: Interior_Abriendo_Fisica_Escena_Sheet_58
+  - first:
+      213: -1751707054057943750
+    second: Interior_Abriendo_Fisica_Escena_Sheet_59
+  - first:
+      213: 6947054654215323631
+    second: Interior_Abriendo_Fisica_Escena_Sheet_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 27
+        width: 206
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7a04ad52f0b6ae0800000000000000
+      internalID: -1555132591076497430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 188
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf54a1ae838c1ca0800000000000000
+      internalID: -6044811951217549361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 26
+        width: 163
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f370144c72069750800000000000000
+      internalID: 6311234660547458036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 190
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50f2b414d5f7a5a0800000000000000
+      internalID: -6509964445111619493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 25
+        width: 164
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e55e787025233fa0800000000000000
+      internalID: -5822269071869192733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 187
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2034dfa72f37480800000000000000
+      internalID: -8902505428332379474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 25
+        width: 164
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5236f485dee31ae20800000000000000
+      internalID: 3360035986104869669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 25
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a7e4fed5d2116c0800000000000000
+      internalID: -4174505498125632880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 25
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2efcf0fcb6335950800000000000000
+      internalID: 6436548477567434286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 25
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84776fa4f59f0080800000000000000
+      internalID: -9218985034056764275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 25
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0336e78c769e30690800000000000000
+      internalID: -7637003911135599824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 25
+        width: 164
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6610e0b72a3644930800000000000000
+      internalID: 4126532708078584166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 179
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45646dc74b33828e0800000000000000
+      internalID: -1718066407560296876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 153
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787c6de29b6cd6700800000000000000
+      internalID: 535302429384034183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 157
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d812ccb579bf52860800000000000000
+      internalID: 7504680981581537677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 160
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5b3edb7b2077380800000000000000
+      internalID: -8973700744324336174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1f770f68c224a60800000000000000
+      internalID: 7656731274554896895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 161
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81096950642d53470800000000000000
+      internalID: 8373830280348602392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 157
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5cf64b4e68c9bc0800000000000000
+      internalID: -3774994070805428777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 160
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd52ff17b7e41540800000000000000
+      internalID: 4977858261852249526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 156
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4f229fcc3e2bcc0800000000000000
+      internalID: -3696641874625104681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 155
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d472b56e70bf4810800000000000000
+      internalID: 1751812836988974293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 158
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdffcd0a4a874ef0800000000000000
+      internalID: -123978414065451587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 162
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe6fc85bbe932af0800000000000000
+      internalID: -422319412556632324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 155
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e607584d374a6d320800000000000000
+      internalID: 2582432253737267310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ab3865def021570800000000000000
+      internalID: 8435822564051499579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 150
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7b0d07073212650800000000000000
+      internalID: 6206280727329290157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 124
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5264f23044b5eeb70800000000000000
+      internalID: 8930175458791605797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 105
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd04b21e6045c430800000000000000
+      internalID: 3802516301888622065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 119
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b35837db132ad60800000000000000
+      internalID: 7899931386117962642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 132
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec77d09e2c045df0800000000000000
+      internalID: -192515489932018452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 122
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499778d07f3e69750800000000000000
+      internalID: 6311482578029738388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 125
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef5b223a4a1f2d00800000000000000
+      internalID: 950006952370069472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 132
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83056a8da2286dc50800000000000000
+      internalID: 6689677417040465976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 123
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564f1bf031b4d4b30800000000000000
+      internalID: 4273154166684251237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 129
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51621abde982abdd0800000000000000
+      internalID: -2469616782904580587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 120
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c271e3b6c82dbb760800000000000000
+      internalID: 7474799507087955756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 126
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edd1647b9465f090800000000000000
+      internalID: -8001378544118538777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 116
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9e22667c5c999d0800000000000000
+      internalID: -2766963035839731295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 112
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a19b671039e43d40800000000000000
+      internalID: 5563327832470032804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 112
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59900c306cca9d70800000000000000
+      internalID: 9050771114850031966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1780840cc82e720800000000000000
+      internalID: 2874014269685920214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80eab124d8e32a600800000000000000
+      internalID: 478013286875115016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22b17169c95abe40800000000000000
+      internalID: 5672945402084700716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 104
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e32e18051ba798d0800000000000000
+      internalID: -2839612933214952479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1de2a11d72873c0800000000000000
+      internalID: -4361692460067401225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de991f6360664c610800000000000000
+      internalID: 1640548341147343341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 102
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ac40cdae42cb510800000000000000
+      internalID: 1566167361550338694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 100
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477c1f320e86a27e0800000000000000
+      internalID: -1789502590041340044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 101
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5b9fe3de6747030800000000000000
+      internalID: 3491546372454856143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 59
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee57d712a316d50c0800000000000000
+      internalID: -4585401943295429138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 60
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c463400160b2ed2d0800000000000000
+      internalID: -3252114575876409780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 58
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe365302d0f1b420800000000000000
+      internalID: 2644159241032974067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 56
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81957a9f29cba020800000000000000
+      internalID: 2354196436523258253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 52
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17577d60705bc0cb0800000000000000
+      internalID: -4896339653074389647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 49
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6e202097addc3d0800000000000000
+      internalID: -3184649148221430044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 50
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a1a87da92c389c0800000000000000
+      internalID: -3926080479840036290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 47
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75a6c45acee5ac40800000000000000
+      internalID: 5523083070812890495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055a0da208ce4cd90800000000000000
+      internalID: -7078272679101291184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 48
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d845c17bfa0b7e0800000000000000
+      internalID: -1751707054057943750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_Abriendo_Fisica_Escena_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef7ab3a665e86060800000000000000
+      internalID: 6947054654215323631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Interior_Abriendo_Fisica_Escena_Sheet_0: -1555132591076497430
+      Interior_Abriendo_Fisica_Escena_Sheet_1: -6044811951217549361
+      Interior_Abriendo_Fisica_Escena_Sheet_10: -7637003911135599824
+      Interior_Abriendo_Fisica_Escena_Sheet_11: 4126532708078584166
+      Interior_Abriendo_Fisica_Escena_Sheet_12: -1718066407560296876
+      Interior_Abriendo_Fisica_Escena_Sheet_13: 535302429384034183
+      Interior_Abriendo_Fisica_Escena_Sheet_14: 7504680981581537677
+      Interior_Abriendo_Fisica_Escena_Sheet_15: -8973700744324336174
+      Interior_Abriendo_Fisica_Escena_Sheet_16: 7656731274554896895
+      Interior_Abriendo_Fisica_Escena_Sheet_17: 8373830280348602392
+      Interior_Abriendo_Fisica_Escena_Sheet_18: -3774994070805428777
+      Interior_Abriendo_Fisica_Escena_Sheet_19: 4977858261852249526
+      Interior_Abriendo_Fisica_Escena_Sheet_2: 6311234660547458036
+      Interior_Abriendo_Fisica_Escena_Sheet_20: -3696641874625104681
+      Interior_Abriendo_Fisica_Escena_Sheet_21: 1751812836988974293
+      Interior_Abriendo_Fisica_Escena_Sheet_22: -123978414065451587
+      Interior_Abriendo_Fisica_Escena_Sheet_23: -422319412556632324
+      Interior_Abriendo_Fisica_Escena_Sheet_24: 2582432253737267310
+      Interior_Abriendo_Fisica_Escena_Sheet_25: 8435822564051499579
+      Interior_Abriendo_Fisica_Escena_Sheet_26: 6206280727329290157
+      Interior_Abriendo_Fisica_Escena_Sheet_27: 8930175458791605797
+      Interior_Abriendo_Fisica_Escena_Sheet_28: 3802516301888622065
+      Interior_Abriendo_Fisica_Escena_Sheet_29: 7899931386117962642
+      Interior_Abriendo_Fisica_Escena_Sheet_3: -6509964445111619493
+      Interior_Abriendo_Fisica_Escena_Sheet_30: -192515489932018452
+      Interior_Abriendo_Fisica_Escena_Sheet_31: 6311482578029738388
+      Interior_Abriendo_Fisica_Escena_Sheet_32: 950006952370069472
+      Interior_Abriendo_Fisica_Escena_Sheet_33: 6689677417040465976
+      Interior_Abriendo_Fisica_Escena_Sheet_34: 4273154166684251237
+      Interior_Abriendo_Fisica_Escena_Sheet_35: -2469616782904580587
+      Interior_Abriendo_Fisica_Escena_Sheet_36: 7474799507087955756
+      Interior_Abriendo_Fisica_Escena_Sheet_37: -8001378544118538777
+      Interior_Abriendo_Fisica_Escena_Sheet_38: -2766963035839731295
+      Interior_Abriendo_Fisica_Escena_Sheet_39: 5563327832470032804
+      Interior_Abriendo_Fisica_Escena_Sheet_4: -5822269071869192733
+      Interior_Abriendo_Fisica_Escena_Sheet_40: 9050771114850031966
+      Interior_Abriendo_Fisica_Escena_Sheet_41: 2874014269685920214
+      Interior_Abriendo_Fisica_Escena_Sheet_42: 478013286875115016
+      Interior_Abriendo_Fisica_Escena_Sheet_43: 5672945402084700716
+      Interior_Abriendo_Fisica_Escena_Sheet_44: -2839612933214952479
+      Interior_Abriendo_Fisica_Escena_Sheet_45: -4361692460067401225
+      Interior_Abriendo_Fisica_Escena_Sheet_46: 1640548341147343341
+      Interior_Abriendo_Fisica_Escena_Sheet_47: 1566167361550338694
+      Interior_Abriendo_Fisica_Escena_Sheet_48: -1789502590041340044
+      Interior_Abriendo_Fisica_Escena_Sheet_49: 3491546372454856143
+      Interior_Abriendo_Fisica_Escena_Sheet_5: -8902505428332379474
+      Interior_Abriendo_Fisica_Escena_Sheet_50: -4585401943295429138
+      Interior_Abriendo_Fisica_Escena_Sheet_51: -3252114575876409780
+      Interior_Abriendo_Fisica_Escena_Sheet_52: 2644159241032974067
+      Interior_Abriendo_Fisica_Escena_Sheet_53: 2354196436523258253
+      Interior_Abriendo_Fisica_Escena_Sheet_54: -4896339653074389647
+      Interior_Abriendo_Fisica_Escena_Sheet_55: -3184649148221430044
+      Interior_Abriendo_Fisica_Escena_Sheet_56: -3926080479840036290
+      Interior_Abriendo_Fisica_Escena_Sheet_57: 5523083070812890495
+      Interior_Abriendo_Fisica_Escena_Sheet_58: -7078272679101291184
+      Interior_Abriendo_Fisica_Escena_Sheet_59: -1751707054057943750
+      Interior_Abriendo_Fisica_Escena_Sheet_6: 3360035986104869669
+      Interior_Abriendo_Fisica_Escena_Sheet_60: 6947054654215323631
+      Interior_Abriendo_Fisica_Escena_Sheet_7: -4174505498125632880
+      Interior_Abriendo_Fisica_Escena_Sheet_8: 6436548477567434286
+      Interior_Abriendo_Fisica_Escena_Sheet_9: -9218985034056764275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

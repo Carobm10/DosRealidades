@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: 1da7bdf0cb99a4e47a12a9045faa5dbf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4064289661228688516
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_0
+  - first:
+      213: -5455052695509287219
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_1
+  - first:
+      213: 108727144843430851
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_2
+  - first:
+      213: 1649272013631965950
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_3
+  - first:
+      213: 2932329678585727139
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_4
+  - first:
+      213: 8928500139432928890
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_5
+  - first:
+      213: -7585361632820896623
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_6
+  - first:
+      213: 2316772301065054759
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_7
+  - first:
+      213: -1207698872971955377
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_8
+  - first:
+      213: 5895060956472068938
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_9
+  - first:
+      213: -5354036099797946696
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_10
+  - first:
+      213: 1325639818559192758
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_11
+  - first:
+      213: 4195169415390445508
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_12
+  - first:
+      213: -1358727413963749522
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_13
+  - first:
+      213: 2859556937042471681
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_14
+  - first:
+      213: 1582342879019751070
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_15
+  - first:
+      213: -2268592289919544793
+    second: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7
+        width: 91
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48424d1d9e1476830800000000000000
+      internalID: 4064289661228688516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dceb12db972cb44b0800000000000000
+      internalID: -5455052695509287219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc5dd13c6428100800000000000000
+      internalID: 108727144843430851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efac68e782463e610800000000000000
+      internalID: 1649272013631965950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 12, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a800787e4ab1b820800000000000000
+      internalID: 2932329678585727139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 0
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76ece3529768eb70800000000000000
+      internalID: 8928500139432928890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c55dea8c16bb690800000000000000
+      internalID: -7585361632820896623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 0
+        width: 91
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 14, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a627e0224d62020800000000000000
+      internalID: 2316772301065054759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 0
+        width: 91
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43fdd016446d3fe0800000000000000
+      internalID: -1207698872971955377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 6
+        width: 91
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bcacfd4b67fc150800000000000000
+      internalID: 5895060956472068938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1041b8ff3631b1a4d992bf5093340a2f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_0: 4064289661228688516
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_1: -5455052695509287219
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_10: -5354036099797946696
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_11: 1325639818559192758
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_12: 4195169415390445508
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_13: -1358727413963749522
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_14: 2859556937042471681
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_15: 1582342879019751070
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_16: -2268592289919544793
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_2: 108727144843430851
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_3: 1649272013631965950
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_4: 2932329678585727139
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_5: 8928500139432928890
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_6: -7585361632820896623
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_7: 2316772301065054759
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_8: -1207698872971955377
+      Puerta_Lateral_Abriendo_Alterada_Escena_Sheet_9: 5895060956472068938
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
