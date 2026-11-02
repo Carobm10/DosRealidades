@@ -34,6 +34,20 @@ public class PuzzleRecepcionController : NetworkBehaviour
     [SerializeField] private GameObject ventanaPuzzleElian;
     [SerializeField] private GameObject ventanaPuzzleLia;
 
+    [Header("Iluminacion de las mesas")]
+    [SerializeField] private SpriteRenderer mesaElian;
+    [SerializeField] private SpriteRenderer mesaLia;
+
+    [SerializeField] private Sprite mesaElianBrillo;
+    [SerializeField] private Sprite mesaLiaBrillo;
+
+    [Header("Animaciones de puertas")]
+    [SerializeField] private Animator animatorPuertaElian;
+    [SerializeField] private Animator animatorPuertaLia;
+    [Header("Puntos de enfoque de camara")]
+    [SerializeField] private Transform puntoCamaraElian;
+    [SerializeField] private Transform puntoCamaraLia;
+
     [Header("Interacciones")]
     [SerializeField] private ZonaInteraccion interaccionElian;
     [SerializeField] private ZonaInteraccion interaccionLia;
@@ -63,6 +77,8 @@ public class PuzzleRecepcionController : NetworkBehaviour
         new NetworkVariable<bool>(false);
 
     private bool procesandoSeleccion = false;
+    private Coroutine corrutinaSeleccion;
+    private bool secuenciaCinematograficaIniciada = false;
 
     public override void OnNetworkSpawn()
     {
@@ -169,7 +185,7 @@ public class PuzzleRecepcionController : NetworkBehaviour
         bool acerto =
             seleccionado == correcto;
 
-        StartCoroutine(
+        corrutinaSeleccion = StartCoroutine(
             ProcesarSeleccionServidor(
                 seleccionado,
                 acerto
@@ -177,6 +193,7 @@ public class PuzzleRecepcionController : NetworkBehaviour
         );
     }
 
+    
     private IEnumerator ProcesarSeleccionServidor(
         SimboloRecepcion seleccionado,
         bool correcto
@@ -184,55 +201,52 @@ public class PuzzleRecepcionController : NetworkBehaviour
     {
         procesandoSeleccion = true;
 
-        // Mostramos lo que Elian acaba de tocar.
-        simboloSeleccionado.Value =
-            (int)seleccionado;
+        // Mostrar la figura seleccionada.
+        simboloSeleccionado.Value = (int)seleccionado;
 
-        resultadoSeleccion.Value =
-            correcto ? 2 : 1;
+        resultadoSeleccion.Value = correcto ? 2 : 1;
 
-        yield return new WaitForSeconds(
-            tiempoFeedback
-        );
-
-        // Quitamos el feedback.
-        simboloSeleccionado.Value = -1;
-        resultadoSeleccion.Value = 0;
+        yield return new WaitForSeconds(tiempoFeedback);
 
         if (correcto)
         {
-            int siguientePaso =
-                pasoActual.Value + 1;
+            int siguientePaso = pasoActual.Value + 1;
 
-            if (siguientePaso >=
-                secuenciaCorrecta.Length)
+            // IMPORTANTE:
+            // Primero avanzamos el paso para conservar
+            // iluminada la figura que acaba de acertar.
+            if (siguientePaso >= secuenciaCorrecta.Length)
             {
                 puzzleCompletado.Value = true;
             }
             else
             {
-                pasoActual.Value =
-                    siguientePaso;
+                pasoActual.Value = siguientePaso;
             }
         }
 
+        // Ahora limpiamos únicamente el feedback.
+        // Las figuras acertadas permanecen iluminadas.
+        simboloSeleccionado.Value = -1;
+        resultadoSeleccion.Value = 0;
+
         procesandoSeleccion = false;
     }
+
 
     // ========================================
     // CAMBIO DE PASO
     // ========================================
 
-    private void AlCambiarPaso(
-        int anterior,
-        int nuevo
-    )
+    private void AlCambiarPaso(int anterior, int nuevo)
     {
         ActualizarPistaLia(nuevo);
 
+        // Actualizar las figuras acumuladas de Elian.
+        ActualizarSeleccionElian(simboloSeleccionado.Value);
+
         Debug.Log(
-            "Puzzle Recepcion | Paso: " +
-            (nuevo + 1)
+            "Puzzle Recepcion | Paso: " + (nuevo + 1)
         );
     }
 
@@ -264,30 +278,44 @@ public class PuzzleRecepcionController : NetworkBehaviour
     // VISUAL DE ELIAN
     // ========================================
 
-    private void AlCambiarSeleccion(
-        int anterior,
-        int nuevo
-    )
+    private void AlCambiarSeleccion(int anterior, int nuevo)
     {
         ActualizarSeleccionElian(nuevo);
     }
-
-    private void ActualizarSeleccionElian(
-        int simbolo
-    )
+    
+    private void ActualizarSeleccionElian(int simbolo)
     {
+        // Limpiar la visualización anterior.
         OcultarSimbolosElian();
 
-        if (simbolo < 0)
-            return;
-
-        Image imagen =
-            ObtenerImagenElian(
-                (SimboloRecepcion)simbolo
+        // Mantener iluminadas las figuras ya acertadas.
+        if (secuenciaCorrecta != null)
+        {
+            int pasosCompletados = Mathf.Min(
+                pasoActual.Value,
+                secuenciaCorrecta.Length
             );
 
-        MostrarImagen(imagen, true);
+            for (int i = 0; i < pasosCompletados; i++)
+            {
+                Image figuraCorrecta =
+                    ObtenerImagenElian(secuenciaCorrecta[i]);
+
+                MostrarImagen(figuraCorrecta, true);
+            }
+        }
+
+        // Mostrar temporalmente la selección actual.
+        if (simbolo >= 0 &&
+            simbolo <= (int)SimboloRecepcion.Rombo)
+        {
+            Image figuraActual =
+                ObtenerImagenElian((SimboloRecepcion)simbolo);
+
+            MostrarImagen(figuraActual, true);
+        }
     }
+
 
     // ========================================
     // CORRECTO / INCORRECTO
@@ -301,9 +329,7 @@ public class PuzzleRecepcionController : NetworkBehaviour
         ActualizarResultado(nuevo);
     }
 
-    private void ActualizarResultado(
-        int resultado
-    )
+    private void ActualizarResultado(int resultado)
     {
         if (textoResultadoElian == null)
             return;
@@ -316,23 +342,16 @@ public class PuzzleRecepcionController : NetworkBehaviour
 
         textoResultadoElian.gameObject.SetActive(true);
 
-        if (resultado == 2)
-        {
-            textoResultadoElian.text =
-                "CORRECTO";
+        // Color crema para ambos resultados.
+        Color colorCrema;
+        ColorUtility.TryParseHtmlString("#F3E4C7", out colorCrema);
 
-            textoResultadoElian.color =
-                Color.green;
-        }
-        else
-        {
-            textoResultadoElian.text =
-                "INCORRECTO";
+        textoResultadoElian.color = colorCrema;
 
-            textoResultadoElian.color =
-                Color.red;
-        }
+        textoResultadoElian.text =
+            resultado == 2 ? "CORRECTO" : "INCORRECTO";
     }
+
 
     // ========================================
     // PUZZLE COMPLETADO
@@ -349,69 +368,157 @@ public class PuzzleRecepcionController : NetworkBehaviour
         FinalizarPuzzleLocal();
     }
 
+    
+    
     private void FinalizarPuzzleLocal()
     {
+        if (secuenciaCinematograficaIniciada)
+            return;
+
+        secuenciaCinematograficaIniciada = true;
+
         OcultarSimbolosLia();
         OcultarSimbolosElian();
 
         if (textoResultadoElian != null)
-        {
             textoResultadoElian.gameObject.SetActive(false);
-        }
 
         if (ventanaPuzzleElian != null)
-        {
             ventanaPuzzleElian.SetActive(false);
-        }
 
         if (ventanaPuzzleLia != null)
-        {
             ventanaPuzzleLia.SetActive(false);
-        }
 
         if (HUDInteraccion.Instancia != null)
         {
             if (interaccionElian != null)
-            {
-                HUDInteraccion.Instancia.OcultarBoton(
-                    interaccionElian
-                );
-            }
+                HUDInteraccion.Instancia.OcultarBoton(interaccionElian);
 
             if (interaccionLia != null)
-            {
-                HUDInteraccion.Instancia.OcultarBoton(
-                    interaccionLia
-                );
-            }
+                HUDInteraccion.Instancia.OcultarBoton(interaccionLia);
         }
 
         if (interaccionElian != null)
-        {
             interaccionElian.enabled = false;
-        }
 
         if (interaccionLia != null)
-        {
             interaccionLia.enabled = false;
-        }
 
-        if (!string.IsNullOrWhiteSpace(
-            misionAlCompletar
-        ))
+        if (!string.IsNullOrWhiteSpace(misionAlCompletar))
         {
             if (HUDMision.Instancia != null)
-            {
-                HUDMision.Instancia.CambiarMision(
-                    misionAlCompletar
-                );
-            }
+                HUDMision.Instancia.CambiarMision(misionAlCompletar);
         }
 
+        StartCoroutine(SecuenciaCinematograficaLocal());
+
+        Debug.Log("Puzzle completado. Iniciando secuencia cinematografica.");
+    }
+
+    
+    private IEnumerator SecuenciaCinematograficaLocal()
+    {
+        if (NetworkManager.Singleton == null |
+            NetworkManager.Singleton.LocalClient == null)
+            yield break;
+
+        // Identificar el jugador local.
+        bool esElian = NetworkManager.Singleton.IsHost;
+
+        NetworkObject jugadorLocal =
+            NetworkManager.Singleton.LocalClient.PlayerObject;
+
+        if (jugadorLocal == null)
+        {
+            Debug.LogError("No se encontro el jugador local.");
+            yield break;
+        }
+
+        NetworkPlayerMovement movimiento =
+            jugadorLocal.GetComponent<NetworkPlayerMovement>();
+
+        CamaraJugadorLocal camara =
+            jugadorLocal.GetComponent<CamaraJugadorLocal>();
+
+        Transform puntoCamara =
+            esElian ? puntoCamaraElian : puntoCamaraLia;
+
+        Animator animatorPuerta =
+            esElian ? animatorPuertaElian : animatorPuertaLia;
+
+        if (movimiento == null ||
+            camara == null ||
+            puntoCamara == null ||
+            animatorPuerta == null)
+        {
+            Debug.LogError(
+                "Falta una referencia para la secuencia cinematografica."
+            );
+
+            yield break;
+        }
+
+        // 1. Bloquear movimiento local.
+        movimiento.BloquearMovimiento(true);
+
+        // 2. Obtener duracion de la animacion.
+        float duracionAnimacion = ObtenerDuracionPuerta(animatorPuerta);
+
+        // 3. Iniciar zoom hacia la puerta.
+        camara.EnfocarConZoom(
+            puntoCamara.position,
+            duracionAnimacion + 0.5f
+        );
+
+        // Esperar a que la camara se acerque.
+        yield return new WaitForSeconds(0.4f);
+
+        // 4. Activar la animacion de apertura.
+        animatorPuerta.enabled = true;
+        animatorPuerta.Rebind();
+        animatorPuerta.Update(0f);
+
         Debug.Log(
-            "Puzzle de Recepcion completado."
+            "Abriendo puerta de " + (esElian ? "Elian" : "Lia")
+        );
+
+        // 5. Esperar a que termine la animacion.
+        yield return new WaitForSeconds(duracionAnimacion);
+
+        // 6. Esperar el regreso de la camara.
+        yield return new WaitForSeconds(0.8f);
+
+        // 7. Liberar movimiento.
+        movimiento.BloquearMovimiento(false);
+
+        Debug.Log(
+            "Secuencia cinematografica terminada para " +
+            (esElian ? "Elian" : "Lia")
         );
     }
+
+    private float ObtenerDuracionPuerta(Animator animator)
+    {
+        if (animator == null ||
+            animator.runtimeAnimatorController == null)
+            return 2f;
+
+        float duracion = 0f;
+
+        AnimationClip[] clips =
+            animator.runtimeAnimatorController.animationClips;
+
+        foreach (AnimationClip clip in clips)
+        {
+            if (clip != null && clip.length > duracion)
+                duracion = clip.length;
+        }
+
+        return duracion > 0f ? duracion : 2f;
+    }
+
+
+
 
     // ========================================
     // UTILIDADES VISUALES
@@ -503,4 +610,39 @@ public class PuzzleRecepcionController : NetworkBehaviour
 
         imagen.color = color;
     }
+
+    // ========================================
+    // REINICIAR PUZZLE AL CERRAR
+    // ========================================
+
+    public void SolicitarReinicio()
+    {
+        ReiniciarPuzzleRpc();
+    }
+
+    [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Everyone)]
+    private void ReiniciarPuzzleRpc()
+    {
+        // Si el puzzle ya fue completado, no permitir reiniciarlo.
+        if (puzzleCompletado.Value)
+            return;
+        // Detener cualquier selección que esté procesándose.
+        if (corrutinaSeleccion != null)
+        {
+            StopCoroutine(corrutinaSeleccion);
+            corrutinaSeleccion = null;
+        }
+
+        procesandoSeleccion = false;
+
+        // Restablecer todos los valores del puzzle.
+        pasoActual.Value = 0;
+        simboloSeleccionado.Value = -1;
+        resultadoSeleccion.Value = 0;
+        puzzleCompletado.Value = false;
+
+        Debug.Log("Puzzle Recepción reiniciado.");
+    }
+
+
 }

@@ -1,209 +1,367 @@
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using Unity.Netcode;
+using TMPro;
 
 public class HUDDialogoNPC : MonoBehaviour
 {
+    // Compatibilidad con NPC antiguos
     public static HUDDialogoNPC Instancia { get; private set; }
 
-    [Header("Interfaz")]
-    [SerializeField] private GameObject canvasDialogo;
-    [SerializeField] private GameObject hudJuego;
+    [Header("Panel de conversacion")]
+    [SerializeField] private GameObject panelDialogo;
 
-    [Header("Datos del NPC")]
-    [SerializeField] private Image retratoNPC;
-    [SerializeField] private TMP_Text nombreNPC;
+    [Header("Personajes")]
+    [SerializeField] private TMP_Text textoNombre;
     [SerializeField] private TMP_Text textoDialogo;
+    [SerializeField] private Image imagenRetrato;
 
-    [Header("Opciones")]
+    [Header("Opciones de respuesta")]
     [SerializeField] private GameObject contenedorOpciones;
+    [SerializeField] private Button[] botonesOpciones = new Button[3];
+    [SerializeField] private TMP_Text[] textosOpciones = new TMP_Text[3];
 
-    [SerializeField] private Button opcion1;
-    [SerializeField] private TMP_Text textoOpcion1;
-
-    [SerializeField] private Button opcion2;
-    [SerializeField] private TMP_Text textoOpcion2;
-
-    [SerializeField] private Button opcion3;
-    [SerializeField] private TMP_Text textoOpcion3;
-
-    [Header("Continuar")]
+    [Header("Botones de control")]
     [SerializeField] private Button botonContinuar;
+    [SerializeField] private Button botonSaltar;
+    [SerializeField] private Button botonCerrar;
+
+    [Header("HUD del juego")]
+    [SerializeField] private HUDModoDialogo modoDialogo;
+
+    [Header("Efecto de escritura")]
+    [SerializeField, Range(0.01f, 0.15f)]
+    private float tiempoPorCaracter = 0.035f;
 
     private NPCDialogo npcActual;
+    private NodoDialogo nodoActual;
+    private Coroutine rutinaEscritura;
 
-    private NetworkPlayerMovement movimientoJugador;
-    private SaltoJugador saltoJugador;
-
-    private bool mostrandoRespuesta = false;
+    private bool escribiendo;
+    private bool conversacionAbierta;
+    private NetworkPlayerMovement jugadorEnDialogo;
 
     private void Awake()
     {
-        Instancia = this;
+        if (Instancia == null)
+            Instancia = this;
 
-        opcion1.onClick.AddListener(() => ElegirOpcion(0));
-        opcion2.onClick.AddListener(() => ElegirOpcion(1));
-        opcion3.onClick.AddListener(() => ElegirOpcion(2));
+        for (int i = 0; i < botonesOpciones.Length && i < 3; i++)
+        {
+            int indice = i;
 
-        botonContinuar.onClick.AddListener(Continuar);
+            if (botonesOpciones[i] != null)
+            {
+                botonesOpciones[i].onClick.AddListener(
+                    () => SeleccionarOpcion(indice));
+            }
+        }
 
-        canvasDialogo.SetActive(false);
+        if (botonContinuar != null)
+            botonContinuar.onClick.AddListener(Continuar);
+
+        if (botonSaltar != null)
+            botonSaltar.onClick.AddListener(SaltarEscritura);
+
+        if (botonCerrar != null)
+            botonCerrar.onClick.AddListener(CerrarDialogo);
+
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
+
+        if (panelDialogo != null)
+            panelDialogo.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instancia == this)
+            Instancia = null;
     }
 
     public void AbrirDialogo(NPCDialogo npc)
     {
+        if (npc == null)
+            return;
+
+        // Evita reiniciar una conversacion ya abierta.
+        if (conversacionAbierta)
+            return;
+
         npcActual = npc;
-        mostrandoRespuesta = false;
+        conversacionAbierta = true;
 
-        canvasDialogo.SetActive(true);
+        jugadorEnDialogo = null;
 
-        // Ocultamos TODO el HUD normal.
-        if (hudJuego != null)
-            hudJuego.SetActive(false);
+        if (NetworkManager.Singleton != null &&
+            NetworkManager.Singleton.LocalClient != null &&
+            NetworkManager.Singleton.LocalClient.PlayerObject != null)
+        {
+            jugadorEnDialogo =
+                NetworkManager.Singleton.LocalClient.PlayerObject
+                .GetComponent<NetworkPlayerMovement>();
+        }
 
-        BloquearJugador();
+        if (jugadorEnDialogo != null)
+            jugadorEnDialogo.BloquearMovimiento(true);
+        if (modoDialogo != null)
+            modoDialogo.OcultarHUD();
 
-        nombreNPC.text = npc.NombreNPC;
-        textoDialogo.text = npc.TextoInicial;
+        if (panelDialogo != null)
+            panelDialogo.SetActive(true);
 
-        if (retratoNPC != null)
-            retratoNPC.sprite = npc.RetratoNPC;
-
-        MostrarOpciones();
-
-        botonContinuar.gameObject.SetActive(false);
+        MostrarNodo(npcActual.NodoInicial);
     }
 
-    private void MostrarOpciones()
-    {
-        contenedorOpciones.SetActive(true);
-
-        ConfigurarOpcion(
-            opcion1,
-            textoOpcion1,
-            npcActual.Opcion1
-        );
-
-        ConfigurarOpcion(
-            opcion2,
-            textoOpcion2,
-            npcActual.Opcion2
-        );
-
-        ConfigurarOpcion(
-            opcion3,
-            textoOpcion3,
-            npcActual.Opcion3
-        );
-    }
-
-    private void ConfigurarOpcion(
-        Button boton,
-        TMP_Text texto,
-        string contenido)
-    {
-        bool mostrar =
-            !string.IsNullOrWhiteSpace(contenido);
-
-        boton.gameObject.SetActive(mostrar);
-
-        if (mostrar)
-            texto.text = contenido;
-    }
-
-    private void ElegirOpcion(int opcion)
+    private void MostrarNodo(string id)
     {
         if (npcActual == null)
             return;
 
-        string respuesta = "";
+        DetenerEscritura();
 
-        switch (opcion)
+        nodoActual = npcActual.BuscarNodo(id);
+
+        if (nodoActual == null)
         {
-            case 0:
-                respuesta = npcActual.Respuesta1;
-                break;
-
-            case 1:
-                respuesta = npcActual.Respuesta2;
-                break;
-
-            case 2:
-                respuesta = npcActual.Respuesta3;
-                break;
+            Debug.LogWarning(
+                "No se encontro el nodo: " + id);
+            CerrarDialogo();
+            return;
         }
 
-        contenedorOpciones.SetActive(false);
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
 
-        textoDialogo.text = respuesta;
+        MostrarPersonaje(
+            nodoActual.hablante ==
+            NodoDialogo.Hablante.NPC);
 
-        mostrandoRespuesta = true;
+        if (botonContinuar != null)
+            botonContinuar.gameObject.SetActive(false);
 
-        botonContinuar.gameObject.SetActive(true);
+        if (botonSaltar != null)
+            botonSaltar.gameObject.SetActive(true);
+
+        rutinaEscritura = StartCoroutine(
+            EscribirTexto(nodoActual.texto));
     }
 
-    private void Continuar()
+    private IEnumerator EscribirTexto(string contenido)
     {
-        if (!mostrandoRespuesta)
+        escribiendo = true;
+
+        textoDialogo.text = contenido ?? "";
+        textoDialogo.maxVisibleCharacters = 0;
+        textoDialogo.ForceMeshUpdate();
+
+        int total = textoDialogo.textInfo.characterCount;
+
+        for (int i = 1; i <= total; i++)
+        {
+            textoDialogo.maxVisibleCharacters = i;
+
+            yield return new WaitForSecondsRealtime(
+                tiempoPorCaracter);
+        }
+
+        rutinaEscritura = null;
+        escribiendo = false;
+
+        FinalizarEscritura();
+    }
+
+    public void SaltarEscritura()
+    {
+        if (!escribiendo)
             return;
 
-        CerrarDialogo();
+        DetenerEscritura();
+
+        if (textoDialogo != null)
+            textoDialogo.maxVisibleCharacters = int.MaxValue;
+
+        FinalizarEscritura();
+    }
+
+    private void FinalizarEscritura()
+    {
+        if (botonSaltar != null)
+            botonSaltar.gameObject.SetActive(false);
+
+        bool tieneOpciones =
+            nodoActual != null &&
+            nodoActual.opciones != null &&
+            nodoActual.opciones.Length > 0;
+
+        if (tieneOpciones)
+        {
+            // Es el turno de responder del jugador.
+            MostrarPersonaje(false);
+            ActualizarOpciones();
+
+            if (contenedorOpciones != null)
+                contenedorOpciones.SetActive(true);
+
+            if (botonContinuar != null)
+                botonContinuar.gameObject.SetActive(false);
+        }
+        else
+        {
+            // Nodo de despedida.
+            if (contenedorOpciones != null)
+                contenedorOpciones.SetActive(false);
+
+            if (botonContinuar != null)
+                botonContinuar.gameObject.SetActive(true);
+        }
+    }
+
+    private void MostrarPersonaje(bool esNPC)
+    {
+        if (npcActual == null)
+            return;
+
+        if (textoNombre != null)
+        {
+            textoNombre.text = esNPC
+                ? npcActual.NombreNPC
+                : npcActual.NombreJugador;
+        }
+
+        if (imagenRetrato != null)
+        {
+            Sprite retrato = esNPC
+                ? npcActual.RetratoNPC
+                : npcActual.RetratoJugador;
+
+            imagenRetrato.sprite = retrato;
+            imagenRetrato.enabled = retrato != null;
+        }
+    }
+
+    private void ActualizarOpciones()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (i >= botonesOpciones.Length)
+                break;
+
+            Button boton = botonesOpciones[i];
+
+            if (boton == null)
+                continue;
+
+            OpcionDialogo opcion = ObtenerOpcion(i);
+
+            bool disponible =
+                opcion != null &&
+                !string.IsNullOrWhiteSpace(opcion.texto);
+
+            boton.gameObject.SetActive(disponible);
+
+            if (disponible &&
+                i < textosOpciones.Length &&
+                textosOpciones[i] != null)
+            {
+                textosOpciones[i].text = opcion.texto;
+            }
+        }
+    }
+
+    private OpcionDialogo ObtenerOpcion(int indice)
+    {
+        if (nodoActual == null ||
+            nodoActual.opciones == null ||
+            indice < 0 ||
+            indice >= nodoActual.opciones.Length)
+        {
+            return null;
+        }
+
+        return nodoActual.opciones[indice];
+    }
+
+    private void SeleccionarOpcion(int indice)
+    {
+        if (!conversacionAbierta || escribiendo)
+            return;
+
+        OpcionDialogo opcion = ObtenerOpcion(indice);
+
+        if (opcion == null)
+            return;
+
+        if (string.IsNullOrWhiteSpace(
+            opcion.siguienteNodo))
+        {
+            CerrarDialogo();
+            return;
+        }
+
+        MostrarNodo(opcion.siguienteNodo);
+    }
+
+    public void Continuar()
+    {
+        if (!conversacionAbierta)
+            return;
+
+        if (escribiendo)
+        {
+            SaltarEscritura();
+            return;
+        }
+
+        bool tieneOpciones =
+            nodoActual != null &&
+            nodoActual.opciones != null &&
+            nodoActual.opciones.Length > 0;
+
+        if (!tieneOpciones)
+            CerrarDialogo();
     }
 
     public void CerrarDialogo()
     {
-        canvasDialogo.SetActive(false);
+        DetenerEscritura();
 
-        if (hudJuego != null)
-            hudJuego.SetActive(true);
-
-        DesbloquearJugador();
-
+        conversacionAbierta = false;
+        nodoActual = null;
         npcActual = null;
-        mostrandoRespuesta = false;
-    }
 
-    private void BloquearJugador()
-    {
-        NetworkObject[] objetos =
-            FindObjectsByType<NetworkObject>(
-                FindObjectsSortMode.None
-            );
-
-        foreach (NetworkObject objeto in objetos)
+        if (textoDialogo != null)
         {
-            if (!objeto.IsOwner)
-                continue;
+            textoDialogo.text = "";
+            textoDialogo.maxVisibleCharacters = int.MaxValue;
+        }
 
-            movimientoJugador =
-                objeto.GetComponent<NetworkPlayerMovement>();
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
 
-            saltoJugador =
-                objeto.GetComponent<SaltoJugador>();
+        if (panelDialogo != null)
+            panelDialogo.SetActive(false);
+        
+        if (modoDialogo != null)
+            modoDialogo.RestaurarHUD();
 
-            if (movimientoJugador != null)
-                movimientoJugador.enabled = false;
-
-            if (saltoJugador != null)
-                saltoJugador.enabled = false;
-
-            Rigidbody2D rb =
-                objeto.GetComponent<Rigidbody2D>();
-
-            if (rb != null)
-                rb.linearVelocity = Vector2.zero;
-
-            break;
+        if (jugadorEnDialogo != null)
+        {
+            jugadorEnDialogo.BloquearMovimiento(false);
+            jugadorEnDialogo = null;
         }
     }
 
-    private void DesbloquearJugador()
+    private void DetenerEscritura()
     {
-        if (movimientoJugador != null)
-            movimientoJugador.enabled = true;
+        if (rutinaEscritura != null)
+        {
+            StopCoroutine(rutinaEscritura);
+            rutinaEscritura = null;
+        }
 
-        if (saltoJugador != null)
-            saltoJugador.enabled = true;
+        escribiendo = false;
     }
 }

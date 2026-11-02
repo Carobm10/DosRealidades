@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
@@ -36,9 +37,6 @@ public class ZonaSalidaP1 : NetworkBehaviour
 
     private void OnTriggerExit2D(Collider2D otro)
     {
-        // Cuando estamos cambiando de escena,
-        // Unity dispara TriggerExit mientras destruye objetos.
-        // Ya no debemos enviar RPC.
         if (cambiandoEscena)
             return;
 
