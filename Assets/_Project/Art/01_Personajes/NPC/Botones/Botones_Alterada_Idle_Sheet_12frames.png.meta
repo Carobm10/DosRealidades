@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 732d390c63a56ef4ea40bc42a8064414
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7148109400007910643
+    second: Botones_Alterada_Idle_Sheet_12frames_0
+  - first:
+      213: 1236254731213917445
+    second: Botones_Alterada_Idle_Sheet_12frames_1
+  - first:
+      213: -7170212837273840604
+    second: Botones_Alterada_Idle_Sheet_12frames_2
+  - first:
+      213: -1809618250246928567
+    second: Botones_Alterada_Idle_Sheet_12frames_3
+  - first:
+      213: -7841799013123496204
+    second: Botones_Alterada_Idle_Sheet_12frames_4
+  - first:
+      213: 1731039648664402651
+    second: Botones_Alterada_Idle_Sheet_12frames_5
+  - first:
+      213: 2726012229337379158
+    second: Botones_Alterada_Idle_Sheet_12frames_6
+  - first:
+      213: -1757358763131657737
+    second: Botones_Alterada_Idle_Sheet_12frames_7
+  - first:
+      213: -1754728887744636279
+    second: Botones_Alterada_Idle_Sheet_12frames_8
+  - first:
+      213: -8663026034209137201
+    second: Botones_Alterada_Idle_Sheet_12frames_9
+  - first:
+      213: 5515066665777292455
+    second: Botones_Alterada_Idle_Sheet_12frames_10
+  - first:
+      213: 6638493011849519132
+    second: Botones_Alterada_Idle_Sheet_12frames_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 279
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f42a1380af233360800000000000000
+      internalID: 7148109400007910643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 28
+        width: 279
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50dc6e9c02f082110800000000000000
+      internalID: 1236254731213917445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 28
+        width: 279
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424d856f9694e7c90800000000000000
+      internalID: -7170212837273840604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_3
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 28
+        width: 279
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947c7f60ac1f2e6e0800000000000000
+      internalID: -1809618250246928567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 28
+        width: 279
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6e3ce58555c2390800000000000000
+      internalID: -7841799013123496204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_5
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 28
+        width: 279
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda32c69363e50810800000000000000
+      internalID: 1731039648664402651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_6
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 28
+        width: 279
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6517607fdadb4d520800000000000000
+      internalID: 2726012229337379158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_7
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 28
+        width: 279
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f12e9c048b9c97e0800000000000000
+      internalID: -1757358763131657737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_8
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 28
+        width: 279
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a5dd0af53f5a7e0800000000000000
+      internalID: -1754728887744636279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_9
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 28
+        width: 279
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdd00778bfb6c780800000000000000
+      internalID: -8663026034209137201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_10
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 28
+        width: 279
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4e04699e3798c40800000000000000
+      internalID: 5515066665777292455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones_Alterada_Idle_Sheet_12frames_11
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 28
+        width: 279
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c102437d83aa02c50800000000000000
+      internalID: 6638493011849519132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Botones_Alterada_Idle_Sheet_12frames_0: 7148109400007910643
+      Botones_Alterada_Idle_Sheet_12frames_1: 1236254731213917445
+      Botones_Alterada_Idle_Sheet_12frames_10: 5515066665777292455
+      Botones_Alterada_Idle_Sheet_12frames_11: 6638493011849519132
+      Botones_Alterada_Idle_Sheet_12frames_2: -7170212837273840604
+      Botones_Alterada_Idle_Sheet_12frames_3: -1809618250246928567
+      Botones_Alterada_Idle_Sheet_12frames_4: -7841799013123496204
+      Botones_Alterada_Idle_Sheet_12frames_5: 1731039648664402651
+      Botones_Alterada_Idle_Sheet_12frames_6: 2726012229337379158
+      Botones_Alterada_Idle_Sheet_12frames_7: -1757358763131657737
+      Botones_Alterada_Idle_Sheet_12frames_8: -1754728887744636279
+      Botones_Alterada_Idle_Sheet_12frames_9: -8663026034209137201
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
