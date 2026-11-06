@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 311ac368b681f9947ad7ba1107749027
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 603821430349820127
+    second: Elian_Saltar_Izquierda_SinSombra_0
+  - first:
+      213: -850658080952867567
+    second: Elian_Saltar_Izquierda_SinSombra_1
+  - first:
+      213: 3223799910655354226
+    second: Elian_Saltar_Izquierda_SinSombra_2
+  - first:
+      213: -3527190076394279052
+    second: Elian_Saltar_Izquierda_SinSombra_3
+  - first:
+      213: -7730505020085511725
+    second: Elian_Saltar_Izquierda_SinSombra_4
+  - first:
+      213: -5168849078409231777
+    second: Elian_Saltar_Izquierda_SinSombra_5
+  - first:
+      213: -6857218335594628450
+    second: Elian_Saltar_Izquierda_SinSombra_6
+  - first:
+      213: 7231111291678256725
+    second: Elian_Saltar_Izquierda_SinSombra_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 29
+        width: 178
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0f4c74464316800800000000000000
+      internalID: 603821430349820127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 29
+        width: 186
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1152d7b7bfad134f0800000000000000
+      internalID: -850658080952867567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 46
+        width: 164
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2756c8530fc3dbc20800000000000000
+      internalID: 3223799910655354226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_3
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 71
+        width: 169
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f6c393057ec0fc0800000000000000
+      internalID: -3527190076394279052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_4
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 87
+        width: 171
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9dd6764aab7b490800000000000000
+      internalID: -7730505020085511725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_5
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 69
+        width: 167
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5200df162f8448b0800000000000000
+      internalID: -5168849078409231777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_6
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 29
+        width: 186
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a369f314446d0a0800000000000000
+      internalID: -6857218335594628450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Saltar_Izquierda_SinSombra_7
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 29
+        width: 176
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e6ccf58611a5460800000000000000
+      internalID: 7231111291678256725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elian_Saltar_Izquierda_SinSombra_0: 603821430349820127
+      Elian_Saltar_Izquierda_SinSombra_1: -850658080952867567
+      Elian_Saltar_Izquierda_SinSombra_2: 3223799910655354226
+      Elian_Saltar_Izquierda_SinSombra_3: -3527190076394279052
+      Elian_Saltar_Izquierda_SinSombra_4: -7730505020085511725
+      Elian_Saltar_Izquierda_SinSombra_5: -5168849078409231777
+      Elian_Saltar_Izquierda_SinSombra_6: -6857218335594628450
+      Elian_Saltar_Izquierda_SinSombra_7: 7231111291678256725
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

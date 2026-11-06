@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 846b76685da87d84196644a8e1015684
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5095645643705603812
+    second: Elian_Caminar_Arriba_SinSombra_0
+  - first:
+      213: -3210603315513998178
+    second: Elian_Caminar_Arriba_SinSombra_1
+  - first:
+      213: 8257574016011229392
+    second: Elian_Caminar_Arriba_SinSombra_2
+  - first:
+      213: -8168561159805395424
+    second: Elian_Caminar_Arriba_SinSombra_3
+  - first:
+      213: -7513939066369130550
+    second: Elian_Caminar_Arriba_SinSombra_4
+  - first:
+      213: -8995179362101902280
+    second: Elian_Caminar_Arriba_SinSombra_5
+  - first:
+      213: -3841534430560976814
+    second: Elian_Caminar_Arriba_SinSombra_6
+  - first:
+      213: 8794744987470178023
+    second: Elian_Caminar_Arriba_SinSombra_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 22
+        width: 180
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1929a1f841a849b0800000000000000
+      internalID: -5095645643705603812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 28
+        width: 181
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c8188b45a173d0800000000000000
+      internalID: -3210603315513998178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_2
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 29
+        width: 181
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d858da21dbc89270800000000000000
+      internalID: 8257574016011229392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_3
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 24
+        width: 182
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e1fbf67e073ae80800000000000000
+      internalID: -8168561159805395424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_4
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 22
+        width: 180
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf332dca3029b790800000000000000
+      internalID: -7513939066369130550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_5
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 28
+        width: 181
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834cdf65704ba2380800000000000000
+      internalID: -8995179362101902280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_6
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 29
+        width: 181
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2500bf9e9c020bac0800000000000000
+      internalID: -3841534430560976814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Caminar_Arriba_SinSombra_7
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 24
+        width: 181
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6ae4438f53d0a70800000000000000
+      internalID: 8794744987470178023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elian_Caminar_Arriba_SinSombra_0: -5095645643705603812
+      Elian_Caminar_Arriba_SinSombra_1: -3210603315513998178
+      Elian_Caminar_Arriba_SinSombra_2: 8257574016011229392
+      Elian_Caminar_Arriba_SinSombra_3: -8168561159805395424
+      Elian_Caminar_Arriba_SinSombra_4: -7513939066369130550
+      Elian_Caminar_Arriba_SinSombra_5: -8995179362101902280
+      Elian_Caminar_Arriba_SinSombra_6: -3841534430560976814
+      Elian_Caminar_Arriba_SinSombra_7: 8794744987470178023
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
