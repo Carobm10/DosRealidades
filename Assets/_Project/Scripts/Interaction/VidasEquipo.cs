@@ -1,6 +1,7 @@
+
 using UnityEngine;
 using Unity.Netcode;
-using UnityEngine.InputSystem;
+using System;
 
 public class VidasEquipo : NetworkBehaviour
 {
@@ -13,6 +14,8 @@ public class VidasEquipo : NetworkBehaviour
 
     public int VidasActuales => vidasActuales.Value;
 
+    public event Action AlAgotarVidas;
+
     private void Awake()
     {
         Instancia = this;
@@ -23,9 +26,7 @@ public class VidasEquipo : NetworkBehaviour
         vidasActuales.OnValueChanged += AlCambiarVidas;
 
         if (IsServer)
-        {
             vidasActuales.Value = vidasIniciales;
-        }
 
         ActualizarHUD(vidasActuales.Value);
     }
@@ -35,6 +36,7 @@ public class VidasEquipo : NetworkBehaviour
         vidasActuales.OnValueChanged -= AlCambiarVidas;
     }
 
+    
     public void PerderVida()
     {
         if (!IsSpawned)
@@ -46,29 +48,44 @@ public class VidasEquipo : NetworkBehaviour
     [Rpc(SendTo.Server)]
     private void PerderVidaRpc()
     {
-        if (vidasActuales.Value <= 0)
-            return;
+        PerderVidaServidor();
+    }
+
+    
+    public bool PerderVidaServidor()
+    {
+        if (!IsServer || vidasActuales.Value <= 0)
+            return false;
 
         vidasActuales.Value--;
 
-        Debug.Log(
-            "VIDA DE EQUIPO: " +
-            vidasActuales.Value
-        );
+        Debug.Log("VIDAS RESTANTES: " + vidasActuales.Value);
+
+        if (vidasActuales.Value == 0)
+        {
+            SolicitarReinicioRpc();
+            return false;
+        }
+
+        return true;
     }
 
-    private void AlCambiarVidas(
-        int anterior,
-        int nuevas)
+
+    [Rpc(SendTo.Everyone)]
+    private void SolicitarReinicioRpc()
+    {
+        AlAgotarVidas?.Invoke();
+    }
+
+    public void RestaurarVidas()
+    {
+        if (IsServer)
+            vidasActuales.Value = vidasIniciales;
+    }
+
+    private void AlCambiarVidas(int anterior, int nuevas)
     {
         ActualizarHUD(nuevas);
-
-        if (nuevas <= 0)
-        {
-            Debug.Log(
-                "SIN VIDAS - luego definiremos qué ocurre."
-            );
-        }
     }
 
     private void ActualizarHUD(int vidas)
@@ -76,4 +93,9 @@ public class VidasEquipo : NetworkBehaviour
         HUDVidas.Instancia?.ActualizarVidas(vidas);
     }
 
+    private void OnDestroy()
+    {
+        if (Instancia == this)
+            Instancia = null;
+    }
 }
