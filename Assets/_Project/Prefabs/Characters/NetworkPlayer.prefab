@@ -574,6 +574,8 @@ MonoBehaviour:
   camaraJugador: {fileID: 4724177452757219280}
   audioListenerJugador: {fileID: 6160402459386688081}
   velocidadEnfoque: 5
+  zoomObjetivo: 3
+  velocidadZoom: 3
 --- !u!114 &4351588791507245499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +592,7 @@ MonoBehaviour:
   accionSaltar: {fileID: -6687273217185972327, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   visualJugador: {fileID: 8696842847975744996}
   animatorJugador: {fileID: 0}
-  alturaSalto: 0.5
+  alturaSalto: 1
   duracionSalto: 0.45
 --- !u!114 &4895310645492503891
 MonoBehaviour:
