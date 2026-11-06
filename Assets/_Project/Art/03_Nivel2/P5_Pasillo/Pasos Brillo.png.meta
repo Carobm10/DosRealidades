@@ -1,0 +1,3720 @@
+fileFormatVersion: 2
+guid: 083f6518b5169bd49af4fdae2dbaa783
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -949040245515030864
+    second: Pasos Brillo_0
+  - first:
+      213: 4195830289559202259
+    second: Pasos Brillo_1
+  - first:
+      213: -8052877600662693620
+    second: Pasos Brillo_2
+  - first:
+      213: 222242553049969673
+    second: Pasos Brillo_3
+  - first:
+      213: -4114481757277994011
+    second: Pasos Brillo_4
+  - first:
+      213: 2318866454866030845
+    second: Pasos Brillo_5
+  - first:
+      213: -1536643512400034620
+    second: Pasos Brillo_6
+  - first:
+      213: 4894262122672566803
+    second: Pasos Brillo_7
+  - first:
+      213: 8181040297835623269
+    second: Pasos Brillo_8
+  - first:
+      213: -9066944997419762492
+    second: Pasos Brillo_9
+  - first:
+      213: 1162240624948425635
+    second: Pasos Brillo_10
+  - first:
+      213: -6773389301814505258
+    second: Pasos Brillo_11
+  - first:
+      213: 5702771267236100985
+    second: Pasos Brillo_12
+  - first:
+      213: -5692348440636174998
+    second: Pasos Brillo_13
+  - first:
+      213: 1338288225469388543
+    second: Pasos Brillo_14
+  - first:
+      213: 3636995891067392123
+    second: Pasos Brillo_15
+  - first:
+      213: 1784278785066568032
+    second: Pasos Brillo_16
+  - first:
+      213: 3721035273227925028
+    second: Pasos Brillo_17
+  - first:
+      213: -7750520021149029848
+    second: Pasos Brillo_18
+  - first:
+      213: -9096793717203052636
+    second: Pasos Brillo_19
+  - first:
+      213: -1333242586961312152
+    second: Pasos Brillo_20
+  - first:
+      213: -4791275123338573312
+    second: Pasos Brillo_21
+  - first:
+      213: 6463585453822520275
+    second: Pasos Brillo_22
+  - first:
+      213: -1593114481702323961
+    second: Pasos Brillo_23
+  - first:
+      213: 1164943328097688824
+    second: Pasos Brillo_24
+  - first:
+      213: -6034553327375087647
+    second: Pasos Brillo_25
+  - first:
+      213: -102278851421889356
+    second: Pasos Brillo_26
+  - first:
+      213: 3066287279555226270
+    second: Pasos Brillo_27
+  - first:
+      213: 966641739063120118
+    second: Pasos Brillo_28
+  - first:
+      213: 6656806169143543439
+    second: Pasos Brillo_29
+  - first:
+      213: -7222890816725487456
+    second: Pasos Brillo_30
+  - first:
+      213: -6855546707276797863
+    second: Pasos Brillo_31
+  - first:
+      213: -2377551009120545271
+    second: Pasos Brillo_32
+  - first:
+      213: -2330574081916523973
+    second: Pasos Brillo_33
+  - first:
+      213: 1656096698039521175
+    second: Pasos Brillo_34
+  - first:
+      213: -3131143107694354323
+    second: Pasos Brillo_35
+  - first:
+      213: 1405545239340805961
+    second: Pasos Brillo_36
+  - first:
+      213: 9084078704888073666
+    second: Pasos Brillo_37
+  - first:
+      213: 2338552696165535367
+    second: Pasos Brillo_38
+  - first:
+      213: -2433171310895769797
+    second: Pasos Brillo_39
+  - first:
+      213: -3559741537771607755
+    second: Pasos Brillo_40
+  - first:
+      213: 684087343757918623
+    second: Pasos Brillo_41
+  - first:
+      213: -6651619271981759469
+    second: Pasos Brillo_42
+  - first:
+      213: -482463883843677887
+    second: Pasos Brillo_43
+  - first:
+      213: 2865552438589888806
+    second: Pasos Brillo_44
+  - first:
+      213: -8119954258649592203
+    second: Pasos Brillo_45
+  - first:
+      213: 8581639052166891206
+    second: Pasos Brillo_46
+  - first:
+      213: -6025115315339111391
+    second: Pasos Brillo_47
+  - first:
+      213: -1473341651388204943
+    second: Pasos Brillo_48
+  - first:
+      213: 3288353367370570028
+    second: Pasos Brillo_49
+  - first:
+      213: -101832565921414743
+    second: Pasos Brillo_50
+  - first:
+      213: -4872961614880271687
+    second: Pasos Brillo_51
+  - first:
+      213: 9175832279085836141
+    second: Pasos Brillo_52
+  - first:
+      213: -6698206393250973599
+    second: Pasos Brillo_53
+  - first:
+      213: -6374106660261961188
+    second: Pasos Brillo_54
+  - first:
+      213: -4570339681898113981
+    second: Pasos Brillo_55
+  - first:
+      213: 4706799138014005879
+    second: Pasos Brillo_56
+  - first:
+      213: -159993041040396094
+    second: Pasos Brillo_57
+  - first:
+      213: 7958802405584211655
+    second: Pasos Brillo_58
+  - first:
+      213: 809301973385091783
+    second: Pasos Brillo_59
+  - first:
+      213: 2222996646903716688
+    second: Pasos Brillo_60
+  - first:
+      213: -4915219149129016940
+    second: Pasos Brillo_61
+  - first:
+      213: -4683003248581350232
+    second: Pasos Brillo_62
+  - first:
+      213: 2489441976767526034
+    second: Pasos Brillo_63
+  - first:
+      213: 4452848609189521085
+    second: Pasos Brillo_64
+  - first:
+      213: -3073357399458714619
+    second: Pasos Brillo_65
+  - first:
+      213: -1596300115900689633
+    second: Pasos Brillo_66
+  - first:
+      213: -5400197015115600176
+    second: Pasos Brillo_67
+  - first:
+      213: -3544816298176206241
+    second: Pasos Brillo_68
+  - first:
+      213: 9018459718564820494
+    second: Pasos Brillo_69
+  - first:
+      213: -5724258015064319276
+    second: Pasos Brillo_70
+  - first:
+      213: -6258411382107221926
+    second: Pasos Brillo_71
+  - first:
+      213: 2244102749440079844
+    second: Pasos Brillo_72
+  - first:
+      213: 8101387697644276119
+    second: Pasos Brillo_73
+  - first:
+      213: 4210070917968254446
+    second: Pasos Brillo_74
+  - first:
+      213: -1078202920031131169
+    second: Pasos Brillo_75
+  - first:
+      213: 7614412519687640585
+    second: Pasos Brillo_76
+  - first:
+      213: 5227845112814192051
+    second: Pasos Brillo_77
+  - first:
+      213: -920395879477929506
+    second: Pasos Brillo_78
+  - first:
+      213: -451390345494490655
+    second: Pasos Brillo_79
+  - first:
+      213: 7705434893276039448
+    second: Pasos Brillo_80
+  - first:
+      213: -5856700064436013103
+    second: Pasos Brillo_81
+  - first:
+      213: -7043576829850470651
+    second: Pasos Brillo_82
+  - first:
+      213: 3212618881139316221
+    second: Pasos Brillo_83
+  - first:
+      213: -4362555483097039958
+    second: Pasos Brillo_84
+  - first:
+      213: 743298923704335235
+    second: Pasos Brillo_85
+  - first:
+      213: -4457005910034087653
+    second: Pasos Brillo_86
+  - first:
+      213: -8489137154584889683
+    second: Pasos Brillo_87
+  - first:
+      213: 5336241678504528047
+    second: Pasos Brillo_88
+  - first:
+      213: -3123532449477868344
+    second: Pasos Brillo_89
+  - first:
+      213: 963817616713403229
+    second: Pasos Brillo_90
+  - first:
+      213: -789670552580428480
+    second: Pasos Brillo_91
+  - first:
+      213: 973699396306206264
+    second: Pasos Brillo_92
+  - first:
+      213: 2978106656109744019
+    second: Pasos Brillo_93
+  - first:
+      213: 6050260999889125807
+    second: Pasos Brillo_94
+  - first:
+      213: -3910665058954434025
+    second: Pasos Brillo_95
+  - first:
+      213: 7538438544521938395
+    second: Pasos Brillo_96
+  - first:
+      213: -2823967371496956656
+    second: Pasos Brillo_97
+  - first:
+      213: -287037080108286838
+    second: Pasos Brillo_98
+  - first:
+      213: 2012235248621564736
+    second: Pasos Brillo_99
+  - first:
+      213: -4955026645600598488
+    second: Pasos Brillo_100
+  - first:
+      213: -3273680748179073139
+    second: Pasos Brillo_101
+  - first:
+      213: 536223320295295840
+    second: Pasos Brillo_102
+  - first:
+      213: 8403427806775987314
+    second: Pasos Brillo_103
+  - first:
+      213: -2471713735055089616
+    second: Pasos Brillo_104
+  - first:
+      213: 6325344444248093564
+    second: Pasos Brillo_105
+  - first:
+      213: -8106188175105020012
+    second: Pasos Brillo_106
+  - first:
+      213: 6492894722416212934
+    second: Pasos Brillo_107
+  - first:
+      213: 7704614083023192335
+    second: Pasos Brillo_108
+  - first:
+      213: -6053056158624321729
+    second: Pasos Brillo_109
+  - first:
+      213: 3218468005531980618
+    second: Pasos Brillo_110
+  - first:
+      213: -7771231609532911089
+    second: Pasos Brillo_111
+  - first:
+      213: 1266077343732413665
+    second: Pasos Brillo_112
+  - first:
+      213: 3327772115325517737
+    second: Pasos Brillo_113
+  - first:
+      213: 2345129381562321545
+    second: Pasos Brillo_114
+  - first:
+      213: 1348014205213737862
+    second: Pasos Brillo_115
+  - first:
+      213: -5723070108764982266
+    second: Pasos Brillo_116
+  - first:
+      213: -3108507213739957629
+    second: Pasos Brillo_117
+  - first:
+      213: 7677197256271011275
+    second: Pasos Brillo_118
+  - first:
+      213: -8386567099241570958
+    second: Pasos Brillo_119
+  - first:
+      213: -5967135580969871293
+    second: Pasos Brillo_120
+  - first:
+      213: 3359019576527703310
+    second: Pasos Brillo_121
+  - first:
+      213: 4939867282149452925
+    second: Pasos Brillo_122
+  - first:
+      213: 5027885813309039588
+    second: Pasos Brillo_123
+  - first:
+      213: -1932464336361798699
+    second: Pasos Brillo_124
+  - first:
+      213: 349858343141922883
+    second: Pasos Brillo_125
+  - first:
+      213: 1912996805181844633
+    second: Pasos Brillo_126
+  - first:
+      213: -1893123723929160263
+    second: Pasos Brillo_127
+  - first:
+      213: 7215098117919602893
+    second: Pasos Brillo_128
+  - first:
+      213: -3724590063275489992
+    second: Pasos Brillo_129
+  - first:
+      213: -7030424970017636838
+    second: Pasos Brillo_130
+  - first:
+      213: -3788463313892627742
+    second: Pasos Brillo_131
+  - first:
+      213: 1232712843528156862
+    second: Pasos Brillo_132
+  - first:
+      213: -6456838160878233625
+    second: Pasos Brillo_133
+  - first:
+      213: -2439244270743420279
+    second: Pasos Brillo_134
+  - first:
+      213: -5127295960698402200
+    second: Pasos Brillo_135
+  - first:
+      213: 3565786633677699590
+    second: Pasos Brillo_136
+  - first:
+      213: 2607827218837723118
+    second: Pasos Brillo_137
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pasos Brillo_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 972
+        width: 74
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bee688cce454d2f0800000000000000
+      internalID: -949040245515030864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1044
+        width: 77
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9200bfa659a3a30800000000000000
+      internalID: 4195830289559202259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1173
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09dcc8fc7e6e3090800000000000000
+      internalID: -8052877600662693620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1100
+        width: 81
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904f48cac60951300800000000000000
+      internalID: 222242553049969673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1100
+        width: 108
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3ce9624ac66e6c0800000000000000
+      internalID: -4114481757277994011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1213
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0fbdb31c44e2020800000000000000
+      internalID: 2318866454866030845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_6
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1205
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4ccf0fddebcaae0800000000000000
+      internalID: -1536643512400034620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_7
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1213
+        width: 67
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3123c8b3879ebe340800000000000000
+      internalID: 4894262122672566803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_8
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1213
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563f5ad4ec4e88170800000000000000
+      internalID: 8181040297835623269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_9
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1179
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc3ac6409dbb2280800000000000000
+      internalID: -9066944997419762492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_10
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1167
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a33499c0bb112010800000000000000
+      internalID: 1162240624948425635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_11
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1170
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d05ae321561002a0800000000000000
+      internalID: -6773389301814505258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_12
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1173
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b79e2c040542f40800000000000000
+      internalID: 5702771267236100985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_13
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1179
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dc12aa047b001b0800000000000000
+      internalID: -5692348440636174998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_14
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1183
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6d03eec0e829210800000000000000
+      internalID: 1338288225469388543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1148
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7090a84e74397230800000000000000
+      internalID: 3636995891067392123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_16
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1132
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069882cf91803c810800000000000000
+      internalID: 1784278785066568032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_17
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1187
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426f279bdd5c3a330800000000000000
+      internalID: 3721035273227925028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1126
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82aebd2da1f907490800000000000000
+      internalID: -7750520021149029848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_19
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1118
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a75b13af42b1c180800000000000000
+      internalID: -9096793717203052636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_20
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1132
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8668fb45eee5f7de0800000000000000
+      internalID: -1333242586961312152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_21
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1158
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a0d3c19a8f18db0800000000000000
+      internalID: -4791275123338573312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_22
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1134
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db297689b443b950800000000000000
+      internalID: 6463585453822520275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_23
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1140
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7093a9fc1de14e9e0800000000000000
+      internalID: -1593114481702323961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_24
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1084
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc59b6e8c5ba2010800000000000000
+      internalID: 1164943328097688824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1116
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e708af98b5f04ca0800000000000000
+      internalID: -6034553327375087647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_26
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1116
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc96f03de1a49ef0800000000000000
+      internalID: -102278851421889356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 1129
+        height: 1101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a203de804ad8a20800000000000000
+      internalID: 3066287279555226270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_28
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1092
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f05ce94a833a6d00800000000000000
+      internalID: 966641739063120118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_29
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1050
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f860e6a01f9b16c50800000000000000
+      internalID: 6656806169143543439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_30
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1099
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a075a9121323cb90800000000000000
+      internalID: -7222890816725487456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_31
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1083
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958eaab87943cd0a0800000000000000
+      internalID: -6855546707276797863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_32
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1084
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9069ff934fd310fd0800000000000000
+      internalID: -2377551009120545271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1083
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a22ac683328afd0800000000000000
+      internalID: -2330574081916523973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_34
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1078
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fc7582c23abf610800000000000000
+      internalID: 1656096698039521175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_35
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1082
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6027fcdee1fb84d0800000000000000
+      internalID: -3131143107694354323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_36
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1082
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f66a2c2ff718310800000000000000
+      internalID: 1405545239340805961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_37
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1074
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd4b8cd371211e70800000000000000
+      internalID: 9084078704888073666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_38
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1068
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e8a777945347020800000000000000
+      internalID: 2338552696165535367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_39
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1060
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37d2609593ab3ed0800000000000000
+      internalID: -2433171310895769797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_40
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 963
+        width: 100
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539abe48ee1499ec0800000000000000
+      internalID: -3559741537771607755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_41
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1044
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91080090dd5e7900800000000000000
+      internalID: 684087343757918623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_42
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1050
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31482609383b0b3a0800000000000000
+      internalID: -6651619271981759469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_43
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1018
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141da8267a1fd49f0800000000000000
+      internalID: -482463883843677887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_44
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1012
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6299763b2cc74c720800000000000000
+      internalID: 2865552438589888806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_45
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 939
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e45c48f90205f80800000000000000
+      internalID: -8119954258649592203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_46
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 938
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6070f104b181770800000000000000
+      internalID: 8581639052166891206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_47
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 923
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124527a0b8d726ca0800000000000000
+      internalID: -6025115315339111391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_48
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 931
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178f73cf293ad8be0800000000000000
+      internalID: -1473341651388204943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_49
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 883
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29151617f392ad20800000000000000
+      internalID: 3288353367370570028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 883
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a100b122d7369ef0800000000000000
+      internalID: -101832565921414743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_51
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 891
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b292f4ba33cf5cb0800000000000000
+      internalID: -4872961614880271687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_52
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 869
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67697997da175f70800000000000000
+      internalID: 9175832279085836141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 759
+        width: 31
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168760226c03b03a0800000000000000
+      internalID: -6698206393250973599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_54
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 830
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1262a293cf9a87a0800000000000000
+      internalID: -6374106660261961188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_55
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 761
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34457952644e290c0800000000000000
+      internalID: -4570339681898113981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_56
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 767
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a807ad0e8e15140800000000000000
+      internalID: 4706799138014005879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_57
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 722
+        width: 59
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0b0464d2797cdf0800000000000000
+      internalID: -159993041040396094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_58
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 740
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce0f5ece98537e60800000000000000
+      internalID: 7958802405584211655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 537
+        width: 58
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca14af5bd73b3b00800000000000000
+      internalID: 809301973385091783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_60
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 735
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b94932caba9de10800000000000000
+      internalID: 2222996646903716688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_61
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 682
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49997fec932a9cbb0800000000000000
+      internalID: -4915219149129016940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 674
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acee466b51a20fb0800000000000000
+      internalID: -4683003248581350232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_63
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 650
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294bc2ac9464c8220800000000000000
+      internalID: 2489441976767526034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_64
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 644
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db66555c732bbcd30800000000000000
+      internalID: 4452848609189521085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_65
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 596
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ce1718abd3955d0800000000000000
+      internalID: -3073357399458714619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_66
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 626
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1313dc808dc8d9e0800000000000000
+      internalID: -1596300115900689633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_67
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 620
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dee8ec1d65ae05b0800000000000000
+      internalID: -5400197015115600176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_68
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 609
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a2139ab584ecec0800000000000000
+      internalID: -3544816298176206241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_69
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 600
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06b93a0551082d70800000000000000
+      internalID: 9018459718564820494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_70
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 572
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da9869e9a95f80b0800000000000000
+      internalID: -5724258015064319276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_71
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 576
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50dc37a108a529a0800000000000000
+      internalID: -6258411382107221926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_72
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 545
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e77ad39f87a42f10800000000000000
+      internalID: 2244102749440079844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_73
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 407
+        width: 166
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7998ec12039ed6070800000000000000
+      internalID: 8101387697644276119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_74
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 533
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee553b8a13d2d6a30800000000000000
+      internalID: 4210070917968254446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_75
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 534
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd961c328247901f0800000000000000
+      internalID: -1078202920031131169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_76
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 513
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906d44108d3dba960800000000000000
+      internalID: 7614412519687640585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 45
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b54d0a8e690d8840800000000000000
+      internalID: 5227845112814192051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_78
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 441
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed91cf6f2d81a33f0800000000000000
+      internalID: -920395879477929506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 428
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e192c15fd65cb9f0800000000000000
+      internalID: -451390345494490655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_80
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 421
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8194e95d5343fea60800000000000000
+      internalID: 7705434893276039448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_81
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 425
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7b84f4252d8bea0800000000000000
+      internalID: -5856700064436013103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_82
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 409
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50737941130304e90800000000000000
+      internalID: -7043576829850470651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_83
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 377
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df59509e9d3859c20800000000000000
+      internalID: 3212618881139316221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_84
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 376
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab7115e6e61573c0800000000000000
+      internalID: -4362555483097039958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_85
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 345
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bb355de6ab05a00800000000000000
+      internalID: 743298923704335235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_86
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 320
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b110a923db88522c0800000000000000
+      internalID: -4457005910034087653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_87
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 318
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6b56b3cb6803a80800000000000000
+      internalID: -8489137154584889683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_88
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 215
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa885e2b8832e0a40800000000000000
+      internalID: 5336241678504528047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_89
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 208
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4477059cbf6a4d0800000000000000
+      internalID: -3123532449477868344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_90
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 194
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b4770140b206d00800000000000000
+      internalID: 963817616713403229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_91
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 190
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6bd7f0d68a05f0800000000000000
+      internalID: -789670552580428480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_92
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 142
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ef7da2176438d00800000000000000
+      internalID: 973699396306206264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_93
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 148
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fc5ac993c545920800000000000000
+      internalID: 2978106656109744019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_94
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 146
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa18ac0e258d6f350800000000000000
+      internalID: 6050260999889125807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_95
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 152
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a2d7539d68ab9c0800000000000000
+      internalID: -3910665058954434025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_96
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 152
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5c7577ae9ed9860800000000000000
+      internalID: 7538438544521938395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_97
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 156
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d51ac33a04fc8d0800000000000000
+      internalID: -2823967371496956656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_98
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 113
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cb7c2eb4d340cf0800000000000000
+      internalID: -287037080108286838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_99
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 103
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043bb9e1c45eceb10800000000000000
+      internalID: 2012235248621564736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_100
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 149
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8268168c4853c3bb0800000000000000
+      internalID: -4955026645600598488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_101
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 122
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8750c844bc8192d0800000000000000
+      internalID: -3273680748179073139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_102
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 101
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b4b7ec44c017700800000000000000
+      internalID: 536223320295295840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_103
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cc5862119fe9470800000000000000
+      internalID: 8403427806775987314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_104
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 119
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03066932475b2bdd0800000000000000
+      internalID: -2471713735055089616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_105
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 130
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73f569424328c750800000000000000
+      internalID: 6325344444248093564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_106
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 103
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fa46c9dc8018f80800000000000000
+      internalID: -8106188175105020012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_107
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 112
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb70a569556b1a50800000000000000
+      internalID: 6492894722416212934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_108
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 109
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01c11e00b94cea60800000000000000
+      internalID: 7704614083023192335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_109
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 117
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fe4b38e793ffba0800000000000000
+      internalID: -6053056158624321729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_110
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 87
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4391be499b4aac20800000000000000
+      internalID: 3218468005531980618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_111
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 90
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02f08e560a072490800000000000000
+      internalID: -7771231609532911089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_112
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 45
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4375bd2a2029110800000000000000
+      internalID: 1266077343732413665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_113
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 95
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af7d6b8b1f9e2e20800000000000000
+      internalID: 3327772115325517737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_114
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 103
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a8a5c5fb29b8020800000000000000
+      internalID: 2345129381562321545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_115
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 63
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68302fd07cb15b210800000000000000
+      internalID: 1348014205213737862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_116
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 78
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6043866ee029390b0800000000000000
+      internalID: -5723070108764982266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_117
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 81
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3826a4f982d5cd4d0800000000000000
+      internalID: -3108507213739957629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_118
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 84
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd13a2aa32ea8a60800000000000000
+      internalID: 7677197256271011275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_119
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 62
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d5abc38adec9b80800000000000000
+      internalID: -8386567099241570958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_120
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 71
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34852b9edc9703da0800000000000000
+      internalID: -5967135580969871293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_121
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 77
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d448c0282ad9e20800000000000000
+      internalID: 3359019576527703310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_122
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 69
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ca71ede1fed8440800000000000000
+      internalID: 4939867282149452925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_123
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 63
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3e2812283a6c540800000000000000
+      internalID: 5027885813309039588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_124
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 61
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d34b0abce18e25e0800000000000000
+      internalID: -1932464336361798699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_125
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 39
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3485ea83f42fad400800000000000000
+      internalID: 349858343141922883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_126
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 41
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c225575745c8a10800000000000000
+      internalID: 1912996805181844633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_127
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 46
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b57657d0064ab5e0800000000000000
+      internalID: -1893123723929160263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_128
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 15
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8ff22d28d212460800000000000000
+      internalID: 7215098117919602893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_129
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 15
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835c38832199f4cc0800000000000000
+      internalID: -3724590063275489992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_130
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eff021db9ee6e90800000000000000
+      internalID: -7030424970017636838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_131
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 39
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eaa4da20bcac6bc0800000000000000
+      internalID: -3788463313892627742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_132
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 33
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6be8cccc97b1110800000000000000
+      internalID: 1232712843528156862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_133
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 30
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e79aa807e3b466a0800000000000000
+      internalID: -6456838160878233625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_134
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 13
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9828ee96240162ed0800000000000000
+      internalID: -2439244270743420279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_135
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ac6444d7f28d8b0800000000000000
+      internalID: -5127295960698402200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_136
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 23
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60af13d0d083c7130800000000000000
+      internalID: 3565786633677699590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasos Brillo_137
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 26
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7da66e90dd03420800000000000000
+      internalID: 2607827218837723118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pasos Brillo_0: -949040245515030864
+      Pasos Brillo_1: 4195830289559202259
+      Pasos Brillo_10: 1162240624948425635
+      Pasos Brillo_100: -4955026645600598488
+      Pasos Brillo_101: -3273680748179073139
+      Pasos Brillo_102: 536223320295295840
+      Pasos Brillo_103: 8403427806775987314
+      Pasos Brillo_104: -2471713735055089616
+      Pasos Brillo_105: 6325344444248093564
+      Pasos Brillo_106: -8106188175105020012
+      Pasos Brillo_107: 6492894722416212934
+      Pasos Brillo_108: 7704614083023192335
+      Pasos Brillo_109: -6053056158624321729
+      Pasos Brillo_11: -6773389301814505258
+      Pasos Brillo_110: 3218468005531980618
+      Pasos Brillo_111: -7771231609532911089
+      Pasos Brillo_112: 1266077343732413665
+      Pasos Brillo_113: 3327772115325517737
+      Pasos Brillo_114: 2345129381562321545
+      Pasos Brillo_115: 1348014205213737862
+      Pasos Brillo_116: -5723070108764982266
+      Pasos Brillo_117: -3108507213739957629
+      Pasos Brillo_118: 7677197256271011275
+      Pasos Brillo_119: -8386567099241570958
+      Pasos Brillo_12: 5702771267236100985
+      Pasos Brillo_120: -5967135580969871293
+      Pasos Brillo_121: 3359019576527703310
+      Pasos Brillo_122: 4939867282149452925
+      Pasos Brillo_123: 5027885813309039588
+      Pasos Brillo_124: -1932464336361798699
+      Pasos Brillo_125: 349858343141922883
+      Pasos Brillo_126: 1912996805181844633
+      Pasos Brillo_127: -1893123723929160263
+      Pasos Brillo_128: 7215098117919602893
+      Pasos Brillo_129: -3724590063275489992
+      Pasos Brillo_13: -5692348440636174998
+      Pasos Brillo_130: -7030424970017636838
+      Pasos Brillo_131: -3788463313892627742
+      Pasos Brillo_132: 1232712843528156862
+      Pasos Brillo_133: -6456838160878233625
+      Pasos Brillo_134: -2439244270743420279
+      Pasos Brillo_135: -5127295960698402200
+      Pasos Brillo_136: 3565786633677699590
+      Pasos Brillo_137: 2607827218837723118
+      Pasos Brillo_14: 1338288225469388543
+      Pasos Brillo_15: 3636995891067392123
+      Pasos Brillo_16: 1784278785066568032
+      Pasos Brillo_17: 3721035273227925028
+      Pasos Brillo_18: -7750520021149029848
+      Pasos Brillo_19: -9096793717203052636
+      Pasos Brillo_2: -8052877600662693620
+      Pasos Brillo_20: -1333242586961312152
+      Pasos Brillo_21: -4791275123338573312
+      Pasos Brillo_22: 6463585453822520275
+      Pasos Brillo_23: -1593114481702323961
+      Pasos Brillo_24: 1164943328097688824
+      Pasos Brillo_25: -6034553327375087647
+      Pasos Brillo_26: -102278851421889356
+      Pasos Brillo_27: 3066287279555226270
+      Pasos Brillo_28: 966641739063120118
+      Pasos Brillo_29: 6656806169143543439
+      Pasos Brillo_3: 222242553049969673
+      Pasos Brillo_30: -7222890816725487456
+      Pasos Brillo_31: -6855546707276797863
+      Pasos Brillo_32: -2377551009120545271
+      Pasos Brillo_33: -2330574081916523973
+      Pasos Brillo_34: 1656096698039521175
+      Pasos Brillo_35: -3131143107694354323
+      Pasos Brillo_36: 1405545239340805961
+      Pasos Brillo_37: 9084078704888073666
+      Pasos Brillo_38: 2338552696165535367
+      Pasos Brillo_39: -2433171310895769797
+      Pasos Brillo_4: -4114481757277994011
+      Pasos Brillo_40: -3559741537771607755
+      Pasos Brillo_41: 684087343757918623
+      Pasos Brillo_42: -6651619271981759469
+      Pasos Brillo_43: -482463883843677887
+      Pasos Brillo_44: 2865552438589888806
+      Pasos Brillo_45: -8119954258649592203
+      Pasos Brillo_46: 8581639052166891206
+      Pasos Brillo_47: -6025115315339111391
+      Pasos Brillo_48: -1473341651388204943
+      Pasos Brillo_49: 3288353367370570028
+      Pasos Brillo_5: 2318866454866030845
+      Pasos Brillo_50: -101832565921414743
+      Pasos Brillo_51: -4872961614880271687
+      Pasos Brillo_52: 9175832279085836141
+      Pasos Brillo_53: -6698206393250973599
+      Pasos Brillo_54: -6374106660261961188
+      Pasos Brillo_55: -4570339681898113981
+      Pasos Brillo_56: 4706799138014005879
+      Pasos Brillo_57: -159993041040396094
+      Pasos Brillo_58: 7958802405584211655
+      Pasos Brillo_59: 809301973385091783
+      Pasos Brillo_6: -1536643512400034620
+      Pasos Brillo_60: 2222996646903716688
+      Pasos Brillo_61: -4915219149129016940
+      Pasos Brillo_62: -4683003248581350232
+      Pasos Brillo_63: 2489441976767526034
+      Pasos Brillo_64: 4452848609189521085
+      Pasos Brillo_65: -3073357399458714619
+      Pasos Brillo_66: -1596300115900689633
+      Pasos Brillo_67: -5400197015115600176
+      Pasos Brillo_68: -3544816298176206241
+      Pasos Brillo_69: 9018459718564820494
+      Pasos Brillo_7: 4894262122672566803
+      Pasos Brillo_70: -5724258015064319276
+      Pasos Brillo_71: -6258411382107221926
+      Pasos Brillo_72: 2244102749440079844
+      Pasos Brillo_73: 8101387697644276119
+      Pasos Brillo_74: 4210070917968254446
+      Pasos Brillo_75: -1078202920031131169
+      Pasos Brillo_76: 7614412519687640585
+      Pasos Brillo_77: 5227845112814192051
+      Pasos Brillo_78: -920395879477929506
+      Pasos Brillo_79: -451390345494490655
+      Pasos Brillo_8: 8181040297835623269
+      Pasos Brillo_80: 7705434893276039448
+      Pasos Brillo_81: -5856700064436013103
+      Pasos Brillo_82: -7043576829850470651
+      Pasos Brillo_83: 3212618881139316221
+      Pasos Brillo_84: -4362555483097039958
+      Pasos Brillo_85: 743298923704335235
+      Pasos Brillo_86: -4457005910034087653
+      Pasos Brillo_87: -8489137154584889683
+      Pasos Brillo_88: 5336241678504528047
+      Pasos Brillo_89: -3123532449477868344
+      Pasos Brillo_9: -9066944997419762492
+      Pasos Brillo_90: 963817616713403229
+      Pasos Brillo_91: -789670552580428480
+      Pasos Brillo_92: 973699396306206264
+      Pasos Brillo_93: 2978106656109744019
+      Pasos Brillo_94: 6050260999889125807
+      Pasos Brillo_95: -3910665058954434025
+      Pasos Brillo_96: 7538438544521938395
+      Pasos Brillo_97: -2823967371496956656
+      Pasos Brillo_98: -287037080108286838
+      Pasos Brillo_99: 2012235248621564736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
