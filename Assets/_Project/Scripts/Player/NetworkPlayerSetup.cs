@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
@@ -8,26 +9,30 @@ public class NetworkPlayerSetup : NetworkBehaviour
     [SerializeField] private SpriteRenderer spriteJugador;
     [SerializeField] private Animator animatorJugador;
 
-    [Header("Personajes")]
+    [Header("Controladores originales")]
     [SerializeField] private RuntimeAnimatorController controladorElian;
     [SerializeField] private RuntimeAnimatorController controladorLia;
+
+    [Header("Overrides exclusivos P3")]
+    [SerializeField] private RuntimeAnimatorController overrideElianP3;
+    [SerializeField] private RuntimeAnimatorController overrideLiaP3;
+
+    private const string ESCENA_P3 = "P3_CaminoMadera";
 
     private void Awake()
     {
         if (spriteJugador == null)
-            spriteJugador = GetComponentInChildren<SpriteRenderer>(true);
+            spriteJugador = GetComponent<SpriteRenderer>();
 
         if (animatorJugador == null)
-            animatorJugador = GetComponentInChildren<Animator>(true);
+            animatorJugador = GetComponent<Animator>();
     }
 
     public override void OnNetworkSpawn()
     {
-        ConfigurarPersonaje();
-
         SceneManager.sceneLoaded += AlCargarEscena;
 
-        ActualizarVisibilidad(
+        ConfigurarPersonaje(
             SceneManager.GetActiveScene().name
         );
 
@@ -43,19 +48,17 @@ public class NetworkPlayerSetup : NetworkBehaviour
         SceneManager.sceneLoaded -= AlCargarEscena;
     }
 
-    private void ConfigurarPersonaje()
+    private void ConfigurarPersonaje(string nombreEscena)
     {
         if (animatorJugador == null)
             return;
 
         if (spriteJugador != null)
-        {
             spriteJugador.color = Color.white;
-        }
 
         bool esElian;
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (RolPruebaJugador.Instancia != null)
         {
             esElian = RolPruebaJugador.Instancia.EsElian();
@@ -63,25 +66,36 @@ public class NetworkPlayerSetup : NetworkBehaviour
         else
         {
             esElian =
-                OwnerClientId ==
-                NetworkManager.ServerClientId;
+                OwnerClientId == NetworkManager.ServerClientId;
         }
-        #else
+#else
         esElian =
-            OwnerClientId ==
-            NetworkManager.ServerClientId;
-        #endif
+            OwnerClientId == NetworkManager.ServerClientId;
+#endif
 
-        if (esElian)
+        RuntimeAnimatorController controladorOriginal =
+            esElian ? controladorElian : controladorLia;
+
+        RuntimeAnimatorController controladorP3 =
+            esElian ? overrideElianP3 : overrideLiaP3;
+
+        if (nombreEscena == ESCENA_P3 &&
+            controladorP3 != null)
         {
             animatorJugador.runtimeAnimatorController =
-                controladorElian;
+                controladorP3;
         }
         else
         {
             animatorJugador.runtimeAnimatorController =
-                controladorLia;
+                controladorOriginal;
         }
+
+        Debug.Log(
+            "ANIMATOR CONFIGURADO | Personaje: " +
+            (esElian ? "Elian" : "Lia") +
+            " | Escena: " + nombreEscena
+        );
     }
 
     private void AlCargarEscena(
@@ -89,19 +103,12 @@ public class NetworkPlayerSetup : NetworkBehaviour
         LoadSceneMode modo
     )
     {
-        ActualizarVisibilidad(escena.name);
-    }
+        ConfigurarPersonaje(escena.name);
 
-    private void ActualizarVisibilidad(
-        string nombreEscena
-    )
-    {
         bool mostrarJugador =
-            nombreEscena != "01_MainMenu";
+            escena.name != "01_MainMenu";
 
         if (spriteJugador != null)
-        {
             spriteJugador.enabled = mostrarJugador;
-        }
     }
 }

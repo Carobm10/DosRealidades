@@ -1395,6 +1395,7 @@ GameObject:
   - component: {fileID: 8153339542511108706}
   - component: {fileID: 3933818210451614181}
   - component: {fileID: 8682071940167124953}
+  - component: {fileID: 3117213389339318434}
   m_Layer: 5
   m_Name: BotonInteractuar
   m_TagString: Untagged
@@ -1542,6 +1543,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3117213389339318434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173372906510268952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c54e9bd15e449747b4d5aa9b9418465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PulsacionMantenidaHUD
 --- !u!1 &8281438830713392970
 GameObject:
   m_ObjectHideFlags: 0

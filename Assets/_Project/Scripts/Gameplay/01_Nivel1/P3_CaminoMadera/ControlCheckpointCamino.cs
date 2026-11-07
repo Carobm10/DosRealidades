@@ -8,62 +8,73 @@ public class ControlCheckpointCamino : NetworkBehaviour
     [Header("Punto inicial")]
     [SerializeField] private Transform inicioCamino;
 
+    private struct DatosCheckpoint
+    {
+        public Vector3 posicion;
+        public int fila;
+
+        public DatosCheckpoint(Vector3 posicion, int fila)
+        {
+            this.posicion = posicion;
+            this.fila = fila;
+        }
+    }
+
     private Vector3 posicionInicio;
 
-    private Dictionary<ulong, Vector3> puntosSeguros =
-        new Dictionary<ulong, Vector3>();
+    private Dictionary<ulong, DatosCheckpoint> checkpoints =
+        new Dictionary<ulong, DatosCheckpoint>();
+
+    private ControlSaltosPuente controlSaltos;
 
     public override void OnNetworkSpawn()
     {
-        if (inicioCamino != null)
-            posicionInicio = inicioCamino.position;
+        posicionInicio = inicioCamino != null
+            ? inicioCamino.position
+            : transform.position;
+
+        controlSaltos =
+            FindAnyObjectByType<ControlSaltosPuente>();
 
         if (IsServer)
-            puntosSeguros.Clear();
+            checkpoints.Clear();
     }
 
     public void RegistrarCheckpointServidor(
         ulong jugadorId,
-        Vector3 posicion)
+        Vector3 posicion,
+        int fila)
     {
         if (!IsServer)
             return;
 
-        puntosSeguros[jugadorId] = posicion;
+        checkpoints[jugadorId] =
+            new DatosCheckpoint(posicion, fila);
+
+        Debug.Log(
+            "CHECKPOINT GUARDADO | FILA: " +
+            fila + " | POSICIÓN: " + posicion
+        );
     }
 
-    // Recuperacion en un punto asignado manualmente.
-    public void RecuperarJugador(
-        ulong jugadorId,
-        Vector3 posicion)
-    {
-        if (!IsServer)
-            return;
-
-        EnviarRespawn(jugadorId, posicion);
-    }
-
-    // Recuperacion automatica si no hay punto asignado.
     public void RecuperarJugador(ulong jugadorId)
     {
         if (!IsServer)
             return;
 
         Vector3 posicion = posicionInicio;
+        int fila = -1;
 
-        if (puntosSeguros.TryGetValue(
-            jugadorId, out Vector3 guardada))
+        if (checkpoints.TryGetValue(
+            jugadorId, out DatosCheckpoint datos))
         {
-            posicion = guardada;
+            posicion = datos.posicion;
+            fila = datos.fila;
         }
 
-        EnviarRespawn(jugadorId, posicion);
-    }
+        if (controlSaltos != null)
+            controlSaltos.EstablecerFilaServidor(fila);
 
-    private void EnviarRespawn(
-        ulong jugadorId,
-        Vector3 posicion)
-    {
         RecuperarJugadorClientRpc(
             posicion,
             new ClientRpcParams
@@ -74,6 +85,24 @@ public class ControlCheckpointCamino : NetworkBehaviour
                 }
             }
         );
+
+        Debug.Log(
+            "RECUPERACIÓN | FILA: " + fila +
+            " | POSICIÓN: " + posicion
+        );
+    }
+
+    public void ReiniciarCheckpoint(ulong jugadorId)
+    {
+        if (!IsServer)
+            return;
+
+        checkpoints.Remove(jugadorId);
+    }
+
+    public Vector3 ObtenerInicio()
+    {
+        return posicionInicio;
     }
 
     [ClientRpc]
@@ -103,21 +132,8 @@ public class ControlCheckpointCamino : NetworkBehaviour
 
         jugador.transform.position = posicion;
 
-        Debug.Log("LIA RECUPERADA EN: " + posicion);
-    }
+        Physics2D.SyncTransforms();
 
-    public void ReiniciarCheckpoint(ulong jugadorId)
-    {
-        if (!IsServer)
-            return;
-
-        puntosSeguros.Remove(jugadorId);
-    }
-
-    public Vector3 ObtenerInicio()
-    {
-        return inicioCamino != null
-            ? inicioCamino.position
-            : posicionInicio;
+        Debug.Log("LÍA RECUPERADA: " + posicion);
     }
 }
