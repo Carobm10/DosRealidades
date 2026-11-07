@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AnimatorOverride_Elian_P3
+  m_Controller: {fileID: 9100000, guid: 4c16db98f56e46543a75efb5ac8a84ac, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fd25870f100dd954f95d8130db911716, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fed8485bafdf4e14abfaed2c1971b906, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8914b3e935ced6c4f9f547283cf59cd8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8914b3e935ced6c4f9f547283cf59cd8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3d8919271412f1a4c9a49c4a4f0ffb8c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8914b3e935ced6c4f9f547283cf59cd8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0925eb7bdeb4f4944b33a0118a4948fc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8914b3e935ced6c4f9f547283cf59cd8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bff366d8c7c77344bbd4d2fac2f5520a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8914b3e935ced6c4f9f547283cf59cd8, type: 2}

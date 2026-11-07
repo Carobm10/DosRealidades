@@ -11,21 +11,57 @@ public class ControlReinicioCamino : NetworkBehaviour
     [Header("Sistemas")]
     [SerializeField] private ControlCheckpointCamino controlCheckpoint;
     [SerializeField] private VidasEquipo vidasEquipo;
+    [SerializeField] private ControlSaltosPuente controlSaltos;
 
     private bool reinicioEnProceso;
 
     public override void OnNetworkSpawn()
     {
-        if (IsServer)
+        if (!IsServer)
+            return;
+
+        // Buscar componentes en SistemaCamino.
+        if (controlCheckpoint == null)
+            controlCheckpoint =
+                GetComponent<ControlCheckpointCamino>();
+
+        if (vidasEquipo == null)
+            vidasEquipo =
+                GetComponent<VidasEquipo>();
+
+        if (controlSaltos == null)
+            controlSaltos =
+                GetComponent<ControlSaltosPuente>();
+
+        // Búsqueda alternativa si no están en el mismo objeto.
+        if (controlCheckpoint == null)
+            controlCheckpoint =
+                FindAnyObjectByType<ControlCheckpointCamino>();
+
+        if (vidasEquipo == null)
+            vidasEquipo =
+                FindAnyObjectByType<VidasEquipo>();
+
+        if (controlSaltos == null)
+            controlSaltos =
+                FindAnyObjectByType<ControlSaltosPuente>();
+
+        if (vidasEquipo != null)
         {
-            if (controlCheckpoint == null)
-                controlCheckpoint = GetComponent<ControlCheckpointCamino>();
+            vidasEquipo.AlAgotarVidas += ReiniciarCamino;
+        }
+        else
+        {
+            Debug.LogError(
+                "ControlReinicioCamino: no se encontró VidasEquipo."
+            );
+        }
 
-            if (vidasEquipo == null)
-                vidasEquipo = FindFirstObjectByType<VidasEquipo>();
-
-            if (vidasEquipo != null)
-                vidasEquipo.AlAgotarVidas += ReiniciarCamino;
+        if (spawnElian == null || spawnLia == null)
+        {
+            Debug.LogError(
+                "Asigna Spawn Elian y Spawn Lia en el Inspector."
+            );
         }
     }
 
@@ -40,47 +76,68 @@ public class ControlReinicioCamino : NetworkBehaviour
         if (!IsServer || reinicioEnProceso)
             return;
 
+        if (NetworkManager.Singleton == null)
+            return;
+
         reinicioEnProceso = true;
 
-        Debug.Log("REINICIANDO TODO EL CAMINO DE MADERA");
+        Debug.Log(
+            "REINICIANDO COMPLETAMENTE EL CAMINO DE MADERA."
+        );
 
-        // Restaurar todos los tablones.
+        // 1. Restaurar todos los tablones.
         PlataformaCamino[] tablones =
             FindObjectsByType<PlataformaCamino>(
+                FindObjectsInactive.Include,
                 FindObjectsSortMode.None
             );
 
         foreach (PlataformaCamino tablon in tablones)
         {
-            tablon.RestablecerServidor();
+            if (tablon != null && tablon.IsSpawned)
+                tablon.RestablecerServidor();
         }
 
-        // Borrar el checkpoint de Lia.
+        // 2. Reiniciar el progreso del puente.
+        if (controlSaltos != null)
+        {
+            controlSaltos.ReiniciarRuta();
+        }
+
+        // 3. Borrar los checkpoints de todos.
         if (controlCheckpoint != null)
         {
-            foreach (ulong id in NetworkManager.Singleton.ConnectedClientsIds)
+            foreach (ulong id in
+                NetworkManager.Singleton.ConnectedClientsIds)
+            {
                 controlCheckpoint.ReiniciarCheckpoint(id);
+            }
         }
 
-        // Recuperar las tres vidas.
-        vidasEquipo?.RestaurarVidas();
+        // 4. Restaurar las tres vidas.
+        if (vidasEquipo != null)
+            vidasEquipo.RestaurarVidas();
 
-        // Devolver cada jugador a su spawn.
-        foreach (ulong id in NetworkManager.Singleton.ConnectedClientsIds)
+        // 5. Devolver a cada jugador a su spawn.
+        foreach (ulong id in
+            NetworkManager.Singleton.ConnectedClientsIds)
         {
-            Vector3 posicion;
+            Transform spawn =
+                id == NetworkManager.ServerClientId
+                ? spawnElian
+                : spawnLia;
 
-            if (id == NetworkManager.ServerClientId)
+            if (spawn == null)
             {
-                posicion = spawnElian.position;
-            }
-            else
-            {
-                posicion = spawnLia.position;
+                Debug.LogError(
+                    "No se encontró el spawn del jugador: " + id
+                );
+
+                continue;
             }
 
             ReposicionarJugadorClientRpc(
-                posicion,
+                spawn.position,
                 new ClientRpcParams
                 {
                     Send = new ClientRpcSendParams
@@ -91,6 +148,10 @@ public class ControlReinicioCamino : NetworkBehaviour
             );
         }
 
+        Debug.Log(
+            "CAMINO REINICIADO. VIDAS RESTAURADAS."
+        );
+
         reinicioEnProceso = false;
     }
 
@@ -99,6 +160,9 @@ public class ControlReinicioCamino : NetworkBehaviour
         Vector3 posicion,
         ClientRpcParams rpcParams = default)
     {
+        if (NetworkManager.Singleton == null)
+            return;
+
         NetworkObject jugador =
             NetworkManager.Singleton.SpawnManager
             .GetLocalPlayerObject();
@@ -114,10 +178,15 @@ public class ControlReinicioCamino : NetworkBehaviour
             cuerpo.linearVelocity = Vector2.zero;
             cuerpo.angularVelocity = 0f;
             cuerpo.position = posicion;
+            cuerpo.rotation = 0f;
         }
 
         jugador.transform.position = posicion;
 
-        Debug.Log("JUGADOR REINICIADO EN EL INICIO");
+        Physics2D.SyncTransforms();
+
+        Debug.Log(
+            "JUGADOR DEVUELTO A SU SPAWN: " + posicion
+        );
     }
 }

@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 4351588791507245499}
   - component: {fileID: 4895310645492503891}
   - component: {fileID: 3563157725735165863}
+  - component: {fileID: 4310203884673097124}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -368,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1588100951
+  GlobalObjectIdHash: 195567080
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -446,6 +447,8 @@ MonoBehaviour:
   animatorJugador: {fileID: 3239875105945358432}
   controladorElian: {fileID: 9100000, guid: 4c16db98f56e46543a75efb5ac8a84ac, type: 2}
   controladorLia: {fileID: 9100000, guid: 3081efbb78b4fa343843626842fadfc0, type: 2}
+  overrideElianP3: {fileID: 22100000, guid: 1cfe43a6909b3024f81352fb009fd53f, type: 2}
+  overrideLiaP3: {fileID: 22100000, guid: c6ff44765fef0a5488e669f60e7b12ca, type: 2}
 --- !u!114 &-6462462500944849155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,7 +463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NetworkPlayerMovement
   ShowTopMostFoldoutHeaderGroup: 1
   velocidadMovimiento: 4
-  umbralMovimiento: 0.15
   accionMover: {fileID: -360568654732193790, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   animatorJugador: {fileID: 3239875105945358432}
 --- !u!61 &-7896735597331377570
@@ -569,12 +571,12 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   accionSaltar: {fileID: -6687273217185972327, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   visualJugador: {fileID: 8696842847975744996}
-  animatorJugador: {fileID: 0}
+  animatorJugador: {fileID: 3239875105945358432}
   alturaSalto: 0.5
   duracionSalto: 0.45
-  distanciaSaltoP3: 1.2
   duracionSaltoP3: 0.65
   alturaSaltoP3: 0.6
+  saltoInicialDerecha: 1
 --- !u!114 &4895310645492503891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,3 +604,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 5
+--- !u!114 &4310203884673097124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198515594604971309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d7c879794dfda4687da0e400131852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkRigidbody2D
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkRigidbodyBaseExpanded: 0
+  UseRigidBodyForMotion: 0
+  AutoUpdateKinematicState: 1
+  AutoSetKinematicOnDespawn: 1

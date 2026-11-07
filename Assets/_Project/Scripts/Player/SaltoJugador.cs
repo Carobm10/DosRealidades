@@ -18,70 +18,113 @@ public class SaltoJugador : NetworkBehaviour
     [SerializeField] private float alturaSalto = 0.5f;
     [SerializeField] private float duracionSalto = 0.45f;
 
-    [Header("Salto P3 - Camino de madera")]
-    [SerializeField] private float distanciaSaltoP3 = 1.2f;
-    [SerializeField] private float duracionSaltoP3 = 0.65f;
-    [SerializeField] private float alturaSaltoP3 = 0.6f;
-
-    private Rigidbody2D cuerpo;
-    private NetworkPlayerMovement movimiento;
-
     private bool saltando;
+    private bool esperandoValidacion;
+
     private Vector3 posicionVisualInicial;
 
     private bool EsNivelP3 =>
         SceneManager.GetActiveScene().name == "P3_CaminoMadera";
 
+    // =====================================
+    // INICIALIZACION
+    // =====================================
+
     private void Awake()
     {
-        cuerpo = GetComponent<Rigidbody2D>();
-        movimiento = GetComponent<NetworkPlayerMovement>();
-
         if (visualJugador != null)
         {
             posicionVisualInicial = visualJugador.localPosition;
 
             if (animatorJugador == null)
+            {
                 animatorJugador =
                     visualJugador.GetComponent<Animator>();
+            }
         }
     }
 
+    // =====================================
+    // ACTIVAR CONTROLES
+    // =====================================
+
     public override void OnNetworkSpawn()
     {
-        if (!IsOwner || accionSaltar == null)
+        if (!IsOwner ||
+            accionSaltar == null ||
+            accionSaltar.action == null)
             return;
 
         accionSaltar.action.Enable();
         accionSaltar.action.performed += AlSaltar;
+
+        Debug.Log(
+            "SALTO CONFIGURADO PARA: " +
+            gameObject.name
+        );
     }
+
+    // =====================================
+    // DESACTIVAR CONTROLES
+    // =====================================
 
     public override void OnNetworkDespawn()
     {
-        if (!IsOwner || accionSaltar == null)
-            return;
+        if (IsOwner &&
+            accionSaltar != null &&
+            accionSaltar.action != null)
+        {
+            accionSaltar.action.performed -= AlSaltar;
+            accionSaltar.action.Disable();
+        }
 
-        accionSaltar.action.performed -= AlSaltar;
-        accionSaltar.action.Disable();
+        StopAllCoroutines();
+
+        saltando = false;
+        esperandoValidacion = false;
+
+        RestaurarVisual();
     }
 
-    private void AlSaltar(InputAction.CallbackContext contexto)
+    // =====================================
+    // DETECTAR SALTO
+    // =====================================
+
+    private void AlSaltar(
+        InputAction.CallbackContext contexto)
     {
-        if (saltando || !IsOwner)
+        if (!IsOwner ||
+            saltando ||
+            esperandoValidacion)
             return;
 
+        // EN P3 EL SALTO QUEDA DESACTIVADO.
+        // Los jugadores deben caminar hasta los botones.
         if (EsNivelP3)
-            StartCoroutine(SaltoCaminoMadera());
-        else
-            StartCoroutine(SaltoNormal());
+        {
+            Debug.Log(
+                "P3: SALTO DESACTIVADO PARA ESTA PRUEBA."
+            );
+
+            return;
+        }
+
+        // En los demás niveles se conserva el salto normal.
+        StartCoroutine(SaltoNormal());
     }
+
+    // =====================================
+    // SALTO NORMAL
+    // =====================================
 
     private IEnumerator SaltoNormal()
     {
         saltando = true;
 
         if (animatorJugador != null)
+        {
             animatorJugador.SetBool("Saltando", true);
+        }
 
         float tiempo = 0f;
 
@@ -93,10 +136,15 @@ public class SaltoJugador : NetworkBehaviour
                 Mathf.Clamp01(tiempo / duracionSalto);
 
             float altura =
-                Mathf.Sin(progreso * Mathf.PI) * alturaSalto;
+                Mathf.Sin(progreso * Mathf.PI) *
+                alturaSalto;
 
-            visualJugador.localPosition =
-                posicionVisualInicial + Vector3.up * altura;
+            if (visualJugador != null)
+            {
+                visualJugador.localPosition =
+                    posicionVisualInicial +
+                    Vector3.up * altura;
+            }
 
             yield return null;
         }
@@ -104,80 +152,55 @@ public class SaltoJugador : NetworkBehaviour
         FinalizarSalto();
     }
 
-    private IEnumerator SaltoCaminoMadera()
-    {
-        if (cuerpo == null || movimiento == null)
-            yield break;
-
-        saltando = true;
-
-        // Obtener la ultima direccion horizontal.
-        float direccionX = animatorJugador != null
-            ? animatorJugador.GetFloat("DireccionX")
-            : 0f;
-
-        if (Mathf.Abs(direccionX) < 0.1f)
-        {
-            saltando = false;
-            Debug.LogWarning(
-                "Para saltar en P3 debes mirar hacia izquierda o derecha."
-            );
-            yield break;
-        }
-
-        Vector2 inicio = cuerpo.position;
-
-        Vector2 destino = inicio +
-            Vector2.right * Mathf.Sign(direccionX) *
-            distanciaSaltoP3;
-
-        movimiento.BloquearMovimiento(true);
-
-        if (animatorJugador != null)
-            animatorJugador.SetBool("Saltando", true);
-
-        float tiempo = 0f;
-
-        while (tiempo < duracionSaltoP3)
-        {
-            tiempo += Time.fixedDeltaTime;
-
-            float progreso =
-                Mathf.Clamp01(tiempo / duracionSaltoP3);
-
-            Vector2 posicion =
-                Vector2.Lerp(inicio, destino, progreso);
-
-            cuerpo.MovePosition(posicion);
-
-            float altura =
-                Mathf.Sin(progreso * Mathf.PI) *
-                alturaSaltoP3;
-
-            visualJugador.localPosition =
-                posicionVisualInicial +
-                Vector3.up * altura;
-
-            yield return new WaitForFixedUpdate();
-        }
-
-        cuerpo.MovePosition(destino);
-        cuerpo.position = destino;
-
-        FinalizarSalto();
-
-        movimiento.BloquearMovimiento(false);
-
-        Debug.Log("SALTO P3 COMPLETADO");
-    }
+    // =====================================
+    // FINALIZAR SALTO
+    // =====================================
 
     private void FinalizarSalto()
     {
-        visualJugador.localPosition = posicionVisualInicial;
+        RestaurarVisual();
 
         if (animatorJugador != null)
+        {
             animatorJugador.SetBool("Saltando", false);
+        }
 
         saltando = false;
+
+        Debug.Log("SALTO NORMAL FINALIZADO.");
+    }
+
+    // =====================================
+    // RESTAURAR POSICION VISUAL
+    // =====================================
+
+    private void RestaurarVisual()
+    {
+        if (visualJugador != null)
+        {
+            visualJugador.localPosition =
+                posicionVisualInicial;
+        }
+
+        if (animatorJugador != null)
+        {
+            animatorJugador.SetBool("Saltando", false);
+        }
+    }
+
+    // =====================================
+    // COMPATIBILIDAD CON SCRIPTS ANTERIORES
+    // =====================================
+
+    public void ConfirmarValidacion()
+    {
+        esperandoValidacion = false;
+        saltando = false;
+
+        RestaurarVisual();
+
+        Debug.Log(
+            "VALIDACION DE SALTO FINALIZADA."
+        );
     }
 }

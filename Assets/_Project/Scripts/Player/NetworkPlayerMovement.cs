@@ -7,12 +7,11 @@ public class NetworkPlayerMovement : NetworkBehaviour
 {
     [Header("Movimiento")]
     [SerializeField] private float velocidadMovimiento = 4f;
-    [SerializeField] private float umbralMovimiento = 0.15f;
 
     [Header("Controles")]
     [SerializeField] private InputActionReference accionMover;
 
-    [Header("Animaciones")]
+    [Header("Animacion")]
     [SerializeField] private Animator animatorJugador;
 
     private Rigidbody2D cuerpo;
@@ -20,22 +19,34 @@ public class NetworkPlayerMovement : NetworkBehaviour
     private Vector2 direccionMovimiento;
     private Vector2 ultimaDireccion = Vector2.down;
 
-    private bool movimientoBloqueado = false;
+    private float ultimaDireccionHorizontal = 0f;
+
+    private bool movimientoBloqueado;
+    private bool modoPuente;
+
+    public float UltimaDireccionHorizontal =>
+        ultimaDireccionHorizontal;
+
+    public bool MovimientoBloqueado =>
+        movimientoBloqueado;
+
+    public bool ModoPuente =>
+        modoPuente;
 
     private void Awake()
     {
         cuerpo = GetComponent<Rigidbody2D>();
-
-        if (animatorJugador == null)
-            animatorJugador = GetComponentInChildren<Animator>();
     }
 
     public override void OnNetworkSpawn()
     {
         if (IsOwner)
         {
-            if (accionMover != null && accionMover.action != null)
+            if (accionMover != null &&
+                accionMover.action != null)
+            {
                 accionMover.action.Enable();
+            }
 
             if (cuerpo != null)
                 cuerpo.simulated = true;
@@ -45,8 +56,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
             if (cuerpo != null)
                 cuerpo.simulated = false;
         }
-
-        ActualizarDireccionAnimator(ultimaDireccion);
     }
 
     private void Update()
@@ -54,52 +63,50 @@ public class NetworkPlayerMovement : NetworkBehaviour
         if (!IsOwner)
             return;
 
-        if (movimientoBloqueado)
+        if (accionMover == null ||
+            accionMover.action == null)
+            return;
+
+        // Leer siempre el joystick.
+        Vector2 entrada =
+            accionMover.action.ReadValue<Vector2>();
+
+        // Guardar la última dirección seleccionada.
+        if (entrada.sqrMagnitude > 0.01f)
+        {
+            ultimaDireccion = entrada.normalized;
+
+            if (Mathf.Abs(entrada.x) > 0.1f)
+            {
+                ultimaDireccionHorizontal =
+                    Mathf.Sign(entrada.x);
+            }
+        }
+
+        // Bloquear el desplazamiento normal
+        // mientras Lía está dentro del puente.
+        if (movimientoBloqueado || modoPuente)
         {
             direccionMovimiento = Vector2.zero;
-            ActualizarVelocidadAnimator(0f);
+
+            if (animatorJugador != null)
+                animatorJugador.SetFloat("Velocidad", 0f);
+
             return;
         }
 
-        Vector2 entrada = Vector2.zero;
+        direccionMovimiento =
+            Vector2.ClampMagnitude(entrada, 1f);
 
-        if (accionMover != null && accionMover.action != null)
-        {
-            entrada = accionMover.action.ReadValue<Vector2>();
-        }
-
-        // Detectar si existe movimiento.
-        if (entrada.magnitude < umbralMovimiento)
-        {
-            direccionMovimiento = Vector2.zero;
-            ActualizarVelocidadAnimator(0f);
-            return;
-        }
-
-        // Convertir el movimiento en cuatro direcciones.
-        if (Mathf.Abs(entrada.x) > Mathf.Abs(entrada.y))
-        {
-            direccionMovimiento = new Vector2(
-                Mathf.Sign(entrada.x), 0f
-            );
-        }
-        else
-        {
-            direccionMovimiento = new Vector2(
-                0f, Mathf.Sign(entrada.y)
-            );
-        }
-
-        // Guardar la última dirección.
-        ultimaDireccion = direccionMovimiento;
-
-        ActualizarDireccionAnimator(ultimaDireccion);
-        ActualizarVelocidadAnimator(1f);
+        ActualizarAnimacion(direccionMovimiento);
     }
 
     private void FixedUpdate()
     {
-        if (!IsOwner || movimientoBloqueado || cuerpo == null)
+        if (!IsOwner ||
+            movimientoBloqueado ||
+            modoPuente ||
+            cuerpo == null)
             return;
 
         Vector2 nuevaPosicion =
@@ -111,23 +118,48 @@ public class NetworkPlayerMovement : NetworkBehaviour
         cuerpo.MovePosition(nuevaPosicion);
     }
 
-    private void ActualizarDireccionAnimator(Vector2 direccion)
+    private void ActualizarAnimacion(Vector2 direccion)
     {
         if (animatorJugador == null)
             return;
 
-        animatorJugador.SetFloat("DireccionX", direccion.x);
-        animatorJugador.SetFloat("DireccionY", direccion.y);
+        animatorJugador.SetFloat(
+            "Velocidad",
+            direccion.magnitude
+        );
+
+        Vector2 direccionAnimacion =
+            direccion.sqrMagnitude > 0.01f
+            ? direccion.normalized
+            : ultimaDireccion;
+
+        animatorJugador.SetFloat(
+            "DireccionX",
+            direccionAnimacion.x
+        );
+
+        animatorJugador.SetFloat(
+            "DireccionY",
+            direccionAnimacion.y
+        );
     }
 
-    private void ActualizarVelocidadAnimator(float velocidad)
+    // ACTIVAR O DESACTIVAR EL MODO PUENTE.
+    public void ActivarModoPuente(bool activar)
     {
-        if (animatorJugador == null)
+        if (!IsOwner)
             return;
 
-        animatorJugador.SetFloat("Velocidad", velocidad);
+        modoPuente = activar;
+        direccionMovimiento = Vector2.zero;
+
+        if (activar && animatorJugador != null)
+            animatorJugador.SetFloat("Velocidad", 0f);
+
+        Debug.Log("MODO PUENTE: " + activar);
     }
 
+    // BLOQUEAR MOVIMIENTO DURANTE EL SALTO.
     public void BloquearMovimiento(bool bloquear)
     {
         if (!IsOwner)
@@ -136,8 +168,8 @@ public class NetworkPlayerMovement : NetworkBehaviour
         movimientoBloqueado = bloquear;
         direccionMovimiento = Vector2.zero;
 
-        if (bloquear)
-            ActualizarVelocidadAnimator(0f);
+        if (bloquear && animatorJugador != null)
+            animatorJugador.SetFloat("Velocidad", 0f);
     }
 
     public override void OnNetworkDespawn()
@@ -150,6 +182,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
         }
 
         movimientoBloqueado = false;
+        modoPuente = false;
         direccionMovimiento = Vector2.zero;
     }
 }
