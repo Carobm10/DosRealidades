@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: a5972e1a34929484ab79ad4f80631ebd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6993336762814938215
+    second: Nota chiquita_0
+  - first:
+      213: -6923979602444078673
+    second: Nota chiquita_1
+  - first:
+      213: 4826058493211679007
+    second: Nota chiquita_2
+  - first:
+      213: -3971247908355029300
+    second: Nota chiquita_3
+  - first:
+      213: 4973660422654967173
+    second: Nota chiquita_4
+  - first:
+      213: -4390781904293693322
+    second: Nota chiquita_5
+  - first:
+      213: -3702941790793953742
+    second: Nota chiquita_6
+  - first:
+      213: -8086206944005481347
+    second: Nota chiquita_7
+  - first:
+      213: -4037886014774901742
+    second: Nota chiquita_8
+  - first:
+      213: -9072973726970353101
+    second: Nota chiquita_9
+  - first:
+      213: 3707165390302383940
+    second: Nota chiquita_10
+  - first:
+      213: -3985345055150781781
+    second: Nota chiquita_11
+  - first:
+      213: 4498295005929336482
+    second: Nota chiquita_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nota chiquita_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 767
+        height: 1203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cb346cbb25d0160800000000000000
+      internalID: 6993336762814938215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1173
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa135448c3519ef90800000000000000
+      internalID: -6923979602444078673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1171
+        width: 76
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19932941aa99f240800000000000000
+      internalID: 4826058493211679007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1142
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc64c73611b43e8c0800000000000000
+      internalID: -3971247908355029300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_4
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 47
+        width: 411
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58db4c58dcdf50540800000000000000
+      internalID: 4973660422654967173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1148
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6787c541f1fc013c0800000000000000
+      internalID: -4390781904293693322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1124
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e07cf6f028c9cc0800000000000000
+      internalID: -3702941790793953742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1136
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c914280a508cf80800000000000000
+      internalID: -8086206944005481347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1126
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21403dd201c86f7c0800000000000000
+      internalID: -4037886014774901742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 942
+        width: 124
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33aea7b4772561280800000000000000
+      internalID: -9072973726970353101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 422
+        width: 430
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f8894f74f727330800000000000000
+      internalID: 3707165390302383940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_11
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 618
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baac060a9c531b8c0800000000000000
+      internalID: -3985345055150781781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota chiquita_12
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 525
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aee45399772d6e30800000000000000
+      internalID: 4498295005929336482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nota chiquita_0: 6993336762814938215
+      Nota chiquita_1: -6923979602444078673
+      Nota chiquita_10: 3707165390302383940
+      Nota chiquita_11: -3985345055150781781
+      Nota chiquita_12: 4498295005929336482
+      Nota chiquita_2: 4826058493211679007
+      Nota chiquita_3: -3971247908355029300
+      Nota chiquita_4: 4973660422654967173
+      Nota chiquita_5: -4390781904293693322
+      Nota chiquita_6: -3702941790793953742
+      Nota chiquita_7: -8086206944005481347
+      Nota chiquita_8: -4037886014774901742
+      Nota chiquita_9: -9072973726970353101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
