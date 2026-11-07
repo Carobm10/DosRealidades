@@ -1,42 +1,61 @@
+
 using UnityEngine;
-using Unity.Netcode;
 
 public class PuertaPuzzleP5 : MonoBehaviour
 {
-    [SerializeField]
-    private int numeroPuerta;
+    [Header("Configuracion de puerta")]
+    [SerializeField] private int numeroPuerta;
 
-    [SerializeField]
-    private PuzzlePuertasP5 controlador;
+    [SerializeField] private PuzzlePuertasP5 controlador;
+
+    [Header("Animacion")]
+    [SerializeField] private Animator animatorPuerta;
+
+    [Header("Transicion")]
+    [SerializeField] private string escenaDestino;
+
+    public int NumeroPuerta => numeroPuerta;
+    public string EscenaDestino => escenaDestino;
+    public Transform PuntoEnfoque => transform;
 
     private void Awake()
     {
         if (controlador == null)
-        {
-            controlador =
-                FindAnyObjectByType<PuzzlePuertasP5>();
-        }
+            controlador = FindAnyObjectByType<PuzzlePuertasP5>();
+
+        if (animatorPuerta == null)
+            animatorPuerta = GetComponent<Animator>();
+
+        // La puerta comienza cerrada.
+        if (animatorPuerta != null)
+            animatorPuerta.enabled = false;
     }
 
-    private void OnTriggerEnter2D(
-        Collider2D otro)
+    public void IntentarAbrir()
     {
-        NetworkObject jugador =
-            otro.GetComponentInParent<NetworkObject>();
-
-        if (jugador == null)
-            return;
-
-        // Cada dispositivo solamente reporta
-        // su propio jugador.
-        if (!jugador.IsOwner)
-            return;
-
         if (controlador == null)
+        {
+            Debug.LogError(
+                "P5: No se encontro PuzzlePuertasP5."
+            );
             return;
+        }
 
-        controlador.IntentarPuerta(
-            numeroPuerta
-        );
+        controlador.IntentarPuerta(numeroPuerta);
+    }
+
+    public void AbrirVisualLocal()
+    {
+        if (animatorPuerta == null)
+        {
+            Debug.LogError(
+                "P5: La puerta " + numeroPuerta +
+                " no tiene Animator."
+            );
+            return;
+        }
+
+        animatorPuerta.enabled = true;
+        animatorPuerta.Play(0, 0, 0f);
     }
 }

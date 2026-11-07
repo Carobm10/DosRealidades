@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NPC_Botones_Elian_Override Lia
+  m_Controller: {fileID: 9100000, guid: 02479dca3d6f1e748ab0c0361ad38ff6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 21203b2da4a564344a274667dc9505c3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0240a44e9bb80ac49895f6784fb3a5af, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7e7142300d444484582ab6bb3aa49a96, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bd87fff392537f6408a41383bf383e33, type: 2}

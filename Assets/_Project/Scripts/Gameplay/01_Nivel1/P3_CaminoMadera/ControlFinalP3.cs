@@ -24,9 +24,6 @@ public class ControlFinalP3 : NetworkBehaviour
     [SerializeField] private float duracionZoom = 1.2f;
     [SerializeField] private float esperaAntesDeAbrir = 0.35f;
 
-    [Header("Siguiente nivel")]
-    [SerializeField] private string siguienteEscena = "P5_Pasillo";
-
     // =====================================
     // VARIABLES DE RED
     // =====================================
@@ -116,8 +113,8 @@ public class ControlFinalP3 : NetworkBehaviour
         yield return null;
 
         string mensaje = modoPruebaSoloLia
-            ? "¡Llega al botón y mantenlo presionado durante 2 segundos para abrir la puerta!"
-            : "¡Lleguen a los botones y manténganlos presionados durante 2 segundos al mismo tiempo para abrir las puertas!";
+            ? "¡Llega al botón!"
+            : "¡Lleguen a los botones!";
 
         HUDMision.Instancia.CambiarMision(mensaje);
 
@@ -504,11 +501,6 @@ public class ControlFinalP3 : NetworkBehaviour
 
             Debug.Log(
                 "P3: CARGANDO " + siguienteEscena
-            );
-
-            NetworkManager.Singleton.SceneManager.LoadScene(
-                siguienteEscena,
-                LoadSceneMode.Single
             );
         }
     }

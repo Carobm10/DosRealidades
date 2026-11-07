@@ -16,6 +16,8 @@ public class ZonaInteraccion : MonoBehaviour
 
     [Header("Control visual NPC")]
     [SerializeField] private NPCVisualController visualNPC;
+    [Header("Puerta P5")]
+    [SerializeField] private PuertaPuzzleP5 puertaPuzzle;
 
     [Header("Brillo de objeto opcional")]
     [SerializeField] private SpriteRenderer objetoBrillo;
@@ -31,6 +33,9 @@ public class ZonaInteraccion : MonoBehaviour
     [SerializeField] private bool botonEsParaLia;
 
     [SerializeField] private ControlFinalP3 controlFinal;
+
+    [Header("Regreso P5")]
+    [SerializeField] private RegresoPasilloP5 regresoPasillo;
 
     private Sprite spriteOriginal;
     private Coroutine rutinaParpadeo;
@@ -59,6 +64,11 @@ public class ZonaInteraccion : MonoBehaviour
             controlFinal =
                 FindAnyObjectByType<ControlFinalP3>();
         }
+        if (puertaPuzzle == null)
+            puertaPuzzle = GetComponent<PuertaPuzzleP5>();
+
+        if (regresoPasillo == null)
+            regresoPasillo = GetComponent<RegresoPasilloP5>();
     }
 
     private void OnEnable()
@@ -229,12 +239,26 @@ public class ZonaInteraccion : MonoBehaviour
 
     public void Interactuar()
     {
+        if (regresoPasillo != null)
+        {
+            regresoPasillo.SolicitarRegreso();
+            return;
+        }
+        // PUERTAS DEL NIVEL P5
+        if (puertaPuzzle != null)
+        {
+            puertaPuzzle.IntentarAbrir();
+            return;
+        }
+
+        // NPC
         if (npcDialogo != null)
         {
             npcDialogo.IniciarDialogo();
             return;
         }
 
+        // VENTANAS
         if (ventanaAbrir != null)
         {
             MantenerBrillo();

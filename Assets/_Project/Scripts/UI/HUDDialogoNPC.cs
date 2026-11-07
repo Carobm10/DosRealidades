@@ -7,7 +7,6 @@ using TMPro;
 
 public class HUDDialogoNPC : MonoBehaviour
 {
-    // Compatibilidad con NPC antiguos
     public static HUDDialogoNPC Instancia { get; private set; }
 
     [Header("Panel de conversacion")]
@@ -35,12 +34,24 @@ public class HUDDialogoNPC : MonoBehaviour
     [SerializeField, Range(0.01f, 0.15f)]
     private float tiempoPorCaracter = 0.035f;
 
+    private enum FaseDialogo
+    {
+        Ninguna,
+        OpcionJugador,
+        RespuestaNPC
+    }
+
     private NPCDialogo npcActual;
     private NodoDialogo nodoActual;
+    private OpcionDialogo opcionSeleccionada;
+
     private Coroutine rutinaEscritura;
 
     private bool escribiendo;
     private bool conversacionAbierta;
+
+    private FaseDialogo faseActual = FaseDialogo.Ninguna;
+
     private NetworkPlayerMovement jugadorEnDialogo;
 
     private void Awake()
@@ -55,7 +66,8 @@ public class HUDDialogoNPC : MonoBehaviour
             if (botonesOpciones[i] != null)
             {
                 botonesOpciones[i].onClick.AddListener(
-                    () => SeleccionarOpcion(indice));
+                    () => SeleccionarOpcion(indice)
+                );
             }
         }
 
@@ -81,13 +93,13 @@ public class HUDDialogoNPC : MonoBehaviour
             Instancia = null;
     }
 
+    // =====================================
+    // ABRIR CONVERSACION
+    // =====================================
+
     public void AbrirDialogo(NPCDialogo npc)
     {
-        if (npc == null)
-            return;
-
-        // Evita reiniciar una conversacion ya abierta.
-        if (conversacionAbierta)
+        if (npc == null || conversacionAbierta)
             return;
 
         npcActual = npc;
@@ -106,6 +118,7 @@ public class HUDDialogoNPC : MonoBehaviour
 
         if (jugadorEnDialogo != null)
             jugadorEnDialogo.BloquearMovimiento(true);
+
         if (modoDialogo != null)
             modoDialogo.OcultarHUD();
 
@@ -114,6 +127,10 @@ public class HUDDialogoNPC : MonoBehaviour
 
         MostrarNodo(npcActual.NodoInicial);
     }
+
+    // =====================================
+    // MOSTRAR NODO DEL NPC
+    // =====================================
 
     private void MostrarNodo(string id)
     {
@@ -126,32 +143,46 @@ public class HUDDialogoNPC : MonoBehaviour
 
         if (nodoActual == null)
         {
-            Debug.LogWarning(
-                "No se encontro el nodo: " + id);
+            Debug.LogWarning("No se encontro el nodo: " + id);
             CerrarDialogo();
             return;
         }
 
+        faseActual = FaseDialogo.Ninguna;
+        opcionSeleccionada = null;
+
         if (contenedorOpciones != null)
             contenedorOpciones.SetActive(false);
 
-        MostrarPersonaje(
-            nodoActual.hablante ==
-            NodoDialogo.Hablante.NPC);
-
         if (botonContinuar != null)
             botonContinuar.gameObject.SetActive(false);
+
+        MostrarPersonaje(
+            nodoActual.hablante == NodoDialogo.Hablante.NPC
+        );
 
         if (botonSaltar != null)
             botonSaltar.gameObject.SetActive(true);
 
         rutinaEscritura = StartCoroutine(
-            EscribirTexto(nodoActual.texto));
+            EscribirTexto(nodoActual.texto)
+        );
     }
+
+    // =====================================
+    // ESCRITURA DEL TEXTO
+    // =====================================
 
     private IEnumerator EscribirTexto(string contenido)
     {
         escribiendo = true;
+
+        if (textoDialogo == null)
+        {
+            escribiendo = false;
+            rutinaEscritura = null;
+            yield break;
+        }
 
         textoDialogo.text = contenido ?? "";
         textoDialogo.maxVisibleCharacters = 0;
@@ -164,7 +195,8 @@ public class HUDDialogoNPC : MonoBehaviour
             textoDialogo.maxVisibleCharacters = i;
 
             yield return new WaitForSecondsRealtime(
-                tiempoPorCaracter);
+                tiempoPorCaracter
+            );
         }
 
         rutinaEscritura = null;
@@ -186,10 +218,32 @@ public class HUDDialogoNPC : MonoBehaviour
         FinalizarEscritura();
     }
 
+    // =====================================
+    // FINALIZAR CADA TEXTO
+    // =====================================
+
     private void FinalizarEscritura()
     {
         if (botonSaltar != null)
             botonSaltar.gameObject.SetActive(false);
+
+        // Ya habló el jugador o el NPC respondió.
+        // Ahora se permite continuar.
+
+        if (faseActual == FaseDialogo.OpcionJugador ||
+            faseActual == FaseDialogo.RespuestaNPC)
+        {
+            if (contenedorOpciones != null)
+                contenedorOpciones.SetActive(false);
+
+            if (botonContinuar != null)
+                botonContinuar.gameObject.SetActive(true);
+
+            return;
+        }
+
+        // Primera intervención del NPC:
+        // mostrar las opciones del jugador.
 
         bool tieneOpciones =
             nodoActual != null &&
@@ -198,8 +252,8 @@ public class HUDDialogoNPC : MonoBehaviour
 
         if (tieneOpciones)
         {
-            // Es el turno de responder del jugador.
             MostrarPersonaje(false);
+
             ActualizarOpciones();
 
             if (contenedorOpciones != null)
@@ -210,7 +264,6 @@ public class HUDDialogoNPC : MonoBehaviour
         }
         else
         {
-            // Nodo de despedida.
             if (contenedorOpciones != null)
                 contenedorOpciones.SetActive(false);
 
@@ -218,6 +271,10 @@ public class HUDDialogoNPC : MonoBehaviour
                 botonContinuar.gameObject.SetActive(true);
         }
     }
+
+    // =====================================
+    // MOSTRAR PERSONAJE Y RETRATO
+    // =====================================
 
     private void MostrarPersonaje(bool esNPC)
     {
@@ -241,6 +298,10 @@ public class HUDDialogoNPC : MonoBehaviour
             imagenRetrato.enabled = retrato != null;
         }
     }
+
+    // =====================================
+    // ACTUALIZAR OPCIONES
+    // =====================================
 
     private void ActualizarOpciones()
     {
@@ -284,25 +345,43 @@ public class HUDDialogoNPC : MonoBehaviour
         return nodoActual.opciones[indice];
     }
 
+    // =====================================
+    // SELECCIONAR OPCION DEL JUGADOR
+    // =====================================
+
     private void SeleccionarOpcion(int indice)
     {
         if (!conversacionAbierta || escribiendo)
             return;
 
-        OpcionDialogo opcion = ObtenerOpcion(indice);
+        opcionSeleccionada = ObtenerOpcion(indice);
 
-        if (opcion == null)
+        if (opcionSeleccionada == null)
             return;
 
-        if (string.IsNullOrWhiteSpace(
-            opcion.siguienteNodo))
-        {
-            CerrarDialogo();
-            return;
-        }
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
 
-        MostrarNodo(opcion.siguienteNodo);
+        if (botonContinuar != null)
+            botonContinuar.gameObject.SetActive(false);
+
+        // Primero habla el jugador.
+
+        faseActual = FaseDialogo.OpcionJugador;
+
+        MostrarPersonaje(false);
+
+        if (botonSaltar != null)
+            botonSaltar.gameObject.SetActive(true);
+
+        rutinaEscritura = StartCoroutine(
+            EscribirTexto(opcionSeleccionada.texto)
+        );
     }
+
+    // =====================================
+    // CONTINUAR CONVERSACION
+    // =====================================
 
     public void Continuar()
     {
@@ -315,22 +394,94 @@ public class HUDDialogoNPC : MonoBehaviour
             return;
         }
 
-        bool tieneOpciones =
-            nodoActual != null &&
-            nodoActual.opciones != null &&
-            nodoActual.opciones.Length > 0;
+        // El jugador ya eligió.
+        // Ahora responde el NPC.
 
-        if (!tieneOpciones)
-            CerrarDialogo();
+        if (faseActual == FaseDialogo.OpcionJugador)
+        {
+            MostrarRespuestaNPC();
+            return;
+        }
+
+        // El NPC ya respondió.
+        // Pasar al siguiente nodo.
+
+        if (faseActual == FaseDialogo.RespuestaNPC)
+        {
+            if (opcionSeleccionada == null)
+            {
+                CerrarDialogo();
+                return;
+            }
+
+            string siguiente =
+                opcionSeleccionada.siguienteNodo;
+
+            if (string.IsNullOrWhiteSpace(siguiente))
+            {
+                CerrarDialogo();
+                return;
+            }
+
+            MostrarNodo(siguiente);
+            return;
+        }
+
+        // Compatibilidad con nodos sin opciones.
+
+        CerrarDialogo();
     }
+
+    // =====================================
+    // RESPUESTA DEL NPC A LA OPCION
+    // =====================================
+
+    private void MostrarRespuestaNPC()
+    {
+        if (opcionSeleccionada == null)
+            return;
+
+        faseActual = FaseDialogo.RespuestaNPC;
+
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
+
+        if (botonContinuar != null)
+            botonContinuar.gameObject.SetActive(false);
+
+        MostrarPersonaje(true);
+
+        if (botonSaltar != null)
+            botonSaltar.gameObject.SetActive(true);
+
+        if (string.IsNullOrWhiteSpace(
+            opcionSeleccionada.respuestaNPC))
+        {
+            Debug.LogWarning(
+                "Falta la respuesta del NPC para esta opcion."
+            );
+        }
+
+        rutinaEscritura = StartCoroutine(
+            EscribirTexto(opcionSeleccionada.respuestaNPC)
+        );
+    }
+
+    // =====================================
+    // CERRAR CONVERSACION
+    // =====================================
 
     public void CerrarDialogo()
     {
         DetenerEscritura();
 
         conversacionAbierta = false;
+
         nodoActual = null;
         npcActual = null;
+        opcionSeleccionada = null;
+
+        faseActual = FaseDialogo.Ninguna;
 
         if (textoDialogo != null)
         {
@@ -341,9 +492,15 @@ public class HUDDialogoNPC : MonoBehaviour
         if (contenedorOpciones != null)
             contenedorOpciones.SetActive(false);
 
+        if (botonContinuar != null)
+            botonContinuar.gameObject.SetActive(false);
+
+        if (botonSaltar != null)
+            botonSaltar.gameObject.SetActive(false);
+
         if (panelDialogo != null)
             panelDialogo.SetActive(false);
-        
+
         if (modoDialogo != null)
             modoDialogo.RestaurarHUD();
 
@@ -353,6 +510,10 @@ public class HUDDialogoNPC : MonoBehaviour
             jugadorEnDialogo = null;
         }
     }
+
+    // =====================================
+    // DETENER ESCRITURA
+    // =====================================
 
     private void DetenerEscritura()
     {

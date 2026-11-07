@@ -27,6 +27,9 @@ public class NetworkPlayerMovement : NetworkBehaviour
     public float UltimaDireccionHorizontal =>
         ultimaDireccionHorizontal;
 
+    public Vector2 UltimaDireccion =>
+        ultimaDireccion;
+
     public bool MovimientoBloqueado =>
         movimientoBloqueado;
 
@@ -67,11 +70,9 @@ public class NetworkPlayerMovement : NetworkBehaviour
             accionMover.action == null)
             return;
 
-        // Leer siempre el joystick.
         Vector2 entrada =
             accionMover.action.ReadValue<Vector2>();
 
-        // Guardar la última dirección seleccionada.
         if (entrada.sqrMagnitude > 0.01f)
         {
             ultimaDireccion = entrada.normalized;
@@ -83,8 +84,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
             }
         }
 
-        // Bloquear el desplazamiento normal
-        // mientras Lía está dentro del puente.
         if (movimientoBloqueado || modoPuente)
         {
             direccionMovimiento = Vector2.zero;
@@ -144,7 +143,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
         );
     }
 
-    // ACTIVAR O DESACTIVAR EL MODO PUENTE.
     public void ActivarModoPuente(bool activar)
     {
         if (!IsOwner)
@@ -159,7 +157,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
         Debug.Log("MODO PUENTE: " + activar);
     }
 
-    // BLOQUEAR MOVIMIENTO DURANTE EL SALTO.
     public void BloquearMovimiento(bool bloquear)
     {
         if (!IsOwner)
