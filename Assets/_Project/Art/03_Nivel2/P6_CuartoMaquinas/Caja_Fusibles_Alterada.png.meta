@@ -1,0 +1,1146 @@
+fileFormatVersion: 2
+guid: 2863a0242cabc1c47899a80fa22a0158
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1195416036633386820
+    second: Caja_Fusibles_Alterada_0
+  - first:
+      213: 6734005020379431928
+    second: Caja_Fusibles_Alterada_1
+  - first:
+      213: 5243696791375725242
+    second: Caja_Fusibles_Alterada_2
+  - first:
+      213: 4403364978582486514
+    second: Caja_Fusibles_Alterada_3
+  - first:
+      213: 3447762039601333122
+    second: Caja_Fusibles_Alterada_4
+  - first:
+      213: -2932772233095089277
+    second: Caja_Fusibles_Alterada_5
+  - first:
+      213: 1353938385447557432
+    second: Caja_Fusibles_Alterada_6
+  - first:
+      213: 3987853326680391271
+    second: Caja_Fusibles_Alterada_7
+  - first:
+      213: 3548436798204530842
+    second: Caja_Fusibles_Alterada_8
+  - first:
+      213: 3576526487686381783
+    second: Caja_Fusibles_Alterada_9
+  - first:
+      213: -8423244494148203925
+    second: Caja_Fusibles_Alterada_10
+  - first:
+      213: -6448539316243944302
+    second: Caja_Fusibles_Alterada_11
+  - first:
+      213: -2146396684885174465
+    second: Caja_Fusibles_Alterada_12
+  - first:
+      213: 6916607750674769256
+    second: Caja_Fusibles_Alterada_13
+  - first:
+      213: -915302319814646429
+    second: Caja_Fusibles_Alterada_14
+  - first:
+      213: 1775706577378765726
+    second: Caja_Fusibles_Alterada_15
+  - first:
+      213: -5506263550753741580
+    second: Caja_Fusibles_Alterada_16
+  - first:
+      213: 3640068599306338593
+    second: Caja_Fusibles_Alterada_17
+  - first:
+      213: -104161318259514543
+    second: Caja_Fusibles_Alterada_18
+  - first:
+      213: 65517646012930212
+    second: Caja_Fusibles_Alterada_19
+  - first:
+      213: -7462197642758283367
+    second: Caja_Fusibles_Alterada_20
+  - first:
+      213: 7649239915945677588
+    second: Caja_Fusibles_Alterada_21
+  - first:
+      213: 1389592734515126936
+    second: Caja_Fusibles_Alterada_22
+  - first:
+      213: 4406016479389946614
+    second: Caja_Fusibles_Alterada_23
+  - first:
+      213: 6831655381953257906
+    second: Caja_Fusibles_Alterada_24
+  - first:
+      213: -6012942558479999073
+    second: Caja_Fusibles_Alterada_25
+  - first:
+      213: 9038963380931415675
+    second: Caja_Fusibles_Alterada_26
+  - first:
+      213: -4633894591553687862
+    second: Caja_Fusibles_Alterada_27
+  - first:
+      213: -3371476431926427814
+    second: Caja_Fusibles_Alterada_28
+  - first:
+      213: -7263732431222038142
+    second: Caja_Fusibles_Alterada_29
+  - first:
+      213: 5126047625069771019
+    second: Caja_Fusibles_Alterada_30
+  - first:
+      213: 8377314794236861928
+    second: Caja_Fusibles_Alterada_31
+  - first:
+      213: 2809326024576955220
+    second: Caja_Fusibles_Alterada_32
+  - first:
+      213: 3812588494039648067
+    second: Caja_Fusibles_Alterada_33
+  - first:
+      213: 3218543268152572090
+    second: Caja_Fusibles_Alterada_34
+  - first:
+      213: -5439116087442697315
+    second: Caja_Fusibles_Alterada_35
+  - first:
+      213: -4124833803612365141
+    second: Caja_Fusibles_Alterada_36
+  - first:
+      213: 2972928858423151548
+    second: Caja_Fusibles_Alterada_37
+  - first:
+      213: 2076894086668421771
+    second: Caja_Fusibles_Alterada_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_0
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1298
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb069a1c277096fe0800000000000000
+      internalID: -1195416036633386820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_1
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1301
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3c96343edf37d50800000000000000
+      internalID: 6734005020379431928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 1088
+        height: 1289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab24ecf037a55c840800000000000000
+      internalID: 5243696791375725242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_3
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1287
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdfdc43e15eb1d30800000000000000
+      internalID: 4403364978582486514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_4
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1263
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2838388de49e8df20800000000000000
+      internalID: 3447762039601333122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_5
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1273
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383fc374133bc47d0800000000000000
+      internalID: -2932772233095089277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 119
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8391e50c9c72ac210800000000000000
+      internalID: 1353938385447557432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 119
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ef429d873b75730800000000000000
+      internalID: 3987853326680391271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_8
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 99
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90d7e0b7749e3130800000000000000
+      internalID: 3548436798204530842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 75
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0825c24ef52a130800000000000000
+      internalID: 3576526487686381783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 79
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a0806c2cf9a1b80800000000000000
+      internalID: -8423244494148203925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 49
+        width: 95
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ca32f58af2286a0800000000000000
+      internalID: -6448539316243944302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_12
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 81
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37d75256977632e0800000000000000
+      internalID: -2146396684885174465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_13
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 79
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865eead7a1abcff50800000000000000
+      internalID: 6916607750674769256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_14
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 84
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3656b5db3613c43f0800000000000000
+      internalID: -915302319814646429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_15
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 79
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b6cf959b394a810800000000000000
+      internalID: 1775706577378765726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_16
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 83
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f464a95972d593b0800000000000000
+      internalID: -5506263550753741580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 43
+        width: 67
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12145bbea1f148230800000000000000
+      internalID: 3640068599306338593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_18
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 77
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1532ec935d1fd8ef0800000000000000
+      internalID: -104161318259514543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_19
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 65
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8de11b3f3c8e000800000000000000
+      internalID: 65517646012930212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_20
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 79
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f92a3c7c2f07890800000000000000
+      internalID: -7462197642758283367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 47
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4135ea71d2f872a60800000000000000
+      internalID: 7649239915945677588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 47
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892ec3bca33d84310800000000000000
+      internalID: 1389592734515126936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_23
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 47
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f21e88d4a0552d30800000000000000
+      internalID: 4406016479389946614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_24
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 45
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1a53dcf5aeece50800000000000000
+      internalID: 6831655381953257906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_25
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 45
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f98fad99cbd8ca0800000000000000
+      internalID: -6012942558479999073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_26
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 51
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e4e22fd49d07d70800000000000000
+      internalID: 9038963380931415675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_27
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 47
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acea6df9b6911bfb0800000000000000
+      internalID: -4633894591553687862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_28
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 47
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f7c6a4c0c1631d0800000000000000
+      internalID: -3371476431926427814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_29
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 47
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281a685b6d9023b90800000000000000
+      internalID: -7263732431222038142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_30
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 49
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09b402f721632740800000000000000
+      internalID: 5126047625069771019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_31
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 37
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eddc12ab63324470800000000000000
+      internalID: 8377314794236861928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_32
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 41
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4537b29822bbcf620800000000000000
+      internalID: 2809326024576955220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_33
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34789fd090909e430800000000000000
+      internalID: 3812588494039648067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_34
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 33
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab87570cc009aac20800000000000000
+      internalID: 3218543268152572090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_35
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 17
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d939dd37cb06484b0800000000000000
+      internalID: -5439116087442697315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_36
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 7
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae592a8285a1c6c0800000000000000
+      internalID: -4124833803612365141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_37
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 23
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbc1d4ab07f14920800000000000000
+      internalID: 2972928858423151548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caja_Fusibles_Alterada_38
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a0bfffa2c92dc10800000000000000
+      internalID: 2076894086668421771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Caja_Fusibles_Alterada_0: -1195416036633386820
+      Caja_Fusibles_Alterada_1: 6734005020379431928
+      Caja_Fusibles_Alterada_10: -8423244494148203925
+      Caja_Fusibles_Alterada_11: -6448539316243944302
+      Caja_Fusibles_Alterada_12: -2146396684885174465
+      Caja_Fusibles_Alterada_13: 6916607750674769256
+      Caja_Fusibles_Alterada_14: -915302319814646429
+      Caja_Fusibles_Alterada_15: 1775706577378765726
+      Caja_Fusibles_Alterada_16: -5506263550753741580
+      Caja_Fusibles_Alterada_17: 3640068599306338593
+      Caja_Fusibles_Alterada_18: -104161318259514543
+      Caja_Fusibles_Alterada_19: 65517646012930212
+      Caja_Fusibles_Alterada_2: 5243696791375725242
+      Caja_Fusibles_Alterada_20: -7462197642758283367
+      Caja_Fusibles_Alterada_21: 7649239915945677588
+      Caja_Fusibles_Alterada_22: 1389592734515126936
+      Caja_Fusibles_Alterada_23: 4406016479389946614
+      Caja_Fusibles_Alterada_24: 6831655381953257906
+      Caja_Fusibles_Alterada_25: -6012942558479999073
+      Caja_Fusibles_Alterada_26: 9038963380931415675
+      Caja_Fusibles_Alterada_27: -4633894591553687862
+      Caja_Fusibles_Alterada_28: -3371476431926427814
+      Caja_Fusibles_Alterada_29: -7263732431222038142
+      Caja_Fusibles_Alterada_3: 4403364978582486514
+      Caja_Fusibles_Alterada_30: 5126047625069771019
+      Caja_Fusibles_Alterada_31: 8377314794236861928
+      Caja_Fusibles_Alterada_32: 2809326024576955220
+      Caja_Fusibles_Alterada_33: 3812588494039648067
+      Caja_Fusibles_Alterada_34: 3218543268152572090
+      Caja_Fusibles_Alterada_35: -5439116087442697315
+      Caja_Fusibles_Alterada_36: -4124833803612365141
+      Caja_Fusibles_Alterada_37: 2972928858423151548
+      Caja_Fusibles_Alterada_38: 2076894086668421771
+      Caja_Fusibles_Alterada_4: 3447762039601333122
+      Caja_Fusibles_Alterada_5: -2932772233095089277
+      Caja_Fusibles_Alterada_6: 1353938385447557432
+      Caja_Fusibles_Alterada_7: 3987853326680391271
+      Caja_Fusibles_Alterada_8: 3548436798204530842
+      Caja_Fusibles_Alterada_9: 3576526487686381783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
