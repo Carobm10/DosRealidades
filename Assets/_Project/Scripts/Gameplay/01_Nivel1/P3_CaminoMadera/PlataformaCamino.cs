@@ -9,9 +9,6 @@ public class PlataformaCamino : NetworkBehaviour
     [Header("Configuracion")]
     [SerializeField] private bool esSeguro;
 
-    [Header("Punto de recuperacion si falla")]
-    [SerializeField] private Transform puntoRespawnSiFalla;
-
     private NetworkVariable<bool> destruida =
         new NetworkVariable<bool>(
             false,
@@ -19,13 +16,13 @@ public class PlataformaCamino : NetworkBehaviour
             NetworkVariableWritePermission.Server
         );
 
-    private Collider2D colision;
+    private Collider2D[] colisiones;
     private SpriteRenderer sprite;
     private bool procesado;
 
     private void Awake()
     {
-        colision = GetComponent<Collider2D>();
+        colisiones = GetComponents<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -78,66 +75,47 @@ public class PlataformaCamino : NetworkBehaviour
         if (jugadorId == NetworkManager.ServerClientId)
             return;
 
-        if (!referencia.TryGet(
-            out NetworkObject plataforma))
+        if (!referencia.TryGet(out NetworkObject plataforma))
             return;
 
         if (plataforma != NetworkObject)
             return;
 
+        ControlCheckpointCamino control =
+            FindFirstObjectByType<ControlCheckpointCamino>();
+
         if (esSeguro)
         {
-            Debug.Log("TABLON SEGURO: " + gameObject.name);
-            return;
-        }
-
-        Debug.Log("TABLON INCORRECTO: " + gameObject.name);
-
-        // Eliminar visualmente el tablon para ambos.
-        destruida.Value = true;
-
-        VidasEquipo vidas = VidasEquipo.Instancia;
-
-        if (vidas == null)
-        {
-            Debug.LogError("No se encontro VidasEquipo.");
-            return;
-        }
-
-        bool puedeRecuperarse =
-            vidas.PerderVidaServidor();
-
-        // Si todavia quedan vidas, recuperar a Lia.
-        if (puedeRecuperarse)
-        {
-            ControlCheckpointCamino control =
-                FindFirstObjectByType<ControlCheckpointCamino>();
+            Debug.Log("TABLON SEGURO");
 
             if (control != null)
             {
-                if (puntoRespawnSiFalla != null)
-                {
-                    control.RecuperarJugador(
-                        jugadorId,
-                        puntoRespawnSiFalla.position
-                    );
-                }
-                else
-                {
-                    Debug.LogError(
-                        "Falta asignar el punto de respawn en: " +
-                        gameObject.name
-                    );
+                control.RegistrarCheckpointServidor(
+                    jugadorId,
+                    transform.position
+                );
+            }
+        }
+        else
+        {
+            Debug.Log("TABLON INCORRECTO");
 
+            destruida.Value = true;
+
+            VidasEquipo vidas = VidasEquipo.Instancia;
+
+            if (vidas != null)
+            {
+                bool puedeRecuperarse =
+                    vidas.PerderVidaServidor();
+
+                if (puedeRecuperarse && control != null)
                     control.RecuperarJugador(jugadorId);
-                }
             }
         }
     }
 
-    private void AlCambiarEstado(
-        bool anterior,
-        bool nuevo)
+    private void AlCambiarEstado(bool anterior, bool nuevo)
     {
         AplicarEstado(nuevo);
     }
@@ -147,8 +125,14 @@ public class PlataformaCamino : NetworkBehaviour
         if (sprite != null)
             sprite.enabled = !estaDestruida;
 
-        if (colision != null)
-            colision.enabled = !estaDestruida;
+        if (colisiones == null)
+            return;
+
+        foreach (Collider2D colision in colisiones)
+        {
+            if (colision != null)
+                colision.enabled = !estaDestruida;
+        }
     }
 
     public void RestablecerServidor()
@@ -160,13 +144,5 @@ public class PlataformaCamino : NetworkBehaviour
         destruida.Value = false;
 
         AplicarEstado(false);
-
-        RestablecerProcesadoClientRpc();
-    }
-
-    [ClientRpc]
-    private void RestablecerProcesadoClientRpc()
-    {
-        procesado = false;
     }
 }

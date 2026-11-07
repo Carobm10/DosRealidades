@@ -262,7 +262,6 @@ GameObject:
   m_Component:
   - component: {fileID: 664398050533370122}
   - component: {fileID: 7937907886605520559}
-  - component: {fileID: 6800926835534081825}
   - component: {fileID: 5387097148228810939}
   - component: {fileID: -3700986157390972703}
   - component: {fileID: 6846772504240040145}
@@ -357,28 +356,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!95 &6800926835534081825
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7198515594604971309}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5387097148228810939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NetworkPlayerMovement
   ShowTopMostFoldoutHeaderGroup: 1
   velocidadMovimiento: 4
+  umbralMovimiento: 0.15
   accionMover: {fileID: -360568654732193790, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   animatorJugador: {fileID: 3239875105945358432}
 --- !u!61 &-7896735597331377570
@@ -592,8 +570,11 @@ MonoBehaviour:
   accionSaltar: {fileID: -6687273217185972327, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   visualJugador: {fileID: 8696842847975744996}
   animatorJugador: {fileID: 0}
-  alturaSalto: 1
+  alturaSalto: 0.5
   duracionSalto: 0.45
+  distanciaSaltoP3: 1.2
+  duracionSaltoP3: 0.65
+  alturaSaltoP3: 0.6
 --- !u!114 &4895310645492503891
 MonoBehaviour:
   m_ObjectHideFlags: 0

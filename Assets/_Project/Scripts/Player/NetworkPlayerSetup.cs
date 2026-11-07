@@ -15,14 +15,10 @@ public class NetworkPlayerSetup : NetworkBehaviour
     private void Awake()
     {
         if (spriteJugador == null)
-        {
-            spriteJugador = GetComponent<SpriteRenderer>();
-        }
+            spriteJugador = GetComponentInChildren<SpriteRenderer>(true);
 
         if (animatorJugador == null)
-        {
-            animatorJugador = GetComponent<Animator>();
-        }
+            animatorJugador = GetComponentInChildren<Animator>(true);
     }
 
     public override void OnNetworkSpawn()

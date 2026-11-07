@@ -7,21 +7,27 @@ public class NetworkPlayerMovement : NetworkBehaviour
 {
     [Header("Movimiento")]
     [SerializeField] private float velocidadMovimiento = 4f;
+    [SerializeField] private float umbralMovimiento = 0.15f;
 
     [Header("Controles")]
     [SerializeField] private InputActionReference accionMover;
 
+    [Header("Animaciones")]
     [SerializeField] private Animator animatorJugador;
 
     private Rigidbody2D cuerpo;
-    private Vector2 direccionMovimiento;
 
-    // Nuevo: bloqueo de movimiento durante dialogos.
+    private Vector2 direccionMovimiento;
+    private Vector2 ultimaDireccion = Vector2.down;
+
     private bool movimientoBloqueado = false;
 
     private void Awake()
     {
         cuerpo = GetComponent<Rigidbody2D>();
+
+        if (animatorJugador == null)
+            animatorJugador = GetComponentInChildren<Animator>();
     }
 
     public override void OnNetworkSpawn()
@@ -31,12 +37,16 @@ public class NetworkPlayerMovement : NetworkBehaviour
             if (accionMover != null && accionMover.action != null)
                 accionMover.action.Enable();
 
-            cuerpo.simulated = true;
+            if (cuerpo != null)
+                cuerpo.simulated = true;
         }
         else
         {
-            cuerpo.simulated = false;
+            if (cuerpo != null)
+                cuerpo.simulated = false;
         }
+
+        ActualizarDireccionAnimator(ultimaDireccion);
     }
 
     private void Update()
@@ -47,25 +57,49 @@ public class NetworkPlayerMovement : NetworkBehaviour
         if (movimientoBloqueado)
         {
             direccionMovimiento = Vector2.zero;
-            ActualizarAnimacion(Vector2.zero);
+            ActualizarVelocidadAnimator(0f);
             return;
         }
 
+        Vector2 entrada = Vector2.zero;
+
         if (accionMover != null && accionMover.action != null)
         {
-            direccionMovimiento =
-                accionMover.action.ReadValue<Vector2>();
+            entrada = accionMover.action.ReadValue<Vector2>();
         }
 
-        direccionMovimiento =
-            Vector2.ClampMagnitude(direccionMovimiento, 1f);
+        // Detectar si existe movimiento.
+        if (entrada.magnitude < umbralMovimiento)
+        {
+            direccionMovimiento = Vector2.zero;
+            ActualizarVelocidadAnimator(0f);
+            return;
+        }
 
-        ActualizarAnimacion(direccionMovimiento);
+        // Convertir el movimiento en cuatro direcciones.
+        if (Mathf.Abs(entrada.x) > Mathf.Abs(entrada.y))
+        {
+            direccionMovimiento = new Vector2(
+                Mathf.Sign(entrada.x), 0f
+            );
+        }
+        else
+        {
+            direccionMovimiento = new Vector2(
+                0f, Mathf.Sign(entrada.y)
+            );
+        }
+
+        // Guardar la última dirección.
+        ultimaDireccion = direccionMovimiento;
+
+        ActualizarDireccionAnimator(ultimaDireccion);
+        ActualizarVelocidadAnimator(1f);
     }
 
     private void FixedUpdate()
     {
-        if (!IsOwner || movimientoBloqueado)
+        if (!IsOwner || movimientoBloqueado || cuerpo == null)
             return;
 
         Vector2 nuevaPosicion =
@@ -77,18 +111,23 @@ public class NetworkPlayerMovement : NetworkBehaviour
         cuerpo.MovePosition(nuevaPosicion);
     }
 
-    private void ActualizarAnimacion(Vector2 direccion)
+    private void ActualizarDireccionAnimator(Vector2 direccion)
     {
-        if (animatorJugador != null)
-        {
-            animatorJugador.SetFloat(
-                "Velocidad",
-                direccion.magnitude
-            );
-        }
+        if (animatorJugador == null)
+            return;
+
+        animatorJugador.SetFloat("DireccionX", direccion.x);
+        animatorJugador.SetFloat("DireccionY", direccion.y);
     }
 
-    // Se llamara desde la interfaz de dialogo.
+    private void ActualizarVelocidadAnimator(float velocidad)
+    {
+        if (animatorJugador == null)
+            return;
+
+        animatorJugador.SetFloat("Velocidad", velocidad);
+    }
+
     public void BloquearMovimiento(bool bloquear)
     {
         if (!IsOwner)
@@ -98,7 +137,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
         direccionMovimiento = Vector2.zero;
 
         if (bloquear)
-            ActualizarAnimacion(Vector2.zero);
+            ActualizarVelocidadAnimator(0f);
     }
 
     public override void OnNetworkDespawn()
