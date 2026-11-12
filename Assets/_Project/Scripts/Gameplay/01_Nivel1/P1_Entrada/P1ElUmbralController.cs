@@ -26,7 +26,13 @@ public class P1ElUmbralController : NetworkBehaviour
     private NetworkVariable<bool> puzzleResuelto =
         new NetworkVariable<bool>(false);
 
-    private bool secuenciaIniciada = false;
+    private bool secuenciaIniciada;
+
+    public bool PuzzleResuelto => puzzleResuelto.Value;
+
+    // =================================
+    // INICIO
+    // =================================
 
     public override void OnNetworkSpawn()
     {
@@ -83,7 +89,7 @@ public class P1ElUmbralController : NetworkBehaviour
     // VALIDACION EN SERVIDOR
     // =================================
 
-    [Rpc(SendTo.Server)]
+    [Rpc(SendTo.Server, RequireOwnership = false)]
     private void EnviarSeleccionServidorRpc(
         int simboloSeleccionado)
     {
@@ -102,6 +108,85 @@ public class P1ElUmbralController : NetworkBehaviour
                 "P1: PUZZLE DE SIMBOLOS COMPLETADO."
             );
         }
+        else
+        {
+            Debug.Log(
+                "P1: SIMBOLO INCORRECTO. " +
+                "El jugador puede volver a intentarlo."
+            );
+        }
+    }
+
+    // =================================
+    // SOLICITAR REINICIO
+    // =================================
+
+    public void SolicitarReinicioPuzzle()
+    {
+        if (!IsSpawned || puzzleResuelto.Value)
+            return;
+
+        SolicitarReinicioServidorRpc();
+    }
+
+    // =================================
+    // VALIDAR REINICIO EN SERVIDOR
+    // =================================
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void SolicitarReinicioServidorRpc()
+    {
+        if (puzzleResuelto.Value)
+        {
+            Debug.Log(
+                "P1: reinicio ignorado. " +
+                "El puzzle ya está completado."
+            );
+
+            return;
+        }
+
+        Debug.Log(
+            "P1: un jugador abandono la interaccion. " +
+            "Reiniciando puzzle para ambos."
+        );
+
+        ReiniciarPuzzleClientRpc();
+    }
+
+    // =================================
+    // REINICIO SINCRONIZADO
+    // =================================
+
+    [Rpc(SendTo.Everyone)]
+    private void ReiniciarPuzzleClientRpc()
+    {
+        // Nunca reiniciar un puzzle completado.
+
+        if (puzzleResuelto.Value)
+            return;
+
+        // Cerrar panel de Elian.
+
+        if (ventanaPanelElian != null)
+            ventanaPanelElian.SetActive(false);
+
+        // Cerrar panel de Lia.
+
+        if (ventanaPanelLia != null)
+            ventanaPanelLia.SetActive(false);
+
+        // Restablecer los simbolos y mensajes
+        // de la interfaz local.
+
+        if (PanelSimbolosUI.Instancia != null)
+        {
+            PanelSimbolosUI.Instancia.RestablecerPanel();
+        }
+
+        Debug.Log(
+            "P1: PUZZLE REINICIADO PARA AMBOS JUGADORES."
+        );
     }
 
     // =================================
@@ -142,6 +227,13 @@ public class P1ElUmbralController : NetworkBehaviour
         if (ventanaPanelLia != null)
             ventanaPanelLia.SetActive(false);
 
+        // Restablecer interfaz local.
+
+        if (PanelSimbolosUI.Instancia != null)
+        {
+            PanelSimbolosUI.Instancia.RestablecerPanel();
+        }
+
         // Ocultar botones de interaccion.
 
         if (HUDInteraccion.Instancia != null)
@@ -177,14 +269,14 @@ public class P1ElUmbralController : NetworkBehaviour
         if (brilloPanelLia != null)
             brilloPanelLia.CompletarObjetivo();
 
-        // Ocultar mision anterior.
+        // Actualizar mision.
 
         if (HUDMision.Instancia != null)
+        {
             HUDMision.Instancia.OcultarMision();
+        }
 
-        // =================================
-        // ACTIVAR SALIDA COOPERATIVA
-        // =================================
+        // Activar salida cooperativa desde servidor.
 
         if (IsServer)
         {

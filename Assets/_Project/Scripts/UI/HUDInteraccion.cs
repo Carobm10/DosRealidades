@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using Unity.Netcode;
 
 public class HUDInteraccion : MonoBehaviour
 {
@@ -8,14 +9,15 @@ public class HUDInteraccion : MonoBehaviour
     [Header("Boton de interaccion")]
     [SerializeField] private GameObject botonInteractuar;
 
-    [Header("Camara del juego")]
+    [Header("Camara del juego - opcional")]
     [SerializeField] private Camera camaraJuego;
 
     private ZonaInteraccion zonaActual;
-
     private RectTransform botonRect;
-    private RectTransform canvasRect;
+    private RectTransform padreRect;
     private Canvas canvas;
+
+    private float posicionZOriginal;
 
     private void Awake()
     {
@@ -32,29 +34,66 @@ public class HUDInteraccion : MonoBehaviour
             botonRect =
                 botonInteractuar.GetComponent<RectTransform>();
 
+            if (botonRect != null)
+            {
+                padreRect =
+                    botonRect.parent as RectTransform;
+
+                posicionZOriginal =
+                    botonRect.localPosition.z;
+            }
+
             canvas =
                 botonInteractuar.GetComponentInParent<Canvas>();
 
             if (canvas != null)
-            {
                 canvas = canvas.rootCanvas;
-                canvasRect = canvas.transform as RectTransform;
-            }
 
             botonInteractuar.SetActive(false);
         }
-
-        if (camaraJuego == null)
-            camaraJuego = Camera.main;
     }
 
     private void LateUpdate()
     {
-        if (zonaActual != null)
-            ActualizarPosicion();
+        if (zonaActual == null)
+            return;
 
-        if (camaraJuego == null)
-            camaraJuego = Camera.main;
+        ActualizarPosicion();
+    }
+
+    // =====================================
+    // OBTENER CAMARA DEL JUGADOR LOCAL
+    // =====================================
+
+    private Camera ObtenerCamaraLocal()
+    {
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red != null &&
+            red.LocalClient != null &&
+            red.LocalClient.PlayerObject != null)
+        {
+            Camera[] camaras =
+                red.LocalClient.PlayerObject
+                    .GetComponentsInChildren<Camera>(true);
+
+            foreach (Camera camara in camaras)
+            {
+                if (camara != null &&
+                    camara.isActiveAndEnabled)
+                {
+                    return camara;
+                }
+            }
+        }
+
+        if (camaraJuego != null &&
+            camaraJuego.isActiveAndEnabled)
+        {
+            return camaraJuego;
+        }
+
+        return Camera.main;
     }
 
     // =====================================
@@ -77,34 +116,28 @@ public class HUDInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // POSICION MANUAL DEL EMPTY
+    // POSICION EXACTA EN PUNTO INDICADOR
     // =====================================
 
-    
     private void ActualizarPosicion()
     {
         if (zonaActual == null ||
             botonRect == null ||
-            camaraJuego == null)
+            padreRect == null)
+        {
             return;
+        }
 
-        if (camaraJuego == null)
-            camaraJuego = Camera.main;
+        Camera camara = ObtenerCamaraLocal();
 
-        if (camaraJuego == null)
-            return;
-
-        RectTransform padreRect =
-            botonRect.parent as RectTransform;
-
-        if (padreRect == null)
+        if (camara == null)
             return;
 
         Vector3 posicionMundo =
             zonaActual.ObtenerPosicionIndicador();
 
         Vector3 posicionPantalla =
-            camaraJuego.WorldToScreenPoint(posicionMundo);
+            camara.WorldToScreenPoint(posicionMundo);
 
         if (posicionPantalla.z <= 0f)
             return;
@@ -116,26 +149,36 @@ public class HUDInteraccion : MonoBehaviour
         {
             camaraUI = canvas.worldCamera != null
                 ? canvas.worldCamera
-                : camaraJuego;
+                : camara;
         }
 
         bool convertido =
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                padreRect,
-                new Vector2(
-                    posicionPantalla.x,
-                    posicionPantalla.y
-                ),
-                camaraUI,
-                out Vector2 posicionLocal
-            );
+            RectTransformUtility
+                .ScreenPointToLocalPointInRectangle(
+                    padreRect,
+                    new Vector2(
+                        posicionPantalla.x,
+                        posicionPantalla.y
+                    ),
+                    camaraUI,
+                    out Vector2 posicionLocal
+                );
 
-        if (convertido)
-        {
-            botonRect.anchoredPosition = posicionLocal;
-        }
+        if (!convertido)
+            return;
+
+        // IMPORTANTE:
+        // localPosition toma como referencia
+        // el pivot del objeto padre.
+        //
+        // No depende de los anchors del boton.
+
+        botonRect.localPosition = new Vector3(
+            posicionLocal.x,
+            posicionLocal.y,
+            posicionZOriginal
+        );
     }
-
 
     // =====================================
     // OCULTAR BOTON
@@ -149,7 +192,8 @@ public class HUDInteraccion : MonoBehaviour
         ZonaInteraccion anterior = zonaActual;
         zonaActual = null;
 
-        anterior.TerminarMantener();
+        if (anterior != null)
+            anterior.TerminarMantener();
 
         if (botonInteractuar != null)
             botonInteractuar.SetActive(false);
@@ -162,7 +206,8 @@ public class HUDInteraccion : MonoBehaviour
             ZonaInteraccion anterior = zonaActual;
             zonaActual = null;
 
-            anterior.TerminarMantener();
+            if (anterior != null)
+                anterior.TerminarMantener();
         }
 
         if (botonInteractuar != null)
@@ -182,7 +227,7 @@ public class HUDInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // PULSACION MANTENIDA P3
+    // COMPATIBILIDAD P3
     // =====================================
 
     public void ComenzarMantener()
@@ -200,10 +245,6 @@ public class HUDInteraccion : MonoBehaviour
 
         zonaActual.TerminarMantener();
     }
-
-    // =====================================
-    // CIERRE
-    // =====================================
 
     private void OnDestroy()
     {

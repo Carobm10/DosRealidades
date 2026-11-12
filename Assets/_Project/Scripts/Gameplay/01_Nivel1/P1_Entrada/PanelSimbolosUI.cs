@@ -13,6 +13,12 @@ public class PanelSimbolosUI : MonoBehaviour
     [SerializeField] private Image imagenPanel;
     [SerializeField] private TMP_Text textoResultado;
 
+    [Header("Boton cerrar")]
+    [SerializeField] private Button botonCerrar;
+
+    [Header("Controlador del puzzle")]
+    [SerializeField] private P1ElUmbralController controladorPuzzle;
+
     [Header("Sprites del panel")]
     [SerializeField] private Sprite panelNormal;
     [SerializeField] private Sprite panelCirculo;
@@ -24,20 +30,50 @@ public class PanelSimbolosUI : MonoBehaviour
 
     private Coroutine rutinaResultado;
 
+    // =====================================
+    // INICIO
+    // =====================================
+
     private void Awake()
     {
+        if (Instancia != null && Instancia != this)
+        {
+            Destroy(this);
+            return;
+        }
+
         Instancia = this;
 
-        if (textoResultado != null)
+        if (controladorPuzzle == null)
         {
-            textoResultado.gameObject.SetActive(false);
+            controladorPuzzle =
+                FindAnyObjectByType<P1ElUmbralController>();
         }
 
-        if (imagenPanel != null && panelNormal != null)
+        if (botonCerrar != null)
         {
-            imagenPanel.sprite = panelNormal;
+            botonCerrar.onClick.AddListener(CerrarPanel);
+        }
+
+        RestablecerPanel();
+    }
+
+    private void OnDestroy()
+    {
+        if (botonCerrar != null)
+        {
+            botonCerrar.onClick.RemoveListener(CerrarPanel);
+        }
+
+        if (Instancia == this)
+        {
+            Instancia = null;
         }
     }
+
+    // =====================================
+    // SELECCION DE SIMBOLOS
+    // =====================================
 
     public void SeleccionarCirculo()
     {
@@ -54,23 +90,30 @@ public class PanelSimbolosUI : MonoBehaviour
         MostrarSeleccion(panelCuadrado, false);
     }
 
-    private void MostrarSeleccion(Sprite spriteSeleccionado, bool correcto)
+    // =====================================
+    // MOSTRAR RESULTADO
+    // =====================================
+
+    private void MostrarSeleccion(
+        Sprite spriteSeleccionado,
+        bool correcto)
     {
         if (rutinaResultado != null)
         {
             StopCoroutine(rutinaResultado);
         }
 
-        rutinaResultado =
-            StartCoroutine(AnimarResultado(spriteSeleccionado, correcto));
+        rutinaResultado = StartCoroutine(
+            AnimarResultado(spriteSeleccionado, correcto)
+        );
     }
 
     private IEnumerator AnimarResultado(
         Sprite spriteSeleccionado,
-        bool correcto
-    )
+        bool correcto)
     {
-        if (imagenPanel != null && spriteSeleccionado != null)
+        if (imagenPanel != null &&
+            spriteSeleccionado != null)
         {
             imagenPanel.sprite = spriteSeleccionado;
         }
@@ -93,7 +136,8 @@ public class PanelSimbolosUI : MonoBehaviour
 
         if (correcto)
         {
-            ventanaPanel.SetActive(false);
+            if (ventanaPanel != null)
+                ventanaPanel.SetActive(false);
         }
         else
         {
@@ -106,11 +150,57 @@ public class PanelSimbolosUI : MonoBehaviour
         rutinaResultado = null;
     }
 
-    private void OnDestroy()
+    // =====================================
+    // CERRAR PANEL
+    // =====================================
+
+    public void CerrarPanel()
     {
-        if (Instancia == this)
+        if (controladorPuzzle == null)
         {
-            Instancia = null;
+            controladorPuzzle =
+                FindAnyObjectByType<P1ElUmbralController>();
+        }
+
+        if (controladorPuzzle != null)
+        {
+            controladorPuzzle.SolicitarReinicioPuzzle();
+        }
+
+        if (ventanaPanel != null)
+        {
+            ventanaPanel.SetActive(false);
+        }
+
+        RestablecerPanel();
+
+        Debug.Log(
+            "P1: jugador cerro el panel. " +
+            "Solicitud de reinicio enviada."
+        );
+    }
+
+    // =====================================
+    // RESTABLECER INTERFAZ
+    // =====================================
+
+    public void RestablecerPanel()
+    {
+        if (rutinaResultado != null)
+        {
+            StopCoroutine(rutinaResultado);
+            rutinaResultado = null;
+        }
+
+        if (textoResultado != null)
+        {
+            textoResultado.gameObject.SetActive(false);
+            textoResultado.text = "";
+        }
+
+        if (imagenPanel != null && panelNormal != null)
+        {
+            imagenPanel.sprite = panelNormal;
         }
     }
 }

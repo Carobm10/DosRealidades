@@ -650,50 +650,98 @@ public class GestorMultijugador : MonoBehaviour
         VolverAlMenuPrincipal();
     }
 
+    
     public async void VolverAlMenuPrincipal()
     {
+        if (salidaVoluntaria)
+            return;
+
         salidaVoluntaria = true;
 
-        BloquearMovimientoLocal(false);
+        // Detener procesos de reconexion.
+        reconexionLocalActiva = false;
+        esperandoCliente = false;
 
         if (rutinaReconectarCliente != null)
+        {
             StopCoroutine(rutinaReconectarCliente);
+            rutinaReconectarCliente = null;
+        }
 
         if (rutinaEsperaHost != null)
-            StopCoroutine(rutinaEsperaHost);
-
-        try
         {
-            if (sesionActual != null)
-            {
-                await sesionActual.LeaveAsync();
+            StopCoroutine(rutinaEsperaHost);
+            rutinaEsperaHost = null;
+        }
 
-                sesionActual = null;
-            }
-            else if (NetworkManager.Singleton != null &&
-                     NetworkManager.Singleton.IsListening)
+        // Guardamos la sesion anterior.
+        ISession sesionAnterior = sesionActual;
+        sesionActual = null;
+
+        // Salir de la sesion de Multiplayer Services.
+        if (sesionAnterior != null)
+        {
+            try
             {
-                NetworkManager.Singleton.Shutdown();
+                await sesionAnterior.LeaveAsync();
+
+                Debug.Log(
+                    "GESTOR: sesion anterior abandonada."
+                );
+            }
+            catch (Exception error)
+            {
+                Debug.LogWarning(
+                    "GESTOR: error al abandonar sesion: " +
+                    error.Message
+                );
             }
         }
-        catch (Exception error)
+
+        // Cerrar Netcode independientemente de
+        // si LeaveAsync funciono o fallo.
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red != null && red.IsListening)
         {
-            Debug.LogWarning(
-                "Error cerrando sesión: " +
-                error.Message
+            red.Shutdown();
+        }
+
+        // Esperar hasta que Netcode termine.
+        float tiempoLimite =
+            Time.realtimeSinceStartup + 5f;
+
+        while (red != null &&
+            red.IsListening &&
+            Time.realtimeSinceStartup < tiempoLimite)
+        {
+            await Task.Yield();
+        }
+
+        // No regresar al menu con la red activa.
+        if (red != null && red.IsListening)
+        {
+            Debug.LogError(
+                "GESTOR: Netcode no termino de cerrarse."
             );
 
-            if (NetworkManager.Singleton != null &&
-                NetworkManager.Singleton.IsListening)
-            {
-                NetworkManager.Singleton.Shutdown();
-            }
+            salidaVoluntaria = false;
+            return;
         }
 
+        reconexionLocalActiva = false;
+        esperandoCliente = false;
+
+        // Cargar menu principal.
         SceneManager.LoadScene(escenaMenuPrincipal);
+
+        Debug.Log(
+            "GESTOR: regreso al menu principal."
+        );
 
         salidaVoluntaria = false;
     }
+
 
     // =====================================
     // IDENTIFICAR ESCENA DE JUEGO

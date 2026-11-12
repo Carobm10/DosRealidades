@@ -3081,10 +3081,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 910350354}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
   parpadeoAutomatico: 0
@@ -3093,7 +3097,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  regresoPasillo: {fileID: 0}
 --- !u!95 &910350357
 Animator:
   serializedVersion: 7
@@ -3785,10 +3788,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1303925448}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
   parpadeoAutomatico: 0
@@ -3797,7 +3804,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  regresoPasillo: {fileID: 0}
 --- !u!95 &1161285772
 Animator:
   serializedVersion: 7
@@ -4678,7 +4684,7 @@ Transform:
   m_GameObject: {fileID: 1424818661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.004, y: 2.2, z: 0}
+  m_LocalPosition: {x: 0.01, y: 2.2, z: 0}
   m_LocalScale: {x: 0.14895001, y: 0.14895001, z: 0.14895001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5001,7 +5007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1452502726
 Transform:
   m_ObjectHideFlags: 0
@@ -5361,10 +5367,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1478655851}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
   parpadeoAutomatico: 0
@@ -5373,7 +5383,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  regresoPasillo: {fileID: 0}
 --- !u!95 &1478655854
 Animator:
   serializedVersion: 7
@@ -5537,7 +5546,7 @@ Transform:
   m_GameObject: {fileID: 1536092415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.042, y: 2.204, z: 0}
+  m_LocalPosition: {x: -6.97, y: 2.204, z: 0}
   m_LocalScale: {x: 0.12863266, y: 0.12863266, z: 0.12863266}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6213,7 +6222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1670827279
 Transform:
   m_ObjectHideFlags: 0
