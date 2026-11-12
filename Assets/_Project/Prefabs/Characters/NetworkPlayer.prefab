@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 195567080
+  GlobalObjectIdHash: 1588100951
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkPlayerMovement
   ShowTopMostFoldoutHeaderGroup: 1
-  velocidadMovimiento: 4
+  velocidadMovimiento: 2.5
   accionMover: {fileID: -360568654732193790, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}
   animatorJugador: {fileID: 3239875105945358432}
 --- !u!61 &-7896735597331377570
@@ -574,9 +574,6 @@ MonoBehaviour:
   animatorJugador: {fileID: 3239875105945358432}
   alturaSalto: 0.5
   duracionSalto: 0.45
-  duracionSaltoP3: 0.65
-  alturaSaltoP3: 0.6
-  saltoInicialDerecha: 1
 --- !u!114 &4895310645492503891
 MonoBehaviour:
   m_ObjectHideFlags: 0

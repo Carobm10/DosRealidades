@@ -2,7 +2,6 @@
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class SaltoJugador : NetworkBehaviour
@@ -15,26 +14,30 @@ public class SaltoJugador : NetworkBehaviour
     [SerializeField] private Animator animatorJugador;
 
     [Header("Salto general")]
-    [SerializeField] private float alturaSalto = 0.5f;
+    [SerializeField] private float alturaSalto = 0.6f;
     [SerializeField] private float duracionSalto = 0.45f;
+    [SerializeField] private float distanciaSalto = 1f;
+
+    private Rigidbody2D cuerpo;
+    private NetworkPlayerMovement movimiento;
 
     private bool saltando;
-    private bool esperandoValidacion;
 
     private Vector3 posicionVisualInicial;
 
-    private bool EsNivelP3 =>
-        SceneManager.GetActiveScene().name == "P3_CaminoMadera";
-
-    // =====================================
-    // INICIALIZACION
-    // =====================================
+    private Coroutine rutinaSalto;
 
     private void Awake()
     {
+        cuerpo = GetComponent<Rigidbody2D>();
+
+        movimiento =
+            GetComponent<NetworkPlayerMovement>();
+
         if (visualJugador != null)
         {
-            posicionVisualInicial = visualJugador.localPosition;
+            posicionVisualInicial =
+                visualJugador.localPosition;
 
             if (animatorJugador == null)
             {
@@ -45,7 +48,7 @@ public class SaltoJugador : NetworkBehaviour
     }
 
     // =====================================
-    // ACTIVAR CONTROLES
+    // INICIALIZACION
     // =====================================
 
     public override void OnNetworkSpawn()
@@ -56,11 +59,11 @@ public class SaltoJugador : NetworkBehaviour
             return;
 
         accionSaltar.action.Enable();
+
         accionSaltar.action.performed += AlSaltar;
 
         Debug.Log(
-            "SALTO CONFIGURADO PARA: " +
-            gameObject.name
+            "SALTO CONFIGURADO PARA: " + gameObject.name
         );
     }
 
@@ -78,12 +81,17 @@ public class SaltoJugador : NetworkBehaviour
             accionSaltar.action.Disable();
         }
 
-        StopAllCoroutines();
+        if (rutinaSalto != null)
+        {
+            StopCoroutine(rutinaSalto);
+            rutinaSalto = null;
+        }
 
         saltando = false;
-        esperandoValidacion = false;
 
         RestaurarVisual();
+
+        movimiento?.BloquearMovimiento(false);
     }
 
     // =====================================
@@ -93,48 +101,93 @@ public class SaltoJugador : NetworkBehaviour
     private void AlSaltar(
         InputAction.CallbackContext contexto)
     {
-        if (!IsOwner ||
-            saltando ||
-            esperandoValidacion)
+        if (!IsOwner || saltando)
             return;
 
-        // EN P3 EL SALTO QUEDA DESACTIVADO.
-        // Los jugadores deben caminar hasta los botones.
-        if (EsNivelP3)
+        if (cuerpo == null || movimiento == null)
         {
-            Debug.Log(
-                "P3: SALTO DESACTIVADO PARA ESTA PRUEBA."
+            Debug.LogError(
+                "SALTO: Faltan Rigidbody2D o NetworkPlayerMovement."
             );
 
             return;
         }
 
-        // En los demás niveles se conserva el salto normal.
-        StartCoroutine(SaltoNormal());
+        if (movimiento.MovimientoBloqueado)
+            return;
+
+        StartCoroutine(SaltoGeneral());
     }
 
     // =====================================
-    // SALTO NORMAL
+    // SALTO GENERAL CON DESPLAZAMIENTO
     // =====================================
 
-    private IEnumerator SaltoNormal()
+    private IEnumerator SaltoGeneral()
     {
         saltando = true;
 
+        Vector2 inicio = cuerpo.position;
+
+        // Utilizar la ultima direccion del joystick.
+        Vector2 direccion =
+            movimiento.UltimaDireccion;
+
+        if (direccion.sqrMagnitude < 0.01f)
+            direccion = Vector2.down;
+
+        direccion.Normalize();
+
+        // Calcular destino horizontal y vertical.
+        Vector2 destino =
+            inicio + direccion * distanciaSalto;
+
+        // Bloquear movimiento normal.
+        movimiento.BloquearMovimiento(true);
+
+        // Configurar animacion.
         if (animatorJugador != null)
         {
-            animatorJugador.SetBool("Saltando", true);
+            animatorJugador.SetFloat(
+                "Velocidad", 0f
+            );
+
+            animatorJugador.SetFloat(
+                "DireccionX", direccion.x
+            );
+
+            animatorJugador.SetFloat(
+                "DireccionY", direccion.y
+            );
+
+            animatorJugador.SetBool(
+                "Saltando", true
+            );
         }
+
+        Debug.Log(
+            "SALTO INICIADO | DIRECCION: " + direccion
+        );
 
         float tiempo = 0f;
 
+        // Movimiento fisico del personaje.
         while (tiempo < duracionSalto)
         {
-            tiempo += Time.deltaTime;
-
             float progreso =
                 Mathf.Clamp01(tiempo / duracionSalto);
 
+            // Desplazamiento hacia adelante.
+            Vector2 nuevaPosicion =
+                Vector2.Lerp(
+                    inicio,
+                    destino,
+                    progreso
+                );
+
+            cuerpo.MovePosition(nuevaPosicion);
+
+            // Arco visual del salto.
             float altura =
                 Mathf.Sin(progreso * Mathf.PI) *
                 alturaSalto;
@@ -146,8 +199,15 @@ public class SaltoJugador : NetworkBehaviour
                     Vector3.up * altura;
             }
 
-            yield return null;
+            tiempo += Time.fixedDeltaTime;
+
+            yield return new WaitForFixedUpdate();
         }
+
+        // Completar desplazamiento.
+        cuerpo.MovePosition(destino);
+
+        yield return new WaitForFixedUpdate();
 
         FinalizarSalto();
     }
@@ -162,16 +222,24 @@ public class SaltoJugador : NetworkBehaviour
 
         if (animatorJugador != null)
         {
-            animatorJugador.SetBool("Saltando", false);
+            animatorJugador.SetBool(
+                "Saltando", false
+            );
         }
+
+        movimiento?.BloquearMovimiento(false);
 
         saltando = false;
 
-        Debug.Log("SALTO NORMAL FINALIZADO.");
+        rutinaSalto = null;
+
+        Debug.Log(
+            "SALTO FINALIZADO | POSICION: " + cuerpo.position
+        );
     }
 
     // =====================================
-    // RESTAURAR POSICION VISUAL
+    // RESTAURAR VISUAL
     // =====================================
 
     private void RestaurarVisual()
@@ -184,20 +252,25 @@ public class SaltoJugador : NetworkBehaviour
 
         if (animatorJugador != null)
         {
-            animatorJugador.SetBool("Saltando", false);
+            animatorJugador.SetBool(
+                "Saltando", false
+            );
         }
     }
 
     // =====================================
-    // COMPATIBILIDAD CON SCRIPTS ANTERIORES
+    // COMPATIBILIDAD CON VALIDACIONES ANTERIORES
     // =====================================
 
     public void ConfirmarValidacion()
     {
-        esperandoValidacion = false;
-        saltando = false;
+        if (rutinaSalto != null)
+        {
+            StopCoroutine(rutinaSalto);
+            rutinaSalto = null;
+        }
 
-        RestaurarVisual();
+        FinalizarSalto();
 
         Debug.Log(
             "VALIDACION DE SALTO FINALIZADA."

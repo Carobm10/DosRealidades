@@ -8,14 +8,30 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("Interaccion")]
     [SerializeField] private string textoAccion = "INTERACTUAR";
 
+    [Header("Punto del indicador UI")]
+    [SerializeField] private Transform puntoIndicador;
+
     [Header("Ventana opcional")]
     [SerializeField] private GameObject ventanaAbrir;
+
+    [Header("Nota guia reutilizable")]
+    [SerializeField] private NotaGuiaInteractiva notaGuia;
+
+    [Header("Reinicio cooperativo P1")]
+    [SerializeField] private bool reiniciarPuzzleP1AlSalir;
+    [SerializeField] private P1ElUmbralController controladorPuzzleP1;
 
     [Header("NPC opcional")]
     [SerializeField] private NPCDialogo npcDialogo;
 
     [Header("Control visual NPC")]
     [SerializeField] private NPCVisualController visualNPC;
+
+    [Header("Puerta P5")]
+    [SerializeField] private PuertaPuzzleP5 puertaPuzzle;
+
+    [Header("Regreso P5")]
+    [SerializeField] private RegresoPasilloP5 regresoPasillo;
 
     [Header("Brillo de objeto opcional")]
     [SerializeField] private SpriteRenderer objetoBrillo;
@@ -29,13 +45,12 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("Boton cooperativo P3")]
     [SerializeField] private bool esBotonFinalP3;
     [SerializeField] private bool botonEsParaLia;
-
     [SerializeField] private ControlFinalP3 controlFinal;
 
     private Sprite spriteOriginal;
     private Coroutine rutinaParpadeo;
-
     private int contactosJugadorLocal;
+
     private bool puzzleEnCurso;
     private bool manteniendo;
 
@@ -51,8 +66,24 @@ public class ZonaInteraccion : MonoBehaviour
         if (visualNPC == null)
             visualNPC = GetComponent<NPCVisualController>();
 
+        if (puertaPuzzle == null)
+            puertaPuzzle = GetComponent<PuertaPuzzleP5>();
+
+        if (regresoPasillo == null)
+            regresoPasillo = GetComponent<RegresoPasilloP5>();
+
+        if (notaGuia == null)
+            notaGuia = GetComponentInParent<NotaGuiaInteractiva>();
+
         if (objetoBrillo != null)
             spriteOriginal = objetoBrillo.sprite;
+
+        if (reiniciarPuzzleP1AlSalir &&
+            controladorPuzzleP1 == null)
+        {
+            controladorPuzzleP1 =
+                FindAnyObjectByType<P1ElUmbralController>();
+        }
 
         if (esBotonFinalP3 && controlFinal == null)
         {
@@ -63,8 +94,6 @@ public class ZonaInteraccion : MonoBehaviour
 
     private void OnEnable()
     {
-        // Los botones P3 utilizan Animator.
-        // No deben tener parpadeo por cambio de Sprite.
         if (esBotonFinalP3)
             return;
 
@@ -77,7 +106,18 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // PARPADEO DE OBJETOS NORMALES
+    // POSICION INDICADOR
+    // =====================================
+
+    public Vector3 ObtenerPosicionIndicador()
+    {
+        return puntoIndicador != null
+            ? puntoIndicador.position
+            : transform.position;
+    }
+
+    // =====================================
+    // BRILLO
     // =====================================
 
     private IEnumerator Parpadear()
@@ -86,21 +126,39 @@ public class ZonaInteraccion : MonoBehaviour
         {
             objetoBrillo.sprite = spriteOriginal;
 
-            yield return new WaitForSeconds(tiempoNormal);
+            yield return new WaitForSeconds(
+                Mathf.Max(0.05f, tiempoNormal)
+            );
 
             objetoBrillo.sprite = spriteBrillo;
 
-            yield return new WaitForSeconds(tiempoBrillo);
+            yield return new WaitForSeconds(
+                Mathf.Max(0.05f, tiempoBrillo)
+            );
         }
     }
 
+    private void CambiarBrilloObjeto(bool activar)
+    {
+        if (objetoBrillo == null)
+            return;
+
+        objetoBrillo.sprite =
+            activar && spriteBrillo != null
+            ? spriteBrillo
+            : spriteOriginal;
+    }
+
     // =====================================
-    // VALIDAR JUGADOR
+    // JUGADOR PERMITIDO
     // =====================================
 
     private bool EsJugadorPermitido(NetworkObject jugador)
     {
         if (jugador == null || !jugador.IsOwner)
+            return false;
+
+        if (notaGuia != null && !notaGuia.PuedeLeerla())
             return false;
 
         if (!esBotonFinalP3)
@@ -112,7 +170,7 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // ENTRADA A ZONA
+    // ENTRAR EN ZONA
     // =====================================
 
     private void OnTriggerEnter2D(Collider2D otro)
@@ -151,10 +209,6 @@ public class ZonaInteraccion : MonoBehaviour
                 );
             }
 
-            Debug.Log(
-                "P3: JUGADOR ENTRO EN ZONA DEL BOTON"
-            );
-
             return;
         }
 
@@ -165,7 +219,7 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // SALIDA DE ZONA
+    // SALIR DE ZONA
     // =====================================
 
     private void OnTriggerExit2D(Collider2D otro)
@@ -195,10 +249,6 @@ public class ZonaInteraccion : MonoBehaviour
                 );
             }
 
-            Debug.Log(
-                "P3: JUGADOR SALIO DE ZONA DEL BOTON"
-            );
-
             return;
         }
 
@@ -206,34 +256,67 @@ public class ZonaInteraccion : MonoBehaviour
 
         if (!parpadeoAutomatico)
             CambiarBrilloObjeto(false);
+
+        // Reinicio opcional exclusivo de P1.
+
+        if (reiniciarPuzzleP1AlSalir)
+        {
+            if (controladorPuzzleP1 == null)
+            {
+                controladorPuzzleP1 =
+                    FindAnyObjectByType<P1ElUmbralController>();
+            }
+
+            if (controladorPuzzleP1 != null)
+            {
+                controladorPuzzleP1.SolicitarReinicioPuzzle();
+            }
+        }
     }
 
     // =====================================
-    // CAMBIAR BRILLO
-    // =====================================
-
-    private void CambiarBrilloObjeto(bool activar)
-    {
-        if (objetoBrillo == null)
-            return;
-
-        objetoBrillo.sprite =
-            activar && spriteBrillo != null
-            ? spriteBrillo
-            : spriteOriginal;
-    }
-
-    // =====================================
-    // INTERACCIONES NORMALES
+    // INTERACTUAR
     // =====================================
 
     public void Interactuar()
     {
+        if (contactosJugadorLocal <= 0)
+            return;
+
+        // NOTAS GUIA
+        // Tiene prioridad sobre las ventanas normales.
+
+        if (notaGuia != null)
+        {
+            notaGuia.AbrirNota();
+            return;
+        }
+
+        // REGRESO P5
+
+        if (regresoPasillo != null)
+        {
+            regresoPasillo.SolicitarRegreso();
+            return;
+        }
+
+        // PUERTAS P5
+
+        if (puertaPuzzle != null)
+        {
+            puertaPuzzle.IntentarAbrir();
+            return;
+        }
+
+        // NPC
+
         if (npcDialogo != null)
         {
             npcDialogo.IniciarDialogo();
             return;
         }
+
+        // VENTANAS NORMALES
 
         if (ventanaAbrir != null)
         {
@@ -243,7 +326,7 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // PULSACION MANTENIDA
+    // PULSACION MANTENIDA P3
     // =====================================
 
     public void ComenzarMantener()
@@ -268,7 +351,6 @@ public class ZonaInteraccion : MonoBehaviour
         }
 
         manteniendo = true;
-
         controlFinal.ComenzarPresion();
 
         Debug.Log("P3: MANTENIENDO BOTON");
@@ -284,11 +366,11 @@ public class ZonaInteraccion : MonoBehaviour
         if (controlFinal != null)
             controlFinal.TerminarPresion();
 
-        Debug.Log("P3: SE SOLTO EL BOTON");
+        Debug.Log("P3: SE SOLTO BOTON");
     }
 
     // =====================================
-    // BRILLO DE OBJETOS Y PUZZLES
+    // BRILLO DE PUZZLES
     // =====================================
 
     public void MantenerBrillo()

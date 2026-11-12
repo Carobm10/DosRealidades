@@ -8,17 +8,173 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301484433891181614, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0783691
+      objectReference: {fileID: 0}
+    - target: {fileID: 301484433891181614, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3425903
+      objectReference: {fileID: 0}
+    - target: {fileID: 301484433891181614, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Offset.x
+      value: -5.3955793
+      objectReference: {fileID: 0}
+    - target: {fileID: 301484433891181614, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.27889365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625733366847496087, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.498
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625733366847496087, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].id
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].id
+      value: historia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].texto
+      value: "Bienvenidos. El hotel est\xE1 completo, como siempre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].texto
+      value: "Las llaves de servicio est\xE1n bajo el sello de tres figuras."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].texto
+      value: Si buscan la 13, no puedo ayudarlos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[0].texto
+      value: "\xBFCompleto? Parece vac\xEDo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[1].texto
+      value: "Buscamos la habitaci\xF3n 13"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[2].texto
+      value: Solo queremos mirar.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[0].texto
+      value: "\xBFD\xF3nde est\xE1 el caj\xF3n?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[1].texto
+      value: "\xBFQu\xE9 figuras?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[2].texto
+      value: "\xBFPuede abrirlo usted?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[0].texto
+      value: "\xBFPor qu\xE9 no?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[1].texto
+      value: "\xBFQu\xE9 pas\xF3 all\xED?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[2].texto
+      value: Entonces nos las arreglamos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[0].respuestaNPC
+      value: "Vac\xEDo para ustedes. Para el hotel, nunca."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[1].respuestaNPC
+      value: "La 13\u2026 Nadie la reserva. Nadie la pide."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[2].respuestaNPC
+      value: Miren con cuidado. El mostrador lo ve todo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[0].respuestaNPC
+      value: "Aqu\xED, bajo el mostrador. Tres figuras, en orden."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[1].respuestaNPC
+      value: Eso lo sabe quien mira lo que usted no ve
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[2].respuestaNPC
+      value: "Tengo prohibido tocarlo. Ustedes dos s\xED pueden."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[0].respuestaNPC
+      value: "Porque quien pregunta de m\xE1s deja de salir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[1].respuestaNPC
+      value: "Algo se cerr\xF3. Desde entonces, el hotel est\xE1 partido."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[2].respuestaNPC
+      value: Hagan eso. Y no corran en los pasillos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[0].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[1].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.data[2].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[0].siguienteNodo
+      value: historia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[1].siguienteNodo
+      value: historia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.data[2].siguienteNodo
+      value: historia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[0].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[1].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.data[2].siguienteNodo
+      value: pista
+      objectReference: {fileID: 0}
     - target: {fileID: 4650398758997085827, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_Name
-      value: NPC_Base
+      value: NPC_Recepcionista_Elian
       objectReference: {fileID: 0}
     - target: {fileID: 4836259370174128035, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8.96748
       objectReference: {fileID: 0}
     - target: {fileID: 4836259370174128035, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.7879
       objectReference: {fileID: 0}
     - target: {fileID: 4836259370174128035, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -51,6 +207,18 @@ PrefabInstance:
     - target: {fileID: 4836259370174128035, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914630096623501497, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914630096623501497, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328098782635214272, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

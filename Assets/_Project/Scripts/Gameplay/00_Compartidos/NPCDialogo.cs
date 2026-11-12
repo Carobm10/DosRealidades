@@ -8,6 +8,10 @@ public class OpcionDialogo
     [TextArea(2, 3)]
     public string texto;
 
+    [Header("Respuesta del NPC")]
+    [TextArea(2, 3)]
+    public string respuestaNPC;
+
     [Tooltip("ID del siguiente nodo. Dejar vacío para terminar.")]
     public string siguienteNodo;
 }
@@ -29,8 +33,7 @@ public class NodoDialogo
     public string texto;
 
     [Header("Respuestas disponibles")]
-    public OpcionDialogo[] opciones =
-        new OpcionDialogo[3];
+    public OpcionDialogo[] opciones = new OpcionDialogo[3];
 }
 
 public class NPCDialogo : MonoBehaviour
@@ -67,10 +70,8 @@ public class NPCDialogo : MonoBehaviour
         return null;
     }
 
-    
     public void IniciarDialogo()
     {
-        // Busca primero el HUD que pertenece a este NPC.
         HUDDialogoNPC hudPropio =
             GetComponentInChildren<HUDDialogoNPC>(true);
 
@@ -80,8 +81,6 @@ public class NPCDialogo : MonoBehaviour
             return;
         }
 
-        // Compatibilidad con NPC anteriores.
         HUDDialogoNPC.Instancia?.AbrirDialogo(this);
     }
-
 }

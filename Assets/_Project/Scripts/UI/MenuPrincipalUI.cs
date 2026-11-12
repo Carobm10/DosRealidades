@@ -433,7 +433,7 @@ public class MenuPrincipalUI : MonoBehaviour
         }
 
         if (textoEsperandoJugador != null)
-            textoEsperandoJugador.text = "Jugador conectado ✓";
+            textoEsperandoJugador.text = "Jugador conectado";
 
         if (botonEmpezarPartida != null)
             botonEmpezarPartida.SetActive(true);
@@ -486,7 +486,7 @@ public class MenuPrincipalUI : MonoBehaviour
             if (textoEstadoUnirse != null)
             {
                 textoEstadoUnirse.text =
-                    "Conectado ✓\nEsperando que el Host inicie...";
+                    "Conectado\nEsperando que el Host inicie...";
             }
         }
     }
