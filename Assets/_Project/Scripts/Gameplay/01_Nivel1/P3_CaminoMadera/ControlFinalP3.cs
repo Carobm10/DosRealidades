@@ -23,6 +23,7 @@ public class ControlFinalP3 : NetworkBehaviour
     [Header("Cinematica")]
     [SerializeField] private float duracionZoom = 1.2f;
     [SerializeField] private float esperaAntesDeAbrir = 0.35f;
+    [SerializeField] private string siguienteEscena = "P5_Pasillo";
 
     // =====================================
     // VARIABLES DE RED

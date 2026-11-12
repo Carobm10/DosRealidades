@@ -5,19 +5,42 @@ using System.Collections;
 
 public class ZonaInteraccion : MonoBehaviour
 {
+    // =====================================
+    // INTERACCION
+    // =====================================
+
     [Header("Interaccion")]
     [SerializeField] private string textoAccion = "INTERACTUAR";
 
+    [Header("Punto del indicador UI")]
+    [SerializeField] private Transform puntoIndicador;
+
     [Header("Ventana opcional")]
     [SerializeField] private GameObject ventanaAbrir;
+
+    // =====================================
+    // NPC
+    // =====================================
 
     [Header("NPC opcional")]
     [SerializeField] private NPCDialogo npcDialogo;
 
     [Header("Control visual NPC")]
     [SerializeField] private NPCVisualController visualNPC;
+
+    // =====================================
+    // PUERTAS P5
+    // =====================================
+
     [Header("Puerta P5")]
     [SerializeField] private PuertaPuzzleP5 puertaPuzzle;
+
+    [Header("Regreso P5")]
+    [SerializeField] private RegresoPasilloP5 regresoPasillo;
+
+    // =====================================
+    // BRILLO
+    // =====================================
 
     [Header("Brillo de objeto opcional")]
     [SerializeField] private SpriteRenderer objetoBrillo;
@@ -28,19 +51,26 @@ public class ZonaInteraccion : MonoBehaviour
     [SerializeField] private float tiempoNormal = 0.7f;
     [SerializeField] private float tiempoBrillo = 0.7f;
 
+    // =====================================
+    // BOTONES COOPERATIVOS P3
+    // =====================================
+
     [Header("Boton cooperativo P3")]
     [SerializeField] private bool esBotonFinalP3;
     [SerializeField] private bool botonEsParaLia;
 
     [SerializeField] private ControlFinalP3 controlFinal;
 
-    [Header("Regreso P5")]
-    [SerializeField] private RegresoPasilloP5 regresoPasillo;
+    // =====================================
+    // VARIABLES INTERNAS
+    // =====================================
 
     private Sprite spriteOriginal;
+
     private Coroutine rutinaParpadeo;
 
     private int contactosJugadorLocal;
+
     private bool puzzleEnCurso;
     private bool manteniendo;
 
@@ -50,31 +80,37 @@ public class ZonaInteraccion : MonoBehaviour
 
     private void Awake()
     {
+        // Buscar componentes automaticamente.
+
         if (npcDialogo == null)
             npcDialogo = GetComponent<NPCDialogo>();
 
         if (visualNPC == null)
             visualNPC = GetComponent<NPCVisualController>();
 
+        if (puertaPuzzle == null)
+            puertaPuzzle = GetComponent<PuertaPuzzleP5>();
+
+        if (regresoPasillo == null)
+            regresoPasillo = GetComponent<RegresoPasilloP5>();
+
         if (objetoBrillo != null)
             spriteOriginal = objetoBrillo.sprite;
+
+        // Buscar collider para posicion alternativa
+        // del indicador cuando no exista un Empty.
+
+        // Buscar controlador de botones P3.
 
         if (esBotonFinalP3 && controlFinal == null)
         {
             controlFinal =
                 FindAnyObjectByType<ControlFinalP3>();
         }
-        if (puertaPuzzle == null)
-            puertaPuzzle = GetComponent<PuertaPuzzleP5>();
-
-        if (regresoPasillo == null)
-            regresoPasillo = GetComponent<RegresoPasilloP5>();
     }
 
     private void OnEnable()
     {
-        // Los botones P3 utilizan Animator.
-        // No deben tener parpadeo por cambio de Sprite.
         if (esBotonFinalP3)
             return;
 
@@ -87,7 +123,19 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // PARPADEO DE OBJETOS NORMALES
+    // POSICION DEL INDICADOR
+    // =====================================
+
+    public Vector3 ObtenerPosicionIndicador()
+    {
+        if (puntoIndicador != null)
+            return puntoIndicador.position;
+
+        return transform.position;
+    }
+
+    // =====================================
+    // PARPADEO DE OBJETOS
     // =====================================
 
     private IEnumerator Parpadear()
@@ -135,10 +183,14 @@ public class ZonaInteraccion : MonoBehaviour
 
         contactosJugadorLocal++;
 
+        // Mostrar indicador contextual.
+
         HUDInteraccion.Instancia?.MostrarBoton(
             textoAccion,
             this
         );
+
+        // BOTONES COOPERATIVOS P3.
 
         if (esBotonFinalP3)
         {
@@ -161,14 +213,14 @@ public class ZonaInteraccion : MonoBehaviour
                 );
             }
 
-            Debug.Log(
-                "P3: JUGADOR ENTRO EN ZONA DEL BOTON"
-            );
-
             return;
         }
 
+        // BRILLO NPC.
+
         visualNPC?.CambiarBrillo(true);
+
+        // BRILLO DE OBJETOS.
 
         if (!parpadeoAutomatico)
             CambiarBrilloObjeto(true);
@@ -189,12 +241,18 @@ public class ZonaInteraccion : MonoBehaviour
         contactosJugadorLocal =
             Mathf.Max(0, contactosJugadorLocal - 1);
 
+        // Todavia quedan colliders del jugador dentro.
+
         if (contactosJugadorLocal > 0)
             return;
 
         TerminarMantener();
 
+        // Ocultar indicador.
+
         HUDInteraccion.Instancia?.OcultarBoton(this);
+
+        // BOTONES P3.
 
         if (esBotonFinalP3)
         {
@@ -205,12 +263,10 @@ public class ZonaInteraccion : MonoBehaviour
                 );
             }
 
-            Debug.Log(
-                "P3: JUGADOR SALIO DE ZONA DEL BOTON"
-            );
-
             return;
         }
+
+        // Retirar brillo.
 
         visualNPC?.CambiarBrillo(false);
 
@@ -234,40 +290,47 @@ public class ZonaInteraccion : MonoBehaviour
     }
 
     // =====================================
-    // INTERACCIONES NORMALES
+    // EJECUTAR INTERACCION
     // =====================================
 
     public void Interactuar()
     {
+        // REGRESO P5.
+
         if (regresoPasillo != null)
         {
             regresoPasillo.SolicitarRegreso();
             return;
         }
-        // PUERTAS DEL NIVEL P5
+
+        // PUERTAS P5.
+
         if (puertaPuzzle != null)
         {
             puertaPuzzle.IntentarAbrir();
             return;
         }
 
-        // NPC
+        // NPC.
+
         if (npcDialogo != null)
         {
             npcDialogo.IniciarDialogo();
             return;
         }
 
-        // VENTANAS
+        // VENTANAS Y PUZZLES.
+
         if (ventanaAbrir != null)
         {
             MantenerBrillo();
+
             ventanaAbrir.SetActive(true);
         }
     }
 
     // =====================================
-    // PULSACION MANTENIDA
+    // PULSACION MANTENIDA P3
     // =====================================
 
     public void ComenzarMantener()
@@ -288,6 +351,7 @@ public class ZonaInteraccion : MonoBehaviour
             Debug.LogError(
                 "P3: NO SE ENCONTRO CONTROL FINAL"
             );
+
             return;
         }
 
@@ -308,11 +372,11 @@ public class ZonaInteraccion : MonoBehaviour
         if (controlFinal != null)
             controlFinal.TerminarPresion();
 
-        Debug.Log("P3: SE SOLTO EL BOTON");
+        Debug.Log("P3: SE SOLTO BOTON");
     }
 
     // =====================================
-    // BRILLO DE OBJETOS Y PUZZLES
+    // BRILLO DE PUZZLES
     // =====================================
 
     public void MantenerBrillo()

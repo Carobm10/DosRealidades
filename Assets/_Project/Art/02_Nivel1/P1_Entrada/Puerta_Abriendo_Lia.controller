@@ -82,7 +82,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Puerta_Abriendo_0
+  m_Name: Puerta_Abriendo_Lia
   serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: Abrir

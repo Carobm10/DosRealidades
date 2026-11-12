@@ -2364,10 +2364,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 1532773425}
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 551739797}
   spriteBrillo: {fileID: 21300000, guid: c8e2a0f4e86892a4a9ca1b3e830bcd65, type: 3}
   parpadeoAutomatico: 0
@@ -2376,7 +2378,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  regresoPasillo: {fileID: 0}
 --- !u!61 &551739799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4611,14 +4612,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1014516057471897599, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -234.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014516057471897599, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 131.76001
-      objectReference: {fileID: 0}
     - target: {fileID: 1368630429690827680, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4698,46 +4691,6 @@ PrefabInstance:
     - target: {fileID: 1368630429690827680, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1508114619247831381, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -270
-      objectReference: {fileID: 0}
-    - target: {fileID: 1508114619247831381, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 131
-      objectReference: {fileID: 0}
-    - target: {fileID: 1734580081177750184, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -202.68298
-      objectReference: {fileID: 0}
-    - target: {fileID: 1734580081177750184, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 132.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 2723203187368982191, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -236.07999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2723203187368982191, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 131.75998
-      objectReference: {fileID: 0}
-    - target: {fileID: 3587546922059476148, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -201.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 3587546922059476148, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 132.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 7166860516829955256, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -271
-      objectReference: {fileID: 0}
-    - target: {fileID: 7166860516829955256, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 131
       objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
@@ -6123,10 +6076,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 1610903074}
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1853065748}
   spriteBrillo: {fileID: 21300000, guid: 01b2435ac67444747874d49621bacb61, type: 3}
   parpadeoAutomatico: 0
@@ -6135,7 +6090,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  regresoPasillo: {fileID: 0}
 --- !u!1 &1887064981
 GameObject:
   m_ObjectHideFlags: 0
