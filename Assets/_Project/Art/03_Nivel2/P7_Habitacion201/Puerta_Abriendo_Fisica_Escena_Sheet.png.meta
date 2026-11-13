@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 861f7426ef36990448c3b8b39b6242a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3152553197604355857
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_0
+  - first:
+      213: 7614042632963385608
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_1
+  - first:
+      213: -3203676474337460413
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_2
+  - first:
+      213: -4189945046317883442
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_3
+  - first:
+      213: 4975176180386006718
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_4
+  - first:
+      213: 3765194148476024867
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_5
+  - first:
+      213: -9104384264185473074
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_6
+  - first:
+      213: -404907581609406041
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_7
+  - first:
+      213: 1715331659591157172
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_8
+  - first:
+      213: -8564156165781418244
+    second: Puerta_Abriendo_Fisica_Escena_Sheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 11
+        width: 21
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe04549d191ef34d0800000000000000
+      internalID: -3152553197604355857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 11
+        width: 28
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809667a0f638aa960800000000000000
+      internalID: 7614042632963385608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 11
+        width: 50
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ff6db68314a83d0800000000000000
+      internalID: -3203676474337460413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 11
+        width: 83
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf90ddfd235ad5c0800000000000000
+      internalID: -4189945046317883442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 11
+        width: 116
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb684ee50606b0540800000000000000
+      internalID: 4975176180386006718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 11
+        width: 144
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328fa421128a04430800000000000000
+      internalID: 3765194148476024867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 11
+        width: 164
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec79192bfbab6a180800000000000000
+      internalID: -9104384264185473074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 11
+        width: 172
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a11f4723ba716af0800000000000000
+      internalID: -404907581609406041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 11
+        width: 174
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b589e16e051ec710800000000000000
+      internalID: 1715331659591157172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_Abriendo_Fisica_Escena_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 11
+        width: 174
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe80a19751062980800000000000000
+      internalID: -8564156165781418244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Puerta_Abriendo_Fisica_Escena_Sheet_0: -3152553197604355857
+      Puerta_Abriendo_Fisica_Escena_Sheet_1: 7614042632963385608
+      Puerta_Abriendo_Fisica_Escena_Sheet_2: -3203676474337460413
+      Puerta_Abriendo_Fisica_Escena_Sheet_3: -4189945046317883442
+      Puerta_Abriendo_Fisica_Escena_Sheet_4: 4975176180386006718
+      Puerta_Abriendo_Fisica_Escena_Sheet_5: 3765194148476024867
+      Puerta_Abriendo_Fisica_Escena_Sheet_6: -9104384264185473074
+      Puerta_Abriendo_Fisica_Escena_Sheet_7: -404907581609406041
+      Puerta_Abriendo_Fisica_Escena_Sheet_8: 1715331659591157172
+      Puerta_Abriendo_Fisica_Escena_Sheet_9: -8564156165781418244
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
