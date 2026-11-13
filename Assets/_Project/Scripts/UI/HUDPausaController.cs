@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class HUDPausaController : MonoBehaviour
 {
-    public static HUDPausaController Instancia { get; private set; }
+    public static HUDPausaController Instancia
+        { get; private set; }
 
     [Header("Panel de pausa")]
     [SerializeField] private GameObject panelPausa;
@@ -35,6 +36,8 @@ public class HUDPausaController : MonoBehaviour
     private bool controlesOcultos;
     private bool[] estadosOriginales;
 
+    private bool reinicioSolicitado;
+
     // =====================================
     // INICIO
     // =====================================
@@ -62,7 +65,9 @@ public class HUDPausaController : MonoBehaviour
             botonReiniciar.onClick.AddListener(ReiniciarNivel);
 
         if (botonMenuPrincipal != null)
-            botonMenuPrincipal.onClick.AddListener(VolverMenuPrincipal);
+            botonMenuPrincipal.onClick.AddListener(
+                VolverMenuPrincipal
+            );
 
         if (botonSalir != null)
             botonSalir.onClick.AddListener(SalirJuego);
@@ -94,7 +99,9 @@ public class HUDPausaController : MonoBehaviour
             botonReiniciar.onClick.RemoveListener(ReiniciarNivel);
 
         if (botonMenuPrincipal != null)
-            botonMenuPrincipal.onClick.RemoveListener(VolverMenuPrincipal);
+            botonMenuPrincipal.onClick.RemoveListener(
+                VolverMenuPrincipal
+            );
 
         if (botonSalir != null)
             botonSalir.onClick.RemoveListener(SalirJuego);
@@ -103,21 +110,23 @@ public class HUDPausaController : MonoBehaviour
     }
 
     // =====================================
-    // OBTENER JUGADOR LOCAL
+    // JUGADOR LOCAL
     // =====================================
 
     private void ObtenerMovimientoLocal()
     {
-        if (NetworkManager.Singleton == null ||
-            NetworkManager.Singleton.LocalClient == null ||
-            NetworkManager.Singleton.LocalClient.PlayerObject == null)
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red == null ||
+            red.LocalClient == null ||
+            red.LocalClient.PlayerObject == null)
         {
             movimientoLocal = null;
             return;
         }
 
         movimientoLocal =
-            NetworkManager.Singleton.LocalClient.PlayerObject
+            red.LocalClient.PlayerObject
                 .GetComponent<NetworkPlayerMovement>();
     }
 
@@ -127,20 +136,18 @@ public class HUDPausaController : MonoBehaviour
 
     public void AbrirPausa()
     {
-        if (pausaAbierta)
+        if (pausaAbierta || reinicioSolicitado)
             return;
-
-        // No permitir pausa durante reconexion.
 
         if (panelReconectando != null &&
             panelReconectando.activeInHierarchy)
-        {
             return;
-        }
 
         if (panelPausa == null)
         {
-            Debug.LogError("No se asigno PanelPausa.");
+            Debug.LogError(
+                "PAUSA: no se asigno PanelPausa."
+            );
             return;
         }
 
@@ -159,8 +166,6 @@ public class HUDPausaController : MonoBehaviour
         OcultarControlesJuego();
 
         panelPausa.SetActive(true);
-
-        Debug.Log("PAUSA: abierta.");
     }
 
     // =====================================
@@ -169,7 +174,7 @@ public class HUDPausaController : MonoBehaviour
 
     public void Continuar()
     {
-        if (!pausaAbierta)
+        if (!pausaAbierta || reinicioSolicitado)
             return;
 
         pausaAbierta = false;
@@ -187,20 +192,16 @@ public class HUDPausaController : MonoBehaviour
                 movimientoBloqueadoAntesPausa
             );
         }
-
-        Debug.Log("PAUSA: juego reanudado.");
     }
 
     // =====================================
-    // OCULTAR CONTROLES DEL HUD
+    // OCULTAR CONTROLES
     // =====================================
 
     public void OcultarControlesJuego()
     {
-        if (controlesOcultos)
-            return;
-
-        if (elementosHUDJuego == null)
+        if (controlesOcultos ||
+            elementosHUDJuego == null)
             return;
 
         estadosOriginales =
@@ -221,7 +222,7 @@ public class HUDPausaController : MonoBehaviour
     }
 
     // =====================================
-    // RESTAURAR CONTROLES DEL HUD
+    // RESTAURAR CONTROLES
     // =====================================
 
     public void RestaurarControlesJuego()
@@ -241,10 +242,11 @@ public class HUDPausaController : MonoBehaviour
         }
 
         controlesOcultos = false;
+        estadosOriginales = null;
     }
 
     // =====================================
-    // CERRAR PAUSA POR RECONEXION
+    // RECONEXION
     // =====================================
 
     public void CerrarPausaPorReconectar()
@@ -260,18 +262,17 @@ public class HUDPausaController : MonoBehaviour
             movimientoLocal.BloquearMovimiento(true);
 
         OcultarControlesJuego();
-
-        Debug.Log(
-            "HUD: controles ocultos por reconexion."
-        );
     }
 
     // =====================================
-    // REINICIAR NIVEL
+    // REINICIO COOPERATIVO
     // =====================================
 
     public void ReiniciarNivel()
     {
+        if (reinicioSolicitado)
+            return;
+
         NetworkManager red = NetworkManager.Singleton;
 
         if (red == null || !red.IsListening)
@@ -279,32 +280,57 @@ public class HUDPausaController : MonoBehaviour
             SceneManager.LoadScene(
                 SceneManager.GetActiveScene().name
             );
-
             return;
         }
 
-        // Por ahora el reinicio lo ejecuta el Host.
-        // Despues conectaremos la solicitud del Client.
+        ReinicioNivelCooperativo controlador =
+            ReinicioNivelCooperativo.Instancia;
 
-        if (!red.IsHost)
+        if (controlador == null ||
+            !controlador.IsSpawned)
         {
-            Debug.LogWarning(
-                "El reinicio cooperativo debe solicitarse al Host."
+            Debug.LogError(
+                "REINICIO: falta ReinicioNivelCooperativo " +
+                "activo y sincronizado en la escena."
             );
-
             return;
         }
 
-        string escenaActual =
-            SceneManager.GetActiveScene().name;
+        reinicioSolicitado = true;
+
+        controlador.SolicitarReinicio();
 
         Debug.Log(
-            "PAUSA: reiniciando nivel " + escenaActual
+            "PAUSA: reinicio cooperativo solicitado."
         );
+    }
 
-        red.SceneManager.LoadScene(
-            escenaActual,
-            LoadSceneMode.Single
+    // =====================================
+    // PREPARAR PARA REINICIO
+    // =====================================
+
+    public void PrepararParaReinicio()
+    {
+        pausaAbierta = false;
+        reinicioSolicitado = false;
+
+        movimientoBloqueadoAntesPausa = false;
+
+        if (panelPausa != null)
+            panelPausa.SetActive(false);
+
+        RestaurarControlesJuego();
+
+        ObtenerMovimientoLocal();
+
+        if (movimientoLocal != null)
+        {
+            movimientoLocal.ActivarModoPuente(false);
+            movimientoLocal.BloquearMovimiento(false);
+        }
+
+        Debug.Log(
+            "PAUSA: controles restaurados para reinicio."
         );
     }
 
@@ -326,13 +352,11 @@ public class HUDPausaController : MonoBehaviour
     }
 
     // =====================================
-    // SALIR DEL JUEGO
+    // SALIR
     // =====================================
 
     public void SalirJuego()
     {
-        Debug.Log("PAUSA: salir del juego.");
-
         Application.Quit();
 
 #if UNITY_EDITOR
