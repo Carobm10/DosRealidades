@@ -1,7 +1,9 @@
 
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Netcode;
 
 public class SlotInventarioUI : MonoBehaviour
 {
@@ -13,16 +15,22 @@ public class SlotInventarioUI : MonoBehaviour
     [SerializeField] private Image fondoEstado;
     [SerializeField] private Image imagenObjeto;
 
-    [Header("Sprites de estado")]
-    [SerializeField] private Sprite fondoNormal;
-    [SerializeField] private Sprite fondoSeleccionado;
+    [Header("Sprites Elian")]
+    [SerializeField] private Sprite fondoNormalElian;
+    [SerializeField] private Sprite fondoSeleccionadoElian;
+
+    [Header("Sprites Lia")]
+    [SerializeField] private Sprite fondoNormalLia;
+    [SerializeField] private Sprite fondoSeleccionadoLia;
+
+    private bool esElian;
+    private bool identidadLista;
+    private bool tieneObjeto;
+    private bool seleccionado;
 
     public int Indice => indiceSlot;
 
     public event Action<int> SeleccionSolicitada;
-
-    private bool tieneObjeto;
-    private bool seleccionado;
 
     private void Awake()
     {
@@ -35,8 +43,59 @@ public class SlotInventarioUI : MonoBehaviour
             boton.onClick.AddListener(AlPulsar);
         }
 
-        ActualizarVisual();
+        if (imagenObjeto != null)
+            imagenObjeto.enabled = false;
     }
+
+    private void Start()
+    {
+        StartCoroutine(EsperarIdentidadLocal());
+    }
+
+    // =====================================
+    // IDENTIFICAR JUGADOR LOCAL
+    // =====================================
+
+    private IEnumerator EsperarIdentidadLocal()
+    {
+        while (true)
+        {
+            NetworkManager red = NetworkManager.Singleton;
+
+            if (red != null &&
+                red.IsListening &&
+                red.LocalClient != null &&
+                red.LocalClient.PlayerObject != null)
+            {
+                NetworkPlayerSetup setup =
+                    red.LocalClient.PlayerObject
+                    .GetComponent<NetworkPlayerSetup>();
+
+                if (setup != null && setup.RolConfigurado)
+                {
+                    esElian = setup.EsElian;
+                    identidadLista = true;
+
+                    ActualizarVisual();
+
+                    Debug.Log(
+                        "INVENTARIO UI | Slot: " +
+                        indiceSlot +
+                        " | Personaje: " +
+                        (esElian ? "Elian" : "Lia")
+                    );
+
+                    yield break;
+                }
+            }
+
+            yield return null;
+        }
+    }
+
+    // =====================================
+    // CONFIGURAR OBJETO
+    // =====================================
 
     public void Configurar(
         Sprite sprite,
@@ -56,14 +115,33 @@ public class SlotInventarioUI : MonoBehaviour
         ActualizarVisual();
     }
 
+    // =====================================
+    // ACTUALIZAR APARIENCIA
+    // =====================================
+
     private void ActualizarVisual()
     {
+        if (!identidadLista)
+            return;
+
         if (fondoEstado != null)
         {
-            fondoEstado.sprite = seleccionado
-                ? fondoSeleccionado
-                : fondoNormal;
+            Sprite fondo;
 
+            if (esElian)
+            {
+                fondo = seleccionado
+                    ? fondoSeleccionadoElian
+                    : fondoNormalElian;
+            }
+            else
+            {
+                fondo = seleccionado
+                    ? fondoSeleccionadoLia
+                    : fondoNormalLia;
+            }
+
+            fondoEstado.sprite = fondo;
             fondoEstado.color = Color.white;
         }
 
@@ -71,13 +149,21 @@ public class SlotInventarioUI : MonoBehaviour
             boton.interactable = tieneObjeto;
     }
 
+    // =====================================
+    // SELECCION
+    // =====================================
+
     private void AlPulsar()
     {
-        if (!tieneObjeto)
+        if (!tieneObjeto || !identidadLista)
             return;
 
         SeleccionSolicitada?.Invoke(indiceSlot);
     }
+
+    // =====================================
+    // LIMPIEZA
+    // =====================================
 
     private void OnDestroy()
     {

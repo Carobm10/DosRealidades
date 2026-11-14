@@ -30,6 +30,9 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("Puerta P5")]
     [SerializeField] private PuertaPuzzleP5 puertaPuzzle;
 
+    [Header("Objeto recolectable")]
+    [SerializeField] private ObjetoRecolectable objetoRecolectable;
+
     [Header("Regreso P5")]
     [SerializeField] private RegresoPasilloP5 regresoPasillo;
 
@@ -90,6 +93,10 @@ public class ZonaInteraccion : MonoBehaviour
             controlFinal =
                 FindAnyObjectByType<ControlFinalP3>();
         }
+
+        if (objetoRecolectable == null)
+            objetoRecolectable =
+                GetComponent<ObjetoRecolectable>();
     }
 
     private void OnEnable()
@@ -289,6 +296,15 @@ public class ZonaInteraccion : MonoBehaviour
         if (notaGuia != null)
         {
             notaGuia.AbrirNota();
+            return;
+        }
+
+        // OBJETOS RECOLECTABLES
+
+        if (objetoRecolectable != null)
+        {
+            Debug.Log("[ZONA] Ejecutando interacción con objeto recolectable.");
+            objetoRecolectable.SolicitarRecoleccion();
             return;
         }
 

@@ -52,81 +52,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIContadorFragmentos
   textoContador: {fileID: 3409337400935053262}
   totalFragmentos: 5
---- !u!1 &538041720943630915
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2297170497943713232}
-  - component: {fileID: 2714829742780561648}
-  - component: {fileID: 8857963705122798134}
-  m_Layer: 5
-  m_Name: BotonInventario
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2297170497943713232
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538041720943630915}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1368630429690827680}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 827, y: 255}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2714829742780561648
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538041720943630915}
-  m_CullTransparentMesh: 1
---- !u!114 &8857963705122798134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538041720943630915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &563677226814537714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,6 +1850,126 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2652859018091640220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4321775302545843752}
+  - component: {fileID: 5293466106101288967}
+  - component: {fileID: 5697313850038087534}
+  - component: {fileID: 3871952773570699984}
+  m_Layer: 5
+  m_Name: BotonInventario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4321775302545843752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2652859018091640220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.73912215, y: 3.6165, z: 3.6165}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1368630429690827680}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 824, y: 223}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5293466106101288967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2652859018091640220}
+  m_CullTransparentMesh: 1
+--- !u!114 &5697313850038087534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2652859018091640220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3871952773570699984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2652859018091640220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5697313850038087534}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2732485233775873679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,8 +2153,10 @@ MonoBehaviour:
   boton: {fileID: 7448257968726266416}
   fondoEstado: {fileID: 3896697365268081438}
   imagenObjeto: {fileID: 3925503300813912232}
-  fondoNormal: {fileID: 0}
-  fondoSeleccionado: {fileID: 0}
+  fondoNormalElian: {fileID: 0}
+  fondoSeleccionadoElian: {fileID: 0}
+  fondoNormalLia: {fileID: 0}
+  fondoSeleccionadoLia: {fileID: 0}
 --- !u!1 &3221980514262268032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,8 +2826,10 @@ MonoBehaviour:
   boton: {fileID: 5134336039603268500}
   fondoEstado: {fileID: 4853358467730400730}
   imagenObjeto: {fileID: 6168242909821655191}
-  fondoNormal: {fileID: 0}
-  fondoSeleccionado: {fileID: 0}
+  fondoNormalElian: {fileID: 0}
+  fondoSeleccionadoElian: {fileID: 0}
+  fondoNormalLia: {fileID: 0}
+  fondoSeleccionadoLia: {fileID: 0}
 --- !u!1 &3897675656932356347
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,6 +6608,7 @@ GameObject:
   - component: {fileID: 2922091510725772878}
   - component: {fileID: 3930405977159221420}
   - component: {fileID: 9006900319207772714}
+  - component: {fileID: 5127641653094025659}
   m_Layer: 5
   m_Name: HUDJuego
   m_TagString: Untagged
@@ -6591,7 +6641,7 @@ RectTransform:
   - {fileID: 52423667046685224}
   - {fileID: 5114044716505277498}
   - {fileID: 6269188765299064235}
-  - {fileID: 2297170497943713232}
+  - {fileID: 4321775302545843752}
   - {fileID: 1558786032794928939}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6751,6 +6801,36 @@ MonoBehaviour:
   - {fileID: 8173372906510268952}
   - {fileID: 3950249469185021980}
   - {fileID: 997390282725107001}
+--- !u!114 &5127641653094025659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7542587818657237105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16f925a415c6d34caf6f40ceecbc11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventarioUI
+  panelInventario: {fileID: 2368669056407486758}
+  botonAbrirInventario: {fileID: 3871952773570699984}
+  botonCerrarInventario: {fileID: 2988875741783842507}
+  slots:
+  - {fileID: 1849518997303179050}
+  - {fileID: 9169131539019191396}
+  - {fileID: 4165298896578228777}
+  - {fileID: 1949557580208076571}
+  - {fileID: 819488837140615128}
+  indicadorObjetoPreparado: {fileID: 7210415154725345065}
+  imagenObjetoPreparado: {fileID: 5275763739093873921}
+  textoObjetoPreparado: {fileID: 3012602678814895408}
+  controlesOcultar:
+  - {fileID: 5456746758934887555}
+  - {fileID: 758779740364529523}
+  - {fileID: 8281438830713392970}
+  - {fileID: 8173372906510268952}
+  - {fileID: 997390282725107001}
 --- !u!1 &8032242335696610787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6859,8 +6939,10 @@ MonoBehaviour:
   boton: {fileID: 8776589756704913856}
   fondoEstado: {fileID: 3378904445359154757}
   imagenObjeto: {fileID: 7450646656775804375}
-  fondoNormal: {fileID: 0}
-  fondoSeleccionado: {fileID: 0}
+  fondoNormalElian: {fileID: 0}
+  fondoSeleccionadoElian: {fileID: 0}
+  fondoNormalLia: {fileID: 0}
+  fondoSeleccionadoLia: {fileID: 0}
 --- !u!1 &8053521168870829225
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,8 +7445,10 @@ MonoBehaviour:
   boton: {fileID: 3853546981295640046}
   fondoEstado: {fileID: 3932029775469646261}
   imagenObjeto: {fileID: 6061058104119013967}
-  fondoNormal: {fileID: 0}
-  fondoSeleccionado: {fileID: 0}
+  fondoNormalElian: {fileID: 0}
+  fondoSeleccionadoElian: {fileID: 0}
+  fondoNormalLia: {fileID: 0}
+  fondoSeleccionadoLia: {fileID: 0}
 --- !u!1 &8281438830713392970
 GameObject:
   m_ObjectHideFlags: 0
@@ -7586,8 +7670,10 @@ MonoBehaviour:
   boton: {fileID: 1610230367887423687}
   fondoEstado: {fileID: 4720476386013024866}
   imagenObjeto: {fileID: 7814221615841734170}
-  fondoNormal: {fileID: 0}
-  fondoSeleccionado: {fileID: 0}
+  fondoNormalElian: {fileID: 0}
+  fondoSeleccionadoElian: {fileID: 0}
+  fondoNormalLia: {fileID: 0}
+  fondoSeleccionadoLia: {fileID: 0}
 --- !u!1 &8446863521438705271
 GameObject:
   m_ObjectHideFlags: 0

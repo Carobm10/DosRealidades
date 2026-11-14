@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 4895310645492503891}
   - component: {fileID: 3563157725735165863}
   - component: {fileID: 4310203884673097124}
+  - component: {fileID: 2870937058371257775}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -369,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1588100951
+  GlobalObjectIdHash: 195567080
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -574,6 +575,7 @@ MonoBehaviour:
   animatorJugador: {fileID: 3239875105945358432}
   alturaSalto: 0.5
   duracionSalto: 0.45
+  distanciaSalto: 1
 --- !u!114 &4895310645492503891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,3 +620,20 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
+--- !u!114 &2870937058371257775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198515594604971309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d78b7edb32e170488d9d7a4fc8776f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventarioJugador
+  ShowTopMostFoldoutHeaderGroup: 1
+  catalogoObjetos:
+  - {fileID: 11400000, guid: 004277aff5bb0434f92a34ae9d187024, type: 2}
+  - {fileID: 11400000, guid: 8379b1a6c48f2cc4789df895654a4b03, type: 2}
+  - {fileID: 11400000, guid: 396eefbe1c76a8343a5167efbc7ef7e9, type: 2}

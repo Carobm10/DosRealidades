@@ -19,6 +19,11 @@ public class NetworkPlayerSetup : NetworkBehaviour
 
     private const string ESCENA_P3 = "P3_CaminoMadera";
 
+    // Identidad del jugador
+    private bool esElian;
+    public bool EsElian => esElian;
+    public bool RolConfigurado { get; private set; }
+
     private void Awake()
     {
         if (spriteJugador == null)
@@ -38,6 +43,7 @@ public class NetworkPlayerSetup : NetworkBehaviour
 
         Debug.Log(
             "Jugador creado | ClientId: " + OwnerClientId +
+            " | Personaje: " + (esElian ? "Elian" : "Lia") +
             " | IsOwner: " + IsOwner +
             " | IsServer: " + IsServer
         );
@@ -48,30 +54,36 @@ public class NetworkPlayerSetup : NetworkBehaviour
         SceneManager.sceneLoaded -= AlCargarEscena;
     }
 
+    // =====================================
+    // IDENTIFICAR PERSONAJE
+    // =====================================
+
+    private bool DeterminarPersonaje()
+    {
+#if UNITY_EDITOR
+        if (RolPruebaJugador.Instancia != null)
+        {
+            return RolPruebaJugador.Instancia.EsElian();
+        }
+#endif
+
+        return OwnerClientId == NetworkManager.ServerClientId;
+    }
+
+    // =====================================
+    // CONFIGURAR PERSONAJE
+    // =====================================
+
     private void ConfigurarPersonaje(string nombreEscena)
     {
-        if (animatorJugador == null)
-            return;
+        esElian = DeterminarPersonaje();
+        RolConfigurado = true;
 
         if (spriteJugador != null)
             spriteJugador.color = Color.white;
 
-        bool esElian;
-
-#if UNITY_EDITOR
-        if (RolPruebaJugador.Instancia != null)
-        {
-            esElian = RolPruebaJugador.Instancia.EsElian();
-        }
-        else
-        {
-            esElian =
-                OwnerClientId == NetworkManager.ServerClientId;
-        }
-#else
-        esElian =
-            OwnerClientId == NetworkManager.ServerClientId;
-#endif
+        if (animatorJugador == null)
+            return;
 
         RuntimeAnimatorController controladorOriginal =
             esElian ? controladorElian : controladorLia;
@@ -92,11 +104,15 @@ public class NetworkPlayerSetup : NetworkBehaviour
         }
 
         Debug.Log(
-            "ANIMATOR CONFIGURADO | Personaje: " +
+            "PERSONAJE CONFIGURADO | " +
             (esElian ? "Elian" : "Lia") +
             " | Escena: " + nombreEscena
         );
     }
+
+    // =====================================
+    // CAMBIO DE ESCENA
+    // =====================================
 
     private void AlCargarEscena(
         Scene escena,

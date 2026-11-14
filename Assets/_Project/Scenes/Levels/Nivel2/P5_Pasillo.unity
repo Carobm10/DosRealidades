@@ -2092,6 +2092,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &603043618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4028664895086679599, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2000187410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &635487240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3447,6 +3458,7 @@ MonoBehaviour:
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 910350354}
+  objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 910350352}
   spriteBrillo: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
@@ -3509,6 +3521,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1478655848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &944026529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6905208190502961922, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2000187410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &950012732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,6 +4288,7 @@ MonoBehaviour:
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1303925448}
+  objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1161285767}
   spriteBrillo: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
@@ -4363,6 +4387,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1211674539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6021212014282936290, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2000187410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1232803406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,6 +4423,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910350351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234056883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1591720181998970961, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2000187410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1237679625
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,6 +5702,17 @@ Transform:
   - {fileID: 1651639574}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459828832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8337404125707969399, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2000187410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1466431204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6014,6 +6065,7 @@ MonoBehaviour:
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1478655851}
+  objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1478655849}
   spriteBrillo: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
@@ -6507,6 +6559,7 @@ MonoBehaviour:
   npcDialogo: {fileID: 0}
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
+  objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1639288185}
   spriteBrillo: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
@@ -8353,10 +8406,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1610230367887423687, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_InScenePlaced
       value: 1
@@ -8365,6 +8414,26 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 1313707468
       objectReference: {fileID: 0}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: panelObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1211674539}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: imagenObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1459828832}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: tituloObjetoRecolectado
+      value: 
+      objectReference: {fileID: 603043618}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: botonCerrarObjetoRecolectado
+      value: 
+      objectReference: {fileID: 944026529}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: descripcionObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1234056883}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
