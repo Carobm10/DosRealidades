@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 5ed16973b1f1f7e4ba6f5a6848a0d7b3
+guid: 4f40fb71416026c42881286f75d1ffc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7801348095627729921
-    second: Fusible sin brillo_0
+      213: -6090702972439111104
+    second: Fusible_0
   - first:
-      213: 1148593167557866928
-    second: Fusible sin brillo_1
+      213: -1753825945672019140
+    second: Fusible_1
   - first:
-      213: 6187061309725484848
-    second: Fusible sin brillo_2
+      213: -2937593714479197319
+    second: Fusible_2
   - first:
-      213: -8099157633290664887
-    second: Fusible sin brillo_3
+      213: -5327728703699848086
+    second: Fusible_3
   - first:
-      213: 1341301187351086655
-    second: Fusible sin brillo_4
+      213: -1636827700330595687
+    second: Fusible_4
   - first:
-      213: 2157236565270367319
-    second: Fusible sin brillo_5
+      213: 3508956523319373145
+    second: Fusible_5
   - first:
-      213: 5503006807571319814
-    second: Fusible sin brillo_6
+      213: -6402276917849558995
+    second: Fusible_6
   - first:
-      213: 5669431600849224125
-    second: Fusible sin brillo_7
-  - first:
-      213: 8364868001054956348
-    second: Fusible sin brillo_8
-  - first:
-      213: -4794732885690957536
-    second: Fusible sin brillo_9
+      213: 2161776862247232664
+    second: Fusible_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,12 +123,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 75
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -168,13 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fusible sin brillo_0
+      name: Fusible_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
-        width: 1517
-        height: 959
+        x: 48
+        y: 0
+        width: 1451
+        height: 961
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10c9f0972c4f34c60800000000000000
-      internalID: 7801348095627729921
+      spriteID: 04ad95f9ae9797ba0800000000000000
+      internalID: -6090702972439111104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_1
+      name: Fusible_1
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 911
-        width: 9
-        height: 13
+        x: 1342
+        y: 737
+        width: 19
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b53abf766f90ff00800000000000000
-      internalID: 1148593167557866928
+      spriteID: c331b56389829a7e0800000000000000
+      internalID: -1753825945672019140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_2
+      name: Fusible_2
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 479
-        width: 249
-        height: 491
+        x: 1280
+        y: 539
+        width: 10
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03720c11b7bdcd550800000000000000
-      internalID: 6187061309725484848
+      spriteID: 9731c0aa4129b37d0800000000000000
+      internalID: -2937593714479197319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_3
+      name: Fusible_3
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 519
-        width: 13
-        height: 24
+        x: 216
+        y: 326
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94401df2b030a9f80800000000000000
-      internalID: -8099157633290664887
+      spriteID: a647154b8fa1016b0800000000000000
+      internalID: -5327728703699848086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_4
+      name: Fusible_4
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 513
-        width: 11
-        height: 12
+        x: 202
+        y: 189
+        width: 7
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,19 +265,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f360fd8c2524d9210800000000000000
-      internalID: 1341301187351086655
+      spriteID: 99a764bf0e1d849e0800000000000000
+      internalID: -1636827700330595687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_5
+      name: Fusible_5
       rect:
         serializedVersion: 2
-        x: 230
-        y: 327
-        width: 15
+        x: 222
+        y: 127
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95dadb0ed5152b030800000000000000
+      internalID: 3508956523319373145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fusible_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 127
+        width: 7
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -293,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75c8c610a3b00fd10800000000000000
-      internalID: 2157236565270367319
+      spriteID: d20f4ed501b8627a0800000000000000
+      internalID: -6402276917849558995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fusible sin brillo_6
+      name: Fusible_7
       rect:
         serializedVersion: 2
-        x: 204
-        y: 308
-        width: 17
-        height: 16
+        x: 248
+        y: 119
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,74 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60c48d9098b9e5c40800000000000000
-      internalID: 5503006807571319814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fusible sin brillo_7
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 269
-        width: 19
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db10ef6c00eddae40800000000000000
-      internalID: 5669431600849224125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fusible sin brillo_8
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 223
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3b99e3c02bf51470800000000000000
-      internalID: 8364868001054956348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fusible sin brillo_9
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 214
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 021c18318dfa57db0800000000000000
-      internalID: -4794732885690957536
+      spriteID: 894a7e54a9c200e10800000000000000
+      internalID: 2161776862247232664
       vertices: []
       indices: 
       edges: []
@@ -401,16 +351,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fusible sin brillo_0: 7801348095627729921
-      Fusible sin brillo_1: 1148593167557866928
-      Fusible sin brillo_2: 6187061309725484848
-      Fusible sin brillo_3: -8099157633290664887
-      Fusible sin brillo_4: 1341301187351086655
-      Fusible sin brillo_5: 2157236565270367319
-      Fusible sin brillo_6: 5503006807571319814
-      Fusible sin brillo_7: 5669431600849224125
-      Fusible sin brillo_8: 8364868001054956348
-      Fusible sin brillo_9: -4794732885690957536
+      Fusible_0: -6090702972439111104
+      Fusible_1: -1753825945672019140
+      Fusible_2: -2937593714479197319
+      Fusible_3: -5327728703699848086
+      Fusible_4: -1636827700330595687
+      Fusible_5: 3508956523319373145
+      Fusible_6: -6402276917849558995
+      Fusible_7: 2161776862247232664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

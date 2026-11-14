@@ -1,0 +1,1588 @@
+{
+    "elementos": [
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Interactuar_Normal_Azul.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Interactuar_Normal_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Interactuar_Presionado_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Subir_Normal_Azul.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Subir_Normal_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Botones/Boton_Subir_Presionado_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Corazon_Elian_Lleno_Original.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Corazon_Elian_SinColor_Original.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Corazon_Lia_Lleno_Original.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Corazon_Lia_SinColor_Original.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Objetivo_Completado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/HUD/Panel_Ancho.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Inventario/Casilla_Normal_Azul 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Inventario/Casilla_Normal_Morado 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Inventario/Casilla_Seleccionada_Azul 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Inventario/Casilla_Seleccionada_Morado 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Base_Azul.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Base_Morada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Bolita_Azul.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Bolita_Morada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Centro_Azul.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/00_Compartidos/UI/Joystick/Joystick_Centro_Morada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Caminar_Abajo_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Caminar_Arriba_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Caminar_Derecha_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Caminar_Izquierda_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Idle_Espaldas_12frames_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Idle_Respiracion_12frames.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Jump_Down.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Saltar_Abajo_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Saltar_Arriba_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Saltar_Derecha_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Saltar_Izquierda_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Elian/Elian_Walk_Down.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Caminar_Abajo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Caminar_Arriba.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Caminar_Derecha.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Caminar_Izquierda.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Idle_Espaldas_12frames_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Idle_Respiracion_12frames.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Jump_Down.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Saltar_Abajo_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Saltar_Arriba_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Saltar_Derecha_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Saltar_Izquierda_SinSombra.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/Lia/Lia_Walk_Down.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Botones/Botones_Alterada_Idle_Brillo_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Botones/Botones_Alterada_Idle_Sheet_12frames.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Botones/Botones_Idle.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Botones/Botones_Idle_Brillo_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Recepcionista/Fantasma_Recepcionista_Idle_Brillo_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Recepcionista/Fantasma_Recepcionista_Idle_Sheet_12frames.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Recepcionista/Recepcionista_Idle.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Recepcionista/Recepcionista_Idle_Brillo_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/01_Personajes/NPC/Vigilia/Vigilia_Float.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Boton_Continuar_Normal.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Boton_Continuar_Presionado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Boton_Saltar_Presionado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Cuadro_Nombre.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Cuadro_Personaje.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Etiqueta_Hablar.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Globo_Pista.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Icono_Siguiente.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Jardin_Elian.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Jardin_Lia.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Opcion_Respuesta_Hover.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Opcion_Respuesta_Normal.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Opcion_Respuesta_Seleccionada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Alterada_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Apagado_Alterada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Apagado_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Circulo_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Cuadrado_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Fisica_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Triangulo_Alterada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Panel_Triangulo_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Puerta_Abriendo (2).png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Puerta_Abriendo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Retrato_Botones.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P1_Entrada/Retrato_Recepcionista.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Boton_Continuar_Normal.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cajon_Alterada_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cajon_Fisica_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Circulo_Elian_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Circulo_Lia_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cuadrado_Elian_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cuadrado_Lia_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cuadro_Nombre.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Cuadro_Personaje.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Interior_Abriendo_Alterada_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Interior_Abriendo_Fisica_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Llave_Alterada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Llave_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Lobby Lia.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Lobby_Elian.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Panel de Altar Místico Púrpura (1).png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Panel de piedra con ranuras geométricas (1).png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Puerta_Lateral_Abriendo_Alterada_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Puerta_Lateral_Abriendo_Fisica_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Puerta_Lateral_Cerrada_Alterada_Escena.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Puerta_Lateral_Cerrada_Fisica_Escena.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Retrato_Botones.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Retrato_Recepcionista.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Rombo_Elian_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Rombo_Lia_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Triangulo_Elian_Dorado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P2_Recepcion/Triangulo_Lia_Morado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Alterada_Normal.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Alterada_Normal_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Alterada_Presionado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Fisica_Normal.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Fisica_Normal_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Boton_Presion_Fisica_Presionado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Nivel2_Alterada_1920x1080.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Nivel2_Fisica_1920x1080.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Plataforma falsa.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/02_Nivel1/P3_CaminoMadera/Plataforma_Cristal_SinBrillo_Flotando_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_2 Pasillo/Vista_Alterada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_2 Pasillo/Vista_Fisica.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Elian_Puerta_Spritesheet_4x2.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Fusible sin brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Fusible.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Imagen de ChatGPT 5 nov 2026, 01_28_14 a.m.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Imagen de ChatGPT 5 nov 2026, 01_28_17 a.m.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Imagen de ChatGPT 5 nov 2026, 01_28_20 a.m.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Letrero pixelado de habitación 202.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Lia_Puerta_Spritesheet_4x2.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Pasillo_Elian_4_espacios_1920x1080.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Pasillo_Lia_4_espacios_1920x1080.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Pasos Apagados.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Pasos Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Placa pixelada violeta con 202.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Placa_Lia_201.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Placa_Lia_203.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Placa_Lia_204.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Puerta_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P5_Pasillo/Sello_Eco_Pequeno.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Caja_Fusibles_Alterada.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Caja_Fusibles_ConFusible.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Caja_Fusibles_Vacia.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Caja_Fusibles_Vacia_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Cuadro_Retrato.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Cuarto_Maquinas_Alterada_1920x1080 (1).png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Cuarto_Maquinas_Fisica_1920x1080 (1).png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Fusible_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Nodo_Apagado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Nodo_Apagado_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Nodo_Encendido.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Palanca_Alterada_Abajo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Palanca_Alterada_Arriba.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Palanca_Alterada_Arriba_Brillo.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P6_CuartoMaquinas/Palanca_Alterada_Mitad.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Habitacion_Alterada_1920x905.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Habitacion_Fisica_1920x905.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Puerta_Abajo_Alterada_Escena.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Puerta_Abajo_Fisica_Escena.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Puerta_Abriendo_Alterada_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/03_Nivel2/P7_Habitacion201/Puerta_Abriendo_Fisica_Escena_Sheet.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Boton_Jugar_Normal_SinIcono_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Boton_Normal_Mundo2 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Boton_Opciones_Normal_SinIcono_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Fondo_CrearPartida_Lobby.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Group 1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Hotel entre el día y la noche.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Jugar_Claro_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Jugar_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Opciones_Activo_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Opciones_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Salir_Activo_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Icono_Salir_Mundo1.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Panel_Cuadrado.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Panel_NuevaPartida.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Rectangle 4.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/05_Menus/MainMenu/Titulo_DosRealidades.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/_Project/Art/WhatsApp Image 2026-11-12 at 3.00.22 PM.jpeg",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        },
+        {
+            "ruta": "Assets/Welcome/2d-template.png",
+            "overridden": false,
+            "maxTextureSize": 2048,
+            "format": -1,
+            "compressionQuality": 50,
+            "crunchedCompression": false,
+            "textureCompression": 1
+        }
+    ]
+}

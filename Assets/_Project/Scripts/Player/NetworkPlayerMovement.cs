@@ -76,6 +76,18 @@ public class NetworkPlayerMovement : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        // Mantener la simulacion fisica activa
+        // tanto para el jugador local como para
+        // las representaciones remotas.
+        //
+        // Esto permite que los colliders remotos
+        // participen en las colisiones locales.
+
+        if (cuerpo != null)
+        {
+            cuerpo.simulated = true;
+        }
+
         if (IsOwner)
         {
             if (accionMover != null &&
@@ -84,18 +96,13 @@ public class NetworkPlayerMovement : NetworkBehaviour
                 accionMover.action.Enable();
             }
 
-            if (cuerpo != null)
-                cuerpo.simulated = true;
-
             // Inicializar direccion hacia abajo.
             ActualizarAnimacion(Vector2.zero);
         }
         else
         {
-            if (cuerpo != null)
-                cuerpo.simulated = false;
-
-            // Aplicar animacion recibida.
+            // El remoto no procesa movimiento local.
+            // Solo aplica las animaciones recibidas.
             AplicarAnimacionReplicada();
         }
     }
@@ -161,11 +168,16 @@ public class NetworkPlayerMovement : NetworkBehaviour
 
     private void FixedUpdate()
     {
+        // Solo el propietario controla
+        // el movimiento de su personaje.
+
         if (!IsOwner ||
             movimientoBloqueado ||
             modoPuente ||
             cuerpo == null)
+        {
             return;
+        }
 
         Vector2 nuevaPosicion =
             cuerpo.position +

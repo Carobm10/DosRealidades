@@ -37,6 +37,8 @@ public class HUDDialogoNPC : MonoBehaviour
     private enum FaseDialogo
     {
         Ninguna,
+        EsperandoOpciones,
+        OpcionesVisibles,
         OpcionJugador,
         RespuestaNPC
     }
@@ -227,49 +229,32 @@ public class HUDDialogoNPC : MonoBehaviour
         if (botonSaltar != null)
             botonSaltar.gameObject.SetActive(false);
 
-        // Ya habló el jugador o el NPC respondió.
-        // Ahora se permite continuar.
+        if (contenedorOpciones != null)
+            contenedorOpciones.SetActive(false);
 
-        if (faseActual == FaseDialogo.OpcionJugador ||
-            faseActual == FaseDialogo.RespuestaNPC)
+        // En cualquier intervencion escrita se necesita
+        // pulsar CONTINUAR para dar el siguiente paso.
+        // Las opciones nunca aparecen automaticamente.
+        if (faseActual == FaseDialogo.Ninguna)
+            faseActual = FaseDialogo.EsperandoOpciones;
+
+        if (botonContinuar != null)
+            botonContinuar.gameObject.SetActive(true);
+    }
+
+    private bool NodoTieneOpcionesValidas()
+    {
+        if (nodoActual == null || nodoActual.opciones == null)
+            return false;
+
+        foreach (OpcionDialogo opcion in nodoActual.opciones)
         {
-            if (contenedorOpciones != null)
-                contenedorOpciones.SetActive(false);
-
-            if (botonContinuar != null)
-                botonContinuar.gameObject.SetActive(true);
-
-            return;
+            if (opcion != null &&
+                !string.IsNullOrWhiteSpace(opcion.texto))
+                return true;
         }
 
-        // Primera intervención del NPC:
-        // mostrar las opciones del jugador.
-
-        bool tieneOpciones =
-            nodoActual != null &&
-            nodoActual.opciones != null &&
-            nodoActual.opciones.Length > 0;
-
-        if (tieneOpciones)
-        {
-            MostrarPersonaje(false);
-
-            ActualizarOpciones();
-
-            if (contenedorOpciones != null)
-                contenedorOpciones.SetActive(true);
-
-            if (botonContinuar != null)
-                botonContinuar.gameObject.SetActive(false);
-        }
-        else
-        {
-            if (contenedorOpciones != null)
-                contenedorOpciones.SetActive(false);
-
-            if (botonContinuar != null)
-                botonContinuar.gameObject.SetActive(true);
-        }
+        return false;
     }
 
     // =====================================
@@ -351,7 +336,8 @@ public class HUDDialogoNPC : MonoBehaviour
 
     private void SeleccionarOpcion(int indice)
     {
-        if (!conversacionAbierta || escribiendo)
+        if (!conversacionAbierta || escribiendo ||
+            faseActual != FaseDialogo.OpcionesVisibles)
             return;
 
         opcionSeleccionada = ObtenerOpcion(indice);
@@ -393,6 +379,34 @@ public class HUDDialogoNPC : MonoBehaviour
             SaltarEscritura();
             return;
         }
+
+        // Termino el texto inicial del NPC: CONTINUAR
+        // muestra las opciones y el retrato del jugador.
+        if (faseActual == FaseDialogo.EsperandoOpciones)
+        {
+            if (!NodoTieneOpcionesValidas())
+            {
+                CerrarDialogo();
+                return;
+            }
+
+            faseActual = FaseDialogo.OpcionesVisibles;
+            MostrarPersonaje(false);
+            ActualizarOpciones();
+
+            if (botonContinuar != null)
+                botonContinuar.gameObject.SetActive(false);
+
+            if (contenedorOpciones != null)
+                contenedorOpciones.SetActive(true);
+
+            return;
+        }
+
+        // Mientras las opciones estan visibles, solo
+        // una respuesta del jugador permite avanzar.
+        if (faseActual == FaseDialogo.OpcionesVisibles)
+            return;
 
         // El jugador ya eligió.
         // Ahora responde el NPC.

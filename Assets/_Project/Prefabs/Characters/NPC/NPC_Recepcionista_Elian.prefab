@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 33661112958670218, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_margin.z
+      value: -264.82184
+      objectReference: {fileID: 0}
+    - target: {fileID: 269589855606536850, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 301484433891181614, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_Size.x
       value: 2.0783691
@@ -24,6 +32,22 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.27889365
       objectReference: {fileID: 0}
+    - target: {fileID: 1203911337697136157, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 12970bc27b2fe144b833e97d732e080d, type: 2}
+    - target: {fileID: 1478026439726019285, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8209726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478026439726019285, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.430786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568574697636719299, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3305382420677343518, guid: ccc2389d800ff214395fce297239da78, type: 3}
     - target: {fileID: 1625733366847496087, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.498
@@ -32,137 +56,221 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.841
       objectReference: {fileID: 0}
+    - target: {fileID: 2520605207591920419, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6478139
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520605207591920419, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8935487
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520605207591920419, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8935487
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520605207591920419, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000061772
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520605207591920419, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996149396893711596, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996149396893711596, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 68.333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260799921357894493, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -112.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806106249376712674, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_margin.z
+      value: -492.56628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: retratoNPC
+      value: 
+      objectReference: {fileID: -9110517343436220051, guid: ccc2389d800ff214395fce297239da78, type: 3}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodoInicial
+      value: Inicio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nombreJugador
+      value: Elian
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: retratoJugador
+      value: 
+      objectReference: {fileID: 1758560111587672365, guid: aa3f50b6ec69ba74e95b691e7bd6a5a6, type: 3}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[0].id
+      value: Inicio
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].id
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].id
-      value: historia
+      value: Misterio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[3].id
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].texto
-      value: "Bienvenidos. El hotel est\xE1 completo, como siempre."
+      value: Buenas noches. Para llegar a las habitaciones, debe desbloquear la puerta del fondo.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].texto
-      value: "Las llaves de servicio est\xE1n bajo el sello de tres figuras."
+      value: "Debe presionar los cuatro s\xEDmbolos en el orden correcto."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].texto
-      value: Si buscan la 13, no puedo ayudarlos.
+      value: "Este hotel guarda m\xE1s secretos de los que deber\xEDa."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: nodos.Array.data[3].texto
+      value: "La puerta lo espera. Hable con L\xEDa y no se equivoque"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].texto
-      value: "\xBFCompleto? Parece vac\xEDo."
+      value: "\xBFC\xF3mo abro la puerta?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].texto
-      value: "Buscamos la habitaci\xF3n 13"
+      value: "\xBFD\xF3nde est\xE1n las habitaciones?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].texto
-      value: Solo queremos mirar.
+      value: "\xBFQu\xE9 pas\xF3 en este hotel?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].texto
-      value: "\xBFD\xF3nde est\xE1 el caj\xF3n?"
+      value: "\xBFY cu\xE1l es el orden?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].texto
-      value: "\xBFQu\xE9 figuras?"
+      value: "\xBFQu\xE9 pasa si me equivoco?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].texto
-      value: "\xBFPuede abrirlo usted?"
+      value: "\xBFUsted no puede abrirla?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].texto
-      value: "\xBFPor qu\xE9 no?"
+      value: "Mejor d\xEDgame c\xF3mo avanzar."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].texto
-      value: "\xBFQu\xE9 pas\xF3 all\xED?"
+      value: "\xBFQu\xE9 secretos?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].texto
-      value: Entonces nos las arreglamos.
+      value: "\xBFEs peligroso seguir?"
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].respuestaNPC
-      value: "Vac\xEDo para ustedes. Para el hotel, nunca."
+      value: "Con los cuatro s\xEDmbolos del mostrador."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].respuestaNPC
-      value: "La 13\u2026 Nadie la reserva. Nadie la pide."
+      value: Al otro lado de esa puerta.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].respuestaNPC
-      value: Miren con cuidado. El mostrador lo ve todo.
+      value: Hay cosas que es mejor no recordar.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].respuestaNPC
-      value: "Aqu\xED, bajo el mostrador. Tres figuras, en orden."
+      value: "Su hermana L\xEDa puede ver lo que usted no. Preg\xFAntele."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].respuestaNPC
-      value: Eso lo sabe quien mira lo que usted no ve
+      value: El mecanismo se reinicia.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].respuestaNPC
-      value: "Tengo prohibido tocarlo. Ustedes dos s\xED pueden."
+      value: No. Solo ustedes pueden hacerlo.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].respuestaNPC
-      value: "Porque quien pregunta de m\xE1s deja de salir."
+      value: "Active los s\xEDmbolos del mostrador."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].respuestaNPC
-      value: "Algo se cerr\xF3. Desde entonces, el hotel est\xE1 partido."
+      value: "Algunos hu\xE9spedes nunca se marcharon."
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].respuestaNPC
-      value: Hagan eso. Y no corran en los pasillos.
+      value: Solo si escucha que alguien lo llama.
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].siguienteNodo
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].siguienteNodo
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].siguienteNodo
-      value: pista
+      value: Misterio
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].siguienteNodo
-      value: historia
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].siguienteNodo
-      value: historia
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].siguienteNodo
-      value: historia
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].siguienteNodo
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].siguienteNodo
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4524337077287772260, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].siguienteNodo
-      value: pista
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 4650398758997085827, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_Name
@@ -216,12 +324,109 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5192373596362812255, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1546473420452510915, guid: ccc2389d800ff214395fce297239da78, type: 3}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 68.333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360475164180827554, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -34.166668
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 68.333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083105832697837582, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -190.83334
+      objectReference: {fileID: 0}
     - target: {fileID: 6328098782635214272, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -42
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341678229163248510, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_margin.z
+      value: -357.93353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087860153120158620, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.46439233
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087860153120158620, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356325342804573834, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: textoAccion
+      value: HABLAR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356325342804573834, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: puntoIndicador
+      value: 
+      objectReference: {fileID: 665343412892416095}
+    - target: {fileID: 7810142389039520586, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.511887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7810142389039520586, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426887725118005511, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.52771854
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426887725118005511, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110939098074566099, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 971
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+--- !u!4 &665343412892416095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2996149396893711596, guid: af19f74e919ddcf4da3aafffadf1cd90, type: 3}
+  m_PrefabInstance: {fileID: 2355294986116826291}
+  m_PrefabAsset: {fileID: 0}

@@ -12,12 +12,19 @@ public class HUDInteraccion : MonoBehaviour
     [Header("Camara del juego - opcional")]
     [SerializeField] private Camera camaraJuego;
 
+    [Header("Ventanas que ocultan INTERACTUAR")]
+    [SerializeField] private GameObject[] ventanasBloqueantes;
+
     private ZonaInteraccion zonaActual;
     private RectTransform botonRect;
     private RectTransform padreRect;
     private Canvas canvas;
 
     private float posicionZOriginal;
+
+    // =====================================
+    // INICIO
+    // =====================================
 
     private void Awake()
     {
@@ -55,10 +62,57 @@ public class HUDInteraccion : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (zonaActual == null)
+        if (botonInteractuar == null)
             return;
 
+        // Mientras una ventana del puzzle esta abierta,
+        // no permitir mostrar el boton flotante.
+
+        if (HayVentanaBloqueanteAbierta())
+        {
+            if (botonInteractuar.activeSelf)
+                botonInteractuar.SetActive(false);
+
+            return;
+        }
+
+        // No existe ninguna zona de interaccion actual.
+        if (zonaActual == null)
+        {
+            if (botonInteractuar.activeSelf)
+                botonInteractuar.SetActive(false);
+
+            return;
+        }
+
+        // Si el jugador sigue dentro de la zona
+        // y cerro el puzzle, recuperar el boton.
+
+        if (!botonInteractuar.activeSelf)
+            botonInteractuar.SetActive(true);
+
         ActualizarPosicion();
+    }
+
+    // =====================================
+    // DETECTAR VENTANAS ABIERTAS
+    // =====================================
+
+    private bool HayVentanaBloqueanteAbierta()
+    {
+        if (ventanasBloqueantes == null)
+            return false;
+
+        foreach (GameObject ventana in ventanasBloqueantes)
+        {
+            if (ventana != null &&
+                ventana.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     // =====================================
@@ -108,6 +162,14 @@ public class HUDInteraccion : MonoBehaviour
             return;
 
         zonaActual = zona;
+
+        if (HayVentanaBloqueanteAbierta())
+        {
+            if (botonInteractuar != null)
+                botonInteractuar.SetActive(false);
+
+            return;
+        }
 
         if (botonInteractuar != null)
             botonInteractuar.SetActive(true);
@@ -167,11 +229,9 @@ public class HUDInteraccion : MonoBehaviour
         if (!convertido)
             return;
 
-        // IMPORTANTE:
-        // localPosition toma como referencia
-        // el pivot del objeto padre.
-        //
-        // No depende de los anchors del boton.
+        // Conservamos localPosition para respetar
+        // el PuntoIndicador y la configuracion
+        // actual del RectTransform del boton.
 
         botonRect.localPosition = new Vector3(
             posicionLocal.x,
@@ -220,10 +280,22 @@ public class HUDInteraccion : MonoBehaviour
 
     public void Interactuar()
     {
-        if (zonaActual == null)
+        if (zonaActual == null ||
+            HayVentanaBloqueanteAbierta())
+        {
             return;
+        }
 
         zonaActual.Interactuar();
+
+        // Comprobar si esta interaccion abrio
+        // alguna ventana del rompecabezas.
+
+        if (HayVentanaBloqueanteAbierta() &&
+            botonInteractuar != null)
+        {
+            botonInteractuar.SetActive(false);
+        }
     }
 
     // =====================================
@@ -232,8 +304,11 @@ public class HUDInteraccion : MonoBehaviour
 
     public void ComenzarMantener()
     {
-        if (zonaActual == null)
+        if (zonaActual == null ||
+            HayVentanaBloqueanteAbierta())
+        {
             return;
+        }
 
         zonaActual.ComenzarMantener();
     }
@@ -245,6 +320,10 @@ public class HUDInteraccion : MonoBehaviour
 
         zonaActual.TerminarMantener();
     }
+
+    // =====================================
+    // LIMPIEZA
+    // =====================================
 
     private void OnDestroy()
     {

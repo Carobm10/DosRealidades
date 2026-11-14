@@ -459,7 +459,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2843442492740215689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1758443307201942626}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1720522851525637518
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,10 +798,10 @@ RectTransform:
   - {fileID: 7087860153120158620}
   m_Father: {fileID: 1793432142750213038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -34.166668}
-  m_SizeDelta: {x: 1100, y: 68.333336}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3894012483891102144
 CanvasRenderer:
@@ -1141,6 +1153,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2996149396893711596}
   - {fileID: 1625733366847496087}
   - {fileID: 3626568723336980859}
   m_Father: {fileID: 0}
@@ -1179,7 +1192,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.05304706, y: 0.8528323}
+  m_Offset: {x: -440.36047, y: -493.52478}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1189,7 +1202,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.0038123, y: 2.8525643}
+  m_Size: {x: 2.1967773, y: 3.1877136}
   m_EdgeRadius: 0
 --- !u!114 &7356325342804573834
 MonoBehaviour:
@@ -1204,10 +1217,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  notaGuia: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 4524337077287772260}
-  brilloRecepcionista: {fileID: 0}
   visualNPC: {fileID: 212104386948200980}
+  puertaPuzzle: {fileID: 0}
+  regresoPasillo: {fileID: 0}
+  objetoBrillo: {fileID: 0}
+  spriteBrillo: {fileID: 0}
+  parpadeoAutomatico: 0
+  tiempoNormal: 0.7
+  tiempoBrillo: 0.7
+  esBotonFinalP3: 0
+  botonEsParaLia: 0
+  controlFinal: {fileID: 0}
 --- !u!114 &212104386948200980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,195 +1260,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogo
   nombreNPC: Recepcionista
-  retratoNPC: {fileID: 3305382420677343518, guid: ccc2389d800ff214395fce297239da78, type: 3}
-  nombreJugador: Elian
-  retratoJugador: {fileID: 4484831618766342048, guid: 0dade3182d9fe894588b440e90eae9ec, type: 3}
+  retratoNPC: {fileID: 538288469, guid: 0aee5be831f6eb34e8420667d355e260, type: 3}
+  nombreJugador: "L\xEDa"
+  retratoJugador: {fileID: 512324234644134872, guid: a72d30ce06af9d9469fdbd89ce150d42, type: 3}
   nodoInicial: inicio
   nodos:
   - id: inicio
     hablante: 0
-    texto: "\xA1Buenos d\xEDas! Bienvenido al hotel. \xBFEn qu\xE9 puedo ayudarte?"
+    texto: "Bienvenidos\u2026 bienvenidos\u2026 bienvenidos\u2026"
     opciones:
-    - texto: "Quisiera saber d\xF3nde est\xE1n las habitaciones."
-      siguienteNodo: habitaciones
-    - texto: "\xBFQu\xE9 servicios ofrece el hotel?"
-      siguienteNodo: servicios
-    - texto: Tengo una pregunta sobre la puerta del pasillo.
-      siguienteNodo: puerta
-  - id: habitaciones
-    hablante: 0
-    texto: "\xA1Por supuesto! Las habitaciones se encuentran al final del pasillo principal. \xBFNecesitas alguna indicaci\xF3n adicional?"
-    opciones:
-    - texto: "\xBFPuedo pasar directamente?"
-      siguienteNodo: acceso
-    - texto: "\xBFQu\xE9 tipo de habitaciones tienen?"
-      siguienteNodo: tipos
-    - texto: "\xBFC\xF3mo encuentro el pasillo?"
-      siguienteNodo: ubicacion
-  - id: servicios
-    hablante: 0
-    texto: "Contamos con habitaciones, \xE1reas de descanso y espacios comunes para nuestros hu\xE9spedes. \xBFTe gustar\xEDa conocer alguno en particular?"
-    opciones:
-    - texto: "\xBFD\xF3nde queda el \xE1rea de descanso?"
-      siguienteNodo: descanso
-    - texto: "\xBFPuedo recorrer las instalaciones?"
-      siguienteNodo: visitar
-    - texto: "\xBFTienen horarios de atenci\xF3n?"
-      siguienteNodo: horarios
-  - id: puerta
-    hablante: 0
-    texto: "\xA1Claro! Esa puerta conduce al siguiente sector del hotel. \xBFTienes alg\xFAn inconveniente para pasar?"
-    opciones:
-    - texto: "Intent\xE9 abrirla, pero est\xE1 cerrada."
-      siguienteNodo: acceso
-    - texto: "\xBFHay alguna otra entrada?"
-      siguienteNodo: otra
-    - texto: "\xBFQui\xE9n puede ayudarme a pasar?"
-      siguienteNodo: ayuda
-  - id: acceso
-    hablante: 0
-    texto: "Para continuar por el pasillo, primero debes completar la verificaci\xF3n del panel que est\xE1 junto al mostrador. Es un procedimiento sencillo."
-    opciones:
-    - texto: "\xBFQu\xE9 debo hacer en ese panel?"
-      siguienteNodo: panel
-    - texto: "\xBFNecesito alg\xFAn documento?"
-      siguienteNodo: documento
-    - texto: "\xBFD\xF3nde est\xE1 exactamente?"
-      siguienteNodo: ubicacion
-  - id: tipos
-    hablante: 0
-    texto: "Tenemos diferentes tipos de habitaciones, dependiendo de las necesidades de cada hu\xE9sped. \xBFBuscas algo en particular?"
-    opciones:
-    - texto: "\xBFPuedo conocer las instalaciones?"
-      siguienteNodo: visitar
-    - texto: "\xBFC\xF3mo llego a las habitaciones?"
-      siguienteNodo: acceso
-    - texto: "Solo ten\xEDa curiosidad. \xA1Gracias!"
-      siguienteNodo: fin
-  - id: ubicacion
-    hablante: 0
-    texto: "El panel est\xE1 junto al mostrador de recepci\xF3n. Lo reconocer\xE1s porque tiene varias figuras. Desde all\xED podr\xE1s habilitar el acceso."
-    opciones:
-    - texto: "\xBFPara qu\xE9 sirven esas figuras?"
-      siguienteNodo: panel
-    - texto: "\xBFDespu\xE9s podr\xE9 continuar por el pasillo?"
-      siguienteNodo: continuar
-    - texto: Perfecto, muchas gracias.
-      siguienteNodo: fin
-  - id: descanso
-    hablante: 0
-    texto: "Tenemos zonas de descanso disponibles para nuestros hu\xE9spedes. Puedes consultar su ubicaci\xF3n desde recepci\xF3n. \xBFTe gustar\xEDa conocerlas?"
-    opciones:
-    - texto: "\xBFPuedo visitarlas ahora?"
-      siguienteNodo: visitar
-    - texto: "\xBFQu\xE9 otros servicios tiene el hotel?"
-      siguienteNodo: servicios
-    - texto: "Gracias por la informaci\xF3n."
-      siguienteNodo: fin
-  - id: visitar
-    hablante: 0
-    texto: "\xA1Por supuesto! Puedes recorrer las zonas abiertas al p\xFAblico. Algunas \xE1reas requieren completar primero la verificaci\xF3n de acceso. \xBFNecesitas alguna indicaci\xF3n?"
-    opciones:
-    - texto: "\xBFC\xF3mo puedo habilitar el acceso?"
-      siguienteNodo: acceso
-    - texto: "\xBFD\xF3nde encuentro las indicaciones?"
-      siguienteNodo: ubicacion
-    - texto: "Est\xE1 bien, muchas gracias."
-      siguienteNodo: fin
-  - id: horarios
-    hablante: 0
-    texto: "Nuestra recepci\xF3n est\xE1 disponible para atender a los hu\xE9spedes y los horarios de los dem\xE1s servicios se pueden consultar aqu\xED. \xBFNecesitas informaci\xF3n sobre alguno en particular?"
-    opciones:
-    - texto: "\xBFD\xF3nde puedo consultar esos horarios?"
-      siguienteNodo: ubicacion
-    - texto: "\xBFQu\xE9 servicios tiene el hotel?"
-      siguienteNodo: servicios
-    - texto: No, muchas gracias por tu ayuda.
-      siguienteNodo: fin
-  - id: otra
-    hablante: 0
-    texto: "Para llegar al siguiente sector del hotel debes utilizar el acceso principal que est\xE1 al otro lado de recepci\xF3n. Es el recorrido indicado para todos los hu\xE9spedes."
-    opciones:
-    - texto: "\xBFC\xF3mo puedo habilitar ese acceso?"
-      siguienteNodo: acceso
-    - texto: "\xBFD\xF3nde queda exactamente?"
-      siguienteNodo: ubicacion
-    - texto: Entendido, muchas gracias.
-      siguienteNodo: fin
-  - id: ayuda
-    hablante: 0
-    texto: "\xA1Claro! Con mucho gusto puedo orientarte. Si necesitas continuar hacia las habitaciones, puedo explicarte c\xF3mo funciona el acceso. \xBFQu\xE9 te gustar\xEDa saber?"
-    opciones:
-    - texto: "S\xED, \xBFc\xF3mo puedo habilitar el acceso?"
-      siguienteNodo: acceso
-    - texto: "\xBFD\xF3nde encuentro el panel?"
-      siguienteNodo: ubicacion
-    - texto: "No te preocupes, creo que puedo hacerlo. \xA1Gracias!"
-      siguienteNodo: fin
-  - id: panel
-    hablante: 0
-    texto: "Es un panel de verificaci\xF3n de acceso. Encontrar\xE1s varias figuras y deber\xE1s seleccionar la correcta para continuar. \xBFTienes alguna duda sobre c\xF3mo utilizarlo?"
-    opciones:
-    - texto: "\xBFC\xF3mo s\xE9 cu\xE1l figura debo seleccionar?"
-      siguienteNodo: seleccion
-    - texto: "\xBFQu\xE9 pasa si elijo una figura incorrecta?"
-      siguienteNodo: error
-    - texto: "Creo que ya entend\xED. \xA1Gracias!"
-      siguienteNodo: fin
-  - id: documento
-    hablante: 0
-    texto: "No necesitas presentar ning\xFAn documento adicional. Solo debes completar la verificaci\xF3n del panel que est\xE1 junto al mostrador para poder continuar."
-    opciones:
-    - texto: "\xBFC\xF3mo funciona esa verificaci\xF3n?"
-      siguienteNodo: panel
-    - texto: "\xBFD\xF3nde puedo encontrar el panel?"
-      siguienteNodo: ubicacion
-    - texto: Perfecto, muchas gracias por aclararlo.
-      siguienteNodo: fin
-  - id: continuar
-    hablante: 0
-    texto: "\xA1As\xED es! Una vez completes la verificaci\xF3n del panel, podr\xE1s continuar por el pasillo principal hacia las habitaciones. \xBFHay algo m\xE1s en lo que pueda ayudarte?"
-    opciones:
-    - texto: "\xBFMe recuerdas c\xF3mo funciona la verificaci\xF3n?"
-      siguienteNodo: panel
-    - texto: "\xBFQu\xE9 tipo de habitaciones tienen?"
-      siguienteNodo: tipos
-    - texto: No, muchas gracias. Voy a continuar.
-      siguienteNodo: fin
-  - id: seleccion
-    hablante: 0
-    texto: "Debes observar las figuras del panel y elegir la que consideres correcta. T\xF3mate tu tiempo para revisar las indicaciones antes de decidir."
-    opciones:
-    - texto: "\xBFHay alguna pista que pueda ayudarme?"
+    - texto: "\xBFQui\xE9n eres?"
+      respuestaNPC: "La que espera\u2026 la que repite\u2026"
       siguienteNodo: pista
-    - texto: "\xBFQu\xE9 pasa si selecciono una figura incorrecta?"
-      siguienteNodo: error
-    - texto: Entendido, voy a intentarlo.
-      siguienteNodo: fin
-  - id: error
-    hablante: 0
-    texto: "No te preocupes. Si seleccionas una figura incorrecta, puedes revisar nuevamente las indicaciones e intentarlo otra vez. No hay ning\xFAn problema."
-    opciones:
-    - texto: "\xBFMe puedes dar alguna recomendaci\xF3n?"
+    - texto: "\xBFPuedes o\xEDrnos?"
+      respuestaNPC: "Oigo a uno. Al otro\u2026 lo recuerdo."
       siguienteNodo: pista
-    - texto: "\xBFC\xF3mo vuelvo a intentarlo?"
-      siguienteNodo: panel
-    - texto: Entendido, muchas gracias.
-      siguienteNodo: fin
+    - texto: "Tranquila, no te haremos da\xF1o."
+      respuestaNPC: "Eso dec\xEDan todos\u2026 eso dec\xEDan."
+      siguienteNodo: pista
   - id: pista
     hablante: 0
-    texto: "Mi recomendaci\xF3n es que observes con atenci\xF3n las figuras antes de elegir. No tienes que apresurarte; puedes tomarte el tiempo que necesites."
+    texto: "Tres figuras\u2026 siempre en el mismo orden."
     opciones:
-    - texto: "\xBFD\xF3nde puedo encontrar el panel?"
-      siguienteNodo: ubicacion
-    - texto: "\xBFPuedo volver a preguntarte si necesito ayuda?"
-      siguienteNodo: ayuda
-    - texto: Gracias, voy a intentarlo.
-      siguienteNodo: fin
-  - id: fin
+    - texto: "Mu\xE9stramelas otra vez."
+      respuestaNPC: "Mira sobre m\xED. Se repiten cada cinco latidos."
+      siguienteNodo: historia
+    - texto: "\xBFPara qu\xE9 sirven?"
+      respuestaNPC: "Abren lo que \xE9l guarda bajo el mostrador."
+      siguienteNodo: historia
+    - texto: "\xBFLo digo yo o lo dice \xE9l?"
+      respuestaNPC: "T\xFA lo ves. \xC9l lo toca."
+      siguienteNodo: historia
+  - id: historia
     hablante: 0
-    texto: "\xA1Con mucho gusto! Que disfrutes tu estancia. Si necesitas algo m\xE1s, aqu\xED estar\xE9 para ayudarte."
-    opciones: []
+    texto: "La trece\u2026 aqu\xED no se nombra."
+    opciones:
+    - texto: "\xBFPor qu\xE9?"
+      respuestaNPC: Porque escucha.
+      siguienteNodo: pista
+    - texto: "\xBFQui\xE9n escucha?"
+      respuestaNPC: El que cuida. El que no duerme.
+      siguienteNodo: pista
+    - texto: "Entonces hablar\xE9 bajo."
+      respuestaNPC: "Bajo o alto\u2026 \xE9l oye igual."
+      siguienteNodo: pista
 --- !u!1 &4754777854935369397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1331,7 @@ Transform:
   m_GameObject: {fileID: 4754777854935369397}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.059, y: 1.804, z: 0}
+  m_LocalPosition: {x: -440.526, y: -492.478, z: 0}
   m_LocalScale: {x: 0.15839365, y: 0.15839365, z: 0.15839365}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1505,7 +1386,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 2
-  m_Sprite: {fileID: -9110517343436220051, guid: ccc2389d800ff214395fce297239da78, type: 3}
+  m_Sprite: {fileID: 538288469, guid: 0aee5be831f6eb34e8420667d355e260, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1526,7 +1407,7 @@ Animator:
   m_GameObject: {fileID: 4754777854935369397}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 12970bc27b2fe144b833e97d732e080d, type: 2}
+  m_Controller: {fileID: 22100000, guid: 725432fb82b77c4448404dffb4d53d83, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1573,10 +1454,10 @@ RectTransform:
   - {fileID: 7810142389039520586}
   m_Father: {fileID: 1793432142750213038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -112.5}
-  m_SizeDelta: {x: 1100, y: 68.333336}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &91904227316677616
 CanvasRenderer:
@@ -1717,10 +1598,10 @@ RectTransform:
   - {fileID: 8426887725118005511}
   m_Father: {fileID: 1793432142750213038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -190.83334}
-  m_SizeDelta: {x: 1100, y: 68.333336}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8362695808415231205
 CanvasRenderer:
@@ -2115,6 +1996,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6995477793644553559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2996149396893711596}
+  m_Layer: 0
+  m_Name: PuntoIndicador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2996149396893711596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995477793644553559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4836259370174128035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7044494640970319258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,7 +2062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -270}
+  m_AnchoredPosition: {x: -49, y: -270}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5990910545005765517

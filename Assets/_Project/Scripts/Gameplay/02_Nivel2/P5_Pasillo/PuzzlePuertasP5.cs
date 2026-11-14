@@ -9,7 +9,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     [Header("Secuencia correcta")]
     [SerializeField] private int[] secuenciaCorrecta =
     {
-        204, 201, 203
+        204, 202, 201
     };
 
     [Header("Errores")]
@@ -136,7 +136,8 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
         if (numeroPuerta != puertaEsperada)
         {
-            ProcesarError(numeroPuerta);
+            // Ruta guiada: ninguna penalizacion ni aparicion de La Vigilia.
+            Debug.Log("P5: Esta puerta no corresponde al siguiente paso.");
             return;
         }
 
@@ -193,9 +194,14 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         if (pasoActual.Value >= secuenciaCorrecta.Length)
             puzzleCompletado.Value = true;
 
-        StartCoroutine(
-            CargarHabitacion(puerta.EscenaDestino)
+        // Esperar a que concluyan tanto el zoom como la animacion de apertura.
+        float esperaSegura = Mathf.Max(
+            tiempoAntesDeCambiarEscena,
+            duracionEnfoque + 0.8f,
+            puerta.DuracionApertura + 0.5f
         );
+
+        StartCoroutine(CargarHabitacion(puerta.EscenaDestino, esperaSegura));
     }
 
     private PuertaPuzzleP5 BuscarPuerta(int numero)
@@ -240,7 +246,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             if (camara.IsOwner)
             {
                 camara.EnfocarConZoom(
-                    puerta.PuntoEnfoque.position,
+                    puerta.PuntoEnfoqueLocal.position,
                     duracion
                 );
             }
@@ -257,11 +263,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     // CAMBIO DE ESCENA SINCRONIZADO
     // =====================================
 
-    private IEnumerator CargarHabitacion(string nombreEscena)
+    private IEnumerator CargarHabitacion(string nombreEscena, float esperaSegura)
     {
-        yield return new WaitForSeconds(
-            tiempoAntesDeCambiarEscena
-        );
+        yield return new WaitForSeconds(esperaSegura);
 
         if (!IsServer)
             yield break;
@@ -358,11 +362,11 @@ public class PuzzlePuertasP5 : NetworkBehaviour
                 break;
 
             case 1:
-                controlHuellas.DetenerRecorrido();
+                controlHuellas.ActivarCamino(202);
                 break;
 
             case 2:
-                controlHuellas.ActivarCamino(203);
+                controlHuellas.ActivarCamino(201);
                 break;
 
             default:
