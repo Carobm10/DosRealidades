@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class ControlHuellasP5 : MonoBehaviour
 {
@@ -127,6 +126,19 @@ public class ControlHuellasP5 : MonoBehaviour
         OcultarTodas();
         ApagarBrillosPuertas();
 
+        // El brillo se activa independientemente
+        // de que la puerta tenga recorrido de huellas.
+        ActivarBrilloPuerta(numeroPuerta);
+
+        // La habitación 201 no tiene huellas.
+        if (numeroPuerta == 201)
+        {
+            Debug.Log(
+                "P5: Puerta 201 iluminada. Sin recorrido de huellas."
+            );
+            return;
+        }
+
         SpriteRenderer[] camino = ObtenerCamino(numeroPuerta);
 
         if (camino == null || camino.Length == 0)
@@ -148,20 +160,19 @@ public class ControlHuellasP5 : MonoBehaviour
             huella.enabled = true;
         }
 
-        ActivarBrilloPuerta(numeroPuerta);
-
         rutinaBrillo = StartCoroutine(RecorrerBrillo(camino));
 
-        Debug.Log("P5: Huellas y brillo activados: " + numeroPuerta);
+        Debug.Log(
+            "P5: Huellas y brillo activados: " + numeroPuerta
+        );
     }
 
     private SpriteRenderer[] ObtenerCamino(int numeroPuerta)
     {
         switch (numeroPuerta)
         {
-            case 201: return huellas201;
+            case 201: return null;
             case 202: return huellas202;
-            case 203: return huellas203;
             case 204: return huellas204;
             default: return null;
         }

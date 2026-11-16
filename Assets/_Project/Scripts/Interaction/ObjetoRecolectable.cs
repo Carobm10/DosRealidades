@@ -26,6 +26,7 @@ public class ObjetoRecolectable : NetworkBehaviour
     private SpriteRenderer[] sprites;
     private Collider2D[] colisionadores;
     private ZonaInteraccion zonaInteraccion;
+    private bool visiblePorRealidad = true;
 
     private NetworkVariable<bool> recolectado =
         new NetworkVariable<bool>(
@@ -34,14 +35,7 @@ public class ObjetoRecolectable : NetworkBehaviour
             NetworkVariableWritePermission.Server
         );
 
-    private NetworkVariable<ulong> recolectadoPor =
-        new NetworkVariable<ulong>(
-            ulong.MaxValue,
-            NetworkVariableReadPermission.Everyone,
-            NetworkVariableWritePermission.Server
-        );
-
-    // Evento para mostrar la tarjeta de objeto recolectado.
+    // Evento compartido para mostrar la tarjeta local.
     public static event Action<ObjetoInventario>
         RecoleccionConfirmadaLocal;
 
@@ -62,7 +56,6 @@ public class ObjetoRecolectable : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         recolectado.OnValueChanged += AlCambiarRecolectado;
-
         AplicarEstado();
     }
 
@@ -72,10 +65,31 @@ public class ObjetoRecolectable : NetworkBehaviour
     }
 
     // =====================================
+    // EVENTO COMPARTIDO DE TARJETAS
+    // =====================================
+
+    public static void NotificarRecoleccionLocal(
+        ObjetoInventario objeto)
+    {
+        if (objeto == null)
+        {
+            Debug.LogError(
+                "[RECOLECTABLE] No se puede mostrar una tarjeta sin objeto."
+            );
+            return;
+        }
+
+        Debug.Log(
+            "[RECOLECTABLE] Mostrando tarjeta: " + objeto.Nombre
+        );
+
+        RecoleccionConfirmadaLocal?.Invoke(objeto);
+    }
+
+    // =====================================
     // SOLICITAR RECOLECCION
     // =====================================
 
-    
     public void SolicitarRecoleccion()
     {
         Debug.Log(
@@ -88,7 +102,7 @@ public class ObjetoRecolectable : NetworkBehaviour
         if (!IsSpawned)
         {
             Debug.LogError(
-                "[RECOLECTABLE] ERROR: El NetworkObject no está Spawned."
+                "[RECOLECTABLE] El NetworkObject no está Spawned."
             );
             return;
         }
@@ -117,13 +131,8 @@ public class ObjetoRecolectable : NetworkBehaviour
             return;
         }
 
-        Debug.Log(
-            "[RECOLECTABLE] Enviando solicitud al servidor..."
-        );
-
         SolicitarRecoleccionRpc();
     }
-
 
     // =====================================
     // VALIDACION EN SERVIDOR
@@ -150,7 +159,6 @@ public class ObjetoRecolectable : NetworkBehaviour
         if (jugador == null || !jugador.IsSpawned)
             return;
 
-        // Validar distancia.
         float distancia = Vector2.Distance(
             jugador.transform.position,
             transform.position
@@ -159,12 +167,11 @@ public class ObjetoRecolectable : NetworkBehaviour
         if (distancia > distanciaMaxima)
         {
             Debug.LogWarning(
-                "RECOLECTABLE: Jugador demasiado lejos."
+                "[RECOLECTABLE] Jugador demasiado lejos."
             );
             return;
         }
 
-        // Identificar personaje.
         NetworkPlayerSetup setup =
             jugador.GetComponent<NetworkPlayerSetup>();
 
@@ -181,41 +188,61 @@ public class ObjetoRecolectable : NetworkBehaviour
             PersonajePermitido.SoloLia && esElian)
             return;
 
-        // Obtener inventario del jugador correcto.
         InventarioJugador inventario =
             jugador.GetComponent<InventarioJugador>();
 
         if (inventario == null)
         {
             Debug.LogError(
-                "RECOLECTABLE: Jugador sin inventario."
+                "[RECOLECTABLE] Jugador sin inventario."
             );
             return;
         }
 
-        // Agregar objeto al inventario.
         bool agregado =
             inventario.AgregarObjetoDesdeServidor(
                 objetoInventario.Id
             );
 
         if (!agregado)
+        {
+            Debug.LogWarning(
+                "[RECOLECTABLE] No se pudo agregar el objeto: " +
+                objetoInventario.Id
+            );
             return;
+        }
 
-        // Registrar quién lo recogió.
-        recolectadoPor.Value = clienteId;
-
-        // Avisar a todos los clientes.
+        // El servidor registra la recolección.
         recolectado.Value = true;
 
         AplicarEstado();
 
+        // Notificar únicamente al jugador que recogió el objeto.
+        NotificarTarjetaRpc(
+            RpcTarget.Single(
+                clienteId,
+                RpcTargetUse.Temp
+            )
+        );
+
         Debug.Log(
-            "OBJETO RECOLECTADO: " +
+            "[RECOLECTABLE] OBJETO RECOLECTADO: " +
             objetoInventario.Nombre +
             " | Personaje: " +
             (esElian ? "Elian" : "Lia")
         );
+    }
+
+    // =====================================
+    // NOTIFICAR TARJETA AL JUGADOR
+    // =====================================
+
+    [Rpc(SendTo.SpecifiedInParams)]
+    private void NotificarTarjetaRpc(
+        RpcParams rpcParams = default)
+    {
+        NotificarRecoleccionLocal(objetoInventario);
     }
 
     // =====================================
@@ -230,18 +257,6 @@ public class ObjetoRecolectable : NetworkBehaviour
             return;
 
         AplicarEstado();
-
-        // Mostrar recompensa únicamente
-        // al jugador que realizó la recolección.
-        if (NetworkManager.Singleton != null &&
-            NetworkManager.Singleton.IsClient &&
-            NetworkManager.Singleton.LocalClientId ==
-            recolectadoPor.Value)
-        {
-            RecoleccionConfirmadaLocal?.Invoke(
-                objetoInventario
-            );
-        }
     }
 
     // =====================================
@@ -250,26 +265,32 @@ public class ObjetoRecolectable : NetworkBehaviour
 
     private void AplicarEstado()
     {
-        if (!recolectado.Value)
-            return;
+        bool mostrar =
+            visiblePorRealidad && !recolectado.Value;
 
         foreach (SpriteRenderer sprite in sprites)
         {
             if (sprite != null)
-                sprite.enabled = false;
+                sprite.enabled = mostrar;
         }
 
         foreach (Collider2D colisionador in colisionadores)
         {
             if (colisionador != null)
-                colisionador.enabled = false;
+                colisionador.enabled = mostrar;
         }
 
-        if (HUDInteraccion.Instancia != null)
+        if (!mostrar && HUDInteraccion.Instancia != null)
         {
             HUDInteraccion.Instancia.OcultarBoton(
                 zonaInteraccion
             );
         }
+    }
+
+    public void ConfigurarVisibilidadLocal(bool visible)
+    {
+        visiblePorRealidad = visible;
+        AplicarEstado();
     }
 }

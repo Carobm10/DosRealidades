@@ -15,10 +15,18 @@ public class CamaraJugadorLocal : NetworkBehaviour
     [SerializeField] private float zoomObjetivo = 3f;
     [SerializeField] private float velocidadZoom = 3f;
 
+    [Header("Camara fija en habitaciones")]
+    [SerializeField] private float margenHabitacion = 1f;
+    private Transform puntoCamaraFija;
+
+    private bool camaraFijaActiva;
+    private bool cinematicaActiva;
+
     private BoxCollider2D limitesCamara;
     private bool limitarCamara = false;
 
     private bool enfoqueActivo = false;
+    private bool zoomEnCurso;
     private Vector3 puntoEnfoque;
 
     private float tamañoOriginal;
@@ -97,11 +105,28 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     private void BuscarLimitesCamara()
     {
+        puntoCamaraFija = null;
         limitarCamara = false;
         limitesCamara = null;
+        camaraFijaActiva = false;
 
         if (!IsOwner)
             return;
+
+        if (camaraJugador != null)
+        {
+            camaraJugador.ResetAspect();
+        }
+
+        GameObject puntoFijo =
+            GameObject.Find("PuntoCamaraFija");
+
+        if (puntoFijo != null)
+        {
+            puntoCamaraFija = puntoFijo.transform;
+        }
+
+        DetenerEnfoqueAnterior();
 
         GameObject objetoLimites =
             GameObject.Find("LimitesCamara");
@@ -112,43 +137,74 @@ public class CamaraJugadorLocal : NetworkBehaviour
         limitesCamara =
             objetoLimites.GetComponent<BoxCollider2D>();
 
-        if (limitesCamara != null)
-        {
-            limitarCamara = true;
-        }
+        limitarCamara = limitesCamara != null;
+
+        camaraFijaActiva =
+            GameObject.Find("PuntoCamaraFija") != null &&
+            limitesCamara != null;
     }
 
+    
     private void LateUpdate()
     {
         if (!IsOwner || camaraJugador == null)
             return;
 
-        Vector3 posicionDeseada =
-            enfoqueActivo
-            ? puntoEnfoque
-            : transform.position;
+        // Durante el zoom, la corrutina controla la cámara.
+        if (zoomEnCurso)
+            return;
 
-        Vector3 posicionLimitada =
-            ObtenerPosicionLimitada(posicionDeseada);
-
-        posicionLimitada.z =
-            camaraJugador.transform.position.z;
-
+        // Enfoque temporal, siempre respetando los límites.
         if (enfoqueActivo)
         {
+            Vector3 posicionLimitada =
+                ObtenerPosicionLimitada(puntoEnfoque);
+
+            posicionLimitada.z =
+                camaraJugador.transform.position.z;
+
             camaraJugador.transform.position =
                 Vector3.Lerp(
                     camaraJugador.transform.position,
                     posicionLimitada,
                     velocidadEnfoque * Time.deltaTime
                 );
+
+            return;
         }
-        else
+
+        if (puntoCamaraFija != null && limitesCamara != null)
         {
-            camaraJugador.transform.position =
-                posicionLimitada;
+            Bounds limites = limitesCamara.bounds;
+
+            Vector3 posicion = limites.center;
+            posicion.z = camaraJugador.transform.position.z;
+
+            camaraJugador.transform.position = posicion;
+
+            camaraJugador.orthographic = true;
+            camaraJugador.orthographicSize = limites.size.y / 2f;
+            camaraJugador.aspect = limites.size.x / limites.size.y;
+
+            return;
         }
+
+        if (camaraFijaActiva && limitesCamara != null)
+        {
+            AjustarCamaraHabitacion();
+            return;
+        }
+
+        Vector3 posicionDeseada = transform.position;
+
+        Vector3 posicionFinal =
+            ObtenerPosicionLimitada(posicionDeseada);
+
+        posicionFinal.z = camaraJugador.transform.position.z;
+
+        camaraJugador.transform.position = posicionFinal;
     }
+
 
     private Vector3 ObtenerPosicionLimitada(
         Vector3 posicionDeseada)
@@ -201,7 +257,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
         );
     }
 
+    // =====================================
     // ENFOQUE TEMPORAL SIN ZOOM
+    // =====================================
+
     public void EnfocarTemporalmente(
         Vector3 posicion,
         float duracion = 2f)
@@ -230,7 +289,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
         rutinaEnfoque = null;
     }
 
+    // =====================================
     // ENFOQUE CINEMATOGRAFICO CON ZOOM
+    // =====================================
+
     public void EnfocarConZoom(
         Vector3 posicion,
         float duracion)
@@ -246,62 +308,116 @@ public class CamaraJugadorLocal : NetworkBehaviour
             );
     }
 
+    
     private IEnumerator RutinaZoom(
         Vector3 posicion,
         float duracion)
     {
+        Vector3 posicionInicial =
+            camaraJugador.transform.position;
+
         float tamañoInicial =
             camaraJugador.orthographicSize;
 
-        puntoEnfoque = posicion;
-        enfoqueActivo = true;
+        Vector3 posicionZoom = new Vector3(
+            posicion.x,
+            posicion.y,
+            posicionInicial.z
+        );
 
-        // Acercamiento
+        enfoqueActivo = true;
+        zoomEnCurso = true;
+
+        // ACERCAMIENTO
         float tiempo = 0f;
 
         while (tiempo < 1f)
         {
             tiempo += Time.deltaTime * velocidadZoom;
 
+            float t = Mathf.Clamp01(tiempo);
+
             camaraJugador.orthographicSize =
                 Mathf.Lerp(
                     tamañoInicial,
                     zoomObjetivo,
-                    Mathf.Clamp01(tiempo)
+                    t
                 );
+
+            Vector3 posicionDeseada =
+                Vector3.Lerp(
+                    posicionInicial,
+                    posicionZoom,
+                    t
+                );
+
+            Vector3 posicionLimitada =
+                ObtenerPosicionLimitada(posicionDeseada);
+
+            posicionLimitada.z = posicionInicial.z;
+
+            camaraJugador.transform.position =
+                posicionLimitada;
 
             yield return null;
         }
 
-        camaraJugador.orthographicSize =
-            zoomObjetivo;
+        camaraJugador.orthographicSize = zoomObjetivo;
 
-        // Mantener el enfoque
+        camaraJugador.transform.position =
+            ObtenerPosicionLimitada(posicionZoom);
+
+        // MANTENER ENFOQUE
         yield return new WaitForSeconds(duracion);
 
-        // Regresar el zoom
+        // REGRESAR A LA POSICIÓN ORIGINAL
         tiempo = 0f;
 
         while (tiempo < 1f)
         {
             tiempo += Time.deltaTime * velocidadZoom;
 
+            float t = Mathf.Clamp01(tiempo);
+
             camaraJugador.orthographicSize =
                 Mathf.Lerp(
                     zoomObjetivo,
-                    tamañoOriginal,
-                    Mathf.Clamp01(tiempo)
+                    tamañoInicial,
+                    t
                 );
+
+            Vector3 posicionDeseada =
+                Vector3.Lerp(
+                    posicionZoom,
+                    posicionInicial,
+                    t
+                );
+
+            Vector3 posicionLimitada =
+                ObtenerPosicionLimitada(posicionDeseada);
+
+            posicionLimitada.z = posicionInicial.z;
+
+            camaraJugador.transform.position =
+                posicionLimitada;
 
             yield return null;
         }
 
-        camaraJugador.orthographicSize =
-            tamañoOriginal;
+        camaraJugador.orthographicSize = tamañoInicial;
+
+        camaraJugador.transform.position =
+            ObtenerPosicionLimitada(posicionInicial);
 
         enfoqueActivo = false;
+        zoomEnCurso = false;
         rutinaEnfoque = null;
     }
+
+
+    // =====================================
+    // DETENER ENFOQUE ANTERIOR
+    // =====================================
 
     private void DetenerEnfoqueAnterior()
     {
@@ -311,12 +427,58 @@ public class CamaraJugadorLocal : NetworkBehaviour
             rutinaEnfoque = null;
         }
 
-        if (camaraJugador != null)
-        {
-            camaraJugador.orthographicSize =
-                tamañoOriginal;
-        }
-
+        cinematicaActiva = false;
         enfoqueActivo = false;
+        zoomEnCurso = false;
+
+        if (camaraJugador == null)
+            return;
+
+        if (puntoCamaraFija != null &&
+            limitesCamara != null)
+        {
+            Bounds limites = limitesCamara.bounds;
+
+            Vector3 posicion = limites.center;
+            posicion.z = camaraJugador.transform.position.z;
+
+            camaraJugador.transform.position = posicion;
+
+            camaraJugador.orthographicSize =
+                limites.size.y / 2f;
+
+            camaraJugador.aspect =
+                limites.size.x / limites.size.y;
+        }
+    }
+
+    // =====================================
+    // AJUSTAR CAMARA DE HABITACION
+    // =====================================
+
+    private void AjustarCamaraHabitacion()
+    {
+        Bounds limites = limitesCamara.bounds;
+
+        float alto = limites.size.y;
+        float ancho = limites.size.x;
+
+        float tamañoVertical = alto / 2f;
+
+        float tamañoHorizontal =
+            ancho / (2f * camaraJugador.aspect);
+
+        camaraJugador.orthographicSize =
+            Mathf.Max(
+                tamañoVertical,
+                tamañoHorizontal
+            ) * Mathf.Max(1f, margenHabitacion);
+
+        Vector3 posicion = limites.center;
+
+        posicion.z =
+            camaraJugador.transform.position.z;
+
+        camaraJugador.transform.position = posicion;
     }
 }

@@ -148,6 +148,39 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         rutinaPrepararSalida = StartCoroutine(PrepararSalida());
     }
 
+    
+
+    // =====================================
+    // HABILITAR SALIDA SIN REPETIR CINEMATICA
+    // =====================================
+
+
+    public void HabilitarSalidaSinCinematica()
+    {
+        if (!IsSpawned ||
+            !IsServer ||
+            puzzleResuelto.Value ||
+            cambiandoEscena)
+            return;
+
+        puzzleResuelto.Value = true;
+        salidaHabilitada.Value = true;
+
+        ActualizarVisuales(true);
+
+        Debug.Log(
+            "SALIDA COOPERATIVA HABILITADA SIN REPETIR CINEMATICA."
+        );
+    }
+
+
+
+    // =====================================
+    // HABILITAR SALIDA SIN REPETIR CINEMATICA
+    // =====================================
+
+
+
     private IEnumerator PrepararSalida()
     {
         // Los jugadores ven primero el enfoque, despues la apertura,
@@ -222,30 +255,29 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         }
     }
 
-    private IEnumerator AbrirPuertaLocal(Animator animatorPuerta)
+    
+    private IEnumerator AbrirPuertaLocal(
+        Animator animatorPuerta)
     {
-        yield return new WaitForSecondsRealtime(Mathf.Max(0f, esperaAntesDeAbrir));
+        yield return new WaitForSecondsRealtime(
+            Mathf.Max(0f, esperaAntesDeAbrir)
+        );
 
-        if (animatorPuerta == null)
+        if (animatorPuerta == null ||
+            !animatorPuerta.gameObject.activeInHierarchy)
         {
-            Debug.LogWarning("SALIDA: falta Animator de puerta local.");
-            rutinaPuertaLocal = null;
-            yield break;
-        }
-
-        if (!animatorPuerta.gameObject.activeInHierarchy)
-        {
-            Debug.LogWarning("SALIDA: la puerta local no esta activa.");
-            rutinaPuertaLocal = null;
+            Debug.LogWarning("No se encontró la puerta local.");
             yield break;
         }
 
         animatorPuerta.enabled = true;
+
         animatorPuerta.ResetTrigger(estadoApertura);
         animatorPuerta.SetTrigger(estadoApertura);
-        rutinaPuertaLocal = null;
-        Debug.Log("SALIDA: trigger de apertura activado.");
+
+        Debug.Log("PUERTA 201: Animación de apertura activada.");
     }
+
 
     private void AlCambiarEstadoSalida(bool anterior, bool nuevo)
     {

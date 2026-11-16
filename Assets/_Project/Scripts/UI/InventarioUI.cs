@@ -62,13 +62,10 @@ public class InventarioUI : MonoBehaviour
 
     private void Awake()
     {
-        if (Instancia != null && Instancia != this)
+        if (Instancia == null)
         {
-            Destroy(this);
-            return;
+            Instancia = this;
         }
-
-        Instancia = this;
 
         if (botonAbrirInventario != null)
             botonAbrirInventario.onClick.AddListener(
@@ -186,9 +183,9 @@ public class InventarioUI : MonoBehaviour
             movimientoLocal.BloquearMovimiento(true);
         }
 
-        RefrescarInventario();
-
         panelInventario.SetActive(true);
+
+        RefrescarInventario();
 
         Debug.Log("INVENTARIO ABIERTO");
     }
@@ -442,14 +439,39 @@ public class InventarioUI : MonoBehaviour
 
     private void OnEnable()
     {
+        // Registrar la instancia que está activa.
+        if (Instancia == null ||
+            !Instancia.isActiveAndEnabled)
+        {
+            Instancia = this;
+        }
+
+        // Escuchar las recolecciones locales.
         ObjetoRecolectable.RecoleccionConfirmadaLocal +=
             MostrarTarjetaObjeto;
+
+        Debug.Log(
+            "INVENTARIO UI ACTIVADO: " + gameObject.name
+        );
     }
 
     private void OnDisable()
     {
+        // Dejar de escuchar las recolecciones.
         ObjetoRecolectable.RecoleccionConfirmadaLocal -=
             MostrarTarjetaObjeto;
+
+        // Si esta era la instancia principal,
+        // buscar el otro Canvas que permanece activo.
+        if (Instancia == this)
+        {
+            Instancia =
+                FindFirstObjectByType<InventarioUI>();
+        }
+
+        Debug.Log(
+            "INVENTARIO UI DESACTIVADO: " + gameObject.name
+        );
     }
 
 
@@ -511,7 +533,41 @@ public class InventarioUI : MonoBehaviour
             );
         }
 
+        RefrescarInventario();
+
         Debug.Log("TARJETA CERRADA");
+    }
+
+    public void MostrarTarjetaPorId(string id)
+    {
+        if (inventarioJugador == null)
+        {
+            Debug.LogError(
+                "INVENTARIO UI: Inventario local no conectado."
+            );
+            return;
+        }
+
+        if (!inventarioJugador.TieneObjeto(id))
+        {
+            Debug.LogError(
+                "INVENTARIO UI: No tiene la llave: " + id
+            );
+            return;
+        }
+
+        ObjetoInventario objeto =
+            inventarioJugador.ObtenerObjetoPorId(id);
+
+        if (objeto == null)
+        {
+            Debug.LogError(
+                "INVENTARIO UI: No se encontró la definición: " + id
+            );
+            return;
+        }
+
+        MostrarTarjetaObjeto(objeto);
     }
 
 

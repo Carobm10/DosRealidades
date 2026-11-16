@@ -18,13 +18,16 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/Levels/Nivel2/P5_Pasillo.unity
     guid: 59b44a0e33d5c2e42b7a9a9d8ea80fd9
   - enabled: 1
-    path: Assets/_Project/Scenes/Levels/Nivel2/P5_Pasillo 204.unity
-    guid: 34fd2be67b1e15e469d8636edde760e9
-  - enabled: 1
-    path: Assets/_Project/Scenes/Levels/Nivel2/Puerta 203.unity
-    guid: 5cf8ebf7c2cf2a14995e4da44d719109
-  - enabled: 1
     path: Assets/_Project/Scenes/Levels/Nivel2/Puerta 204.unity
     guid: 6f26a5e17760f764083bec02ab24c815
+  - enabled: 1
+    path: Assets/_Project/Scenes/Levels/Nivel2/Puerta 202.unity
+    guid: efacfadb75ed24d45ae594bd8ef4aac5
+  - enabled: 1
+    path: Assets/_Project/Scenes/Levels/Nivel2/Puerta 201.unity
+    guid: fd425501859711641a4a2120ca89bdca
+  - enabled: 1
+    path: Assets/_Project/Scenes/Levels/Nivel2/Runner_Vigilia.unity
+    guid: b2690c170dca14045988afb7841da567
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}

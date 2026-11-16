@@ -1,0 +1,1640 @@
+fileFormatVersion: 2
+guid: 3aaaea4b0474c8549b4d6ace5bc18882
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 868552235560747766
+    second: Columna Lia_0
+  - first:
+      213: 4871941204535859299
+    second: Columna Lia_1
+  - first:
+      213: -2549567056948538383
+    second: Columna Lia_2
+  - first:
+      213: -229671383811834349
+    second: Columna Lia_3
+  - first:
+      213: 8374236614166759249
+    second: Columna Lia_4
+  - first:
+      213: -509705760834011989
+    second: Columna Lia_5
+  - first:
+      213: -7252632914269290531
+    second: Columna Lia_6
+  - first:
+      213: -4349360982727768110
+    second: Columna Lia_7
+  - first:
+      213: 4346498196369065986
+    second: Columna Lia_8
+  - first:
+      213: 9060899852301582722
+    second: Columna Lia_9
+  - first:
+      213: 3644243397063456792
+    second: Columna Lia_10
+  - first:
+      213: 1592804249729837590
+    second: Columna Lia_11
+  - first:
+      213: 1627850603012800215
+    second: Columna Lia_12
+  - first:
+      213: 1164051186303475025
+    second: Columna Lia_13
+  - first:
+      213: 3955674333971383921
+    second: Columna Lia_14
+  - first:
+      213: -2225626703680860036
+    second: Columna Lia_15
+  - first:
+      213: -866463331059913656
+    second: Columna Lia_16
+  - first:
+      213: 6567598790677940640
+    second: Columna Lia_17
+  - first:
+      213: -6766879240851460142
+    second: Columna Lia_18
+  - first:
+      213: 1661429396119050073
+    second: Columna Lia_19
+  - first:
+      213: 3565607182031911866
+    second: Columna Lia_20
+  - first:
+      213: 1014105826820426694
+    second: Columna Lia_21
+  - first:
+      213: 4941068077432048211
+    second: Columna Lia_22
+  - first:
+      213: 6783421741352152820
+    second: Columna Lia_23
+  - first:
+      213: -1246392394356815312
+    second: Columna Lia_24
+  - first:
+      213: 4574933100340508239
+    second: Columna Lia_25
+  - first:
+      213: 3946956087189599421
+    second: Columna Lia_26
+  - first:
+      213: -5034140164834460953
+    second: Columna Lia_27
+  - first:
+      213: 2349455653969430280
+    second: Columna Lia_28
+  - first:
+      213: -8606583228366676616
+    second: Columna Lia_29
+  - first:
+      213: 5171113963683909743
+    second: Columna Lia_30
+  - first:
+      213: -2527625846836116649
+    second: Columna Lia_31
+  - first:
+      213: -3933418945387603977
+    second: Columna Lia_32
+  - first:
+      213: 6600897136682586884
+    second: Columna Lia_33
+  - first:
+      213: 2200652124377090674
+    second: Columna Lia_34
+  - first:
+      213: -5025706998119544917
+    second: Columna Lia_35
+  - first:
+      213: 9174957670061894034
+    second: Columna Lia_36
+  - first:
+      213: -4652612729309264418
+    second: Columna Lia_37
+  - first:
+      213: -5902276000640886477
+    second: Columna Lia_38
+  - first:
+      213: 20054060914399405
+    second: Columna Lia_39
+  - first:
+      213: -4756380701525798908
+    second: Columna Lia_40
+  - first:
+      213: 3145330006061729119
+    second: Columna Lia_41
+  - first:
+      213: 5377587248765269022
+    second: Columna Lia_42
+  - first:
+      213: -7242576430502423679
+    second: Columna Lia_43
+  - first:
+      213: -7729177050280308806
+    second: Columna Lia_44
+  - first:
+      213: -2354386097991911007
+    second: Columna Lia_45
+  - first:
+      213: -7462118449402158909
+    second: Columna Lia_46
+  - first:
+      213: -7876961753367450583
+    second: Columna Lia_47
+  - first:
+      213: 8988237020738327918
+    second: Columna Lia_48
+  - first:
+      213: 8556677089497255979
+    second: Columna Lia_49
+  - first:
+      213: -7858475829070148648
+    second: Columna Lia_50
+  - first:
+      213: 2020959881297503189
+    second: Columna Lia_51
+  - first:
+      213: 1004750700641063127
+    second: Columna Lia_52
+  - first:
+      213: 4259420405741645365
+    second: Columna Lia_53
+  - first:
+      213: 3581316535040773978
+    second: Columna Lia_54
+  - first:
+      213: 1555128432947502380
+    second: Columna Lia_55
+  - first:
+      213: 938207537489729626
+    second: Columna Lia_56
+  - first:
+      213: 6003284596246842534
+    second: Columna Lia_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Columna Lia_0
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1423
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2487d08a7bd0c00800000000000000
+      internalID: 868552235560747766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1454
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368d2fe76bc9c9340800000000000000
+      internalID: 4871941204535859299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 523
+        height: 1520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f35b87154e1e9cd0800000000000000
+      internalID: -2549567056948538383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1391
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31eb2d0e71b00dcf0800000000000000
+      internalID: -229671383811834349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1325
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157ca7cf4d3473470800000000000000
+      internalID: 8374236614166759249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 678
+        width: 277
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacb481af492de8f0800000000000000
+      internalID: -509705760834011989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_6
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1259
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf3ca26ac8795b90800000000000000
+      internalID: -7252632914269290531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1238
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d74198ea37f3a3c0800000000000000
+      internalID: -4349360982727768110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_8
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1218
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2084473b41dd15c30800000000000000
+      internalID: 4346498196369065986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_9
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1189
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28143d1b868cebd70800000000000000
+      internalID: 9060899852301582722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_10
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1229
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818b705cf04f29230800000000000000
+      internalID: 3644243397063456792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_11
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1155
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a21eda607ca1610800000000000000
+      internalID: 1592804249729837590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_12
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1123
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7debbfbaf79479610800000000000000
+      internalID: 1627850603012800215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_13
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1131
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d9df3f26a872010800000000000000
+      internalID: 1164051186303475025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_14
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1053
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1768e7349d065e630800000000000000
+      internalID: 3955674333971383921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_15
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1023
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c709a7c0e4cfc11e0800000000000000
+      internalID: -2225626703680860036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_16
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 909
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ca54de034b9f3f0800000000000000
+      internalID: -866463331059913656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 943
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9c4a1bd4cc42b50800000000000000
+      internalID: 6567598790677940640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_18
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 943
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df6513de273712a0800000000000000
+      internalID: -6766879240851460142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_19
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 891
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957511fab359e0710800000000000000
+      internalID: 1661429396119050073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_20
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 859
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbf79537d49b7130800000000000000
+      internalID: 3565607182031911866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_21
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 889
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb094460e3d21e00800000000000000
+      internalID: 1014105826820426694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_22
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 835
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a0c5ecc33329440800000000000000
+      internalID: 4941068077432048211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_23
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 847
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fee4f6322e832e50800000000000000
+      internalID: 6783421741352152820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_24
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 819
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a0d9398bce3bee0800000000000000
+      internalID: -1246392394356815312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_25
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 819
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46f8fc6a6d6d7f30800000000000000
+      internalID: 4574933100340508239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_26
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 823
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4700146a766c630800000000000000
+      internalID: 3946956087189599421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 250
+        width: 347
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eaf38d2134232ab0800000000000000
+      internalID: -5034140164834460953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_28
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 759
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80781662871fa9020800000000000000
+      internalID: 2349455653969430280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_29
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 745
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d9e5747264f8880800000000000000
+      internalID: -8606583228366676616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_30
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 749
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60117290cc73c740800000000000000
+      internalID: 5171113963683909743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_31
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 517
+        width: 79
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753cc3a2fa11cecd0800000000000000
+      internalID: -2527625846836116649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_32
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 718
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7516f2f40b969c0800000000000000
+      internalID: -3933418945387603977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_33
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 583
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403dbd609f81b9b50800000000000000
+      internalID: 6600897136682586884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_34
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 493
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a84b392794a8e10800000000000000
+      internalID: 2200652124377090674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_35
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 486
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7c3efcc1a114ab0800000000000000
+      internalID: -5025706998119544917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_36
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 367
+        width: 42
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299e841d36ff35f70800000000000000
+      internalID: 9174957670061894034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_37
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 454
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed58f009f599e6fb0800000000000000
+      internalID: -4652612729309264418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_38
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 431
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3399c7fbf37e61ea0800000000000000
+      internalID: -5902276000640886477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_39
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 380
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da85b19ef0f374000800000000000000
+      internalID: 20054060914399405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_40
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 373
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400180dc3f0fdfdb0800000000000000
+      internalID: -4756380701525798908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_41
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 327
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55cfa0d9f476ab20800000000000000
+      internalID: 3145330006061729119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 150
+        width: 79
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14f25f6c1701aa40800000000000000
+      internalID: 5377587248765269022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_43
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 302
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1835949fb133d7b90800000000000000
+      internalID: -7242576430502423679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_44
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 299
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfc0f77c627cb490800000000000000
+      internalID: -7729177050280308806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_45
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 305
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9f215615a835fd0800000000000000
+      internalID: -2354386097991911007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_46
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 272
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0ee776eca317890800000000000000
+      internalID: -7462118449402158909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_47
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 245
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ce13de4096fa290800000000000000
+      internalID: -7876961753367450583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_48
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 191
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e659f1ad2f1acbc70800000000000000
+      internalID: 8988237020738327918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_49
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 161
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2015394a7c6fb670800000000000000
+      internalID: 8556677089497255979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_50
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 86
+        width: 97
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbc7449ed511f290800000000000000
+      internalID: -7858475829070148648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_51
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 134
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3ad06fd44eb0c10800000000000000
+      internalID: 2020959881297503189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_52
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 143
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d01987507791fd00800000000000000
+      internalID: 1004750700641063127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_53
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ee749aa408c1b30800000000000000
+      internalID: 4259420405741645365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_54
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 21
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f865bf96463b130800000000000000
+      internalID: 3581316535040773978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_55
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 31
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d12f1021de49510800000000000000
+      internalID: 1555128432947502380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_56
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 29
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a585ba5d8ce250d00800000000000000
+      internalID: 938207537489729626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Columna Lia_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac0ed49883ff4350800000000000000
+      internalID: 6003284596246842534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Columna Lia_0: 868552235560747766
+      Columna Lia_1: 4871941204535859299
+      Columna Lia_10: 3644243397063456792
+      Columna Lia_11: 1592804249729837590
+      Columna Lia_12: 1627850603012800215
+      Columna Lia_13: 1164051186303475025
+      Columna Lia_14: 3955674333971383921
+      Columna Lia_15: -2225626703680860036
+      Columna Lia_16: -866463331059913656
+      Columna Lia_17: 6567598790677940640
+      Columna Lia_18: -6766879240851460142
+      Columna Lia_19: 1661429396119050073
+      Columna Lia_2: -2549567056948538383
+      Columna Lia_20: 3565607182031911866
+      Columna Lia_21: 1014105826820426694
+      Columna Lia_22: 4941068077432048211
+      Columna Lia_23: 6783421741352152820
+      Columna Lia_24: -1246392394356815312
+      Columna Lia_25: 4574933100340508239
+      Columna Lia_26: 3946956087189599421
+      Columna Lia_27: -5034140164834460953
+      Columna Lia_28: 2349455653969430280
+      Columna Lia_29: -8606583228366676616
+      Columna Lia_3: -229671383811834349
+      Columna Lia_30: 5171113963683909743
+      Columna Lia_31: -2527625846836116649
+      Columna Lia_32: -3933418945387603977
+      Columna Lia_33: 6600897136682586884
+      Columna Lia_34: 2200652124377090674
+      Columna Lia_35: -5025706998119544917
+      Columna Lia_36: 9174957670061894034
+      Columna Lia_37: -4652612729309264418
+      Columna Lia_38: -5902276000640886477
+      Columna Lia_39: 20054060914399405
+      Columna Lia_4: 8374236614166759249
+      Columna Lia_40: -4756380701525798908
+      Columna Lia_41: 3145330006061729119
+      Columna Lia_42: 5377587248765269022
+      Columna Lia_43: -7242576430502423679
+      Columna Lia_44: -7729177050280308806
+      Columna Lia_45: -2354386097991911007
+      Columna Lia_46: -7462118449402158909
+      Columna Lia_47: -7876961753367450583
+      Columna Lia_48: 8988237020738327918
+      Columna Lia_49: 8556677089497255979
+      Columna Lia_5: -509705760834011989
+      Columna Lia_50: -7858475829070148648
+      Columna Lia_51: 2020959881297503189
+      Columna Lia_52: 1004750700641063127
+      Columna Lia_53: 4259420405741645365
+      Columna Lia_54: 3581316535040773978
+      Columna Lia_55: 1555128432947502380
+      Columna Lia_56: 938207537489729626
+      Columna Lia_57: 6003284596246842534
+      Columna Lia_6: -7252632914269290531
+      Columna Lia_7: -4349360982727768110
+      Columna Lia_8: 4346498196369065986
+      Columna Lia_9: 9060899852301582722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

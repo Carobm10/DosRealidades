@@ -27,6 +27,18 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     [SerializeField] private float tiempoAntesDeCambiarEscena = 1.2f;
     [SerializeField] private float duracionEnfoque = 5f;
 
+    [Header("Entrada cooperativa")]
+[SerializeField] private float distanciaEntrada = 1.5f;
+
+[SerializeField] private Transform entrada204Elian;
+[SerializeField] private Transform entrada204Lia;
+
+[SerializeField] private Transform entrada202Elian;
+[SerializeField] private Transform entrada202Lia;
+
+[SerializeField] private Transform entrada201Elian;
+[SerializeField] private Transform entrada201Lia;
+
     [Header("Mision despues del puzzle")]
     [SerializeField] private string misionElian =
         "Busca el objeto que necesitas para continuar";
@@ -201,7 +213,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             puerta.DuracionApertura + 0.5f
         );
 
-        StartCoroutine(CargarHabitacion(puerta.EscenaDestino, esperaSegura));
+        StartCoroutine(CargarHabitacion(numeroPuerta, puerta.EscenaDestino, esperaSegura));
     }
 
     private PuertaPuzzleP5 BuscarPuerta(int numero)
@@ -263,33 +275,121 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     // CAMBIO DE ESCENA SINCRONIZADO
     // =====================================
 
-    private IEnumerator CargarHabitacion(string nombreEscena, float esperaSegura)
+    
+    private IEnumerator CargarHabitacion(
+        int numeroPuerta,
+        string nombreEscena,
+        float esperaSegura)
     {
-        yield return new WaitForSeconds(esperaSegura);
+        // Esperar a que termine la cinematica.
+        yield return new WaitForSecondsRealtime(
+            Mathf.Max(0f, esperaSegura)
+        );
 
         if (!IsServer)
             yield break;
 
+        // Esperar a que ambos jugadores lleguen.
+        while (!AmbosEnLaPuerta(numeroPuerta))
+        {
+            yield return new WaitForSecondsRealtime(0.2f);
+        }
+
         if (NetworkManager.Singleton == null ||
             NetworkManager.Singleton.SceneManager == null)
         {
-            Debug.LogError(
-                "P5: No se encontro el SceneManager de Netcode."
-            );
-
+            Debug.LogError("P5: No se encontro SceneManager.");
             transicionEnCurso = false;
             yield break;
         }
 
         Debug.Log(
-            "P5: Cargando habitacion " + nombreEscena
+            "P5: Ambos jugadores llegaron a la puerta " +
+            numeroPuerta
         );
 
-        NetworkManager.Singleton.SceneManager.LoadScene(
-            nombreEscena,
-            LoadSceneMode.Single
-        );
+        var resultado =
+            NetworkManager.Singleton.SceneManager.LoadScene(
+                nombreEscena,
+                LoadSceneMode.Single
+            );
+
+        if (resultado != SceneEventProgressStatus.Started)
+        {
+            Debug.LogError(
+                "P5: Error al cargar escena: " + resultado
+            );
+
+            transicionEnCurso = false;
+        }
     }
+
+    private bool AmbosEnLaPuerta(int numeroPuerta)
+    {
+        if (!IsServer || NetworkManager.Singleton == null)
+            return false;
+
+        Transform puntoElian = null;
+        Transform puntoLia = null;
+
+        switch (numeroPuerta)
+        {
+            case 204:
+                puntoElian = entrada204Elian;
+                puntoLia = entrada204Lia;
+                break;
+
+            case 202:
+                puntoElian = entrada202Elian;
+                puntoLia = entrada202Lia;
+                break;
+
+            case 201:
+                puntoElian = entrada201Elian;
+                puntoLia = entrada201Lia;
+                break;
+        }
+
+        if (puntoElian == null || puntoLia == null)
+            return false;
+
+        if (NetworkManager.Singleton.ConnectedClients.Count != 2)
+            return false;
+
+        bool elianPresente = false;
+        bool liaPresente = false;
+
+        foreach (var cliente in
+            NetworkManager.Singleton.ConnectedClientsList)
+        {
+            NetworkObject jugador = cliente.PlayerObject;
+
+            if (jugador == null)
+                continue;
+
+            bool esElian =
+                cliente.ClientId == NetworkManager.ServerClientId;
+
+            Transform puntoDestino =
+                esElian ? puntoElian : puntoLia;
+
+            float distancia = Vector2.Distance(
+                jugador.transform.position,
+                puntoDestino.position
+            );
+
+            if (distancia <= distanciaEntrada)
+            {
+                if (esElian)
+                    elianPresente = true;
+                else
+                    liaPresente = true;
+            }
+        }
+
+        return elianPresente && liaPresente;
+    }
+
 
     // =====================================
     // ERRORES
