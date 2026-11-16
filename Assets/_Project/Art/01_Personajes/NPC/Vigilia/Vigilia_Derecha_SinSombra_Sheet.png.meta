@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 10c8d92974e6a484f916746803cb5286
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1633281408758942728
+    second: Vigilia_Derecha_SinSombra_Sheet_0
+  - first:
+      213: 8620541627675386667
+    second: Vigilia_Derecha_SinSombra_Sheet_1
+  - first:
+      213: -4684954635143125056
+    second: Vigilia_Derecha_SinSombra_Sheet_2
+  - first:
+      213: -1481001226534053170
+    second: Vigilia_Derecha_SinSombra_Sheet_3
+  - first:
+      213: -4440439441013403744
+    second: Vigilia_Derecha_SinSombra_Sheet_4
+  - first:
+      213: -1368424654811470566
+    second: Vigilia_Derecha_SinSombra_Sheet_5
+  - first:
+      213: -1695006564196319945
+    second: Vigilia_Derecha_SinSombra_Sheet_6
+  - first:
+      213: 1736277879309740205
+    second: Vigilia_Derecha_SinSombra_Sheet_7
+  - first:
+      213: -5515404700586616803
+    second: Vigilia_Derecha_SinSombra_Sheet_8
+  - first:
+      213: 191006552641231769
+    second: Vigilia_Derecha_SinSombra_Sheet_9
+  - first:
+      213: -6255669567341215062
+    second: Vigilia_Derecha_SinSombra_Sheet_10
+  - first:
+      213: 7571707169086963746
+    second: Vigilia_Derecha_SinSombra_Sheet_11
+  - first:
+      213: 5415101338636671954
+    second: Vigilia_Derecha_SinSombra_Sheet_12
+  - first:
+      213: 6266668538397605281
+    second: Vigilia_Derecha_SinSombra_Sheet_13
+  - first:
+      213: 7120975716935421722
+    second: Vigilia_Derecha_SinSombra_Sheet_14
+  - first:
+      213: 8493586363494484516
+    second: Vigilia_Derecha_SinSombra_Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f37ca4563b6559e0800000000000000
+      internalID: -1633281408758942728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b232f01dfe052a770800000000000000
+      internalID: 8620541627675386667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7697fc492bbfeb0800000000000000
+      internalID: -4684954635143125056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af03c7dad36062c0800000000000000
+      internalID: -4440439441013403744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d7f19a2802a78e0800000000000000
+      internalID: -1695006564196319945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18d30d85a85573b0800000000000000
+      internalID: -5515404700586616803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2c7662ca56f29a0800000000000000
+      internalID: -6255669567341215062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Derecha_SinSombra_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db5e202afd462b40800000000000000
+      internalID: 5415101338636671954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6d70f514fb1dd542abfa29dca2d2f55
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vigilia_Derecha_SinSombra_Sheet_0: -1633281408758942728
+      Vigilia_Derecha_SinSombra_Sheet_1: 8620541627675386667
+      Vigilia_Derecha_SinSombra_Sheet_10: -6255669567341215062
+      Vigilia_Derecha_SinSombra_Sheet_11: 7571707169086963746
+      Vigilia_Derecha_SinSombra_Sheet_12: 5415101338636671954
+      Vigilia_Derecha_SinSombra_Sheet_13: 6266668538397605281
+      Vigilia_Derecha_SinSombra_Sheet_14: 7120975716935421722
+      Vigilia_Derecha_SinSombra_Sheet_15: 8493586363494484516
+      Vigilia_Derecha_SinSombra_Sheet_2: -4684954635143125056
+      Vigilia_Derecha_SinSombra_Sheet_3: -1481001226534053170
+      Vigilia_Derecha_SinSombra_Sheet_4: -4440439441013403744
+      Vigilia_Derecha_SinSombra_Sheet_5: -1368424654811470566
+      Vigilia_Derecha_SinSombra_Sheet_6: -1695006564196319945
+      Vigilia_Derecha_SinSombra_Sheet_7: 1736277879309740205
+      Vigilia_Derecha_SinSombra_Sheet_8: -5515404700586616803
+      Vigilia_Derecha_SinSombra_Sheet_9: 191006552641231769
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

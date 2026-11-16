@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 48a934796fe1ddc428feba30deb809c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5298349491028598399
+    second: Vigilia_Izquierda_SinSombra_Sheet_0
+  - first:
+      213: -9118032327306710073
+    second: Vigilia_Izquierda_SinSombra_Sheet_1
+  - first:
+      213: 2671788769935650866
+    second: Vigilia_Izquierda_SinSombra_Sheet_2
+  - first:
+      213: 6292242853333471505
+    second: Vigilia_Izquierda_SinSombra_Sheet_3
+  - first:
+      213: 911261183716010320
+    second: Vigilia_Izquierda_SinSombra_Sheet_4
+  - first:
+      213: -776235074484825976
+    second: Vigilia_Izquierda_SinSombra_Sheet_5
+  - first:
+      213: 1122499688787918513
+    second: Vigilia_Izquierda_SinSombra_Sheet_6
+  - first:
+      213: 1723147202883704871
+    second: Vigilia_Izquierda_SinSombra_Sheet_7
+  - first:
+      213: 157345307079798311
+    second: Vigilia_Izquierda_SinSombra_Sheet_8
+  - first:
+      213: -4021531622197183177
+    second: Vigilia_Izquierda_SinSombra_Sheet_9
+  - first:
+      213: 3569461606757924665
+    second: Vigilia_Izquierda_SinSombra_Sheet_10
+  - first:
+      213: 2139179352671439933
+    second: Vigilia_Izquierda_SinSombra_Sheet_11
+  - first:
+      213: -5919618785875749617
+    second: Vigilia_Izquierda_SinSombra_Sheet_12
+  - first:
+      213: -5370903820854275712
+    second: Vigilia_Izquierda_SinSombra_Sheet_13
+  - first:
+      213: 1155423299552495721
+    second: Vigilia_Izquierda_SinSombra_Sheet_14
+  - first:
+      213: -262582343619035371
+    second: Vigilia_Izquierda_SinSombra_Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 38
+        width: 155
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1816e53b53b7876b0800000000000000
+      internalID: -5298349491028598399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 38
+        width: 158
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3fa5068ed367180800000000000000
+      internalID: -9118032327306710073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23074e20bb9141520800000000000000
+      internalID: 2671788769935650866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 38
+        width: 160
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059aef0f73375ac00800000000000000
+      internalID: 911261183716010320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 38
+        width: 159
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1beb0ba058be39f00800000000000000
+      internalID: 1122499688787918513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 38
+        width: 155
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ee09f19b00f2200800000000000000
+      internalID: 157345307079798311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 38
+        width: 154
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f73366b66498130800000000000000
+      internalID: 3569461606757924665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vigilia_Izquierda_SinSombra_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 38
+        width: 153
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f059526e31a49dda0800000000000000
+      internalID: -5919618785875749617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9af14552a21d4b045b631af4cd949b46
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vigilia_Izquierda_SinSombra_Sheet_0: -5298349491028598399
+      Vigilia_Izquierda_SinSombra_Sheet_1: -9118032327306710073
+      Vigilia_Izquierda_SinSombra_Sheet_10: 3569461606757924665
+      Vigilia_Izquierda_SinSombra_Sheet_11: 2139179352671439933
+      Vigilia_Izquierda_SinSombra_Sheet_12: -5919618785875749617
+      Vigilia_Izquierda_SinSombra_Sheet_13: -5370903820854275712
+      Vigilia_Izquierda_SinSombra_Sheet_14: 1155423299552495721
+      Vigilia_Izquierda_SinSombra_Sheet_15: -262582343619035371
+      Vigilia_Izquierda_SinSombra_Sheet_2: 2671788769935650866
+      Vigilia_Izquierda_SinSombra_Sheet_3: 6292242853333471505
+      Vigilia_Izquierda_SinSombra_Sheet_4: 911261183716010320
+      Vigilia_Izquierda_SinSombra_Sheet_5: -776235074484825976
+      Vigilia_Izquierda_SinSombra_Sheet_6: 1122499688787918513
+      Vigilia_Izquierda_SinSombra_Sheet_7: 1723147202883704871
+      Vigilia_Izquierda_SinSombra_Sheet_8: 157345307079798311
+      Vigilia_Izquierda_SinSombra_Sheet_9: -4021531622197183177
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
