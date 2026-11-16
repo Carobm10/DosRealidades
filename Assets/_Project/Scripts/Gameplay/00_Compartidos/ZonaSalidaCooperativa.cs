@@ -148,6 +148,39 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         rutinaPrepararSalida = StartCoroutine(PrepararSalida());
     }
 
+    
+
+    // =====================================
+    // HABILITAR SALIDA SIN REPETIR CINEMATICA
+    // =====================================
+
+
+    public void HabilitarSalidaSinCinematica()
+    {
+        if (!IsSpawned ||
+            !IsServer ||
+            puzzleResuelto.Value ||
+            cambiandoEscena)
+            return;
+
+        puzzleResuelto.Value = true;
+        salidaHabilitada.Value = true;
+
+        ActualizarVisuales(true);
+
+        Debug.Log(
+            "SALIDA COOPERATIVA HABILITADA SIN REPETIR CINEMATICA."
+        );
+    }
+
+
+
+    // =====================================
+    // HABILITAR SALIDA SIN REPETIR CINEMATICA
+    // =====================================
+
+
+
     private IEnumerator PrepararSalida()
     {
         // Los jugadores ven primero el enfoque, despues la apertura,

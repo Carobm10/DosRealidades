@@ -15,6 +15,12 @@ public class CamaraJugadorLocal : NetworkBehaviour
     [SerializeField] private float zoomObjetivo = 3f;
     [SerializeField] private float velocidadZoom = 3f;
 
+    [Header("Camara fija en habitaciones")]
+    [SerializeField] private float margenHabitacion = 1f;
+    private Transform puntoCamaraFija;
+
+    private bool camaraFijaActiva;
+
     private BoxCollider2D limitesCamara;
     private bool limitarCamara = false;
 
@@ -97,11 +103,30 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     private void BuscarLimitesCamara()
     {
+        puntoCamaraFija = null;
         limitarCamara = false;
         limitesCamara = null;
+        camaraFijaActiva = false;
 
         if (!IsOwner)
             return;
+
+        if (camaraJugador != null)
+        {
+            camaraJugador.ResetAspect();
+        }
+
+        GameObject puntoFijo =
+            GameObject.Find("PuntoCamaraFija");
+
+        if (puntoFijo != null)
+        {
+            puntoCamaraFija = puntoFijo.transform;
+        }
+
+        DetenerEnfoqueAnterior();
+
+        DetenerEnfoqueAnterior();
 
         GameObject objetoLimites =
             GameObject.Find("LimitesCamara");
@@ -112,16 +137,42 @@ public class CamaraJugadorLocal : NetworkBehaviour
         limitesCamara =
             objetoLimites.GetComponent<BoxCollider2D>();
 
-        if (limitesCamara != null)
-        {
-            limitarCamara = true;
-        }
+        limitarCamara = limitesCamara != null;
+
+        camaraFijaActiva =
+            GameObject.Find("PuntoCamaraFija") != null &&
+            limitesCamara != null;
     }
 
     private void LateUpdate()
     {
         if (!IsOwner || camaraJugador == null)
             return;
+
+        if (puntoCamaraFija != null && limitesCamara != null)
+        {
+            Bounds limites = limitesCamara.bounds;
+
+            Vector3 posicion = limites.center;
+            posicion.z = camaraJugador.transform.position.z;
+
+            camaraJugador.transform.position = posicion;
+
+            camaraJugador.orthographic = true;
+
+            camaraJugador.orthographicSize =
+                limites.size.y / 2f;
+
+            camaraJugador.aspect =
+                limites.size.x / limites.size.y;
+
+            return;
+        }
+        if (camaraFijaActiva && limitesCamara != null)
+        {
+            AjustarCamaraHabitacion();
+            return;
+        }
 
         Vector3 posicionDeseada =
             enfoqueActivo
@@ -318,5 +369,31 @@ public class CamaraJugadorLocal : NetworkBehaviour
         }
 
         enfoqueActivo = false;
+    }
+
+    private void AjustarCamaraHabitacion()
+    {
+        Bounds limites = limitesCamara.bounds;
+
+        float alto = limites.size.y;
+        float ancho = limites.size.x;
+
+        float tamañoVertical = alto / 2f;
+
+        float tamañoHorizontal =
+            ancho / (2f * camaraJugador.aspect);
+
+        camaraJugador.orthographicSize =
+            Mathf.Max(
+                tamañoVertical,
+                tamañoHorizontal
+            ) * Mathf.Max(1f, margenHabitacion);
+
+        Vector3 posicion = limites.center;
+
+        posicion.z =
+            camaraJugador.transform.position.z;
+
+        camaraJugador.transform.position = posicion;
     }
 }

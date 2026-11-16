@@ -326,8 +326,12 @@ public class PuzzleRecepcionController : NetworkBehaviour
         {
             if (zonaSalidaCooperativa != null)
             {
-                zonaSalidaCooperativa.HabilitarSalida();
-                Debug.Log("Puzzle Recepcion: salida cooperativa habilitada.");
+                zonaSalidaCooperativa.HabilitarSalidaSinCinematica();
+
+                Debug.Log(
+                    "Puzzle Recepcion: salida cooperativa habilitada. " +
+                    "Cinematica completada."
+                );
             }
             else
             {

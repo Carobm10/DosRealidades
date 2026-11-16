@@ -16,6 +16,6 @@ MonoBehaviour:
   nombre: Fragmento de carta
   descripcion: Has encontrado un fragmento de la carta
   tipo: 0
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 4f40fb71416026c42881286f75d1ffc0, type: 3}
   permiteSeleccion: 1
   consumibleAlUsar: 0
