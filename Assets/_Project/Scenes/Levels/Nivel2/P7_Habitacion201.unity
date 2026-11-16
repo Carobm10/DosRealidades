@@ -485,6 +485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDInteraccion
   botonInteractuar: {fileID: 1774228118}
+  camaraJuego: {fileID: 0}
+  ventanasBloqueantes: []
 --- !u!114 &228516329
 MonoBehaviour:
   m_ObjectHideFlags: 0
