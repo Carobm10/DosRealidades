@@ -186,9 +186,9 @@ public class InventarioUI : MonoBehaviour
             movimientoLocal.BloquearMovimiento(true);
         }
 
-        RefrescarInventario();
-
         panelInventario.SetActive(true);
+
+        RefrescarInventario();
 
         Debug.Log("INVENTARIO ABIERTO");
     }
@@ -510,6 +510,8 @@ public class InventarioUI : MonoBehaviour
                 movimientoEstabaBloqueado
             );
         }
+
+        RefrescarInventario();
 
         Debug.Log("TARJETA CERRADA");
     }

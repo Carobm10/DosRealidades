@@ -976,6 +976,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1161285766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268174265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268174266}
+  m_Layer: 0
+  m_Name: PuntoEntrada_204_Elian
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268174266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268174265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.66, y: -4.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1478655848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346542634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,7 +1317,6 @@ Transform:
   - {fileID: 952042238}
   - {fileID: 1739056939}
   - {fileID: 1351029721}
-  - {fileID: 1466431205}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395973724
@@ -1496,6 +1526,7 @@ Transform:
   m_Children:
   - {fileID: 950012733}
   - {fileID: 133142771}
+  - {fileID: 1193987159}
   m_Father: {fileID: 859825696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &509347004
@@ -1512,8 +1543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuertaPuzzleP5
   numeroPuerta: 204
   controlador: {fileID: 2017915055}
-  animatorPuerta: {fileID: 0}
-  animatorPuertaElian: {fileID: 0}
+  animatorPuerta: {fileID: 509347008}
+  animatorPuertaElian: {fileID: 1478655854}
   animatorPuertaLia: {fileID: 509347008}
   nombreTriggerAbrir: Abrir
   puntoEnfoqueElian: {fileID: 0}
@@ -1705,7 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c836150ebc0967842b23c1bd023655ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
-  spritePuerta: {fileID: 0}
+  spritePuerta: {fileID: 509347006}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
   visualBrillo: {fileID: 0}
@@ -4372,6 +4403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualRealidadP1
   realidadElian: {fileID: 1670827278}
   realidadLia: {fileID: 1452502725}
+  recolectableElian: {fileID: 0}
+  recolectableLia: {fileID: 0}
 --- !u!4 &1172400013
 Transform:
   m_ObjectHideFlags: 0
@@ -4386,6 +4419,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1193987158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193987159}
+  m_Layer: 0
+  m_Name: PuntoEntrada_204_Lia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193987159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193987158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4, y: -4.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 509347003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1211674539 stripped
 GameObject:
@@ -4820,11 +4884,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuertaPuzzleP5
   numeroPuerta: 201
   controlador: {fileID: 2017915055}
-  animatorPuerta: {fileID: 0}
-  animatorPuertaElian: {fileID: 0}
+  animatorPuerta: {fileID: 1303925451}
+  animatorPuertaElian: {fileID: 1161285772}
   animatorPuertaLia: {fileID: 1303925451}
   nombreTriggerAbrir: Abrir
-  puntoEnfoqueElian: {fileID: 0}
+  puntoEnfoqueElian: {fileID: 264274019}
   puntoEnfoqueLia: {fileID: 395973725}
   escenaDestino: Puerta 201
 --- !u!61 &1303925449
@@ -5013,7 +5077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c836150ebc0967842b23c1bd023655ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
-  spritePuerta: {fileID: 0}
+  spritePuerta: {fileID: 1303925450}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
   visualBrillo: {fileID: 0}
@@ -5043,7 +5107,7 @@ Transform:
   m_GameObject: {fileID: 1318710533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.77, y: 0.16, z: 0}
+  m_LocalPosition: {x: 0.71, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5660,7 +5724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c836150ebc0967842b23c1bd023655ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
-  spritePuerta: {fileID: 0}
+  spritePuerta: {fileID: 1445888970}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
   visualBrillo: {fileID: 0}
@@ -5713,125 +5777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &1466431204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1466431205}
-  - component: {fileID: 1466431208}
-  - component: {fileID: 1466431207}
-  - component: {fileID: 1466431206}
-  m_Layer: 0
-  m_Name: ZonaSalidaP1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1466431205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466431204}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.03, y: 3.88, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 392495110}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1466431206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466431204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8e38c5ffa3765b48aa0913389d507cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZonaSalidaP1
---- !u!114 &1466431207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466431204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 3613808143
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  m_InScenePlacedDisabledByDefault: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  m_InScenePlaced: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!61 &1466431208
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466431204}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.028811097, y: 0.20552361}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.4672415, y: 0.642164}
-  m_EdgeRadius: 0
 --- !u!1 &1478655847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5869,6 +5814,7 @@ Transform:
   m_Children:
   - {fileID: 1908017839}
   - {fileID: 918929631}
+  - {fileID: 268174266}
   m_Father: {fileID: 1634592875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1478655849
@@ -7002,17 +6948,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a578ed846fd488143ac7a66b8aa40fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlHuellasP5
-  puerta201: {fileID: 0}
-  puerta202: {fileID: 0}
+  puerta201: {fileID: 686900534}
+  puerta202: {fileID: 1763058492}
   puerta203: {fileID: 0}
-  puerta204: {fileID: 0}
+  puerta204: {fileID: 133142771}
   pasosApagados: {fileID: 21300000, guid: 7c5a180668b3a1c47bed5474cad34f65, type: 3}
   pasosBrillo: {fileID: 21300000, guid: 083f6518b5169bd49af4fdae2dbaa783, type: 3}
   intervaloBrillo: 0.35
-  brilloPuerta201: {fileID: 0}
-  brilloPuerta202: {fileID: 0}
-  brilloPuerta203: {fileID: 0}
-  brilloPuerta204: {fileID: 0}
+  brilloPuerta201: {fileID: 1303925453}
+  brilloPuerta202: {fileID: 1681175334}
+  brilloPuerta203: {fileID: 1445888971}
+  brilloPuerta204: {fileID: 509347009}
 --- !u!1 &1670827278
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,11 +7048,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuertaPuzzleP5
   numeroPuerta: 202
   controlador: {fileID: 2017915055}
-  animatorPuerta: {fileID: 0}
-  animatorPuertaElian: {fileID: 0}
+  animatorPuerta: {fileID: 1681175333}
+  animatorPuertaElian: {fileID: 1639288189}
   animatorPuertaLia: {fileID: 1681175333}
   nombreTriggerAbrir: Abrir
-  puntoEnfoqueElian: {fileID: 0}
+  puntoEnfoqueElian: {fileID: 1071034040}
   puntoEnfoqueLia: {fileID: 757626392}
   escenaDestino: Puerta 202
 --- !u!61 &1681175330
@@ -7295,7 +7241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c836150ebc0967842b23c1bd023655ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
-  spritePuerta: {fileID: 0}
+  spritePuerta: {fileID: 1681175331}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
   visualBrillo: {fileID: 0}
@@ -8406,6 +8352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2368669056407486758, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_InScenePlaced
       value: 1
@@ -8434,6 +8384,10 @@ PrefabInstance:
       propertyPath: descripcionObjetoRecolectado
       value: 
       objectReference: {fileID: 1234056883}
+    - target: {fileID: 6021212014282936290, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -8524,6 +8478,13 @@ MonoBehaviour:
   controlHuellas: {fileID: 1651639575}
   tiempoAntesDeCambiarEscena: 1.2
   duracionEnfoque: 5
+  distanciaEntrada: 1.5
+  entrada204Elian: {fileID: 268174266}
+  entrada204Lia: {fileID: 1193987159}
+  entrada202Elian: {fileID: 0}
+  entrada202Lia: {fileID: 0}
+  entrada201Elian: {fileID: 0}
+  entrada201Lia: {fileID: 0}
   misionElian: Busca el objeto que necesitas para continuar
   misionLia: Ayuda a Elian
 --- !u!1 &2047421937
@@ -8735,7 +8696,7 @@ Transform:
   m_GameObject: {fileID: 2083134622}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 0.19, z: 0}
+  m_LocalPosition: {x: -0.9, y: 0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

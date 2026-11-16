@@ -26,6 +26,7 @@ public class ObjetoRecolectable : NetworkBehaviour
     private SpriteRenderer[] sprites;
     private Collider2D[] colisionadores;
     private ZonaInteraccion zonaInteraccion;
+    private bool visiblePorRealidad = true;
 
     private NetworkVariable<bool> recolectado =
         new NetworkVariable<bool>(
@@ -250,26 +251,31 @@ public class ObjetoRecolectable : NetworkBehaviour
 
     private void AplicarEstado()
     {
-        if (!recolectado.Value)
-            return;
+        bool mostrar =
+            visiblePorRealidad && !recolectado.Value;
 
         foreach (SpriteRenderer sprite in sprites)
         {
             if (sprite != null)
-                sprite.enabled = false;
+                sprite.enabled = mostrar;
         }
 
         foreach (Collider2D colisionador in colisionadores)
         {
             if (colisionador != null)
-                colisionador.enabled = false;
+                colisionador.enabled = mostrar;
         }
 
-        if (HUDInteraccion.Instancia != null)
+        if (!mostrar && HUDInteraccion.Instancia != null)
         {
             HUDInteraccion.Instancia.OcultarBoton(
                 zonaInteraccion
             );
         }
+    }
+    public void ConfigurarVisibilidadLocal(bool visible)
+    {
+        visiblePorRealidad = visible;
+        AplicarEstado();
     }
 }

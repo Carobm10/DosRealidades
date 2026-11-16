@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using Unity.Netcode;
 
@@ -6,6 +7,10 @@ public class VisualRealidadP1 : MonoBehaviour
     [Header("Realidades")]
     [SerializeField] private GameObject realidadElian;
     [SerializeField] private GameObject realidadLia;
+
+    [Header("Objetos recolectables")]
+    [SerializeField] private ObjetoRecolectable recolectableElian;
+    [SerializeField] private ObjetoRecolectable recolectableLia;
 
     private void Start()
     {
@@ -17,7 +22,6 @@ public class VisualRealidadP1 : MonoBehaviour
         bool esElian;
 
 #if UNITY_EDITOR
-        // En prueba directa usamos el selector de ModoPrueba.
         if (RolPruebaJugador.Instancia != null)
         {
             esElian = RolPruebaJugador.Instancia.EsElian();
@@ -29,17 +33,31 @@ public class VisualRealidadP1 : MonoBehaviour
                 NetworkManager.Singleton.IsHost;
         }
 #else
-        // En multiplayer real:
-        // Host = Elian / Client = Lia
         esElian =
             NetworkManager.Singleton != null &&
             NetworkManager.Singleton.IsHost;
 #endif
 
-        realidadElian.SetActive(esElian);
-        realidadLia.SetActive(!esElian);
+        // Activar la realidad correspondiente.
+        if (realidadElian != null)
+            realidadElian.SetActive(esElian);
+
+        if (realidadLia != null)
+            realidadLia.SetActive(!esElian);
+
+        // Mostrar únicamente el recolectable propio.
+        if (recolectableElian != null)
+            recolectableElian.ConfigurarVisibilidadLocal(esElian);
+
+        if (recolectableLia != null)
+            recolectableLia.ConfigurarVisibilidadLocal(!esElian);
 
         ActualizarMision(esElian);
+
+        Debug.Log(
+            "REALIDAD CONFIGURADA: " +
+            (esElian ? "ELIAN" : "LIA")
+        );
     }
 
     private void ActualizarMision(bool esElian)
