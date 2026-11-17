@@ -17,8 +17,13 @@ public class NotaGuiaInteractiva : MonoBehaviour
     [SerializeField] private Sprite imagenNotaGrande;
 
     [Header("Personaje permitido")]
-    [SerializeField] private RolPermitido rolPermitido =
+    [SerializeField]
+    private RolPermitido rolPermitido =
         RolPermitido.Ambos;
+
+    [Header("Sonido de interaccion")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sonidoAbrirNota;
 
     public string IdNota => idNota;
 
@@ -74,6 +79,12 @@ public class NotaGuiaInteractiva : MonoBehaviour
                 "NOTA: no se encontro VisorNotasUI."
             );
             return;
+        }
+
+        // REPRODUCIR SONIDO
+        if (audioSource != null && sonidoAbrirNota != null)
+        {
+            audioSource.PlayOneShot(sonidoAbrirNota);
         }
 
         visor.MostrarNota(imagenNotaGrande);

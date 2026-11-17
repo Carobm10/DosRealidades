@@ -24,6 +24,11 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("NPC opcional")]
     [SerializeField] private NPCDialogo npcDialogo;
 
+    [Header("Audio de proximidad NPC")]
+    [SerializeField] private AudioSource audioSourceNPC;
+    [SerializeField] private AudioClip sonidoProximidadNPC;
+    [SerializeField, Range(0f, 1f)] private float volumenSonidoNPC = 1f;
+
     [Header("Control visual NPC")]
     [SerializeField] private NPCVisualController visualNPC;
 
@@ -65,6 +70,9 @@ public class ZonaInteraccion : MonoBehaviour
     {
         if (npcDialogo == null)
             npcDialogo = GetComponent<NPCDialogo>();
+
+        if (audioSourceNPC == null)
+            audioSourceNPC = GetComponent<AudioSource>();
 
         if (visualNPC == null)
             visualNPC = GetComponent<NPCVisualController>();
@@ -189,6 +197,20 @@ public class ZonaInteraccion : MonoBehaviour
             return;
 
         contactosJugadorLocal++;
+
+        // SONIDO DE PROXIMIDAD NPC
+        // Solo se reproduce al entrar por primera vez en la zona.
+
+        if (contactosJugadorLocal == 1 &&
+            npcDialogo != null &&
+            audioSourceNPC != null &&
+            sonidoProximidadNPC != null)
+        {
+            audioSourceNPC.PlayOneShot(
+                sonidoProximidadNPC,
+                volumenSonidoNPC
+            );
+        }
 
         HUDInteraccion.Instancia?.MostrarBoton(
             textoAccion,
