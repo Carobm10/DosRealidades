@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 3563157725735165863}
   - component: {fileID: 4310203884673097124}
   - component: {fileID: 2870937058371257775}
+  - component: {fileID: 9191152107274875821}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -370,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1588100951
+  GlobalObjectIdHash: 195567080
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -558,6 +559,7 @@ MonoBehaviour:
   zoomObjetivo: 3
   velocidadZoom: 3
   margenHabitacion: 1
+  ajusteZoomRunner: 1
 --- !u!114 &4351588791507245499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,3 +644,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0e0ec79cb9cd7a441a88634ddc15a888, type: 2}
   - {fileID: 11400000, guid: 0d99ea7fc70b5f24183c6aaee24193aa, type: 2}
   - {fileID: 11400000, guid: 8379b1a6c48f2cc4789df895654a4b03, type: 2}
+--- !u!114 &9191152107274875821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198515594604971309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1170d7974e1b740825e4be76368f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlPuertasP2
+  ShowTopMostFoldoutHeaderGroup: 1

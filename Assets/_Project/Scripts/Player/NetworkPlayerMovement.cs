@@ -8,6 +8,8 @@ public class NetworkPlayerMovement : NetworkBehaviour
     [Header("Movimiento")]
     [SerializeField] private float velocidadMovimiento = 4f;
 
+    private float velocidadMovimientoOriginal;
+
     [Header("Controles")]
     [SerializeField] private InputActionReference accionMover;
 
@@ -72,17 +74,12 @@ public class NetworkPlayerMovement : NetworkBehaviour
     private void Awake()
     {
         cuerpo = GetComponent<Rigidbody2D>();
+
+        velocidadMovimientoOriginal = velocidadMovimiento;
     }
 
     public override void OnNetworkSpawn()
     {
-        // Mantener la simulacion fisica activa
-        // tanto para el jugador local como para
-        // las representaciones remotas.
-        //
-        // Esto permite que los colliders remotos
-        // participen en las colisiones locales.
-
         if (cuerpo != null)
         {
             cuerpo.simulated = true;
@@ -96,15 +93,46 @@ public class NetworkPlayerMovement : NetworkBehaviour
                 accionMover.action.Enable();
             }
 
-            // Inicializar direccion hacia abajo.
             ActualizarAnimacion(Vector2.zero);
         }
         else
         {
-            // El remoto no procesa movimiento local.
-            // Solo aplica las animaciones recibidas.
             AplicarAnimacionReplicada();
         }
+    }
+
+    // =====================================
+    // VELOCIDAD ESPECIAL POR NIVEL
+    // =====================================
+
+    public void ConfigurarVelocidadNivel(float nuevaVelocidad)
+    {
+        if (!IsOwner)
+            return;
+
+        velocidadMovimiento = Mathf.Max(0f, nuevaVelocidad);
+
+        Debug.Log(
+            "VELOCIDAD CONFIGURADA | Jugador: " +
+            OwnerClientId +
+            " | Velocidad: " +
+            velocidadMovimiento
+        );
+    }
+
+    public void RestaurarVelocidadOriginal()
+    {
+        if (!IsOwner)
+            return;
+
+        velocidadMovimiento = velocidadMovimientoOriginal;
+
+        Debug.Log(
+            "VELOCIDAD ORIGINAL RESTAURADA | Jugador: " +
+            OwnerClientId +
+            " | Velocidad: " +
+            velocidadMovimiento
+        );
     }
 
     // =====================================
@@ -115,9 +143,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
     {
         if (!IsSpawned)
             return;
-
-        // Los jugadores remotos reciben
-        // las animaciones del propietario.
 
         if (!IsOwner)
         {
@@ -132,8 +157,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
         Vector2 entrada =
             accionMover.action.ReadValue<Vector2>();
 
-        // Recordar ultima direccion.
-
         if (entrada.sqrMagnitude > 0.01f)
         {
             ultimaDireccion = entrada.normalized;
@@ -144,8 +167,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
                     Mathf.Sign(entrada.x);
             }
         }
-
-        // Movimiento bloqueado o puente.
 
         if (movimientoBloqueado || modoPuente)
         {
@@ -168,9 +189,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
 
     private void FixedUpdate()
     {
-        // Solo el propietario controla
-        // el movimiento de su personaje.
-
         if (!IsOwner ||
             movimientoBloqueado ||
             modoPuente ||
@@ -201,8 +219,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
             ? direccion.normalized
             : ultimaDireccion;
 
-        // Actualizar Animator local.
-
         if (animatorJugador != null)
         {
             animatorJugador.SetFloat(
@@ -221,8 +237,6 @@ public class NetworkPlayerMovement : NetworkBehaviour
             );
         }
 
-        // Sincronizar parametros por red.
-
         if (IsSpawned && IsOwner)
         {
             velocidadReplicada.Value = velocidad;
@@ -236,7 +250,7 @@ public class NetworkPlayerMovement : NetworkBehaviour
     }
 
     // =====================================
-    // APLICAR ANIMACION EN JUGADORES REMOTOS
+    // ANIMACION JUGADORES REMOTOS
     // =====================================
 
     private void AplicarAnimacionReplicada()

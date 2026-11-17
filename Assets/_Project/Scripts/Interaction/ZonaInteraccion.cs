@@ -55,6 +55,17 @@ public class ZonaInteraccion : MonoBehaviour
     [SerializeField] private bool botonEsParaLia;
     [SerializeField] private ControlFinalP3 controlFinal;
 
+    [Header("Puerta pasillo Elian")]
+    [SerializeField] private Animator animatorPuertaElian;
+    [SerializeField] private string parametroPuertaAbierta = "Abierta";
+
+    [Header("Botones Runner P2")]
+    [SerializeField] private bool esBotonPuertaP2;
+    [SerializeField, Range(1, 3)]
+    private int numeroPuertaP2 = 1;
+
+    private bool puertaElianAbierta;
+
     private Sprite spriteOriginal;
     private Coroutine rutinaParpadeo;
     private int contactosJugadorLocal;
@@ -175,6 +186,16 @@ public class ZonaInteraccion : MonoBehaviour
 
         if (notaGuia != null && !notaGuia.PuedeLeerla())
             return false;
+
+        if (esBotonPuertaP2)
+        {
+            NetworkPlayerSetup setup =
+                jugador.GetComponent<NetworkPlayerSetup>();
+
+            return setup != null &&
+                setup.RolConfigurado &&
+                setup.EsElian;
+        }
 
         if (!esBotonFinalP3)
             return true;
@@ -311,6 +332,52 @@ public class ZonaInteraccion : MonoBehaviour
     {
         if (contactosJugadorLocal <= 0)
             return;
+
+        // BOTONES RUNNER P2
+
+        if (esBotonPuertaP2)
+        {
+            NetworkManager red = NetworkManager.Singleton;
+
+            if (red == null ||
+                red.LocalClient == null ||
+                red.LocalClient.PlayerObject == null)
+                return;
+
+            ControlPuertasP2 control =
+                red.LocalClient.PlayerObject
+                .GetComponent<ControlPuertasP2>();
+
+            if (control == null)
+            {
+                Debug.LogError(
+                    "P2: No se encontró ControlPuertasP2."
+                );
+                return;
+            }
+
+            control.SolicitarCerrarPuerta(numeroPuertaP2);
+            return;
+        }
+        
+        // PUERTA PASILLO ELIAN
+
+        if (animatorPuertaElian != null)
+        {
+            if (puertaElianAbierta)
+                return;
+
+            puertaElianAbierta = true;
+
+            animatorPuertaElian.SetBool(
+                parametroPuertaAbierta,
+                true
+            );
+
+            Debug.Log("PUERTA ELIAN: Abierta.");
+
+            return;
+        }
 
         // NOTAS GUIA
         // Tiene prioridad sobre las ventanas normales.

@@ -38,6 +38,7 @@ public class HistorietaCooperativa : NetworkBehaviour
     private bool listoLocal;
     private bool introduccionFinalizada;
 
+    public bool IntroduccionFinalizada => introduccionFinalizada;
     private Coroutine rutinaInicio;
     private Coroutine rutinaLectura;
 
