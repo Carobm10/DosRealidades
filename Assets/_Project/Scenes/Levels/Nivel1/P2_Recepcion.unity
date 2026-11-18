@@ -4227,6 +4227,14 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 767111454
       objectReference: {fileID: 0}
+    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1587fb09186fa344aa9d3ed1dfcc0f5, type: 3}
     - target: {fileID: 6021212014282936290, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4247,6 +4255,10 @@ PrefabInstance:
       propertyPath: 'ventanasBloqueantes.Array.data[1]'
       value: 
       objectReference: {fileID: 1532773425}
+    - target: {fileID: 9135891785321060739, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8223322918212080655, guid: 36489ad9a793dd9408f87c6b9450bbb9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

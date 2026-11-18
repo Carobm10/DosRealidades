@@ -2554,6 +2554,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 1
   controladorPuzzleP1: {fileID: 1884383776}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -3917,6 +3920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualRealidadP1
   realidadElian: {fileID: 330462211}
   realidadLia: {fileID: 2015058470}
+  recolectableElian: {fileID: 0}
+  recolectableLia: {fileID: 0}
 --- !u!4 &1193778010
 Transform:
   m_ObjectHideFlags: 0
@@ -5974,6 +5979,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 1
   controladorPuzzleP1: {fileID: 1884383776}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -6782,10 +6790,6 @@ PrefabInstance:
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 1027702145
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950249469185021980, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name

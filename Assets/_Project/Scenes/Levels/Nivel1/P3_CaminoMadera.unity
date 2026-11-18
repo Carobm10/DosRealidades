@@ -2199,10 +2199,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  notaGuia: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
+  objetoRecolectable: {fileID: 0}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
   parpadeoAutomatico: 0
@@ -2211,7 +2220,6 @@ MonoBehaviour:
   esBotonFinalP3: 1
   botonEsParaLia: 0
   controlFinal: {fileID: 1193730798}
-  regresoPasillo: {fileID: 0}
 --- !u!1 &651076630
 GameObject:
   m_ObjectHideFlags: 0
@@ -7548,10 +7556,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaInteraccion
   textoAccion: INTERACTUAR
+  puntoIndicador: {fileID: 0}
   ventanaAbrir: {fileID: 0}
+  notaGuia: {fileID: 0}
+  reiniciarPuzzleP1AlSalir: 0
+  controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
+  objetoRecolectable: {fileID: 0}
+  regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
   parpadeoAutomatico: 0
@@ -7560,7 +7577,6 @@ MonoBehaviour:
   esBotonFinalP3: 1
   botonEsParaLia: 1
   controlFinal: {fileID: 1193730798}
-  regresoPasillo: {fileID: 0}
 --- !u!1 &1598063858
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,6 +8025,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1587fb09186fa344aa9d3ed1dfcc0f5, type: 3}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego

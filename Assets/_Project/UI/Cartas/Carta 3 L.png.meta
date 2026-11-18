@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: ac77aef103e0e7b478bf6da1808156fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5359896594185221576
+    second: Carta 3 L_0
+  - first:
+      213: -3134170489975932166
+    second: Carta 3 L_1
+  - first:
+      213: 9024599479460251450
+    second: Carta 3 L_2
+  - first:
+      213: -5727589725682622859
+    second: Carta 3 L_3
+  - first:
+      213: 7156682498211046125
+    second: Carta 3 L_4
+  - first:
+      213: -2299669191365972315
+    second: Carta 3 L_5
+  - first:
+      213: 4523343617659800335
+    second: Carta 3 L_6
+  - first:
+      213: 4671258634684439489
+    second: Carta 3 L_7
+  - first:
+      213: 3860184932932484620
+    second: Carta 3 L_8
+  - first:
+      213: 9000927237905833468
+    second: Carta 3 L_9
+  - first:
+      213: -4153554012442437305
+    second: Carta 3 L_10
+  - first:
+      213: -1813675442578571655
+    second: Carta 3 L_11
+  - first:
+      213: 9218795834438756219
+    second: Carta 3 L_12
+  - first:
+      213: -5096225449134374596
+    second: Carta 3 L_13
+  - first:
+      213: 1465674181035461833
+    second: Carta 3 L_14
+  - first:
+      213: -929991910207474084
+    second: Carta 3 L_15
+  - first:
+      213: 3833969790198272269
+    second: Carta 3 L_16
+  - first:
+      213: 7446983470751618660
+    second: Carta 3 L_17
+  - first:
+      213: -4635605315202378795
+    second: Carta 3 L_18
+  - first:
+      213: -3033001869395477437
+    second: Carta 3 L_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carta 3 L_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 958
+        width: 239
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a83ce0272dd95b0800000000000000
+      internalID: -5359896594185221576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1060
+        width: 287
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaf87f7b803184d0800000000000000
+      internalID: -3134170489975932166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1100
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3747658961dd3d70800000000000000
+      internalID: 9024599479460251450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 23
+        width: 992
+        height: 1052
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e92859d738380b0800000000000000
+      internalID: -5727589725682622859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_4
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1044
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2ef1c70d4a15360800000000000000
+      internalID: 7156682498211046125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_5
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1012
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aea8bbfd0fe510e0800000000000000
+      internalID: -2299669191365972315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_6
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 917
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b84a7fd0526ce30800000000000000
+      internalID: 4523343617659800335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_7
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 915
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb97569af4a3d040800000000000000
+      internalID: 4671258634684439489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_8
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 883
+        width: 87
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e71ce8eb1229530800000000000000
+      internalID: 3860184932932484620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 554
+        width: 90
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdd38842a7b9ec70800000000000000
+      internalID: 9000927237905833468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 154
+        width: 176
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74958f4d1ac9b56c0800000000000000
+      internalID: -4153554012442437305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_11
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 152
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e31435bc784d6e0800000000000000
+      internalID: -1813675442578571655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_12
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 156
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77a298d7fdbfef70800000000000000
+      internalID: 9218795834438756219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_13
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 202
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c314a0974f19649b0800000000000000
+      internalID: -5096225449134374596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_14
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 214
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc8415f6ee175410800000000000000
+      internalID: 1465674181035461833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_15
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 183
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56b814f8410813f0800000000000000
+      internalID: -929991910207474084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_16
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 264
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01d850063ff43530800000000000000
+      internalID: 3833969790198272269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_17
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 264
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4661b56c200095760800000000000000
+      internalID: 7446983470751618660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 112
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3137cb6850bafb0800000000000000
+      internalID: -4635605315202378795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 3 L_19
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 110
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c369b8edc98e5d0800000000000000
+      internalID: -3033001869395477437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Carta 3 L_0: -5359896594185221576
+      Carta 3 L_1: -3134170489975932166
+      Carta 3 L_10: -4153554012442437305
+      Carta 3 L_11: -1813675442578571655
+      Carta 3 L_12: 9218795834438756219
+      Carta 3 L_13: -5096225449134374596
+      Carta 3 L_14: 1465674181035461833
+      Carta 3 L_15: -929991910207474084
+      Carta 3 L_16: 3833969790198272269
+      Carta 3 L_17: 7446983470751618660
+      Carta 3 L_18: -4635605315202378795
+      Carta 3 L_19: -3033001869395477437
+      Carta 3 L_2: 9024599479460251450
+      Carta 3 L_3: -5727589725682622859
+      Carta 3 L_4: 7156682498211046125
+      Carta 3 L_5: -2299669191365972315
+      Carta 3 L_6: 4523343617659800335
+      Carta 3 L_7: 4671258634684439489
+      Carta 3 L_8: 3860184932932484620
+      Carta 3 L_9: 9000927237905833468
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
