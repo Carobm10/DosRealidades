@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -22,14 +21,17 @@ public class AudioManager : MonoBehaviour
 
     public void ReproducirAmbiente(AudioClip clip)
     {
-        if (clip == null) return;
-
-        // Evita reiniciar el ambiente al cambiar
-        // entre escenas del mismo nivel.
-        if (ambienteSource.clip == clip &&
-            ambienteSource.isPlaying)
+        if (clip == null || ambienteSource == null)
             return;
 
+        // Si ya está sonando esta música, no la reinicia.
+        if (ambienteSource.clip == clip &&
+            ambienteSource.isPlaying)
+        {
+            return;
+        }
+
+        // Si es otra música, cambia a la nueva.
         ambienteSource.clip = clip;
         ambienteSource.loop = true;
         ambienteSource.Play();
@@ -37,12 +39,13 @@ public class AudioManager : MonoBehaviour
 
     public void ReproducirEfecto(AudioClip clip)
     {
-        if (clip != null)
+        if (clip != null && efectosSource != null)
             efectosSource.PlayOneShot(clip);
     }
 
     public void DetenerAmbiente()
     {
-        ambienteSource.Stop();
+        if (ambienteSource != null)
+            ambienteSource.Stop();
     }
 }

@@ -3589,6 +3589,13 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!61 &578635110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4126,6 +4133,13 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!61 &617596987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5854,6 +5868,13 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!61 &1132061323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8010,6 +8031,8 @@ MonoBehaviour:
   realidadLia: {fileID: 500229789}
   recolectableElian: {fileID: 0}
   recolectableLia: {fileID: 0}
+  ambienteElian: {fileID: 8300000, guid: 499c52b16bda65c459b511455e60849c, type: 3}
+  ambienteLia: {fileID: 8300000, guid: e1be13173bf992a44ae72615c9fbb124, type: 3}
 --- !u!4 &1880700792
 Transform:
   m_ObjectHideFlags: 0
@@ -8549,23 +8572,23 @@ PrefabInstance:
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: panelObjetoRecolectado
       value: 
-      objectReference: {fileID: 861766805}
+      objectReference: {fileID: 0}
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: imagenObjetoRecolectado
       value: 
-      objectReference: {fileID: 83295262}
+      objectReference: {fileID: 0}
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: tituloObjetoRecolectado
       value: 
-      objectReference: {fileID: 133263882}
+      objectReference: {fileID: 0}
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: botonCerrarObjetoRecolectado
       value: 
-      objectReference: {fileID: 1215566555}
+      objectReference: {fileID: 0}
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: descripcionObjetoRecolectado
       value: 
-      objectReference: {fileID: 2067957190}
+      objectReference: {fileID: 0}
     - target: {fileID: 5313743190471340886, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Color.a
       value: 0.46666667
