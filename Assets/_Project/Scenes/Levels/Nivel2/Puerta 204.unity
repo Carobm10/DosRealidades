@@ -1889,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoRecolectable
   ShowTopMostFoldoutHeaderGroup: 1
-  objetoInventario: {fileID: 11400000, guid: 3638e2f4ff2f5624c8b79c6d0a9011c2, type: 2}
+  objetoInventario: {fileID: 11400000, guid: 0f38f0bd38318724f88c8b0b03b1a8e0, type: 2}
   personajePermitido: 2
   distanciaMaxima: 3
 --- !u!114 &1186571699
@@ -1930,6 +1930,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!212 &1186571700
 SpriteRenderer:
   serializedVersion: 3
@@ -2461,6 +2464,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!212 &1767035093
 SpriteRenderer:
   serializedVersion: 3
@@ -3094,6 +3100,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!114 &2071799753
 MonoBehaviour:
   m_ObjectHideFlags: 0

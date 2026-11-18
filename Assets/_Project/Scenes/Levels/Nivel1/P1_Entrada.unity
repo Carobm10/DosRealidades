@@ -2569,6 +2569,13 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!58 &844031881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4540,6 +4547,10 @@ PrefabInstance:
       propertyPath: animatorPuertaElian
       value: 
       objectReference: {fileID: 1085555479}
+    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: requiereObjetosRecolectables
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8608858231243511909, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.73
@@ -5994,6 +6005,13 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!58 &1927806549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6620,7 +6638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807716374185399502, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1842720247202567061, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_InScenePlaced
