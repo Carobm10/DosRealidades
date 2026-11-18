@@ -130,15 +130,6 @@ public class ControlHuellasP5 : MonoBehaviour
         // de que la puerta tenga recorrido de huellas.
         ActivarBrilloPuerta(numeroPuerta);
 
-        // La habitación 201 no tiene huellas.
-        if (numeroPuerta == 201)
-        {
-            Debug.Log(
-                "P5: Puerta 201 iluminada. Sin recorrido de huellas."
-            );
-            return;
-        }
-
         SpriteRenderer[] camino = ObtenerCamino(numeroPuerta);
 
         if (camino == null || camino.Length == 0)
@@ -171,9 +162,10 @@ public class ControlHuellasP5 : MonoBehaviour
     {
         switch (numeroPuerta)
         {
-            case 201: return null;
+            case 201: return huellas201;
             case 202: return huellas202;
             case 204: return huellas204;
+
             default: return null;
         }
     }

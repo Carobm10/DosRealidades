@@ -1889,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoRecolectable
   ShowTopMostFoldoutHeaderGroup: 1
-  objetoInventario: {fileID: 11400000, guid: 8379b1a6c48f2cc4789df895654a4b03, type: 2}
+  objetoInventario: {fileID: 11400000, guid: 3638e2f4ff2f5624c8b79c6d0a9011c2, type: 2}
   personajePermitido: 2
   distanciaMaxima: 3
 --- !u!114 &1186571699
@@ -3019,11 +3019,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUDJuego
       objectReference: {fileID: 0}
+    - target: {fileID: 7899525096547142300, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: ventanasBloqueantes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899525096547142300, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: 'ventanasBloqueantes.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2067554675}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+--- !u!1 &2067554675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 854777036944796787, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 2067554674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2071799750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,7 +3127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
   GlobalObjectIdHash: 2000230765
   InScenePlacedSourceGlobalObjectIdHash: 0
-  m_InScenePlacedDisabledByDefault: 0
+  m_InScenePlacedDisabledByDefault: 1
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0

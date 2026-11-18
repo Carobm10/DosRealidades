@@ -15,6 +15,7 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     [Header("Objetos necesarios para salir")]
     [SerializeField] private ObjetoRecolectable fragmentoElian;
     [SerializeField] private ObjetoRecolectable fragmentoLia;
+    [SerializeField] private bool requiereObjetosRecolectables = true;
 
     [Header("Visuales de salida")]
     [SerializeField] private GameObject visualBloqueado;
@@ -150,6 +151,9 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     private bool AmbosObjetosRecolectados()
     {
+        if (!requiereObjetosRecolectables)
+            return true;
+
         if (fragmentoElian == null || fragmentoLia == null)
         {
             Debug.LogError(

@@ -25,7 +25,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
     [Header("Cinematica")]
     [SerializeField] private float tiempoAntesDeCambiarEscena = 1.2f;
-    [SerializeField] private float duracionEnfoque = 5f;
+    [SerializeField] private float duracionEnfoque = 1.8f;
 
     [Header("Entrada cooperativa")]
 [SerializeField] private float distanciaEntrada = 1.5f;

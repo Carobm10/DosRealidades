@@ -146,30 +146,54 @@ public class PersecucionVigiliaP2 : MonoBehaviour
     // DETECTAR CONTACTO CON LIA
     // =====================================
 
-    private void OnTriggerEnter2D(Collider2D otro)
+    
+    private void OnTriggerStay2D(Collider2D otro)
     {
         NetworkObject jugador =
             otro.GetComponentInParent<NetworkObject>();
 
-        if (jugador == null || !jugador.IsOwner)
+        if (jugador == null)
+            return;
+
+        // Solo procesar al jugador dueño de este personaje.
+        if (!jugador.IsOwner)
             return;
 
         NetworkPlayerSetup setup =
             jugador.GetComponent<NetworkPlayerSetup>();
 
-        if (setup == null ||
-            !setup.RolConfigurado ||
-            setup.EsElian)
+        if (setup == null || !setup.RolConfigurado)
             return;
 
+        // La Vigilia solamente afecta a Lía.
+        if (setup.EsElian)
+            return;
+
+        // Respetar intervalo entre golpes.
         if (Time.time < siguienteGolpePermitido)
             return;
+
+        VidaJugador vida =
+            jugador.GetComponent<VidaJugador>();
+
+        if (vida == null)
+        {
+            Debug.LogError(
+                "VIGILIA: Lía no tiene componente VidaJugador."
+            );
+            return;
+        }
 
         siguienteGolpePermitido =
             Time.time + intervaloEntreGolpes;
 
         AplicarImpacto(jugador);
+
+        Debug.Log(
+            "VIGILIA: CONTACTO CONFIRMADO CON LÍA."
+        );
     }
+
 
     // =====================================
     // APLICAR DANIO Y LENTITUD
