@@ -9,18 +9,18 @@ public class ZonaSalidaP2 : NetworkBehaviour
     [Header("Escena siguiente")]
     [SerializeField] private string escenaSiguiente;
 
-    private HashSet<ulong> jugadoresEnZona =
+    private readonly HashSet<ulong> jugadoresEnZona =
         new HashSet<ulong>();
 
-    private bool cambiandoEscena = false;
+    private bool cambiandoEscena;
+
+    // =====================================
+    // ENTRADA A LA SALIDA
+    // =====================================
 
     private void OnTriggerEnter2D(Collider2D otro)
     {
         if (cambiandoEscena || !IsSpawned)
-            return;
-
-        if (NetworkManager.Singleton == null ||
-            !NetworkManager.Singleton.IsListening)
             return;
 
         NetworkObject jugador =
@@ -32,13 +32,13 @@ public class ZonaSalidaP2 : NetworkBehaviour
         RegistrarEntradaRpc();
     }
 
+    // =====================================
+    // SALIDA DE LA ZONA
+    // =====================================
+
     private void OnTriggerExit2D(Collider2D otro)
     {
         if (cambiandoEscena || !IsSpawned)
-            return;
-
-        if (NetworkManager.Singleton == null ||
-            !NetworkManager.Singleton.IsListening)
             return;
 
         NetworkObject jugador =
@@ -50,47 +50,74 @@ public class ZonaSalidaP2 : NetworkBehaviour
         RegistrarSalidaRpc();
     }
 
-    [Rpc(SendTo.Server)]
+    // =====================================
+    // REGISTRAR ENTRADA EN SERVIDOR
+    // =====================================
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
     private void RegistrarEntradaRpc(
         RpcParams rpcParams = default)
     {
-        if (cambiandoEscena)
+        if (!IsServer || cambiandoEscena)
             return;
 
         ulong jugadorId =
             rpcParams.Receive.SenderClientId;
 
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red == null ||
+            !red.ConnectedClients.ContainsKey(jugadorId))
+            return;
+
         jugadoresEnZona.Add(jugadorId);
 
         Debug.Log(
-            "Jugadores en salida P2: " +
+            "P2: Jugadores en salida " +
             jugadoresEnZona.Count + "/2"
         );
 
-        if (jugadoresEnZona.Count >= 2)
+        if (jugadoresEnZona.Count < 2)
+            return;
+
+        if (red.ConnectedClientsIds.Count != 2)
+            return;
+
+        foreach (ulong id in red.ConnectedClientsIds)
         {
-            if (NetworkManager.Singleton != null &&
-                NetworkManager.Singleton.IsServer)
-            {
-                cambiandoEscena = true;
-
-                Debug.Log(
-                    "P2 COMPLETADO: ambos jugadores llegaron."
-                );
-
-                NetworkManager.Singleton.SceneManager.LoadScene(
-                    escenaSiguiente,
-                    LoadSceneMode.Single
-                );
-            }
+            if (!jugadoresEnZona.Contains(id))
+                return;
         }
+
+        if (string.IsNullOrWhiteSpace(escenaSiguiente))
+        {
+            Debug.LogError(
+                "P2: No se ha asignado la escena siguiente."
+            );
+            return;
+        }
+
+        cambiandoEscena = true;
+
+        Debug.Log(
+            "P2 COMPLETADO: ambos jugadores llegaron."
+        );
+
+        red.SceneManager.LoadScene(
+            escenaSiguiente,
+            LoadSceneMode.Single
+        );
     }
 
-    [Rpc(SendTo.Server)]
+    // =====================================
+    // REGISTRAR SALIDA EN SERVIDOR
+    // =====================================
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
     private void RegistrarSalidaRpc(
         RpcParams rpcParams = default)
     {
-        if (cambiandoEscena)
+        if (!IsServer || cambiandoEscena)
             return;
 
         ulong jugadorId =
@@ -99,8 +126,14 @@ public class ZonaSalidaP2 : NetworkBehaviour
         jugadoresEnZona.Remove(jugadorId);
 
         Debug.Log(
-            "Jugadores en salida P2: " +
+            "P2: Jugadores en salida " +
             jugadoresEnZona.Count + "/2"
         );
+    }
+
+    public override void OnNetworkDespawn()
+    {
+        jugadoresEnZona.Clear();
+        cambiandoEscena = false;
     }
 }

@@ -13,6 +13,9 @@ public class ReinicioNivelCooperativo : NetworkBehaviour
     [Header("Configuracion")]
     [SerializeField] private float esperaAntesDeRecargar = 0.3f;
 
+    [Header("Reinicio especifico P5")]
+    [SerializeField] private bool reiniciarDatosP5 = false;
+
     private bool reiniciando;
 
     private void Awake()
@@ -44,6 +47,24 @@ public class ReinicioNivelCooperativo : NetworkBehaviour
             return;
 
         reiniciando = true;
+
+        if (reiniciarDatosP5)
+        {
+            PuzzlePuertasP5.ReiniciarProgresoParaNuevoIntento();
+
+            foreach (var cliente in
+                NetworkManager.Singleton.ConnectedClientsList)
+            {
+                if (cliente.PlayerObject == null)
+                    continue;
+
+                InventarioJugador inventario =
+                    cliente.PlayerObject.GetComponent<InventarioJugador>();
+
+                if (inventario != null)
+                    inventario.ReiniciarObjetosP5DesdeServidor();
+            }
+        }
 
         Debug.Log(
             "REINICIO: preparando reinicio cooperativo."

@@ -1343,7 +1343,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 510410235}
   - {fileID: 2017915053}
   - {fileID: 1739056939}
   - {fileID: 1351029721}
@@ -1772,81 +1771,6 @@ MonoBehaviour:
   spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
   visualBrillo: {fileID: 0}
   animatorPuerta: {fileID: 509347008}
---- !u!1 &510410234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 510410235}
-  - component: {fileID: 510410236}
-  - component: {fileID: 510410237}
-  m_Layer: 0
-  m_Name: ObjetosP5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &510410235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510410234}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7951503, y: 0.95738, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 392495110}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &510410236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510410234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 2335342446
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  m_InScenePlacedDisabledByDefault: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  m_InScenePlaced: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 0
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
---- !u!114 &510410237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510410234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd255fe285f62141a71140edb05953e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjetosP5Controller
-  ShowTopMostFoldoutHeaderGroup: 1
-  fusible: {fileID: 0}
-  selloEco: {fileID: 0}
 --- !u!1 &513289369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,6 +3431,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 910350354}
   objetoRecolectable: {fileID: 0}
@@ -3519,6 +3446,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!95 &910350357
 Animator:
   serializedVersion: 7
@@ -4248,6 +4179,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1303925448}
   objetoRecolectable: {fileID: 0}
@@ -4260,6 +4194,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!95 &1161285772
 Animator:
   serializedVersion: 7
@@ -5944,6 +5882,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 1478655851}
   objetoRecolectable: {fileID: 0}
@@ -5956,6 +5897,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!95 &1478655854
 Animator:
   serializedVersion: 7
@@ -6386,6 +6331,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -6398,6 +6346,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!95 &1639288189
 Animator:
   serializedVersion: 7
@@ -8248,6 +8200,10 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 1313707468
       objectReference: {fileID: 0}
+    - target: {fileID: 3959436481604291659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: panelObjetoRecolectado
       value: 
@@ -8271,6 +8227,10 @@ PrefabInstance:
     - target: {fileID: 6021212014282936290, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756498284165088174, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: reiniciarDatosP5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name

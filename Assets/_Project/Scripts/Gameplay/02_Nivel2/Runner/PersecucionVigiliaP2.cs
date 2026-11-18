@@ -1,21 +1,38 @@
 
+using System.Collections;
 using UnityEngine;
 using Unity.Netcode;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PersecucionVigiliaP2 : MonoBehaviour
 {
-    [Header("Movimiento")]
-    [SerializeField] private float velocidadPersecucion = 5.5f;
+    [Header("Movimiento de La Vigilia")]
+    [SerializeField] private float velocidadPersecucion = 3.6f;
+
+    [Header("Velocidad al atravesar puertas")]
+    [SerializeField] private float velocidadPuerta = 0.6f;
 
     [Header("Animacion")]
     [SerializeField] private Animator animator;
 
-    [Header("Jugador perseguido")]
-    private Transform objetivo;
+    [Header("Velocidad de Lia")]
+    [SerializeField] private float velocidadNormalLia = 3f;
+    [SerializeField] private float velocidadGolpeadaLia = 1.8f;
+    [SerializeField] private float duracionLentitud = 1.5f;
 
+    [Header("Control de dano")]
+    [SerializeField] private float intervaloEntreGolpes = 1.5f;
+
+    private Transform objetivo;
     private Rigidbody2D cuerpo;
+
     private bool persecucionActiva;
+    private float siguienteGolpePermitido;
+
+    private Coroutine rutinaLentitud;
+
+    // Contador de zonas de puertas.
+    private int zonasPuertaActivas;
 
     private void Awake()
     {
@@ -37,8 +54,7 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         if (red == null || red.LocalClient == null)
             return;
 
-        NetworkObject jugador =
-            red.LocalClient.PlayerObject;
+        NetworkObject jugador = red.LocalClient.PlayerObject;
 
         if (jugador == null)
             return;
@@ -58,6 +74,10 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         Debug.Log("VIGILIA: Persiguiendo a Lía.");
     }
 
+    // =====================================
+    // PERSECUCION
+    // =====================================
+
     private void FixedUpdate()
     {
         if (!persecucionActiva || objetivo == null)
@@ -71,11 +91,16 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
         float direccion = Mathf.Sign(diferenciaX);
 
+        float velocidadActual =
+            zonasPuertaActivas > 0
+            ? velocidadPuerta
+            : velocidadPersecucion;
+
         Vector2 nuevaPosicion =
             cuerpo.position +
             Vector2.right *
             direccion *
-            velocidadPersecucion *
+            velocidadActual *
             Time.fixedDeltaTime;
 
         cuerpo.MovePosition(nuevaPosicion);
@@ -89,10 +114,128 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         }
     }
 
+    // =====================================
+    // ZONAS DE PUERTAS
+    // =====================================
+
+    public void EntrarZonaPuerta()
+    {
+        zonasPuertaActivas++;
+
+        Debug.Log(
+            "VIGILIA: Entrando en puerta. Velocidad: " +
+            velocidadPuerta
+        );
+    }
+
+    public void SalirZonaPuerta()
+    {
+        zonasPuertaActivas =
+            Mathf.Max(0, zonasPuertaActivas - 1);
+
+        if (zonasPuertaActivas == 0)
+        {
+            Debug.Log(
+                "VIGILIA: Salió de la puerta. " +
+                "Velocidad normal: " + velocidadPersecucion
+            );
+        }
+    }
+
+    // =====================================
+    // DETECTAR CONTACTO CON LIA
+    // =====================================
+
+    private void OnTriggerEnter2D(Collider2D otro)
+    {
+        NetworkObject jugador =
+            otro.GetComponentInParent<NetworkObject>();
+
+        if (jugador == null || !jugador.IsOwner)
+            return;
+
+        NetworkPlayerSetup setup =
+            jugador.GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null ||
+            !setup.RolConfigurado ||
+            setup.EsElian)
+            return;
+
+        if (Time.time < siguienteGolpePermitido)
+            return;
+
+        siguienteGolpePermitido =
+            Time.time + intervaloEntreGolpes;
+
+        AplicarImpacto(jugador);
+    }
+
+    // =====================================
+    // APLICAR DANIO Y LENTITUD
+    // =====================================
+
+    private void AplicarImpacto(NetworkObject jugador)
+    {
+        VidaJugador vida =
+            jugador.GetComponent<VidaJugador>();
+
+        NetworkPlayerMovement movimiento =
+            jugador.GetComponent<NetworkPlayerMovement>();
+
+        if (vida != null)
+        {
+            vida.PerderVida();
+
+            Debug.Log("VIGILIA: Lia ha perdido una vida.");
+        }
+
+        if (movimiento != null)
+        {
+            if (rutinaLentitud != null)
+                StopCoroutine(rutinaLentitud);
+
+            rutinaLentitud =
+                StartCoroutine(AplicarLentitud(movimiento));
+        }
+    }
+
+    // =====================================
+    // RECUPERAR VELOCIDAD DE LIA
+    // =====================================
+
+    private IEnumerator AplicarLentitud(
+        NetworkPlayerMovement movimiento)
+    {
+        movimiento.ConfigurarVelocidadNivel(
+            velocidadGolpeadaLia
+        );
+
+        Debug.Log("VIGILIA: Lia ralentizada.");
+
+        yield return new WaitForSeconds(duracionLentitud);
+
+        if (movimiento != null &&
+            movimiento.IsSpawned &&
+            movimiento.IsOwner)
+        {
+            movimiento.ConfigurarVelocidadNivel(
+                velocidadNormalLia
+            );
+        }
+
+        Debug.Log("VIGILIA: Lia recupera su velocidad.");
+
+        rutinaLentitud = null;
+    }
+
+    // =====================================
+    // MODIFICAR VELOCIDADES
+    // =====================================
+
     public void ModificarVelocidad(float nuevaVelocidad)
     {
-        velocidadPersecucion =
-            Mathf.Max(0f, nuevaVelocidad);
+        velocidadPersecucion = Mathf.Max(0f, nuevaVelocidad);
     }
 
     public float ObtenerVelocidad()

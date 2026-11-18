@@ -19,6 +19,22 @@ public class CamaraJugadorLocal : NetworkBehaviour
     [SerializeField] private float margenHabitacion = 1f;
     private Transform puntoCamaraFija;
 
+    // =====================================
+    // CONFIGURACION EXCLUSIVA RUNNER
+    // =====================================
+
+    [Header("Runner Vigilia - Camara horizontal")]
+    [SerializeField] private float ajusteZoomRunner = 1f;
+
+    private const string ESCENA_RUNNER = "Runner_Vigilia";
+
+    private bool modoRunnerActivo;
+    private float alturaFijaRunner;
+
+    // =====================================
+    // VARIABLES GENERALES
+    // =====================================
+
     private bool camaraFijaActiva;
     private bool cinematicaActiva;
 
@@ -27,10 +43,15 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     private bool enfoqueActivo = false;
     private bool zoomEnCurso;
+
     private Vector3 puntoEnfoque;
 
     private float tamañoOriginal;
     private Coroutine rutinaEnfoque;
+
+    // =====================================
+    // INICIO
+    // =====================================
 
     private void Awake()
     {
@@ -54,6 +75,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
         }
     }
 
+    // =====================================
+    // NETWORK SPAWN
+    // =====================================
+
     public override void OnNetworkSpawn()
     {
         SceneManager.sceneLoaded += AlCargarEscena;
@@ -75,6 +100,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
             rutinaEnfoque = null;
         }
     }
+
+    // =====================================
+    // CAMBIO DE ESCENA
+    // =====================================
 
     private void AlCargarEscena(
         Scene escena,
@@ -103,12 +132,19 @@ public class CamaraJugadorLocal : NetworkBehaviour
         }
     }
 
+    // =====================================
+    // BUSCAR LIMITES DE CAMARA
+    // =====================================
+
     private void BuscarLimitesCamara()
     {
         puntoCamaraFija = null;
         limitarCamara = false;
         limitesCamara = null;
         camaraFijaActiva = false;
+
+        modoRunnerActivo =
+            SceneManager.GetActiveScene().name == ESCENA_RUNNER;
 
         if (!IsOwner)
             return;
@@ -132,7 +168,16 @@ public class CamaraJugadorLocal : NetworkBehaviour
             GameObject.Find("LimitesCamara");
 
         if (objetoLimites == null)
+        {
+            if (modoRunnerActivo)
+            {
+                Debug.LogError(
+                    "RUNNER: No se encontró LimitesCamara."
+                );
+            }
+
             return;
+        }
 
         limitesCamara =
             objetoLimites.GetComponent<BoxCollider2D>();
@@ -142,19 +187,76 @@ public class CamaraJugadorLocal : NetworkBehaviour
         camaraFijaActiva =
             GameObject.Find("PuntoCamaraFija") != null &&
             limitesCamara != null;
+
+        // =====================================
+        // CONFIGURACION EXCLUSIVA RUNNER
+        // =====================================
+
+        if (modoRunnerActivo)
+        {
+            ConfigurarCamaraRunner();
+        }
     }
 
-    
+    // =====================================
+    // CONFIGURAR CAMARA RUNNER
+    // =====================================
+
+    private void ConfigurarCamaraRunner()
+    {
+        if (camaraJugador == null)
+            return;
+
+        camaraJugador.orthographic = true;
+
+        if (limitesCamara != null)
+        {
+            Bounds limites = limitesCamara.bounds;
+
+            // La camara permanece a la altura
+            // central del escenario.
+
+            alturaFijaRunner = limites.center.y;
+
+            // Ajustar zoom para cubrir
+            // la altura completa del escenario.
+
+            camaraJugador.orthographicSize =
+                Mathf.Max(
+                    0.1f,
+                    limites.extents.y * ajusteZoomRunner
+                );
+        }
+        else
+        {
+            alturaFijaRunner =
+                camaraJugador.transform.position.y;
+        }
+
+        Debug.Log(
+            "RUNNER: Camara horizontal configurada. " +
+            "Zoom: " + camaraJugador.orthographicSize +
+            " | Altura fija: " + alturaFijaRunner
+        );
+    }
+
+    // =====================================
+    // ACTUALIZACION DE CAMARA
+    // =====================================
+
     private void LateUpdate()
     {
         if (!IsOwner || camaraJugador == null)
             return;
 
-        // Durante el zoom, la corrutina controla la cámara.
+        // Durante el zoom, la corrutina
+        // controla la camara.
+
         if (zoomEnCurso)
             return;
 
-        // Enfoque temporal, siempre respetando los límites.
+        // Enfoque temporal.
+
         if (enfoqueActivo)
         {
             Vector3 posicionLimitada =
@@ -173,23 +275,46 @@ public class CamaraJugadorLocal : NetworkBehaviour
             return;
         }
 
-        if (puntoCamaraFija != null && limitesCamara != null)
+        // =====================================
+        // RUNNER: SEGUIMIENTO HORIZONTAL
+        // =====================================
+
+        if (modoRunnerActivo)
+        {
+            SeguirJugadorHorizontal();
+            return;
+        }
+
+        // =====================================
+        // COMPORTAMIENTO ORIGINAL
+        // DEMAS NIVELES
+        // =====================================
+
+        if (puntoCamaraFija != null &&
+            limitesCamara != null)
         {
             Bounds limites = limitesCamara.bounds;
 
             Vector3 posicion = limites.center;
-            posicion.z = camaraJugador.transform.position.z;
+
+            posicion.z =
+                camaraJugador.transform.position.z;
 
             camaraJugador.transform.position = posicion;
 
             camaraJugador.orthographic = true;
-            camaraJugador.orthographicSize = limites.size.y / 2f;
-            camaraJugador.aspect = limites.size.x / limites.size.y;
+
+            camaraJugador.orthographicSize =
+                limites.size.y / 2f;
+
+            camaraJugador.aspect =
+                limites.size.x / limites.size.y;
 
             return;
         }
 
-        if (camaraFijaActiva && limitesCamara != null)
+        if (camaraFijaActiva &&
+            limitesCamara != null)
         {
             AjustarCamaraHabitacion();
             return;
@@ -200,11 +325,69 @@ public class CamaraJugadorLocal : NetworkBehaviour
         Vector3 posicionFinal =
             ObtenerPosicionLimitada(posicionDeseada);
 
-        posicionFinal.z = camaraJugador.transform.position.z;
+        posicionFinal.z =
+            camaraJugador.transform.position.z;
 
         camaraJugador.transform.position = posicionFinal;
     }
 
+    // =====================================
+    // SEGUIMIENTO HORIZONTAL RUNNER
+    // =====================================
+
+    private void SeguirJugadorHorizontal()
+    {
+        if (camaraJugador == null)
+            return;
+
+        float posicionX = transform.position.x;
+
+        float posicionY = alturaFijaRunner;
+
+        if (limitesCamara != null)
+        {
+            Bounds limites = limitesCamara.bounds;
+
+            float anchoCamara =
+                camaraJugador.orthographicSize *
+                camaraJugador.aspect;
+
+            float minimoX =
+                limites.min.x + anchoCamara;
+
+            float maximoX =
+                limites.max.x - anchoCamara;
+
+            // Evitar salir del escenario
+            // por los extremos horizontales.
+
+            if (minimoX > maximoX)
+            {
+                posicionX = limites.center.x;
+            }
+            else
+            {
+                posicionX = Mathf.Clamp(
+                    posicionX,
+                    minimoX,
+                    maximoX
+                );
+            }
+        }
+
+        Vector3 posicionFinal = new Vector3(
+            posicionX,
+            posicionY,
+            camaraJugador.transform.position.z
+        );
+
+        camaraJugador.transform.position =
+            posicionFinal;
+    }
+
+    // =====================================
+    // LIMITES GENERALES
+    // =====================================
 
     private Vector3 ObtenerPosicionLimitada(
         Vector3 posicionDeseada)
@@ -308,7 +491,6 @@ public class CamaraJugadorLocal : NetworkBehaviour
             );
     }
 
-    
     private IEnumerator RutinaZoom(
         Vector3 posicion,
         float duracion)
@@ -329,6 +511,7 @@ public class CamaraJugadorLocal : NetworkBehaviour
         zoomEnCurso = true;
 
         // ACERCAMIENTO
+
         float tiempo = 0f;
 
         while (tiempo < 1f)
@@ -368,9 +551,11 @@ public class CamaraJugadorLocal : NetworkBehaviour
             ObtenerPosicionLimitada(posicionZoom);
 
         // MANTENER ENFOQUE
+
         yield return new WaitForSeconds(duracion);
 
-        // REGRESAR A LA POSICIÓN ORIGINAL
+        // REGRESAR A LA POSICION ORIGINAL
+
         tiempo = 0f;
 
         while (tiempo < 1f)
@@ -414,7 +599,6 @@ public class CamaraJugadorLocal : NetworkBehaviour
         rutinaEnfoque = null;
     }
 
-
     // =====================================
     // DETENER ENFOQUE ANTERIOR
     // =====================================
@@ -440,7 +624,9 @@ public class CamaraJugadorLocal : NetworkBehaviour
             Bounds limites = limitesCamara.bounds;
 
             Vector3 posicion = limites.center;
-            posicion.z = camaraJugador.transform.position.z;
+
+            posicion.z =
+                camaraJugador.transform.position.z;
 
             camaraJugador.transform.position = posicion;
 

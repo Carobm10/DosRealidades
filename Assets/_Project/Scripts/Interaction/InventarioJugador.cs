@@ -232,4 +232,20 @@ public class InventarioJugador : NetworkBehaviour
             objetos.Count
         );
     }
+
+
+    public void ReiniciarObjetosP5DesdeServidor()
+    {
+        if (!IsServer || !IsSpawned || objetos == null)
+            return;
+
+        objetos.Remove(new FixedString64Bytes("fragmento_codigo_elian"));
+        objetos.Remove(new FixedString64Bytes("Llave_lia"));
+
+        Debug.Log(
+            "P5: Inventario reiniciado para jugador " +
+            OwnerClientId
+        );
+    }
+
 }

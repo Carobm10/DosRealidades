@@ -28,6 +28,7 @@ public class PuertaPuzzleP5 : MonoBehaviour
 
     // Compatibilidad con otros scripts.
     public Transform PuntoEnfoque => transform;
+    
 
     public Transform PuntoEnfoqueLocal
     {

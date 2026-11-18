@@ -64,6 +64,10 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
     private bool transicionEnCurso;
 
+    private NetworkPlayerMovement movimientoLocal;
+    private bool movimientoBloqueadoAntesCinematica;
+    private Coroutine rutinaControlesCinematica;
+
     public bool PuzzleCompletado => puzzleCompletado.Value;
 
     [RuntimeInitializeOnLoadMethod(
@@ -236,6 +240,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     // APERTURA Y CAMARA EN TODOS LOS CLIENTES
     // =====================================
 
+    
     [Rpc(SendTo.Everyone)]
     private void AbrirPuertaYCentrarCamaraRpc(
         int numeroPuerta,
@@ -246,8 +251,30 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         if (puerta == null)
             return;
 
+        // Obtener el jugador local.
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red != null &&
+            red.LocalClient != null &&
+            red.LocalClient.PlayerObject != null)
+        {
+            movimientoLocal =
+                red.LocalClient.PlayerObject
+                .GetComponent<NetworkPlayerMovement>();
+
+            if (movimientoLocal != null)
+            {
+                movimientoBloqueadoAntesCinematica =
+                    movimientoLocal.MovimientoBloqueado;
+
+                movimientoLocal.BloquearMovimiento(true);
+            }
+        }
+
+        // Abrir puerta de la realidad correspondiente.
         puerta.AbrirVisualLocal();
 
+        // Enfocar cámara local.
         CamaraJugadorLocal[] camaras =
             FindObjectsByType<CamaraJugadorLocal>(
                 FindObjectsSortMode.None
@@ -263,7 +290,46 @@ public class PuzzlePuertasP5 : NetworkBehaviour
                 );
             }
         }
+
+        // Esperar a que termine la cinemática.
+        if (rutinaControlesCinematica != null)
+            StopCoroutine(rutinaControlesCinematica);
+
+        float duracionTotal = Mathf.Max(
+            duracion,
+            puerta.DuracionApertura
+        );
+
+        rutinaControlesCinematica =
+            StartCoroutine(
+                RestaurarMovimientoAlTerminar(duracionTotal)
+            );
     }
+
+    private IEnumerator RestaurarMovimientoAlTerminar(
+        float duracion)
+    {
+        yield return new WaitForSecondsRealtime(
+            duracion + 0.2f
+        );
+
+        if (movimientoLocal != null &&
+            movimientoLocal.IsSpawned &&
+            movimientoLocal.IsOwner)
+        {
+            movimientoLocal.BloquearMovimiento(
+                movimientoBloqueadoAntesCinematica
+            );
+        }
+
+        movimientoLocal = null;
+        rutinaControlesCinematica = null;
+
+        Debug.Log(
+            "P5: Cinemática terminada. Controles restaurados."
+        );
+    }
+
 
     [Rpc(SendTo.Everyone)]
     private void ActualizarProgresoClientesRpc(int progreso)
@@ -512,4 +578,31 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             );
         }
     }
+
+
+    public static void ReiniciarProgresoParaNuevoIntento()
+    {
+        progresoGuardado = 0;
+
+        PuzzlePuertasP5 puzzle =
+            FindAnyObjectByType<PuzzlePuertasP5>();
+
+        if (puzzle == null || !puzzle.IsSpawned || !puzzle.IsServer)
+            return;
+
+        puzzle.pasoActual.Value = 0;
+        puzzle.fallosActuales.Value = 0;
+        puzzle.puzzleCompletado.Value = false;
+        puzzle.ultimaPuertaCorrecta.Value = -1;
+
+        puzzle.transicionEnCurso = false;
+
+        if (puzzle.vigiliaVisual != null)
+            puzzle.vigiliaVisual.SetActive(false);
+
+        puzzle.ActualizarHuellas(0);
+
+        Debug.Log("P5: PROGRESO COMPLETAMENTE REINICIADO.");
+    }
+
 }
