@@ -863,11 +863,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2067554674}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!222 &133263883
+CanvasRenderer:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_CullTransparentMesh: 1
 --- !u!1 &200673565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +1965,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!212 &1186571700
 SpriteRenderer:
   serializedVersion: 3
@@ -2499,6 +2510,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!212 &1767035093
 SpriteRenderer:
   serializedVersion: 3
@@ -2767,6 +2781,8 @@ MonoBehaviour:
   realidadLia: {fileID: 500229789}
   recolectableElian: {fileID: 1767035090}
   recolectableLia: {fileID: 1186571698}
+  ambienteElian: {fileID: 8300000, guid: 499c52b16bda65c459b511455e60849c, type: 3}
+  ambienteLia: {fileID: 8300000, guid: e1be13173bf992a44ae72615c9fbb124, type: 3}
 --- !u!4 &1880700792
 Transform:
   m_ObjectHideFlags: 0
@@ -3137,11 +3153,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2067554674}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!222 &2067957191
+CanvasRenderer:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_CullTransparentMesh: 1
 --- !u!1 &2071799750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,6 +3223,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!114 &2071799753
 MonoBehaviour:
   m_ObjectHideFlags: 0

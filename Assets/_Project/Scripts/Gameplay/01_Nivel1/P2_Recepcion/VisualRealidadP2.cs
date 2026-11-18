@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using Unity.Netcode;
 
@@ -6,6 +7,10 @@ public class VisualRealidadP2 : MonoBehaviour
     [Header("Realidades")]
     [SerializeField] private GameObject realidadElian;
     [SerializeField] private GameObject realidadLia;
+
+    [Header("Audio ambiente por realidad")]
+    [SerializeField] private AudioClip ambienteElian;
+    [SerializeField] private AudioClip ambienteLia;
 
     private void Start()
     {
@@ -39,9 +44,45 @@ public class VisualRealidadP2 : MonoBehaviour
             NetworkManager.Singleton.IsHost;
 #endif
 
-        realidadElian.SetActive(esElian);
-        realidadLia.SetActive(!esElian);
+        // ACTIVAR REALIDAD CORRESPONDIENTE
+
+        if (realidadElian != null)
+            realidadElian.SetActive(esElian);
+
+        if (realidadLia != null)
+            realidadLia.SetActive(!esElian);
+
+        // CONFIGURAR AUDIO AMBIENTE
+
+        if (AudioManager.Instance != null)
+        {
+            AudioClip ambienteSeleccionado =
+                esElian ? ambienteElian : ambienteLia;
+
+            AudioManager.Instance.ReproducirAmbiente(
+                ambienteSeleccionado
+            );
+        }
+        else
+        {
+            Debug.LogError(
+                "P2: No se encontró AudioManager."
+            );
+        }
+
+        // ACTUALIZAR MISION
+
         ActualizarMision(esElian);
+
+        Debug.Log(
+            "P2 - REALIDAD CONFIGURADA: " +
+            (esElian ? "ELIAN" : "LIA")
+        );
+
+        Debug.Log(
+            "P2 - AUDIO: " +
+            (esElian ? "AMBIENTE ELIAN" : "AMBIENTE LIA")
+        );
     }
 
     private void ActualizarMision(bool esElian)

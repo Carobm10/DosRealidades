@@ -12,6 +12,10 @@ public class VisualRealidadP1 : MonoBehaviour
     [SerializeField] private ObjetoRecolectable recolectableElian;
     [SerializeField] private ObjetoRecolectable recolectableLia;
 
+    [Header("Audio ambiente por realidad")]
+    [SerializeField] private AudioClip ambienteElian;
+    [SerializeField] private AudioClip ambienteLia;
+
     private void Start()
     {
         AplicarRealidad();
@@ -38,25 +42,52 @@ public class VisualRealidadP1 : MonoBehaviour
             NetworkManager.Singleton.IsHost;
 #endif
 
-        // Activar la realidad correspondiente.
+        // ACTIVAR LA REALIDAD CORRESPONDIENTE
+
         if (realidadElian != null)
             realidadElian.SetActive(esElian);
 
         if (realidadLia != null)
             realidadLia.SetActive(!esElian);
 
-        // Mostrar únicamente el recolectable propio.
+        // MOSTRAR UNICAMENTE EL RECOLECTABLE PROPIO
+
         if (recolectableElian != null)
             recolectableElian.ConfigurarVisibilidadLocal(esElian);
 
         if (recolectableLia != null)
             recolectableLia.ConfigurarVisibilidadLocal(!esElian);
 
+        // CONFIGURAR AUDIO AMBIENTE LOCAL
+
+        if (AudioManager.Instance != null)
+        {
+            AudioClip ambienteSeleccionado =
+                esElian ? ambienteElian : ambienteLia;
+
+            AudioManager.Instance.ReproducirAmbiente(
+                ambienteSeleccionado
+            );
+        }
+        else
+        {
+            Debug.LogError(
+                "No se encontró AudioManager en esta instancia."
+            );
+        }
+
+        // ACTUALIZAR MISION
+
         ActualizarMision(esElian);
 
         Debug.Log(
             "REALIDAD CONFIGURADA: " +
             (esElian ? "ELIAN" : "LIA")
+        );
+
+        Debug.Log(
+            "AUDIO AMBIENTE: " +
+            (esElian ? "AMBIENTE ELIAN" : "AMBIENTE LIA")
         );
     }
 

@@ -2735,6 +2735,8 @@ MonoBehaviour:
   realidadLia: {fileID: 500229789}
   recolectableElian: {fileID: 1767035090}
   recolectableLia: {fileID: 1186571698}
+  ambienteElian: {fileID: 8300000, guid: 499c52b16bda65c459b511455e60849c, type: 3}
+  ambienteLia: {fileID: 8300000, guid: e1be13173bf992a44ae72615c9fbb124, type: 3}
 --- !u!4 &1880700792
 Transform:
   m_ObjectHideFlags: 0
