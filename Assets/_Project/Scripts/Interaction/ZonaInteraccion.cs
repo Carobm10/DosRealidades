@@ -64,6 +64,13 @@ public class ZonaInteraccion : MonoBehaviour
     [SerializeField, Range(1, 3)]
     private int numeroPuertaP2 = 1;
 
+    [Header("Animacion boton fisico P2")]
+    [SerializeField] private Animator animatorBotonP2;
+    [SerializeField] private string parametroBrilloP2 = "Brillo";
+    [SerializeField] private string triggerPresionarP2 = "Presionar";
+
+    private bool botonP2Presionado;
+
     private bool puertaElianAbierta;
 
     private Sprite spriteOriginal;
@@ -110,12 +117,28 @@ public class ZonaInteraccion : MonoBehaviour
         if (esBotonFinalP3 && controlFinal == null)
         {
             controlFinal =
-                FindAnyObjectByType<ControlFinalP3>();
+                FindFirstObjectByType<ControlFinalP3>(
+                    FindObjectsInactive.Include
+                );
+
+            if (controlFinal == null)
+            {
+                Debug.LogWarning(
+                    "P3: Este botón está configurado como botón final, " +
+                    "pero no encuentra ControlFinalP3. Objeto: " +
+                    gameObject.name
+                );
+            }
         }
 
         if (objetoRecolectable == null)
             objetoRecolectable =
                 GetComponent<ObjetoRecolectable>();
+
+        if (animatorBotonP2 == null && esBotonPuertaP2)
+        {
+            animatorBotonP2 = GetComponent<Animator>();
+        }
     }
 
     private void OnEnable()
@@ -243,7 +266,9 @@ public class ZonaInteraccion : MonoBehaviour
             if (controlFinal == null)
             {
                 controlFinal =
-                    FindAnyObjectByType<ControlFinalP3>();
+                    FindFirstObjectByType<ControlFinalP3>(
+                        FindObjectsInactive.Include
+                    );
             }
 
             if (controlFinal != null)
@@ -254,8 +279,9 @@ public class ZonaInteraccion : MonoBehaviour
             }
             else
             {
-                Debug.LogError(
-                    "P3: NO SE ENCONTRO CONTROL FINAL"
+                Debug.LogWarning(
+                    "P3: No se encontró ControlFinalP3 para " +
+                    gameObject.name
                 );
             }
 
@@ -263,6 +289,12 @@ public class ZonaInteraccion : MonoBehaviour
         }
 
         visualNPC?.CambiarBrillo(true);
+
+        if (esBotonPuertaP2 && !botonP2Presionado &&
+            animatorBotonP2 != null)
+        {
+            animatorBotonP2.SetBool(parametroBrilloP2, true);
+        }
 
         if (!parpadeoAutomatico)
             CambiarBrilloObjeto(true);
@@ -304,6 +336,12 @@ public class ZonaInteraccion : MonoBehaviour
 
         visualNPC?.CambiarBrillo(false);
 
+        if (esBotonPuertaP2 && !botonP2Presionado &&
+            animatorBotonP2 != null)
+        {
+            animatorBotonP2.SetBool(parametroBrilloP2, false);
+        }
+
         if (!parpadeoAutomatico)
             CambiarBrilloObjeto(false);
 
@@ -333,10 +371,15 @@ public class ZonaInteraccion : MonoBehaviour
         if (contactosJugadorLocal <= 0)
             return;
 
+        // =====================================
         // BOTONES RUNNER P2
+        // =====================================
 
         if (esBotonPuertaP2)
         {
+            if (botonP2Presionado)
+                return;
+
             NetworkManager red = NetworkManager.Singleton;
 
             if (red == null ||
@@ -356,7 +399,35 @@ public class ZonaInteraccion : MonoBehaviour
                 return;
             }
 
+            // Bloquear nuevas pulsaciones.
+            botonP2Presionado = true;
+
+            // Detener el brillo.
+            if (animatorBotonP2 != null)
+            {
+                animatorBotonP2.SetBool(
+                    parametroBrilloP2,
+                    false
+                );
+
+                // Reproducir hundimiento.
+                animatorBotonP2.ResetTrigger(
+                    triggerPresionarP2
+                );
+
+                animatorBotonP2.SetTrigger(
+                    triggerPresionarP2
+                );
+            }
+
+            // Solicitar cierre de la puerta de Lía.
             control.SolicitarCerrarPuerta(numeroPuertaP2);
+
+            Debug.Log(
+                "P2: Botón " + numeroPuertaP2 +
+                " presionado por Elian."
+            );
+
             return;
         }
         

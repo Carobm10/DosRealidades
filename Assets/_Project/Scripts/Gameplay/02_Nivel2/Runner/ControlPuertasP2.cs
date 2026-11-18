@@ -4,13 +4,19 @@ using Unity.Netcode;
 
 public class ControlPuertasP2 : NetworkBehaviour
 {
-    // Control de puertas cerradas en el servidor.
     private readonly bool[] puertasCerradasServidor =
         new bool[3];
 
-    // =====================================
+    public override void OnNetworkSpawn()
+    {
+        if (IsServer)
+        {
+            for (int i = 0; i < puertasCerradasServidor.Length; i++)
+                puertasCerradasServidor[i] = false;
+        }
+    }
+
     // SOLICITUD DE ELIAN
-    // =====================================
 
     public void SolicitarCerrarPuerta(int numeroPuerta)
     {
@@ -28,25 +34,24 @@ public class ControlPuertasP2 : NetworkBehaviour
             !setup.EsElian)
             return;
 
+        Debug.Log("P2: Elian solicita cerrar puerta " + numeroPuerta);
+
         SolicitarCerrarPuertaRpc(numeroPuerta);
     }
 
-    // =====================================
     // VALIDACION DEL SERVIDOR
-    // =====================================
 
-    [Rpc(SendTo.Server)]
+    [Rpc(SendTo.Server, RequireOwnership = true)]
     private void SolicitarCerrarPuertaRpc(
         int numeroPuerta,
         RpcParams rpcParams = default)
     {
-        if (numeroPuerta < 1 || numeroPuerta > 3)
+        if (!IsServer ||
+            numeroPuerta < 1 ||
+            numeroPuerta > 3)
             return;
 
-        ulong clienteSolicitante =
-            rpcParams.Receive.SenderClientId;
-
-        if (OwnerClientId != clienteSolicitante)
+        if (rpcParams.Receive.SenderClientId != OwnerClientId)
             return;
 
         NetworkPlayerSetup setup =
@@ -59,83 +64,57 @@ public class ControlPuertasP2 : NetworkBehaviour
 
         int indice = numeroPuerta - 1;
 
-        // Evitar solicitudes repetidas.
         if (puertasCerradasServidor[indice])
         {
-            Debug.Log(
-                "P2: La puerta " + numeroPuerta +
-                " ya fue cerrada."
-            );
-
+            Debug.Log("P2: La puerta ya estaba cerrada.");
             return;
         }
 
-        // Comprobar que la puerta existe.
-        PuertaLiaP2[] puertas =
-            FindObjectsByType<PuertaLiaP2>(
-                FindObjectsSortMode.None
-            );
+        // Registrar la acción sin buscar la puerta
+        // en la realidad local del servidor.
 
-        bool puertaEncontrada = false;
-
-        foreach (PuertaLiaP2 puerta in puertas)
-        {
-            if (puerta.NumeroPuerta == numeroPuerta)
-            {
-                puertaEncontrada = true;
-                break;
-            }
-        }
-
-        if (!puertaEncontrada)
-        {
-            Debug.LogWarning(
-                "P2: No existe la puerta " + numeroPuerta
-            );
-
-            return;
-        }
-
-        // Registrar el cierre en el servidor.
         puertasCerradasServidor[indice] = true;
 
         Debug.Log(
-            "P2: Elian activa la puerta " + numeroPuerta
+            "P2: Servidor confirma cierre de puerta " +
+            numeroPuerta
         );
 
         CerrarPuertaLiaRpc(numeroPuerta);
     }
 
-    // =====================================
-    // COMUNICAR CIERRE A LOS JUGADORES
-    // =====================================
+    // EJECUTAR EN TODOS LOS CLIENTES
 
-    [Rpc(SendTo.Everyone)]
+    [Rpc(SendTo.Everyone, RequireOwnership = false)]
     private void CerrarPuertaLiaRpc(int numeroPuerta)
     {
         PuertaLiaP2[] puertas =
             FindObjectsByType<PuertaLiaP2>(
+                FindObjectsInactive.Include,
                 FindObjectsSortMode.None
             );
 
         foreach (PuertaLiaP2 puerta in puertas)
         {
-            if (puerta.NumeroPuerta == numeroPuerta)
-            {
-                puerta.CerrarVisualLocal();
+            if (puerta == null ||
+                puerta.NumeroPuerta != numeroPuerta)
+                continue;
 
-                Debug.Log(
-                    "P2: Cerrando puerta de Lía " +
-                    numeroPuerta
-                );
+            puerta.CerrarVisualLocal();
 
-                return;
-            }
+            Debug.Log(
+                "P2: Puerta " + numeroPuerta +
+                " cerrada para " +
+                (NetworkManager.Singleton.IsHost ? "Elian" : "Lia")
+            );
+
+            return;
         }
 
         Debug.LogWarning(
-            "P2: No se encontró la puerta de Lía " +
-            numeroPuerta
+            "P2: No se encontró la puerta " +
+            numeroPuerta +
+            " en esta instancia. Puede no existir en esta escena."
         );
     }
 }

@@ -393,7 +393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+<<<<<<< HEAD
+  GlobalObjectIdHash: 1891353790
+=======
   GlobalObjectIdHash: 1333668771
+>>>>>>> 66437abb17bc917f90400771808176f857d480d4
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -422,6 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ReinicioNivelCooperativo
   ShowTopMostFoldoutHeaderGroup: 1
   esperaAntesDeRecargar: 0.3
+  reiniciarDatosP5: 0
 --- !u!1 &758779740364529523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,7 +2488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3275547963055113980
@@ -6704,7 +6709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HUDInteraccion
   botonInteractuar: {fileID: 8173372906510268952}
   camaraJuego: {fileID: 0}
-  ventanasBloqueantes: []
+  ventanasBloqueantes:
+  - {fileID: 854777036944796787}
 --- !u!114 &2922091510725772878
 MonoBehaviour:
   m_ObjectHideFlags: 0

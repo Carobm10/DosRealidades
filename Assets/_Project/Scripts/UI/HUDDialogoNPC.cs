@@ -34,6 +34,13 @@ public class HUDDialogoNPC : MonoBehaviour
     [SerializeField, Range(0.01f, 0.15f)]
     private float tiempoPorCaracter = 0.035f;
 
+    [Header("Sonido de voz del NPC")]
+    [SerializeField] private AudioSource audioDialogoNPC;
+    [SerializeField] private AudioClip sonidoVozNPC;
+
+    [SerializeField, Range(0.05f, 0.5f)]
+    private float intervaloSonido = 0.12f;
+
     private enum FaseDialogo
     {
         Ninguna,
@@ -175,6 +182,7 @@ public class HUDDialogoNPC : MonoBehaviour
     // ESCRITURA DEL TEXTO
     // =====================================
 
+
     private IEnumerator EscribirTexto(string contenido)
     {
         escribiendo = true;
@@ -192,9 +200,36 @@ public class HUDDialogoNPC : MonoBehaviour
 
         int total = textoDialogo.textInfo.characterCount;
 
+        // El NPC habla en estas dos fases:
+        // Ninguna = intervención inicial del NPC.
+        // RespuestaNPC = respuesta después de una opción.
+        bool esIntervencionNPC =
+            faseActual == FaseDialogo.Ninguna ||
+            faseActual == FaseDialogo.RespuestaNPC;
+
+        float temporizadorSonido = 0f;
+        bool primerSonido = true;
+
         for (int i = 1; i <= total; i++)
         {
             textoDialogo.maxVisibleCharacters = i;
+
+            // Sonido únicamente durante intervenciones del NPC.
+            if (esIntervencionNPC &&
+                audioDialogoNPC != null &&
+                sonidoVozNPC != null)
+            {
+                temporizadorSonido += tiempoPorCaracter;
+
+                if (primerSonido ||
+                    temporizadorSonido >= intervaloSonido)
+                {
+                    audioDialogoNPC.PlayOneShot(sonidoVozNPC);
+
+                    temporizadorSonido = 0f;
+                    primerSonido = false;
+                }
+            }
 
             yield return new WaitForSecondsRealtime(
                 tiempoPorCaracter
@@ -206,6 +241,7 @@ public class HUDDialogoNPC : MonoBehaviour
 
         FinalizarEscritura();
     }
+
 
     public void SaltarEscritura()
     {
