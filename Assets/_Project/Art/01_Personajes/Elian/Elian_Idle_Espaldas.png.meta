@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 1c2bdc3dbde9de54880496b59e1b5574
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8464106583580192932
+    second: Elian_Idle_Espaldas_0
+  - first:
+      213: -6200004370774974890
+    second: Elian_Idle_Espaldas_1
+  - first:
+      213: -6033622133190799211
+    second: Elian_Idle_Espaldas_2
+  - first:
+      213: 9019961892029085053
+    second: Elian_Idle_Espaldas_3
+  - first:
+      213: -1523069325395256718
+    second: Elian_Idle_Espaldas_4
+  - first:
+      213: 4279957836532333112
+    second: Elian_Idle_Espaldas_5
+  - first:
+      213: -4599558318072016991
+    second: Elian_Idle_Espaldas_6
+  - first:
+      213: 8180934446415586319
+    second: Elian_Idle_Espaldas_7
+  - first:
+      213: 5505857123883149770
+    second: Elian_Idle_Espaldas_8
+  - first:
+      213: 7858188542368552790
+    second: Elian_Idle_Espaldas_9
+  - first:
+      213: -6508477462579655105
+    second: Elian_Idle_Espaldas_10
+  - first:
+      213: -4578172125638637955
+    second: Elian_Idle_Espaldas_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 185
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f48a038e3798a80800000000000000
+      internalID: -8464106583580192932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 24
+        width: 185
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e9612bfd825f9a0800000000000000
+      internalID: -6200004370774974890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_2
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 24
+        width: 185
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5905a3a23a4444ca0800000000000000
+      internalID: -6033622133190799211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 24
+        width: 185
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7534fd0d875d2d70800000000000000
+      internalID: 9019961892029085053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 24
+        width: 185
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a9583a488fcdae0800000000000000
+      internalID: -1523069325395256718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_5
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 24
+        width: 185
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ab824e9f6756b30800000000000000
+      internalID: 4279957836532333112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_6
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 24
+        width: 185
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afcf9744161b20c0800000000000000
+      internalID: -4599558318072016991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_7
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 24
+        width: 185
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04ab59d884888170800000000000000
+      internalID: 8180934446415586319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_8
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 24
+        width: 183
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9eb1502ebb86c40800000000000000
+      internalID: 5505857123883149770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_9
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 24
+        width: 183
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6571ce548d4ed0d60800000000000000
+      internalID: 7858188542368552790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_10
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 24
+        width: 183
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ecd4e2b3e3da5a0800000000000000
+      internalID: -6508477462579655105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elian_Idle_Espaldas_11
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 24
+        width: 185
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76c6ba35b01770c0800000000000000
+      internalID: -4578172125638637955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Elian_Idle_Espaldas_0: -8464106583580192932
+      Elian_Idle_Espaldas_1: -6200004370774974890
+      Elian_Idle_Espaldas_10: -6508477462579655105
+      Elian_Idle_Espaldas_11: -4578172125638637955
+      Elian_Idle_Espaldas_2: -6033622133190799211
+      Elian_Idle_Espaldas_3: 9019961892029085053
+      Elian_Idle_Espaldas_4: -1523069325395256718
+      Elian_Idle_Espaldas_5: 4279957836532333112
+      Elian_Idle_Espaldas_6: -4599558318072016991
+      Elian_Idle_Espaldas_7: 8180934446415586319
+      Elian_Idle_Espaldas_8: 5505857123883149770
+      Elian_Idle_Espaldas_9: 7858188542368552790
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

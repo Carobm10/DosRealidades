@@ -2569,6 +2569,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!58 &844031881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5994,6 +5998,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!58 &1927806549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6636,7 +6644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2406441928450140485, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 520
+      value: -293.25
       objectReference: {fileID: 0}
     - target: {fileID: 5009558526722058142, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6678,9 +6686,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5027515491743826532, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515491743826532, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515491743826532, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5072514221579289978, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 515
+      value: -619.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597556212332422557, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: spawnLia
@@ -6690,6 +6714,10 @@ PrefabInstance:
       propertyPath: spawnElian
       value: 
       objectReference: {fileID: 1829117991}
+    - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: imagenGeneral
+      value: 
+      objectReference: {fileID: 1141047355964688682, guid: a4b16b8634c39f94a9bececa043d7c7d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
