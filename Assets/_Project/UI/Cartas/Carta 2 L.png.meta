@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: 2feab6a03b3b69d45a589fbaa7363ad4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3856327601113873873
+    second: Carta 2 L_0
+  - first:
+      213: -4295931867762065475
+    second: Carta 2 L_1
+  - first:
+      213: -7679255762197995717
+    second: Carta 2 L_2
+  - first:
+      213: 7600533596146560117
+    second: Carta 2 L_3
+  - first:
+      213: 150589600471822188
+    second: Carta 2 L_4
+  - first:
+      213: -2964952033184052096
+    second: Carta 2 L_5
+  - first:
+      213: -3221548459155599965
+    second: Carta 2 L_6
+  - first:
+      213: 5497686753580489516
+    second: Carta 2 L_7
+  - first:
+      213: 4810200813326378546
+    second: Carta 2 L_8
+  - first:
+      213: -7681159094866564440
+    second: Carta 2 L_9
+  - first:
+      213: 5368889095734056766
+    second: Carta 2 L_10
+  - first:
+      213: -3100801673507470438
+    second: Carta 2 L_11
+  - first:
+      213: -3471231711642632571
+    second: Carta 2 L_12
+  - first:
+      213: -8485468845763350844
+    second: Carta 2 L_13
+  - first:
+      213: 1732584821360818460
+    second: Carta 2 L_14
+  - first:
+      213: 8227568021672165645
+    second: Carta 2 L_15
+  - first:
+      213: -3384492966838858632
+    second: Carta 2 L_16
+  - first:
+      213: 5907020430541878818
+    second: Carta 2 L_17
+  - first:
+      213: 5048885437116064291
+    second: Carta 2 L_18
+  - first:
+      213: -7768688426063824001
+    second: Carta 2 L_19
+  - first:
+      213: 5266957156033139375
+    second: Carta 2 L_20
+  - first:
+      213: -3923505290589968563
+    second: Carta 2 L_21
+  - first:
+      213: -8134553909250655143
+    second: Carta 2 L_22
+  - first:
+      213: 8805791457423550998
+    second: Carta 2 L_23
+  - first:
+      213: -2932097794957155180
+    second: Carta 2 L_24
+  - first:
+      213: -964864660564619015
+    second: Carta 2 L_25
+  - first:
+      213: -5891028134553465105
+    second: Carta 2 L_26
+  - first:
+      213: 7419370106383961911
+    second: Carta 2 L_27
+  - first:
+      213: 1900792187058826164
+    second: Carta 2 L_28
+  - first:
+      213: -377088273343838075
+    second: Carta 2 L_29
+  - first:
+      213: -3705090192056956194
+    second: Carta 2 L_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carta 2 L_0
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1173
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd3de1858d648530800000000000000
+      internalID: 3856327601113873873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_1
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 771
+        width: 120
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbff2c22ab8c164c0800000000000000
+      internalID: -4295931867762065475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 1197
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f11da129dcd6590800000000000000
+      internalID: -7679255762197995717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_3
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1107
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cecbd49058a7960800000000000000
+      internalID: 7600533596146560117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1085
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fadfa9170071200800000000000000
+      internalID: 150589600471822188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1044
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c0ef5b5df5ad6d0800000000000000
+      internalID: -2964952033184052096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1026
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adc251beb2ca43d0800000000000000
+      internalID: -3221548459155599965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1046
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b198179f4bb4c40800000000000000
+      internalID: 5497686753580489516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1002
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2362d98772441c240800000000000000
+      internalID: 4810200813326378546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 980
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaa73fef7a076590800000000000000
+      internalID: -7681159094866564440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_10
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 972
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3752bddf20228a40800000000000000
+      internalID: 5368889095734056766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_11
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 888
+        width: 82
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9386a38e4db7f4d0800000000000000
+      internalID: -3100801673507470438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 955
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e387e4625b3dfc0800000000000000
+      internalID: -3471231711642632571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 947
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cea1afea0f8d3a80800000000000000
+      internalID: -8485468845763350844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 925
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19f17427b06b0810800000000000000
+      internalID: 1732584821360818460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 921
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01022136813e2270800000000000000
+      internalID: 8227568021672165645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 228
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c03c6149dd701d0800000000000000
+      internalID: -3384492966838858632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 216
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2267c6be8c3f9f150800000000000000
+      internalID: 5907020430541878818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 196
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32222fe0e8e311640800000000000000
+      internalID: 5048885437116064291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 160
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bf6c96903103490800000000000000
+      internalID: -7768688426063824001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_20
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 136
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa29e8cb0adf71940800000000000000
+      internalID: 5266957156033139375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_21
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 94
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47e400d9b8ec89c0800000000000000
+      internalID: -3923505290589968563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_22
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 103
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c79d871524c1f80800000000000000
+      internalID: -8134553909250655143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_23
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 77
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a66e9eca4743a70800000000000000
+      internalID: 8805791457423550998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 79
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4946fd427981f47d0800000000000000
+      internalID: -2932097794957155180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_25
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 37
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0d7ba04bc1c92f0800000000000000
+      internalID: -964864660564619015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_26
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 82
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feecb16af1dde3ea0800000000000000
+      internalID: -5891028134553465105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_27
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 79
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f0b206dc5e6f660800000000000000
+      internalID: 7419370106383961911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_28
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 78
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbaa7d5c68f06a10800000000000000
+      internalID: 1900792187058826164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_29
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 63
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588006a963054caf0800000000000000
+      internalID: -377088273343838075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 L_30
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 63
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda49a9c910e49cc0800000000000000
+      internalID: -3705090192056956194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Carta 2 L_0: 3856327601113873873
+      Carta 2 L_1: -4295931867762065475
+      Carta 2 L_10: 5368889095734056766
+      Carta 2 L_11: -3100801673507470438
+      Carta 2 L_12: -3471231711642632571
+      Carta 2 L_13: -8485468845763350844
+      Carta 2 L_14: 1732584821360818460
+      Carta 2 L_15: 8227568021672165645
+      Carta 2 L_16: -3384492966838858632
+      Carta 2 L_17: 5907020430541878818
+      Carta 2 L_18: 5048885437116064291
+      Carta 2 L_19: -7768688426063824001
+      Carta 2 L_2: -7679255762197995717
+      Carta 2 L_20: 5266957156033139375
+      Carta 2 L_21: -3923505290589968563
+      Carta 2 L_22: -8134553909250655143
+      Carta 2 L_23: 8805791457423550998
+      Carta 2 L_24: -2932097794957155180
+      Carta 2 L_25: -964864660564619015
+      Carta 2 L_26: -5891028134553465105
+      Carta 2 L_27: 7419370106383961911
+      Carta 2 L_28: 1900792187058826164
+      Carta 2 L_29: -377088273343838075
+      Carta 2 L_3: 7600533596146560117
+      Carta 2 L_30: -3705090192056956194
+      Carta 2 L_4: 150589600471822188
+      Carta 2 L_5: -2964952033184052096
+      Carta 2 L_6: -3221548459155599965
+      Carta 2 L_7: 5497686753580489516
+      Carta 2 L_8: 4810200813326378546
+      Carta 2 L_9: -7681159094866564440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

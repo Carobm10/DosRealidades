@@ -2569,10 +2569,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  animatorPuertaElian: {fileID: 0}
-  parametroPuertaAbierta: Abierta
-  esBotonPuertaP2: 0
-  numeroPuertaP2: 1
 --- !u!58 &844031881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5998,10 +5994,6 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
-  animatorPuertaElian: {fileID: 0}
-  parametroPuertaAbierta: Abierta
-  esBotonPuertaP2: 0
-  numeroPuertaP2: 1
 --- !u!58 &1927806549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6638,6 +6630,14 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 4235678252
       objectReference: {fileID: 0}
+    - target: {fileID: 1842720247202567061, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_InScenePlacedDisabledByDefault
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406441928450140485, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 520
+      objectReference: {fileID: 0}
     - target: {fileID: 5009558526722058142, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960
@@ -6677,6 +6677,10 @@ PrefabInstance:
     - target: {fileID: 5009558526722058142, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072514221579289978, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 515
       objectReference: {fileID: 0}
     - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: spawnLia
@@ -6786,10 +6790,6 @@ PrefabInstance:
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 1027702145
-      objectReference: {fileID: 0}
-    - target: {fileID: 3959436481604291659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
