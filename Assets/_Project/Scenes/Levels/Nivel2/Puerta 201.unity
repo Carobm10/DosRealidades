@@ -196,6 +196,8 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   panelTecladoElian: {fileID: 79538288}
   salidaCooperativa: {fileID: 7118006457721760973}
+  idLlaveElian: Llave_Elian
+  idLlaveLia: Llave_lia
 --- !u!114 &99879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3594,6 +3596,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -3606,6 +3611,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!61 &578635110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4128,6 +4137,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -4140,6 +4152,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!61 &617596987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5858,6 +5874,9 @@ MonoBehaviour:
   reiniciarPuzzleP1AlSalir: 0
   controladorPuzzleP1: {fileID: 0}
   npcDialogo: {fileID: 0}
+  audioSourceNPC: {fileID: 0}
+  sonidoProximidadNPC: {fileID: 0}
+  volumenSonidoNPC: 1
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
@@ -5870,6 +5889,10 @@ MonoBehaviour:
   esBotonFinalP3: 0
   botonEsParaLia: 0
   controlFinal: {fileID: 0}
+  animatorPuertaElian: {fileID: 0}
+  parametroPuertaAbierta: Abierta
+  esBotonPuertaP2: 0
+  numeroPuertaP2: 1
 --- !u!61 &1132061323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8561,6 +8584,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 99878}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ConfirmarCierreTarjetaLlave
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CajaFuerte201Controller, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_InScenePlaced
       value: 1
@@ -8611,7 +8662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5993466060302414373, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name

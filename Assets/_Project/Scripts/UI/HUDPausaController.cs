@@ -25,6 +25,11 @@ public class HUDPausaController : MonoBehaviour
     [SerializeField] private Button botonMenuPrincipal;
     [SerializeField] private Button botonSalir;
 
+    [Header("Configuracion de sonido")]
+    [SerializeField] private GameObject panelOpciones;
+    [SerializeField] private Button botonAjustes;
+    [SerializeField] private Button botonListo;
+
     [Header("Elementos del HUD que se ocultan")]
     [SerializeField] private GameObject[] elementosHUDJuego;
 
@@ -71,6 +76,12 @@ public class HUDPausaController : MonoBehaviour
 
         if (botonSalir != null)
             botonSalir.onClick.AddListener(SalirJuego);
+
+        if (botonAjustes != null)
+            botonAjustes.onClick.AddListener(AbrirOpcionesDesdePausa);
+
+        if (botonListo != null)
+            botonListo.onClick.AddListener(CerrarOpcionesVolverPausa);
     }
 
     private void Start()
@@ -105,6 +116,12 @@ public class HUDPausaController : MonoBehaviour
 
         if (botonSalir != null)
             botonSalir.onClick.RemoveListener(SalirJuego);
+        
+        if (botonAjustes != null)
+            botonAjustes.onClick.RemoveListener(AbrirOpcionesDesdePausa);
+
+        if (botonListo != null)
+            botonListo.onClick.RemoveListener(CerrarOpcionesVolverPausa);
 
         Instancia = null;
     }
@@ -262,6 +279,42 @@ public class HUDPausaController : MonoBehaviour
             movimientoLocal.BloquearMovimiento(true);
 
         OcultarControlesJuego();
+    }
+
+    // =====================================
+    // ABRIR CONFIGURACION DESDE PAUSA
+    // =====================================
+
+    public void AbrirOpcionesDesdePausa()
+    {
+        if (!pausaAbierta || reinicioSolicitado)
+            return;
+
+        if (panelPausa != null)
+            panelPausa.SetActive(false);
+
+        if (panelOpciones != null)
+            panelOpciones.SetActive(true);
+
+        Debug.Log("PAUSA: abriendo configuracion.");
+    }
+
+    // =====================================
+    // CERRAR CONFIGURACION Y VOLVER A PAUSA
+    // =====================================
+
+    public void CerrarOpcionesVolverPausa()
+    {
+        if (!pausaAbierta || reinicioSolicitado)
+            return;
+
+        if (panelOpciones != null)
+            panelOpciones.SetActive(false);
+
+        if (panelPausa != null)
+            panelPausa.SetActive(true);
+
+        Debug.Log("PAUSA: regresando al menu de pausa.");
     }
 
     // =====================================

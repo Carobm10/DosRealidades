@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections.Generic;
 
 public class CajaFuerte201Controller : NetworkBehaviour
 {
@@ -20,6 +21,9 @@ public class CajaFuerte201Controller : NetworkBehaviour
     private string idLlaveLia = "Llave_lia";
 
     private bool codigoProcesado;
+
+    private HashSet<ulong> jugadoresCerraronTarjeta =
+        new HashSet<ulong>();
 
     // =====================================
     // CODIGO CORRECTO
@@ -80,8 +84,9 @@ public class CajaFuerte201Controller : NetworkBehaviour
             "Ambas llaves entregadas."
         );
 
-        // Iniciar cinemática y salida cooperativa.
-        salidaCooperativa.HabilitarSalida();
+        Debug.Log(
+            "CAJA 201: Esperando que ambos jugadores cierren la tarjeta."
+        );
     }
 
     // =====================================
@@ -257,4 +262,44 @@ public class CajaFuerte201Controller : NetworkBehaviour
             idObjeto
         );
     }
+
+
+    public void ConfirmarCierreTarjetaLlave()
+    {
+        if (!IsSpawned || !IsClient)
+            return;
+
+        ConfirmarCierreTarjetaRpc();
+    }
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void ConfirmarCierreTarjetaRpc(
+        RpcParams rpcParams = default)
+    {
+        if (!IsServer || !codigoProcesado)
+            return;
+
+        ulong jugadorId = rpcParams.Receive.SenderClientId;
+
+        if (!NetworkManager.Singleton.ConnectedClients.ContainsKey(jugadorId))
+            return;
+
+        jugadoresCerraronTarjeta.Add(jugadorId);
+
+        Debug.Log(
+            "CAJA 201: Jugadores que cerraron tarjeta: " +
+            jugadoresCerraronTarjeta.Count + "/2"
+        );
+
+        if (jugadoresCerraronTarjeta.Count < 2)
+            return;
+
+        if (salidaCooperativa != null)
+        {
+            Debug.Log("CAJA 201: Ambos cerraron. Habilitando salida.");
+
+            salidaCooperativa.HabilitarSalida();
+        }
+    }
+
 }

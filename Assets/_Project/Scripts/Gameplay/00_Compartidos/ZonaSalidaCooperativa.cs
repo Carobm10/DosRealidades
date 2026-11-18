@@ -12,6 +12,10 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     [Header("Zona de deteccion")]
     [SerializeField] private Collider2D zonaDeteccion;
 
+    [Header("Objetos necesarios para salir")]
+    [SerializeField] private ObjetoRecolectable fragmentoElian;
+    [SerializeField] private ObjetoRecolectable fragmentoLia;
+
     [Header("Visuales de salida")]
     [SerializeField] private GameObject visualBloqueado;
     [SerializeField] private GameObject visualHabilitado;
@@ -108,38 +112,59 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         if (!IsSpawned || !IsServer || cambiandoEscena)
             return;
 
-        // Primero esperar a que Lía llegue.
-        if (!salidaHabilitada.Value)
+        // 1. Comprobar que ambos objetos fueron recolectados.
+        if (!puzzleResuelto.Value)
         {
-            if (LiaDentroDeZona())
+            if (AmbosObjetosRecolectados())
             {
                 Debug.Log(
-                    "P2: Lía llegó a la salida. Habilitando salida."
+                    "SALIDA: Ambos objetos recolectados. " +
+                    "Iniciando cinematica."
                 );
 
-                HabilitarSalidaSinCinematica();
+                HabilitarSalida();
             }
         }
 
-        // Después esperar a que ambos estén dentro.
+        // 2. Esperar a que termine la cinematica.
         if (!salidaHabilitada.Value)
             return;
 
+        // 3. Esperar a que ambos jugadores lleguen.
         if (!AmbosJugadoresDentro())
             return;
 
         if (string.IsNullOrWhiteSpace(escenaDestino))
         {
             Debug.LogError(
-                "SALIDA: falta configurar la escena destino."
+                "SALIDA: Falta configurar la escena destino."
             );
-
             return;
         }
 
+        // 4. Cambiar de escena.
         cambiandoEscena = true;
 
         rutinaCambioEscena = StartCoroutine(CambiarEscena());
+    }
+
+    private bool AmbosObjetosRecolectados()
+    {
+        if (fragmentoElian == null || fragmentoLia == null)
+        {
+            Debug.LogError(
+                "SALIDA: Faltan asignar los dos objetos recolectables."
+            );
+
+            return false;
+        }
+
+        if (!fragmentoElian.IsSpawned ||
+            !fragmentoLia.IsSpawned)
+            return false;
+
+        return fragmentoElian.EstaRecolectado &&
+            fragmentoLia.EstaRecolectado;
     }
 
     // =====================================

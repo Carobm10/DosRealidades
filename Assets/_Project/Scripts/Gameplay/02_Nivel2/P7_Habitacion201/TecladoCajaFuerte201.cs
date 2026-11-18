@@ -121,7 +121,13 @@ public class TecladoCajaFuerte201 : MonoBehaviour
 
             ActivarBotones(false);
 
-            Debug.Log("CAJA FUERTE 201: CODIGO CORRECTO");
+            // Restaurar el HUD que se ocultó al abrir el teclado.
+            RestaurarHUD();
+
+            Debug.Log(
+                "CAJA FUERTE 201: CODIGO CORRECTO. " +
+                "Controles restaurados."
+            );
 
             alCodigoCorrecto?.Invoke();
         }
