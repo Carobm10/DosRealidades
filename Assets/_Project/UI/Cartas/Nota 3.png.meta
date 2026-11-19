@@ -1,100 +1,106 @@
 fileFormatVersion: 2
-guid: 2feab6a03b3b69d45a589fbaa7363ad4
+guid: d34160ba6062e0b4abc5fab9657414ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3856327601113873873
-    second: Carta 2 L_0
+      213: 2094168717566042001
+    second: Nota 3_0
   - first:
-      213: -4295931867762065475
-    second: Carta 2 L_1
+      213: -7817847556211411191
+    second: Nota 3_1
   - first:
-      213: -7679255762197995717
-    second: Carta 2 L_2
+      213: -841566302814326762
+    second: Nota 3_2
   - first:
-      213: 7600533596146560117
-    second: Carta 2 L_3
+      213: -8730629293188857324
+    second: Nota 3_3
   - first:
-      213: 150589600471822188
-    second: Carta 2 L_4
+      213: -702989888011879620
+    second: Nota 3_4
   - first:
-      213: -2964952033184052096
-    second: Carta 2 L_5
+      213: -2283932390256229868
+    second: Nota 3_5
   - first:
-      213: -3221548459155599965
-    second: Carta 2 L_6
+      213: -8959009887790483881
+    second: Nota 3_6
   - first:
-      213: 5497686753580489516
-    second: Carta 2 L_7
+      213: 7986634475663998539
+    second: Nota 3_7
   - first:
-      213: 4810200813326378546
-    second: Carta 2 L_8
+      213: 1616865349613558541
+    second: Nota 3_8
   - first:
-      213: -7681159094866564440
-    second: Carta 2 L_9
+      213: 6129583266322434089
+    second: Nota 3_9
   - first:
-      213: 5368889095734056766
-    second: Carta 2 L_10
+      213: -3210476506494463138
+    second: Nota 3_10
   - first:
-      213: -3100801673507470438
-    second: Carta 2 L_11
+      213: -74393661522459529
+    second: Nota 3_11
   - first:
-      213: -3471231711642632571
-    second: Carta 2 L_12
+      213: -5836359839465352669
+    second: Nota 3_12
   - first:
-      213: -8485468845763350844
-    second: Carta 2 L_13
+      213: -3096570422938811921
+    second: Nota 3_13
   - first:
-      213: 1732584821360818460
-    second: Carta 2 L_14
+      213: -9199466147655866764
+    second: Nota 3_14
   - first:
-      213: 8227568021672165645
-    second: Carta 2 L_15
+      213: 4999825977315235391
+    second: Nota 3_15
   - first:
-      213: -3384492966838858632
-    second: Carta 2 L_16
+      213: 16642587458553509
+    second: Nota 3_16
   - first:
-      213: 5907020430541878818
-    second: Carta 2 L_17
+      213: 4071388198515472399
+    second: Nota 3_17
   - first:
-      213: 5048885437116064291
-    second: Carta 2 L_18
+      213: 3288058931985407762
+    second: Nota 3_18
   - first:
-      213: -7768688426063824001
-    second: Carta 2 L_19
+      213: 1465767372466685289
+    second: Nota 3_19
   - first:
-      213: 5266957156033139375
-    second: Carta 2 L_20
+      213: -1175983082339356921
+    second: Nota 3_20
   - first:
-      213: -3923505290589968563
-    second: Carta 2 L_21
+      213: -5516270045990314153
+    second: Nota 3_21
   - first:
-      213: -8134553909250655143
-    second: Carta 2 L_22
+      213: -9173577682321501873
+    second: Nota 3_22
   - first:
-      213: 8805791457423550998
-    second: Carta 2 L_23
+      213: 8045156124800085201
+    second: Nota 3_23
   - first:
-      213: -2932097794957155180
-    second: Carta 2 L_24
+      213: -4425681988346128875
+    second: Nota 3_24
   - first:
-      213: -964864660564619015
-    second: Carta 2 L_25
+      213: 707878123235918735
+    second: Nota 3_25
   - first:
-      213: -5891028134553465105
-    second: Carta 2 L_26
+      213: 1257153429541993463
+    second: Nota 3_26
   - first:
-      213: 7419370106383961911
-    second: Carta 2 L_27
+      213: -1300981707184722554
+    second: Nota 3_27
   - first:
-      213: 1900792187058826164
-    second: Carta 2 L_28
+      213: 7161181230708226083
+    second: Nota 3_28
   - first:
-      213: -377088273343838075
-    second: Carta 2 L_29
+      213: 3432844821337051988
+    second: Nota 3_29
   - first:
-      213: -3705090192056956194
-    second: Carta 2 L_30
+      213: -7539852669038183415
+    second: Nota 3_30
+  - first:
+      213: -6030791018218824881
+    second: Nota 3_31
+  - first:
+      213: 4758285627202594107
+    second: Nota 3_32
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -205,57 +211,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Carta 2 L_0
+      name: Nota 3_0
       rect:
         serializedVersion: 2
-        x: 522
-        y: 1173
-        width: 26
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1dd3de1858d648530800000000000000
-      internalID: 3856327601113873873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_1
-      rect:
-        serializedVersion: 2
-        x: 1113
-        y: 771
-        width: 120
-        height: 405
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbff2c22ab8c164c0800000000000000
-      internalID: -4295931867762065475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_2
-      rect:
-        serializedVersion: 2
-        x: 28
+        x: 0
         y: 0
-        width: 1197
-        height: 1171
+        width: 1239
+        height: 1233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f11da129dcd6590800000000000000
-      internalID: -7679255762197995717
+      spriteID: 19f524e6a5bff0d10800000000000000
+      internalID: 2094168717566042001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_3
+      name: Nota 3_1
       rect:
         serializedVersion: 2
-        x: 601
-        y: 1107
-        width: 9
-        height: 11
+        x: 659
+        y: 1199
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,151 +248,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57cecbd49058a7960800000000000000
-      internalID: 7600533596146560117
+      spriteID: 907fcdf711d618390800000000000000
+      internalID: -7817847556211411191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_4
+      name: Nota 3_2
       rect:
         serializedVersion: 2
-        x: 177
-        y: 1085
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6fadfa9170071200800000000000000
-      internalID: 150589600471822188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 1044
+        x: 514
+        y: 1156
         width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08c0ef5b5df5ad6d0800000000000000
-      internalID: -2964952033184052096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_6
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 1026
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3adc251beb2ca43d0800000000000000
-      internalID: -3221548459155599965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_7
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 1046
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2b198179f4bb4c40800000000000000
-      internalID: 5497686753580489516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_8
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 1002
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2362d98772441c240800000000000000
-      internalID: 4810200813326378546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_9
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 980
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8aaa73fef7a076590800000000000000
-      internalID: -7681159094866564440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_10
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 972
-        width: 7
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -440,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3752bddf20228a40800000000000000
-      internalID: 5368889095734056766
+      spriteID: 61030d908e72254f0800000000000000
+      internalID: -841566302814326762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_11
+      name: Nota 3_3
       rect:
         serializedVersion: 2
-        x: 996
-        y: 888
-        width: 82
-        height: 93
+        x: 1141
+        y: 1102
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,85 +292,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9386a38e4db7f4d0800000000000000
-      internalID: -3100801673507470438
+      spriteID: 412cbd92ae296d680800000000000000
+      internalID: -8730629293188857324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_12
+      name: Nota 3_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 955
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58e387e4625b3dfc0800000000000000
-      internalID: -3471231711642632571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_13
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 947
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4cea1afea0f8d3a80800000000000000
-      internalID: -8485468845763350844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_14
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 925
-        width: 20
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c19f17427b06b0810800000000000000
-      internalID: 1732584821360818460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_15
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 921
-        width: 10
+        x: 1147
+        y: 1102
+        width: 6
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -550,42 +314,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d01022136813e2270800000000000000
-      internalID: 8227568021672165645
+      spriteID: c3b3c54eb6a7e36f0800000000000000
+      internalID: -702989888011879620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_16
+      name: Nota 3_5
       rect:
         serializedVersion: 2
-        x: 112
-        y: 228
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87c03c6149dd701d0800000000000000
-      internalID: -3384492966838858632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_17
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 216
+        x: 47
+        y: 1023
         width: 16
-        height: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2267c6be8c3f9f150800000000000000
-      internalID: 5907020430541878818
+      spriteID: 412c4c38797dd40e0800000000000000
+      internalID: -2283932390256229868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_18
+      name: Nota 3_6
       rect:
         serializedVersion: 2
-        x: 112
-        y: 196
-        width: 12
-        height: 15
+        x: 1155
+        y: 947
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,18 +358,106 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32222fe0e8e311640800000000000000
-      internalID: 5048885437116064291
+      spriteID: 756390359f33ba380800000000000000
+      internalID: -8959009887790483881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_19
+      name: Nota 3_7
       rect:
         serializedVersion: 2
-        x: 183
-        y: 160
+        x: 42
+        y: 757
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e37d89db936de60800000000000000
+      internalID: 7986634475663998539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b9a5d0872407610800000000000000
+      internalID: 1616865349613558541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_9
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 554
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928c35a3187a01550800000000000000
+      internalID: 6129583266322434089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_10
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 571
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5319ae80a81273d0800000000000000
+      internalID: -3210476506494463138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_11
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 556
         width: 9
         height: 9
       alignment: 0
@@ -638,41 +468,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7bf6c96903103490800000000000000
-      internalID: -7768688426063824001
+      spriteID: 774c967eb53b7fef0800000000000000
+      internalID: -74393661522459529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_20
+      name: Nota 3_12
       rect:
         serializedVersion: 2
-        x: 231
-        y: 136
+        x: 1178
+        y: 527
         width: 11
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa29e8cb0adf71940800000000000000
-      internalID: 5266957156033139375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_21
-      rect:
-        serializedVersion: 2
-        x: 826
-        y: 94
-        width: 7
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -682,18 +490,150 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d47e400d9b8ec89c0800000000000000
-      internalID: -3923505290589968563
+      spriteID: 322df4bf5a5110fa0800000000000000
+      internalID: -5836359839465352669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_22
+      name: Nota 3_13
       rect:
         serializedVersion: 2
-        x: 932
-        y: 103
+        x: 1141
+        y: 469
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe140ce4b95c605d0800000000000000
+      internalID: -3096570422938811921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_14
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 392
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476adb1974ee45080800000000000000
+      internalID: -9199466147655866764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3615a47c33f26540800000000000000
+      internalID: 4999825977315235391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_16
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 122
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a64c9958502b3000800000000000000
+      internalID: 16642587458553509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 102
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f087b33def9708830800000000000000
+      internalID: 4071388198515472399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_18
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 95
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f5a818d2881ad20800000000000000
+      internalID: 3288058931985407762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_19
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 95
         width: 6
         height: 6
       alignment: 0
@@ -704,19 +644,129 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95c79d871524c1f80800000000000000
-      internalID: -8134553909250655143
+      spriteID: 9650c37c8a3775410800000000000000
+      internalID: 1465767372466685289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_23
+      name: Nota 3_20
       rect:
         serializedVersion: 2
-        x: 520
-        y: 77
+        x: 739
+        y: 85
         width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f2b430e911eafe0800000000000000
+      internalID: -1175983082339356921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_21
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 68
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f9e9f9e954273b0800000000000000
+      internalID: -5516270045990314153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_22
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 43
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4196cd93b7e0b080800000000000000
+      internalID: -9173577682321501873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_23
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 49
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc6445ded226af60800000000000000
+      internalID: 8045156124800085201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_24
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 45
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516d8cb0ea1d492c0800000000000000
+      internalID: -4425681988346128875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_25
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 52
+        width: 11
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -726,20 +776,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61a66e9eca4743a70800000000000000
-      internalID: 8805791457423550998
+      spriteID: f834fbf0763e2d900800000000000000
+      internalID: 707878123235918735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_24
+      name: Nota 3_26
       rect:
         serializedVersion: 2
-        x: 531
-        y: 79
-        width: 7
-        height: 10
+        x: 770
+        y: 33
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,20 +798,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4946fd427981f47d0800000000000000
-      internalID: -2932097794957155180
+      spriteID: 7fbb30c226e427110800000000000000
+      internalID: 1257153429541993463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_25
+      name: Nota 3_27
       rect:
         serializedVersion: 2
-        x: 534
-        y: 37
-        width: 64
-        height: 56
+        x: 697
+        y: 31
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,42 +820,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f0d7ba04bc1c92f0800000000000000
-      internalID: -964864660564619015
+      spriteID: 68d29fbb70cf1fde0800000000000000
+      internalID: -1300981707184722554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_26
-      rect:
-        serializedVersion: 2
-        x: 619
-        y: 82
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: feecb16af1dde3ea0800000000000000
-      internalID: -5891028134553465105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carta 2 L_27
+      name: Nota 3_28
       rect:
         serializedVersion: 2
         x: 705
-        y: 79
+        y: 33
         width: 7
-        height: 11
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,20 +842,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73f0b206dc5e6f660800000000000000
-      internalID: 7419370106383961911
+      spriteID: 328fe844360a16360800000000000000
+      internalID: 7161181230708226083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_28
+      name: Nota 3_29
       rect:
         serializedVersion: 2
-        x: 707
-        y: 78
-        width: 12
-        height: 13
+        x: 742
+        y: 39
+        width: 9
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -836,20 +864,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bbaa7d5c68f06a10800000000000000
-      internalID: 1900792187058826164
+      spriteID: 45395d05d2ae3af20800000000000000
+      internalID: 3432844821337051988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_29
+      name: Nota 3_30
       rect:
         serializedVersion: 2
-        x: 963
-        y: 63
-        width: 17
-        height: 34
+        x: 681
+        y: 21
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,20 +886,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 588006a963054caf0800000000000000
-      internalID: -377088273343838075
+      spriteID: 90cb23302ff0d5790800000000000000
+      internalID: -7539852669038183415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Carta 2 L_30
+      name: Nota 3_31
       rect:
         serializedVersion: 2
-        x: 504
-        y: 63
-        width: 12
-        height: 11
+        x: 693
+        y: 27
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,8 +908,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eda49a9c910e49cc0800000000000000
-      internalID: -3705090192056956194
+      spriteID: f4b537c75835e4ca0800000000000000
+      internalID: -6030791018218824881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 3_32
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35e1454193d80240800000000000000
+      internalID: 4758285627202594107
       vertices: []
       indices: 
       edges: []
@@ -900,37 +950,39 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Carta 2 L_0: 3856327601113873873
-      Carta 2 L_1: -4295931867762065475
-      Carta 2 L_10: 5368889095734056766
-      Carta 2 L_11: -3100801673507470438
-      Carta 2 L_12: -3471231711642632571
-      Carta 2 L_13: -8485468845763350844
-      Carta 2 L_14: 1732584821360818460
-      Carta 2 L_15: 8227568021672165645
-      Carta 2 L_16: -3384492966838858632
-      Carta 2 L_17: 5907020430541878818
-      Carta 2 L_18: 5048885437116064291
-      Carta 2 L_19: -7768688426063824001
-      Carta 2 L_2: -7679255762197995717
-      Carta 2 L_20: 5266957156033139375
-      Carta 2 L_21: -3923505290589968563
-      Carta 2 L_22: -8134553909250655143
-      Carta 2 L_23: 8805791457423550998
-      Carta 2 L_24: -2932097794957155180
-      Carta 2 L_25: -964864660564619015
-      Carta 2 L_26: -5891028134553465105
-      Carta 2 L_27: 7419370106383961911
-      Carta 2 L_28: 1900792187058826164
-      Carta 2 L_29: -377088273343838075
-      Carta 2 L_3: 7600533596146560117
-      Carta 2 L_30: -3705090192056956194
-      Carta 2 L_4: 150589600471822188
-      Carta 2 L_5: -2964952033184052096
-      Carta 2 L_6: -3221548459155599965
-      Carta 2 L_7: 5497686753580489516
-      Carta 2 L_8: 4810200813326378546
-      Carta 2 L_9: -7681159094866564440
+      Nota 3_0: 2094168717566042001
+      Nota 3_1: -7817847556211411191
+      Nota 3_10: -3210476506494463138
+      Nota 3_11: -74393661522459529
+      Nota 3_12: -5836359839465352669
+      Nota 3_13: -3096570422938811921
+      Nota 3_14: -9199466147655866764
+      Nota 3_15: 4999825977315235391
+      Nota 3_16: 16642587458553509
+      Nota 3_17: 4071388198515472399
+      Nota 3_18: 3288058931985407762
+      Nota 3_19: 1465767372466685289
+      Nota 3_2: -841566302814326762
+      Nota 3_20: -1175983082339356921
+      Nota 3_21: -5516270045990314153
+      Nota 3_22: -9173577682321501873
+      Nota 3_23: 8045156124800085201
+      Nota 3_24: -4425681988346128875
+      Nota 3_25: 707878123235918735
+      Nota 3_26: 1257153429541993463
+      Nota 3_27: -1300981707184722554
+      Nota 3_28: 7161181230708226083
+      Nota 3_29: 3432844821337051988
+      Nota 3_3: -8730629293188857324
+      Nota 3_30: -7539852669038183415
+      Nota 3_31: -6030791018218824881
+      Nota 3_32: 4758285627202594107
+      Nota 3_4: -702989888011879620
+      Nota 3_5: -2283932390256229868
+      Nota 3_6: -8959009887790483881
+      Nota 3_7: 7986634475663998539
+      Nota 3_8: 1616865349613558541
+      Nota 3_9: 6129583266322434089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,37 +1,55 @@
 fileFormatVersion: 2
-guid: 17171d708d7dc4844b36ec96f2e88df7
+guid: 80d5ab131883fc147a2355093b830d56
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5327712519770957900
-    second: CARTA 3_0
+      213: -4947488196054546892
+    second: Carta 1 lia_0
   - first:
-      213: -5476079331571096919
-    second: CARTA 3_1
+      213: 2370771733018422056
+    second: Carta 1 lia_1
   - first:
-      213: -2150474943522974377
-    second: CARTA 3_2
+      213: 521975167685872945
+    second: Carta 1 lia_2
   - first:
-      213: -8956127404029457218
-    second: CARTA 3_3
+      213: -5923229981048269818
+    second: Carta 1 lia_3
   - first:
-      213: -6402445136647434196
-    second: CARTA 3_4
+      213: -5268896053053044538
+    second: Carta 1 lia_4
   - first:
-      213: 7269967541852403410
-    second: CARTA 3_5
+      213: -5730358480338147487
+    second: Carta 1 lia_5
   - first:
-      213: 1638477545831957655
-    second: CARTA 3_6
+      213: 6589176471885509185
+    second: Carta 1 lia_6
   - first:
-      213: 7835046408298447193
-    second: CARTA 3_7
+      213: -9085982390845620610
+    second: Carta 1 lia_7
   - first:
-      213: -4012297495323484441
-    second: CARTA 3_8
+      213: -1709213297353728769
+    second: Carta 1 lia_8
   - first:
-      213: -6595396343983819145
-    second: CARTA 3_9
+      213: 1724518391680944933
+    second: Carta 1 lia_9
+  - first:
+      213: -8014827800699991579
+    second: Carta 1 lia_10
+  - first:
+      213: -1034479529460803633
+    second: Carta 1 lia_11
+  - first:
+      213: -2037390339222003035
+    second: Carta 1 lia_12
+  - first:
+      213: -1913893939522586709
+    second: Carta 1 lia_13
+  - first:
+      213: 5626188066552781846
+    second: Carta 1 lia_14
+  - first:
+      213: 1666253493045352764
+    second: Carta 1 lia_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CARTA 3_0
+      name: Carta 1 lia_0
       rect:
         serializedVersion: 2
-        x: 325
-        y: 1166
-        width: 52
-        height: 56
+        x: 52
+        y: 54
+        width: 662
+        height: 659
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,63 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c48695e2f46dfe940800000000000000
-      internalID: 5327712519770957900
+      spriteID: 4360bb7d2bdf65bb0800000000000000
+      internalID: -4947488196054546892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CARTA 3_1
+      name: Carta 1 lia_1
       rect:
         serializedVersion: 2
-        x: 530
-        y: 1211
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a2a8d78cde0104b0800000000000000
-      internalID: -5476079331571096919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_2
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 1197
-        height: 1194
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7555fecbe6af722e0800000000000000
-      internalID: -2150474943522974377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_3
-      rect:
-        serializedVersion: 2
-        x: 587
-        y: 1132
-        width: 7
+        x: 404
+        y: 696
+        width: 13
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebcceafd39175b380800000000000000
-      internalID: -8956127404029457218
+      spriteID: 82ba91e845ca6e020800000000000000
+      internalID: 2370771733018422056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CARTA 3_4
+      name: Carta 1 lia_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 853
-        width: 66
-        height: 90
+        x: 78
+        y: 602
+        width: 10
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,107 +219,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c20d330e112f527a0800000000000000
-      internalID: -6402445136647434196
+      spriteID: 13dcd7346ad6e3700800000000000000
+      internalID: 521975167685872945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CARTA 3_5
+      name: Carta 1 lia_3
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 778
+        x: 75
+        y: 458
         width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d67bbc16fc14e460800000000000000
-      internalID: 7269967541852403410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_6
-      rect:
-        serializedVersion: 2
-        x: 1059
-        y: 777
-        width: 23
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79484cb95aa0db610800000000000000
-      internalID: 1638477545831957655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_7
-      rect:
-        serializedVersion: 2
-        x: 1133
-        y: 628
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 951445d423dabbc60800000000000000
-      internalID: 7835046408298447193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_8
-      rect:
-        serializedVersion: 2
-        x: 745
-        y: 37
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eedd02afa47158c0800000000000000
-      internalID: -4012297495323484441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CARTA 3_9
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 31
-        width: 11
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -355,8 +241,272 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7763fe318f17874a0800000000000000
-      internalID: -6595396343983819145
+      spriteID: 6049ca007b57ccda0800000000000000
+      internalID: -5923229981048269818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_4
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 350
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8c05f94fe11e6b0800000000000000
+      internalID: -5268896053053044538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_5
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 337
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1672cc7a25da970b0800000000000000
+      internalID: -5730358480338147487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_6
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 305
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142f8191715717b50800000000000000
+      internalID: 6589176471885509185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 265
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e3136b72b18e180800000000000000
+      internalID: -9085982390845620610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 109
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc5bd5df87a748e0800000000000000
+      internalID: -1709213297353728769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 100
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b45c02758bee710800000000000000
+      internalID: 1724518391680944933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 77
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e90a53649c95c090800000000000000
+      internalID: -8014827800699991579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 91
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7531f495ac4a1f0800000000000000
+      internalID: -1034479529460803633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_12
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 82
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a22cd1f74cb9b3e0800000000000000
+      internalID: -2037390339222003035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 66
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7bbfc2a9b7075e0800000000000000
+      internalID: -1913893939522586709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_14
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 72
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c9b6adc3c341e40800000000000000
+      internalID: 5626188066552781846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 1 lia_15
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39d8b649b8bf1710800000000000000
+      internalID: 1666253493045352764
       vertices: []
       indices: 
       edges: []
@@ -375,16 +525,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CARTA 3_0: 5327712519770957900
-      CARTA 3_1: -5476079331571096919
-      CARTA 3_2: -2150474943522974377
-      CARTA 3_3: -8956127404029457218
-      CARTA 3_4: -6402445136647434196
-      CARTA 3_5: 7269967541852403410
-      CARTA 3_6: 1638477545831957655
-      CARTA 3_7: 7835046408298447193
-      CARTA 3_8: -4012297495323484441
-      CARTA 3_9: -6595396343983819145
+      Carta 1 lia_0: -4947488196054546892
+      Carta 1 lia_1: 2370771733018422056
+      Carta 1 lia_10: -8014827800699991579
+      Carta 1 lia_11: -1034479529460803633
+      Carta 1 lia_12: -2037390339222003035
+      Carta 1 lia_13: -1913893939522586709
+      Carta 1 lia_14: 5626188066552781846
+      Carta 1 lia_15: 1666253493045352764
+      Carta 1 lia_2: 521975167685872945
+      Carta 1 lia_3: -5923229981048269818
+      Carta 1 lia_4: -5268896053053044538
+      Carta 1 lia_5: -5730358480338147487
+      Carta 1 lia_6: 6589176471885509185
+      Carta 1 lia_7: -9085982390845620610
+      Carta 1 lia_8: -1709213297353728769
+      Carta 1 lia_9: 1724518391680944933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

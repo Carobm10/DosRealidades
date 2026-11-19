@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1b38fd3719f3eec4b97bf7f62ec1286d
+guid: acbed0968ecd5874db9f791c46d43a1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7148039083277918251
-    second: Lia_01_Eco_Pared_0
+      213: -9149378636760243544
+    second: Carta 1 Lia Grande_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lia_01_Eco_Pared_0
+      name: Carta 1 Lia Grande_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 1183
-        height: 1582
+        x: 0
+        y: 0
+        width: 1086
+        height: 1448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5df5c9063501dcc90800000000000000
-      internalID: -7148039083277918251
+      spriteID: 8a2ab58fa90e60180800000000000000
+      internalID: -9149378636760243544
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lia_01_Eco_Pared_0: -7148039083277918251
+      Carta 1 Lia Grande_0: -9149378636760243544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
