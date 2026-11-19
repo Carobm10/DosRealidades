@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 43218d9819950c747a8565bb20c20a11
+guid: 4027e8eb39d64f449bd37a9df81d3e14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1633680875339157094
-    second: Elian_01_Registro_0
+      213: 700917478918740057
+    second: Carta 2 Lia_0
+  - first:
+      213: -8533696817271552892
+    second: Carta 2 Lia_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elian_01_Registro_0
+      name: Carta 2 Lia_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 1183
-        height: 1582
+        x: 62
+        y: 52
+        width: 644
+        height: 664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +133,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a917f0546eff359e0800000000000000
-      internalID: -1633680875339157094
+      spriteID: 95850d3cbb82ab900800000000000000
+      internalID: 700917478918740057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta 2 Lia_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 688
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484c5a945f7329980800000000000000
+      internalID: -8533696817271552892
       vertices: []
       indices: 
       edges: []
@@ -150,7 +175,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Elian_01_Registro_0: -1633680875339157094
+      Carta 2 Lia_0: 700917478918740057
+      Carta 2 Lia_1: -8533696817271552892
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

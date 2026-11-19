@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7df65136a0186bc4aab748e50ad0add9
+guid: 97bbdd84deab32e418e3aca5888a1ac8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7519029789702665952
-    second: Elian_03_Gerente_0
+      213: 7068524064431444374
+    second: Nota 3 Grande_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elian_03_Gerente_0
+      name: Nota 3 Grande_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 11
-        width: 1183
-        height: 1582
+        x: 35
+        y: 29
+        width: 1021
+        height: 1388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02941396e3a07a790800000000000000
-      internalID: -7519029789702665952
+      spriteID: 6919cba9f21781260800000000000000
+      internalID: 7068524064431444374
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Elian_03_Gerente_0: -7519029789702665952
+      Nota 3 Grande_0: 7068524064431444374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
