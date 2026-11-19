@@ -8,6 +8,8 @@ using Unity.Netcode;
 public class InventarioUI : MonoBehaviour
 {
     public static InventarioUI Instancia { get; private set; }
+    public static event System.Action<string>
+        TarjetaObjetoCerradaLocal;
 
     [Header("Panel de inventario")]
     [SerializeField] private GameObject panelInventario;
@@ -597,7 +599,14 @@ public class InventarioUI : MonoBehaviour
 
         idObjetoTarjetaActual = null;
 
-        Debug.Log("TARJETA CERRADA");
+        // Avisar a los controladores que esperan
+        // la confirmación del cierre de una tarjeta.
+        if (!string.IsNullOrEmpty(idCerrado))
+        {
+            TarjetaObjetoCerradaLocal?.Invoke(idCerrado);
+        }
+
+        Debug.Log("TARJETA CERRADA: " + idCerrado);
     }
 
     // =====================================

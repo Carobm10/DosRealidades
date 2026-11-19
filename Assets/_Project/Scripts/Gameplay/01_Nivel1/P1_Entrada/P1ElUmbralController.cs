@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using Unity.Netcode;
-using System;
 using System.Collections;
 
 public class P1ElUmbralController : NetworkBehaviour
@@ -37,30 +36,38 @@ public class P1ElUmbralController : NetworkBehaviour
     private NetworkVariable<bool> puzzleResuelto =
         new NetworkVariable<bool>(false);
 
-    // Confirmaciones locales de cinematografía.
+    // Estado local de cada cámara.
     private bool esperandoZoom;
 
-    // Confirmaciones recibidas por el servidor.
+    // Confirmaciones sincronizadas por el servidor.
     private bool zoomElianTerminado;
     private bool zoomLiaTerminado;
 
+    // Estado de entrega y cierre de tarjetas.
     private bool fragmentosEntregados;
+    private bool tarjetaElianCerrada;
+    private bool tarjetaLiaCerrada;
+
     private bool secuenciaIniciada;
 
     private Coroutine rutinaSecuencia;
 
     public bool PuzzleResuelto => puzzleResuelto.Value;
 
-    // =================================
+    // =====================================
     // INICIO
-    // =================================
+    // =====================================
 
     public override void OnNetworkSpawn()
     {
-        puzzleResuelto.OnValueChanged += AlCambiarEstadoPuzzle;
+        InventarioUI.TarjetaObjetoCerradaLocal +=
+            AlCerrarTarjetaFragmento;
 
         CamaraJugadorLocal.ZoomCinematicoFinalizadoLocal +=
             AlTerminarZoomLocal;
+
+        puzzleResuelto.OnValueChanged +=
+            AlCambiarEstadoPuzzle;
 
         Debug.Log(
             "P1: Controlador iniciado. PuzzleResuelto = " +
@@ -73,10 +80,14 @@ public class P1ElUmbralController : NetworkBehaviour
 
     public override void OnNetworkDespawn()
     {
-        puzzleResuelto.OnValueChanged -= AlCambiarEstadoPuzzle;
+        InventarioUI.TarjetaObjetoCerradaLocal -=
+            AlCerrarTarjetaFragmento;
 
         CamaraJugadorLocal.ZoomCinematicoFinalizadoLocal -=
             AlTerminarZoomLocal;
+
+        puzzleResuelto.OnValueChanged -=
+            AlCambiarEstadoPuzzle;
 
         if (rutinaSecuencia != null)
             StopCoroutine(rutinaSecuencia);
@@ -84,9 +95,9 @@ public class P1ElUmbralController : NetworkBehaviour
         rutinaSecuencia = null;
     }
 
-    // =================================
+    // =====================================
     // REGISTRAR APERTURA DE PANELES
-    // =================================
+    // =====================================
 
     public void RegistrarPanelAbierto(bool esPanelElian)
     {
@@ -104,7 +115,8 @@ public class P1ElUmbralController : NetworkBehaviour
         if (!IsServer || puzzleResuelto.Value)
             return;
 
-        ulong clienteId = rpcParams.Receive.SenderClientId;
+        ulong clienteId =
+            rpcParams.Receive.SenderClientId;
 
         if (!NetworkManager.Singleton.ConnectedClients
             .TryGetValue(clienteId, out NetworkClient cliente))
@@ -126,24 +138,27 @@ public class P1ElUmbralController : NetworkBehaviour
             Debug.LogWarning(
                 "P1: Jugador intentando abrir panel ajeno."
             );
+
             return;
         }
 
         if (esPanelElian)
         {
             panelElianAbierto.Value = true;
+
             Debug.Log("P1: Panel de Elian abierto.");
         }
         else
         {
             panelLiaAbierto.Value = true;
+
             Debug.Log("P1: Panel de Lia abierto.");
         }
     }
 
-    // =================================
+    // =====================================
     // BOTONES DEL PANEL
-    // =================================
+    // =====================================
 
     public void SeleccionarCirculo()
     {
@@ -160,53 +175,80 @@ public class P1ElUmbralController : NetworkBehaviour
         EnviarSeleccion(2);
     }
 
+    
     private void EnviarSeleccion(int simbolo)
     {
-        if (!IsSpawned || puzzleResuelto.Value)
-            return;
+        Debug.Log("P1: BOTON PRESIONADO. Simbolo: " + simbolo);
 
-        NetworkManager red = NetworkManager.Singleton;
-
-        if (red == null ||
-            red.LocalClient == null ||
-            red.LocalClient.PlayerObject == null)
-            return;
-
-        NetworkPlayerSetup setup =
-            red.LocalClient.PlayerObject
-                .GetComponent<NetworkPlayerSetup>();
-
-        if (setup == null ||
-            !setup.RolConfigurado ||
-            !setup.EsElian)
+        if (!IsSpawned)
         {
-            Debug.LogWarning(
-                "P1: Solo Elian puede seleccionar la respuesta."
-            );
+            Debug.LogError("P1: El controlador no está Spawned.");
             return;
         }
 
-        PanelSimbolosUI.Instancia?.RestablecerPanel();
+        if (puzzleResuelto.Value)
+        {
+            Debug.LogWarning("P1: El puzzle ya estaba resuelto.");
+            return;
+        }
 
-        if (simbolo == 0)
-            PanelSimbolosUI.Instancia?.SeleccionarCirculo();
-        else if (simbolo == 1)
-            PanelSimbolosUI.Instancia?.SeleccionarTriangulo();
-        else if (simbolo == 2)
-            PanelSimbolosUI.Instancia?.SeleccionarCuadrado();
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red == null || red.LocalClient == null ||
+            red.LocalClient.PlayerObject == null)
+        {
+            Debug.LogError("P1: No se encontró el jugador local.");
+            return;
+        }
+
+        NetworkPlayerSetup setup =
+            red.LocalClient.PlayerObject.GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null || !setup.RolConfigurado)
+        {
+            Debug.LogError("P1: Identidad del jugador sin configurar.");
+            return;
+        }
+
+        if (!setup.EsElian)
+        {
+            Debug.LogWarning("P1: Solo Elian puede resolver el puzzle.");
+            return;
+        }
+
+        if (PanelSimbolosUI.Instancia != null)
+        {
+            PanelSimbolosUI.Instancia.RestablecerPanel();
+
+            if (simbolo == 0)
+                PanelSimbolosUI.Instancia.SeleccionarCirculo();
+            else if (simbolo == 1)
+                PanelSimbolosUI.Instancia.SeleccionarTriangulo();
+            else if (simbolo == 2)
+                PanelSimbolosUI.Instancia.SeleccionarCuadrado();
+        }
+
+        Debug.Log("P1: Enviando respuesta al servidor.");
 
         EnviarSeleccionServidorRpc(simbolo);
     }
 
-    // =================================
-    // VALIDACION EN SERVIDOR
-    // =================================
 
+    // =====================================
+    // VALIDACION EN SERVIDOR
+    // =====================================
+
+    
     [Rpc(SendTo.Server, RequireOwnership = false)]
     private void EnviarSeleccionServidorRpc(
         int simboloSeleccionado,
         RpcParams rpcParams = default)
     {
+        Debug.Log(
+            "P1 SERVIDOR: Respuesta recibida: " +
+            simboloSeleccionado
+        );
+
         if (!IsServer || puzzleResuelto.Value)
             return;
 
@@ -214,54 +256,54 @@ public class P1ElUmbralController : NetworkBehaviour
 
         if (!NetworkManager.Singleton.ConnectedClients
             .TryGetValue(clienteId, out NetworkClient cliente))
+        {
+            Debug.LogError("P1: Cliente no encontrado.");
             return;
+        }
 
         NetworkObject jugador = cliente.PlayerObject;
 
         if (jugador == null)
+        {
+            Debug.LogError("P1: Jugador sin NetworkObject.");
             return;
+        }
 
         NetworkPlayerSetup setup =
             jugador.GetComponent<NetworkPlayerSetup>();
 
-        if (setup == null ||
-            !setup.RolConfigurado ||
-            !setup.EsElian)
-            return;
-
-        if (!panelElianAbierto.Value ||
-            !panelLiaAbierto.Value)
+        if (setup == null || !setup.RolConfigurado)
         {
-            Debug.LogWarning(
-                "P1: Ambos jugadores deben abrir sus paneles."
-            );
+            Debug.LogError("P1: No se pudo identificar al jugador.");
+            return;
+        }
+
+        if (!setup.EsElian)
+        {
+            Debug.LogWarning("P1: La respuesta no viene de Elian.");
             return;
         }
 
         bool correcto =
-            trianguloEsCorrecto &&
-            simboloSeleccionado == 1;
+            trianguloEsCorrecto && simboloSeleccionado == 1;
 
-        if (correcto)
+        if (!correcto)
         {
-            puzzleResuelto.Value = true;
+            Debug.Log("P1: RESPUESTA INCORRECTA.");
+            return;
+        }
 
-            Debug.Log(
-                "P1: PUZZLE COMPLETADO POR ELIAN."
-            );
-        }
-        else
-        {
-            Debug.Log(
-                "P1: RESPUESTA INCORRECTA. " +
-                "Elian puede volver a intentarlo."
-            );
-        }
+        Debug.Log("P1: TRIANGULO CORRECTO. RESOLVIENDO PUZZLE.");
+
+        puzzleResuelto.Value = true;
+
+        EjecutarSecuenciaResuelto();
     }
 
-    // =================================
+
+    // =====================================
     // SOLICITAR REINICIO
-    // =================================
+    // =====================================
 
     public void SolicitarReinicioPuzzle()
     {
@@ -280,7 +322,9 @@ public class P1ElUmbralController : NetworkBehaviour
         panelElianAbierto.Value = false;
         panelLiaAbierto.Value = false;
 
-        Debug.Log("P1: Reiniciando apertura de paneles.");
+        Debug.Log(
+            "P1: Reiniciando apertura de paneles."
+        );
 
         ReiniciarPuzzleClientRpc();
     }
@@ -300,9 +344,9 @@ public class P1ElUmbralController : NetworkBehaviour
         PanelSimbolosUI.Instancia?.RestablecerPanel();
     }
 
-    // =================================
+    // =====================================
     // PUZZLE RESUELTO
-    // =================================
+    // =====================================
 
     private void AlCambiarEstadoPuzzle(
         bool valorAnterior,
@@ -314,31 +358,43 @@ public class P1ElUmbralController : NetworkBehaviour
         EjecutarSecuenciaResuelto();
     }
 
+    
     private void EjecutarSecuenciaResuelto()
     {
-        if (!panelElianAbierto.Value ||
-            !panelLiaAbierto.Value)
-        {
-            Debug.LogWarning(
-                "P1: No se puede iniciar la secuencia. " +
-                "Falta abrir uno de los paneles."
-            );
-            return;
-        }
-
         if (secuenciaIniciada)
             return;
 
+        if (!puzzleResuelto.Value)
+            return;
+
         secuenciaIniciada = true;
+
+        Debug.Log(
+            "P1: INICIANDO SECUENCIA DEL PUZZLE. " +
+            "Panel Elian: " + panelElianAbierto.Value +
+            " | Panel Lia: " + panelLiaAbierto.Value
+        );
 
         rutinaSecuencia =
             StartCoroutine(SecuenciaPuzzleResuelto());
     }
 
+
     private IEnumerator SecuenciaPuzzleResuelto()
     {
         // Dar tiempo al mensaje CORRECTO.
         yield return new WaitForSeconds(0.5f);
+
+        // Reiniciar confirmaciones.
+        tarjetaElianCerrada = false;
+        tarjetaLiaCerrada = false;
+
+        if (IsServer)
+        {
+            zoomElianTerminado = false;
+            zoomLiaTerminado = false;
+            fragmentosEntregados = false;
+        }
 
         // Cerrar los dos paneles.
         if (ventanaPanelElian != null)
@@ -377,24 +433,23 @@ public class P1ElUmbralController : NetworkBehaviour
         if (brilloPanelLia != null)
             brilloPanelLia.CompletarObjetivo();
 
+        // Ocultar misión anterior.
         if (HUDMision.Instancia != null)
             HUDMision.Instancia.OcultarMision();
 
         // Preparar espera de las dos cámaras.
         esperandoZoom = true;
 
+        // Iniciar cinematografía.
         if (IsServer)
         {
-            zoomElianTerminado = false;
-            zoomLiaTerminado = false;
-            fragmentosEntregados = false;
-
             if (zonaSalida != null)
             {
                 zonaSalida.HabilitarSalida();
 
                 Debug.Log(
-                    "P1: Cinematografía de salida iniciada."
+                    "P1: Cinematografía iniciada. " +
+                    "La salida permanece bloqueada."
                 );
             }
             else
@@ -405,13 +460,6 @@ public class P1ElUmbralController : NetworkBehaviour
             }
         }
 
-        if (HUDMision.Instancia != null)
-        {
-            HUDMision.Instancia.CambiarMision(
-                "Acércate a la puerta"
-            );
-        }
-
         Debug.Log(
             "P1: Esperando que ambas cámaras terminen el zoom."
         );
@@ -419,9 +467,9 @@ public class P1ElUmbralController : NetworkBehaviour
         rutinaSecuencia = null;
     }
 
-    // =================================
+    // =====================================
     // DETECTAR FIN DEL ZOOM LOCAL
-    // =================================
+    // =====================================
 
     private void AlTerminarZoomLocal(
         CamaraJugadorLocal camara)
@@ -442,9 +490,9 @@ public class P1ElUmbralController : NetworkBehaviour
         NotificarZoomTerminadoServidorRpc();
     }
 
-    // =================================
+    // =====================================
     // NOTIFICAR AL SERVIDOR
-    // =================================
+    // =====================================
 
     [Rpc(SendTo.Server, RequireOwnership = false)]
     private void NotificarZoomTerminadoServidorRpc(
@@ -455,7 +503,8 @@ public class P1ElUmbralController : NetworkBehaviour
             fragmentosEntregados)
             return;
 
-        ulong clienteId = rpcParams.Receive.SenderClientId;
+        ulong clienteId =
+            rpcParams.Receive.SenderClientId;
 
         if (!NetworkManager.Singleton.ConnectedClients
             .TryGetValue(clienteId, out NetworkClient cliente))
@@ -465,7 +514,8 @@ public class P1ElUmbralController : NetworkBehaviour
             return;
 
         NetworkPlayerSetup setup =
-            cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
+            cliente.PlayerObject
+            .GetComponent<NetworkPlayerSetup>();
 
         if (setup == null || !setup.RolConfigurado)
             return;
@@ -473,11 +523,13 @@ public class P1ElUmbralController : NetworkBehaviour
         if (setup.EsElian)
         {
             zoomElianTerminado = true;
+
             Debug.Log("P1: Zoom de Elian terminado.");
         }
         else
         {
             zoomLiaTerminado = true;
+
             Debug.Log("P1: Zoom de Lia terminado.");
         }
 
@@ -487,9 +539,9 @@ public class P1ElUmbralController : NetworkBehaviour
         }
     }
 
-    // =================================
+    // =====================================
     // ENTREGAR FRAGMENTOS A CADA JUGADOR
-    // =================================
+    // =====================================
 
     private void EntregarFragmentosServidor()
     {
@@ -503,6 +555,7 @@ public class P1ElUmbralController : NetworkBehaviour
                 "P1: Asigna los dos ScriptableObjects " +
                 "de fragmentos en el Inspector."
             );
+
             return;
         }
 
@@ -538,6 +591,7 @@ public class P1ElUmbralController : NetworkBehaviour
             Debug.LogError(
                 "P1: No se encontraron ambos jugadores."
             );
+
             return;
         }
 
@@ -547,11 +601,13 @@ public class P1ElUmbralController : NetworkBehaviour
         InventarioJugador inventarioLia =
             jugadorLia.GetComponent<InventarioJugador>();
 
-        if (inventarioElian == null || inventarioLia == null)
+        if (inventarioElian == null ||
+            inventarioLia == null)
         {
             Debug.LogError(
                 "P1: Falta InventarioJugador."
             );
+
             return;
         }
 
@@ -574,9 +630,11 @@ public class P1ElUmbralController : NetworkBehaviour
                 "Elian: " + elianOK +
                 " | Lia: " + liaOK
             );
+
             return;
         }
 
+        // Marcar entrega antes de enviar las tarjetas.
         fragmentosEntregados = true;
 
         MostrarFragmentoRpc(
@@ -600,19 +658,24 @@ public class P1ElUmbralController : NetworkBehaviour
         );
     }
 
-    // =================================
+    // =====================================
     // MOSTRAR TARJETA EN CADA JUGADOR
-    // =================================
+    // =====================================
 
+    
     [Rpc(SendTo.SpecifiedInParams)]
     private void MostrarFragmentoRpc(
         string idObjeto,
         RpcParams rpcParams = default)
     {
+        // Registrar localmente que ya se entregó el fragmento.
+        fragmentosEntregados = true;
+
         StartCoroutine(
             EsperarInventarioYMostrar(idObjeto)
         );
     }
+
 
     private IEnumerator EsperarInventarioYMostrar(
         string idObjeto)
@@ -645,5 +708,150 @@ public class P1ElUmbralController : NetworkBehaviour
             "P1: No se encontró InventarioUI para mostrar " +
             idObjeto
         );
+    }
+
+    // =====================================
+    // DETECTAR CIERRE DE TARJETAS P1
+    // =====================================
+
+    
+    private void AlCerrarTarjetaFragmento(string idObjeto)
+    {
+        if (!IsSpawned ||
+            !IsClient ||
+            !fragmentosEntregados)
+            return;
+
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red == null ||
+            red.LocalClient == null ||
+            red.LocalClient.PlayerObject == null)
+            return;
+
+        NetworkPlayerSetup setup =
+            red.LocalClient.PlayerObject
+            .GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null || !setup.RolConfigurado)
+            return;
+
+        string idEsperado = setup.EsElian
+            ? fragmentoElian.Id
+            : fragmentoLia.Id;
+
+        if (idObjeto != idEsperado)
+            return;
+
+        Debug.Log(
+            "P1: Jugador cerró su fragmento: " + idObjeto
+        );
+
+        ConfirmarCierreTarjetaP1Rpc(idObjeto);
+    }
+
+
+    // =====================================
+    // CONFIRMAR CIERRE EN SERVIDOR
+    // =====================================
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void ConfirmarCierreTarjetaP1Rpc(
+        string idObjeto,
+        RpcParams rpcParams = default)
+    {
+        if (!IsServer ||
+            !fragmentosEntregados ||
+            !puzzleResuelto.Value)
+            return;
+
+        ulong clienteId =
+            rpcParams.Receive.SenderClientId;
+
+        if (!NetworkManager.Singleton.ConnectedClients
+            .TryGetValue(clienteId, out NetworkClient cliente))
+            return;
+
+        if (cliente.PlayerObject == null)
+            return;
+
+        NetworkPlayerSetup setup =
+            cliente.PlayerObject
+            .GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null || !setup.RolConfigurado)
+            return;
+
+        // Validar que cada jugador cierre su propia tarjeta.
+        string idEsperado = setup.EsElian
+            ? fragmentoElian.Id
+            : fragmentoLia.Id;
+
+        if (idObjeto != idEsperado)
+        {
+            Debug.LogWarning(
+                "P1: Se recibió un cierre de tarjeta incorrecto."
+            );
+
+            return;
+        }
+
+        // Registrar cierre individual.
+        if (setup.EsElian)
+        {
+            tarjetaElianCerrada = true;
+        }
+        else
+        {
+            tarjetaLiaCerrada = true;
+        }
+
+        Debug.Log(
+            "P1: TARJETAS CERRADAS | " +
+            "Elian: " + tarjetaElianCerrada +
+            " | Lia: " + tarjetaLiaCerrada
+        );
+
+        // La salida solo se habilita cuando ambos cerraron.
+        if (tarjetaElianCerrada &&
+            tarjetaLiaCerrada)
+        {
+            if (zonaSalida != null)
+            {
+                zonaSalida.HabilitarSalidaDespuesDeTarjetas();
+
+                Debug.Log(
+                    "P1: AMBOS CERRARON SUS TARJETAS. " +
+                    "SALIDA HABILITADA."
+                );
+            }
+            else
+            {
+                Debug.LogError(
+                    "P1: No está asignada la zona de salida."
+                );
+            }
+        }
+    }
+
+    public void RegistrarPanelAbierto(GameObject panelAbierto)
+    {
+        if (panelAbierto == null)
+            return;
+
+        if (panelAbierto == ventanaPanelElian)
+        {
+            RegistrarPanelAbierto(true);
+        }
+        else if (panelAbierto == ventanaPanelLia)
+        {
+            RegistrarPanelAbierto(false);
+        }
+        else
+        {
+            Debug.LogWarning(
+                "P1: La ventana abierta no corresponde a ningún panel."
+            );
+        }
     }
 }

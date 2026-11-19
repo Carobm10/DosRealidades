@@ -498,6 +498,19 @@ public class ZonaInteraccion : MonoBehaviour
         {
             MantenerBrillo();
             ventanaAbrir.SetActive(true);
+
+            if (controladorPuzzleP1 == null)
+            {
+                controladorPuzzleP1 =
+                    FindAnyObjectByType<P1ElUmbralController>();
+            }
+
+            if (controladorPuzzleP1 != null)
+            {
+                controladorPuzzleP1.RegistrarPanelAbierto(
+                    ventanaAbrir
+                );
+            }
         }
     }
 
