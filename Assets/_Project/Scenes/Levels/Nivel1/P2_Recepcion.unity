@@ -2443,9 +2443,6 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
-  animatorBotonP2: {fileID: 0}
-  parametroBrilloP2: Brillo
-  triggerPresionarP2: Presionar
 --- !u!61 &551739799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5531,15 +5528,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230838035458353612, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 9.4763565
+      value: 6.879835
       objectReference: {fileID: 0}
     - target: {fileID: 4230838035458353612, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 9.4763565
+      value: 6.879835
       objectReference: {fileID: 0}
     - target: {fileID: 4230838035458353612, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 9.4763565
+      value: 6.879835
       objectReference: {fileID: 0}
     - target: {fileID: 4230838035458353612, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5563,15 +5560,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.038243547
+      value: 0.0642896
       objectReference: {fileID: 0}
     - target: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.038243547
+      value: 0.0642896
       objectReference: {fileID: 0}
     - target: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.038243547
+      value: 0.0642896
       objectReference: {fileID: 0}
     - target: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6219,9 +6216,6 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
-  animatorBotonP2: {fileID: 0}
-  parametroBrilloP2: Brillo
-  triggerPresionarP2: Presionar
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
