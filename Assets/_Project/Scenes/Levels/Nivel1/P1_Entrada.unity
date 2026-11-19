@@ -619,7 +619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &330462212
 Transform:
   m_ObjectHideFlags: 0
@@ -2670,6 +2670,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963867521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 5426688216678087306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &992356856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,6 +3683,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1198913443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5490391467606998607, guid: 44474feb57453b944954348179c530cd, type: 3}
+  m_PrefabInstance: {fileID: 1813504323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1198913448
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198913443}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1202432127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8207016859405442792, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 5426688216678087306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202432131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202432127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
+  sliderMusica: {fileID: 963867521}
+  sliderEfectos: {fileID: 1672230528}
 --- !u!1 &1312365366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,10 +3863,10 @@ AudioSource:
   m_GameObject: {fileID: 1333128659}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3828,7 +3960,7 @@ AudioSource:
   m_GameObject: {fileID: 1333128659}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6207907870274565532, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -3945,6 +4077,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   ambienteSource: {fileID: 1333128661}
   efectosSource: {fileID: 1333128660}
+  mixerJuego: {fileID: 24100000, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
+  parametroMusica: VolumenMusica
+  parametroEfectos: VolumenEfectos
 --- !u!1 &1337839950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,6 +4910,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670023864}
   m_CullTransparentMesh: 1
+--- !u!114 &1672230528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 5426688216678087306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &1731885437
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,16 +5347,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4468857320386961864, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.4
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 4468857320386961864, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.64
+      value: 12.54
       objectReference: {fileID: 0}
+    - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1198913448}
     - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: rolPermitido
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: sonidoAbrirNota
+      value: 
+      objectReference: {fileID: 8300000, guid: 8499f65379450de41987f648adcc7a41, type: 3}
     - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: imagenNotaGrande
       value: 
@@ -5286,7 +5440,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5490391467606998607, guid: 44474feb57453b944954348179c530cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198913448}
   m_SourcePrefab: {fileID: 100100000, guid: 44474feb57453b944954348179c530cd, type: 3}
 --- !u!1 &1829117990
 GameObject:
@@ -6038,7 +6195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2015058471
 Transform:
   m_ObjectHideFlags: 0
@@ -6654,6 +6811,62 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 1027702145
       objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1333128663}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CambiarVolumenMusica
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1333128663}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CambiarVolumenEfectos
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -6661,7 +6874,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8207016859405442792, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202432131}
   m_SourcePrefab: {fileID: 100100000, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
 --- !u!1001 &8372241395913376138
 PrefabInstance:

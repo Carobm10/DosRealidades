@@ -4032,6 +4032,8 @@ GameObject:
   - component: {fileID: 1310506697}
   - component: {fileID: 1310506696}
   - component: {fileID: 1310506698}
+  - component: {fileID: 1310506700}
+  - component: {fileID: 1310506699}
   m_Layer: 0
   m_Name: Puerta_Lateral_Abriendo_Fisica_Escena_Sheet_0
   m_TagString: Untagged
@@ -4182,6 +4184,118 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7428202, y: 1.84}
   m_EdgeRadius: 0
+--- !u!82 &1310506699
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310506694}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1310506700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310506694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3144f69a6c04f714086952c7acf03a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioAnimationEvents
+  sonidoAbrir: {fileID: 8300000, guid: 7c91bb1bc4e01c74aa9ccb5da8955de4, type: 3}
+  sonidoCerrar: {fileID: 0}
+  sonidoMovimiento: {fileID: 0}
 --- !u!1001 &1315078625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5714,6 +5828,18 @@ PrefabInstance:
       propertyPath: 'elementosHUD.Array.data[2]'
       value: 
       objectReference: {fileID: 1315078630}
+    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: sonidoVozNPC
+      value: 
+      objectReference: {fileID: 8300000, guid: 7cc605a544a05eb49a65e4fabdbc8c9d, type: 3}
+    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: audioDialogoNPC
+      value: 
+      objectReference: {fileID: 1845576918}
+    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: intervaloSonido
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 3759574921395680870, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 7.430908
@@ -6619,6 +6745,10 @@ PrefabInstance:
       propertyPath: audioDialogoNPC
       value: 
       objectReference: {fileID: 1968116332}
+    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: intervaloSonido
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 3759574921395680870, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -212
@@ -7270,3 +7400,5 @@ SceneRoots:
   - {fileID: 1887064982}
   - {fileID: 1949142611}
   - {fileID: 387755359}
+  - {fileID: 821123374}
+  - {fileID: 1789612658}
