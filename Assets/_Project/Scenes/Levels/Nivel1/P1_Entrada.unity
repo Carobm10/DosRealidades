@@ -2561,8 +2561,8 @@ MonoBehaviour:
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
-  objetoBrillo: {fileID: 0}
-  spriteBrillo: {fileID: 0}
+  objetoBrillo: {fileID: 1839055166}
+  spriteBrillo: {fileID: 5464315333451434492, guid: 7ba92cf48fa2eb542a9fd33bace90701, type: 3}
   parpadeoAutomatico: 1
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -4387,7 +4387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d4433757b3c1642b2e65425494e722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolPruebaJugador
-  rolPrueba: 1
+  rolPrueba: 0
 --- !u!1 &1527046131
 GameObject:
   m_ObjectHideFlags: 0
@@ -5894,6 +5894,8 @@ MonoBehaviour:
   brilloPanelLia: {fileID: 844031882}
   trianguloEsCorrecto: 1
   zonaSalida: {fileID: 1537678147}
+  fragmentoElian: {fileID: 11400000, guid: 80587c028e40dcf48a0c9267e353e063, type: 2}
+  fragmentoLia: {fileID: 11400000, guid: 9dc8869b132eb6a4ab8bfdea42946b42, type: 2}
 --- !u!114 &1884383777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5999,8 +6001,8 @@ MonoBehaviour:
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
-  objetoBrillo: {fileID: 0}
-  spriteBrillo: {fileID: 0}
+  objetoBrillo: {fileID: 1120448508}
+  spriteBrillo: {fileID: 3819290739390781398, guid: 59b1b817412327f459a56b63364337ff, type: 3}
   parpadeoAutomatico: 1
   tiempoNormal: 0.7
   tiempoBrillo: 0.7

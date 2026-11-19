@@ -2443,9 +2443,6 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
-  animatorBotonP2: {fileID: 0}
-  parametroBrilloP2: Brillo
-  triggerPresionarP2: Presionar
 --- !u!61 &551739799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2899,6 +2896,52 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949142611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &821123372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821123374}
+  - component: {fileID: 821123373}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &821123373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821123372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff7e73a4d226c94daf3ae53b1d3f2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  ambienteSource: {fileID: 0}
+  efectosSource: {fileID: 0}
+--- !u!4 &821123374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821123372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 289.95605, y: 227.2477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &822287678
 GameObject:
@@ -5207,6 +5250,7 @@ MonoBehaviour:
   misionAlCompletar: "Contin\xFAa a la siguiente sala"
   zonaSalidaCooperativa: {fileID: 1503348446}
   margenSeguridadSalida: 0.5
+  fragmentoCartaP2: {fileID: 11400000, guid: 5145223a9dfeca04086e2c115992947a, type: 2}
 --- !u!1 &1646364964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6118,9 +6162,6 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
-  animatorBotonP2: {fileID: 0}
-  parametroBrilloP2: Brillo
-  triggerPresionarP2: Presionar
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
@@ -7085,7 +7126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d4433757b3c1642b2e65425494e722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolPruebaJugador
-  rolPrueba: 0
+  rolPrueba: 1
 --- !u!114 &2135371233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7128,3 +7169,4 @@ SceneRoots:
   - {fileID: 1887064982}
   - {fileID: 1949142611}
   - {fileID: 387755359}
+  - {fileID: 821123374}

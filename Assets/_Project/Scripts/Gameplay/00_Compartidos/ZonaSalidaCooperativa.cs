@@ -110,11 +110,13 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     private void Update()
     {
-        if (!IsSpawned || !IsServer || cambiandoEscena)
+        if (!IsServer || !IsSpawned)
             return;
 
-        // 1. Comprobar que ambos objetos fueron recolectados.
-        if (!puzzleResuelto.Value)
+        // Activación automática únicamente
+        // cuando esta salida requiere objetos.
+        if (requiereObjetosRecolectables &&
+            !puzzleResuelto.Value)
         {
             if (AmbosObjetosRecolectados())
             {
@@ -151,24 +153,73 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     private bool AmbosObjetosRecolectados()
     {
+        Debug.Log(
+            "========== DIAGNOSTICO SALIDA =========="
+        );
+
+        Debug.Log(
+            "Requiere objetos: " + requiereObjetosRecolectables
+        );
+
+        Debug.Log(
+            "Fragmento Elian asignado: " + (fragmentoElian != null)
+        );
+
+        Debug.Log(
+            "Fragmento Lia asignado: " + (fragmentoLia != null)
+        );
+
         if (!requiereObjetosRecolectables)
+        {
+            Debug.LogError(
+                "SALIDA: Se habilita porque NO requiere objetos."
+            );
+
             return true;
+        }
 
         if (fragmentoElian == null || fragmentoLia == null)
         {
             Debug.LogError(
-                "SALIDA: Faltan asignar los dos objetos recolectables."
+                "SALIDA: Faltan referencias de objetos."
             );
 
             return false;
         }
 
+        Debug.Log(
+            "Elian IsSpawned: " + fragmentoElian.IsSpawned
+        );
+
+        Debug.Log(
+            "Lia IsSpawned: " + fragmentoLia.IsSpawned
+        );
+
         if (!fragmentoElian.IsSpawned ||
             !fragmentoLia.IsSpawned)
             return false;
 
-        return fragmentoElian.EstaRecolectado &&
+        Debug.Log(
+            "Elian recolectado: " + fragmentoElian.EstaRecolectado
+        );
+
+        Debug.Log(
+            "Lia recolectado: " + fragmentoLia.EstaRecolectado
+        );
+
+        bool resultado =
+            fragmentoElian.EstaRecolectado &&
             fragmentoLia.EstaRecolectado;
+
+        Debug.Log(
+            "RESULTADO FINAL: " + resultado
+        );
+
+        Debug.Log(
+            "========================================"
+        );
+
+        return resultado;
     }
 
     // =====================================

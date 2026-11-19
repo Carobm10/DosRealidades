@@ -22,13 +22,14 @@ public class InventarioUI : MonoBehaviour
     [SerializeField] private Image imagenObjetoPreparado;
     [SerializeField] private TMP_Text textoObjetoPreparado;
 
+    private string idObjetoTarjetaActual;
+
     [Header("Tarjeta de objeto recolectado")]
     [SerializeField] private GameObject panelObjetoRecolectado;
     [SerializeField] private TMP_Text tituloObjetoRecolectado;
     [SerializeField] private TMP_Text descripcionObjetoRecolectado;
     [SerializeField] private Image imagenObjetoRecolectado;
     [SerializeField] private Button botonCerrarObjetoRecolectado;
-
 
     [Header("Controles que se ocultan")]
     [SerializeField] private GameObject[] controlesOcultar;
@@ -63,9 +64,7 @@ public class InventarioUI : MonoBehaviour
     private void Awake()
     {
         if (Instancia == null)
-        {
             Instancia = this;
-        }
 
         if (botonAbrirInventario != null)
             botonAbrirInventario.onClick.AddListener(
@@ -82,10 +81,7 @@ public class InventarioUI : MonoBehaviour
             foreach (SlotInventarioUI slot in slots)
             {
                 if (slot != null)
-                {
-                    slot.SeleccionSolicitada +=
-                        SeleccionarObjeto;
-                }
+                    slot.SeleccionSolicitada += SeleccionarObjeto;
             }
         }
 
@@ -94,7 +90,7 @@ public class InventarioUI : MonoBehaviour
 
         if (indicadorObjetoPreparado != null)
             indicadorObjetoPreparado.SetActive(false);
-        
+
         if (panelObjetoRecolectado != null)
             panelObjetoRecolectado.SetActive(false);
 
@@ -294,7 +290,6 @@ public class InventarioUI : MonoBehaviour
 
         RefrescarInventario();
 
-        // Cerrar automáticamente.
         CerrarInventario();
 
         Debug.Log(
@@ -436,17 +431,18 @@ public class InventarioUI : MonoBehaviour
         }
     }
 
+    // =====================================
+    // ACTIVAR INVENTARIO UI
+    // =====================================
 
     private void OnEnable()
     {
-        // Registrar la instancia que está activa.
         if (Instancia == null ||
             !Instancia.isActiveAndEnabled)
         {
             Instancia = this;
         }
 
-        // Escuchar las recolecciones locales.
         ObjetoRecolectable.RecoleccionConfirmadaLocal +=
             MostrarTarjetaObjeto;
 
@@ -457,16 +453,13 @@ public class InventarioUI : MonoBehaviour
 
     private void OnDisable()
     {
-        // Dejar de escuchar las recolecciones.
         ObjetoRecolectable.RecoleccionConfirmadaLocal -=
             MostrarTarjetaObjeto;
 
-        // Si esta era la instancia principal,
-        // buscar el otro Canvas que permanece activo.
         if (Instancia == this)
         {
             Instancia =
-                FindFirstObjectByType<InventarioUI>();
+                FindAnyObjectByType<InventarioUI>();
         }
 
         Debug.Log(
@@ -474,17 +467,52 @@ public class InventarioUI : MonoBehaviour
         );
     }
 
+    // =====================================
+    // RECIBIR OBJETO RECOLECTADO
+    // =====================================
 
-    private void MostrarTarjetaObjeto(ObjetoInventario objeto)
+    private void MostrarTarjetaObjeto(
+        ObjetoInventario objeto)
     {
-        if (objeto == null || panelObjetoRecolectado == null)
+        if (objeto == null ||
+            panelObjetoRecolectado == null)
             return;
 
-        // Si el inventario estaba abierto, cerrarlo primero.
+        // Los fragmentos de carta no muestran
+        // su tarjeta automáticamente.
+        // Esperan la cinematografía.
+
+        if (objeto.Tipo ==
+            TipoObjetoInventario.FragmentoCarta)
+        {
+            Debug.Log(
+                "CARTA RECOLECTADA. " +
+                "Tarjeta pendiente de cinematografía: " +
+                objeto.Id
+            );
+
+            return;
+        }
+
+        MostrarTarjetaDirecta(objeto);
+    }
+
+    // =====================================
+    // MOSTRAR TARJETA DIRECTAMENTE
+    // =====================================
+
+    private void MostrarTarjetaDirecta(
+        ObjetoInventario objeto)
+    {
+        if (objeto == null ||
+            panelObjetoRecolectado == null)
+            return;
+
+        idObjetoTarjetaActual = objeto.Id;
+
         if (InventarioAbierto)
             CerrarInventario();
 
-        // Guardar y ocultar controles.
         GuardarYOcultarControles();
 
         if (movimientoLocal != null)
@@ -495,7 +523,6 @@ public class InventarioUI : MonoBehaviour
             movimientoLocal.BloquearMovimiento(true);
         }
 
-        // Mostrar información del objeto.
         if (tituloObjetoRecolectado != null)
             tituloObjetoRecolectado.text = objeto.Nombre;
 
@@ -513,14 +540,22 @@ public class InventarioUI : MonoBehaviour
 
         panelObjetoRecolectado.SetActive(true);
 
-        Debug.Log("TARJETA MOSTRADA: " + objeto.Nombre);
+        Debug.Log(
+            "TARJETA MOSTRADA: " + objeto.Nombre
+        );
     }
+
+    // =====================================
+    // CERRAR TARJETA
+    // =====================================
 
     private void CerrarTarjetaObjeto()
     {
         if (panelObjetoRecolectado == null ||
             !panelObjetoRecolectado.activeSelf)
             return;
+
+        string idCerrado = idObjetoTarjetaActual;
 
         panelObjetoRecolectado.SetActive(false);
 
@@ -535,8 +570,42 @@ public class InventarioUI : MonoBehaviour
 
         RefrescarInventario();
 
+        // Confirmar únicamente las llaves de caja 201.
+
+        if (idCerrado == "Llave_Elian" ||
+            idCerrado == "Llave_lia")
+        {
+            CajaFuerte201Controller caja =
+                FindAnyObjectByType<CajaFuerte201Controller>();
+
+            if (caja != null && caja.IsSpawned)
+            {
+                caja.ConfirmarCierreTarjetaLlave(idCerrado);
+
+                Debug.Log(
+                    "CAJA 201: Confirmación de cierre enviada: " +
+                    idCerrado
+                );
+            }
+            else
+            {
+                Debug.LogError(
+                    "CAJA 201: No se encontró el controlador de la caja."
+                );
+            }
+        }
+
+        idObjetoTarjetaActual = null;
+
         Debug.Log("TARJETA CERRADA");
     }
+
+    // =====================================
+    // MOSTRAR TARJETA POR ID
+    // =====================================
+
+    // Este método lo utilizará la cinematografía
+    // para mostrar la carta cuando corresponda.
 
     public void MostrarTarjetaPorId(string id)
     {
@@ -551,7 +620,7 @@ public class InventarioUI : MonoBehaviour
         if (!inventarioJugador.TieneObjeto(id))
         {
             Debug.LogError(
-                "INVENTARIO UI: No tiene la llave: " + id
+                "INVENTARIO UI: No tiene el objeto: " + id
             );
             return;
         }
@@ -567,8 +636,9 @@ public class InventarioUI : MonoBehaviour
             return;
         }
 
-        MostrarTarjetaObjeto(objeto);
+        // Mostrar directamente, sin pasar por
+        // el filtro de fragmentos de carta.
+
+        MostrarTarjetaDirecta(objeto);
     }
-
-
 }
