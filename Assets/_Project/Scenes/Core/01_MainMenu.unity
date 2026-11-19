@@ -931,6 +931,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   ambienteSource: {fileID: 110964740}
   efectosSource: {fileID: 110964739}
+  mixerJuego: {fileID: 24100000, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
+  parametroMusica: VolumenMusica
+  parametroEfectos: VolumenEfectos
 --- !u!82 &110964739
 AudioSource:
   m_ObjectHideFlags: 0
@@ -940,10 +943,10 @@ AudioSource:
   m_GameObject: {fileID: 110964737}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1037,7 +1040,7 @@ AudioSource:
   m_GameObject: {fileID: 110964737}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6207907870274565532, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -3134,6 +3137,7 @@ GameObject:
   - component: {fileID: 843910679}
   - component: {fileID: 843910681}
   - component: {fileID: 843910680}
+  - component: {fileID: 843910682}
   m_Layer: 5
   m_Name: VentanaOpciones
   m_TagString: Untagged
@@ -3204,6 +3208,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843910678}
   m_CullTransparentMesh: 1
+--- !u!114 &843910682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843910678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
+  sliderMusica: {fileID: 1818431078}
+  sliderEfectos: {fileID: 1670176180}
 --- !u!1 &890218718
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,10 +6320,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 110964738}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: CambiarVolumenEfectos
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1746868298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6703,10 +6733,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 110964738}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: CambiarVolumenMusica
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1823738988
 GameObject:
   m_ObjectHideFlags: 0
