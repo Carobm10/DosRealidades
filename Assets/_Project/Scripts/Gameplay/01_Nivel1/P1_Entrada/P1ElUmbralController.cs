@@ -677,22 +677,25 @@ public class P1ElUmbralController : NetworkBehaviour
     }
 
 
+    
     private IEnumerator EsperarInventarioYMostrar(
         string idObjeto)
     {
         float tiempoEspera = 0f;
+        const float tiempoMaximo = 10f;
 
-        while (tiempoEspera < 5f)
+        while (tiempoEspera < tiempoMaximo)
         {
             InventarioUI inventarioUI =
                 InventarioUI.Instancia;
 
-            if (inventarioUI != null)
+            if (inventarioUI != null &&
+                inventarioUI.PuedeMostrarTarjetaPorId(idObjeto))
             {
                 inventarioUI.MostrarTarjetaPorId(idObjeto);
 
                 Debug.Log(
-                    "P1: Tarjeta de fragmento solicitada: " +
+                    "P1: Tarjeta mostrada correctamente: " +
                     idObjeto
                 );
 
@@ -705,10 +708,11 @@ public class P1ElUmbralController : NetworkBehaviour
         }
 
         Debug.LogError(
-            "P1: No se encontró InventarioUI para mostrar " +
+            "P1: Tiempo agotado esperando inventario y objeto local: " +
             idObjeto
         );
     }
+
 
     // =====================================
     // DETECTAR CIERRE DE TARJETAS P1

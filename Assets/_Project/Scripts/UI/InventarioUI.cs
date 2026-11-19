@@ -609,6 +609,20 @@ public class InventarioUI : MonoBehaviour
         Debug.Log("TARJETA CERRADA: " + idCerrado);
     }
 
+    public bool PuedeMostrarTarjetaPorId(string id)
+    {
+        if (string.IsNullOrWhiteSpace(id) ||
+            panelObjetoRecolectado == null ||
+            inventarioJugador == null)
+            return false;
+
+        if (!inventarioJugador.TieneObjeto(id))
+            return false;
+
+        return inventarioJugador.ObtenerObjetoPorId(id) != null;
+    }
+
+
     // =====================================
     // MOSTRAR TARJETA POR ID
     // =====================================
