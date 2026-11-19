@@ -286,10 +286,12 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     public void HabilitarSalida()
     {
-        if (!IsSpawned ||
-            !IsServer ||
-            puzzleResuelto.Value ||
-            cambiandoEscena)
+        Debug.LogError(
+            "HABILITAR SALIDA FUE LLAMADO. " +
+            "PUZZLE RESUELTO = " + puzzleResuelto.Value +
+            " | STACK = " + System.Environment.StackTrace
+        );
+        if (!IsSpawned || !IsServer || puzzleResuelto.Value || cambiandoEscena)
         {
             return;
         }

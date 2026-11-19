@@ -33,6 +33,8 @@ public class HUDPausaController : MonoBehaviour
     [Header("Elementos del HUD que se ocultan")]
     [SerializeField] private GameObject[] elementosHUDJuego;
 
+    
+
     private NetworkPlayerMovement movimientoLocal;
 
     private bool pausaAbierta;

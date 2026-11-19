@@ -2443,6 +2443,9 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
 --- !u!61 &551739799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4663,6 +4666,10 @@ PrefabInstance:
       propertyPath: animatorPuertaElian
       value: 
       objectReference: {fileID: 1310506696}
+    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: requiereObjetosRecolectables
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8608858231243511909, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.75
@@ -5663,14 +5670,10 @@ PrefabInstance:
       propertyPath: 'elementosHUD.Array.data[2]'
       value: 
       objectReference: {fileID: 1315078630}
-    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
-      propertyPath: sonidoVozNPC
-      value: 
-      objectReference: {fileID: 8300000, guid: 7cc605a544a05eb49a65e4fabdbc8c9d, type: 3}
-    - target: {fileID: 3751767973251091756, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
-      propertyPath: audioDialogoNPC
-      value: 
-      objectReference: {fileID: 1845576918}
+    - target: {fileID: 3759574921395680870, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.430908
+      objectReference: {fileID: 0}
     - target: {fileID: 5096204113277975097, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: audioSourceNPC
       value: 
@@ -6216,6 +6219,9 @@ MonoBehaviour:
   parametroPuertaAbierta: Abierta
   esBotonPuertaP2: 0
   numeroPuertaP2: 1
+  animatorBotonP2: {fileID: 0}
+  parametroBrilloP2: Brillo
+  triggerPresionarP2: Presionar
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
