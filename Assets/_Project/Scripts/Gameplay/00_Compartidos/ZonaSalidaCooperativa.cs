@@ -7,15 +7,10 @@ using System.Collections;
 public class ZonaSalidaCooperativa : NetworkBehaviour
 {
     [Header("Escena de destino")]
-    [SerializeField] private string escenaDestino = "P8_SalaSombras";
+    [SerializeField] private string escenaDestino = "P2_Recepcion";
 
     [Header("Zona de deteccion")]
     [SerializeField] private Collider2D zonaDeteccion;
-
-    [Header("Objetos necesarios para salir")]
-    [SerializeField] private ObjetoRecolectable fragmentoElian;
-    [SerializeField] private ObjetoRecolectable fragmentoLia;
-    [SerializeField] private bool requiereObjetosRecolectables = true;
 
     [Header("Visuales de salida")]
     [SerializeField] private GameObject visualBloqueado;
@@ -50,16 +45,11 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     private bool cambiandoEscena;
 
-    private Coroutine rutinaPrepararSalida;
     private Coroutine rutinaCambioEscena;
     private Coroutine rutinaPuertaLocal;
 
     public bool SalidaHabilitada => salidaHabilitada.Value;
     public bool PuzzleResuelto => puzzleResuelto.Value;
-
-    // =====================================
-    // PREPARACION
-    // =====================================
 
     private void Awake()
     {
@@ -85,142 +75,48 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     {
         salidaHabilitada.OnValueChanged -= AlCambiarEstadoSalida;
 
-        DetenerRutinas();
-    }
-
-    private void DetenerRutinas()
-    {
-        if (rutinaPrepararSalida != null)
-            StopCoroutine(rutinaPrepararSalida);
-
         if (rutinaCambioEscena != null)
             StopCoroutine(rutinaCambioEscena);
 
         if (rutinaPuertaLocal != null)
             StopCoroutine(rutinaPuertaLocal);
-
-        rutinaPrepararSalida = null;
-        rutinaCambioEscena = null;
-        rutinaPuertaLocal = null;
     }
 
     // =====================================
-    // CONTROL PRINCIPAL DE SALIDA
+    // DETECTAR AMBOS JUGADORES
     // =====================================
 
     private void Update()
     {
-        if (!IsSpawned || !IsServer || cambiandoEscena)
+        if (!IsSpawned ||
+            !IsServer ||
+            cambiandoEscena ||
+            !salidaHabilitada.Value)
             return;
 
-        // 1. Comprobar que ambos objetos fueron recolectados.
-        if (!puzzleResuelto.Value)
-        {
-            if (AmbosObjetosRecolectados())
-            {
-                Debug.Log(
-                    "SALIDA: Ambos objetos recolectados. " +
-                    "Iniciando cinematica."
-                );
-
-                HabilitarSalida();
-            }
-        }
-
-        // 2. Esperar a que termine la cinematica.
-        if (!salidaHabilitada.Value)
-            return;
-
-        // 3. Esperar a que ambos jugadores lleguen.
         if (!AmbosJugadoresDentro())
             return;
 
         if (string.IsNullOrWhiteSpace(escenaDestino))
         {
             Debug.LogError(
-                "SALIDA: Falta configurar la escena destino."
+                "SALIDA: falta configurar la escena destino."
             );
             return;
         }
 
-        // 4. Cambiar de escena.
         cambiandoEscena = true;
 
-        rutinaCambioEscena = StartCoroutine(CambiarEscena());
+        rutinaCambioEscena =
+            StartCoroutine(CambiarEscena());
     }
-
-    private bool AmbosObjetosRecolectados()
-    {
-        if (!requiereObjetosRecolectables)
-            return true;
-
-        if (fragmentoElian == null || fragmentoLia == null)
-        {
-            Debug.LogError(
-                "SALIDA: Faltan asignar los dos objetos recolectables."
-            );
-
-            return false;
-        }
-
-        if (!fragmentoElian.IsSpawned ||
-            !fragmentoLia.IsSpawned)
-            return false;
-
-        return fragmentoElian.EstaRecolectado &&
-            fragmentoLia.EstaRecolectado;
-    }
-
-    // =====================================
-    // DETECTAR A LIA EN LA SALIDA
-    // =====================================
-
-    private bool LiaDentroDeZona()
-    {
-        if (NetworkManager.Singleton == null ||
-            zonaDeteccion == null ||
-            !zonaDeteccion.enabled)
-        {
-            return false;
-        }
-
-        var jugadores =
-            NetworkManager.Singleton.ConnectedClientsList;
-
-        foreach (var cliente in jugadores)
-        {
-            if (cliente.PlayerObject == null)
-                continue;
-
-            NetworkPlayerSetup setup =
-                cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
-
-            if (setup == null ||
-                !setup.RolConfigurado ||
-                setup.EsElian)
-            {
-                continue;
-            }
-
-            if (JugadorDentro(cliente.PlayerObject))
-                return true;
-        }
-
-        return false;
-    }
-
-    // =====================================
-    // DETECTAR A AMBOS JUGADORES
-    // =====================================
 
     private bool AmbosJugadoresDentro()
     {
         if (NetworkManager.Singleton == null ||
             zonaDeteccion == null ||
             !zonaDeteccion.enabled)
-        {
             return false;
-        }
 
         var jugadores =
             NetworkManager.Singleton.ConnectedClientsList;
@@ -228,35 +124,15 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         if (jugadores.Count != 2)
             return false;
 
-        bool elianDentro = false;
-        bool liaDentro = false;
-
         foreach (var cliente in jugadores)
         {
-            if (cliente.PlayerObject == null)
+            if (cliente.PlayerObject == null ||
+                !JugadorDentro(cliente.PlayerObject))
                 return false;
-
-            NetworkPlayerSetup setup =
-                cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
-
-            if (setup == null || !setup.RolConfigurado)
-                return false;
-
-            if (!JugadorDentro(cliente.PlayerObject))
-                return false;
-
-            if (setup.EsElian)
-                elianDentro = true;
-            else
-                liaDentro = true;
         }
 
-        return elianDentro && liaDentro;
+        return true;
     }
-
-    // =====================================
-    // COMPROBAR POSICION DEL JUGADOR
-    // =====================================
 
     private bool JugadorDentro(NetworkObject jugador)
     {
@@ -269,9 +145,7 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
                 !col.enabled ||
                 col.isTrigger ||
                 !col.gameObject.activeInHierarchy)
-            {
                 continue;
-            }
 
             if (zonaDeteccion.bounds.Intersects(col.bounds))
                 return true;
@@ -281,46 +155,67 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     }
 
     // =====================================
-    // HABILITAR SALIDA
+    // INICIAR CINEMATICA
     // =====================================
 
     public void HabilitarSalida()
     {
-        Debug.LogError(
-            "HABILITAR SALIDA FUE LLAMADO. " +
-            "PUZZLE RESUELTO = " + puzzleResuelto.Value +
-            " | STACK = " + System.Environment.StackTrace
-        );
-        if (!IsSpawned || !IsServer || puzzleResuelto.Value || cambiandoEscena)
-        {
+        if (!IsSpawned ||
+            !IsServer ||
+            puzzleResuelto.Value ||
+            cambiandoEscena)
             return;
-        }
 
+        // Registrar que el puzzle fue completado.
         puzzleResuelto.Value = true;
 
+        // IMPORTANTE:
+        // Esto NO habilita todavía la zona de salida.
+        salidaHabilitada.Value = false;
+
+        ActualizarVisuales(false);
+
         Debug.Log(
-            "PUZZLE COMPLETADO: iniciando cinematica de salida."
+            "P1: Puzzle completado. Iniciando cinematica. " +
+            "Salida todavía bloqueada."
         );
 
         IniciarCinematicaRpc();
-
-        rutinaPrepararSalida =
-            StartCoroutine(PrepararSalida());
     }
 
     // =====================================
-    // HABILITAR SALIDA SIN CINEMATICA
+    // HABILITAR SALIDA DESPUES DE LAS TARJETAS
+    // =====================================
+
+    public void HabilitarSalidaDespuesDeTarjetas()
+    {
+        if (!IsSpawned ||
+            !IsServer ||
+            !puzzleResuelto.Value ||
+            cambiandoEscena ||
+            salidaHabilitada.Value)
+            return;
+
+        salidaHabilitada.Value = true;
+
+        ActualizarVisuales(true);
+
+        Debug.Log(
+            "P1: AMBAS TARJETAS CERRADAS. " +
+            "ZONA DE SALIDA HABILITADA."
+        );
+    }
+
+    // =====================================
+    // COMPATIBILIDAD CON P2 Y OTROS NIVELES
     // =====================================
 
     public void HabilitarSalidaSinCinematica()
     {
         if (!IsSpawned ||
             !IsServer ||
-            puzzleResuelto.Value ||
             cambiandoEscena)
-        {
             return;
-        }
 
         puzzleResuelto.Value = true;
         salidaHabilitada.Value = true;
@@ -328,39 +223,8 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         ActualizarVisuales(true);
 
         Debug.Log(
-            "P2: SALIDA HABILITADA POR LLEGADA DE LIA."
+            "SALIDA HABILITADA SIN REPETIR CINEMATICA."
         );
-    }
-
-    // =====================================
-    // PREPARAR SALIDA
-    // =====================================
-
-    private IEnumerator PrepararSalida()
-    {
-        float esperaTotal =
-            Mathf.Max(0f, esperaAntesDeAbrir);
-
-        if (tienePuerta)
-            esperaTotal += Mathf.Max(0f, duracionApertura);
-
-        if (usarZoom)
-            esperaTotal += Mathf.Max(0f, margenTransicionesZoom);
-
-        yield return new WaitForSecondsRealtime(esperaTotal);
-
-        if (!IsSpawned ||
-            !IsServer ||
-            !puzzleResuelto.Value)
-        {
-            yield break;
-        }
-
-        salidaHabilitada.Value = true;
-
-        rutinaPrepararSalida = null;
-
-        Debug.Log("SALIDA HABILITADA: cinematica terminada.");
     }
 
     // =====================================
@@ -369,14 +233,10 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
     public void BloquearSalida()
     {
-        if (!IsSpawned || !IsServer || cambiandoEscena)
+        if (!IsSpawned ||
+            !IsServer ||
+            cambiandoEscena)
             return;
-
-        if (rutinaPrepararSalida != null)
-        {
-            StopCoroutine(rutinaPrepararSalida);
-            rutinaPrepararSalida = null;
-        }
 
         puzzleResuelto.Value = false;
         salidaHabilitada.Value = false;
@@ -387,7 +247,7 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     }
 
     // =====================================
-    // INICIAR CINEMATICA
+    // CINEMATICA LOCAL DE CADA JUGADOR
     // =====================================
 
     [Rpc(SendTo.Everyone)]
@@ -458,7 +318,10 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         if (animatorPuerta == null ||
             !animatorPuerta.gameObject.activeInHierarchy)
         {
-            Debug.LogWarning("No se encontró la puerta local.");
+            Debug.LogError(
+                "P1: No se encontró el Animator de la puerta local."
+            );
+
             yield break;
         }
 
@@ -467,13 +330,15 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         animatorPuerta.ResetTrigger(estadoApertura);
         animatorPuerta.SetTrigger(estadoApertura);
 
-        Debug.Log("PUERTA: Animación de apertura activada.");
+        Debug.Log(
+            "P1: Animación de apertura activada."
+        );
 
         rutinaPuertaLocal = null;
     }
 
     // =====================================
-    // ACTUALIZAR VISUALES
+    // VISUALES
     // =====================================
 
     private void AlCambiarEstadoSalida(
@@ -493,13 +358,13 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     }
 
     // =====================================
-    // CAMBIAR ESCENA
+    // CAMBIO DE ESCENA
     // =====================================
 
     private IEnumerator CambiarEscena()
     {
         Debug.Log(
-            "P2: Ambos jugadores llegaron a la salida."
+            "SALIDA: ambos jugadores llegaron a la zona."
         );
 
         yield return new WaitForSecondsRealtime(
@@ -532,8 +397,7 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         if (resultado != SceneEventProgressStatus.Started)
         {
             Debug.LogError(
-                "SALIDA: no se pudo cargar la escena: " +
-                resultado
+                "SALIDA: no se pudo cargar escena: " + resultado
             );
 
             cambiandoEscena = false;

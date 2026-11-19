@@ -3,6 +3,7 @@ using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PuzzlePuertasP5 : NetworkBehaviour
 {
@@ -24,20 +25,19 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     [SerializeField] private ControlHuellasP5 controlHuellas;
 
     [Header("Cinematica")]
-    [SerializeField] private float tiempoAntesDeCambiarEscena = 1.2f;
-    [SerializeField] private float duracionEnfoque = 1.8f;
+    [SerializeField] private float duracionEnfoqueRespaldo = 1.8f;
 
     [Header("Entrada cooperativa")]
-[SerializeField] private float distanciaEntrada = 1.5f;
+    [SerializeField] private float distanciaEntrada = 1.5f;
 
-[SerializeField] private Transform entrada204Elian;
-[SerializeField] private Transform entrada204Lia;
+    [SerializeField] private Transform entrada204Elian;
+    [SerializeField] private Transform entrada204Lia;
 
-[SerializeField] private Transform entrada202Elian;
-[SerializeField] private Transform entrada202Lia;
+    [SerializeField] private Transform entrada202Elian;
+    [SerializeField] private Transform entrada202Lia;
 
-[SerializeField] private Transform entrada201Elian;
-[SerializeField] private Transform entrada201Lia;
+    [SerializeField] private Transform entrada201Elian;
+    [SerializeField] private Transform entrada201Lia;
 
     [Header("Mision despues del puzzle")]
     [SerializeField] private string misionElian =
@@ -46,8 +46,10 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     [SerializeField] private string misionLia =
         "Ayuda a Elian";
 
-    // Conserva el progreso entre escenas mientras
-    // la aplicación siga ejecutándose.
+    // =====================================
+    // PROGRESO
+    // =====================================
+
     private static int progresoGuardado = 0;
 
     private NetworkVariable<int> pasoActual =
@@ -62,27 +64,54 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     private NetworkVariable<int> ultimaPuertaCorrecta =
         new NetworkVariable<int>(-1);
 
+    // =====================================
+    // CONTROL DE CINEMATICA
+    // =====================================
+
     private bool transicionEnCurso;
 
+    private bool cinematicaLocalActiva;
+
     private NetworkPlayerMovement movimientoLocal;
+
     private bool movimientoBloqueadoAntesCinematica;
-    private Coroutine rutinaControlesCinematica;
+
+    private Coroutine rutinaSinCamara;
+
+    private Coroutine rutinaCambioEscena;
+
+    // Jugadores que terminaron su zoom.
+    private HashSet<ulong> jugadoresCinematicaFinalizada =
+        new HashSet<ulong>();
 
     public bool PuzzleCompletado => puzzleCompletado.Value;
 
-    [RuntimeInitializeOnLoadMethod(
-        RuntimeInitializeLoadType.SubsystemRegistration)]
-    private static void ReiniciarProgresoAlIniciarAplicacion()
+    public static void ReiniciarProgresoAlIniciarAplicacion()
     {
         progresoGuardado = 0;
     }
+
+    [RuntimeInitializeOnLoadMethod(
+        RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ReiniciarEstadoAplicacion()
+    {
+        progresoGuardado = 0;
+    }
+
+    // =====================================
+    // NETWORK SPAWN
+    // =====================================
 
     public override void OnNetworkSpawn()
     {
         puzzleCompletado.OnValueChanged +=
             AlCambiarPuzzleCompletado;
 
-        pasoActual.OnValueChanged += AlCambiarPasoActual;
+        pasoActual.OnValueChanged +=
+            AlCambiarPasoActual;
+
+        CamaraJugadorLocal.ZoomCinematicoFinalizadoLocal +=
+            AlFinalizarZoomLocal;
 
         if (vigiliaVisual != null)
             vigiliaVisual.SetActive(false);
@@ -90,7 +119,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         if (IsServer)
         {
             pasoActual.Value = Mathf.Clamp(
-                progresoGuardado, 0, secuenciaCorrecta.Length
+                progresoGuardado,
+                0,
+                secuenciaCorrecta.Length
             );
 
             puzzleCompletado.Value =
@@ -108,7 +139,26 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         puzzleCompletado.OnValueChanged -=
             AlCambiarPuzzleCompletado;
 
-        pasoActual.OnValueChanged -= AlCambiarPasoActual;
+        pasoActual.OnValueChanged -=
+            AlCambiarPasoActual;
+
+        CamaraJugadorLocal.ZoomCinematicoFinalizadoLocal -=
+            AlFinalizarZoomLocal;
+
+        if (rutinaSinCamara != null)
+            StopCoroutine(rutinaSinCamara);
+
+        if (rutinaCambioEscena != null)
+            StopCoroutine(rutinaCambioEscena);
+
+        if (movimientoLocal != null &&
+            movimientoLocal.IsSpawned &&
+            movimientoLocal.IsOwner)
+        {
+            movimientoLocal.BloquearMovimiento(
+                movimientoBloqueadoAntesCinematica
+            );
+        }
     }
 
     // =====================================
@@ -123,12 +173,12 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         IntentarPuertaRpc(numeroPuerta);
     }
 
-    [Rpc(SendTo.Server)]
+    [Rpc(SendTo.Server, RequireOwnership = false)]
     private void IntentarPuertaRpc(
         int numeroPuerta,
         RpcParams rpcParams = default)
     {
-        // Solo Elian (Host) puede resolver el recorrido.
+        // Solo Elian (Host) resuelve el recorrido.
         if (rpcParams.Receive.SenderClientId !=
             NetworkManager.ServerClientId)
             return;
@@ -152,8 +202,10 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
         if (numeroPuerta != puertaEsperada)
         {
-            // Ruta guiada: ninguna penalizacion ni aparicion de La Vigilia.
-            Debug.Log("P5: Esta puerta no corresponde al siguiente paso.");
+            Debug.Log(
+                "P5: Esta puerta no corresponde al siguiente paso."
+            );
+
             return;
         }
 
@@ -166,6 +218,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
     private void ProcesarAcierto(int numeroPuerta)
     {
+        if (!IsServer)
+            return;
+
         PuertaPuzzleP5 puerta = BuscarPuerta(numeroPuerta);
 
         if (puerta == null)
@@ -173,6 +228,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             Debug.LogError(
                 "P5: No se encontro la puerta " + numeroPuerta
             );
+
             return;
         }
 
@@ -182,10 +238,12 @@ public class PuzzlePuertasP5 : NetworkBehaviour
                 "P5: La puerta " + numeroPuerta +
                 " no tiene escena de destino."
             );
+
             return;
         }
 
         ultimaPuertaCorrecta.Value = numeroPuerta;
+
         pasoActual.Value++;
 
         progresoGuardado = pasoActual.Value;
@@ -198,27 +256,39 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
         transicionEnCurso = true;
 
-        // Actualiza el progreso local de cada jugador.
+        // Limpiar confirmaciones anteriores.
+        jugadoresCinematicaFinalizada.Clear();
+
+        // Actualizar progreso en ambos clientes.
         ActualizarProgresoClientesRpc(progresoGuardado);
 
-        // Abre la puerta y enfoca la cámara en ambos jugadores.
+        // Duración real de la animación de apertura.
+        float duracionApertura = puerta.DuracionApertura;
+
+        if (duracionApertura <= 0f)
+            duracionApertura = duracionEnfoqueRespaldo;
+
+        // Abrir puerta y comenzar zoom simultáneamente.
         AbrirPuertaYCentrarCamaraRpc(
             numeroPuerta,
-            duracionEnfoque
+            duracionApertura
         );
 
         if (pasoActual.Value >= secuenciaCorrecta.Length)
             puzzleCompletado.Value = true;
 
-        // Esperar a que concluyan tanto el zoom como la animacion de apertura.
-        float esperaSegura = Mathf.Max(
-            tiempoAntesDeCambiarEscena,
-            duracionEnfoque + 0.8f,
-            puerta.DuracionApertura + 0.5f
+        // Esperar confirmación real de los dos jugadores.
+        rutinaCambioEscena = StartCoroutine(
+            EsperarCinematicaYCargarHabitacion(
+                numeroPuerta,
+                puerta.EscenaDestino
+            )
         );
-
-        StartCoroutine(CargarHabitacion(numeroPuerta, puerta.EscenaDestino, esperaSegura));
     }
+
+    // =====================================
+    // BUSCAR PUERTA
+    // =====================================
 
     private PuertaPuzzleP5 BuscarPuerta(int numero)
     {
@@ -237,23 +307,30 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     }
 
     // =====================================
-    // APERTURA Y CAMARA EN TODOS LOS CLIENTES
+    // ABRIR PUERTA Y ENFOCAR CAMARA
     // =====================================
 
-    
     [Rpc(SendTo.Everyone)]
     private void AbrirPuertaYCentrarCamaraRpc(
         int numeroPuerta,
-        float duracion)
+        float duracionApertura)
     {
         PuertaPuzzleP5 puerta = BuscarPuerta(numeroPuerta);
 
         if (puerta == null)
-            return;
+        {
+            Debug.LogError(
+                "P5: No se encontro puerta para la cinematica."
+            );
 
-        // Obtener el jugador local.
+            return;
+        }
+
+        cinematicaLocalActiva = true;
+
         NetworkManager red = NetworkManager.Singleton;
 
+        // Obtener el jugador local.
         if (red != null &&
             red.LocalClient != null &&
             red.LocalClient.PlayerObject != null)
@@ -271,47 +348,106 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             }
         }
 
-        // Abrir puerta de la realidad correspondiente.
+        // Abrir la puerta correspondiente a la realidad.
         puerta.AbrirVisualLocal();
 
-        // Enfocar cámara local.
+        // Buscar cámara del jugador local.
         CamaraJugadorLocal[] camaras =
             FindObjectsByType<CamaraJugadorLocal>(
                 FindObjectsSortMode.None
             );
 
+        CamaraJugadorLocal camaraLocal = null;
+
         foreach (CamaraJugadorLocal camara in camaras)
         {
             if (camara.IsOwner)
             {
-                camara.EnfocarConZoom(
-                    puerta.PuntoEnfoqueLocal.position,
-                    duracion
-                );
+                camaraLocal = camara;
+                break;
             }
         }
 
-        // Esperar a que termine la cinemática.
-        if (rutinaControlesCinematica != null)
-            StopCoroutine(rutinaControlesCinematica);
+        if (camaraLocal != null)
+        {
+            // Cada tramo de transición tarda 1 / velocidadZoom.
+            // Se descuentan acercamiento y regreso para que
+            // la cámara termine al mismo tiempo que abre la puerta.
 
-        float duracionTotal = Mathf.Max(
-            duracion,
-            puerta.DuracionApertura
-        );
+            float tiempoTransicion =
+                camaraLocal.DuracionTransicionZoom;
 
-        rutinaControlesCinematica =
-            StartCoroutine(
-                RestaurarMovimientoAlTerminar(duracionTotal)
+            float tiempoMantenerZoom = Mathf.Max(
+                0f,
+                duracionApertura - (tiempoTransicion * 2f)
             );
+
+            camaraLocal.EnfocarConZoom(
+                puerta.PuntoEnfoqueLocal.position,
+                tiempoMantenerZoom
+            );
+
+            Debug.Log(
+                "P5: Zoom iniciado | Puerta: " + numeroPuerta +
+                " | Apertura: " + duracionApertura +
+                " | Permanencia zoom: " + tiempoMantenerZoom
+            );
+        }
+        else
+        {
+            Debug.LogWarning(
+                "P5: No se encontro camara local. " +
+                "Se utilizara el tiempo de respaldo."
+            );
+
+            rutinaSinCamara = StartCoroutine(
+                CompletarCinematicaSinCamara(duracionApertura)
+            );
+        }
     }
 
-    private IEnumerator RestaurarMovimientoAlTerminar(
+    // =====================================
+    // EVENTO: CAMARA TERMINO EL ZOOM
+    // =====================================
+
+    private void AlFinalizarZoomLocal(
+        CamaraJugadorLocal camara)
+    {
+        if (!cinematicaLocalActiva)
+            return;
+
+        if (camara == null || !camara.IsOwner)
+            return;
+
+        CompletarCinematicaLocal();
+    }
+
+    // =====================================
+    // RESPALDO SI NO EXISTE CAMARA
+    // =====================================
+
+    private IEnumerator CompletarCinematicaSinCamara(
         float duracion)
     {
         yield return new WaitForSecondsRealtime(
-            duracion + 0.2f
+            Mathf.Max(0f, duracion)
         );
+
+        CompletarCinematicaLocal();
+
+        rutinaSinCamara = null;
+    }
+
+    // =====================================
+    // COMPLETAR CINEMATICA LOCAL
+    // =====================================
+
+    private void CompletarCinematicaLocal()
+    {
+        if (!cinematicaLocalActiva)
+            return;
+
+        cinematicaLocalActiva = false;
 
         if (movimientoLocal != null &&
             movimientoLocal.IsSpawned &&
@@ -323,55 +459,85 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         }
 
         movimientoLocal = null;
-        rutinaControlesCinematica = null;
 
         Debug.Log(
-            "P5: Cinemática terminada. Controles restaurados."
+            "P5: Cinematica terminada. " +
+            "Movimiento local restaurado."
+        );
+
+        // Confirmar al servidor que este jugador terminó.
+        ConfirmarCinematicaFinalizadaRpc();
+    }
+
+    // =====================================
+    // CONFIRMAR FIN DE CINEMATICA
+    // =====================================
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void ConfirmarCinematicaFinalizadaRpc(
+        RpcParams rpcParams = default)
+    {
+        if (!IsServer || !transicionEnCurso)
+            return;
+
+        ulong clienteId =
+            rpcParams.Receive.SenderClientId;
+
+        if (!NetworkManager.Singleton.ConnectedClients
+            .ContainsKey(clienteId))
+            return;
+
+        jugadoresCinematicaFinalizada.Add(clienteId);
+
+        Debug.Log(
+            "P5: Cinematicas terminadas: " +
+            jugadoresCinematicaFinalizada.Count + "/2"
         );
     }
 
-
-    [Rpc(SendTo.Everyone)]
-    private void ActualizarProgresoClientesRpc(int progreso)
-    {
-        progresoGuardado = progreso;
-    }
-
     // =====================================
-    // CAMBIO DE ESCENA SINCRONIZADO
+    // ESPERAR A AMBOS JUGADORES
     // =====================================
 
-    
-    private IEnumerator CargarHabitacion(
+    private IEnumerator EsperarCinematicaYCargarHabitacion(
         int numeroPuerta,
-        string nombreEscena,
-        float esperaSegura)
+        string nombreEscena)
     {
-        // Esperar a que termine la cinematica.
-        yield return new WaitForSecondsRealtime(
-            Mathf.Max(0f, esperaSegura)
+        // Esperar hasta que los dos jugadores
+        // hayan terminado completamente su zoom.
+        while (jugadoresCinematicaFinalizada.Count < 2)
+        {
+            yield return null;
+        }
+
+        Debug.Log(
+            "P5: Ambos jugadores terminaron la cinematica."
         );
 
-        if (!IsServer)
-            yield break;
-
-        // Esperar a que ambos jugadores lleguen.
+        // Ahora pueden acercarse a la puerta.
         while (!AmbosEnLaPuerta(numeroPuerta))
         {
             yield return new WaitForSecondsRealtime(0.2f);
         }
 
+        if (!IsServer)
+            yield break;
+
         if (NetworkManager.Singleton == null ||
             NetworkManager.Singleton.SceneManager == null)
         {
-            Debug.LogError("P5: No se encontro SceneManager.");
+            Debug.LogError(
+                "P5: No se encontro SceneManager."
+            );
+
             transicionEnCurso = false;
             yield break;
         }
 
         Debug.Log(
             "P5: Ambos jugadores llegaron a la puerta " +
-            numeroPuerta
+            numeroPuerta +
+            ". Cargando " + nombreEscena
         );
 
         var resultado =
@@ -390,9 +556,14 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         }
     }
 
+    // =====================================
+    // VALIDAR POSICION DE AMBOS JUGADORES
+    // =====================================
+
     private bool AmbosEnLaPuerta(int numeroPuerta)
     {
-        if (!IsServer || NetworkManager.Singleton == null)
+        if (!IsServer ||
+            NetworkManager.Singleton == null)
             return false;
 
         Transform puntoElian = null;
@@ -456,6 +627,15 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         return elianPresente && liaPresente;
     }
 
+    // =====================================
+    // ACTUALIZAR PROGRESO
+    // =====================================
+
+    [Rpc(SendTo.Everyone)]
+    private void ActualizarProgresoClientesRpc(int progreso)
+    {
+        progresoGuardado = progreso;
+    }
 
     // =====================================
     // ERRORES
@@ -542,7 +722,7 @@ public class PuzzlePuertasP5 : NetworkBehaviour
     }
 
     // =====================================
-    // FINALIZAR
+    // FINALIZAR PUZZLE
     // =====================================
 
     private void AlCambiarPuzzleCompletado(
@@ -555,7 +735,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
     private void FinalizarPuzzleLocal()
     {
-        Debug.Log("P5: SECUENCIA DE PUERTAS COMPLETADA");
+        Debug.Log(
+            "P5: SECUENCIA DE PUERTAS COMPLETADA"
+        );
 
         if (controlHuellas != null &&
             controlHuellas.gameObject.activeInHierarchy)
@@ -563,8 +745,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
             controlHuellas.DetenerRecorrido();
         }
 
-        bool esElian = NetworkManager.Singleton != null &&
-                       NetworkManager.Singleton.IsHost;
+        bool esElian =
+            NetworkManager.Singleton != null &&
+            NetworkManager.Singleton.IsHost;
 
 #if UNITY_EDITOR
         if (RolPruebaJugador.Instancia != null)
@@ -579,6 +762,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         }
     }
 
+    // =====================================
+    // REINICIAR PROGRESO
+    // =====================================
 
     public static void ReiniciarProgresoParaNuevoIntento()
     {
@@ -587,7 +773,9 @@ public class PuzzlePuertasP5 : NetworkBehaviour
         PuzzlePuertasP5 puzzle =
             FindAnyObjectByType<PuzzlePuertasP5>();
 
-        if (puzzle == null || !puzzle.IsSpawned || !puzzle.IsServer)
+        if (puzzle == null ||
+            !puzzle.IsSpawned ||
+            !puzzle.IsServer)
             return;
 
         puzzle.pasoActual.Value = 0;
@@ -597,12 +785,15 @@ public class PuzzlePuertasP5 : NetworkBehaviour
 
         puzzle.transicionEnCurso = false;
 
+        puzzle.jugadoresCinematicaFinalizada.Clear();
+
         if (puzzle.vigiliaVisual != null)
             puzzle.vigiliaVisual.SetActive(false);
 
         puzzle.ActualizarHuellas(0);
 
-        Debug.Log("P5: PROGRESO COMPLETAMENTE REINICIADO.");
+        Debug.Log(
+            "P5: PROGRESO COMPLETAMENTE REINICIADO."
+        );
     }
-
 }

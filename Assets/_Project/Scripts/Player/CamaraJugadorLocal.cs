@@ -3,6 +3,7 @@ using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System;
 
 public class CamaraJugadorLocal : NetworkBehaviour
 {
@@ -14,6 +15,12 @@ public class CamaraJugadorLocal : NetworkBehaviour
     [SerializeField] private float velocidadEnfoque = 5f;
     [SerializeField] private float zoomObjetivo = 3f;
     [SerializeField] private float velocidadZoom = 3f;
+
+    // Duración aproximada de cada transición del zoom.
+    public float DuracionTransicionZoom =>
+        velocidadZoom > 0.0001f
+        ? 1f / velocidadZoom
+        : 0f;
 
     [Header("Camara fija en habitaciones")]
     [SerializeField] private float margenHabitacion = 1f;
@@ -48,6 +55,10 @@ public class CamaraJugadorLocal : NetworkBehaviour
 
     private float tamañoOriginal;
     private Coroutine rutinaEnfoque;
+
+    // Notifica cuando termina completamente el zoom local.
+    public static event Action<CamaraJugadorLocal>
+        ZoomCinematicoFinalizadoLocal;
 
     // =====================================
     // INICIO
@@ -597,6 +608,15 @@ public class CamaraJugadorLocal : NetworkBehaviour
         enfoqueActivo = false;
         zoomEnCurso = false;
         rutinaEnfoque = null;
+
+        // Avisar que la cámara terminó el acercamiento
+        // y regresó completamente a su posición original.
+        ZoomCinematicoFinalizadoLocal?.Invoke(this);
+
+        Debug.Log(
+            "CÁMARA: Cinematografía terminada para jugador " +
+            OwnerClientId
+        );
     }
 
     // =====================================

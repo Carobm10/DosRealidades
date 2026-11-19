@@ -264,16 +264,21 @@ public class CajaFuerte201Controller : NetworkBehaviour
     }
 
 
-    public void ConfirmarCierreTarjetaLlave()
+    public void ConfirmarCierreTarjetaLlave(string idObjeto)
     {
         if (!IsSpawned || !IsClient)
             return;
 
-        ConfirmarCierreTarjetaRpc();
+        if (idObjeto != idLlaveElian &&
+            idObjeto != idLlaveLia)
+            return;
+
+        ConfirmarCierreTarjetaRpc(idObjeto);
     }
 
     [Rpc(SendTo.Server, RequireOwnership = false)]
     private void ConfirmarCierreTarjetaRpc(
+        string idObjeto,
         RpcParams rpcParams = default)
     {
         if (!IsServer || !codigoProcesado)
@@ -281,13 +286,34 @@ public class CajaFuerte201Controller : NetworkBehaviour
 
         ulong jugadorId = rpcParams.Receive.SenderClientId;
 
-        if (!NetworkManager.Singleton.ConnectedClients.ContainsKey(jugadorId))
+        if (!NetworkManager.Singleton.ConnectedClients
+            .TryGetValue(jugadorId, out var cliente))
             return;
 
-        jugadoresCerraronTarjeta.Add(jugadorId);
+        if (cliente.PlayerObject == null)
+            return;
+
+        NetworkPlayerSetup setup =
+            cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null || !setup.RolConfigurado)
+            return;
+
+        // Validar que cada jugador cierre su propia llave.
+        bool llaveCorrecta = setup.EsElian
+            ? idObjeto == idLlaveElian
+            : idObjeto == idLlaveLia;
+
+        if (!llaveCorrecta)
+            return;
+
+        if (!jugadoresCerraronTarjeta.Add(jugadorId))
+            return;
 
         Debug.Log(
-            "CAJA 201: Jugadores que cerraron tarjeta: " +
+            "CAJA 201: " +
+            (setup.EsElian ? "Elian" : "Lía") +
+            " cerró su tarjeta de llave. " +
             jugadoresCerraronTarjeta.Count + "/2"
         );
 
@@ -296,7 +322,10 @@ public class CajaFuerte201Controller : NetworkBehaviour
 
         if (salidaCooperativa != null)
         {
-            Debug.Log("CAJA 201: Ambos cerraron. Habilitando salida.");
+            Debug.Log(
+                "CAJA 201: Ambos jugadores cerraron sus llaves. " +
+                "Habilitando salida."
+            );
 
             salidaCooperativa.HabilitarSalida();
         }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8696842847975744996}
   - component: {fileID: 61847615594526800}
   - component: {fileID: 3239875105945358432}
+  - component: {fileID: 4468044099274674665}
   m_Layer: 0
   m_Name: 'VisualJugador '
   m_TagString: Untagged
@@ -115,6 +116,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4468044099274674665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467900067946880393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bc1da033b869c41b3d43c5ec652dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DiagnosticoVisualJugador
+  intervaloRevision: 0.5
+  cantidadRevisiones: 10
 --- !u!1 &5304561964239042724
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +659,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 396eefbe1c76a8343a5167efbc7ef7e9, type: 2}
   - {fileID: 11400000, guid: 0d99ea7fc70b5f24183c6aaee24193aa, type: 2}
   - {fileID: 11400000, guid: 8379b1a6c48f2cc4789df895654a4b03, type: 2}
+  - {fileID: 11400000, guid: 80587c028e40dcf48a0c9267e353e063, type: 2}
+  - {fileID: 11400000, guid: 9dc8869b132eb6a4ab8bfdea42946b42, type: 2}
+  - {fileID: 11400000, guid: 5145223a9dfeca04086e2c115992947a, type: 2}
 --- !u!114 &9191152107274875821
 MonoBehaviour:
   m_ObjectHideFlags: 0
