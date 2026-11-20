@@ -80,6 +80,10 @@ public class ZonaInteraccion : MonoBehaviour
     private bool puzzleEnCurso;
     private bool manteniendo;
 
+    [Header("Dispositivos de llaves P8")]
+    [SerializeField] private DispositivosLlavesP8 dispositivoLlavesP8;
+    [SerializeField] private bool dispositivoEsElian;
+
     // =====================================
     // INICIO
     // =====================================
@@ -370,6 +374,17 @@ public class ZonaInteraccion : MonoBehaviour
     {
         if (contactosJugadorLocal <= 0)
             return;
+
+        // DISPOSITIVOS DE LLAVES P8
+
+        if (dispositivoLlavesP8 != null)
+        {
+            dispositivoLlavesP8.SolicitarColocarLlave(
+                dispositivoEsElian
+            );
+
+            return;
+        }
 
         // =====================================
         // BOTONES RUNNER P2

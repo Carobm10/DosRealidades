@@ -392,6 +392,18 @@ public class InventarioUI : MonoBehaviour
     // LIMPIEZA
     // =====================================
 
+    public void DesprepararObjeto(string id)
+    {
+        if (objetoPreparado == null ||
+            objetoPreparado.Id != id)
+            return;
+
+        objetoPreparado = null;
+        RefrescarInventario();
+
+        Debug.Log("P8 | Llave retirada de selección: " + id);
+    }
+
     private void OnDestroy()
     {
         if (botonAbrirInventario != null)
