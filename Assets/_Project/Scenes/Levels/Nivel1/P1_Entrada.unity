@@ -2690,17 +2690,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963867521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-  m_PrefabInstance: {fileID: 5426688216678087306}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &992356856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,25 +3799,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
   m_PrefabInstance: {fileID: 1813504323}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1202432127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8207016859405442792, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-  m_PrefabInstance: {fileID: 5426688216678087306}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1202432131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202432127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
-  sliderMusica: {fileID: 963867521}
-  sliderEfectos: {fileID: 1672230528}
 --- !u!1 &1312365366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,17 +4767,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670023864}
   m_CullTransparentMesh: 1
---- !u!114 &1672230528 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-  m_PrefabInstance: {fileID: 5426688216678087306}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &1731885437
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,70 +6658,6 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 1027702145
       objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_Value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CambiarVolumenMusica
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2760379108032502732, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_Value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CambiarVolumenEfectos
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300757485600835001, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -6770,10 +6665,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8207016859405442792, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1202432131}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
 --- !u!1001 &8372241395913376138
 PrefabInstance:

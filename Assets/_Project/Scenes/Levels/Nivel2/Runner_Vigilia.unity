@@ -893,6 +893,10 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 1891353790
       objectReference: {fileID: 0}
+    - target: {fileID: 3012602678814895408, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: m_text
+      value: En uso
+      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -1359,7 +1363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807716374185399502, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1842720247202567061, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_InScenePlaced
