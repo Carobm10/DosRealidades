@@ -2,6 +2,7 @@
 using UnityEngine;
 using Unity.Netcode;
 using System;
+using UnityEngine.SceneManagement;
 
 public class VidasEquipo : NetworkBehaviour
 {
@@ -59,21 +60,30 @@ public class VidasEquipo : NetworkBehaviour
     // =====================================
     // SOLICITAR PERDIDA DE VIDA
     // =====================================
-
+    
     public void PerderVida()
     {
         if (!IsSpawned)
             return;
 
-        if (IsServer)
+        if (EsEscenaP8())
         {
-            PerderVidaServidor();
+            if (IsServer)
+                RegistrarAtrapamientoP8Servidor();
+            else
+                PerderVidaRpc();
+
             return;
         }
 
-        PerderVidaRpc();
+        if (IsServer)
+            PerderVidaServidor();
+        else
+            PerderVidaRpc();
     }
 
+
+    
     [Rpc(SendTo.Server, RequireOwnership = false)]
     private void PerderVidaRpc(RpcParams rpcParams = default)
     {
@@ -92,14 +102,48 @@ public class VidasEquipo : NetworkBehaviour
         NetworkPlayerSetup setup =
             cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
 
-        // Solo Lía puede solicitar daño de La Vigilia.
-        if (setup == null ||
-            !setup.RolConfigurado ||
-            setup.EsElian)
+        if (setup == null || !setup.RolConfigurado)
+            return;
+
+        if (EsEscenaP8())
+        {
+            RegistrarAtrapamientoP8Servidor();
+            return;
+        }
+
+        // Se conserva la regla anterior fuera de P8.
+        if (setup.EsElian)
             return;
 
         PerderVidaServidor();
     }
+
+
+    private bool EsEscenaP8()
+    {
+        return SceneManager.GetActiveScene().name ==
+            "P8_SalaSombras";
+    }
+
+    private void RegistrarAtrapamientoP8Servidor()
+    {
+        if (!IsServer)
+            return;
+
+        SupervivenciaP8Controller controlador =
+            FindFirstObjectByType<SupervivenciaP8Controller>();
+
+        if (controlador == null || !controlador.IsSpawned)
+        {
+            Debug.LogError(
+                "P8 | No se encontró SupervivenciaP8Controller."
+            );
+            return;
+        }
+
+        controlador.RegistrarAtrapamientoServidor();
+    }
+
 
     // =====================================
     // DESCONTAR VIDA EN SERVIDOR
@@ -145,10 +189,14 @@ public class VidasEquipo : NetworkBehaviour
         if (reinicio == null || !reinicio.IsSpawned)
         {
             Debug.LogError(
-                "RUNNER P2 | No se encontró ReinicioNivelCooperativo."
+                "No se encontró ReinicioNivelCooperativo activo."
             );
             return;
         }
+
+        Debug.Log(
+            "P8 | VIDAS AGOTADAS. REINICIANDO NIVEL COMPLETO."
+        );
 
         reinicio.ReiniciarDesdeServidor();
     }
