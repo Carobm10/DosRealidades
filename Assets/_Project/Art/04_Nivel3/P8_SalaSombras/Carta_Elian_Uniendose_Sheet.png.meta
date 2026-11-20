@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: 2356072d67c63694d8824090e59a1245
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4132662306042491970
+    second: Carta_Elian_Uniendose_Sheet_0
+  - first:
+      213: -2901462940132543894
+    second: Carta_Elian_Uniendose_Sheet_1
+  - first:
+      213: -4227540937062367082
+    second: Carta_Elian_Uniendose_Sheet_2
+  - first:
+      213: -8491154896522111423
+    second: Carta_Elian_Uniendose_Sheet_3
+  - first:
+      213: 5998028209320056064
+    second: Carta_Elian_Uniendose_Sheet_4
+  - first:
+      213: -7427633221703526882
+    second: Carta_Elian_Uniendose_Sheet_5
+  - first:
+      213: -4609459394557960232
+    second: Carta_Elian_Uniendose_Sheet_6
+  - first:
+      213: 2136089823341945890
+    second: Carta_Elian_Uniendose_Sheet_7
+  - first:
+      213: 8803475107797350153
+    second: Carta_Elian_Uniendose_Sheet_8
+  - first:
+      213: -7889389107480246440
+    second: Carta_Elian_Uniendose_Sheet_9
+  - first:
+      213: 7768888938363789597
+    second: Carta_Elian_Uniendose_Sheet_10
+  - first:
+      213: -8082572318840052834
+    second: Carta_Elian_Uniendose_Sheet_11
+  - first:
+      213: -7839763585532400479
+    second: Carta_Elian_Uniendose_Sheet_12
+  - first:
+      213: 1128776435072031565
+    second: Carta_Elian_Uniendose_Sheet_13
+  - first:
+      213: 6559818222171266309
+    second: Carta_Elian_Uniendose_Sheet_14
+  - first:
+      213: -2123077819946164845
+    second: Carta_Elian_Uniendose_Sheet_15
+  - first:
+      213: 3265142050698691128
+    second: Carta_Elian_Uniendose_Sheet_16
+  - first:
+      213: -3522148775998265857
+    second: Carta_Elian_Uniendose_Sheet_17
+  - first:
+      213: 1102920522486516231
+    second: Carta_Elian_Uniendose_Sheet_18
+  - first:
+      213: 7056951252837774913
+    second: Carta_Elian_Uniendose_Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 82
+        width: 1301
+        height: 1608
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2443f48b87a2a5930800000000000000
+      internalID: 4132662306042491970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1878
+        width: 1325
+        height: 1601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62707c14deebb7d0800000000000000
+      internalID: -2901462940132543894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 1881
+        width: 1352
+        height: 1631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690c9fc8ae1c455c0800000000000000
+      internalID: -4227540937062367082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1837
+        width: 1364
+        height: 1687
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1461bf31c9b592a80800000000000000
+      internalID: -8491154896522111423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 109
+        width: 1301
+        height: 1608
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8320619456d105d20800000000000000
+      internalID: 3265142050698691128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 35
+        width: 1354
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5eb807950de1fc0800000000000000
+      internalID: -3522148775998265857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 0
+        width: 1361
+        height: 1678
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a0c462f5c5e4f00800000000000000
+      internalID: 1102920522486516231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1832
+        width: 1311
+        height: 1691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d6bc130fb7df4488926480a0771ca2
+      internalID: 5998028209320056064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 3634
+        width: 1301
+        height: 1657
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f138872e57a6354fb5c3770877c4366
+      internalID: -7427633221703526882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 3636
+        width: 1344
+        height: 1659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd7f01e171cb7e49aa2b27223171c59
+      internalID: -4609459394557960232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Elian_Uniendose_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3627
+        width: 1379
+        height: 1684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faca0f1fb285ac43a1bccf978ffa2d9
+      internalID: 2136089823341945890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a9cabcd5a64aa8843ade18a7a10aac82
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Carta_Elian_Uniendose_Sheet_1: 2136089823341945890
+      Carta_Elian_Uniendose_Sheet_10: -3522148775998265857
+      Carta_Elian_Uniendose_Sheet_11: 1102920522486516231
+      Carta_Elian_Uniendose_Sheet_12: -7839763585532400479
+      Carta_Elian_Uniendose_Sheet_13: 1128776435072031565
+      Carta_Elian_Uniendose_Sheet_14: 6559818222171266309
+      Carta_Elian_Uniendose_Sheet_15: -2123077819946164845
+      Carta_Elian_Uniendose_Sheet_19: 7056951252837774913
+      Carta_Elian_Uniendose_Sheet_2: -4609459394557960232
+      Carta_Elian_Uniendose_Sheet_3: -7427633221703526882
+      Carta_Elian_Uniendose_Sheet_4: 5998028209320056064
+      Carta_Elian_Uniendose_Sheet_5: -8491154896522111423
+      Carta_Elian_Uniendose_Sheet_6: -4227540937062367082
+      Carta_Elian_Uniendose_Sheet_7: -2901462940132543894
+      Carta_Elian_Uniendose_Sheet_8: 4132662306042491970
+      Carta_Elian_Uniendose_Sheet_9: 3265142050698691128
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: adc0c65b92a05674eb4daa2edee20a6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 174459081013318218
+    second: Carta_Lia_Uniendose_Sheet_0
+  - first:
+      213: -8359240506171100632
+    second: Carta_Lia_Uniendose_Sheet_1
+  - first:
+      213: -6876504525920893494
+    second: Carta_Lia_Uniendose_Sheet_2
+  - first:
+      213: -1693338557074874018
+    second: Carta_Lia_Uniendose_Sheet_3
+  - first:
+      213: 8180298925542721801
+    second: Carta_Lia_Uniendose_Sheet_4
+  - first:
+      213: 9142196204322609042
+    second: Carta_Lia_Uniendose_Sheet_5
+  - first:
+      213: -415397222400929765
+    second: Carta_Lia_Uniendose_Sheet_6
+  - first:
+      213: 8488842395075463688
+    second: Carta_Lia_Uniendose_Sheet_7
+  - first:
+      213: 8937485291827831489
+    second: Carta_Lia_Uniendose_Sheet_8
+  - first:
+      213: 8077373129744933770
+    second: Carta_Lia_Uniendose_Sheet_9
+  - first:
+      213: -2636413946447008301
+    second: Carta_Lia_Uniendose_Sheet_10
+  - first:
+      213: 7408510538801387388
+    second: Carta_Lia_Uniendose_Sheet_11
+  - first:
+      213: 6848787742357135398
+    second: Carta_Lia_Uniendose_Sheet_12
+  - first:
+      213: 3096421520651099478
+    second: Carta_Lia_Uniendose_Sheet_13
+  - first:
+      213: -1450076290516426938
+    second: Carta_Lia_Uniendose_Sheet_14
+  - first:
+      213: -8861973048838010733
+    second: Carta_Lia_Uniendose_Sheet_15
+  - first:
+      213: -90176437182362688
+    second: Carta_Lia_Uniendose_Sheet_16
+  - first:
+      213: 9207992629651437653
+    second: Carta_Lia_Uniendose_Sheet_17
+  - first:
+      213: 87684318023933607
+    second: Carta_Lia_Uniendose_Sheet_18
+  - first:
+      213: -2446008165293761753
+    second: Carta_Lia_Uniendose_Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_0
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 3618
+        width: 1402
+        height: 1675
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f4bede738d505439e47964a4f1af55
+      internalID: 655118677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_1
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 3618
+        width: 1355
+        height: 1675
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce47db6c81d014cb707406a4ba7c34
+      internalID: -949636104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_2
+      rect:
+        serializedVersion: 2
+        x: 4103
+        y: 3621
+        width: 1337
+        height: 1674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e816022bd3ad9f349a27f9bff69dad56
+      internalID: 1072032257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1910
+        width: 1305
+        height: 1558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb66a09dfd43b240b13e30d04bde98a
+      internalID: 1452215773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_4
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1899
+        width: 1305
+        height: 1558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4699a176078e6404ea856772a668e408
+      internalID: -1194542824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_5
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 1903
+        width: 1255
+        height: 1556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb06d65e78046ec49aa0e3e24d99413f
+      internalID: 1829372512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_6
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 1896
+        width: 1235
+        height: 1571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919a6d5b07c1180418f3073bf763b9e2
+      internalID: 1920610319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 117
+        width: 1259
+        height: 1545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19eb4b25318a03840a43ad12fdde686f
+      internalID: -1053485823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_8
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 112
+        width: 1256
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc648e7fc3bc9154a90084f0aa83ec24
+      internalID: 2054992579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_9
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 112
+        width: 1267
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8865dff8bff734087629f6bd58291f
+      internalID: 825958315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carta_Lia_Unie_10
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 110
+        width: 1246
+        height: 1564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29605ec21025e114f9f95de08ed45e2e
+      internalID: 730456152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aab899f9f7f426242a73acafb4cc57f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Carta_Lia_Unie_0: 655118677
+      Carta_Lia_Unie_1: -949636104
+      Carta_Lia_Unie_10: 730456152
+      Carta_Lia_Unie_2: 1072032257
+      Carta_Lia_Unie_3: 1452215773
+      Carta_Lia_Unie_4: -1194542824
+      Carta_Lia_Unie_5: 1829372512
+      Carta_Lia_Unie_6: 1920610319
+      Carta_Lia_Unie_7: -1053485823
+      Carta_Lia_Unie_8: 2054992579
+      Carta_Lia_Unie_9: 825958315
+      Carta_Lia_Uniendose_Sheet_0: 174459081013318218
+      Carta_Lia_Uniendose_Sheet_1: -8359240506171100632
+      Carta_Lia_Uniendose_Sheet_10: -2636413946447008301
+      Carta_Lia_Uniendose_Sheet_11: 7408510538801387388
+      Carta_Lia_Uniendose_Sheet_12: 6848787742357135398
+      Carta_Lia_Uniendose_Sheet_13: 3096421520651099478
+      Carta_Lia_Uniendose_Sheet_14: -1450076290516426938
+      Carta_Lia_Uniendose_Sheet_15: -8861973048838010733
+      Carta_Lia_Uniendose_Sheet_16: -90176437182362688
+      Carta_Lia_Uniendose_Sheet_17: 9207992629651437653
+      Carta_Lia_Uniendose_Sheet_18: 87684318023933607
+      Carta_Lia_Uniendose_Sheet_19: -2446008165293761753
+      Carta_Lia_Uniendose_Sheet_2: -6876504525920893494
+      Carta_Lia_Uniendose_Sheet_3: -1693338557074874018
+      Carta_Lia_Uniendose_Sheet_4: 8180298925542721801
+      Carta_Lia_Uniendose_Sheet_5: 9142196204322609042
+      Carta_Lia_Uniendose_Sheet_6: -415397222400929765
+      Carta_Lia_Uniendose_Sheet_7: 8488842395075463688
+      Carta_Lia_Uniendose_Sheet_8: 8937485291827831489
+      Carta_Lia_Uniendose_Sheet_9: 8077373129744933770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
