@@ -257,6 +257,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &54410517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -604,7 +606,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140731788}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1017,6 +1019,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 324627397}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &324627397
 Animator:
   serializedVersion: 7
@@ -1296,6 +1300,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &424082969
 Animator:
   serializedVersion: 7
@@ -1438,7 +1444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807716374185399502, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1842720247202567061, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_InScenePlaced
@@ -1496,6 +1502,10 @@ PrefabInstance:
       propertyPath: spawnElian
       value: 
       objectReference: {fileID: 2049895263}
+    - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: imagenGeneral
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b95eb317b6e0f142b94d7394c000ec2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1578,6 +1588,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 462757374}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &462757374
 Animator:
   serializedVersion: 7
@@ -1946,6 +1958,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &586251267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2163,8 +2177,12 @@ PrefabInstance:
       value: PF_ZonaSalida
       objectReference: {fileID: 0}
     - target: {fileID: 8166265540413032526, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166265540413032526, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -975
+      value: -1343.8
       objectReference: {fileID: 0}
     - target: {fileID: 8166265540413032526, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2181,6 +2199,14 @@ PrefabInstance:
     - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: escenaDestino
       value: P8_SalaSombras
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: bastaUnJugador
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: activarSalidaAlIniciar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: requiereObjetosRecolectables
@@ -2339,7 +2365,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645631192}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -2752,6 +2778,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &763654024
 Animator:
   serializedVersion: 7
@@ -2956,6 +2984,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &795867587
 Animator:
   serializedVersion: 7
@@ -3869,6 +3899,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &1216656440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4577,7 +4609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e97bf71c406e43ab139987dc9c064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersecucionVigiliaP2
-  velocidadPersecucion: 1
+  velocidadPersecucion: 2
   velocidadPuerta: 0.6
   animator: {fileID: 1468239810}
   velocidadNormalLia: 3
@@ -4879,6 +4911,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 1509609160}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &1509609160
 Animator:
   serializedVersion: 7

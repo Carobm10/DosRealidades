@@ -2059,7 +2059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
   spritePuerta: {fileID: 509347006}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
-  spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
+  spriteBrillante: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   visualBrillo: {fileID: 0}
   animatorPuerta: {fileID: 509347008}
 --- !u!1 &513289369
@@ -3986,6 +3986,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &910350357
 Animator:
   serializedVersion: 7
@@ -4737,6 +4739,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &1161285772
 Animator:
   serializedVersion: 7
@@ -5584,7 +5588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
   spritePuerta: {fileID: 1303925450}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
-  spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
+  spriteBrillante: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   visualBrillo: {fileID: 0}
   animatorPuerta: {fileID: 1303925451}
 --- !u!1 &1318710533
@@ -6262,7 +6266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
   spritePuerta: {fileID: 1445888970}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
-  spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
+  spriteBrillante: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   visualBrillo: {fileID: 0}
   animatorPuerta: {fileID: 0}
 --- !u!1 &1452502725
@@ -6556,6 +6560,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &1478655854
 Animator:
   serializedVersion: 7
@@ -7053,6 +7059,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!95 &1639288189
 Animator:
   serializedVersion: 7
@@ -7782,7 +7790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BrilloPuertaLiaP5
   spritePuerta: {fileID: 1681175331}
   spriteNormal: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
-  spriteBrillante: {fileID: 21300000, guid: ced8fac49d6922f44911ee9011cc3977, type: 3}
+  spriteBrillante: {fileID: -8099699374656618404, guid: 507c2a29bade45941b1aed105fbd3065, type: 3}
   visualBrillo: {fileID: 0}
   animatorPuerta: {fileID: 1681175333}
 --- !u!1 &1692246558

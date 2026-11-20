@@ -9,7 +9,8 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
 {
     [Header("Referencias")]
     [SerializeField] private DispositivosLlavesP8 dispositivosLlaves;
-    [SerializeField] private GameObject imagenHistorietaFinal;
+    [SerializeField]
+    private HistorietaFinalP8Controller historietaFinal;
 
     // Jugadores presentes en la zona.
     private readonly HashSet<ulong> elianDentro =
@@ -209,15 +210,15 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
 
     private void AplicarEstadoHistorieta(bool mostrar)
     {
-        if (imagenHistorietaFinal != null)
-        {
-            imagenHistorietaFinal.SetActive(mostrar);
-        }
-        else
+        if (historietaFinal == null)
         {
             Debug.LogError(
-                "P8 | No se asignó ImagenHistorietaFinalP8."
+                "P8 | Falta asignar HistorietaFinalP8Controller."
             );
+            return;
         }
+
+        if (mostrar)
+            historietaFinal.MostrarHistorietaFinal();
     }
 }

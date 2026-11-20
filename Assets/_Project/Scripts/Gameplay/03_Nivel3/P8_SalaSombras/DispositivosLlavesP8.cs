@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections;
 
 [RequireComponent(typeof(NetworkObject))]
 public class DispositivosLlavesP8 : NetworkBehaviour
@@ -17,6 +18,11 @@ public class DispositivosLlavesP8 : NetworkBehaviour
     [SerializeField] private Animator animatorPuerta;
     [SerializeField] private string triggerAbrirPuerta = "AbrirPuerta";
 
+    [Header("Cinematica de la puerta")]
+    [SerializeField] private Transform puntoCamaraPuerta;
+    [SerializeField] private float esperaAntesDeAbrir = 0.3f;
+    [SerializeField] private float duracionApertura = 1.5f;
+
     private NetworkVariable<bool> elianActivo =
         new NetworkVariable<bool>(
             false,
@@ -32,6 +38,8 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         );
 
     private bool aperturaSolicitada;
+
+    private Coroutine rutinaCinematicaLocal;
 
     public bool AmbasLlavesColocadas =>
         elianActivo.Value && liaActiva.Value;
@@ -59,6 +67,12 @@ public class DispositivosLlavesP8 : NetworkBehaviour
     {
         elianActivo.OnValueChanged -= ActualizarElian;
         liaActiva.OnValueChanged -= ActualizarLia;
+
+        if (rutinaCinematicaLocal != null)
+            StopCoroutine(rutinaCinematicaLocal);
+
+        if (rutinaHabilitarSalida != null)
+            StopCoroutine(rutinaHabilitarSalida);
     }
 
     // =====================================
@@ -139,8 +153,6 @@ public class DispositivosLlavesP8 : NetworkBehaviour
             inventario == null)
             return;
 
-        // Validar que cada jugador utilice su dispositivo.
-
         if (esDispositivoElian && !setup.EsElian)
             return;
 
@@ -158,44 +170,28 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         if (yaColocada)
             return;
 
-        // Comprobar que tenga la llave.
-
         if (!inventario.TieneObjeto(id))
-        {
-            Debug.LogWarning(
-                "P8 | El jugador no tiene la llave: " + id
-            );
             return;
-        }
-
-        // Eliminar la llave del inventario.
 
         if (!inventario.EliminarObjetoDesdeServidor(id))
             return;
-
-        // Activar el dispositivo correspondiente.
 
         if (esDispositivoElian)
             elianActivo.Value = true;
         else
             liaActiva.Value = true;
 
-        Debug.Log(
-            "P8 | Llave colocada: " + id +
-            " | Jugador: " + clienteId
-        );
-
-        // Si ambas están colocadas, abrir la puerta.
+        Debug.Log("P8 | Llave colocada: " + id);
 
         if (AmbasLlavesColocadas && !aperturaSolicitada)
         {
             aperturaSolicitada = true;
 
             Debug.Log(
-                "P8 | AMBAS LLAVES COLOCADAS. ABRIENDO PUERTA."
+                "P8 | AMBAS LLAVES COLOCADAS. INICIANDO CINEMATICA."
             );
 
-            AbrirPuertaRpc();
+            IniciarCinematicaPuertaRpc();
         }
     }
 
@@ -229,7 +225,7 @@ public class DispositivosLlavesP8 : NetworkBehaviour
     }
 
     // =====================================
-    // DESPREPARAR LLAVE DEL INVENTARIO
+    // DESPREPARAR LLAVE
     // =====================================
 
     private void DesprepararLlaveLocal(string id)
@@ -245,33 +241,111 @@ public class DispositivosLlavesP8 : NetworkBehaviour
             red.LocalClient.PlayerObject
                 .GetComponent<InventarioJugador>();
 
-        if (inventario != null &&
-            inventario.IsOwner &&
-            inventario.TieneObjeto(id))
+        if (inventario != null && inventario.IsOwner)
         {
             InventarioUI.Instancia?.DesprepararObjeto(id);
         }
     }
 
     // =====================================
-    // APERTURA DE PUERTA SINCRONIZADA
+    // CINEMATICA SINCRONIZADA
     // =====================================
 
     [Rpc(SendTo.Everyone)]
-    private void AbrirPuertaRpc()
+    private void IniciarCinematicaPuertaRpc()
     {
-        if (animatorPuerta == null)
+        if (rutinaCinematicaLocal != null)
+            StopCoroutine(rutinaCinematicaLocal);
+
+        rutinaCinematicaLocal =
+            StartCoroutine(CinematicaPuertaLocal());
+    }
+
+    private IEnumerator CinematicaPuertaLocal()
+    {
+        NetworkManager red = NetworkManager.Singleton;
+
+        if (red == null ||
+            red.LocalClient == null ||
+            red.LocalClient.PlayerObject == null)
+            yield break;
+
+        NetworkObject jugador =
+            red.LocalClient.PlayerObject;
+
+        NetworkPlayerMovement movimiento =
+            jugador.GetComponent<NetworkPlayerMovement>();
+
+        CamaraJugadorLocal camara =
+            jugador.GetComponent<CamaraJugadorLocal>();
+
+        // BLOQUEAR MOVIMIENTO
+
+        if (movimiento != null)
+            movimiento.BloquearMovimiento(true);
+
+        Debug.Log("P8 | Cinematica iniciada.");
+
+        float transicionZoom = 0.35f;
+
+        // ACERCAR CAMARA A LA PUERTA
+
+        if (camara != null && puntoCamaraPuerta != null)
+        {
+            transicionZoom = camara.DuracionTransicionZoom;
+
+            camara.EnfocarConZoom(
+                puntoCamaraPuerta.position,
+                esperaAntesDeAbrir + duracionApertura
+            );
+        }
+        else
         {
             Debug.LogError(
-                "P8 | No se asignó el Animator de la puerta."
+                "P8 | Falta la cámara local o el punto de enfoque de la puerta."
             );
-            return;
         }
 
-        animatorPuerta.SetTrigger(triggerAbrirPuerta);
+        // ESPERAR HASTA QUE LA CAMARA LLEGUE
 
-        Debug.Log(
-            "P8 | Animación de apertura ejecutada."
+        yield return new WaitForSecondsRealtime(
+            transicionZoom + esperaAntesDeAbrir
         );
+
+        // ABRIR PUERTA
+
+        if (animatorPuerta != null)
+        {
+            animatorPuerta.enabled = true;
+
+            animatorPuerta.ResetTrigger(triggerAbrirPuerta);
+            animatorPuerta.SetTrigger(triggerAbrirPuerta);
+
+            Debug.Log("P8 | PUERTA ABIERTA.");
+        }
+        else
+        {
+            Debug.LogError("P8 | Animator de puerta no asignado.");
+        }
+
+        // ESPERAR APERTURA Y REGRESO DE CAMARA
+
+        yield return new WaitForSecondsRealtime(
+            duracionApertura + transicionZoom
+        );
+
+        // RECUPERAR MOVIMIENTO
+
+        if (movimiento != null)
+            movimiento.BloquearMovimiento(false);
+
+        Debug.Log("P8 | Cinematica terminada.");
+
+        rutinaCinematicaLocal = null;
     }
+
+    // =====================================
+    // HABILITAR SALIDA
+    // =====================================
+
 }

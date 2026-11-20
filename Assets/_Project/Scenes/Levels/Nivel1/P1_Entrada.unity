@@ -221,11 +221,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1360032491861735679, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.73825634
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 1360032491861735679, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 4230838035458353612, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_LocalScale.x
@@ -333,6 +333,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 80d5ab131883fc147a2355093b830d56, type: 3}
     - target: {fileID: 7851061753176483398, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851061753176483398, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2496,6 +2500,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!58 &844031881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4894,6 +4900,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1759650675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1753432072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753432074}
+  - component: {fileID: 1753432073}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1753432073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753432072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff7e73a4d226c94daf3ae53b1d3f2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  ambienteSource: {fileID: 0}
+  efectosSource: {fileID: 0}
+  mixerJuego: {fileID: 0}
+  parametroMusica: VolumenMusica
+  parametroEfectos: VolumenEfectos
+--- !u!4 &1753432074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753432072}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 289.95605, y: 227.2477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1759650673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5866,6 +5921,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!58 &1927806549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6509,6 +6566,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -208.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2727602053409630425, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2727602053409630425, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5009558526722058142, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960
@@ -6561,6 +6626,10 @@ PrefabInstance:
       propertyPath: spawnElian
       value: 
       objectReference: {fileID: 1829117991}
+    - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+      propertyPath: imagenGeneral
+      value: 
+      objectReference: {fileID: 21300000, guid: 9b75ebf79568c8945b98d341cca96a1b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6746,3 +6815,4 @@ SceneRoots:
   - {fileID: 1761370505}
   - {fileID: 3275021854309670729}
   - {fileID: 1527046133}
+  - {fileID: 1753432074}

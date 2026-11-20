@@ -1933,8 +1933,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -5.5758643}
-  m_Radius: 14.371188
+  m_Offset: {x: 0, y: -6.2196712}
+  m_Radius: 15.014995
 --- !u!114 &1186571698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +1993,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!212 &1186571700
 SpriteRenderer:
   serializedVersion: 3
@@ -2577,6 +2579,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!212 &1767035093
 SpriteRenderer:
   serializedVersion: 3
@@ -2671,8 +2675,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -4.637042}
-  m_Radius: 10.907043
+  m_Offset: {x: 0, y: -4.9251432}
+  m_Radius: 11.195145
 --- !u!1 &1840511678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,6 +3263,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!114 &2071799753
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -36,6 +36,10 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
     [SerializeField] private float duracionApertura = 0.67f;
     [SerializeField] private float margenTransicionesZoom = 0.75f;
     [SerializeField] private float esperaCambioEscena = 2f;
+    
+    [Header("Salida inmediata Runner Vigilia")]
+    [SerializeField] private bool activarSalidaAlIniciar = false;
+    [SerializeField] private bool bastaUnJugador = false;
 
     private readonly NetworkVariable<bool> puzzleResuelto =
         new NetworkVariable<bool>(false);
@@ -69,6 +73,13 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
         salidaHabilitada.OnValueChanged += AlCambiarEstadoSalida;
 
         ActualizarVisuales(salidaHabilitada.Value);
+
+        if (IsServer && activarSalidaAlIniciar)
+        {
+            puzzleResuelto.Value = true;
+            salidaHabilitada.Value = true;
+            ActualizarVisuales(true);
+        }
     }
 
     public override void OnNetworkDespawn()
@@ -120,6 +131,18 @@ public class ZonaSalidaCooperativa : NetworkBehaviour
 
         var jugadores =
             NetworkManager.Singleton.ConnectedClientsList;
+
+        if (bastaUnJugador)
+        {
+            foreach (var cliente in jugadores)
+            {
+                if (cliente.PlayerObject != null &&
+                    JugadorDentro(cliente.PlayerObject))
+                    return true;
+            }
+
+            return false;
+        }
 
         if (jugadores.Count != 2)
             return false;

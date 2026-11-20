@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using UnityEngine;
@@ -14,23 +15,24 @@ public class IntroduccionP8Controller : NetworkBehaviour
     [Header("Animaciones")]
     [SerializeField] private GameObject animacionElian;
     [SerializeField] private GameObject animacionLia;
-
     [SerializeField] private Animator animatorElian;
     [SerializeField] private Animator animatorLia;
-
     [SerializeField] private string estadoAnimacionElian;
     [SerializeField] private string estadoAnimacionLia;
-
     [SerializeField] private float duracionAnimacion = 3f;
 
     [Header("Cartas")]
     [SerializeField] private GameObject cartaElian;
     [SerializeField] private GameObject cartaLia;
-
     [SerializeField] private Button botonCerrarElian;
     [SerializeField] private Button botonCerrarLia;
 
-    [Header("Texto de espera / cuenta regresiva")]
+    [Header("Instrucciones de supervivencia")]
+    [SerializeField] private GameObject instruccionSupervivencia;
+    [SerializeField] private GameObject instruccionSupervivencia2;
+    [SerializeField] private float duracionInstrucciones = 5f;
+
+    [Header("Espera y cuenta regresiva")]
     [SerializeField] private GameObject textoEsperandoJugador;
     [SerializeField] private TMP_Text textoEsperandoTMP;
     [SerializeField] private float intervaloPuntos = 0.35f;
@@ -51,10 +53,6 @@ public class IntroduccionP8Controller : NetworkBehaviour
 
     public event Action SupervivenciaIniciadaLocal;
 
-    // =====================================
-    // INICIO
-    // =====================================
-
     private void Awake()
     {
         if (botonCerrarElian != null)
@@ -63,8 +61,12 @@ public class IntroduccionP8Controller : NetworkBehaviour
         if (botonCerrarLia != null)
             botonCerrarLia.onClick.AddListener(CerrarCarta);
 
-        if (textoEsperandoTMP == null && textoEsperandoJugador != null)
-            textoEsperandoTMP = textoEsperandoJugador.GetComponent<TMP_Text>();
+        if (textoEsperandoTMP == null &&
+            textoEsperandoJugador != null)
+        {
+            textoEsperandoTMP =
+                textoEsperandoJugador.GetComponent<TMP_Text>();
+        }
 
         OcultarElementos();
     }
@@ -84,11 +86,13 @@ public class IntroduccionP8Controller : NetworkBehaviour
 
         if (botonCerrarLia != null)
             botonCerrarLia.onClick.RemoveListener(CerrarCarta);
-    }
 
-    // =====================================
-    // OCULTAR ELEMENTOS
-    // =====================================
+        if (rutinaEsperando != null)
+            StopCoroutine(rutinaEsperando);
+
+        if (rutinaCuentaRegresiva != null)
+            StopCoroutine(rutinaCuentaRegresiva);
+    }
 
     private void OcultarElementos()
     {
@@ -107,12 +111,18 @@ public class IntroduccionP8Controller : NetworkBehaviour
         if (cartaLia != null)
             cartaLia.SetActive(false);
 
+        if (instruccionSupervivencia != null)
+            instruccionSupervivencia.SetActive(false);
+
+        if (instruccionSupervivencia2 != null)
+            instruccionSupervivencia2.SetActive(false);
+
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(false);
     }
 
     // =====================================
-    // IDENTIFICAR JUGADOR LOCAL
+    // IDENTIFICAR JUGADOR
     // =====================================
 
     private IEnumerator IniciarIntroduccionLocal()
@@ -129,7 +139,7 @@ public class IntroduccionP8Controller : NetworkBehaviour
 
             NetworkPlayerSetup setup =
                 red.LocalClient.PlayerObject
-                .GetComponent<NetworkPlayerSetup>();
+                    .GetComponent<NetworkPlayerSetup>();
 
             return setup != null && setup.RolConfigurado;
         });
@@ -153,7 +163,7 @@ public class IntroduccionP8Controller : NetworkBehaviour
     }
 
     // =====================================
-    // ANIMACION INDIVIDUAL
+    // ANIMACION Y CARTA
     // =====================================
 
     private void MostrarAnimacionLocal()
@@ -187,7 +197,7 @@ public class IntroduccionP8Controller : NetworkBehaviour
 
     private IEnumerator EsperarAnimacion()
     {
-        yield return new WaitForSeconds(
+        yield return new WaitForSecondsRealtime(
             Mathf.Max(0.1f, duracionAnimacion)
         );
 
@@ -243,14 +253,14 @@ public class IntroduccionP8Controller : NetworkBehaviour
         Debug.Log(
             "P8 | " +
             (esElian ? "ELIAN" : "LIA") +
-            " confirmó la lectura. Esperando al otro jugador."
+            " confirmó la lectura."
         );
 
         ConfirmarLecturaRpc();
     }
 
     // =====================================
-    // TEXTO ESPERANDO ANIMADO
+    // ESPERAR AL OTRO JUGADOR
     // =====================================
 
     private void MostrarEsperaAnimada()
@@ -274,22 +284,22 @@ public class IntroduccionP8Controller : NetworkBehaviour
         while (!supervivenciaIniciada)
         {
             textoEsperandoTMP.text = baseTexto + ".";
-            yield return new WaitForSeconds(intervaloPuntos);
+            yield return new WaitForSecondsRealtime(intervaloPuntos);
 
             if (supervivenciaIniciada) yield break;
 
             textoEsperandoTMP.text = baseTexto + "..";
-            yield return new WaitForSeconds(intervaloPuntos);
+            yield return new WaitForSecondsRealtime(intervaloPuntos);
 
             if (supervivenciaIniciada) yield break;
 
             textoEsperandoTMP.text = baseTexto + "...";
-            yield return new WaitForSeconds(intervaloPuntos);
+            yield return new WaitForSecondsRealtime(intervaloPuntos);
         }
     }
 
     // =====================================
-    // VALIDACION EN SERVIDOR
+    // CONFIRMACION EN SERVIDOR
     // =====================================
 
     [Rpc(SendTo.Server, RequireOwnership = false)]
@@ -332,7 +342,7 @@ public class IntroduccionP8Controller : NetworkBehaviour
     }
 
     // =====================================
-    // CUENTA REGRESIVA EN AMBOS
+    // INSTRUCCIONES + CUENTA REGRESIVA
     // =====================================
 
     [Rpc(SendTo.Everyone)]
@@ -340,6 +350,8 @@ public class IntroduccionP8Controller : NetworkBehaviour
     {
         if (!IsClient)
             return;
+
+        supervivenciaIniciada = true;
 
         if (rutinaEsperando != null)
         {
@@ -350,32 +362,64 @@ public class IntroduccionP8Controller : NetworkBehaviour
         if (rutinaCuentaRegresiva != null)
             StopCoroutine(rutinaCuentaRegresiva);
 
-        rutinaCuentaRegresiva = StartCoroutine(MostrarCuentaRegresiva());
+        rutinaCuentaRegresiva =
+            StartCoroutine(MostrarCuentaRegresiva());
     }
 
     private IEnumerator MostrarCuentaRegresiva()
     {
+        // 1. MOSTRAR INSTRUCCIONES
+
+        if (textoEsperandoJugador != null)
+            textoEsperandoJugador.SetActive(false);
+
+        if (instruccionSupervivencia != null)
+            instruccionSupervivencia.SetActive(true);
+
+        if (instruccionSupervivencia2 != null)
+            instruccionSupervivencia2.SetActive(true);
+
+        Debug.Log("P8 | Mostrando instrucciones de supervivencia.");
+
+        yield return new WaitForSecondsRealtime(
+            Mathf.Max(0f, duracionInstrucciones)
+        );
+
+        // 2. OCULTAR INSTRUCCIONES
+
+        if (instruccionSupervivencia != null)
+            instruccionSupervivencia.SetActive(false);
+
+        if (instruccionSupervivencia2 != null)
+            instruccionSupervivencia2.SetActive(false);
+
+        // 3. CUENTA REGRESIVA
+
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(true);
 
         if (textoEsperandoTMP != null)
         {
             textoEsperandoTMP.text = "3";
-            yield return new WaitForSeconds(intervaloCuentaRegresiva);
+            yield return new WaitForSecondsRealtime(intervaloCuentaRegresiva);
 
             textoEsperandoTMP.text = "2";
-            yield return new WaitForSeconds(intervaloCuentaRegresiva);
+            yield return new WaitForSecondsRealtime(intervaloCuentaRegresiva);
 
             textoEsperandoTMP.text = "1";
-            yield return new WaitForSeconds(intervaloCuentaRegresiva);
+            yield return new WaitForSecondsRealtime(intervaloCuentaRegresiva);
 
             textoEsperandoTMP.text = "¡YA!";
-            yield return new WaitForSeconds(0.45f);
+            yield return new WaitForSecondsRealtime(0.45f);
         }
         else
         {
-            yield return new WaitForSeconds(2.85f);
+            yield return new WaitForSecondsRealtime(
+                intervaloCuentaRegresiva * 3f + 0.45f
+            );
         }
+
+        // 4. DESBLOQUEAR JUGADOR
 
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(false);
@@ -389,6 +433,8 @@ public class IntroduccionP8Controller : NetworkBehaviour
         Debug.Log("P8 | INICIO DE SUPERVIVENCIA.");
 
         SupervivenciaIniciadaLocal?.Invoke();
+
+        rutinaCuentaRegresiva = null;
     }
 
     private void OnDestroy()

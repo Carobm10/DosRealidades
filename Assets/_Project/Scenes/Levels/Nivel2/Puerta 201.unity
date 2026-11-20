@@ -3600,6 +3600,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &578635110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4199,6 +4201,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &617596987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4935,6 +4939,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!212 &809635778
 SpriteRenderer:
   serializedVersion: 3
@@ -5031,7 +5037,7 @@ Transform:
   m_GameObject: {fileID: 809635774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.79, y: 0.23, z: 0}
+  m_LocalPosition: {x: -3.79, y: 0.03, z: 0}
   m_LocalScale: {x: 0.034760468, y: 0.034760468, z: 0.034760468}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6220,6 +6226,8 @@ MonoBehaviour:
   animatorBotonP2: {fileID: 0}
   parametroBrilloP2: Brillo
   triggerPresionarP2: Presionar
+  dispositivoLlavesP8: {fileID: 0}
+  dispositivoEsElian: 0
 --- !u!61 &1132061323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9358,7 +9366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_Size.y
-      value: 2.2733765
+      value: 3.749115
       objectReference: {fileID: 0}
     - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_Offset.x
@@ -9366,7 +9374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_Offset.y
-      value: 429.72366
+      value: 429.80475
       objectReference: {fileID: 0}
     - target: {fileID: 7823559349511192777, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_Name
