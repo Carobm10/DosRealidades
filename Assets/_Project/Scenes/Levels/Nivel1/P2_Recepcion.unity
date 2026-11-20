@@ -1921,6 +1921,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 339154969811438120, guid: 3aad0e3df2a90a4448742ae57991e88e, type: 3}
   m_PrefabInstance: {fileID: 401142874}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &445109832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8173372906510268952, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &491744180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,6 +2933,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   ambienteSource: {fileID: 0}
   efectosSource: {fileID: 0}
+  mixerJuego: {fileID: 0}
+  parametroMusica: VolumenMusica
+  parametroEfectos: VolumenEfectos
 --- !u!4 &821123374
 Transform:
   m_ObjectHideFlags: 0
@@ -4424,6 +4432,14 @@ PrefabInstance:
       propertyPath: 'ventanasBloqueantes.Array.data[1]'
       value: 
       objectReference: {fileID: 1532773425}
+    - target: {fileID: 9006900319207772714, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: elementosHUDJuego.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006900319207772714, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: 'elementosHUDJuego.Array.data[5]'
+      value: 
+      objectReference: {fileID: 445109832}
     - target: {fileID: 9135891785321060739, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4721,7 +4737,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2436259161756142453, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.77897
+      value: -1.58
       objectReference: {fileID: 0}
     - target: {fileID: 2436259161756142453, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4767,41 +4783,21 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 100985071
       objectReference: {fileID: 0}
-    - target: {fileID: 5170842653199371910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 338731215
-      objectReference: {fileID: 0}
-    - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_Size.x
-      value: 2.790039
-      objectReference: {fileID: 0}
-    - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_Size.y
-      value: 2.0204773
-      objectReference: {fileID: 0}
-    - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_Offset.x
-      value: 1154.0239
-      objectReference: {fileID: 0}
-    - target: {fileID: 6206792733339046675, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_Offset.y
-      value: 430.23663
-      objectReference: {fileID: 0}
     - target: {fileID: 7823559349511192777, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: m_Name
       value: PF_ZonaSalida
       objectReference: {fileID: 0}
+    - target: {fileID: 8166265540413032526, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1148.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166265540413032526, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -431.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: usarZoom
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: tienePuerta
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: escenaDestino
-      value: P5_Pasillo
       objectReference: {fileID: 0}
     - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: puntoCamaraLia
@@ -4816,25 +4812,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 822287679}
     - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: esperaCambioEscena
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
       propertyPath: animatorPuertaElian
       value: 
       objectReference: {fileID: 1310506696}
-    - target: {fileID: 8525691033488712910, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: requiereObjetosRecolectables
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608858231243511909, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608858231243511909, guid: 81813fe74c678ed4a9cb334fdec9fa03, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.62
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5364,7 +5344,8 @@ MonoBehaviour:
   misionAlCompletar: "Contin\xFAa a la siguiente sala"
   zonaSalidaCooperativa: {fileID: 1503348446}
   margenSeguridadSalida: 0.5
-  fragmentoCartaP2: {fileID: 11400000, guid: 5145223a9dfeca04086e2c115992947a, type: 2}
+  fragmentoCartaP2Elian: {fileID: 11400000, guid: 5145223a9dfeca04086e2c115992947a, type: 2}
+  fragmentoCartaP2Lia: {fileID: 11400000, guid: 741093c0873ee7a4881c4bbed71a3835, type: 2}
 --- !u!1 &1646364964
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,6 +5793,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -112.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: retratoJugador
+      value: 
+      objectReference: {fileID: -3880907944966924290, guid: 75b3dae3d9fae6846b9a865620c4bad6, type: 3}
     - target: {fileID: 2527212925206756897, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7357,7 +7342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d4433757b3c1642b2e65425494e722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolPruebaJugador
-  rolPrueba: 1
+  rolPrueba: 0
 --- !u!114 &2135371233
 MonoBehaviour:
   m_ObjectHideFlags: 0

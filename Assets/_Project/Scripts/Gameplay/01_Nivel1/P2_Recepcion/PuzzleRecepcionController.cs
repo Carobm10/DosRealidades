@@ -67,7 +67,8 @@ public class PuzzleRecepcionController : NetworkBehaviour
     [SerializeField, Min(0f)] private float margenSeguridadSalida = 0.5f;
 
     [Header("Fragmento de la carta")]
-    [SerializeField] private ObjetoInventario fragmentoCartaP2;
+    [SerializeField] private ObjetoInventario fragmentoCartaP2Elian;
+    [SerializeField] private ObjetoInventario fragmentoCartaP2Lia;
 
     private readonly NetworkVariable<int> pasoActual =
         new NetworkVariable<int>(0);
@@ -660,15 +661,27 @@ public class PuzzleRecepcionController : NetworkBehaviour
     // ENTREGA DEL FRAGMENTO A AMBOS
     // =====================================
 
+    
     private bool EntregarFragmentoAmbosJugadores()
     {
         if (!IsServer ||
-            fragmentoCartaP2 == null ||
+            fragmentoCartaP2Elian == null ||
+            fragmentoCartaP2Lia == null ||
             NetworkManager.Singleton == null)
         {
             Debug.LogError(
-                "P2: No se puede entregar el fragmento. " +
-                "Revisa la referencia del ScriptableObject."
+                "P2: Faltan los fragmentos de carta de Elian o Lia."
+            );
+
+            return false;
+        }
+
+        if (fragmentoCartaP2Elian.Id ==
+            fragmentoCartaP2Lia.Id)
+        {
+            Debug.LogError(
+                "P2: Los dos fragmentos tienen el mismo ID. " +
+                "Deben ser objetos diferentes."
             );
 
             return false;
@@ -722,37 +735,39 @@ public class PuzzleRecepcionController : NetworkBehaviour
             return false;
         }
 
-        // Comprobar que ambos tengan la definicion en su catalogo.
-        if (inventarioElian.ObtenerObjetoPorId(
-                fragmentoCartaP2.Id) == null ||
-            inventarioLia.ObtenerObjetoPorId(
-                fragmentoCartaP2.Id) == null)
+        string idElian = fragmentoCartaP2Elian.Id;
+        string idLia = fragmentoCartaP2Lia.Id;
+
+        // Verificar que cada jugador tenga registrado
+        // su propio fragmento en el catalogo.
+
+        if (inventarioElian.ObtenerObjetoPorId(idElian) == null ||
+            inventarioLia.ObtenerObjetoPorId(idLia) == null)
         {
             Debug.LogError(
-                "P2: El fragmento no esta registrado " +
-                "en ambos catalogos de inventario."
+                "P2: No se encontraron los fragmentos " +
+                "correspondientes en los catalogos."
             );
 
             return false;
         }
 
-        // Agregar sin duplicar.
+        // Entregar fragmento exclusivo de Elian.
+
         bool elianOK =
-            inventarioElian.TieneObjeto(fragmentoCartaP2.Id) ||
-            inventarioElian.AgregarObjetoDesdeServidor(
-                fragmentoCartaP2.Id
-            );
+            inventarioElian.TieneObjeto(idElian) ||
+            inventarioElian.AgregarObjetoDesdeServidor(idElian);
+
+        // Entregar fragmento exclusivo de Lia.
 
         bool liaOK =
-            inventarioLia.TieneObjeto(fragmentoCartaP2.Id) ||
-            inventarioLia.AgregarObjetoDesdeServidor(
-                fragmentoCartaP2.Id
-            );
+            inventarioLia.TieneObjeto(idLia) ||
+            inventarioLia.AgregarObjetoDesdeServidor(idLia);
 
         if (!elianOK || !liaOK)
         {
             Debug.LogError(
-                "P2: Error entregando fragmento. " +
+                "P2: Error entregando fragmentos. " +
                 "Elian: " + elianOK +
                 " | Lia: " + liaOK
             );
@@ -760,9 +775,10 @@ public class PuzzleRecepcionController : NetworkBehaviour
             return false;
         }
 
-        // Mostrar una tarjeta individual a cada jugador.
+        // Mostrar a cada jugador SU fragmento.
+
         MostrarTarjetaFragmentoRpc(
-            fragmentoCartaP2.Id,
+            idElian,
             RpcTarget.Single(
                 jugadorElian.OwnerClientId,
                 RpcTargetUse.Temp
@@ -770,7 +786,7 @@ public class PuzzleRecepcionController : NetworkBehaviour
         );
 
         MostrarTarjetaFragmentoRpc(
-            fragmentoCartaP2.Id,
+            idLia,
             RpcTarget.Single(
                 jugadorLia.OwnerClientId,
                 RpcTargetUse.Temp
@@ -778,44 +794,66 @@ public class PuzzleRecepcionController : NetworkBehaviour
         );
 
         Debug.Log(
-            "P2: FRAGMENTO ENTREGADO A AMBOS JUGADORES: " +
-            fragmentoCartaP2.Id
+            "P2: FRAGMENTOS DIFERENTES ENTREGADOS. " +
+            "Elian: " + idElian +
+            " | Lia: " + idLia
         );
 
         return true;
     }
 
+
     // =====================================
     // MOSTRAR TARJETA INDIVIDUAL
     // =====================================
-
+    
     [Rpc(SendTo.SpecifiedInParams)]
     private void MostrarTarjetaFragmentoRpc(
         string idObjeto,
         RpcParams rpcParams = default)
     {
-        InventarioUI inventarioUI =
-            InventarioUI.Instancia;
+        StartCoroutine(
+            EsperarInventarioYMostrar(idObjeto)
+        );
+    }
 
-        if (inventarioUI == null)
+    private IEnumerator EsperarInventarioYMostrar(
+        string idObjeto)
+    {
+        float tiempoEspera = 0f;
+        const float tiempoMaximo = 10f;
+
+        while (tiempoEspera < tiempoMaximo)
         {
-            inventarioUI =
-                FindFirstObjectByType<InventarioUI>();
+            InventarioUI inventarioUI =
+                InventarioUI.Instancia;
+
+            if (inventarioUI == null)
+            {
+                inventarioUI =
+                    FindFirstObjectByType<InventarioUI>();
+            }
+
+            if (inventarioUI != null &&
+                inventarioUI.PuedeMostrarTarjetaPorId(idObjeto))
+            {
+                inventarioUI.MostrarTarjetaPorId(idObjeto);
+
+                Debug.Log(
+                    "P2: TARJETA MOSTRADA CORRECTAMENTE: " +
+                    idObjeto
+                );
+
+                yield break;
+            }
+
+            tiempoEspera += Time.unscaledDeltaTime;
+
+            yield return null;
         }
 
-        if (inventarioUI == null)
-        {
-            Debug.LogError(
-                "P2: No se encontro InventarioUI local."
-            );
-
-            return;
-        }
-
-        inventarioUI.MostrarTarjetaPorId(idObjeto);
-
-        Debug.Log(
-            "P2: Tarjeta de fragmento mostrada: " +
+        Debug.LogError(
+            "P2: Tiempo agotado esperando inventario y objeto: " +
             idObjeto
         );
     }

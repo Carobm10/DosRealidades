@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Levels/Nivel2/Runner_Vigilia.unity
     guid: b2690c170dca14045988afb7841da567
+  - enabled: 1
+    path: Assets/_Project/Scenes/Levels/Nivel3/P8_SalaSombras.unity
+    guid: b175eaede047a5a49aab2822d55611f1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4fcc5c0b5cac84f4595238376270b3ad, type: 3}

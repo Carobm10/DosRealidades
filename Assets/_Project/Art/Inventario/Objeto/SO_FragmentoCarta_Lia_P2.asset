@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc9b0f6a0bf94fb459b190d2b5e65a2a, type: 3}
-  m_Name: SO_FragmentoCarta_P2
+  m_Name: SO_FragmentoCarta_Lia_P2
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInventario
-  id: fragmento_carta_p2
+  id: FragmentoCarta_Lia_P2
   nombre: Fragmento de la carta II
   descripcion: "Un nuevo fragmento de la carta de mam\xE1."
   tipo: 0
-  imagen: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  imagen: {fileID: 21300000, guid: 97e4962545f50d6408bbf3c135e0e658, type: 3}
   permiteSeleccion: 1
   consumibleAlUsar: 0

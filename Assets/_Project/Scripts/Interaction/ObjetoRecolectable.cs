@@ -1,5 +1,6 @@
 
 using System;
+using System.Collections;
 using UnityEngine;
 using Unity.Netcode;
 
@@ -20,6 +21,9 @@ public class ObjetoRecolectable : NetworkBehaviour
     private PersonajePermitido personajePermitido =
         PersonajePermitido.Ambos;
 
+    [Header("Tarjeta de recoleccion")]
+    [SerializeField] private bool mostrarTarjetaInmediatamente;
+
     [Header("Validacion de distancia")]
     [SerializeField] private float distanciaMaxima = 3f;
 
@@ -35,7 +39,6 @@ public class ObjetoRecolectable : NetworkBehaviour
             NetworkVariableWritePermission.Server
         );
 
-    // Evento compartido para mostrar la tarjeta local.
     public static event Action<ObjetoInventario>
         RecoleccionConfirmadaLocal;
 
@@ -64,10 +67,6 @@ public class ObjetoRecolectable : NetworkBehaviour
         recolectado.OnValueChanged -= AlCambiarRecolectado;
     }
 
-    // =====================================
-    // EVENTO COMPARTIDO DE TARJETAS
-    // =====================================
-
     public static void NotificarRecoleccionLocal(
         ObjetoInventario objeto)
     {
@@ -79,10 +78,6 @@ public class ObjetoRecolectable : NetworkBehaviour
             return;
         }
 
-        Debug.Log(
-            "[RECOLECTABLE] Mostrando tarjeta: " + objeto.Nombre
-        );
-
         RecoleccionConfirmadaLocal?.Invoke(objeto);
     }
 
@@ -92,44 +87,11 @@ public class ObjetoRecolectable : NetworkBehaviour
 
     public void SolicitarRecoleccion()
     {
-        Debug.Log(
-            "[RECOLECTABLE] Solicitud recibida. " +
-            "IsSpawned: " + IsSpawned +
-            " | IsClient: " + IsClient +
-            " | Recolectado: " + recolectado.Value
-        );
-
-        if (!IsSpawned)
-        {
-            Debug.LogError(
-                "[RECOLECTABLE] El NetworkObject no está Spawned."
-            );
+        if (!IsSpawned ||
+            !IsClient ||
+            recolectado.Value ||
+            objetoInventario == null)
             return;
-        }
-
-        if (!IsClient)
-        {
-            Debug.LogWarning(
-                "[RECOLECTABLE] Este jugador no es cliente."
-            );
-            return;
-        }
-
-        if (recolectado.Value)
-        {
-            Debug.LogWarning(
-                "[RECOLECTABLE] El objeto ya fue recolectado."
-            );
-            return;
-        }
-
-        if (objetoInventario == null)
-        {
-            Debug.LogError(
-                "[RECOLECTABLE] Falta asignar ObjetoInventario."
-            );
-            return;
-        }
 
         SolicitarRecoleccionRpc();
     }
@@ -142,7 +104,8 @@ public class ObjetoRecolectable : NetworkBehaviour
     private void SolicitarRecoleccionRpc(
         RpcParams rpcParams = default)
     {
-        if (!IsServer || !IsSpawned ||
+        if (!IsServer ||
+            !IsSpawned ||
             recolectado.Value ||
             objetoInventario == null)
             return;
@@ -165,12 +128,7 @@ public class ObjetoRecolectable : NetworkBehaviour
         );
 
         if (distancia > distanciaMaxima)
-        {
-            Debug.LogWarning(
-                "[RECOLECTABLE] Jugador demasiado lejos."
-            );
             return;
-        }
 
         NetworkPlayerSetup setup =
             jugador.GetComponent<NetworkPlayerSetup>();
@@ -192,12 +150,7 @@ public class ObjetoRecolectable : NetworkBehaviour
             jugador.GetComponent<InventarioJugador>();
 
         if (inventario == null)
-        {
-            Debug.LogError(
-                "[RECOLECTABLE] Jugador sin inventario."
-            );
             return;
-        }
 
         bool agregado =
             inventario.AgregarObjetoDesdeServidor(
@@ -205,20 +158,12 @@ public class ObjetoRecolectable : NetworkBehaviour
             );
 
         if (!agregado)
-        {
-            Debug.LogWarning(
-                "[RECOLECTABLE] No se pudo agregar el objeto: " +
-                objetoInventario.Id
-            );
             return;
-        }
 
-        // El servidor registra la recolección.
         recolectado.Value = true;
 
         AplicarEstado();
 
-        // Notificar únicamente al jugador que recogió el objeto.
         NotificarTarjetaRpc(
             RpcTarget.Single(
                 clienteId,
@@ -227,22 +172,80 @@ public class ObjetoRecolectable : NetworkBehaviour
         );
 
         Debug.Log(
-            "[RECOLECTABLE] OBJETO RECOLECTADO: " +
-            objetoInventario.Nombre +
-            " | Personaje: " +
+            "[RECOLECTABLE] RECOLECTADO: " +
+            objetoInventario.Id +
+            " | Jugador: " +
             (esElian ? "Elian" : "Lia")
         );
     }
 
     // =====================================
-    // NOTIFICAR TARJETA AL JUGADOR
+    // NOTIFICAR TARJETA
     // =====================================
 
     [Rpc(SendTo.SpecifiedInParams)]
     private void NotificarTarjetaRpc(
         RpcParams rpcParams = default)
     {
+        if (mostrarTarjetaInmediatamente)
+        {
+            StartCoroutine(
+                EsperarInventarioYMostrarTarjeta()
+            );
+
+            return;
+        }
+
         NotificarRecoleccionLocal(objetoInventario);
+    }
+
+    private IEnumerator EsperarInventarioYMostrarTarjeta()
+    {
+        float tiempo = 0f;
+        const float tiempoMaximo = 8f;
+
+        while (tiempo < tiempoMaximo)
+        {
+            NetworkManager red = NetworkManager.Singleton;
+
+            NetworkObject jugadorLocal = null;
+
+            if (red != null && red.LocalClient != null)
+                jugadorLocal = red.LocalClient.PlayerObject;
+
+            InventarioJugador inventarioLocal =
+                jugadorLocal != null
+                    ? jugadorLocal.GetComponent<InventarioJugador>()
+                    : null;
+
+            InventarioUI ui = InventarioUI.Instancia;
+
+            if (ui == null || !ui.isActiveAndEnabled)
+                ui = FindFirstObjectByType<InventarioUI>();
+
+            if (inventarioLocal != null &&
+                ui != null &&
+                objetoInventario != null &&
+                inventarioLocal.TieneObjeto(objetoInventario.Id))
+            {
+                ui.MostrarTarjetaPorId(objetoInventario.Id);
+
+                Debug.Log(
+                    "[RECOLECTABLE] TARJETA MOSTRADA DIRECTAMENTE: " +
+                    objetoInventario.Id
+                );
+
+                yield break;
+            }
+
+            tiempo += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        Debug.LogError(
+            "[RECOLECTABLE] No se pudo mostrar la tarjeta. " +
+            "Revisar InventarioUI y sincronizacion del inventario."
+        );
     }
 
     // =====================================
@@ -253,15 +256,9 @@ public class ObjetoRecolectable : NetworkBehaviour
         bool estadoAnterior,
         bool estadoNuevo)
     {
-        if (!estadoNuevo)
-            return;
-
-        AplicarEstado();
+        if (estadoNuevo)
+            AplicarEstado();
     }
-
-    // =====================================
-    // OCULTAR OBJETO EN TODOS LOS CLIENTES
-    // =====================================
 
     private void AplicarEstado()
     {

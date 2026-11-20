@@ -17,6 +17,7 @@ public class HUDPausaController : MonoBehaviour
 
     [Header("Boton que abre la pausa")]
     [SerializeField] private Button botonAbrirPausa;
+    [SerializeField] private Button botonAbrirPausaLia;
 
     [Header("Botones del panel")]
     [SerializeField] private Button botonCerrar;
@@ -62,6 +63,9 @@ public class HUDPausaController : MonoBehaviour
         if (botonAbrirPausa != null)
             botonAbrirPausa.onClick.AddListener(AbrirPausa);
 
+        if (botonAbrirPausaLia != null)
+            botonAbrirPausaLia.onClick.AddListener(AbrirPausa);
+
         if (botonCerrar != null)
             botonCerrar.onClick.AddListener(Continuar);
 
@@ -101,6 +105,9 @@ public class HUDPausaController : MonoBehaviour
 
         if (botonAbrirPausa != null)
             botonAbrirPausa.onClick.RemoveListener(AbrirPausa);
+
+        if (botonAbrirPausaLia != null)
+            botonAbrirPausaLia.onClick.RemoveListener(AbrirPausa);
 
         if (botonCerrar != null)
             botonCerrar.onClick.RemoveListener(Continuar);

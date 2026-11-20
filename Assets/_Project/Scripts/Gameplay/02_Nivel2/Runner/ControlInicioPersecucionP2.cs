@@ -8,152 +8,71 @@ public class ControlInicioPersecucionP2 : MonoBehaviour
     [Header("Enemigo")]
     [SerializeField] private GameObject laVigilia;
 
-    [Header("Historieta introductoria")]
-    [SerializeField] private HistorietaCooperativa historieta;
-
     [Header("Tiempo de espera")]
-    [SerializeField] private float esperaAparicion = 1.2f;
-
-    [Header("Velocidad del nivel")]
-    [SerializeField] private float velocidadJugadores = 3f;
-
-    private NetworkPlayerMovement movimientoLocal;
+    [SerializeField] private float esperaAparicion = 2f;
 
     private IEnumerator Start()
     {
-        // Mantener oculta La Vigilia al comenzar.
-        if (laVigilia != null)
-            laVigilia.SetActive(false);
+        if (laVigilia == null)
+        {
+            Debug.LogError(
+                "P2: No está asignada La Vigilia."
+            );
+            yield break;
+        }
 
-        // =====================================
-        // ESPERAR CONEXION Y JUGADOR LOCAL
-        // =====================================
+        // Comienza oculta mientras se identifica al jugador.
+        laVigilia.SetActive(false);
 
-        yield return new WaitUntil(() =>
-            NetworkManager.Singleton != null &&
-            NetworkManager.Singleton.IsListening &&
-            NetworkManager.Singleton.LocalClient != null &&
-            NetworkManager.Singleton.LocalClient.PlayerObject != null
+        Debug.Log(
+            "P2: Esperando configuración del jugador local."
         );
 
-        NetworkObject jugadorLocal =
+        // Esperar hasta que Netcode configure completamente
+        // el jugador y su personaje.
+        yield return new WaitUntil(() =>
+        {
+            NetworkManager red = NetworkManager.Singleton;
+
+            if (red == null ||
+                !red.IsListening ||
+                red.LocalClient == null ||
+                red.LocalClient.PlayerObject == null)
+                return false;
+
+            NetworkPlayerSetup setup =
+                red.LocalClient.PlayerObject
+                .GetComponent<NetworkPlayerSetup>();
+
+            return setup != null && setup.RolConfigurado;
+        });
+
+        NetworkObject jugador =
             NetworkManager.Singleton.LocalClient.PlayerObject;
 
-        NetworkPlayerSetup setup =
-            jugadorLocal.GetComponent<NetworkPlayerSetup>();
+        NetworkPlayerSetup configuracion =
+            jugador.GetComponent<NetworkPlayerSetup>();
 
-        movimientoLocal =
-            jugadorLocal.GetComponent<NetworkPlayerMovement>();
-
-        if (setup == null || movimientoLocal == null)
+        // La Vigilia nunca aparece en la realidad de Elian.
+        if (configuracion.EsElian)
         {
-            Debug.LogError(
-                "P2: No se encontraron los componentes del jugador."
+            Debug.Log(
+                "P2: Jugador Elian. Vigilia permanece oculta."
             );
             yield break;
         }
 
-        // Esperar a que se configure la identidad.
-        yield return new WaitUntil(() => setup.RolConfigurado);
+        Debug.Log(
+            "P2: Jugador Lía identificado correctamente."
+        );
 
-        // =====================================
-        // ENCONTRAR HISTORIETA
-        // =====================================
+        yield return new WaitForSeconds(esperaAparicion);
 
-        if (historieta == null)
-        {
-            historieta =
-                FindFirstObjectByType<HistorietaCooperativa>();
-        }
-
-        while (historieta == null)
-        {
-            yield return null;
-
-            historieta =
-                FindFirstObjectByType<HistorietaCooperativa>();
-        }
-
-        // =====================================
-        // ESPERAR A QUE AMBOS TERMINEN
-        // =====================================
+        // Aparecer únicamente para Lía.
+        laVigilia.SetActive(true);
 
         Debug.Log(
-            "P2: Esperando que ambos jugadores terminen la historieta."
+            "P2: ¡La Vigilia ha aparecido para Lía!"
         );
-
-        yield return new WaitUntil(() =>
-            historieta != null &&
-            historieta.IsSpawned &&
-            historieta.IntroduccionFinalizada
-        );
-
-        Debug.Log(
-            "P2: Historieta finalizada para ambos jugadores."
-        );
-
-        // =====================================
-        // CONFIGURAR VELOCIDAD
-        // =====================================
-
-        movimientoLocal.ConfigurarVelocidadNivel(
-            velocidadJugadores
-        );
-
-        Debug.Log(
-            "P2: Velocidad configurada para " +
-            (setup.EsElian ? "Elian" : "Lia") +
-            " | Velocidad: " + velocidadJugadores
-        );
-
-        // =====================================
-        // ELIAN NO VE LA VIGILIA
-        // =====================================
-
-        if (setup.EsElian)
-        {
-            Debug.Log(
-                "P2: Elian. La Vigilia permanece oculta."
-            );
-
-            yield break;
-        }
-
-        // =====================================
-        // INICIAR PERSECUCION DE LIA
-        // =====================================
-
-        yield return new WaitForSeconds(
-            Mathf.Max(0f, esperaAparicion)
-        );
-
-        if (laVigilia != null)
-        {
-            laVigilia.SetActive(true);
-
-            Debug.Log(
-                "P2: ¡La Vigilia ha aparecido! Comienza la persecución."
-            );
-        }
-        else
-        {
-            Debug.LogError(
-                "P2: No se ha asignado La Vigilia."
-            );
-        }
-    }
-
-    // =====================================
-    // LIMPIEZA
-    // =====================================
-
-    private void OnDestroy()
-    {
-        if (movimientoLocal != null &&
-            movimientoLocal.IsSpawned &&
-            movimientoLocal.IsOwner)
-        {
-            movimientoLocal.RestaurarVelocidadOriginal();
-        }
     }
 }

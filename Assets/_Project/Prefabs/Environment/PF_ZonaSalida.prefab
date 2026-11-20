@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 4066021721605363587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1149, y: -431.87, z: 0}
+  m_LocalPosition: {x: -0.7, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -158,7 +158,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.039316595, y: 0.026211262}
+  m_Offset: {x: 1154.0239, y: 430.23663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -168,7 +168,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6028548, y: 1.8911772}
+  m_Size: {x: 2.790039, y: 2.0204773}
   m_EdgeRadius: 0
 --- !u!1 &7430646912421507480
 GameObject:
@@ -195,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 7430646912421507480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1148.93, y: -432.798, z: 0}
+  m_LocalPosition: {x: 5.75, y: -1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 27267137
+  GlobalObjectIdHash: 100985071
   InScenePlacedSourceGlobalObjectIdHash: 338731215
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -280,21 +280,19 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   escenaDestino: P5_Pasillo
   zonaDeteccion: {fileID: 6206792733339046675}
-  fragmentoElian: {fileID: 0}
-  fragmentoLia: {fileID: 0}
   visualBloqueado: {fileID: 8329879881502645467}
   visualHabilitado: {fileID: 3332302575728537892}
   puntoCamaraElian: {fileID: 0}
   animatorPuertaElian: {fileID: 0}
   puntoCamaraLia: {fileID: 0}
   animatorPuertaLia: {fileID: 0}
-  tienePuerta: 0
+  tienePuerta: 1
   estadoApertura: Abrir
-  usarZoom: 1
+  usarZoom: 0
   esperaAntesDeAbrir: 0.4
-  duracionApertura: 1
+  duracionApertura: 0.67
   margenTransicionesZoom: 0.75
-  esperaCambioEscena: 2
+  esperaCambioEscena: 0.35
 --- !u!1 &8329879881502645467
 GameObject:
   m_ObjectHideFlags: 0

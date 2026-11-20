@@ -473,31 +473,32 @@ public class InventarioUI : MonoBehaviour
     // RECIBIR OBJETO RECOLECTADO
     // =====================================
 
-    private void MostrarTarjetaObjeto(
-        ObjetoInventario objeto)
+    
+    private void MostrarTarjetaObjeto(ObjetoInventario objeto)
     {
         if (objeto == null ||
             panelObjetoRecolectado == null)
             return;
 
-        // Los fragmentos de carta no muestran
-        // su tarjeta automáticamente.
-        // Esperan la cinematografía.
+        bool esLlave201 =
+            objeto.Id == "Llave_Elian" ||
+            objeto.Id == "Llave_lia";
 
-        if (objeto.Tipo ==
-            TipoObjetoInventario.FragmentoCarta)
+        // Las llaves de la habitación 201 sí deben
+        // mostrar su tarjeta aunque sean FragmentoCarta.
+        if (objeto.Tipo == TipoObjetoInventario.FragmentoCarta &&
+            !esLlave201)
         {
             Debug.Log(
-                "CARTA RECOLECTADA. " +
-                "Tarjeta pendiente de cinematografía: " +
+                "FRAGMENTO DE CARTA: espera su cinematografía: " +
                 objeto.Id
             );
-
             return;
         }
 
         MostrarTarjetaDirecta(objeto);
     }
+
 
     // =====================================
     // MOSTRAR TARJETA DIRECTAMENTE

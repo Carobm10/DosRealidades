@@ -31,7 +31,6 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
     private Coroutine rutinaLentitud;
 
-    // Contador de zonas de puertas.
     private int zonasPuertaActivas;
 
     private void Awake()
@@ -146,17 +145,12 @@ public class PersecucionVigiliaP2 : MonoBehaviour
     // DETECTAR CONTACTO CON LIA
     // =====================================
 
-    
     private void OnTriggerStay2D(Collider2D otro)
     {
         NetworkObject jugador =
             otro.GetComponentInParent<NetworkObject>();
 
-        if (jugador == null)
-            return;
-
-        // Solo procesar al jugador dueño de este personaje.
-        if (!jugador.IsOwner)
+        if (jugador == null || !jugador.IsOwner)
             return;
 
         NetworkPlayerSetup setup =
@@ -165,24 +159,24 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         if (setup == null || !setup.RolConfigurado)
             return;
 
-        // La Vigilia solamente afecta a Lía.
         if (setup.EsElian)
             return;
 
-        // Respetar intervalo entre golpes.
-        if (Time.time < siguienteGolpePermitido)
-            return;
+        VidasEquipo vidas = VidasEquipo.Instancia;
 
-        VidaJugador vida =
-            jugador.GetComponent<VidaJugador>();
-
-        if (vida == null)
+        if (vidas == null || !vidas.IsSpawned)
         {
             Debug.LogError(
-                "VIGILIA: Lía no tiene componente VidaJugador."
+                "VIGILIA: No se encontró VidasEquipo activo."
             );
             return;
         }
+
+        if (vidas.VidasActuales <= 0)
+            return;
+
+        if (Time.time < siguienteGolpePermitido)
+            return;
 
         siguienteGolpePermitido =
             Time.time + intervaloEntreGolpes;
@@ -190,29 +184,32 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         AplicarImpacto(jugador);
 
         Debug.Log(
-            "VIGILIA: CONTACTO CONFIRMADO CON LÍA."
+            "VIGILIA: IMPACTO CONFIRMADO CON LIA."
         );
     }
 
-
     // =====================================
-    // APLICAR DANIO Y LENTITUD
+    // APLICAR DANIO
     // =====================================
 
     private void AplicarImpacto(NetworkObject jugador)
     {
-        VidaJugador vida =
-            jugador.GetComponent<VidaJugador>();
+        VidasEquipo vidas = VidasEquipo.Instancia;
 
+        if (vidas == null)
+            return;
+
+        // Descontar del contador compartido.
+        // El servidor actualiza automáticamente ambos HUD.
+        vidas.PerderVida();
+
+        Debug.Log(
+            "VIGILIA: Solicitud de perdida de vida enviada."
+        );
+
+        // Aplicar ralentización local a Lía.
         NetworkPlayerMovement movimiento =
             jugador.GetComponent<NetworkPlayerMovement>();
-
-        if (vida != null)
-        {
-            vida.PerderVida();
-
-            Debug.Log("VIGILIA: Lia ha perdido una vida.");
-        }
 
         if (movimiento != null)
         {
@@ -259,7 +256,8 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
     public void ModificarVelocidad(float nuevaVelocidad)
     {
-        velocidadPersecucion = Mathf.Max(0f, nuevaVelocidad);
+        velocidadPersecucion =
+            Mathf.Max(0f, nuevaVelocidad);
     }
 
     public float ObtenerVelocidad()

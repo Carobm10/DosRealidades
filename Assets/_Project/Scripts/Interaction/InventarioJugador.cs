@@ -170,6 +170,37 @@ public class InventarioJugador : NetworkBehaviour
         return null;
     }
 
+
+    // =====================================
+    // ELIMINAR OBJETO DESDE EL SERVIDOR
+    // =====================================
+
+    public bool EliminarObjetoDesdeServidor(string id)
+    {
+        if (!IsServer ||
+            !IsSpawned ||
+            objetos == null ||
+            string.IsNullOrWhiteSpace(id))
+            return false;
+
+        if (!TieneObjeto(id))
+        {
+            Debug.LogWarning(
+                "Inventario: No se encontro el objeto: " + id
+            );
+            return false;
+        }
+
+        objetos.Remove(new FixedString64Bytes(id));
+
+        Debug.Log(
+            "Inventario: Objeto eliminado correctamente: " + id
+        );
+
+        return true;
+    }
+
+
     // =====================================
     // CONSUMIR OBJETO
     // =====================================
@@ -247,5 +278,11 @@ public class InventarioJugador : NetworkBehaviour
             OwnerClientId
         );
     }
+
+
+    
+
+    
+
 
 }

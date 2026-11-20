@@ -8,6 +8,10 @@ public class VisualRealidadP2 : MonoBehaviour
     [SerializeField] private GameObject realidadElian;
     [SerializeField] private GameObject realidadLia;
 
+    [Header("Botones de pausa")]
+    [SerializeField] private GameObject botonPausaElian;
+    [SerializeField] private GameObject botonPausaLia;
+
     [Header("Audio ambiente por realidad")]
     [SerializeField] private AudioClip ambienteElian;
     [SerializeField] private AudioClip ambienteLia;
@@ -22,8 +26,6 @@ public class VisualRealidadP2 : MonoBehaviour
         bool esElian;
 
 #if UNITY_EDITOR
-        // Si abrimos P2 directamente,
-        // usamos el selector de ModoPrueba.
         if (RolPruebaJugador.Instancia != null)
         {
             esElian =
@@ -36,9 +38,6 @@ public class VisualRealidadP2 : MonoBehaviour
                 NetworkManager.Singleton.IsHost;
         }
 #else
-        // Multiplayer real:
-        // Host = Elian
-        // Client = Lia
         esElian =
             NetworkManager.Singleton != null &&
             NetworkManager.Singleton.IsHost;
@@ -52,7 +51,15 @@ public class VisualRealidadP2 : MonoBehaviour
         if (realidadLia != null)
             realidadLia.SetActive(!esElian);
 
-        // CONFIGURAR AUDIO AMBIENTE
+        // BOTON DE PAUSA POR JUGADOR
+
+        if (botonPausaElian != null)
+            botonPausaElian.SetActive(esElian);
+
+        if (botonPausaLia != null)
+            botonPausaLia.SetActive(!esElian);
+
+        // AUDIO AMBIENTE
 
         if (AudioManager.Instance != null)
         {
@@ -75,13 +82,10 @@ public class VisualRealidadP2 : MonoBehaviour
         ActualizarMision(esElian);
 
         Debug.Log(
-            "P2 - REALIDAD CONFIGURADA: " +
+            "REALIDAD: " +
+            (esElian ? "ELIAN" : "LIA") +
+            " | BOTON PAUSA: " +
             (esElian ? "ELIAN" : "LIA")
-        );
-
-        Debug.Log(
-            "P2 - AUDIO: " +
-            (esElian ? "AMBIENTE ELIAN" : "AMBIENTE LIA")
         );
     }
 

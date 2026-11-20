@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIContadorFragmentos
   textoContador: {fileID: 3409337400935053262}
-  totalFragmentos: 5
+  totalFragmentos: 4
 --- !u!1 &304002973757070810
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1027702145
+  GlobalObjectIdHash: 1891353790
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -906,8 +906,9 @@ GameObject:
   - component: {fileID: 4794552230288860892}
   - component: {fileID: 7074277248268072435}
   - component: {fileID: 1620665286213360680}
+  - component: {fileID: 8543267651196258358}
   m_Layer: 5
-  m_Name: "Bot\xF3n Pausa"
+  m_Name: BotonPausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,16 +923,16 @@ RectTransform:
   m_GameObject: {fileID: 997390282725107001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6690039, y: 3.5941412, z: 3.3433871}
+  m_LocalScale: {x: 0.08484647, y: 0.08484647, z: 0.005704651}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1368630429690827680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822, y: 385}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1732.8, y: 865.42}
+  m_SizeDelta: {x: -920, y: -80}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &4794552230288860892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -960,8 +961,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1014,6 +1015,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8543267651196258358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997390282725107001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236d76c7e8941b743a721ea8e914abf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisualBotonInteractuar
+  imagenBoton: {fileID: 7074277248268072435}
+  botonElian: {fileID: -2866428764755310721, guid: 1b53db0455c5ef949bcfc46c74014206, type: 3}
+  botonLia: {fileID: 2621576530927472078, guid: 4da45588ec13e0346be1e5f27af8c024, type: 3}
 --- !u!1 &1310906064149637743
 GameObject:
   m_ObjectHideFlags: 0
@@ -8478,6 +8494,7 @@ MonoBehaviour:
   panelPausa: {fileID: 3959436481604291659}
   panelReconectando: {fileID: 854777036944796787}
   botonAbrirPausa: {fileID: 1620665286213360680}
+  botonAbrirPausaLia: {fileID: 0}
   botonCerrar: {fileID: 8401782139723972000}
   botonContinuar: {fileID: 4661898224566476921}
   botonReiniciar: {fileID: 6524276031308723844}
@@ -8492,6 +8509,10 @@ MonoBehaviour:
   - {fileID: 3950249469185021980}
   - {fileID: 997390282725107001}
   - {fileID: 8173372906510268952}
+  - {fileID: 5456746758934887555}
+  - {fileID: 758779740364529523}
+  - {fileID: 284079965190599772}
+  - {fileID: 2652859018091640220}
 --- !u!114 &5127641653094025659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9192,6 +9213,7 @@ GameObject:
   - component: {fileID: 2890537073575374715}
   - component: {fileID: 54559782860369083}
   - component: {fileID: 2212467438206636723}
+  - component: {fileID: 6160471389811143749}
   m_Layer: 5
   m_Name: VentanaOpciones
   m_TagString: Untagged
@@ -9262,6 +9284,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6160471389811143749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8207016859405442792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
+  sliderMusica: {fileID: 2760379108032502732}
+  sliderEfectos: {fileID: 3300757485600835001}
 --- !u!1 &8281438830713392970
 GameObject:
   m_ObjectHideFlags: 0

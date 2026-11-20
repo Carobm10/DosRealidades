@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using Unity.Netcode;
+using System.Collections;
 using System.Collections.Generic;
 
 public class CajaFuerte201Controller : NetworkBehaviour
@@ -20,7 +21,21 @@ public class CajaFuerte201Controller : NetworkBehaviour
     [SerializeField]
     private string idLlaveLia = "Llave_lia";
 
+    [Header("Pistas de codigo de Lia")]
+    [SerializeField]
+    private string idPistaLia90 = "fragmento_codigo_lia";
+
+    [SerializeField]
+    private string idPistaLia15 = "fragmento_carta_lia";
+
+    [Header("Tiempo de apertura")]
+    [SerializeField]
+    private float esperaDespuesDeApertura = 1.2f;
+
     private bool codigoProcesado;
+    private bool llavesEntregadas;
+
+    private Coroutine rutinaEntrega;
 
     private HashSet<ulong> jugadoresCerraronTarjeta =
         new HashSet<ulong>();
@@ -39,54 +54,206 @@ public class CajaFuerte201Controller : NetworkBehaviour
             return;
         }
 
-        if (!IsServer)
-        {
-            Debug.LogWarning(
-                "CAJA 201: Solo el servidor puede iniciar la apertura."
-            );
-            return;
-        }
-
         if (codigoProcesado)
-        {
-            Debug.LogWarning(
-                "CAJA 201: El código ya fue procesado."
-            );
             return;
+
+        if (IsServer)
+        {
+            ProcesarCodigoCorrectoServidor();
         }
+        else
+        {
+            SolicitarAperturaCajaRpc();
+        }
+    }
+
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void SolicitarAperturaCajaRpc(
+        RpcParams rpcParams = default)
+    {
+        if (!IsServer || codigoProcesado)
+            return;
+
+        ulong clienteId =
+            rpcParams.Receive.SenderClientId;
+
+        if (!NetworkManager.Singleton.ConnectedClients
+            .TryGetValue(clienteId, out var cliente))
+            return;
+
+        if (cliente.PlayerObject == null)
+            return;
+
+        NetworkPlayerSetup setup =
+            cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null ||
+            !setup.RolConfigurado ||
+            !setup.EsElian)
+            return;
+
+        ProcesarCodigoCorrectoServidor();
+    }
+
+    private void ProcesarCodigoCorrectoServidor()
+    {
+        if (!IsServer || codigoProcesado)
+            return;
 
         if (salidaCooperativa == null)
         {
             Debug.LogError(
-                "CAJA 201: Falta asignar ZonaSalidaCooperativa."
-            );
-            return;
-        }
-
-        // Entregar primero las dos llaves.
-        if (!EntregarLlaves())
-        {
-            Debug.LogError(
-                "CAJA 201: No se pudieron entregar las dos llaves. " +
-                "La salida permanece bloqueada."
+                "CAJA 201: Falta ZonaSalidaCooperativa."
             );
             return;
         }
 
         codigoProcesado = true;
+        llavesEntregadas = false;
+
+        jugadoresCerraronTarjeta.Clear();
+
+        // =================================
+        // PRIMERO: ELIMINAR PISTAS DE LIA
+        // INMEDIATAMENTE AL ACEPTAR CODIGO
+        // =================================
+
+        EliminarPistasCodigoLiaInmediatamente();
+
+        Debug.Log(
+            "CAJA 201: Codigo correcto. " +
+            "Pistas anteriores de Lia eliminadas."
+        );
 
         // Cerrar teclado de Elian.
         if (panelTecladoElian != null)
             panelTecladoElian.SetActive(false);
 
-        Debug.Log(
-            "CAJA 201: Código correcto. " +
-            "Ambas llaves entregadas."
-        );
+        // =================================
+        // SEGUNDO: INICIAR CINEMATICA
+        // =================================
 
         Debug.Log(
-            "CAJA 201: Esperando que ambos jugadores cierren la tarjeta."
+            "CAJA 201: Iniciando apertura de puertas."
         );
+
+        salidaCooperativa.HabilitarSalida();
+
+        // =================================
+        // TERCERO: ESPERAR APERTURA
+        // =================================
+
+        rutinaEntrega =
+            StartCoroutine(EntregarLlavesDespuesDeApertura());
+    }
+
+    // =====================================
+    // ELIMINAR PISTAS DE LIA
+    // =====================================
+
+    private void EliminarPistasCodigoLiaInmediatamente()
+    {
+        if (!IsServer ||
+            NetworkManager.Singleton == null)
+            return;
+
+        foreach (var cliente in
+            NetworkManager.Singleton.ConnectedClientsList)
+        {
+            NetworkObject jugador = cliente.PlayerObject;
+
+            if (jugador == null || !jugador.IsSpawned)
+                continue;
+
+            NetworkPlayerSetup setup =
+                jugador.GetComponent<NetworkPlayerSetup>();
+
+            if (setup == null ||
+                !setup.RolConfigurado ||
+                setup.EsElian)
+                continue;
+
+            InventarioJugador inventarioLia =
+                jugador.GetComponent<InventarioJugador>();
+
+            if (inventarioLia == null)
+            {
+                Debug.LogError(
+                    "CAJA 201: Lia no tiene InventarioJugador."
+                );
+                return;
+            }
+
+            EliminarPistasCodigoLia(inventarioLia);
+
+            return;
+        }
+
+        Debug.LogError(
+            "CAJA 201: No se encontro el jugador Lia."
+        );
+    }
+
+    private void EliminarPistasCodigoLia(
+        InventarioJugador inventarioLia)
+    {
+        if (!IsServer || inventarioLia == null)
+            return;
+
+        if (inventarioLia.TieneObjeto(idPistaLia90))
+        {
+            inventarioLia.EliminarObjetoDesdeServidor(
+                idPistaLia90
+            );
+
+            Debug.Log(
+                "CAJA 201: Eliminada pista 90 de Lia."
+            );
+        }
+
+        if (inventarioLia.TieneObjeto(idPistaLia15))
+        {
+            inventarioLia.EliminarObjetoDesdeServidor(
+                idPistaLia15
+            );
+
+            Debug.Log(
+                "CAJA 201: Eliminada pista 15 de Lia."
+            );
+        }
+    }
+
+    // =====================================
+    // ESPERAR APERTURA DE PUERTA
+    // =====================================
+
+    private IEnumerator EntregarLlavesDespuesDeApertura()
+    {
+        yield return new WaitForSecondsRealtime(
+            Mathf.Max(0f, esperaDespuesDeApertura)
+        );
+
+        if (!IsServer || !IsSpawned)
+            yield break;
+
+        if (!EntregarLlaves())
+        {
+            Debug.LogError(
+                "CAJA 201: No se pudieron entregar las llaves."
+            );
+
+            rutinaEntrega = null;
+            yield break;
+        }
+
+        llavesEntregadas = true;
+
+        Debug.Log(
+            "CAJA 201: Ambas llaves entregadas. " +
+            "Esperando cierre de tarjetas."
+        );
+
+        rutinaEntrega = null;
     }
 
     // =====================================
@@ -103,7 +270,6 @@ public class CajaFuerte201Controller : NetworkBehaviour
         NetworkObject jugadorElian = null;
         NetworkObject jugadorLia = null;
 
-        // Identificar los dos NetworkPlayer.
         foreach (var cliente in red.ConnectedClientsList)
         {
             NetworkObject jugador = cliente.PlayerObject;
@@ -126,27 +292,27 @@ public class CajaFuerte201Controller : NetworkBehaviour
         if (jugadorElian == null || jugadorLia == null)
         {
             Debug.LogError(
-                "CAJA 201: No se encontraron Elian y Lía."
+                "CAJA 201: No se encontraron ambos jugadores."
             );
             return false;
         }
 
-        // Obtener inventarios individuales.
         InventarioJugador inventarioElian =
             jugadorElian.GetComponent<InventarioJugador>();
 
         InventarioJugador inventarioLia =
             jugadorLia.GetComponent<InventarioJugador>();
 
-        if (inventarioElian == null || inventarioLia == null)
+        if (inventarioElian == null ||
+            inventarioLia == null)
         {
             Debug.LogError(
-                "CAJA 201: Falta InventarioJugador en uno de los jugadores."
+                "CAJA 201: Falta InventarioJugador."
             );
             return false;
         }
 
-        // Comprobar que ambas definiciones existan.
+        // Comprobar definiciones.
         ObjetoInventario llaveElian =
             inventarioElian.ObtenerObjetoPorId(idLlaveElian);
 
@@ -156,31 +322,37 @@ public class CajaFuerte201Controller : NetworkBehaviour
         if (llaveElian == null || llaveLia == null)
         {
             Debug.LogError(
-                "CAJA 201: No se encontraron las llaves en los catálogos. " +
+                "CAJA 201: No se encontraron las definiciones. " +
                 "Elian: " + (llaveElian != null) +
                 " | Lia: " + (llaveLia != null)
             );
             return false;
         }
 
-        // Agregar cada llave al inventario correspondiente.
+        // Agregar sin duplicar.
         bool elianOK =
             inventarioElian.TieneObjeto(idLlaveElian) ||
-            inventarioElian.AgregarObjetoDesdeServidor(idLlaveElian);
+            inventarioElian.AgregarObjetoDesdeServidor(
+                idLlaveElian
+            );
 
         bool liaOK =
             inventarioLia.TieneObjeto(idLlaveLia) ||
-            inventarioLia.AgregarObjetoDesdeServidor(idLlaveLia);
+            inventarioLia.AgregarObjetoDesdeServidor(
+                idLlaveLia
+            );
 
         if (!elianOK || !liaOK)
         {
             Debug.LogError(
-                "CAJA 201: Falló la entrega de una o ambas llaves."
+                "CAJA 201: Error agregando las llaves. " +
+                "Elian: " + elianOK +
+                " | Lia: " + liaOK
             );
             return false;
         }
 
-        // Enviar la tarjeta correspondiente a cada jugador.
+        // Enviar cada tarjeta a su jugador.
         EnviarTarjetaLlaveRpc(
             idLlaveElian,
             RpcTarget.Single(
@@ -198,16 +370,15 @@ public class CajaFuerte201Controller : NetworkBehaviour
         );
 
         Debug.Log(
-            "CAJA 201: Entrega completada. " +
-            "Elian recibió " + idLlaveElian +
-            " | Lía recibió " + idLlaveLia
+            "CAJA 201: LLAVES ENTREGADAS A AMBOS."
         );
 
         return true;
     }
 
     // =====================================
-    // MOSTRAR TARJETA AL JUGADOR CORRECTO
+    // MOSTRAR TARJETAS INDIVIDUALES
+    // ESPERANDO SINCRONIZACION
     // =====================================
 
     [Rpc(SendTo.SpecifiedInParams)]
@@ -215,54 +386,60 @@ public class CajaFuerte201Controller : NetworkBehaviour
         string idObjeto,
         RpcParams rpcParams = default)
     {
-        NetworkManager red = NetworkManager.Singleton;
-
-        if (red == null ||
-            red.LocalClient == null ||
-            red.LocalClient.PlayerObject == null)
-        {
-            Debug.LogError(
-                "CAJA 201: No se encontró el jugador local."
-            );
-            return;
-        }
-
-        InventarioJugador inventario =
-            red.LocalClient.PlayerObject
-            .GetComponent<InventarioJugador>();
-
-        if (inventario == null)
-        {
-            Debug.LogError(
-                "CAJA 201: El jugador local no tiene inventario."
-            );
-            return;
-        }
-
-        // Recuperar la definición del objeto de su inventario.
-        ObjetoInventario objeto =
-            inventario.ObtenerObjetoPorId(idObjeto);
-
-        if (objeto == null)
-        {
-            Debug.LogError(
-                "CAJA 201: No se encontró la definición de " +
-                idObjeto
-            );
-            return;
-        }
-
-        // Utilizar el evento compartido de las tarjetas.
-        ObjetoRecolectable.NotificarRecoleccionLocal(
-            objeto
+        Debug.Log(
+            "CAJA 201: Solicitud de tarjeta recibida: " +
+            idObjeto
         );
 
-        Debug.Log(
-            "CAJA 201: Tarjeta de llave enviada al jugador local: " +
+        StartCoroutine(
+            EsperarInventarioYMostrarTarjeta(idObjeto)
+        );
+    }
+
+    private IEnumerator EsperarInventarioYMostrarTarjeta(
+        string idObjeto)
+    {
+        float tiempoEspera = 0f;
+        const float tiempoMaximo = 10f;
+
+        while (tiempoEspera < tiempoMaximo)
+        {
+            InventarioUI inventarioUI =
+                InventarioUI.Instancia;
+
+            if (inventarioUI == null)
+            {
+                inventarioUI =
+                    FindFirstObjectByType<InventarioUI>();
+            }
+
+            if (inventarioUI != null &&
+                inventarioUI.PuedeMostrarTarjetaPorId(idObjeto))
+            {
+                inventarioUI.MostrarTarjetaPorId(idObjeto);
+
+                Debug.Log(
+                    "CAJA 201: TARJETA MOSTRADA CORRECTAMENTE: " +
+                    idObjeto
+                );
+
+                yield break;
+            }
+
+            tiempoEspera += Time.unscaledDeltaTime;
+
+            yield return null;
+        }
+
+        Debug.LogError(
+            "CAJA 201: TIEMPO AGOTADO ESPERANDO TARJETA: " +
             idObjeto
         );
     }
 
+    // =====================================
+    // CERRAR TARJETAS
+    // =====================================
 
     public void ConfirmarCierreTarjetaLlave(string idObjeto)
     {
@@ -281,10 +458,14 @@ public class CajaFuerte201Controller : NetworkBehaviour
         string idObjeto,
         RpcParams rpcParams = default)
     {
-        if (!IsServer || !codigoProcesado)
+        if (!IsServer ||
+            !codigoProcesado ||
+            !llavesEntregadas ||
+            salidaCooperativa == null)
             return;
 
-        ulong jugadorId = rpcParams.Receive.SenderClientId;
+        ulong jugadorId =
+            rpcParams.Receive.SenderClientId;
 
         if (!NetworkManager.Singleton.ConnectedClients
             .TryGetValue(jugadorId, out var cliente))
@@ -299,7 +480,7 @@ public class CajaFuerte201Controller : NetworkBehaviour
         if (setup == null || !setup.RolConfigurado)
             return;
 
-        // Validar que cada jugador cierre su propia llave.
+        // Cada jugador debe cerrar su propia llave.
         bool llaveCorrecta = setup.EsElian
             ? idObjeto == idLlaveElian
             : idObjeto == idLlaveLia;
@@ -312,23 +493,33 @@ public class CajaFuerte201Controller : NetworkBehaviour
 
         Debug.Log(
             "CAJA 201: " +
-            (setup.EsElian ? "Elian" : "Lía") +
-            " cerró su tarjeta de llave. " +
+            (setup.EsElian ? "Elian" : "Lia") +
+            " cerro su tarjeta. " +
             jugadoresCerraronTarjeta.Count + "/2"
         );
 
         if (jugadoresCerraronTarjeta.Count < 2)
             return;
 
-        if (salidaCooperativa != null)
-        {
-            Debug.Log(
-                "CAJA 201: Ambos jugadores cerraron sus llaves. " +
-                "Habilitando salida."
-            );
+        // SOLO AHORA se habilita la salida.
+        salidaCooperativa.HabilitarSalidaDespuesDeTarjetas();
 
-            salidaCooperativa.HabilitarSalida();
-        }
+        Debug.Log(
+            "CAJA 201: AMBAS TARJETAS CERRADAS. " +
+            "SALIDA HABILITADA."
+        );
     }
 
+    // =====================================
+    // LIMPIEZA
+    // =====================================
+
+    public override void OnNetworkDespawn()
+    {
+        if (rutinaEntrega != null)
+        {
+            StopCoroutine(rutinaEntrega);
+            rutinaEntrega = null;
+        }
+    }
 }
