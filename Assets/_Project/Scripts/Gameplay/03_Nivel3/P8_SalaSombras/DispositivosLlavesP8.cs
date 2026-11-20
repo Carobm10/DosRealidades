@@ -38,6 +38,7 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         );
 
     private bool aperturaSolicitada;
+    private Coroutine rutinaHabilitarSalida;
 
     private Coroutine rutinaCinematicaLocal;
 
