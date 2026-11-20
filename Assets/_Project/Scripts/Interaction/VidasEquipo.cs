@@ -2,6 +2,7 @@
 using UnityEngine;
 using Unity.Netcode;
 using System;
+using UnityEngine.SceneManagement;
 
 public class VidasEquipo : NetworkBehaviour
 {
@@ -39,6 +40,7 @@ public class VidasEquipo : NetworkBehaviour
         if (IsServer)
         {
             vidasActuales.Value = vidasIniciales;
+            AlAgotarVidas += SolicitarReinicioPorVidas;
         }
 
         ActualizarHUD(vidasActuales.Value);
@@ -48,26 +50,105 @@ public class VidasEquipo : NetworkBehaviour
     {
         vidasActuales.OnValueChanged -= AlCambiarVidas;
 
+        if (IsServer)
+            AlAgotarVidas -= SolicitarReinicioPorVidas;
+
         if (Instancia == this)
             Instancia = null;
     }
 
-    // Solicitud para perder una vida.
+    // =====================================
+    // SOLICITAR PERDIDA DE VIDA
+    // =====================================
+    
     public void PerderVida()
     {
         if (!IsSpawned)
             return;
 
-        PerderVidaRpc();
+        if (EsEscenaP8())
+        {
+            if (IsServer)
+                RegistrarAtrapamientoP8Servidor();
+            else
+                PerderVidaRpc();
+
+            return;
+        }
+
+        if (IsServer)
+            PerderVidaServidor();
+        else
+            PerderVidaRpc();
     }
 
-    [Rpc(SendTo.Server)]
-    private void PerderVidaRpc()
+
+    
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void PerderVidaRpc(RpcParams rpcParams = default)
     {
+        if (!IsServer)
+            return;
+
+        ulong clienteId = rpcParams.Receive.SenderClientId;
+
+        if (!NetworkManager.Singleton.ConnectedClients.TryGetValue(
+            clienteId, out NetworkClient cliente))
+            return;
+
+        if (cliente.PlayerObject == null)
+            return;
+
+        NetworkPlayerSetup setup =
+            cliente.PlayerObject.GetComponent<NetworkPlayerSetup>();
+
+        if (setup == null || !setup.RolConfigurado)
+            return;
+
+        if (EsEscenaP8())
+        {
+            RegistrarAtrapamientoP8Servidor();
+            return;
+        }
+
+        // Se conserva la regla anterior fuera de P8.
+        if (setup.EsElian)
+            return;
+
         PerderVidaServidor();
     }
 
-    // Únicamente el servidor descuenta las vidas.
+
+    private bool EsEscenaP8()
+    {
+        return SceneManager.GetActiveScene().name ==
+            "P8_SalaSombras";
+    }
+
+    private void RegistrarAtrapamientoP8Servidor()
+    {
+        if (!IsServer)
+            return;
+
+        SupervivenciaP8Controller controlador =
+            FindFirstObjectByType<SupervivenciaP8Controller>();
+
+        if (controlador == null || !controlador.IsSpawned)
+        {
+            Debug.LogError(
+                "P8 | No se encontró SupervivenciaP8Controller."
+            );
+            return;
+        }
+
+        controlador.RegistrarAtrapamientoServidor();
+    }
+
+
+    // =====================================
+    // DESCONTAR VIDA EN SERVIDOR
+    // =====================================
+
     public bool PerderVidaServidor()
     {
         if (!IsServer || vidasActuales.Value <= 0)
@@ -76,12 +157,14 @@ public class VidasEquipo : NetworkBehaviour
         vidasActuales.Value--;
 
         Debug.Log(
-            "VIDAS RESTANTES: " + vidasActuales.Value
+            "RUNNER P2 | VIDAS RESTANTES: " + vidasActuales.Value
         );
 
         if (vidasActuales.Value <= 0)
         {
-            Debug.Log("EQUIPO SIN VIDAS. REINICIANDO CAMINO.");
+            Debug.Log(
+                "RUNNER P2 | SIN VIDAS. REINICIANDO NIVEL COMPLETO."
+            );
 
             AlAgotarVidas?.Invoke();
 
@@ -91,7 +174,37 @@ public class VidasEquipo : NetworkBehaviour
         return true;
     }
 
-    // Restaurar las vidas al reiniciar el camino.
+    // =====================================
+    // REINICIO AUTOMATICO
+    // =====================================
+
+    private void SolicitarReinicioPorVidas()
+    {
+        if (!IsServer)
+            return;
+
+        ReinicioNivelCooperativo reinicio =
+            ReinicioNivelCooperativo.Instancia;
+
+        if (reinicio == null || !reinicio.IsSpawned)
+        {
+            Debug.LogError(
+                "No se encontró ReinicioNivelCooperativo activo."
+            );
+            return;
+        }
+
+        Debug.Log(
+            "P8 | VIDAS AGOTADAS. REINICIANDO NIVEL COMPLETO."
+        );
+
+        reinicio.ReiniciarDesdeServidor();
+    }
+
+    // =====================================
+    // RESTAURAR VIDAS
+    // =====================================
+
     public void RestaurarVidas()
     {
         if (!IsServer)

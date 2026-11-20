@@ -1,0 +1,3746 @@
+fileFormatVersion: 2
+guid: f42b42cd822409447a8c428f10eed94a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6331733839117609291
+    second: brilli brilli es_0
+  - first:
+      213: -2834284949508604057
+    second: brilli brilli es_1
+  - first:
+      213: 3652280612421290313
+    second: brilli brilli es_2
+  - first:
+      213: -6867708258604786625
+    second: brilli brilli es_3
+  - first:
+      213: 3845534329191401946
+    second: brilli brilli es_4
+  - first:
+      213: 4220670833560307021
+    second: brilli brilli es_5
+  - first:
+      213: -5090422933582011819
+    second: brilli brilli es_6
+  - first:
+      213: 1031547335827586511
+    second: brilli brilli es_7
+  - first:
+      213: -1329874097929055750
+    second: brilli brilli es_8
+  - first:
+      213: -7021824295784156807
+    second: brilli brilli es_9
+  - first:
+      213: 6846762088533234138
+    second: brilli brilli es_10
+  - first:
+      213: -8814736830597842117
+    second: brilli brilli es_11
+  - first:
+      213: 6897379465560108204
+    second: brilli brilli es_12
+  - first:
+      213: 1697421301508160774
+    second: brilli brilli es_13
+  - first:
+      213: 6375838727228584732
+    second: brilli brilli es_14
+  - first:
+      213: -7547283011032013978
+    second: brilli brilli es_15
+  - first:
+      213: 5479746939102761172
+    second: brilli brilli es_16
+  - first:
+      213: -625690439532621384
+    second: brilli brilli es_17
+  - first:
+      213: -4525112375601834390
+    second: brilli brilli es_18
+  - first:
+      213: -5311244269699117656
+    second: brilli brilli es_19
+  - first:
+      213: 8815191383670142908
+    second: brilli brilli es_20
+  - first:
+      213: 614927329678894995
+    second: brilli brilli es_21
+  - first:
+      213: 2702313854504234068
+    second: brilli brilli es_22
+  - first:
+      213: 2081804138326143683
+    second: brilli brilli es_23
+  - first:
+      213: 6612387499639047080
+    second: brilli brilli es_24
+  - first:
+      213: 1345512950699786647
+    second: brilli brilli es_25
+  - first:
+      213: -2762919186235009064
+    second: brilli brilli es_26
+  - first:
+      213: 530391288391742918
+    second: brilli brilli es_27
+  - first:
+      213: -7510483071524084766
+    second: brilli brilli es_28
+  - first:
+      213: 4311526017271573982
+    second: brilli brilli es_29
+  - first:
+      213: 359992212319061608
+    second: brilli brilli es_30
+  - first:
+      213: -3192757642759895650
+    second: brilli brilli es_31
+  - first:
+      213: 2519460004276304785
+    second: brilli brilli es_32
+  - first:
+      213: -3338415411622373510
+    second: brilli brilli es_33
+  - first:
+      213: -3425727922829305310
+    second: brilli brilli es_34
+  - first:
+      213: 647231996615497415
+    second: brilli brilli es_35
+  - first:
+      213: -5778424121622822712
+    second: brilli brilli es_36
+  - first:
+      213: -8297129547614967620
+    second: brilli brilli es_37
+  - first:
+      213: -669297988112656757
+    second: brilli brilli es_38
+  - first:
+      213: 6750664826435684172
+    second: brilli brilli es_39
+  - first:
+      213: -4596232417287703109
+    second: brilli brilli es_40
+  - first:
+      213: 4602635166419252931
+    second: brilli brilli es_41
+  - first:
+      213: -8991930438693777356
+    second: brilli brilli es_42
+  - first:
+      213: 820866564729047524
+    second: brilli brilli es_43
+  - first:
+      213: 4712475328741081058
+    second: brilli brilli es_44
+  - first:
+      213: 781415330637845444
+    second: brilli brilli es_45
+  - first:
+      213: -7233792715202418773
+    second: brilli brilli es_46
+  - first:
+      213: 7861887892668350635
+    second: brilli brilli es_47
+  - first:
+      213: -6412327475568610291
+    second: brilli brilli es_48
+  - first:
+      213: -4990883530054251953
+    second: brilli brilli es_49
+  - first:
+      213: -6048146078963247856
+    second: brilli brilli es_50
+  - first:
+      213: 6183726280734054426
+    second: brilli brilli es_51
+  - first:
+      213: -6661483756946280328
+    second: brilli brilli es_52
+  - first:
+      213: -511258616250929442
+    second: brilli brilli es_53
+  - first:
+      213: 8281442274664339310
+    second: brilli brilli es_54
+  - first:
+      213: -6108968298089955262
+    second: brilli brilli es_55
+  - first:
+      213: 3834280866044554296
+    second: brilli brilli es_56
+  - first:
+      213: -2419529518785094002
+    second: brilli brilli es_57
+  - first:
+      213: 8149212713161112449
+    second: brilli brilli es_58
+  - first:
+      213: 4720453131747848081
+    second: brilli brilli es_59
+  - first:
+      213: -5469168295072389003
+    second: brilli brilli es_60
+  - first:
+      213: -5429908274776606495
+    second: brilli brilli es_61
+  - first:
+      213: -6447275397885727373
+    second: brilli brilli es_62
+  - first:
+      213: -6418225651137846748
+    second: brilli brilli es_63
+  - first:
+      213: -7747275686120462718
+    second: brilli brilli es_64
+  - first:
+      213: -901700570774584132
+    second: brilli brilli es_65
+  - first:
+      213: 1934065682978436088
+    second: brilli brilli es_66
+  - first:
+      213: -5478310742481917616
+    second: brilli brilli es_67
+  - first:
+      213: 2331765598057182459
+    second: brilli brilli es_68
+  - first:
+      213: -6704702988079062265
+    second: brilli brilli es_69
+  - first:
+      213: -3100511409488577918
+    second: brilli brilli es_70
+  - first:
+      213: 2322443953256186532
+    second: brilli brilli es_71
+  - first:
+      213: 834903706134511315
+    second: brilli brilli es_72
+  - first:
+      213: 1890582119570781927
+    second: brilli brilli es_73
+  - first:
+      213: -7959848542710767449
+    second: brilli brilli es_74
+  - first:
+      213: 1291659641182449724
+    second: brilli brilli es_75
+  - first:
+      213: 6580226311531492387
+    second: brilli brilli es_76
+  - first:
+      213: 4689471627877291286
+    second: brilli brilli es_77
+  - first:
+      213: 1541596000722163463
+    second: brilli brilli es_78
+  - first:
+      213: -2506110302364629095
+    second: brilli brilli es_79
+  - first:
+      213: -1956110570439797637
+    second: brilli brilli es_80
+  - first:
+      213: -6714652325991790403
+    second: brilli brilli es_81
+  - first:
+      213: 6969859727369567127
+    second: brilli brilli es_82
+  - first:
+      213: -2645664330372123369
+    second: brilli brilli es_83
+  - first:
+      213: 5668239799196531036
+    second: brilli brilli es_84
+  - first:
+      213: 3797537533599178744
+    second: brilli brilli es_85
+  - first:
+      213: -7758452133557147933
+    second: brilli brilli es_86
+  - first:
+      213: 3879958338533463749
+    second: brilli brilli es_87
+  - first:
+      213: -8808408597119855504
+    second: brilli brilli es_88
+  - first:
+      213: 2830020816577632078
+    second: brilli brilli es_89
+  - first:
+      213: -5759506900884086876
+    second: brilli brilli es_90
+  - first:
+      213: -8957546472360117501
+    second: brilli brilli es_91
+  - first:
+      213: -7807846600993627286
+    second: brilli brilli es_92
+  - first:
+      213: -223286344566481150
+    second: brilli brilli es_93
+  - first:
+      213: 3184524584186686794
+    second: brilli brilli es_94
+  - first:
+      213: -6239670050357455
+    second: brilli brilli es_95
+  - first:
+      213: 2025428655883111472
+    second: brilli brilli es_96
+  - first:
+      213: 1592698023845274349
+    second: brilli brilli es_97
+  - first:
+      213: -9217376291183805520
+    second: brilli brilli es_98
+  - first:
+      213: 8967279959891337902
+    second: brilli brilli es_99
+  - first:
+      213: 4460750000936968105
+    second: brilli brilli es_100
+  - first:
+      213: 4068666864173634501
+    second: brilli brilli es_101
+  - first:
+      213: 5040598046652312132
+    second: brilli brilli es_102
+  - first:
+      213: -5161550448173485418
+    second: brilli brilli es_103
+  - first:
+      213: -4141557063002005807
+    second: brilli brilli es_104
+  - first:
+      213: -4869877526506336640
+    second: brilli brilli es_105
+  - first:
+      213: -6944129933734731938
+    second: brilli brilli es_106
+  - first:
+      213: -3109237976423353346
+    second: brilli brilli es_107
+  - first:
+      213: -5795809942457718295
+    second: brilli brilli es_108
+  - first:
+      213: 2167239257615758813
+    second: brilli brilli es_109
+  - first:
+      213: 259030266584905351
+    second: brilli brilli es_110
+  - first:
+      213: -5258859673896688937
+    second: brilli brilli es_111
+  - first:
+      213: -6597087435963844557
+    second: brilli brilli es_112
+  - first:
+      213: -2619733484241965336
+    second: brilli brilli es_113
+  - first:
+      213: -9091012412984808797
+    second: brilli brilli es_114
+  - first:
+      213: -2986246787426654530
+    second: brilli brilli es_115
+  - first:
+      213: -7687423973332578805
+    second: brilli brilli es_116
+  - first:
+      213: 5287588712615444018
+    second: brilli brilli es_117
+  - first:
+      213: -3008466094483413731
+    second: brilli brilli es_118
+  - first:
+      213: 5493678722393636413
+    second: brilli brilli es_119
+  - first:
+      213: -7314335489903587589
+    second: brilli brilli es_120
+  - first:
+      213: 1830828395710632404
+    second: brilli brilli es_121
+  - first:
+      213: -5254033416208192785
+    second: brilli brilli es_122
+  - first:
+      213: -2875752293038740613
+    second: brilli brilli es_123
+  - first:
+      213: -534363047510854268
+    second: brilli brilli es_124
+  - first:
+      213: 7462216185009006610
+    second: brilli brilli es_125
+  - first:
+      213: 7946467949565742064
+    second: brilli brilli es_126
+  - first:
+      213: -3330395857673616383
+    second: brilli brilli es_127
+  - first:
+      213: -2221162565882134134
+    second: brilli brilli es_128
+  - first:
+      213: 8843583190094953220
+    second: brilli brilli es_129
+  - first:
+      213: 5685726595461330059
+    second: brilli brilli es_130
+  - first:
+      213: 4395207056725224225
+    second: brilli brilli es_131
+  - first:
+      213: 5283221232146675390
+    second: brilli brilli es_132
+  - first:
+      213: 5292999185371792523
+    second: brilli brilli es_133
+  - first:
+      213: 865518272894159019
+    second: brilli brilli es_134
+  - first:
+      213: 5814949781465778971
+    second: brilli brilli es_135
+  - first:
+      213: -425416059807805286
+    second: brilli brilli es_136
+  - first:
+      213: -883325629812989379
+    second: brilli brilli es_137
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brilli brilli es_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 648
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6131bce992128a0800000000000000
+      internalID: -6331733839117609291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 895
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fbd48ead89aa8d0800000000000000
+      internalID: -2834284949508604057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 899
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949ca6bcdd18fa230800000000000000
+      internalID: 3652280612421290313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 899
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c58d8b9bff0b0a0800000000000000
+      internalID: -6867708258604786625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_4
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 881
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9060f09151e5530800000000000000
+      internalID: 3845534329191401946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 23
+        width: 433
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45c634d2c5d29a30800000000000000
+      internalID: 4220670833560307021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 907
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552a757ef4f2b59b0800000000000000
+      internalID: -5090422933582011819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_7
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 834
+        width: 47
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdf00926dac05e00800000000000000
+      internalID: 1031547335827586511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_8
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 869
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af112fccd865b8de0800000000000000
+      internalID: -1329874097929055750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_9
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 786
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971f39691087d8e90800000000000000
+      internalID: -7021824295784156807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_10
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 847
+        width: 59
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad192a408d5940f50800000000000000
+      internalID: 6846762088533234138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 664
+        width: 86
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bb9a71e83cba580800000000000000
+      internalID: -8814736830597842117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_12
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 851
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caca8cd741a68bf50800000000000000
+      internalID: 6897379465560108204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_13
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 857
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d339e2ea37e8710800000000000000
+      internalID: 1697421301508160774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_14
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 865
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1373a1ba878b7850800000000000000
+      internalID: 6375838727228584732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_15
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 329
+        width: 512
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663a814b61aa24790800000000000000
+      internalID: -7547283011032013978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_16
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 826
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d01144eec8fb0c40800000000000000
+      internalID: 5479746939102761172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_17
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 828
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1dc4c3cd91157f0800000000000000
+      internalID: -625690439532621384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_18
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 849
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66578bf4429331c0800000000000000
+      internalID: -4525112375601834390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_19
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 847
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad41451a7baa46b0800000000000000
+      internalID: -5311244269699117656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 880
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb73ebacbd9d55a70800000000000000
+      internalID: 8815191383670142908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_21
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 849
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397a038f529a88800800000000000000
+      internalID: 614927329678894995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_22
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 902
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c6759122c808520800000000000000
+      internalID: 2702313854504234068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_23
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 889
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c23edc75dd04ec10800000000000000
+      internalID: 2081804138326143683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_24
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 898
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a30831a56be3cb50800000000000000
+      internalID: 6612387499639047080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_25
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 897
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791062b56e83ca210800000000000000
+      internalID: 1345512950699786647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_26
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 898
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7d95183a328a9d0800000000000000
+      internalID: -2762919186235009064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_27
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 889
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c53d8011145c5700800000000000000
+      internalID: 530391288391742918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_28
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 901
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3e83e407765c790800000000000000
+      internalID: -7510483071524084766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_29
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 909
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edda35bb11e95db30800000000000000
+      internalID: 4311526017271573982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_30
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 737
+        width: 176
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8664f218203fef400800000000000000
+      internalID: 359992212319061608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_31
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 906
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95026107db01b3d0800000000000000
+      internalID: -3192757642759895650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_32
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 907
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b71b4768be6f220800000000000000
+      internalID: 2519460004276304785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_33
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 818
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a771f8deed09ba1d0800000000000000
+      internalID: -3338415411622373510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_34
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 784
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a5f9eba9e5570d0800000000000000
+      internalID: -3425727922829305310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_35
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 826
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6988d521e6bf800800000000000000
+      internalID: 647231996615497415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_36
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 760
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c08f1570e9eecfa0800000000000000
+      internalID: -5778424121622822712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_37
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 782
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb82303f2acaadc80800000000000000
+      internalID: -8297129547614967620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_38
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 796
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8659a1a60d26b6f0800000000000000
+      internalID: -669297988112656757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_39
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 715
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c474c61a4ed2fad50800000000000000
+      internalID: 6750664826435684172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_40
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 745
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb57e66e7f6e630c0800000000000000
+      internalID: -4596232417287703109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_41
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 753
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6f32d4c48dfdf30800000000000000
+      internalID: 4602635166419252931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_42
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 778
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43092a448ee363380800000000000000
+      internalID: -8991930438693777356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_43
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 753
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e98bae9acd446b00800000000000000
+      internalID: 820866564729047524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_44
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 23
+        width: 404
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef776ef753166140800000000000000
+      internalID: 4712475328741081058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_45
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 745
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c396b46a1528da00800000000000000
+      internalID: 781415330637845444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_46
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 721
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba72d8f0ad76c9b90800000000000000
+      internalID: -7233792715202418773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_47
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 662
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0017262690b1d60800000000000000
+      internalID: 7861887892668350635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_48
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04714b8226d207a0800000000000000
+      internalID: -6412327475568610291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_49
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 666
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ac4cb4fd1dcbab0800000000000000
+      internalID: -4990883530054251953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_50
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 672
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01559b58f2ba01ca0800000000000000
+      internalID: -6048146078963247856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_51
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 666
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18966f1a4201d550800000000000000
+      internalID: 6183726280734054426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_52
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 664
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870be2e21d7ad83a0800000000000000
+      internalID: -6661483756946280328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_53
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 632
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede610e4ff4a7e8f0800000000000000
+      internalID: -511258616250929442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_54
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 607
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6755413fd79de270800000000000000
+      internalID: 8281442274664339310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_55
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 599
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240c93813b5983ba0800000000000000
+      internalID: -6108968298089955262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_56
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 575
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ca9adf12a163530800000000000000
+      internalID: 3834280866044554296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_57
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 569
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e1e3dc8ba1c6ed0800000000000000
+      internalID: -2419529518785094002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_58
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 559
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb01749c1d71170800000000000000
+      internalID: 8149212713161112449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_59
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 542
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fe5b00d1b628140800000000000000
+      internalID: 4720453131747848081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_60
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 542
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578a16b996c9914b0800000000000000
+      internalID: -5469168295072389003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_61
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 545
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e87cf6613715a4b0800000000000000
+      internalID: -5429908274776606495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_62
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 516
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37de7eb4f2da686a0800000000000000
+      internalID: -6447275397885727373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_63
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 419
+        width: 36
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422e0a786c1ede6a0800000000000000
+      internalID: -6418225651137846748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_64
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 390
+        width: 131
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286e4cf6fc52c7490800000000000000
+      internalID: -7747275686120462718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_65
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 485
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4c639bb148c73f0800000000000000
+      internalID: -901700570774584132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_66
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 413
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3f336dd7e27da10800000000000000
+      internalID: 1934065682978436088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_67
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 380
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059a821b76129f3b0800000000000000
+      internalID: -5478310742481917616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_68
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 394
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4bcab05781c5020800000000000000
+      internalID: 2331765598057182459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_69
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 402
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7032c07c72c14f2a0800000000000000
+      internalID: -6704702988079062265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_70
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 396
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a336fdc45c8f4d0800000000000000
+      internalID: -3100511409488577918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_71
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 374
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2c69c787afa3020800000000000000
+      internalID: 2322443953256186532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_72
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 368
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3defdc94f7c269b00800000000000000
+      internalID: 834903706134511315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_73
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 366
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6b8b7cb62bc3a10800000000000000
+      internalID: 1890582119570781927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_74
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 338
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a060d96cefe88190800000000000000
+      internalID: -7959848542710767449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_75
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 299
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c307363a995ece110800000000000000
+      internalID: 1291659641182449724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_76
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 358
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324738087f8a15b50800000000000000
+      internalID: 6580226311531492387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_77
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 346
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61516e38999541140800000000000000
+      internalID: 4689471627877291286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_78
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 291
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707153a1569d46510800000000000000
+      internalID: 1541596000722163463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_79
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 281
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9970c9b35f1883dd0800000000000000
+      internalID: -2506110302364629095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_80
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 291
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b749c83dccf7ad4e0800000000000000
+      internalID: -1956110570439797637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_81
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 275
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db842070943c0d2a0800000000000000
+      internalID: -6714652325991790403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_82
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 381
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79bf9208e7ae9b060800000000000000
+      internalID: 6969859727369567127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_83
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 279
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7157f311f46b84bd0800000000000000
+      internalID: -2645664330372123369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_84
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 240
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5937d4d012a9ae40800000000000000
+      internalID: 5668239799196531036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_85
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 261
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff546f344093b430800000000000000
+      internalID: 3797537533599178744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_86
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 246
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6647cf3e0745490800000000000000
+      internalID: -7758452133557147933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_87
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 267
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c61a9f4d8168d530800000000000000
+      internalID: 3879958338533463749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_88
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 232
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0749c24cc0f32c580800000000000000
+      internalID: -8808408597119855504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_89
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 248
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47121740f0464720800000000000000
+      internalID: 2830020816577632078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_90
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 232
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af94632dfe1210b0800000000000000
+      internalID: -5759506900884086876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_91
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 248
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bfbe741f660b380800000000000000
+      internalID: -8957546472360117501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_92
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 248
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63a80752e4f4a390800000000000000
+      internalID: -7807846600993627286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_93
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 228
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f5beca04ab6ecf0800000000000000
+      internalID: -223286344566481150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_94
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 234
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d22faac34b13c20800000000000000
+      internalID: 3184524584186686794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_95
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 220
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ff12b9d05d9eff0800000000000000
+      internalID: -6239670050357455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_96
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 230
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c4fcf91a4cb1c10800000000000000
+      internalID: 2025428655883111472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_97
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 220
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2a3c90a666a1610800000000000000
+      internalID: 1592698023845274349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_98
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 234
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbb1e2591d451080800000000000000
+      internalID: -9217376291183805520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_99
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 232
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea26dc2ec9d227c70800000000000000
+      internalID: 8967279959891337902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_100
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 131
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afdba5ed74c7ed30800000000000000
+      internalID: 4460750000936968105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_101
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 220
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3d87cc4fec67830800000000000000
+      internalID: 4068666864173634501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_102
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 216
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a2d3a973dc3f540800000000000000
+      internalID: 5040598046652312132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_103
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 214
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6927c56e63d7e58b0800000000000000
+      internalID: -5161550448173485418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_104
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 194
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de51ca4bcb3686c0800000000000000
+      internalID: -4141557063002005807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_105
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 186
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e8eecf038ba6cb0800000000000000
+      internalID: -4869877526506336640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_106
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 173
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f9599ed9e71af90800000000000000
+      internalID: -6944129933734731938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_107
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 147
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3b12da884c9d4d0800000000000000
+      internalID: -3109237976423353346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_108
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 177
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9612a9095219fa0800000000000000
+      internalID: -5795809942457718295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_109
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 168
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5f77d4f94931e10800000000000000
+      internalID: 2167239257615758813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_110
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 154
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7863ed1b7a2489300800000000000000
+      internalID: 259030266584905351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_111
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 157
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2e2cd3df6c407b0800000000000000
+      internalID: -5258859673896688937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_112
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 133
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338be2b0eef6274a0800000000000000
+      internalID: -6597087435963844557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_113
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 131
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eeaf89a646d4abd0800000000000000
+      internalID: -2619733484241965336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_114
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 139
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaaf5b606c36d180800000000000000
+      internalID: -9091012412984808797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_115
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 133
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb668cf5e58be86d0800000000000000
+      internalID: -2986246787426654530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_116
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 129
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e80bf30a8c05590800000000000000
+      internalID: -7687423973332578805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_117
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 102
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23efec55be9416940800000000000000
+      internalID: 5287588712615444018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_118
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 110
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15628fc608cf36d0800000000000000
+      internalID: -3008466094483413731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_119
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 115
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ef466f0b77d3c40800000000000000
+      internalID: 5493678722393636413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_120
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 119
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe834cff924e7a90800000000000000
+      internalID: -7314335489903587589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_121
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 119
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1d70bc9b8686910800000000000000
+      internalID: 1830828395710632404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_122
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feae0ece17ce517b0800000000000000
+      internalID: -5254033416208192785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_123
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 108
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b296f96864718d0800000000000000
+      internalID: -2875752293038740613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_124
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 98
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4853504b3af8598f0800000000000000
+      internalID: -534363047510854268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_125
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 96
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218e1a0751e1f8760800000000000000
+      internalID: 7462216185009006610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_126
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 108
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb84e87f76874e60800000000000000
+      internalID: 7946467949565742064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_127
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 89
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1048ee5dc9e08c1d0800000000000000
+      internalID: -3330395857673616383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_128
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 84
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8143302a68dc21e0800000000000000
+      internalID: -2221162565882134134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_129
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 77
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bb93b5e08baba70800000000000000
+      internalID: 8843583190094953220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_130
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 60
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84b67cd632c7ee40800000000000000
+      internalID: 5685726595461330059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_131
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 48
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ba5620889eefc30800000000000000
+      internalID: 4395207056725224225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_132
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 31
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb677eb08b5c15940800000000000000
+      internalID: 5283221232146675390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_133
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 35
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84848037b2847940800000000000000
+      internalID: 5292999185371792523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_134
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba847729840f20c00800000000000000
+      internalID: 865518272894159019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_135
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 33
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bc00f640ad2b050800000000000000
+      internalID: 5814949781465778971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_136
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 31
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90d869f85e981af0800000000000000
+      internalID: -425416059807805286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brilli brilli es_137
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 31
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32affd050ccdb3f0800000000000000
+      internalID: -883325629812989379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      brilli brilli es_0: -6331733839117609291
+      brilli brilli es_1: -2834284949508604057
+      brilli brilli es_10: 6846762088533234138
+      brilli brilli es_100: 4460750000936968105
+      brilli brilli es_101: 4068666864173634501
+      brilli brilli es_102: 5040598046652312132
+      brilli brilli es_103: -5161550448173485418
+      brilli brilli es_104: -4141557063002005807
+      brilli brilli es_105: -4869877526506336640
+      brilli brilli es_106: -6944129933734731938
+      brilli brilli es_107: -3109237976423353346
+      brilli brilli es_108: -5795809942457718295
+      brilli brilli es_109: 2167239257615758813
+      brilli brilli es_11: -8814736830597842117
+      brilli brilli es_110: 259030266584905351
+      brilli brilli es_111: -5258859673896688937
+      brilli brilli es_112: -6597087435963844557
+      brilli brilli es_113: -2619733484241965336
+      brilli brilli es_114: -9091012412984808797
+      brilli brilli es_115: -2986246787426654530
+      brilli brilli es_116: -7687423973332578805
+      brilli brilli es_117: 5287588712615444018
+      brilli brilli es_118: -3008466094483413731
+      brilli brilli es_119: 5493678722393636413
+      brilli brilli es_12: 6897379465560108204
+      brilli brilli es_120: -7314335489903587589
+      brilli brilli es_121: 1830828395710632404
+      brilli brilli es_122: -5254033416208192785
+      brilli brilli es_123: -2875752293038740613
+      brilli brilli es_124: -534363047510854268
+      brilli brilli es_125: 7462216185009006610
+      brilli brilli es_126: 7946467949565742064
+      brilli brilli es_127: -3330395857673616383
+      brilli brilli es_128: -2221162565882134134
+      brilli brilli es_129: 8843583190094953220
+      brilli brilli es_13: 1697421301508160774
+      brilli brilli es_130: 5685726595461330059
+      brilli brilli es_131: 4395207056725224225
+      brilli brilli es_132: 5283221232146675390
+      brilli brilli es_133: 5292999185371792523
+      brilli brilli es_134: 865518272894159019
+      brilli brilli es_135: 5814949781465778971
+      brilli brilli es_136: -425416059807805286
+      brilli brilli es_137: -883325629812989379
+      brilli brilli es_14: 6375838727228584732
+      brilli brilli es_15: -7547283011032013978
+      brilli brilli es_16: 5479746939102761172
+      brilli brilli es_17: -625690439532621384
+      brilli brilli es_18: -4525112375601834390
+      brilli brilli es_19: -5311244269699117656
+      brilli brilli es_2: 3652280612421290313
+      brilli brilli es_20: 8815191383670142908
+      brilli brilli es_21: 614927329678894995
+      brilli brilli es_22: 2702313854504234068
+      brilli brilli es_23: 2081804138326143683
+      brilli brilli es_24: 6612387499639047080
+      brilli brilli es_25: 1345512950699786647
+      brilli brilli es_26: -2762919186235009064
+      brilli brilli es_27: 530391288391742918
+      brilli brilli es_28: -7510483071524084766
+      brilli brilli es_29: 4311526017271573982
+      brilli brilli es_3: -6867708258604786625
+      brilli brilli es_30: 359992212319061608
+      brilli brilli es_31: -3192757642759895650
+      brilli brilli es_32: 2519460004276304785
+      brilli brilli es_33: -3338415411622373510
+      brilli brilli es_34: -3425727922829305310
+      brilli brilli es_35: 647231996615497415
+      brilli brilli es_36: -5778424121622822712
+      brilli brilli es_37: -8297129547614967620
+      brilli brilli es_38: -669297988112656757
+      brilli brilli es_39: 6750664826435684172
+      brilli brilli es_4: 3845534329191401946
+      brilli brilli es_40: -4596232417287703109
+      brilli brilli es_41: 4602635166419252931
+      brilli brilli es_42: -8991930438693777356
+      brilli brilli es_43: 820866564729047524
+      brilli brilli es_44: 4712475328741081058
+      brilli brilli es_45: 781415330637845444
+      brilli brilli es_46: -7233792715202418773
+      brilli brilli es_47: 7861887892668350635
+      brilli brilli es_48: -6412327475568610291
+      brilli brilli es_49: -4990883530054251953
+      brilli brilli es_5: 4220670833560307021
+      brilli brilli es_50: -6048146078963247856
+      brilli brilli es_51: 6183726280734054426
+      brilli brilli es_52: -6661483756946280328
+      brilli brilli es_53: -511258616250929442
+      brilli brilli es_54: 8281442274664339310
+      brilli brilli es_55: -6108968298089955262
+      brilli brilli es_56: 3834280866044554296
+      brilli brilli es_57: -2419529518785094002
+      brilli brilli es_58: 8149212713161112449
+      brilli brilli es_59: 4720453131747848081
+      brilli brilli es_6: -5090422933582011819
+      brilli brilli es_60: -5469168295072389003
+      brilli brilli es_61: -5429908274776606495
+      brilli brilli es_62: -6447275397885727373
+      brilli brilli es_63: -6418225651137846748
+      brilli brilli es_64: -7747275686120462718
+      brilli brilli es_65: -901700570774584132
+      brilli brilli es_66: 1934065682978436088
+      brilli brilli es_67: -5478310742481917616
+      brilli brilli es_68: 2331765598057182459
+      brilli brilli es_69: -6704702988079062265
+      brilli brilli es_7: 1031547335827586511
+      brilli brilli es_70: -3100511409488577918
+      brilli brilli es_71: 2322443953256186532
+      brilli brilli es_72: 834903706134511315
+      brilli brilli es_73: 1890582119570781927
+      brilli brilli es_74: -7959848542710767449
+      brilli brilli es_75: 1291659641182449724
+      brilli brilli es_76: 6580226311531492387
+      brilli brilli es_77: 4689471627877291286
+      brilli brilli es_78: 1541596000722163463
+      brilli brilli es_79: -2506110302364629095
+      brilli brilli es_8: -1329874097929055750
+      brilli brilli es_80: -1956110570439797637
+      brilli brilli es_81: -6714652325991790403
+      brilli brilli es_82: 6969859727369567127
+      brilli brilli es_83: -2645664330372123369
+      brilli brilli es_84: 5668239799196531036
+      brilli brilli es_85: 3797537533599178744
+      brilli brilli es_86: -7758452133557147933
+      brilli brilli es_87: 3879958338533463749
+      brilli brilli es_88: -8808408597119855504
+      brilli brilli es_89: 2830020816577632078
+      brilli brilli es_9: -7021824295784156807
+      brilli brilli es_90: -5759506900884086876
+      brilli brilli es_91: -8957546472360117501
+      brilli brilli es_92: -7807846600993627286
+      brilli brilli es_93: -223286344566481150
+      brilli brilli es_94: 3184524584186686794
+      brilli brilli es_95: -6239670050357455
+      brilli brilli es_96: 2025428655883111472
+      brilli brilli es_97: 1592698023845274349
+      brilli brilli es_98: -9217376291183805520
+      brilli brilli es_99: 8967279959891337902
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

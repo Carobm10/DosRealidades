@@ -37,11 +37,30 @@ public class ReinicioNivelCooperativo : NetworkBehaviour
         SolicitarReinicioRpc();
     }
 
+    
     [Rpc(
         SendTo.Server,
         RequireOwnership = false
     )]
     private void SolicitarReinicioRpc()
+    {
+        if (!IsServer)
+            return;
+
+        IniciarReinicioServidor();
+    }
+
+    // También permite que VidasEquipo solicite
+    // el reinicio directamente desde el servidor.
+    public void ReiniciarDesdeServidor()
+    {
+        if (!IsSpawned || !IsServer)
+            return;
+
+        IniciarReinicioServidor();
+    }
+
+    private void IniciarReinicioServidor()
     {
         if (!IsServer || reiniciando)
             return;
@@ -74,6 +93,7 @@ public class ReinicioNivelCooperativo : NetworkBehaviour
 
         StartCoroutine(RecargarNivel());
     }
+
 
     // Ejecutar en Host y Client.
     [Rpc(SendTo.Everyone)]
