@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInventario
   id: fragmento_carta_lia
   nombre: "Fragmento de carta \u2013 15"
-  descripcion: "Primera parte del c\xF3digo de la caja fuerte: 15"
+  descripcion: "C\xF3digo de la caja encontrado! "
   tipo: 1
-  imagen: {fileID: 21300000, guid: 5ed16973b1f1f7e4ba6f5a6848a0d7b3, type: 3}
+  imagen: {fileID: -8098008186223915494, guid: 42deb4a3e3d386b4993679d6eb8c473a, type: 3}
   permiteSeleccion: 1
   consumibleAlUsar: 0

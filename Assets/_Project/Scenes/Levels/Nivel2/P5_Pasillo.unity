@@ -373,23 +373,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].texto
-      value: "Ocupadas\u2026 por quienes no salieron."
+      value: Este pasillo guarda lo que el hotel quiso ocultar.
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].texto
-      value: Mira las huellas. Ellas recuerdan el orden.
+      value: "La habitaci\xF3n 201 guarda una caja fuerte. La pista para abrirla est\xE1 en este piso."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].texto
-      value: En la 203 hay algo que te pertenece.
+      value: La caja fuerte de la 201 guarda algo que te pertenece.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].texto
-      value: "\xBFT\xFA saliste?"
+      value: "\xBFPor qu\xE9 yo?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].texto
-      value: "\xBFCu\xE1ntos se quedaron?"
+      value: "Nosotros s\xED saldremos."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].texto
@@ -397,11 +409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].texto
-      value: "\xBFQu\xE9 puertas brillan?"
+      value: "\xBFD\xF3nde encuentro la pista?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].texto
-      value: "\xBFPor d\xF3nde empiezo?"
+      value: "\xBFY mi hermano qu\xE9 hace?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].texto
@@ -409,11 +421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].texto
-      value: "\xBFQu\xE9 es?"
+      value: "\xBFDebo abrirla yo?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].texto
-      value: "\xBFEs peligroso?"
+      value: "\xBFQu\xE9 encontrar\xE1 mi hermano?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].texto
@@ -421,11 +433,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].respuestaNPC
-      value: "No\u2026 empujo el carrito desde entonces."
+      value: "Porque hay cosas en este pasillo que solo t\xFA puedes ver."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].respuestaNPC
-      value: "Los que cuentan\u2026 dejaron de contar."
+      value: "Eso dijo el \xFAltimo\u2026 el \xFAltimo."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].respuestaNPC
@@ -433,11 +445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].respuestaNPC
-      value: Tres. Una tras otra, cada ocho latidos.
+      value: "Revisa el pasillo. La clave no est\xE1 dentro de la caja."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].respuestaNPC
-      value: Por la que brilla primero. Siempre.
+      value: "Abre. T\xFA ves, \xE9l abre."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].respuestaNPC
@@ -445,11 +457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].respuestaNPC
-      value: Un sello. Guarda un pedazo de ti.
+      value: "S\xED. Encuentra la clave de este piso y \xFAsala en la caja."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].respuestaNPC
-      value: Solo para quien no lo usa a tiempo.
+      value: "\xC9l re\xFAne fragmentos de una carta. Juntos entender\xE1n m\xE1s."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].respuestaNPC
@@ -523,6 +535,10 @@ PrefabInstance:
       propertyPath: audioDialogoNPC
       value: 
       objectReference: {fileID: 119880085}
+    - target: {fileID: 3759574921395680870, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.430908
+      objectReference: {fileID: 0}
     - target: {fileID: 3849172711239446128, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1232,6 +1248,55 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1478655848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &333120155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333120157}
+  - component: {fileID: 333120156}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &333120156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333120155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff7e73a4d226c94daf3ae53b1d3f2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  ambienteSource: {fileID: 0}
+  efectosSource: {fileID: 0}
+  mixerJuego: {fileID: 0}
+  parametroMusica: VolumenMusica
+  parametroEfectos: VolumenEfectos
+--- !u!4 &333120157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333120155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 289.95605, y: 227.2477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346542634
 GameObject:
@@ -2516,7 +2581,7 @@ PrefabInstance:
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: retratoJugador
       value: 
-      objectReference: {fileID: -577159829180848424, guid: 0dade3182d9fe894588b440e90eae9ec, type: 3}
+      objectReference: {fileID: -1684508697129481159, guid: 75b3dae3d9fae6846b9a865620c4bad6, type: 3}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.size
       value: 3
@@ -2531,23 +2596,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].texto
-      value: "Piso dos. Casi todas las habitaciones est\xE1n ocupadas."
+      value: "Aqu\xED todav\xEDa quedan cosas de quienes pasaron por el hotel."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].texto
-      value: "Las puertas se abren en el orden en que alguien las cerr\xF3."
+      value: "Por este piso qued\xF3 otro fragmento de una carta. Parece ser de tu mam\xE1."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].texto
-      value: "Dej\xE9 un fusible de repuesto en la 203, por si se va la luz."
+      value: "La carta no est\xE1 completa. Cada fragmento revela algo que les ocultaron."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[0].opciones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[1].opciones.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
+      propertyPath: nodos.Array.data[2].opciones.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].texto
-      value: "\xBFOcupadas por qui\xE9n?"
+      value: "\xBFQu\xE9 cosas?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].texto
-      value: "\xBFUsted trabaja aqu\xED?"
+      value: "\xBFQui\xE9n las dej\xF3?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].texto
@@ -2555,11 +2632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].texto
-      value: "\xBFQui\xE9n las cerr\xF3?"
+      value: "\xBFD\xF3nde est\xE1 el fragmento?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].texto
-      value: "\xBFCu\xE1l es el orden?"
+      value: "\xBFY si me equivoco?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].texto
@@ -2567,11 +2644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].texto
-      value: "\xBFPor qu\xE9 se ir\xEDa la luz?"
+      value: "\xBFQu\xE9 encontrar\xE1 L\xEDa?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].texto
-      value: "\xBFPodemos llev\xE1rnoslo?"
+      value: "\xBFY si no funciona?"
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].texto
@@ -2579,11 +2656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[0].respuestaNPC
-      value: "Por los que se quedaron. No molestan\u2026 mucho."
+      value: "Palabras que alguien dej\xF3 atr\xE1s, aunque no quer\xEDa perderlas."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[1].respuestaNPC
-      value: Desde antes de que cerraran la 13.
+      value: "Alguien que intent\xF3 contar la verdad antes de desaparecer."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[0].opciones.Array.data[2].respuestaNPC
@@ -2591,11 +2668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[0].respuestaNPC
-      value: Eso lo ve quien ve lo que usted no ve.
+      value: "Busca con cuidado por el pasillo. No est\xE1 junto a los dem\xE1s."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[1].respuestaNPC
-      value: Yo solo abro. El orden lo marcan las huellas.
+      value: La puerta se cierra de golpe. Y el pasillo escucha.
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[1].opciones.Array.data[2].respuestaNPC
@@ -2603,11 +2680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[0].respuestaNPC
-      value: Cada vez que alguien se acerca a la 13.
+      value: Ella busca la clave de la 201. Comparen lo que descubran.
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[1].respuestaNPC
-      value: "Es lo que hace falta. Ll\xE9velo."
+      value: "Funciona. Falta quien lo conecte\u2026 del otro lado."
       objectReference: {fileID: 0}
     - target: {fileID: 2190469975605339351, guid: 51c40ec6007f4bc4c93f4d6ea6216a6d, type: 3}
       propertyPath: nodos.Array.data[2].opciones.Array.data[2].respuestaNPC
@@ -7435,7 +7512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1670827279
 Transform:
   m_ObjectHideFlags: 0
@@ -8858,6 +8935,10 @@ PrefabInstance:
       propertyPath: reiniciarDatosP5
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6986280575592191549, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: totalFragmentos
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -9323,3 +9404,4 @@ SceneRoots:
   - {fileID: 392495110}
   - {fileID: 182243262}
   - {fileID: 1590518576}
+  - {fileID: 333120157}

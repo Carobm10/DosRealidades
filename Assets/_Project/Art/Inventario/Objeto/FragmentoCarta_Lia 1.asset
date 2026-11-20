@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInventario
   id: fragmento_codigo_lia
   nombre: "Fragmento de c\xF3digo \u2013 90"
-  descripcion: "Segunda parte del c\xF3digo de la caja fuerte: 90"
+  descripcion: "C\xF3digo de la caja encontrado!"
   tipo: 1
-  imagen: {fileID: 21300000, guid: 5ed16973b1f1f7e4ba6f5a6848a0d7b3, type: 3}
+  imagen: {fileID: 8236084137654157526, guid: ac259d39bd2fefb4eb24e162479a2e47, type: 3}
   permiteSeleccion: 1
   consumibleAlUsar: 0
