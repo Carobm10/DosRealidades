@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1027702145
+  GlobalObjectIdHash: 1313707468
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ReinicioNivelCooperativo
   ShowTopMostFoldoutHeaderGroup: 1
   esperaAntesDeRecargar: 0.3
-  reiniciarDatosP5: 0
+  reiniciarDatosP5: 1
 --- !u!1 &758779740364529523
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,14 +8260,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8207547, g: 0.15873085, b: 0.15873085, a: 0.46666667}
+  m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 332523589095790214, guid: 4491ab6bc8d61254a9a0797b837f5962, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8516,11 +8516,11 @@ MonoBehaviour:
   indicadorObjetoPreparado: {fileID: 7210415154725345065}
   imagenObjetoPreparado: {fileID: 5275763739093873921}
   textoObjetoPreparado: {fileID: 3012602678814895408}
-  panelObjetoRecolectado: {fileID: 5993466060302414373}
-  tituloObjetoRecolectado: {fileID: 354625302188048368}
-  descripcionObjetoRecolectado: {fileID: 6034294147490632277}
-  imagenObjetoRecolectado: {fileID: 5346635501596097876}
-  botonCerrarObjetoRecolectado: {fileID: 2537344591663044081}
+  panelObjetoRecolectado: {fileID: 0}
+  tituloObjetoRecolectado: {fileID: 0}
+  descripcionObjetoRecolectado: {fileID: 0}
+  imagenObjetoRecolectado: {fileID: 0}
+  botonCerrarObjetoRecolectado: {fileID: 0}
   controlesOcultar:
   - {fileID: 5456746758934887555}
   - {fileID: 758779740364529523}
@@ -9192,6 +9192,7 @@ GameObject:
   - component: {fileID: 2890537073575374715}
   - component: {fileID: 54559782860369083}
   - component: {fileID: 2212467438206636723}
+  - component: {fileID: 7726164052692390752}
   m_Layer: 5
   m_Name: VentanaOpciones
   m_TagString: Untagged
@@ -9262,6 +9263,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7726164052692390752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8207016859405442792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
+  sliderMusica: {fileID: 2760379108032502732}
+  sliderEfectos: {fileID: 3300757485600835001}
 --- !u!1 &8281438830713392970
 GameObject:
   m_ObjectHideFlags: 0

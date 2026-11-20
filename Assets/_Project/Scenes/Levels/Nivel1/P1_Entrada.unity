@@ -6407,11 +6407,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1842720247202567061, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_InScenePlacedDisabledByDefault
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2406441928450140485, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 520
+      value: -208.5
       objectReference: {fileID: 0}
     - target: {fileID: 5009558526722058142, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6455,7 +6455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5072514221579289978, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 515
+      value: -596.75
       objectReference: {fileID: 0}
     - target: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
       propertyPath: spawnLia
