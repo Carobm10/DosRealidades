@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc9b0f6a0bf94fb459b190d2b5e65a2a, type: 3}
-  m_Name: Fragmento de carta Lia P201
+  m_Name: Fragmento de carta Lia P204
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInventario
   id: fragmento_carta_lia_P204
   nombre: Fragmento de la carta

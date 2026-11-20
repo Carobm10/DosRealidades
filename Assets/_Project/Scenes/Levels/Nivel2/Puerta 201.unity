@@ -3104,7 +3104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d4433757b3c1642b2e65425494e722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolPruebaJugador
-  rolPrueba: 1
+  rolPrueba: 0
 --- !u!114 &466858609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4185,7 +4185,7 @@ MonoBehaviour:
   objetoRecolectable: {fileID: 0}
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 617596988}
-  spriteBrillo: {fileID: 21300000, guid: 0c2e3f070551f9c4b9af3a27345eeac1, type: 3}
+  spriteBrillo: {fileID: 2000304209446663143, guid: 76cb43a5976b2c544b6c79f9858db775, type: 3}
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -4237,7 +4237,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.02, y: 14.27}
+    oldSize: {x: 1.13, y: 1.2}
     newSize: {x: 11.02, y: 14.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4293,8 +4293,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 1810933beaefdf44eb46719d148904a0, type: 3}
+  m_MaskInteraction: 2
+  m_Sprite: {fileID: 2000304209446663143, guid: 76cb43a5976b2c544b6c79f9858db775, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5759,7 +5759,7 @@ Transform:
   m_GameObject: {fileID: 1008693334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 0.04, z: 0}
+  m_LocalPosition: {x: 9.1, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

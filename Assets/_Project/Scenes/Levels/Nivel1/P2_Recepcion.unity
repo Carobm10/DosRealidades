@@ -442,7 +442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Descubre la secuencia que conecta ambos mundos
+  m_text: "Comun\xEDcale la secuencia en orden de las figuras que aparece en tu panel."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bae1da1985b42b642b9cf9cdb429c434, type: 2}
   m_sharedMaterial: {fileID: 7903147247058979014, guid: bae1da1985b42b642b9cf9cdb429c434, type: 2}
@@ -1921,11 +1921,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 339154969811438120, guid: 3aad0e3df2a90a4448742ae57991e88e, type: 3}
   m_PrefabInstance: {fileID: 401142874}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &445109832 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8173372906510268952, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-  m_PrefabInstance: {fileID: 1315078625}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &491744180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,6 +3185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualRealidadP2
   realidadElian: {fileID: 1887064981}
   realidadLia: {fileID: 1949142610}
+  botonPausaElian: {fileID: 0}
+  botonPausaLia: {fileID: 0}
   ambienteElian: {fileID: 8300000, guid: 58e0118e1be7a464baee4ad419f38926, type: 3}
   ambienteLia: {fileID: 8300000, guid: 4afc60341a80db94c94a01c68b76ae0a, type: 3}
 --- !u!1 &921337344
@@ -3948,7 +3945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selecciona las figuras en el orden correcto para abrir la puerta
+  m_text: "P\xEDdele a L\xEDa que te indique las figuras en el orden en que  le aparecen."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bae1da1985b42b642b9cf9cdb429c434, type: 2}
   m_sharedMaterial: {fileID: 7903147247058979014, guid: bae1da1985b42b642b9cf9cdb429c434, type: 2}
@@ -4392,10 +4389,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2368669056407486758, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2576451248573180861, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_InScenePlaced
       value: 1
@@ -4404,25 +4397,9 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 767111454
       objectReference: {fileID: 0}
-    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5697313850038087534, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e1587fb09186fa344aa9d3ed1dfcc0f5, type: 3}
-    - target: {fileID: 6021212014282936290, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899525096547142300, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: ventanasBloqueantes.Array.size
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7899525096547142300, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: 'ventanasBloqueantes.Array.data[0]'
@@ -4432,18 +4409,6 @@ PrefabInstance:
       propertyPath: 'ventanasBloqueantes.Array.data[1]'
       value: 
       objectReference: {fileID: 1532773425}
-    - target: {fileID: 9006900319207772714, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: elementosHUDJuego.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9006900319207772714, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: 'elementosHUDJuego.Array.data[5]'
-      value: 
-      objectReference: {fileID: 445109832}
-    - target: {fileID: 9135891785321060739, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 8223322918212080655, guid: 36489ad9a793dd9408f87c6b9450bbb9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

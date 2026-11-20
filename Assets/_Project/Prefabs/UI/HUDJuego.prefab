@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1891353790
+  GlobalObjectIdHash: 767111454
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -930,7 +930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1732.8, y: 865.42}
+  m_AnchoredPosition: {x: 1777, y: 845}
   m_SizeDelta: {x: -920, y: -80}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4794552230288860892
@@ -8431,7 +8431,8 @@ MonoBehaviour:
   botonInteractuar: {fileID: 8173372906510268952}
   camaraJuego: {fileID: 0}
   ventanasBloqueantes:
-  - {fileID: 854777036944796787}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2922091510725772878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8509,10 +8510,7 @@ MonoBehaviour:
   - {fileID: 3950249469185021980}
   - {fileID: 997390282725107001}
   - {fileID: 8173372906510268952}
-  - {fileID: 5456746758934887555}
-  - {fileID: 758779740364529523}
-  - {fileID: 284079965190599772}
-  - {fileID: 2652859018091640220}
+  - {fileID: 8173372906510268952}
 --- !u!114 &5127641653094025659
 MonoBehaviour:
   m_ObjectHideFlags: 0
