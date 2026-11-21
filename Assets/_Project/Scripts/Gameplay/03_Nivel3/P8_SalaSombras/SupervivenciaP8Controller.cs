@@ -49,6 +49,7 @@ public class SupervivenciaP8Controller : NetworkBehaviour
     public int SegundosRestantes => segundosRestantes.Value;
 
     public bool DesafioActivo => desafioActivo.Value;
+    public static SupervivenciaP8Controller Instancia { get; private set; }
 
     // =====================================
     // DESACTIVAR VIGILIAS AL CARGAR
@@ -74,6 +75,11 @@ public class SupervivenciaP8Controller : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        Instancia = this;
+
+        Debug.Log(
+            "P8 | SUPERVIVENCIA REGISTRADA. IsServer: " + IsServer
+        );
         // Garantizar que no estén activas
         // durante la introducción.
         DesactivarVigiliasLocales();
@@ -113,6 +119,9 @@ public class SupervivenciaP8Controller : NetworkBehaviour
             StopCoroutine(rutinaTemporizador);
 
         rutinaTemporizador = null;
+
+        if (Instancia == this)
+            Instancia = null;
     }
 
     // =====================================
