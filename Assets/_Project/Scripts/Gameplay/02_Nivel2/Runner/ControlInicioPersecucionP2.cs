@@ -8,28 +8,28 @@ public class ControlInicioPersecucionP2 : MonoBehaviour
     [Header("Enemigo")]
     [SerializeField] private GameObject laVigilia;
 
-    [Header("Tiempo de espera")]
-    [SerializeField] private float esperaAparicion = 2f;
+    [Header("Historieta")]
+    [SerializeField] private HistorietaCooperativa historieta;
+
+    [Header("Tiempo de aparición")]
+    [SerializeField] private float esperaAparicion = 5f;
 
     private IEnumerator Start()
     {
-        if (laVigilia == null)
+        if (laVigilia == null || historieta == null)
         {
             Debug.LogError(
-                "P2: No está asignada La Vigilia."
+                "P2: Falta asignar La Vigilia o la Historieta."
             );
             yield break;
         }
 
-        // Comienza oculta mientras se identifica al jugador.
+        // La Vigilia comienza oculta.
         laVigilia.SetActive(false);
 
-        Debug.Log(
-            "P2: Esperando configuración del jugador local."
-        );
+        Debug.Log("P2: Esperando configuración del jugador.");
 
-        // Esperar hasta que Netcode configure completamente
-        // el jugador y su personaje.
+        // Esperar configuración de Netcode.
         yield return new WaitUntil(() =>
         {
             NetworkManager red = NetworkManager.Singleton;
@@ -53,26 +53,37 @@ public class ControlInicioPersecucionP2 : MonoBehaviour
         NetworkPlayerSetup configuracion =
             jugador.GetComponent<NetworkPlayerSetup>();
 
-        // La Vigilia nunca aparece en la realidad de Elian.
+        // Elian nunca ve La Vigilia.
         if (configuracion.EsElian)
         {
             Debug.Log(
-                "P2: Jugador Elian. Vigilia permanece oculta."
+                "P2: Elian identificado. Vigilia oculta."
             );
-            yield break;
         }
 
-        Debug.Log(
-            "P2: Jugador Lía identificado correctamente."
+        // Esperar a que AMBOS pulsen Continuar.
+        yield return new WaitUntil(() =>
+            historieta.IntroduccionFinalizada
         );
 
-        yield return new WaitForSeconds(esperaAparicion);
-
-        // Aparecer únicamente para Lía.
-        laVigilia.SetActive(true);
-
         Debug.Log(
-            "P2: ¡La Vigilia ha aparecido para Lía!"
+            "P2: Ambos terminaron la historieta. " +
+            "Comienza el juego."
         );
+
+        // Comenzar los cinco segundos.
+        yield return new WaitForSecondsRealtime(
+            esperaAparicion
+        );
+
+        // Solo Lía activa La Vigilia.
+        if (!configuracion.EsElian)
+        {
+            laVigilia.SetActive(true);
+
+            Debug.Log(
+                "P2: ¡La Vigilia aparece después de 5 segundos!"
+            );
+        }
     }
 }

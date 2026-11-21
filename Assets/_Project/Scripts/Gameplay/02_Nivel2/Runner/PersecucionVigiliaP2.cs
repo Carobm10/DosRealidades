@@ -6,32 +6,30 @@ using Unity.Netcode;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PersecucionVigiliaP2 : MonoBehaviour
 {
+    [Header("Identidad")]
+    [SerializeField] private bool persigueAElian = false;
+
     [Header("Movimiento de La Vigilia")]
-    [SerializeField] private float velocidadPersecucion = 3.6f;
+    [SerializeField] private float velocidadPersecucion = 2.5f;
 
     [Header("Velocidad al atravesar puertas")]
-    [SerializeField] private float velocidadPuerta = 0.6f;
+    [SerializeField] private float velocidadPuerta = 1.8f;
 
     [Header("Animacion")]
     [SerializeField] private Animator animator;
-
-    [Header("Velocidad de Lia")]
-    [SerializeField] private float velocidadNormalLia = 3f;
-    [SerializeField] private float velocidadGolpeadaLia = 1.8f;
-    [SerializeField] private float duracionLentitud = 1.5f;
 
     [Header("Control de dano")]
     [SerializeField] private float intervaloEntreGolpes = 1.5f;
 
     private Transform objetivo;
+    private NetworkObject jugadorObjetivo;
     private Rigidbody2D cuerpo;
 
     private bool persecucionActiva;
     private float siguienteGolpePermitido;
 
-    private Coroutine rutinaLentitud;
-
     private int zonasPuertaActivas;
+    private Coroutine rutinaIdentificacion;
 
     private void Awake()
     {
@@ -43,34 +41,64 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
     private void OnEnable()
     {
-        ConfigurarObjetivo();
+        persecucionActiva = false;
+        zonasPuertaActivas = 0;
+
+        rutinaIdentificacion =
+            StartCoroutine(IdentificarJugadorLocal());
     }
 
-    private void ConfigurarObjetivo()
+    private IEnumerator IdentificarJugadorLocal()
     {
+        // Esperar a que Netcode configure al jugador.
+        yield return new WaitUntil(() =>
+        {
+            NetworkManager red = NetworkManager.Singleton;
+
+            return red != null &&
+                   red.IsListening &&
+                   red.LocalClient != null &&
+                   red.LocalClient.PlayerObject != null;
+        });
+
         NetworkManager red = NetworkManager.Singleton;
 
-        if (red == null || red.LocalClient == null)
-            return;
-
-        NetworkObject jugador = red.LocalClient.PlayerObject;
-
-        if (jugador == null)
-            return;
+        jugadorObjetivo = red.LocalClient.PlayerObject;
 
         NetworkPlayerSetup setup =
-            jugador.GetComponent<NetworkPlayerSetup>();
+            jugadorObjetivo.GetComponent<NetworkPlayerSetup>();
 
-        if (setup == null || setup.EsElian)
+        yield return new WaitUntil(() =>
+            setup != null && setup.RolConfigurado
+        );
+
+        // Cada Vigilia persigue exclusivamente a su personaje.
+        bool correspondeAlJugador =
+            setup.EsElian == persigueAElian;
+
+        if (!correspondeAlJugador)
         {
+            Debug.Log(
+                "P2 | Vigilia desactivada en esta realidad: " +
+                (persigueAElian ? "Elian" : "Lia")
+            );
+
+            rutinaIdentificacion = null;
             gameObject.SetActive(false);
-            return;
+            yield break;
         }
 
-        objetivo = jugador.transform;
+        objetivo = jugadorObjetivo.transform;
         persecucionActiva = true;
 
-        Debug.Log("VIGILIA: Persiguiendo a Lía.");
+        siguienteGolpePermitido = 0f;
+
+        Debug.Log(
+            "P2 | Vigilia activada para: " +
+            (persigueAElian ? "Elian" : "Lia")
+        );
+
+        rutinaIdentificacion = null;
     }
 
     // =====================================
@@ -79,7 +107,9 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!persecucionActiva || objetivo == null)
+        if (!persecucionActiva ||
+            objetivo == null ||
+            cuerpo == null)
             return;
 
         float diferenciaX =
@@ -90,6 +120,7 @@ public class PersecucionVigiliaP2 : MonoBehaviour
 
         float direccion = Mathf.Sign(diferenciaX);
 
+        // SOLO SE MODIFICA LA VELOCIDAD DE LA VIGILIA.
         float velocidadActual =
             zonasPuertaActivas > 0
             ? velocidadPuerta
@@ -122,7 +153,9 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         zonasPuertaActivas++;
 
         Debug.Log(
-            "VIGILIA: Entrando en puerta. Velocidad: " +
+            "P2 | Vigilia " +
+            (persigueAElian ? "Elian" : "Lia") +
+            " entra en puerta. Velocidad: " +
             velocidadPuerta
         );
     }
@@ -135,31 +168,37 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         if (zonasPuertaActivas == 0)
         {
             Debug.Log(
-                "VIGILIA: Salió de la puerta. " +
-                "Velocidad normal: " + velocidadPersecucion
+                "P2 | Vigilia recupera velocidad: " +
+                velocidadPersecucion
             );
         }
     }
 
     // =====================================
-    // DETECTAR CONTACTO CON LIA
+    // DETECTAR CONTACTO CON SU PERSONAJE
     // =====================================
 
     private void OnTriggerStay2D(Collider2D otro)
     {
+        if (!persecucionActiva ||
+            jugadorObjetivo == null)
+            return;
+
         NetworkObject jugador =
             otro.GetComponentInParent<NetworkObject>();
 
-        if (jugador == null || !jugador.IsOwner)
+        // IMPEDIR DAÑO CRUZADO.
+        if (jugador == null ||
+            jugador != jugadorObjetivo ||
+            !jugador.IsOwner)
             return;
 
         NetworkPlayerSetup setup =
             jugador.GetComponent<NetworkPlayerSetup>();
 
-        if (setup == null || !setup.RolConfigurado)
-            return;
-
-        if (setup.EsElian)
+        if (setup == null ||
+            !setup.RolConfigurado ||
+            setup.EsElian != persigueAElian)
             return;
 
         VidasEquipo vidas = VidasEquipo.Instancia;
@@ -167,7 +206,7 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         if (vidas == null || !vidas.IsSpawned)
         {
             Debug.LogError(
-                "VIGILIA: No se encontró VidasEquipo activo."
+                "P2 | No se encontró VidasEquipo."
             );
             return;
         }
@@ -181,77 +220,38 @@ public class PersecucionVigiliaP2 : MonoBehaviour
         siguienteGolpePermitido =
             Time.time + intervaloEntreGolpes;
 
-        AplicarImpacto(jugador);
+        AplicarImpacto();
 
         Debug.Log(
-            "VIGILIA: IMPACTO CONFIRMADO CON LIA."
+            "P2 | VIGILIA DE " +
+            (persigueAElian ? "ELIAN" : "LIA") +
+            " GOLPEÓ A SU PERSONAJE."
         );
     }
 
     // =====================================
-    // APLICAR DANIO
+    // APLICAR DAÑO
     // =====================================
 
-    private void AplicarImpacto(NetworkObject jugador)
+    private void AplicarImpacto()
     {
         VidasEquipo vidas = VidasEquipo.Instancia;
 
         if (vidas == null)
             return;
 
-        // Descontar del contador compartido.
-        // El servidor actualiza automáticamente ambos HUD.
+        // Descontar vida compartida.
+        // No modificar la velocidad de ningún jugador.
         vidas.PerderVida();
 
         Debug.Log(
-            "VIGILIA: Solicitud de perdida de vida enviada."
+            "P2 | Vida descontada. Personaje: " +
+            (persigueAElian ? "Elian" : "Lia")
         );
-
-        // Aplicar ralentización local a Lía.
-        NetworkPlayerMovement movimiento =
-            jugador.GetComponent<NetworkPlayerMovement>();
-
-        if (movimiento != null)
-        {
-            if (rutinaLentitud != null)
-                StopCoroutine(rutinaLentitud);
-
-            rutinaLentitud =
-                StartCoroutine(AplicarLentitud(movimiento));
-        }
     }
 
     // =====================================
-    // RECUPERAR VELOCIDAD DE LIA
-    // =====================================
-
-    private IEnumerator AplicarLentitud(
-        NetworkPlayerMovement movimiento)
-    {
-        movimiento.ConfigurarVelocidadNivel(
-            velocidadGolpeadaLia
-        );
-
-        Debug.Log("VIGILIA: Lia ralentizada.");
-
-        yield return new WaitForSeconds(duracionLentitud);
-
-        if (movimiento != null &&
-            movimiento.IsSpawned &&
-            movimiento.IsOwner)
-        {
-            movimiento.ConfigurarVelocidadNivel(
-                velocidadNormalLia
-            );
-        }
-
-        Debug.Log("VIGILIA: Lia recupera su velocidad.");
-
-        rutinaLentitud = null;
-    }
-
-    // =====================================
-    // MODIFICAR VELOCIDADES
+    // MODIFICAR VELOCIDAD
     // =====================================
 
     public void ModificarVelocidad(float nuevaVelocidad)
@@ -263,5 +263,22 @@ public class PersecucionVigiliaP2 : MonoBehaviour
     public float ObtenerVelocidad()
     {
         return velocidadPersecucion;
+    }
+
+    // =====================================
+    // LIMPIEZA
+    // =====================================
+
+    private void OnDisable()
+    {
+        persecucionActiva = false;
+        objetivo = null;
+        jugadorObjetivo = null;
+
+        if (rutinaIdentificacion != null)
+        {
+            StopCoroutine(rutinaIdentificacion);
+            rutinaIdentificacion = null;
+        }
     }
 }

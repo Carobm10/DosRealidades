@@ -49,6 +49,7 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("Brillo de objeto opcional")]
     [SerializeField] private SpriteRenderer objetoBrillo;
     [SerializeField] private Sprite spriteBrillo;
+    [SerializeField] private bool soloElian;
 
     [Header("Parpadeo automatico")]
     [SerializeField] private bool parpadeoAutomatico;
@@ -218,6 +219,16 @@ public class ZonaInteraccion : MonoBehaviour
 
         if (notaGuia != null && !notaGuia.PuedeLeerla())
             return false;
+
+        if (soloElian)
+        {
+            NetworkPlayerSetup setup =
+                jugador.GetComponent<NetworkPlayerSetup>();
+
+            return setup != null &&
+                setup.RolConfigurado &&
+                setup.EsElian;
+        }
 
         if (esBotonPuertaP2)
         {

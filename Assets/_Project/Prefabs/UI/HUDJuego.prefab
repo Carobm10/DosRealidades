@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1027702145
+  GlobalObjectIdHash: 1315058645
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ReinicioNivelCooperativo
   ShowTopMostFoldoutHeaderGroup: 1
   esperaAntesDeRecargar: 0.3
-  reiniciarDatosP5: 0
+  reiniciarDatosP5: 1
 --- !u!1 &758779740364529523
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -102.353516, y: -129.73358}
+  m_AnchoredPosition: {x: -145.3, y: -129.73358}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &4794552230288860892
@@ -2401,14 +2401,14 @@ RectTransform:
   m_GameObject: {fileID: 2652859018091640220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.73912215, y: 3.6165, z: 3.6165}
+  m_LocalScale: {x: 0.82404727, y: 4.032036, z: 4.032036}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1368630429690827680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 824, y: 223}
+  m_AnchoredPosition: {x: 817, y: 223}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5293466106101288967
@@ -8519,7 +8519,7 @@ MonoBehaviour:
   panelPausa: {fileID: 3959436481604291659}
   panelReconectando: {fileID: 854777036944796787}
   botonAbrirPausa: {fileID: 1620665286213360680}
-  botonAbrirPausaLia: {fileID: 0}
+  botonAbrirPausaLia: {fileID: 1620665286213360680}
   botonCerrar: {fileID: 8401782139723972000}
   botonContinuar: {fileID: 4661898224566476921}
   botonReiniciar: {fileID: 6524276031308723844}
@@ -8559,11 +8559,11 @@ MonoBehaviour:
   indicadorObjetoPreparado: {fileID: 7210415154725345065}
   imagenObjetoPreparado: {fileID: 5275763739093873921}
   textoObjetoPreparado: {fileID: 3012602678814895408}
-  panelObjetoRecolectado: {fileID: 5993466060302414373}
-  tituloObjetoRecolectado: {fileID: 354625302188048368}
-  descripcionObjetoRecolectado: {fileID: 6034294147490632277}
-  imagenObjetoRecolectado: {fileID: 5346635501596097876}
-  botonCerrarObjetoRecolectado: {fileID: 2537344591663044081}
+  panelObjetoRecolectado: {fileID: 0}
+  tituloObjetoRecolectado: {fileID: 0}
+  descripcionObjetoRecolectado: {fileID: 0}
+  imagenObjetoRecolectado: {fileID: 0}
+  botonCerrarObjetoRecolectado: {fileID: 0}
   controlesOcultar:
   - {fileID: 5456746758934887555}
   - {fileID: 758779740364529523}
@@ -9237,6 +9237,7 @@ GameObject:
   - component: {fileID: 2212467438206636723}
   - component: {fileID: 6160471389811143749}
   - component: {fileID: 2651905368964270538}
+  - component: {fileID: 5426911466882508441}
   m_Layer: 5
   m_Name: VentanaOpciones
   m_TagString: Untagged
@@ -9322,6 +9323,20 @@ MonoBehaviour:
   sliderMusica: {fileID: 2760379108032502732}
   sliderEfectos: {fileID: 3300757485600835001}
 --- !u!114 &2651905368964270538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8207016859405442792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751338a077ff8b4883dfa5213ef6c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionAudioUI
+  sliderMusica: {fileID: 2760379108032502732}
+  sliderEfectos: {fileID: 3300757485600835001}
+--- !u!114 &5426911466882508441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

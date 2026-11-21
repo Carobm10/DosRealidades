@@ -247,6 +247,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -464,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VidasEquipo
   ShowTopMostFoldoutHeaderGroup: 1
   vidasIniciales: 3
+  permitirDanioElian: 0
 --- !u!4 &111672646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6123111029586573674, guid: 44474feb57453b944954348179c530cd, type: 3}
@@ -902,6 +904,26 @@ PrefabInstance:
       propertyPath: m_text
       value: En uso
       objectReference: {fileID: 0}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: panelObjetoRecolectado
+      value: 
+      objectReference: {fileID: 215306898}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: imagenObjetoRecolectado
+      value: 
+      objectReference: {fileID: 215306895}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: tituloObjetoRecolectado
+      value: 
+      objectReference: {fileID: 215306897}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: botonCerrarObjetoRecolectado
+      value: 
+      objectReference: {fileID: 215306894}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: descripcionObjetoRecolectado
+      value: 
+      objectReference: {fileID: 215306896}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -911,6 +933,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+--- !u!114 &215306894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 215306893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &215306895 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5346635501596097876, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 215306893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &215306896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6034294147490632277, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 215306893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &215306897 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 354625302188048368, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 215306893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &215306898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5993466060302414373, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 215306893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &285873341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1083,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -1296,6 +1368,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -1520,6 +1593,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+--- !u!114 &447833748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5996085773304417553, guid: 103a83913d72f3048b499dd544499daf, type: 3}
+  m_PrefabInstance: {fileID: 447833747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab8b2c1c7076c54197c54f6b0c99337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HistorietaCooperativa
 --- !u!1 &462757371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1671,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -1960,6 +2045,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -2783,6 +2869,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -2992,6 +3079,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -3180,7 +3268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlInicioPersecucionP2
   laVigilia: {fileID: 1468239804}
-  esperaAparicion: 5
+  historieta: {fileID: 447833748}
+  esperaAparicion: 4
 --- !u!1 &914231885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,6 +3999,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -4633,12 +4723,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743e97bf71c406e43ab139987dc9c064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersecucionVigiliaP2
-  velocidadPersecucion: 2
-  velocidadPuerta: 0.6
+  persigueAElian: 0
+  velocidadPersecucion: 2.3
+  velocidadPuerta: 1
   animator: {fileID: 1468239810}
-  velocidadNormalLia: 3
-  velocidadGolpeadaLia: 1.8
-  duracionLentitud: 1.5
   intervaloEntreGolpes: 1.5
 --- !u!1 &1470852087
 GameObject:
@@ -4925,6 +5013,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7

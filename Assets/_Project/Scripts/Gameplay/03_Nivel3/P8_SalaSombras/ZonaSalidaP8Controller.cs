@@ -9,24 +9,20 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
 {
     [Header("Referencias")]
     [SerializeField] private DispositivosLlavesP8 dispositivosLlaves;
-    [SerializeField]
-    private HistorietaFinalP8Controller historietaFinal;
+    [SerializeField] private HistorietaFinalP8Controller historietaFinal;
 
-    // Jugadores presentes en la zona.
     private readonly HashSet<ulong> elianDentro =
         new HashSet<ulong>();
 
     private readonly HashSet<ulong> liaDentro =
         new HashSet<ulong>();
 
-    // Control de colliders por jugador.
     private readonly Dictionary<Collider2D, ulong> propietarioCollider =
         new Dictionary<Collider2D, ulong>();
 
     private readonly Dictionary<ulong, HashSet<Collider2D>> collidersJugador =
         new Dictionary<ulong, HashSet<Collider2D>>();
 
-    // Sincronización de la historieta.
     private NetworkVariable<bool> historietaMostrada =
         new NetworkVariable<bool>(
             false,
@@ -47,7 +43,7 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
 
         AplicarEstadoHistorieta(historietaMostrada.Value);
 
-        Debug.Log("P8 | Zona de salida cooperativa iniciada.");
+        Debug.Log("P8 | Zona de salida iniciada.");
     }
 
     public override void OnNetworkDespawn()
@@ -69,6 +65,31 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
         if (!IsServer || historietaMostrada.Value)
             return;
 
+        RegistrarJugador(other);
+    }
+
+    // =====================================
+    // DETECTAR PERMANENCIA
+    // =====================================
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (!IsServer || historietaMostrada.Value)
+            return;
+
+        RegistrarJugador(other);
+        ComprobarSalida();
+    }
+
+    // =====================================
+    // REGISTRAR JUGADOR
+    // =====================================
+
+    private void RegistrarJugador(Collider2D other)
+    {
+        if (propietarioCollider.ContainsKey(other))
+            return;
+
         NetworkPlayerSetup setup =
             other.GetComponentInParent<NetworkPlayerSetup>();
 
@@ -82,9 +103,6 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
             return;
 
         ulong clienteId = jugador.OwnerClientId;
-
-        if (propietarioCollider.ContainsKey(other))
-            return;
 
         propietarioCollider.Add(other, clienteId);
 
@@ -104,21 +122,9 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
             liaDentro.Add(clienteId);
 
         Debug.Log(
-            "P8 | Jugador entró en salida: " +
-            (setup.EsElian ? "Elian" : "Lía")
+            "P8 | Entrada en salida: " +
+            (setup.EsElian ? "Elian" : "Lia")
         );
-
-        ComprobarSalida();
-    }
-
-    // =====================================
-    // DETECTAR PERMANENCIA
-    // =====================================
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (!IsServer || historietaMostrada.Value)
-            return;
 
         ComprobarSalida();
     }
@@ -143,9 +149,6 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
             return;
 
         colliders.Remove(other);
-
-        // Si conserva otro collider dentro,
-        // el jugador sigue presente.
 
         if (colliders.Count > 0)
             return;
@@ -177,22 +180,27 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
             return;
         }
 
-        // Ambas llaves deben estar colocadas.
+        // ESPERAR FIN DE LA CINEMATICA
+
+        if (!dispositivosLlaves.SalidaHabilitada)
+            return;
+
+        // COMPROBAR LLAVES
 
         if (!dispositivosLlaves.AmbasLlavesColocadas)
             return;
 
-        // Elian y Lía deben estar presentes.
+        // COMPROBAR AMBOS JUGADORES
 
         if (elianDentro.Count == 0 || liaDentro.Count == 0)
             return;
 
-        // Activar una sola vez.
+        // ACTIVAR HISTORIETA UNA SOLA VEZ
 
         historietaMostrada.Value = true;
 
         Debug.Log(
-            "P8 | AMBOS JUGADORES LLEGARON. " +
+            "P8 | AMBOS JUGADORES EN SALIDA. " +
             "MOSTRANDO HISTORIETA FINAL."
         );
     }
@@ -210,6 +218,9 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
 
     private void AplicarEstadoHistorieta(bool mostrar)
     {
+        if (!mostrar)
+            return;
+
         if (historietaFinal == null)
         {
             Debug.LogError(
@@ -218,7 +229,6 @@ public class ZonaSalidaP8Controller : NetworkBehaviour
             return;
         }
 
-        if (mostrar)
-            historietaFinal.MostrarHistorietaFinal();
+        historietaFinal.MostrarHistorietaFinal();
     }
 }
