@@ -608,51 +608,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &163671361
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 163671363}
-  - component: {fileID: 163671362}
-  m_Layer: 0
-  m_Name: ConfigurarAmbienteNivel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &163671362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163671361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b31a4e208cc9c43bf3ba0617fe3e91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfigurarAmbienteNivel
-  ambienteDelNivel: {fileID: 0}
---- !u!4 &163671363
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163671361}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.12722, y: 0.09788, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163883193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1550,6 @@ MonoBehaviour:
   puntoCamaraPuerta: {fileID: 1330460938}
   esperaAntesDeAbrir: 0.1
   duracionApertura: 1.5
-  zonaSalida: {fileID: 0}
 --- !u!1 &399473245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,6 +4386,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
@@ -5738,6 +5695,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 0}
   spriteBrillo: {fileID: 0}
@@ -7173,7 +7133,6 @@ SceneRoots:
   - {fileID: 1220972964}
   - {fileID: 198513771}
   - {fileID: 879166602}
-  - {fileID: 163671363}
   - {fileID: 399473248}
   - {fileID: 2059081789}
   - {fileID: 1825273574}

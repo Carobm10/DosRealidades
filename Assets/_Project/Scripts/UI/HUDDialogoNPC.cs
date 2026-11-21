@@ -1,4 +1,3 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -62,6 +61,35 @@ public class HUDDialogoNPC : MonoBehaviour
     private FaseDialogo faseActual = FaseDialogo.Ninguna;
 
     private NetworkPlayerMovement jugadorEnDialogo;
+
+    // =====================================
+    // SONIDO DE VOZ NPC
+    // =====================================
+
+    private void ReproducirSonidoVoz()
+    {
+        if (audioDialogoNPC == null || sonidoVozNPC == null)
+            return;
+
+        // Si el sonido anterior sigue reproduciéndose,
+        // no iniciar otra reproducción.
+        if (audioDialogoNPC.isPlaying)
+            return;
+
+        audioDialogoNPC.PlayOneShot(sonidoVozNPC);
+    }
+
+    private void DetenerSonidoVoz()
+    {
+        if (audioDialogoNPC != null)
+        {
+            audioDialogoNPC.Stop();
+        }
+    }
+
+    // =====================================
+    // INICIALIZACION
+    // =====================================
 
     private void Awake()
     {
@@ -182,7 +210,6 @@ public class HUDDialogoNPC : MonoBehaviour
     // ESCRITURA DEL TEXTO
     // =====================================
 
-
     private IEnumerator EscribirTexto(string contenido)
     {
         escribiendo = true;
@@ -201,8 +228,9 @@ public class HUDDialogoNPC : MonoBehaviour
         int total = textoDialogo.textInfo.characterCount;
 
         // El NPC habla en estas dos fases:
-        // Ninguna = intervención inicial del NPC.
-        // RespuestaNPC = respuesta después de una opción.
+        // Ninguna = intervencion inicial del NPC.
+        // RespuestaNPC = respuesta despues de una opcion.
+
         bool esIntervencionNPC =
             faseActual == FaseDialogo.Ninguna ||
             faseActual == FaseDialogo.RespuestaNPC;
@@ -224,7 +252,7 @@ public class HUDDialogoNPC : MonoBehaviour
                 if (primerSonido ||
                     temporizadorSonido >= intervaloSonido)
                 {
-                    audioDialogoNPC.PlayOneShot(sonidoVozNPC);
+                    ReproducirSonidoVoz();
 
                     temporizadorSonido = 0f;
                     primerSonido = false;
@@ -239,9 +267,15 @@ public class HUDDialogoNPC : MonoBehaviour
         rutinaEscritura = null;
         escribiendo = false;
 
+        // Detener voz al finalizar el texto.
+        DetenerSonidoVoz();
+
         FinalizarEscritura();
     }
 
+    // =====================================
+    // SALTAR ESCRITURA
+    // =====================================
 
     public void SaltarEscritura()
     {
@@ -271,6 +305,7 @@ public class HUDDialogoNPC : MonoBehaviour
         // En cualquier intervencion escrita se necesita
         // pulsar CONTINUAR para dar el siguiente paso.
         // Las opciones nunca aparecen automaticamente.
+
         if (faseActual == FaseDialogo.Ninguna)
             faseActual = FaseDialogo.EsperandoOpciones;
 
@@ -287,7 +322,9 @@ public class HUDDialogoNPC : MonoBehaviour
         {
             if (opcion != null &&
                 !string.IsNullOrWhiteSpace(opcion.texto))
+            {
                 return true;
+            }
         }
 
         return false;
@@ -372,9 +409,12 @@ public class HUDDialogoNPC : MonoBehaviour
 
     private void SeleccionarOpcion(int indice)
     {
-        if (!conversacionAbierta || escribiendo ||
+        if (!conversacionAbierta ||
+            escribiendo ||
             faseActual != FaseDialogo.OpcionesVisibles)
+        {
             return;
+        }
 
         opcionSeleccionada = ObtenerOpcion(indice);
 
@@ -416,8 +456,9 @@ public class HUDDialogoNPC : MonoBehaviour
             return;
         }
 
-        // Termino el texto inicial del NPC: CONTINUAR
-        // muestra las opciones y el retrato del jugador.
+        // Termino el texto inicial del NPC:
+        // CONTINUAR muestra las opciones y el retrato del jugador.
+
         if (faseActual == FaseDialogo.EsperandoOpciones)
         {
             if (!NodoTieneOpcionesValidas())
@@ -427,6 +468,7 @@ public class HUDDialogoNPC : MonoBehaviour
             }
 
             faseActual = FaseDialogo.OpcionesVisibles;
+
             MostrarPersonaje(false);
             ActualizarOpciones();
 
@@ -439,8 +481,9 @@ public class HUDDialogoNPC : MonoBehaviour
             return;
         }
 
-        // Mientras las opciones estan visibles, solo
-        // una respuesta del jugador permite avanzar.
+        // Mientras las opciones estan visibles,
+        // solo una respuesta del jugador permite avanzar.
+
         if (faseActual == FaseDialogo.OpcionesVisibles)
             return;
 
@@ -572,6 +615,9 @@ public class HUDDialogoNPC : MonoBehaviour
             StopCoroutine(rutinaEscritura);
             rutinaEscritura = null;
         }
+
+        // Detener también el sonido de voz.
+        DetenerSonidoVoz();
 
         escribiendo = false;
     }
