@@ -219,24 +219,26 @@ public class VidasEquipo : NetworkBehaviour
             "P8_SalaSombras";
     }
 
+    
     private void RegistrarAtrapamientoP8Servidor()
     {
         if (!IsServer)
             return;
 
         SupervivenciaP8Controller controlador =
-            FindFirstObjectByType<SupervivenciaP8Controller>();
+            SupervivenciaP8Controller.Instancia;
 
         if (controlador == null || !controlador.IsSpawned)
         {
             Debug.LogError(
-                "P8 | No se encontro SupervivenciaP8Controller."
+                "P8 | ERROR: P8_Supervivencia no está registrado."
             );
             return;
         }
 
         controlador.RegistrarAtrapamientoServidor();
     }
+
 
     // =====================================
     // DESCONTAR VIDA EN SERVIDOR
