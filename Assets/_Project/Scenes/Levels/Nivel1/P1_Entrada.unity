@@ -2484,6 +2484,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1839055166}
   spriteBrillo: {fileID: 5464315333451434492, guid: 7ba92cf48fa2eb542a9fd33bace90701, type: 3}
@@ -4010,51 +4013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RolPruebaJugador
   rolPrueba: 0
---- !u!1 &1527046131
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1527046133}
-  - component: {fileID: 1527046132}
-  m_Layer: 0
-  m_Name: ConfiguracionAudio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1527046132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527046131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b31a4e208cc9c43bf3ba0617fe3e91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConfigurarAmbienteNivel
-  ambienteDelNivel: {fileID: 8300000, guid: 4b57fa20cea7a9f4fbbb602e5cfa351a, type: 3}
---- !u!4 &1527046133
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527046131}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77485, y: -0.13962, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1537678145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5906,6 +5864,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1120448508}
   spriteBrillo: {fileID: 3819290739390781398, guid: 59b1b817412327f459a56b63364337ff, type: 3}
@@ -6893,5 +6854,4 @@ SceneRoots:
   - {fileID: 2015058471}
   - {fileID: 1761370505}
   - {fileID: 3275021854309670729}
-  - {fileID: 1527046133}
   - {fileID: 1753432074}
