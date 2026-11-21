@@ -53,3 +53,5 @@ desktop.ini
 *.slnx
 
 apk/
+
+.utmp/
