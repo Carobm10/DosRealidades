@@ -27,12 +27,15 @@ public class AudioManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
+            Debug.Log("AudioManager duplicado. Se destruye esta instancia.");
             Destroy(gameObject);
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        Debug.Log("AudioManager inicializado y persistente.");
 
         // Recuperar volumenes guardados
         volumenMusica = PlayerPrefs.GetFloat(

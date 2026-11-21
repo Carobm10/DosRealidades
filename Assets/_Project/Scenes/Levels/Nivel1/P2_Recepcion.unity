@@ -2427,6 +2427,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 551739797}
   spriteBrillo: {fileID: 21300000, guid: c8e2a0f4e86892a4a9ca1b3e830bcd65, type: 3}
@@ -5725,10 +5728,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4468857320386961864, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 12.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468857320386961864, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 12.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2053355174}
     - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: rolPermitido
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
+      propertyPath: sonidoAbrirNota
+      value: 
+      objectReference: {fileID: 8300000, guid: 8499f65379450de41987f648adcc7a41, type: 3}
     - target: {fileID: 4797782496038999827, guid: 44474feb57453b944954348179c530cd, type: 3}
       propertyPath: imagenNotaGrande
       value: 
@@ -5796,7 +5815,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5490391467606998607, guid: 44474feb57453b944954348179c530cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2053355174}
   m_SourcePrefab: {fileID: 100100000, guid: 44474feb57453b944954348179c530cd, type: 3}
 --- !u!4 &1789612659 stripped
 Transform:
@@ -6005,7 +6027,7 @@ AudioSource:
   m_GameObject: {fileID: 1845576917}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -6102,7 +6124,7 @@ AudioSource:
   m_GameObject: {fileID: 1625226939}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -6403,6 +6425,9 @@ MonoBehaviour:
   visualNPC: {fileID: 0}
   puertaPuzzle: {fileID: 0}
   objetoRecolectable: {fileID: 0}
+  audioSourceRecolectable: {fileID: 0}
+  sonidoProximidadRecolectable: {fileID: 0}
+  volumenSonidoRecolectable: 1
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1853065748}
   spriteBrillo: {fileID: 21300000, guid: 01b2435ac67444747874d49621bacb61, type: 3}
@@ -7076,11 +7101,113 @@ AudioSource:
   m_GameObject: {fileID: 1968116331}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &2053355170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5490391467606998607, guid: 44474feb57453b944954348179c530cd, type: 3}
+  m_PrefabInstance: {fileID: 1789612658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2053355174
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053355170}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7920606468947641151, guid: 26efaa470f6523f438f0d4abcbbf459e, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

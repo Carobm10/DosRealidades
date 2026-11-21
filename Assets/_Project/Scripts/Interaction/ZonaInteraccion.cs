@@ -38,6 +38,11 @@ public class ZonaInteraccion : MonoBehaviour
     [Header("Objeto recolectable")]
     [SerializeField] private ObjetoRecolectable objetoRecolectable;
 
+    [Header("Audio de proximidad objeto recolectable")]
+    [SerializeField] private AudioSource audioSourceRecolectable;
+    [SerializeField] private AudioClip sonidoProximidadRecolectable;
+    [SerializeField, Range(0f, 1f)] private float volumenSonidoRecolectable = 1f;
+
     [Header("Regreso P5")]
     [SerializeField] private RegresoPasilloP5 regresoPasillo;
 
@@ -268,6 +273,20 @@ public class ZonaInteraccion : MonoBehaviour
             audioSourceNPC.PlayOneShot(
                 sonidoProximidadNPC,
                 volumenSonidoNPC
+            );
+        }
+
+        // SONIDO DE PROXIMIDAD OBJETO RECOLECTABLE
+
+        if (contactosJugadorLocal == 1 &&
+            objetoRecolectable != null &&
+            !objetoRecolectable.EstaRecolectado &&
+            audioSourceRecolectable != null &&
+            sonidoProximidadRecolectable != null)
+        {
+            audioSourceRecolectable.PlayOneShot(
+                sonidoProximidadRecolectable,
+                volumenSonidoRecolectable
             );
         }
 
