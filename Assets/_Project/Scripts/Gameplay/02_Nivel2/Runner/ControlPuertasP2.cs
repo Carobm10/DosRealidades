@@ -85,36 +85,40 @@ public class ControlPuertasP2 : NetworkBehaviour
 
     // EJECUTAR EN TODOS LOS CLIENTES
 
+    
     [Rpc(SendTo.Everyone, RequireOwnership = false)]
     private void CerrarPuertaLiaRpc(int numeroPuerta)
     {
         PuertaLiaP2[] puertas =
             FindObjectsByType<PuertaLiaP2>(
-                FindObjectsInactive.Include,
                 FindObjectsSortMode.None
             );
+
+        bool encontrada = false;
 
         foreach (PuertaLiaP2 puerta in puertas)
         {
             if (puerta == null ||
+                !puerta.gameObject.activeInHierarchy ||
                 puerta.NumeroPuerta != numeroPuerta)
                 continue;
 
             puerta.CerrarVisualLocal();
+            encontrada = true;
 
             Debug.Log(
-                "P2: Puerta " + numeroPuerta +
-                " cerrada para " +
-                (NetworkManager.Singleton.IsHost ? "Elian" : "Lia")
+                "P2: Puerta activa de Lia cerrada: " +
+                numeroPuerta
             );
-
-            return;
         }
 
-        Debug.LogWarning(
-            "P2: No se encontró la puerta " +
-            numeroPuerta +
-            " en esta instancia. Puede no existir en esta escena."
-        );
+        if (!encontrada)
+        {
+            Debug.LogWarning(
+                "P2: No se encontró una puerta activa número " +
+                numeroPuerta
+            );
+        }
     }
+
 }

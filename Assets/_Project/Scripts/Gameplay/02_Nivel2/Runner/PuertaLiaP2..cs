@@ -26,6 +26,14 @@ public class PuertaLiaP2 : MonoBehaviour
         if (animatorPuerta == null)
             animatorPuerta = GetComponent<Animator>();
 
+        if (animatorPuerta == null)
+        {
+            Debug.LogError(
+                "P2: Puerta " + numeroPuerta +
+                " no tiene Animator asignado."
+            );
+        }
+
         if (colliderBloqueo != null)
         {
             colliderBloqueo.isTrigger = true;
@@ -44,16 +52,54 @@ public class PuertaLiaP2 : MonoBehaviour
         if (cerrada)
             return;
 
-        cerrada = true;
-
-        if (animatorPuerta != null)
+        if (animatorPuerta == null)
         {
-            animatorPuerta.SetBool(parametroCerrar, true);
+            Debug.LogError(
+                "P2: No se puede cerrar puerta " +
+                numeroPuerta + ". Falta Animator."
+            );
+            return;
         }
 
+        if (!animatorPuerta.isActiveAndEnabled)
+        {
+            Debug.LogError(
+                "P2: Animator de puerta " +
+                numeroPuerta + " está desactivado."
+            );
+            return;
+        }
+
+        if (!TieneParametroCerrar())
+        {
+            Debug.LogError(
+                "P2: No existe el parámetro Bool '" +
+                parametroCerrar + "' en la puerta " +
+                numeroPuerta
+            );
+            return;
+        }
+
+        cerrada = true;
+
+        animatorPuerta.SetBool(parametroCerrar, true);
+
         Debug.Log(
-            "P2: Cerrando puerta de Lia " + numeroPuerta
+            "P2: CIERRE EJECUTADO. Puerta " + numeroPuerta
         );
+    }
+
+    private bool TieneParametroCerrar()
+    {
+        foreach (AnimatorControllerParameter parametro
+                 in animatorPuerta.parameters)
+        {
+            if (parametro.name == parametroCerrar &&
+                parametro.type == AnimatorControllerParameterType.Bool)
+                return true;
+        }
+
+        return false;
     }
 
     // =====================================
@@ -65,26 +111,25 @@ public class PuertaLiaP2 : MonoBehaviour
         if (!cerrada)
             return;
 
-        if (colliderBloqueo != null)
-        {
-            colliderBloqueo.enabled = true;
-
-            Debug.Log(
-                "P2: Zona de ralentizacion activada. Puerta " +
-                numeroPuerta
-            );
-        }
-        else
+        if (colliderBloqueo == null)
         {
             Debug.LogWarning(
-                "P2: Falta asignar el collider de puerta " +
+                "P2: Falta collider de bloqueo en puerta " +
                 numeroPuerta
             );
+            return;
         }
+
+        colliderBloqueo.enabled = true;
+
+        Debug.Log(
+            "P2: Zona de ralentizacion activada. Puerta " +
+            numeroPuerta
+        );
     }
 
     // =====================================
-    // LA VIGILIA ENTRA EN LA PUERTA
+    // ENTRADA DE LA VIGILIA
     // =====================================
 
     private void OnTriggerEnter2D(Collider2D otro)
@@ -101,13 +146,12 @@ public class PuertaLiaP2 : MonoBehaviour
         vigilia.EntrarZonaPuerta();
 
         Debug.Log(
-            "P2: La Vigilia entra en zona de puerta " +
-            numeroPuerta
+            "P2: Vigilia entra en puerta " + numeroPuerta
         );
     }
 
     // =====================================
-    // LA VIGILIA SALE DE LA PUERTA
+    // SALIDA DE LA VIGILIA
     // =====================================
 
     private void OnTriggerExit2D(Collider2D otro)
@@ -124,8 +168,7 @@ public class PuertaLiaP2 : MonoBehaviour
         vigilia.SalirZonaPuerta();
 
         Debug.Log(
-            "P2: La Vigilia sale de zona de puerta " +
-            numeroPuerta
+            "P2: Vigilia sale de puerta " + numeroPuerta
         );
     }
 

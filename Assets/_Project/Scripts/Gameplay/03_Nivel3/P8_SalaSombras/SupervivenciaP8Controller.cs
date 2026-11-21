@@ -51,13 +51,36 @@ public class SupervivenciaP8Controller : NetworkBehaviour
     public bool DesafioActivo => desafioActivo.Value;
 
     // =====================================
+    // DESACTIVAR VIGILIAS AL CARGAR
+    // =====================================
+
+    private void Awake()
+    {
+        DesactivarVigiliasLocales();
+    }
+
+    private void DesactivarVigiliasLocales()
+    {
+        if (vigiliaElian != null)
+            vigiliaElian.SetActive(false);
+
+        if (vigiliaLia != null)
+            vigiliaLia.SetActive(false);
+    }
+
+    // =====================================
     // INICIO
     // =====================================
 
     public override void OnNetworkSpawn()
     {
+        // Garantizar que no estén activas
+        // durante la introducción.
+        DesactivarVigiliasLocales();
+
         if (textoTemporizador != null)
             textoTemporizador.gameObject.SetActive(false);
+
         segundosRestantes.OnValueChanged += ActualizarTemporizador;
 
         if (introduccion == null)
@@ -88,6 +111,8 @@ public class SupervivenciaP8Controller : NetworkBehaviour
 
         if (rutinaTemporizador != null)
             StopCoroutine(rutinaTemporizador);
+
+        rutinaTemporizador = null;
     }
 
     // =====================================
@@ -147,6 +172,10 @@ public class SupervivenciaP8Controller : NetworkBehaviour
         );
     }
 
+    // =====================================
+    // ACTIVAR VIGILIAS
+    // =====================================
+
     [Rpc(SendTo.Everyone)]
     private void ActivarVigiliasRpc()
     {
@@ -161,6 +190,10 @@ public class SupervivenciaP8Controller : NetworkBehaviour
             textoTemporizador.gameObject.SetActive(true);
             textoTemporizador.text = "00:20";
         }
+
+        Debug.Log(
+            "P8 | VIGILIAS ACTIVADAS. SUPERVIVENCIA EN CURSO."
+        );
     }
 
     // =====================================
@@ -185,6 +218,8 @@ public class SupervivenciaP8Controller : NetworkBehaviour
                 yield break;
             }
         }
+
+        rutinaTemporizador = null;
     }
 
     private void ActualizarTemporizador(int anterior, int nuevo)
@@ -205,6 +240,7 @@ public class SupervivenciaP8Controller : NetworkBehaviour
     // REGISTRAR ATRAPAMIENTO
     // =====================================
 
+    
     public void RegistrarAtrapamientoServidor()
     {
         if (!IsServer || !desafioActivo.Value)
@@ -218,18 +254,23 @@ public class SupervivenciaP8Controller : NetworkBehaviour
             return;
         }
 
+        // Descontar una vida compartida.
         vidas.PerderVidaServidor();
 
+        // Si se agotaron las vidas, el sistema existente
+        // se encarga de reiniciar el nivel completo.
         if (vidas.VidasActuales <= 0)
             return;
 
-        segundosRestantes.Value = duracionSupervivencia;
+        // IMPORTANTE:
+        // Ya NO reiniciamos el temporizador al recibir daño.
+        // La cuenta regresiva continúa normalmente.
 
         Debug.Log(
             "P8 | JUGADOR ATRAPADO. VIDAS: " +
             vidas.VidasActuales +
-            " | TIEMPO REINICIADO: " +
-            duracionSupervivencia
+            " | TIEMPO CONTINÚA: " +
+            segundosRestantes.Value
         );
     }
 

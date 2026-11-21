@@ -368,8 +368,6 @@ public class IntroduccionP8Controller : NetworkBehaviour
 
     private IEnumerator MostrarCuentaRegresiva()
     {
-        // 1. MOSTRAR INSTRUCCIONES
-
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(false);
 
@@ -385,15 +383,11 @@ public class IntroduccionP8Controller : NetworkBehaviour
             Mathf.Max(0f, duracionInstrucciones)
         );
 
-        // 2. OCULTAR INSTRUCCIONES
-
         if (instruccionSupervivencia != null)
             instruccionSupervivencia.SetActive(false);
 
         if (instruccionSupervivencia2 != null)
             instruccionSupervivencia2.SetActive(false);
-
-        // 3. CUENTA REGRESIVA
 
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(true);
@@ -418,8 +412,6 @@ public class IntroduccionP8Controller : NetworkBehaviour
                 intervaloCuentaRegresiva * 3f + 0.45f
             );
         }
-
-        // 4. DESBLOQUEAR JUGADOR
 
         if (textoEsperandoJugador != null)
             textoEsperandoJugador.SetActive(false);

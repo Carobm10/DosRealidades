@@ -1,7 +1,8 @@
 
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
-using System.Collections;
 
 [RequireComponent(typeof(NetworkObject))]
 public class DispositivosLlavesP8 : NetworkBehaviour
@@ -37,13 +38,25 @@ public class DispositivosLlavesP8 : NetworkBehaviour
             NetworkVariableWritePermission.Server
         );
 
+    private NetworkVariable<bool> salidaHabilitada =
+        new NetworkVariable<bool>(
+            false,
+            NetworkVariableReadPermission.Everyone,
+            NetworkVariableWritePermission.Server
+        );
+
     private bool aperturaSolicitada;
-    private Coroutine rutinaHabilitarSalida;
 
     private Coroutine rutinaCinematicaLocal;
 
+    private readonly HashSet<ulong> jugadoresCinematicaTerminada =
+        new HashSet<ulong>();
+
     public bool AmbasLlavesColocadas =>
         elianActivo.Value && liaActiva.Value;
+
+    public bool SalidaHabilitada =>
+        salidaHabilitada.Value;
 
     // =====================================
     // INICIO
@@ -60,7 +73,10 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         {
             elianActivo.Value = false;
             liaActiva.Value = false;
+            salidaHabilitada.Value = false;
+
             aperturaSolicitada = false;
+            jugadoresCinematicaTerminada.Clear();
         }
     }
 
@@ -71,9 +87,6 @@ public class DispositivosLlavesP8 : NetworkBehaviour
 
         if (rutinaCinematicaLocal != null)
             StopCoroutine(rutinaCinematicaLocal);
-
-        if (rutinaHabilitarSalida != null)
-            StopCoroutine(rutinaHabilitarSalida);
     }
 
     // =====================================
@@ -117,10 +130,8 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         bool esDispositivoElian,
         RpcParams rpcParams = default)
     {
-        ulong clienteId = rpcParams.Receive.SenderClientId;
-
         ColocarLlaveServidor(
-            clienteId,
+            rpcParams.Receive.SenderClientId,
             esDispositivoElian
         );
     }
@@ -168,10 +179,7 @@ public class DispositivosLlavesP8 : NetworkBehaviour
             ? elianActivo.Value
             : liaActiva.Value;
 
-        if (yaColocada)
-            return;
-
-        if (!inventario.TieneObjeto(id))
+        if (yaColocada || !inventario.TieneObjeto(id))
             return;
 
         if (!inventario.EliminarObjetoDesdeServidor(id))
@@ -243,13 +251,11 @@ public class DispositivosLlavesP8 : NetworkBehaviour
                 .GetComponent<InventarioJugador>();
 
         if (inventario != null && inventario.IsOwner)
-        {
             InventarioUI.Instancia?.DesprepararObjeto(id);
-        }
     }
 
     // =====================================
-    // CINEMATICA SINCRONIZADA
+    // INICIAR CINEMATICA
     // =====================================
 
     [Rpc(SendTo.Everyone)]
@@ -271,8 +277,7 @@ public class DispositivosLlavesP8 : NetworkBehaviour
             red.LocalClient.PlayerObject == null)
             yield break;
 
-        NetworkObject jugador =
-            red.LocalClient.PlayerObject;
+        NetworkObject jugador = red.LocalClient.PlayerObject;
 
         NetworkPlayerMovement movimiento =
             jugador.GetComponent<NetworkPlayerMovement>();
@@ -287,9 +292,9 @@ public class DispositivosLlavesP8 : NetworkBehaviour
 
         Debug.Log("P8 | Cinematica iniciada.");
 
-        float transicionZoom = 0.35f;
+        float transicionZoom = 0f;
 
-        // ACERCAR CAMARA A LA PUERTA
+        // INICIAR ZOOM
 
         if (camara != null && puntoCamaraPuerta != null)
         {
@@ -303,50 +308,85 @@ public class DispositivosLlavesP8 : NetworkBehaviour
         else
         {
             Debug.LogError(
-                "P8 | Falta la cámara local o el punto de enfoque de la puerta."
+                "P8 | Falta camara local o punto de enfoque."
             );
         }
 
-        // ESPERAR HASTA QUE LA CAMARA LLEGUE
+        // ESPERAR ACERCAMIENTO
 
         yield return new WaitForSecondsRealtime(
             transicionZoom + esperaAntesDeAbrir
         );
 
-        // ABRIR PUERTA
+        // EJECUTAR ANIMACION
 
         if (animatorPuerta != null)
         {
-            animatorPuerta.enabled = true;
-
             animatorPuerta.ResetTrigger(triggerAbrirPuerta);
             animatorPuerta.SetTrigger(triggerAbrirPuerta);
 
-            Debug.Log("P8 | PUERTA ABIERTA.");
+            Debug.Log("P8 | Animacion Door final ejecutada.");
         }
         else
         {
-            Debug.LogError("P8 | Animator de puerta no asignado.");
+            Debug.LogError(
+                "P8 | Animator de puerta no asignado."
+            );
         }
 
-        // ESPERAR APERTURA Y REGRESO DE CAMARA
+        // ESPERAR ANIMACION Y REGRESO DE CAMARA
 
         yield return new WaitForSecondsRealtime(
             duracionApertura + transicionZoom
         );
 
-        // RECUPERAR MOVIMIENTO
+        // RESTABLECER MOVIMIENTO
 
         if (movimiento != null)
             movimiento.BloquearMovimiento(false);
 
-        Debug.Log("P8 | Cinematica terminada.");
+        Debug.Log(
+            "P8 | Camara recuperada. Cinematica terminada."
+        );
+
+        // AVISAR AL SERVIDOR
+
+        ConfirmarCinematicaTerminadaRpc();
 
         rutinaCinematicaLocal = null;
     }
 
     // =====================================
-    // HABILITAR SALIDA
+    // CONFIRMAR FIN DE CINEMATICA
     // =====================================
 
+    [Rpc(SendTo.Server, RequireOwnership = false)]
+    private void ConfirmarCinematicaTerminadaRpc(
+        RpcParams rpcParams = default)
+    {
+        if (!IsServer || salidaHabilitada.Value)
+            return;
+
+        ulong clienteId = rpcParams.Receive.SenderClientId;
+
+        jugadoresCinematicaTerminada.Add(clienteId);
+
+        Debug.Log(
+            "P8 | Cinematica terminada: " +
+            jugadoresCinematicaTerminada.Count + "/" +
+            NetworkManager.Singleton.ConnectedClientsIds.Count
+        );
+
+        foreach (ulong id in NetworkManager.Singleton.ConnectedClientsIds)
+        {
+            if (!jugadoresCinematicaTerminada.Contains(id))
+                return;
+        }
+
+        salidaHabilitada.Value = true;
+
+        Debug.Log(
+            "P8 | AMBAS CAMARAS RECUPERADAS. SALIDA HABILITADA."
+        );
+    }
 }

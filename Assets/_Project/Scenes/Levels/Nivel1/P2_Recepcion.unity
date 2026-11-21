@@ -2430,6 +2430,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 551739797}
   spriteBrillo: {fileID: 21300000, guid: c8e2a0f4e86892a4a9ca1b3e830bcd65, type: 3}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
@@ -4399,6 +4400,26 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 767111454
       objectReference: {fileID: 0}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: panelObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1315078633}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: imagenObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1315078626}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: tituloObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1315078632}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: botonCerrarObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1315078627}
+    - target: {fileID: 5127641653094025659, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+      propertyPath: descripcionObjetoRecolectado
+      value: 
+      objectReference: {fileID: 1315078628}
     - target: {fileID: 7542587818657237105, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
       propertyPath: m_Name
       value: HUDJuego
@@ -4416,6 +4437,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+--- !u!114 &1315078626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5346635501596097876, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &1315078627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2537344591663044081, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &1315078628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6034294147490632277, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!225 &1315078629 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 7724582077490794738, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
@@ -4429,6 +4483,22 @@ CanvasGroup:
 --- !u!225 &1315078631 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 8076768100393035949, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1315078632 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 354625302188048368, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
+  m_PrefabInstance: {fileID: 1315078625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1315078633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5993466060302414373, guid: b22aba31e3287e6468fcbe0d569506f9, type: 3}
   m_PrefabInstance: {fileID: 1315078625}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369469238
@@ -6336,6 +6406,7 @@ MonoBehaviour:
   regresoPasillo: {fileID: 0}
   objetoBrillo: {fileID: 1853065748}
   spriteBrillo: {fileID: 21300000, guid: 01b2435ac67444747874d49621bacb61, type: 3}
+  soloElian: 0
   parpadeoAutomatico: 0
   tiempoNormal: 0.7
   tiempoBrillo: 0.7
